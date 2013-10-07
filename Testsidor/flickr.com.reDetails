@@ -1,0 +1,1315 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WebPagetest Test Details - Dulles : flickr.com - 09/16/13 15:16:16</title>
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<meta name="keywords" content="Performance Test,Details,Webpagetest,Website Speed Test,Page Speed">
+<meta name="description" content="Website performance test details - Dulles : flickr.com - 09/16/13 15:16:16">
+<meta name="author" content="Patrick Meenan">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge"> 
+
+<link rel="shortcut icon" href="/images/favicon.ico" type="image/vnd.microsoft.icon">
+<link rel="icon" href="/images/favicon.png" type="image/png">
+
+<script type="text/javascript">var NREUMQ=NREUMQ||[];NREUMQ.push(["mark","firstbyte",new Date().getTime()]);</script>
+<script type="text/javascript">
+var wptTemplate = 'Details';
+rumMapping = {'aft': 'custom0'};
+(function(){
+  var dom,doc,where,iframe = document.createElement('iframe');
+  iframe.src = "javascript:false";
+  (iframe.frameElement || iframe).style.cssText = "width: 0; height: 0; border: 0";
+  where = document.getElementsByTagName('script')[0];
+  where.parentNode.insertBefore(iframe, where);
+
+  try {
+    doc = iframe.contentWindow.document;
+  } catch(e) {
+    dom = document.domain;
+    iframe.src="javascript:var d=document.open();d.domain='"+dom+"';void(0);";
+    doc = iframe.contentWindow.document;
+  }
+  doc.open()._l = function() {
+    var js = this.createElement("script");
+    if(dom) this.domain = dom;
+    js.id = "boomr-if-as";
+    js.src = '//c.go-mpulse.net/boomerang/' +
+    'KLHEA-LW4C7-LHTMB-YZBLM-2BJ54';
+    BOOMR_lstart=new Date().getTime();
+    this.body.appendChild(js);
+  };
+  doc.write('<body onload="document._l();">');
+  doc.close();
+  })();
+        
+</script>
+<script type="text/javascript">
+;(function(){var e=typeof window!="undefined"?window:exports,t=[];e.performance||(e.performance={});e.performance.now||(e.performance.now=performance.now||performance.webkitNow||performance.msNow||performance.mozNow);if(!e.performance.now){var n=Date.now?Date.now():+(new Date);if(performance.timing&&performance.timing)n=performance.timing.navigationStart;e.performance.now=function(){var e=Date.now?Date.now():+(new Date);return e-n}}e.performance.mark||(e.performance.mark=e.performance.webkitMark?e.performance.webkitMark:function(n){t.push({name:n,entryType:"mark",startTime:e.performance.now(),duration:0})});e.performance.getEntriesByType||(e.performance.getEntriesByType=e.performance.webkitGetEntriesByType?e.performance.webkitGetEntriesByType:function(e){return e=="mark"?t:undefined})})();window.markUserTime=function(e){var t=window["requestAnimationFrame"]||function(e){setTimeout(e,0)};t(function(){window.performance.mark(e);if(window["console"]&&console["timeStamp"])console.timeStamp(e)})};(function(){var e=function(e,t,n){t=Math.round(t);if(t>=0&&t<36e5){if(!n&&window["_gaq"])_gaq.push(["_trackTiming","UserTimings",e,t]);if(n&&window["rumMapping"]&&window.rumMapping[e])BOOMR.plugins.RT.setTimer(window.rumMapping[e],t)}};utReportRUM=function(t){var n=window.performance.getEntriesByType("mark");var r={};for(i=0;i<n.length;i++){g="usertiming";if(r[g]==undefined||n[i].startTime>r[g])r[g]=n[i].startTime;p=n[i].name.match(/([^\.]+)\.([^\.]*)/);if(p&&p.length>2&&(r[p[1]]==undefined||n[i].startTime>r[p[1]]))r[p[1]]=n[i].startTime}for(g in r)e(g,r[g],t)};utOnLoad=function(){utReportRUM(false)};if(window["addEventListener"])window.addEventListener("load",utOnLoad,false);else if(window["attachEvent"])window.attachEvent("onload",utOnLoad);utSent=false;BOOMR=window.BOOMR||{};BOOMR.plugins=BOOMR.plugins||{};BOOMR.plugins.UserTiming={init:function(e){BOOMR.subscribe("page_ready",function(){if(!utSent){utReportRUM(true);utSent=true;BOOMR.sendBeacon()}})},is_complete:function(){return utSent}}})();
+</script>
+<link rel="stylesheet" href="http://cdn.webpagetest.org/pagestyle.css?v=65" type="text/css">
+<style type="text/css">
+
+</style>
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3755571-1']);
+_gaq.push(['_setCustomVar', 1, 'Template', 'Details', 3]);
+    _gaq.push(['_setSiteSpeedSampleRate', 100]);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+    var ga = document.createElement('script');
+    ga.src = ('https:' == document.location.protocol ?
+        'https://ssl' : 'http://www') +
+        '.google-analytics.com/ga.js';
+    ga.setAttribute('async', 'true');
+    document.documentElement.firstChild.appendChild(ga);
+    })();
+    </script>
+        <style type="text/css">
+        div.bar {
+            height:12px;
+            margin-top:auto;
+            margin-bottom:auto;
+        }
+
+        .left {text-align:left;}
+        .center {text-align:center;}
+
+        .indented1 {padding-left: 40pt;}
+        .indented2 {padding-left: 80pt;}
+
+        td {
+            white-space:nowrap;
+            text-align:left;
+            vertical-align:middle;
+        }
+
+        td.center {
+            text-align:center;
+        }
+
+        table.details {
+          margin-left:auto; margin-right:auto;
+          background: whitesmoke;
+          border-collapse: collapse;
+        }
+        table.details th, table.details td {
+          border: 1px silver solid;
+          padding: 0.2em;
+          text-align: center;
+          font-size: smaller;
+        }
+        table.details th {
+          background: gainsboro;
+        }
+        table.details caption {
+          margin-left: inherit;
+          margin-right: inherit;
+          background: whitesmoke;
+        }
+        table.details th.reqUrl, table.details td.reqUrl {
+          text-align: left;
+          width: 30em;
+          word-wrap: break-word;
+        }
+        table.details td.even {
+          background: gainsboro;
+        }
+        table.details td.odd {
+          background: whitesmoke;
+        }
+        table.details td.evenRender {
+          background: #dfffdf;
+        }
+        table.details td.oddRender {
+          background: #ecffec;
+        }
+        table.details td.evenDoc {
+          background: #dfdfff;
+        }
+        table.details td.oddDoc {
+          background: #ececff;
+        }
+        table.details td.warning {
+          background: #ffff88;
+        }
+        table.details td.error {
+          background: #ff8888;
+        }
+        .header_details {
+            display: none;
+        }
+        .a_request {
+            cursor: pointer;
+        }
+        
+div.waterfall-container {position: relative; left: 0; top: 0; clear:both; overflow:auto;}
+img.waterfall-image {position: relative; left: 0; top: 0;}
+div.request-overlay {cursor:pointer; padding: 0; margin: 0; width: 928px; left: 1px; background-color: #FFF; overflow: hidden; opacity:0.9; filter:alpha(opacity=90);}
+div.request-overlay.selected {opacity:0.4; background-color: #129828;}
+div.transparent {opacity:0.0; filter:alpha(opacity=0);}
+#dialog-title {display: inline;}
+#dialog-title a {color: #fff;}
+#request-dialog-radio {display:inline; padding-left: 20px; font-weight: normal; }
+#request-headers, #response-headers, #response-body {display:none;}
+
+.jqmWindow {display: none; position: fixed; top: 17%; left: 50%; margin-left: -300px; width: 600px; background-color: #dfdfdf; color: #333; border: 1px solid black; padding: 12px; }
+.jqmOverlay { background-color: #000; }
+div.jqDrag {cursor: move;}
+.jqResize {width: 100%; height: 3px; background: #dfdfdf; border-top: 1px solid #a3a3a3; border-bottom: 1px solid #a3a3a3; cursor: ns-resize;}
+div.jqmDialog {display: none; position: absolute; top: 17%; right: 20px; width: 600px; height: 300px;
+                overflow: hidden; font-family:verdana,tahoma,helvetica;
+                color: #000; background: #fff; border: 1px solid #000; text-align: left;}
+div.jqmdTC { background: #303030; color: #000; height: 25px; padding: 7px 22px 5px 5px; font-family:"sans serif",verdana,tahoma,helvetica; font-weight: bold; * zoom: 1; cursor: move;}
+div.jqmdBC { height: 250px; padding: 7px 7px 7px; overflow: auto;}
+div.jqmdX { position: absolute; right: 7px; top: 8px; padding: 0 0 0 16px; height: 16px; width: 0px; background: url(/images/dialog-close.png) no-repeat 0px -16px; overflow: hidden;}
+div.jqmdX:hover {background-position: 0px 0px;}
+div.jqmdBC button {margin: 8px 10px 4px 10px; color: #777; background-color: #fff; cursor: pointer; }
+
+/* Jquery UI */
+.ui-helper-hidden { display: none; }
+.ui-helper-hidden-accessible { position: absolute !important; clip: rect(1px 1px 1px 1px); clip: rect(1px,1px,1px,1px); }
+.ui-helper-reset { margin: 0; padding: 0; border: 0; outline: 0; line-height: 1.3; text-decoration: none; font-size: 100%; list-style: none; }
+.ui-helper-clearfix:before, .ui-helper-clearfix:after { content: ""; display: table; }
+.ui-helper-clearfix:after { clear: both; }
+.ui-helper-clearfix { zoom: 1; }
+.ui-helper-zfix { width: 100%; height: 100%; top: 0; left: 0; position: absolute; opacity: 0; filter:Alpha(Opacity=0); }
+.ui-state-disabled { cursor: default !important; }
+.ui-icon { display: block; text-indent: -99999px; overflow: hidden; background-repeat: no-repeat; }
+.ui-widget-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+.ui-widget { font-family: Trebuchet MS, Tahoma, Verdana, Arial, sans-serif; font-size: 1.1em; }
+.ui-widget .ui-widget { font-size: 1em; }
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button { font-family: Trebuchet MS, Tahoma, Verdana, Arial, sans-serif; font-size: 1em; }
+.ui-widget-content { border: 1px solid #dddddd; background-color: #eeeeee; color: #333333; }
+.ui-widget-content a { color: #333333; }
+.ui-widget-header { border: 1px solid #e78f08; background-color: #f6a828; color: #ffffff; font-weight: bold; }
+.ui-widget-header a { color: #ffffff; }
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default { border: 1px solid #cccccc; background-color: #cccccc; font-weight: bold; color: #1c94c4; }
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited { color: #1c94c4; text-decoration: none; }
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hovers, { border: 1px solid #cccccc; background-color: #f6f6f6; font-weight: bold; color: #c77405; }
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active { border: 1px solid #C00; background-color: #ffffff; font-weight: bold; color: #c00; }
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited { color: #eb8f00; text-decoration: none; }
+.ui-state-hover a, .ui-state-hover a:hover { color: #c77405; text-decoration: none; }
+.ui-widget :active { outline: none; }
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight  {border: 1px solid #fed22f; background: #ffe45c url(images/ui-bg_highlight-soft_75_ffe45c_1x100.png) 50% top repeat-x; color: #363636; }
+.ui-state-highlight a, .ui-widget-content .ui-state-highlight a,.ui-widget-header .ui-state-highlight a { color: #363636; }
+.ui-state-error, .ui-widget-content .ui-state-error, .ui-widget-header .ui-state-error {border: 1px solid #cd0a0a; background: #b81900 url(images/ui-bg_diagonals-thick_18_b81900_40x40.png) 50% 50% repeat; color: #ffffff; }
+.ui-state-error a, .ui-widget-content .ui-state-error a, .ui-widget-header .ui-state-error a { color: #ffffff; }
+.ui-state-error-text, .ui-widget-content .ui-state-error-text, .ui-widget-header .ui-state-error-text { color: #ffffff; }
+.ui-priority-primary, .ui-widget-content .ui-priority-primary, .ui-widget-header .ui-priority-primary { font-weight: bold; }
+.ui-priority-secondary, .ui-widget-content .ui-priority-secondary,  .ui-widget-header .ui-priority-secondary { opacity: .7; filter:Alpha(Opacity=70); font-weight: normal; }
+.ui-state-disabled, .ui-widget-content .ui-state-disabled, .ui-widget-header .ui-state-disabled { opacity: .35; filter:Alpha(Opacity=35); background-image: none; }
+.ui-icon { width: 16px; height: 16px; background-image: url(/images/ui-icons_222222_256x240.png); }
+.ui-widget-content .ui-icon {background-image: url(/images/ui-icons_222222_256x240.png); }
+.ui-widget-header .ui-icon {background-image: url(/images/ui-icons_ffffff_256x240.png); }
+.ui-state-default .ui-icon { background-image: url(/images/ui-icons_ef8c08_256x240.png); }
+.ui-state-hover .ui-icon, .ui-state-focus .ui-icon {background-image: url(/images/ui-icons_ef8c08_256x240.png); }
+.ui-state-active .ui-icon {background-image: url(/images/ui-icons_ef8c08_256x240.png); }
+.ui-state-highlight .ui-icon {background-image: url(/images/ui-icons_228ef1_256x240.png); }
+.ui-state-error .ui-icon, .ui-state-error-text .ui-icon {background-image: url(/images/ui-icons_ffd27a_256x240.png); }
+
+/* jQuery UI Button 1.8.17
+ *
+ * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Button#theming
+ */
+.ui-button { display: inline-block; position: relative; padding: 0; margin-right: .1em; text-decoration: none !important; cursor: pointer; text-align: center; zoom: 1; overflow: visible; } /* the overflow property removes extra width in IE */
+.ui-button-icon-only { width: 2.2em; } /* to make room for the icon, a width needs to be set here */
+button.ui-button-icon-only { width: 2.4em; } /* button elements seem to need a little more width */
+.ui-button-icons-only { width: 3.4em; } 
+button.ui-button-icons-only { width: 3.7em; } 
+.ui-button .ui-button-text { display: block; line-height: 1.1;  }
+.ui-button-text-only .ui-button-text { padding: 2px 5px; }
+.ui-button-icon-only .ui-button-text, .ui-button-icons-only .ui-button-text { padding: .4em; text-indent: -9999999px; }
+.ui-button-text-icon-primary .ui-button-text, .ui-button-text-icons .ui-button-text { padding: .4em 1em .4em 2.1em; }
+.ui-button-text-icon-secondary .ui-button-text, .ui-button-text-icons .ui-button-text { padding: .4em 2.1em .4em 1em; }
+.ui-button-text-icons .ui-button-text { padding-left: 2.1em; padding-right: 2.1em; }
+input.ui-button { padding: .4em 1em; }
+.ui-button-icon-only .ui-icon, .ui-button-text-icon-primary .ui-icon, .ui-button-text-icon-secondary .ui-icon, .ui-button-text-icons .ui-icon, .ui-button-icons-only .ui-icon { position: absolute; top: 50%; margin-top: -8px; }
+.ui-button-icon-only .ui-icon { left: 50%; margin-left: -8px; }
+.ui-button-text-icon-primary .ui-button-icon-primary, .ui-button-text-icons .ui-button-icon-primary, .ui-button-icons-only .ui-button-icon-primary { left: .5em; }
+.ui-button-text-icon-secondary .ui-button-icon-secondary, .ui-button-text-icons .ui-button-icon-secondary, .ui-button-icons-only .ui-button-icon-secondary { right: .5em; }
+.ui-button-text-icons .ui-button-icon-secondary, .ui-button-icons-only .ui-button-icon-secondary { right: .5em; }
+.ui-buttonset { margin-right: 7px; }
+.ui-buttonset .ui-button { margin-left: 0; margin-right: -.3em; }
+button.ui-button::-moz-focus-inner { border: 0; padding: 0; } /* reset extra padding in Firefox */
+.ui-slider { position: relative; text-align: left; }
+.ui-slider .ui-slider-handle { position: absolute; z-index: 2; width: 1.2em; height: 1.2em; cursor: default; }
+.ui-slider .ui-slider-range { position: absolute; z-index: 1; font-size: .7em; display: block; border: 0; background-position: 0 0; }
+.ui-slider-horizontal { height: .8em; }
+.ui-slider-horizontal .ui-slider-handle { top: -.3em; margin-left: -.6em; }
+.ui-slider-horizontal .ui-slider-range { top: 0; height: 100%; }
+.ui-slider-horizontal .ui-slider-range-min { left: 0; }
+.ui-slider-horizontal .ui-slider-range-max { right: 0; }
+.ui-slider-vertical { width: .8em; height: 100px; }
+.ui-slider-vertical .ui-slider-handle { left: -.3em; margin-left: 0; margin-bottom: -.6em; }
+.ui-slider-vertical .ui-slider-range { left: 0; width: 100%; }
+.ui-slider-vertical .ui-slider-range-min { bottom: 0; }
+.ui-slider-vertical .ui-slider-range-max { top: 0; }
+        </style>
+    </head>
+    <body>
+        <div class="page">
+            <div id="wptAuthBar"><a href="/forums/member.php?action=login">Login</a> &nbsp;|&nbsp; <a href="/forums/member.php?action=register">Register</a> &nbsp;|&nbsp; <a href="/oauth/login.php">Login with Google</a> </div>
+<div id="header">
+    <h1 class="logo"><a href="/">WebPageTest</a></h1>
+    <div class="headerAd">
+    <script type="text/javascript"><!--
+        google_ad_client = "pub-0388499782819905";
+        /* Header 728x90 */
+        google_ad_slot = "6264344813";
+        google_ad_width = 728;
+        google_ad_height = 90;
+        //-->
+        </script>
+        <script type="text/javascript"
+        src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+        </script>    </div>
+</div>
+
+<div id="nav_bkg"><ul id="nav" class="cufon-dincond_black"><li><a title="Home" href="/">Home</a></li><li class="current"><a title="Test Result" href="/result/130916_3M_KJD/">Test Result</a></li><li><a title="Test History" href="/testlog/1/">Test History</a></li><li><a title="Forums" href="/forums/">Forums</a></li><li><a title="Documentation (opens in a new tab)" href="http://sites.google.com/a/webpagetest.org/docs/" target="_blank">Documentation</a></li><li><a title="About" href="/about">About</a></li><div class="gplusone"><g:plusone size="medium" count="false" href="http://www.webpagetest.org/" actions="+1,addtocircles"></g:plusone>&nbsp;
+                <a href="http://twitter.com/share" class="twitter-share-button" data-count="none" data-text=" "></a>
+                <script type="text/javascript">
+                        (function() {
+                            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                            po.src = 'https://apis.google.com/js/plusone.js';
+                            var tw = document.createElement('script'); tw.type = 'text/javascript'; tw.async = true;
+                            tw.src = 'http://platform.twitter.com/widgets.js';
+                            var s = document.getElementsByTagName('script')[0]; 
+                            s.parentNode.insertBefore(po, s);
+                            s.parentNode.insertBefore(tw, s);
+                          })();
+                  </script></div>
+                  </ul>
+
+</div>
+
+    
+<div id="main">
+    <div class="level_2">
+        <div class="content-wrap">
+            <div class="content">
+
+            
+<div id="header_container"><div id="optimization"><div id="optimization_header"><span id="headerPagespeedScore"><a href="/result/130916_3M_KJD/1/pagespeed/">PageSpeed 1.12 Score</a>: <b>97/100</b></span><div id="opthelp"><a href="http://www.webperformancecentral.com/wiki/WebPagetest/Optimization_Help" title="Optimization Resources" target="_blank">Need help improving?</a></div>
+</div><div id="grades"><ul class="grades smaller"><li class="first_byte_time"><a href="/result/130916_3M_KJD/1/performance_optimization/#first_byte_time"><h2 class="F">F</h2></a>First Byte Time</li><li class="keep_alive_enabled"><a href="/result/130916_3M_KJD/1/performance_optimization/#keep_alive_enabled"><h2 class="A">A</h2></a>Keep-alive Enabled</li><li class="compress_text"><a href="/result/130916_3M_KJD/1/performance_optimization/#compress_text"><h2 class="A">A</h2></a>Compress Transfer</li><li class="compress_images"><a href="/result/130916_3M_KJD/1/performance_optimization/#compress_images"><h2 class="A">A</h2></a>Compress Images</li><li class="progressive_jpeg"><a href="/result/130916_3M_KJD/1/performance_optimization/#progressive_jpeg"><h2 class="A">A</h2></a>Progressive JPEGs</li><li class="cache_static_content"><a href="/result/130916_3M_KJD/1/performance_optimization/#cache_static_content"><h2 class="B">B</h2></a>Cache static content</li><li class="use_of_cdn"><a href="/result/130916_3M_KJD/1/performance_optimization/#use_of_cdn"><h2 class="A"><img src="http://cdn.webpagetest.org/images/grade_check.png" alt="yes"></h2></a>Effective use of CDN</li></ul></div></div><div id="header_data"><h2 class="alternate cufon-dincond_regular">Web Page Performance Test for<br><span class="medium colored">flickr.com</span></h2><p class="heading_details"><strong>From:</strong> Dulles, VA - IE 9 - <b>Cable</b><br><span class="jsdate" date="1379344576">09/16/13 15:16:16</span><br>
+</div></div><div id="test_results-container"><div id="test-1" class="test_results"><ul class="test_menu"><li><a href="/result/130916_3M_KJD/">Summary</a></li><li class="current"><a href="/result/130916_3M_KJD/1/details/cached/">Details</a></li><li><a href="/performance_optimization.php?test=130916_3M_KJD&run=1&cached=1">Performance Review</a></li><li><a href="/pagespeed.php?test=130916_3M_KJD&run=1&cached=1">PageSpeed</a></li><li><a href="/breakdown.php?test=130916_3M_KJD&run=1&cached=1">Content Breakdown</a></li><li><a href="/domains.php?test=130916_3M_KJD&run=1&cached=1">Domains</a></li><li><a href="/screen_shot.php?test=130916_3M_KJD&run=1&cached=1">Screen Shot</a></li></ul><div class="test_results-content"><script type="text/javascript">
+  markUserTime('aft.Site Header');
+</script>
+
+            <div id="result">
+                <div id="download">
+                    <div id="testinfo">
+                                            </div>
+                    <a href="/export.php?test=130916_3M_KJD&run=1&cached=1">Export HTTP Archive (.har)</a><br>                </div>
+                <div class="cleared"></div>
+                <br>
+                <table id="tableResults" class="pretty" align="center" border="1" cellpadding="10" cellspacing="0">
+                    <tr>
+                                                <th align="center" class="empty" valign="middle" colspan="7" ></th>
+                        <th align="center" class="border" valign="middle" colspan="3">Document Complete</th>
+                        <th align="center" class="border" valign="middle" colspan="3">Fully Loaded</th>
+                    </tr>
+                    <tr>
+                        <th align="center" valign="middle">Load Time</th>
+                        <th align="center" valign="middle">First Byte</th>
+                        <th align="center" valign="middle">Start Render</th>
+                                                                                                <th align="center" valign="middle">Visually Complete</th>
+                                                                        <th align="center" valign="middle"><a href="https://sites.google.com/a/webpagetest.org/docs/using-webpagetest/metrics/speed-index" target="_blank">Speed Index</a></th>
+                                                                                                <th align="center" valign="middle">DOM Elements</th>
+                                                <th align="center" valign="middle">Result (error code)</th>
+
+                        <th align="center" class="border" valign="middle">Time</th>
+                        <th align="center" valign="middle">Requests</th>
+                        <th align="center" valign="middle">Bytes In</th>
+
+                        <th align="center" class="border" valign="middle">Time</th>
+                        <th align="center" valign="middle">Requests</th>
+                        <th align="center" valign="middle">Bytes In</th>
+                    </tr>
+                    <tr>
+                        <td id="LoadTime" valign="middle">2.235s</td>
+<td id="TTFB" valign="middle">0.629s</td>
+<td id="startRender" valign="middle">1.782s</td>
+<td id="visualComplate" valign="middle">2.300s</td>
+<td id="speedIndex" valign="middle">1997</td>
+<td id="domElements" valign="middle">365</td>
+<td id="result" valign="middle">0</td>
+<td id="docComplete" class="border" valign="middle">2.235s</td>
+<td id="requestsDoc" valign="middle">12</td>
+<td id="bytesInDoc" valign="middle">558 KB</td>
+<td id="fullyLoaded" class="border" valign="middle">2.755s</td>
+<td id="requests" valign="middle">12</td>
+<td id="bytesIn" valign="middle">558 KB</td>
+                    </tr>
+                </table><br>
+                                <script type="text/javascript">
+                  markUserTime('aft.Detail Table');
+                </script>
+
+                <div style="text-align:center;">
+                <h3 name="waterfall_view">Waterfall View</h3>
+                <table border="1" bordercolor="silver" cellpadding="2px" cellspacing="0" style="width:auto; font-size:11px; margin-left:auto; margin-right:auto;">
+                    <tr>
+                        <td><table><tr><td><div class="bar" style="width:15px; background-color:#1f7c83"></div></td><td>DNS Lookup</td></tr></table></td>
+                        <td><table><tr><td><div class="bar" style="width:15px; background-color:#e58226"></div></td><td>Initial Connection</td></tr></table></td>
+                                                <td><table><tr><td><div class="bar" style="width:15px; background-color:#1fe11f"></div></td><td>Time to First Byte</td></tr></table></td>
+                        <td><table><tr><td><div class="bar" style="width:15px; background-color:#1977dd"></div></td><td>Content Download</td></tr></table></td>
+                        <td style="vertical-align:middle; padding: 4px;"><div style="background-color:#ffff60">&nbsp;3xx response&nbsp;</div></td>
+                        <td style="vertical-align:middle; padding: 4px;"><div style="background-color:#ff6060">&nbsp;4xx+ response&nbsp;</div></td>
+                    </tr>
+                </table>
+                <table border="1" bordercolor="silver" cellpadding="2px" cellspacing="0" style="width:auto; font-size:11px; margin-left:auto; margin-right:auto; margin-top:11px;">
+                    <tr>
+                        <td><table><tr><td><div class="bar" style="width:2px; background-color:#28BC00"></div></td><td>Start Render</td></tr></table></td>
+                        <td><table><tr><td><div class="bar" style="width:2px; background-color:#0000FF"></div></td><td>Document Complete</td></tr></table></td>                    </tr>
+                </table>
+                <br>
+                <map name="waterfall_map"><area href="#request" alt="http://flickr.com" title="http://flickr.com" shape=RECT coords="0,0,250,25">
+<area href="#request1" alt="1: http://flickr.com/" title="1: http://flickr.com/" shape=RECT coords="0,26,929,42">
+<area href="#request2" alt="2: http://www.flickr.com/" title="2: http://www.flickr.com/" shape=RECT coords="0,43,929,59">
+<area href="#request3" alt="3: http://bs.serving-sys.com/BurstingPipe/ActivityServer.bs?cn=as&amp;ActivityID=313089&amp;ifrm=1&amp;rnd=748424" title="3: http://bs.serving-sys.com/BurstingPipe/ActivityServer.bs?cn=as&amp;ActivityID=313089&amp;ifrm=1&amp;rnd=748424" shape=RECT coords="0,60,929,76">
+<area href="#request4" alt="4: http://y.flickr.yahoo.com/ad?spaceid=792600119&amp;position=MAST&amp;adid=none" title="4: http://y.flickr.yahoo.com/ad?spaceid=792600119&amp;position=MAST&amp;adid=none" shape=RECT coords="0,77,929,93">
+<area href="#request5" alt="5: http://l.yimg.com/g/images/ios_marketing/soup_iphone_app.mp4" title="5: http://l.yimg.com/g/images/ios_marketing/soup_iphone_app.mp4" shape=RECT coords="0,94,929,110">
+<area href="#request6" alt="6: http://geo.yahoo.com/b?s=792600119&amp;_R=&amp;_L=m%06eyebrow%01l%06www.yahoo.com%2F%02mail.yahoo.com%2F%02news.yahoo.com%2F%02sports.yahoo.com%2F%02finance.yahoo.com%2F%02weather.yahoo.com%2F%02games.yahoo.com%2F%02groups.yahoo.com%2F%02answers.yahoo.com%2F%02www.flickr.com%2F%02javascript%3Avoid(0)%3B%02omg.yahoo.com%2F%02shine.yahoo.com%2F%02movies.yahoo.com%2F%02music.yahoo.com%2F%02tv.yahoo.com%2F%02health.yahoo.com%2F%02shopping.yahoo.com%2F%02travel.yahoo.com%2F%02autos.yahoo.com%2F%02homes.yahoo.com%2Fown-rent%2F%02mobile.yahoo.com%2F%08m%06global-nav%01l%06Logo-main%02Signup-main%02Explore-main%02Explore-recent_photos%02Explore-the_commons%02Explore-getty_collection%02Explore-galleries%02Explore-world_map%02Explore-app_garden%02Explore-camera_finder%02Explore-flickr_blog%02Upload-main%02Account-sign_in%08m%06home%01l%06signUp%02%23storage%02%23flickrdotcom%02%23mobile-apps%02signIn%08m%06huge-cta-wrapper%01l%06signUpFloaty&amp;t=1379344568&amp;_P=2.9.4%05A_pn%03%2Findex.gne%04A_sid%03luVi0CACpQzT%04_w%03www.flickr.com%2F%04A_%031" title="6: http://geo.yahoo.com/b?s=792600119&amp;_R=&amp;_L=m%06eyebrow%01l%06www.yahoo.com%2F%02mail.yahoo.com%2F%02news.yahoo.com%2F%02sports.yahoo.com%2F%02finance.yahoo.com%2F%02weather.yahoo.com%2F%02games.yahoo.com%2F%02groups.yahoo.com%2F%02answers.yahoo.com%2F%02www.flickr.com%2F%02javascript%3Avoid(0)%3B%02omg.yahoo.com%2F%02shine.yahoo.com%2F%02movies.yahoo.com%2F%02music.yahoo.com%2F%02tv.yahoo.com%2F%02health.yahoo.com%2F%02shopping.yahoo.com%2F%02travel.yahoo.com%2F%02autos.yahoo.com%2F%02homes.yahoo.com%2Fown-rent%2F%02mobile.yahoo.com%2F%08m%06global-nav%01l%06Logo-main%02Signup-main%02Explore-main%02Explore-recent_photos%02Explore-the_commons%02Explore-getty_collection%02Explore-galleries%02Explore-world_map%02Explore-app_garden%02Explore-camera_finder%02Explore-flickr_blog%02Upload-main%02Account-sign_in%08m%06home%01l%06signUp%02%23storage%02%23flickrdotcom%02%23mobile-apps%02signIn%08m%06huge-cta-wrapper%01l%06signUpFloaty&amp;t=1379344568&amp;_P=2.9.4%05A_pn%03%2Findex.gne%04A_sid%03luVi0CACpQzT%04_w%03www.flickr.com%2F%04A_%031" shape=RECT coords="0,111,929,127">
+<area href="#request7" alt="7: http://y.analytics.yahoo.com/fpc.pl?a=10001561398679&amp;b=%2Findex.gne&amp;d=Mon%20Sep%2016%2011%3A16%3A08%20EDT%202013&amp;f=http%3A%2F%2Fwww.flickr.com%2F&amp;j=1920x1200&amp;t=1379344568&amp;l=true&amp;dpid=889710007&amp;fpc=ZUHvdV4D%7CZseuNzkNaa%7Cfses10001561398679%3D%7CZseuNzkNaa%7CZUHvdV4D%7Cfvis10001561398679%3D%7C8MH7MTT10M%7C8MH7MTT10M%7C8MH7MTT10M%7C8%7C8MH7MTT10M%7C8MH7MTT10M&amp;cf07=792600119&amp;cf01=en-us&amp;cf03=Prod&amp;cf04=&amp;cf06=-1&amp;cf09=0&amp;cf10=-1&amp;cf11=-1&amp;cf12=-1&amp;cf13=2&amp;cf16=991x698&amp;cf39=n&amp;cf43=n&amp;cf45=2&amp;cf51=7&amp;cf52=3&amp;cf53=960&amp;cf54=2&amp;cf55=0&amp;cf56=0&amp;cf57=0&amp;cf58=0" title="7: http://y.analytics.yahoo.com/fpc.pl?a=10001561398679&amp;b=%2Findex.gne&amp;d=Mon%20Sep%2016%2011%3A16%3A08%20EDT%202013&amp;f=http%3A%2F%2Fwww.flickr.com%2F&amp;j=1920x1200&amp;t=1379344568&amp;l=true&amp;dpid=889710007&amp;fpc=ZUHvdV4D%7CZseuNzkNaa%7Cfses10001561398679%3D%7CZseuNzkNaa%7CZUHvdV4D%7Cfvis10001561398679%3D%7C8MH7MTT10M%7C8MH7MTT10M%7C8MH7MTT10M%7C8%7C8MH7MTT10M%7C8MH7MTT10M&amp;cf07=792600119&amp;cf01=en-us&amp;cf03=Prod&amp;cf04=&amp;cf06=-1&amp;cf09=0&amp;cf10=-1&amp;cf11=-1&amp;cf12=-1&amp;cf13=2&amp;cf16=991x698&amp;cf39=n&amp;cf43=n&amp;cf45=2&amp;cf51=7&amp;cf52=3&amp;cf53=960&amp;cf54=2&amp;cf55=0&amp;cf56=0&amp;cf57=0&amp;cf58=0" shape=RECT coords="0,128,929,144">
+<area href="#request8" alt="8: http://media.fastclick.net/w/tre?ad_id=30248;evt=23242;cat1=31867;cat2=31868;rand=[CACHEBUSTER]" title="8: http://media.fastclick.net/w/tre?ad_id=30248;evt=23242;cat1=31867;cat2=31868;rand=[CACHEBUSTER]" shape=RECT coords="0,145,929,161">
+<area href="#request9" alt="9: http://www.facebook.com/offsite_event.php?id=6008476725437&amp;amp;value=0&amp;amp;currency=USD" title="9: http://www.facebook.com/offsite_event.php?id=6008476725437&amp;amp;value=0&amp;amp;currency=USD" shape=RECT coords="0,162,929,178">
+<area href="#request10" alt="10: http://pixel.quantserve.com/pixel;r=2041482766;a=p-GXQdGwMZAv5d_;labels=_fp.event.Flickr%20Homepage;fpan=0;fpa=P0-1256111687-1379344559411;ns=1;ce=1;cm=;je=1;sr=1920x1200x24;enc=n;dst=1;et=1379344568499;tzo=240;ref=http%3A%2F%2Fwww.flickr.com%2F;url=http%3A%2F%2Fbs.serving-sys.com%2FBurstingPipe%2FActivityServer.bs%3Fcn%3Das%26ActivityID%3D313089%26ifrm%3D1%26rnd%3D748424;ogl=" title="10: http://pixel.quantserve.com/pixel;r=2041482766;a=p-GXQdGwMZAv5d_;labels=_fp.event.Flickr%20Homepage;fpan=0;fpa=P0-1256111687-1379344559411;ns=1;ce=1;cm=;je=1;sr=1920x1200x24;enc=n;dst=1;et=1379344568499;tzo=240;ref=http%3A%2F%2Fwww.flickr.com%2F;url=http%3A%2F%2Fbs.serving-sys.com%2FBurstingPipe%2FActivityServer.bs%3Fcn%3Das%26ActivityID%3D313089%26ifrm%3D1%26rnd%3D748424;ogl=" shape=RECT coords="0,179,929,195">
+<area href="#request11" alt="11: http://csc.beap.bc.yahoo.com/yi?bv=1.0.0&amp;bs=(135if4tvp(gid$u8gL_DEyNy6GDDWiUjcgsgh5NzIuNgAAAACvLh0W,st$1379344571076037,si$4409551,sp$792600119,pv$1,v$2.0))&amp;t=D_3&amp;al=(as$125looeqe,aid$iEwRZmKLFuQ-,cr$-1,ct$25,at$0,eob$gd1_match_id=-1:ypos=MAST)" title="11: http://csc.beap.bc.yahoo.com/yi?bv=1.0.0&amp;bs=(135if4tvp(gid$u8gL_DEyNy6GDDWiUjcgsgh5NzIuNgAAAACvLh0W,st$1379344571076037,si$4409551,sp$792600119,pv$1,v$2.0))&amp;t=D_3&amp;al=(as$125looeqe,aid$iEwRZmKLFuQ-,cr$-1,ct$25,at$0,eob$gd1_match_id=-1:ypos=MAST)" shape=RECT coords="0,196,929,212">
+<area href="#request12" alt="12: http://b.scorecardresearch.com/p?c1=2&amp;c2=7241469&amp;c3=&amp;c4=www.flickr.com%252F&amp;c5=792600119&amp;c6=&amp;c15=&amp;ns__t=1379344568988&amp;ns_c=utf-8" title="12: http://b.scorecardresearch.com/p?c1=2&amp;c2=7241469&amp;c3=&amp;c4=www.flickr.com%252F&amp;c5=792600119&amp;c6=&amp;c15=&amp;ns__t=1379344568988&amp;ns_c=utf-8" shape=RECT coords="0,213,929,229">
+</map><div class="waterfall-container"><img class="waterfall-image" alt="" onload="markUserTime('aft.Waterfall')" usemap="#waterfall_map" id="waterfall" src="/waterfall.php?test=130916_3M_KJD&run=1&cached=1"><div class="transparent request-overlay" id="request-overlay-1" title="1: http://flickr.com/" onclick="SelectRequest(1)" style="position: absolute; top: 26px; height: 17px;"></div>
+<div class="transparent request-overlay" id="request-overlay-2" title="2: http://www.flickr.com/" onclick="SelectRequest(2)" style="position: absolute; top: 43px; height: 17px;"></div>
+<div class="transparent request-overlay" id="request-overlay-3" title="3: http://bs.serving-sys.com/BurstingPipe/ActivityServer.bs..." onclick="SelectRequest(3)" style="position: absolute; top: 60px; height: 17px;"></div>
+<div class="transparent request-overlay" id="request-overlay-4" title="4: http://y.flickr.yahoo.com/ad?spaceid=792600119&position=MAST&adid=none" onclick="SelectRequest(4)" style="position: absolute; top: 77px; height: 17px;"></div>
+<div class="transparent request-overlay" id="request-overlay-5" title="5: http://l.yimg.com/g/images/ios_marketing/soup_iphone_app.mp4" onclick="SelectRequest(5)" style="position: absolute; top: 94px; height: 17px;"></div>
+<div class="transparent request-overlay" id="request-overlay-6" title="6: http://geo.yahoo.com/b..." onclick="SelectRequest(6)" style="position: absolute; top: 111px; height: 17px;"></div>
+<div class="transparent request-overlay" id="request-overlay-7" title="7: http://y.analytics.yahoo.com/fpc.pl..." onclick="SelectRequest(7)" style="position: absolute; top: 128px; height: 17px;"></div>
+<div class="transparent request-overlay" id="request-overlay-8" title="8: http://media.fastclick.net/w/tre?ad_id=30248;evt=23242;cat1=31867;cat2=31868;rand=[CACHEBUSTER]" onclick="SelectRequest(8)" style="position: absolute; top: 145px; height: 17px;"></div>
+<div class="transparent request-overlay" id="request-overlay-9" title="9: http://www.facebook.com/offsite_event.php?id=6008476725437&amp;value=0&amp;currency=USD" onclick="SelectRequest(9)" style="position: absolute; top: 162px; height: 17px;"></div>
+<div class="transparent request-overlay" id="request-overlay-10" title="10: http://pixel.quantserve.com/pixel;r=204148276...tivityID%3D313089%26ifrm%3D1%26rnd%3D748424;ogl=" onclick="SelectRequest(10)" style="position: absolute; top: 179px; height: 17px;"></div>
+<div class="transparent request-overlay" id="request-overlay-11" title="11: http://csc.beap.bc.yahoo.com/yi..." onclick="SelectRequest(11)" style="position: absolute; top: 196px; height: 17px;"></div>
+<div class="transparent request-overlay" id="request-overlay-12" title="12: http://b.scorecardresearch.com/p..." onclick="SelectRequest(12)" style="position: absolute; top: 213px; height: 17px;"></div>
+    <div id="request-dialog" class="jqmDialog">
+        <div id="dialog-header" class="jqmdTC jqDrag">
+            <div id="dialog-title"></div>
+            <div id="request-dialog-radio">
+                <span id="request-details-button"><input type="radio" id="radio1" value="request-details" name="radio" checked="checked" /><label for="radio1">Details</label></span>
+                <span id="request-headers-button"><input type="radio" id="radio2" value="request-headers" name="radio" /><label for="radio2">Request</label></span>
+                <span id="response-headers-button"><input type="radio" id="radio3" value="response-headers" name="radio" /><label for="radio3">Response</label></span>
+                <span id="response-body-button"><input type="radio" id="radio4" value="response-body" name="radio" /><label for="radio4">Object</label></span>
+            </div>
+        </div>
+        <div class="jqmdBC">
+            <div id="dialog-contents" class="jqmdMSG">
+                <div id="request-details" class="dialog-tab-content"></div>
+                <div id="request-headers" class="dialog-tab-content"></div>
+                <div id="response-headers" class="dialog-tab-content"></div>
+                <div id="response-body" class="dialog-tab-content"></div>
+            </div>
+        </div>
+        <div class="jqmdX jqmClose"></div>
+    </div>
+    <div id="marker"></div>
+    </div><script type="text/javascript">
+var wptRequestCount=12;
+var wptRequestData=[{"ip_addr":"98.139.240.139","method":"GET","host":"flickr.com","url":"\/","responseCode":"302","load_ms":"101","ttfb_ms":"99","load_start":"89","bytesOut":"391","bytesIn":"658","objectSize":"20","cacheControl":"private","contentType":"text\/html","contentEncoding":"gzip","type":"3","socket":"6","score_cache":"-1","score_cdn":"-1","score_gzip":"-1","score_cookies":"50","score_keep-alive":"-1","score_minify":"-1","score_combine":"-1","score_compress":"-1","score_etags":"100","is_secure":"0","dns_ms":"24","connect_ms":"64","gzip_total":"0","gzip_save":"0","minify_total":"0","minify_save":"0","image_total":"0","image_save":"0","server_count":"1","server_rtt":"63","client_port":"51027","jpeg_scan_count":"0","full_url":"http:\/\/flickr.com\/","score_progressive_jpeg":-1,"ssl_start":0,"ssl_end":0,"ssl_ms":0,"connect_start":25,"connect_end":89,"dns_start":1,"dns_end":25,"load_end":190,"ttfb_start":"89","ttfb_end":188,"download_start":188,"download_end":190,"download_ms":2,"all_start":1,"all_end":190,"all_ms":189,"headers":{"request":["GET \/ HTTP\/1.1","Accept: text\/html, application\/xhtml+xml, *\/*","Accept-Language: en-US","X-Download-Initiator: html=\"doc 03F0 win 1E58; html document\"","User-Agent: Mozilla\/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident\/5.0; PTST 2.366)","Accept-Encoding: gzip, deflate","Host: flickr.com","Connection: Keep-Alive","Cookie: BX=cdr94i193e85h&b=3&s=4r; localization=en-us%3Bus%3Bus; xb=516756"],"response":["HTTP\/1.1 302 Found","Date: Mon, 16 Sep 2013 15:16:10 GMT","P3P: policyref=\"http:\/\/info.yahoo.com\/w3c\/p3p.xml\", CP=\"CAO DSP COR CUR ADM DEV TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV\"","Set-Cookie: localization=en-us%3Bus%3Bus; expires=Mon, 14-Sep-2015 15:16:10 GMT; path=\/; domain=.flickr.com","location: http:\/\/www.flickr.com\/","Cache-Control: private","X-Served-By: www69.flickr.bf1.yahoo.com","Vary: Accept-Encoding","Content-Encoding: gzip","Content-Length: 20","Content-Type: text\/html; charset=UTF-8","Age: 0","Connection: close","Server: YTS\/1.19.11"]},"country":"United States","countryCode":"USA","city":"Sunnyvale","region":"CA","lat":37.4249,"long":-122.0074,"location":"Sunnyvale, CA","index":0,"number":1},{"ip_addr":"216.115.101.178","method":"GET","host":"www.flickr.com","url":"\/","responseCode":"200","load_ms":"538","ttfb_ms":"322","load_start":"307","bytesOut":"605","bytesIn":"55083","objectSize":"54327","cacheControl":"private","contentType":"text\/html","contentEncoding":"gzip","type":"3","socket":"11","score_cache":"0","score_cdn":"-1","score_gzip":"100","score_cookies":"50","score_keep-alive":"100","score_minify":"-1","score_combine":"-1","score_compress":"-1","score_etags":"100","is_secure":"0","dns_ms":"77","connect_ms":"38","gzip_total":"55083","gzip_save":"0","minify_total":"0","minify_save":"0","image_total":"0","image_save":"0","cache_time":"0","server_count":"8","server_rtt":"38","client_port":"52356","jpeg_scan_count":"0","full_url":"http:\/\/www.flickr.com\/","score_progressive_jpeg":-1,"ssl_start":0,"ssl_end":0,"ssl_ms":0,"connect_start":269,"connect_end":307,"dns_start":192,"dns_end":269,"load_end":845,"ttfb_start":"307","ttfb_end":629,"download_start":629,"download_end":845,"download_ms":216,"all_start":192,"all_end":845,"all_ms":653,"headers":{"request":["GET \/ HTTP\/1.1","Accept: text\/html, application\/xhtml+xml, *\/*","Accept-Language: en-US","X-Download-Initiator: html=\"doc 03F0 win 1E58; html document\"","User-Agent: Mozilla\/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident\/5.0; PTST 2.366)","Accept-Encoding: gzip, deflate","Host: www.flickr.com","Connection: Keep-Alive","Cookie: BX=cdr94i193e85h&b=3&s=4r; localization=en-us%3Bus%3Bus; xb=516756; liqpw=1008; liqph=627; ywadp10001561398679=889710007; fpc10001561398679=ZUHvdV4D|ZseuNzkNaa|fses10001561398679=|ZseuNzkNaa|ZUHvdV4D|fvis10001561398679=|8MH7MTT10M|8MH7MTT10M|8MH7MTT10M|8|8MH7MTT10M|8MH7MTT10M"],"response":["HTTP\/1.1 200 OK","Age: 0","Cache-Control: private","Connection: Keep-Alive","Content-Encoding: gzip","Content-Type: text\/html; charset=utf-8","Date: Mon, 16 Sep 2013 15:16:10 GMT","P3P: policyref=\"http:\/\/info.yahoo.com\/w3c\/p3p.xml\", CP=\"CAO DSP COR CUR ADM DEV TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV\"","Server: YTS\/1.19.11","Set-Cookie: localization=en-us%3Bus%3Bus; expires=Mon, 14-Sep-2015 15:16:10 GMT; path=\/; domain=.flickr.com","Transfer-Encoding: chunked","Vary: Accept-Encoding","Via: HTTP\/1.1 r03.ycpi.nyc.yahoo.net UserFiberFramework\/1.0","X-Served-By: www265.flickr.bf1.yahoo.com","X-XRDS-Location: http:\/\/open.login.yahooapis.com\/openid20\/www.flickr.com\/xrds"]},"country":"United States","countryCode":"USA","city":"Sunnyvale","region":"CA","lat":37.4249,"long":-122.0074,"location":"Sunnyvale, CA","index":1,"number":2},{"ip_addr":"63.241.108.124","method":"GET","host":"bs.serving-sys.com","url":"\/BurstingPipe\/ActivityServer.bs?cn=as&ActivityID=313089&ifrm=1&rnd=748424","responseCode":"200","load_ms":"138","ttfb_ms":"47","load_start":"867","bytesOut":"557","bytesIn":"1299","objectSize":"680","expires":"Sun, 05-Jun-2005 22:00:00 GMT","cacheControl":"no-cache, no-store","contentType":"text\/html","contentEncoding":"gzip","type":"3","socket":"18","score_cache":"-1","score_cdn":"-1","score_gzip":"100","score_cookies":"50","score_keep-alive":"-1","score_minify":"-1","score_combine":"-1","score_compress":"-1","score_etags":"100","is_secure":"0","dns_ms":"29","connect_ms":"46","gzip_total":"1299","gzip_save":"0","minify_total":"0","minify_save":"0","image_total":"0","image_save":"0","server_count":"1","server_rtt":"46","client_port":"52358","jpeg_scan_count":"0","full_url":"http:\/\/bs.serving-sys.com\/BurstingPipe\/ActivityServer.bs?cn=as&ActivityID=313089&ifrm=1&rnd=748424","score_progressive_jpeg":-1,"ssl_start":0,"ssl_end":0,"ssl_ms":0,"connect_start":821,"connect_end":867,"dns_start":792,"dns_end":821,"load_end":1005,"ttfb_start":"867","ttfb_end":914,"download_start":914,"download_end":1005,"download_ms":91,"all_start":792,"all_end":1005,"all_ms":213,"headers":{"request":["GET \/BurstingPipe\/ActivityServer.bs?cn=as&ActivityID=313089&ifrm=1&rnd=748424 HTTP\/1.1","Accept: text\/html, application\/xhtml+xml, *\/*","Referer: http:\/\/www.flickr.com\/","Accept-Language: en-US","X-Download-Initiator: html=\"doc 03F0 win 7928; html frame markup parse\"","User-Agent: Mozilla\/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident\/5.0; PTST 2.366)","Accept-Encoding: gzip, deflate","Host: bs.serving-sys.com","Connection: Keep-Alive","Cookie: ActivityInfo2=001jrPhzR0%5f; u2=27c18333-073e-4bed-9959-89660e3012b13Vs070; __qca=P0-1256111687-1379344559411"],"response":["HTTP\/1.1 200 OK","Cache-Control: no-cache, no-store","Pragma: no-cache","Content-Type: text\/html","Content-Encoding: gzip","Expires: Sun, 05-Jun-2005 22:00:00 GMT","Vary: Accept-Encoding","Server: Microsoft-IIS\/7.5","Set-Cookie: ActivityInfo2=001jrPhzR0%5f; expires=Sun, 15-Dec-2013 11:16:11 GMT; domain=.serving-sys.com; path=\/","Set-Cookie: u2=27c18333-073e-4bed-9959-89660e3012b13Vs07g; expires=Sun, 15-Dec-2013 11:16:11 GMT; domain=.serving-sys.com; path=\/","Access-Control-Allow-Origin: *","X-Powered-By: ASP.NET","P3P: CP=\"NOI DEVa OUR BUS UNI\"","Date: Mon, 16 Sep 2013 15:16:10 GMT","Connection: close","Content-Length: 680"]},"country":"United States","countryCode":"USA","city":null,"region":null,"lat":38,"long":-97,"location":"United States","index":2,"number":3},{"ip_addr":"98.139.240.139","method":"GET","host":"y.flickr.yahoo.com","url":"\/ad?spaceid=792600119&position=MAST&adid=none","responseCode":"200","load_ms":"906","ttfb_ms":"408","load_start":"883","bytesOut":"444","bytesIn":"1262","objectSize":"570","cacheControl":"private","contentType":"text\/html","contentEncoding":"gzip","type":"3","socket":"21","score_cache":"0","score_cdn":"-1","score_gzip":"100","score_cookies":"50","score_keep-alive":"-1","score_minify":"-1","score_combine":"-1","score_compress":"-1","score_etags":"100","is_secure":"0","dns_ms":"29","connect_ms":"63","gzip_total":"1262","gzip_save":"0","minify_total":"0","minify_save":"0","image_total":"0","image_save":"0","cache_time":"0","server_count":"1","server_rtt":"63","client_port":"52360","jpeg_scan_count":"0","full_url":"http:\/\/y.flickr.yahoo.com\/ad?spaceid=792600119&position=MAST&adid=none","score_progressive_jpeg":-1,"ssl_start":0,"ssl_end":0,"ssl_ms":0,"connect_start":820,"connect_end":883,"dns_start":791,"dns_end":820,"load_end":1789,"ttfb_start":"883","ttfb_end":1291,"download_start":1291,"download_end":1789,"download_ms":498,"all_start":791,"all_end":1789,"all_ms":998,"headers":{"request":["GET \/ad?spaceid=792600119&position=MAST&adid=none HTTP\/1.1","Accept: text\/html, application\/xhtml+xml, *\/*","Referer: http:\/\/www.flickr.com\/","Accept-Language: en-US","X-Download-Initiator: html=\"doc 03F0 win CCA8; html frame markup parse\"","User-Agent: Mozilla\/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident\/5.0; PTST 2.366)","Accept-Encoding: gzip, deflate","Host: y.flickr.yahoo.com","Connection: Keep-Alive","Cookie: B=8c31lk993e85i&b=3&s=43"],"response":["HTTP\/1.1 200 OK","Date: Mon, 16 Sep 2013 15:16:11 GMT","P3P: policyref=\"http:\/\/info.yahoo.com\/w3c\/p3p.xml\", CP=\"CAO DSP COR CUR ADM DEV TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV\"","Set-Cookie: localization=en-us%3Bus%3Bus; expires=Mon, 14-Sep-2015 15:16:11 GMT; path=\/; domain=.flickr.com","Set-Cookie: xb=995700; expires=Thu, 17-Sep-2015 15:16:11 GMT; path=\/; domain=.flickr.com","Cache-Control: private","X-Served-By: www35.flickr.bf1.yahoo.com","Vary: Accept-Encoding","Content-Encoding: gzip","Content-Length: 570","Content-Type: text\/html; charset=UTF-8","Age: 0","Connection: close","Server: YTS\/1.19.11"]},"country":"United States","countryCode":"USA","city":"Sunnyvale","region":"CA","lat":37.4249,"long":-122.0074,"location":"Sunnyvale, CA","index":3,"number":4},{"ip_addr":"206.190.56.191","method":"GET","host":"l.yimg.com","url":"\/g\/images\/ios_marketing\/soup_iphone_app.mp4","responseCode":"200","load_ms":"986","ttfb_ms":"234","load_start":"1767","bytesOut":"293","bytesIn":"509540","objectSize":"508913","expires":"Mon, 28 Jul 2014 23:30:00 GMT","cacheControl":"max-age=315360000","contentType":"video\/mp4","type":"3","socket":"30","score_cache":"100","score_cdn":"-1","score_gzip":"0","score_cookies":"100","score_keep-alive":"100","score_minify":"-1","score_combine":"-1","score_compress":"-1","score_etags":"100","is_secure":"0","dns_ms":"189","connect_ms":"34","gzip_total":"509540","gzip_save":"0","minify_total":"0","minify_save":"0","image_total":"0","image_save":"0","cache_time":"27822157","cdn_provider":"Yahoo","server_count":"2","server_rtt":"34","client_port":"52362","jpeg_scan_count":"0","full_url":"http:\/\/l.yimg.com\/g\/images\/ios_marketing\/soup_iphone_app.mp4","score_progressive_jpeg":-1,"ssl_start":0,"ssl_end":0,"ssl_ms":0,"connect_start":1733,"connect_end":1767,"dns_start":1544,"dns_end":1733,"load_end":2753,"ttfb_start":"1767","ttfb_end":2001,"download_start":2001,"download_end":2753,"download_ms":752,"all_start":1544,"all_end":2753,"all_ms":1209,"headers":{"request":["GET \/g\/images\/ios_marketing\/soup_iphone_app.mp4 HTTP\/1.1","Accept: *\/*","User-Agent: Mozilla\/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident\/5.0; PTST 2.366)","Referer: http:\/\/www.flickr.com\/","Accept-Language: en-US","Accept-Encoding: gzip, deflate","Host: l.yimg.com","Connection: Keep-Alive"],"response":["HTTP\/1.1 200 OK","Date: Mon, 09 Sep 2013 23:07:23 GMT","P3P: policyref=\"http:\/\/info.yahoo.com\/w3c\/p3p.xml\", CP=\"CAO DSP COR CUR ADM DEV TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV\"","Last-Modified: Sat, 17 Aug 2013 14:48:15 GMT","Accept-Ranges: bytes","Content-Length: 3849987","Cache-Control: max-age=315360000","X-Served-By: www379.flickr.mud.yahoo.com","Expires: Mon, 28 Jul 2014 23:30:00 GMT","Content-Type: video\/mp4","Age: 576529","Connection: keep-alive","Via: http\/1.1 l18.ycs.dcb.yahoo.com (ApacheTrafficServer\/3.2.0)","Server: ATS\/3.2.0"]},"location":"Yahoo","index":4,"number":5},{"ip_addr":"66.196.116.162","method":"GET","host":"geo.yahoo.com","url":"\/b?s=792600119&_R=&_L=m%06eyebrow%01l%06www.yahoo.com%2F%02mail.yahoo.com%2F%02news.yahoo.com%2F%02sports.yahoo.com%2F%02finance.yahoo.com%2F%02weather.yahoo.com%2F%02games.yahoo.com%2F%02groups.yahoo.com%2F%02answers.yahoo.com%2F%02www.flickr.com%2F%02javascript%3Avoid(0)%3B%02omg.yahoo.com%2F%02shine.yahoo.com%2F%02movies.yahoo.com%2F%02music.yahoo.com%2F%02tv.yahoo.com%2F%02health.yahoo.com%2F%02shopping.yahoo.com%2F%02travel.yahoo.com%2F%02autos.yahoo.com%2F%02homes.yahoo.com%2Fown-rent%2F%02mobile.yahoo.com%2F%08m%06global-nav%01l%06Logo-main%02Signup-main%02Explore-main%02Explore-recent_photos%02Explore-the_commons%02Explore-getty_collection%02Explore-galleries%02Explore-world_map%02Explore-app_garden%02Explore-camera_finder%02Explore-flickr_blog%02Upload-main%02Account-sign_in%08m%06home%01l%06signUp%02%23storage%02%23flickrdotcom%02%23mobile-apps%02signIn%08m%06huge-cta-wrapper%01l%06signUpFloaty&t=1379344568&_P=2.9.4%05A_pn%03%2Findex.gne%04A_sid%03luVi0CACpQzT%04_w%03www.flickr.com%2F%04A_%031","responseCode":"200","load_ms":"115","ttfb_ms":"115","load_start":"2001","bytesOut":"1430","bytesIn":"441","objectSize":"43","cacheControl":"no-cache, no-store, private","contentType":"image\/gif","type":"3","socket":"33","score_cache":"-1","score_cdn":"-1","score_gzip":"-1","score_cookies":"50","score_keep-alive":"-1","score_minify":"-1","score_combine":"-1","score_compress":"100","score_etags":"100","is_secure":"0","dns_ms":"110","connect_ms":"266","gzip_total":"0","gzip_save":"0","minify_total":"0","minify_save":"0","image_total":"43","image_save":"0","server_count":"1","server_rtt":"266","client_port":"52364","jpeg_scan_count":"0","full_url":"http:\/\/geo.yahoo.com\/b?s=792600119&_R=&_L=m%06eyebrow%01l%06www.yahoo.com%2F%02mail.yahoo.com%2F%02news.yahoo.com%2F%02sports.yahoo.com%2F%02finance.yahoo.com%2F%02weather.yahoo.com%2F%02games.yahoo.com%2F%02groups.yahoo.com%2F%02answers.yahoo.com%2F%02www.flickr.com%2F%02javascript%3Avoid(0)%3B%02omg.yahoo.com%2F%02shine.yahoo.com%2F%02movies.yahoo.com%2F%02music.yahoo.com%2F%02tv.yahoo.com%2F%02health.yahoo.com%2F%02shopping.yahoo.com%2F%02travel.yahoo.com%2F%02autos.yahoo.com%2F%02homes.yahoo.com%2Fown-rent%2F%02mobile.yahoo.com%2F%08m%06global-nav%01l%06Logo-main%02Signup-main%02Explore-main%02Explore-recent_photos%02Explore-the_commons%02Explore-getty_collection%02Explore-galleries%02Explore-world_map%02Explore-app_garden%02Explore-camera_finder%02Explore-flickr_blog%02Upload-main%02Account-sign_in%08m%06home%01l%06signUp%02%23storage%02%23flickrdotcom%02%23mobile-apps%02signIn%08m%06huge-cta-wrapper%01l%06signUpFloaty&t=1379344568&_P=2.9.4%05A_pn%03%2Findex.gne%04A_sid%03luVi0CACpQzT%04_w%03www.flickr.com%2F%04A_%031","score_progressive_jpeg":-1,"ssl_start":0,"ssl_end":0,"ssl_ms":0,"connect_start":1735,"connect_end":2001,"dns_start":1625,"dns_end":1735,"load_end":2116,"ttfb_start":"2001","ttfb_end":2116,"download_start":2116,"download_end":2116,"download_ms":0,"all_start":1625,"all_end":2116,"all_ms":491,"headers":{"request":["GET \/b?s=792600119&_R=&_L=m%06eyebrow%01l%06www.yahoo.com%2F%02mail.yahoo.com%2F%02news.yahoo.com%2F%02sports.yahoo.com%2F%02finance.yahoo.com%2F%02weather.yahoo.com%2F%02games.yahoo.com%2F%02groups.yahoo.com%2F%02answers.yahoo.com%2F%02www.flickr.com%2F%02javascript%3Avoid(0)%3B%02omg.yahoo.com%2F%02shine.yahoo.com%2F%02movies.yahoo.com%2F%02music.yahoo.com%2F%02tv.yahoo.com%2F%02health.yahoo.com%2F%02shopping.yahoo.com%2F%02travel.yahoo.com%2F%02autos.yahoo.com%2F%02homes.yahoo.com%2Fown-rent%2F%02mobile.yahoo.com%2F%08m%06global-nav%01l%06Logo-main%02Signup-main%02Explore-main%02Explore-recent_photos%02Explore-the_commons%02Explore-getty_collection%02Explore-galleries%02Explore-world_map%02Explore-app_garden%02Explore-camera_finder%02Explore-flickr_blog%02Upload-main%02Account-sign_in%08m%06home%01l%06signUp%02%23storage%02%23flickrdotcom%02%23mobile-apps%02signIn%08m%06huge-cta-wrapper%01l%06signUpFloaty&t=1379344568&_P=2.9.4%05A_pn%03%2Findex.gne%04A_sid%03luVi0CACpQzT%04_w%03www.flickr.com%2F%04A_%031 HTTP\/1.1","Accept: image\/png, image\/svg+xml, image\/*;q=0.8, *\/*;q=0.5","Referer: http:\/\/www.flickr.com\/","Accept-Language: en-US","X-Download-Initiator: image=\"doc 03F0 win 1E58; image; src; property change\"","User-Agent: Mozilla\/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident\/5.0; PTST 2.366)","Accept-Encoding: gzip, deflate","Host: geo.yahoo.com","Connection: Keep-Alive","Cookie: B=8c31lk993e85i&b=3&s=43"],"response":["HTTP\/1.1 200 OK","Date: Mon, 16 Sep 2013 15:16:12 GMT","P3P: policyref=\"http:\/\/info.yahoo.com\/w3c\/p3p.xml\", CP=\"CAO DSP COR CUR ADM DEV TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV\"","Cache-Control: no-cache, no-store, private","Pragma: no-cache","Content-Length: 43","Connection: close","Content-Type: image\/gif"]},"country":"United States","countryCode":"USA","city":"Sunnyvale","region":"CA","lat":37.4249,"long":-122.0074,"location":"Sunnyvale, CA","index":5,"number":6},{"ip_addr":"98.139.225.23","method":"GET","host":"y.analytics.yahoo.com","url":"\/fpc.pl?a=10001561398679&b=%2Findex.gne&d=Mon%20Sep%2016%2011%3A16%3A08%20EDT%202013&f=http%3A%2F%2Fwww.flickr.com%2F&j=1920x1200&t=1379344568&l=true&dpid=889710007&fpc=ZUHvdV4D%7CZseuNzkNaa%7Cfses10001561398679%3D%7CZseuNzkNaa%7CZUHvdV4D%7Cfvis10001561398679%3D%7C8MH7MTT10M%7C8MH7MTT10M%7C8MH7MTT10M%7C8%7C8MH7MTT10M%7C8MH7MTT10M&cf07=792600119&cf01=en-us&cf03=Prod&cf04=&cf06=-1&cf09=0&cf10=-1&cf11=-1&cf12=-1&cf13=2&cf16=991x698&cf39=n&cf43=n&cf45=2&cf51=7&cf52=3&cf53=960&cf54=2&cf55=0&cf56=0&cf57=0&cf58=0","responseCode":"200","load_ms":"219","ttfb_ms":"219","load_start":"1785","bytesOut":"924","bytesIn":"722","objectSize":"46","expires":"Mon, 16 Sep 2013 15:16:12 GMT","cacheControl":"no-cache, private, must-revalidate","contentType":"application\/x-javascript","type":"3","socket":"35","score_cache":"-1","score_cdn":"-1","score_gzip":"-1","score_cookies":"50","score_keep-alive":"-1","score_minify":"100","score_combine":"-1","score_compress":"-1","score_etags":"100","is_secure":"0","dns_ms":"110","connect_ms":"50","gzip_total":"0","gzip_save":"0","minify_total":"722","minify_save":"0","image_total":"0","image_save":"0","server_count":"1","server_rtt":"50","client_port":"52365","jpeg_scan_count":"0","full_url":"http:\/\/y.analytics.yahoo.com\/fpc.pl?a=10001561398679&b=%2Findex.gne&d=Mon%20Sep%2016%2011%3A16%3A08%20EDT%202013&f=http%3A%2F%2Fwww.flickr.com%2F&j=1920x1200&t=1379344568&l=true&dpid=889710007&fpc=ZUHvdV4D%7CZseuNzkNaa%7Cfses10001561398679%3D%7CZseuNzkNaa%7CZUHvdV4D%7Cfvis10001561398679%3D%7C8MH7MTT10M%7C8MH7MTT10M%7C8MH7MTT10M%7C8%7C8MH7MTT10M%7C8MH7MTT10M&cf07=792600119&cf01=en-us&cf03=Prod&cf04=&cf06=-1&cf09=0&cf10=-1&cf11=-1&cf12=-1&cf13=2&cf16=991x698&cf39=n&cf43=n&cf45=2&cf51=7&cf52=3&cf53=960&cf54=2&cf55=0&cf56=0&cf57=0&cf58=0","score_progressive_jpeg":-1,"ssl_start":0,"ssl_end":0,"ssl_ms":0,"connect_start":1735,"connect_end":1785,"dns_start":1625,"dns_end":1735,"load_end":2004,"ttfb_start":"1785","ttfb_end":2004,"download_start":2004,"download_end":2004,"download_ms":0,"all_start":1625,"all_end":2004,"all_ms":379,"headers":{"request":["GET \/fpc.pl?a=10001561398679&b=%2Findex.gne&d=Mon%20Sep%2016%2011%3A16%3A08%20EDT%202013&f=http%3A%2F%2Fwww.flickr.com%2F&j=1920x1200&t=1379344568&l=true&dpid=889710007&fpc=ZUHvdV4D%7CZseuNzkNaa%7Cfses10001561398679%3D%7CZseuNzkNaa%7CZUHvdV4D%7Cfvis10001561398679%3D%7C8MH7MTT10M%7C8MH7MTT10M%7C8MH7MTT10M%7C8%7C8MH7MTT10M%7C8MH7MTT10M&cf07=792600119&cf01=en-us&cf03=Prod&cf04=&cf06=-1&cf09=0&cf10=-1&cf11=-1&cf12=-1&cf13=2&cf16=991x698&cf39=n&cf43=n&cf45=2&cf51=7&cf52=3&cf53=960&cf54=2&cf55=0&cf56=0&cf57=0&cf58=0 HTTP\/1.1","Accept: application\/javascript, *\/*;q=0.8","Referer: http:\/\/www.flickr.com\/","Accept-Language: en-US","X-Download-Initiator: script=\"doc 03F0 win 1E58; script element; src; property change\"","User-Agent: Mozilla\/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident\/5.0; PTST 2.366)","Accept-Encoding: gzip, deflate","Host: y.analytics.yahoo.com","Connection: Keep-Alive","Cookie: B=8c31lk993e85i&b=3&s=43"],"response":["HTTP\/1.1 200 OK","Date: Mon, 16 Sep 2013 15:16:11 GMT","P3P: policyref=\"http:\/\/info.yahoo.com\/w3c\/p3p.xml\", CP=\"CAO DSP COR CUR ADM DEV TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV\"","Set-Cookie: itsc=ZseuNzkNaa|ZUHvdV4D|fvis10001561398679=|M|M|M|s|8MH7MTT1H8|M; path=\/; domain=.analytics.yahoo.com","TS: 0 741 dc28_bf1","Pragma: no-cache","Expires: Mon, 16 Sep 2013 15:16:12 GMT","Cache-Control: no-cache, private, must-revalidate","Content-Length: 46","Accept-Ranges: bytes","Tracking-Status: fpc site tracked","Vary: Accept-Encoding","Connection: close","Content-Type: application\/x-javascript"]},"country":"United States","countryCode":"USA","city":"Sunnyvale","region":"CA","lat":37.4249,"long":-122.0074,"location":"Sunnyvale, CA","index":6,"number":7},{"ip_addr":"8.18.45.90","method":"GET","host":"media.fastclick.net","url":"\/w\/tre?ad_id=30248;evt=23242;cat1=31867;cat2=31868;rand=[CACHEBUSTER]","responseCode":"200","load_ms":"115","ttfb_ms":"114","load_start":"2001","bytesOut":"554","bytesIn":"415","objectSize":"43","expires":"0","cacheControl":"no-cache","contentType":"image\/gif","type":"3","socket":"43","score_cache":"-1","score_cdn":"-1","score_gzip":"-1","score_cookies":"50","score_keep-alive":"100","score_minify":"-1","score_combine":"-1","score_compress":"100","score_etags":"100","is_secure":"0","dns_ms":"25","connect_ms":"239","gzip_total":"0","gzip_save":"0","minify_total":"0","minify_save":"0","image_total":"43","image_save":"0","server_count":"1","server_rtt":"239","client_port":"52368","jpeg_scan_count":"0","full_url":"http:\/\/media.fastclick.net\/w\/tre?ad_id=30248;evt=23242;cat1=31867;cat2=31868;rand=[CACHEBUSTER]","score_progressive_jpeg":-1,"ssl_start":0,"ssl_end":0,"ssl_ms":0,"connect_start":1762,"connect_end":2001,"dns_start":1737,"dns_end":1762,"load_end":2116,"ttfb_start":"2001","ttfb_end":2115,"download_start":2115,"download_end":2116,"download_ms":1,"all_start":1737,"all_end":2116,"all_ms":379,"headers":{"request":["GET \/w\/tre?ad_id=30248;evt=23242;cat1=31867;cat2=31868;rand=[CACHEBUSTER] HTTP\/1.1","Accept: image\/png, image\/svg+xml, image\/*;q=0.8, *\/*;q=0.5","Referer: http:\/\/bs.serving-sys.com\/BurstingPipe\/ActivityServer.bs?cn=as&ActivityID=313089&ifrm=1&rnd=748424","Accept-Language: en-US","X-Download-Initiator: image=\"doc 03F0; speculative; html tokenizer 5C98\"","User-Agent: Mozilla\/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident\/5.0; PTST 2.366)","Accept-Encoding: gzip, deflate","Host: media.fastclick.net","Connection: Keep-Alive","Cookie: pluto2=453094165939"],"response":["HTTP\/1.1 200 OK","Date: Mon, 16 Sep 2013 15:16:12 GMT","Server: Apache\/2.2.4 (Unix) mod_apreq2-20090110\/2.7.1","Cache-Control: no-cache","Pragma: no-cache","Expires: 0","Content-Length: 43","Content-Type: image\/gif","P3P: policyref=\"\/w3c\/p3p.xml\", CP=\"NOI NID DEVo TAIo PSAo HISo OTPo OUR DELo BUS COM NAV INT DSP COR\"","Keep-Alive: timeout=5, max=19866","Connection: Keep-Alive"]},"country":"United States","countryCode":"USA","city":"New York","region":"NY","lat":40.7143,"long":-74.006,"location":"New York, NY","index":7,"number":8},{"ip_addr":"76.13.28.70","method":"GET","host":"www.facebook.com","url":"\/offsite_event.php?id=6008476725437&amp;value=0&amp;currency=USD","responseCode":"200","load_ms":"131","ttfb_ms":"131","load_start":"2001","bytesOut":"521","bytesIn":"467","objectSize":"73","expires":"Mon, 16 Sep 2013 08:16:12 PDT","cacheControl":"public, max-age=0","contentType":"image\/gif","contentEncoding":"gzip","type":"3","socket":"57","score_cache":"0","score_cdn":"0","score_gzip":"100","score_cookies":"100","score_keep-alive":"100","score_minify":"-1","score_combine":"-1","score_compress":"100","score_etags":"100","is_secure":"0","dns_ms":"26","connect_ms":"234","gzip_total":"467","gzip_save":"0","minify_total":"0","minify_save":"0","image_total":"43","image_save":"0","cache_time":"0","server_count":"1","server_rtt":"75","client_port":"0","jpeg_scan_count":"0","full_url":"http:\/\/www.facebook.com\/offsite_event.php?id=6008476725437&amp;value=0&amp;currency=USD","score_progressive_jpeg":-1,"ssl_start":0,"ssl_end":0,"ssl_ms":0,"connect_start":1767,"connect_end":2001,"dns_start":1741,"dns_end":1767,"load_end":2132,"ttfb_start":"2001","ttfb_end":2132,"download_start":2132,"download_end":2132,"download_ms":0,"all_start":1741,"all_end":2132,"all_ms":391,"headers":{"request":["GET \/offsite_event.php?id=6008476725437&amp;value=0&amp;currency=USD HTTP\/1.1","Accept: image\/png, image\/svg+xml, image\/*;q=0.8, *\/*;q=0.5","Referer: http:\/\/bs.serving-sys.com\/BurstingPipe\/ActivityServer.bs?cn=as&ActivityID=313089&ifrm=1&rnd=748424","Accept-Language: en-US","X-Download-Initiator: image=\"doc 03F0 win 7928; image; src; property change\"","User-Agent: Mozilla\/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident\/5.0; PTST 2.366)","Accept-Encoding: gzip, deflate","Host: www.facebook.com","Connection: Keep-Alive"],"response":["HTTP\/1.1 200 OK","Cache-Control: public, max-age=0","Content-Type: image\/gif","Date: Mon, 16 Sep 2013 08:16:12 PDT","Expires: Mon, 16 Sep 2013 08:16:12 PDT","Pragma: public","X-Content-Type-Options: nosniff","X-UA-Compatible: IE=edge,chrome=1","X-XSS-Protection: 0","Content-Encoding: gzip","X-FB-Debug: v4iyfXYXEuBIFicLnt\/2\/AKz2k2IdbO1C5GPqmlslXg=","Transfer-Encoding: chunked","Connection: keep-alive"]},"country":"United States","countryCode":"USA","city":"Sunnyvale","region":"CA","lat":37.4249,"long":-122.0074,"location":"Sunnyvale, CA","index":8,"number":9},{"ip_addr":"64.94.107.37","method":"GET","host":"pixel.quantserve.com","url":"\/pixel;r=2041482766;a=p-GXQdGwMZAv5d_;labels=_fp.event.Flickr%20Homepage;fpan=0;fpa=P0-1256111687-1379344559411;ns=1;ce=1;cm=;je=1;sr=1920x1200x24;enc=n;dst=1;et=1379344568499;tzo=240;ref=http%3A%2F%2Fwww.flickr.com%2F;url=http%3A%2F%2Fbs.serving-sys.com%2FBurstingPipe%2FActivityServer.bs%3Fcn%3Das%26ActivityID%3D313089%26ifrm%3D1%26rnd%3D748424;ogl=","responseCode":"200","load_ms":"33","ttfb_ms":"33","load_start":"2117","bytesOut":"852","bytesIn":"287","objectSize":"35","expires":"Fri, 04 Aug 1978 12:00:00 GMT","cacheControl":"private, no-cache, no-store, proxy-revalidate","contentType":"image\/gif","type":"3","socket":"53","score_cache":"-1","score_cdn":"-1","score_gzip":"-1","score_cookies":"50","score_keep-alive":"-1","score_minify":"-1","score_combine":"-1","score_compress":"100","score_etags":"100","is_secure":"0","dns_ms":"251","connect_ms":"75","gzip_total":"0","gzip_save":"0","minify_total":"0","minify_save":"0","image_total":"35","image_save":"0","server_count":"8","server_rtt":"75","client_port":"52372","jpeg_scan_count":"0","full_url":"http:\/\/pixel.quantserve.com\/pixel;r=2041482766;a=p-GXQdGwMZAv5d_;labels=_fp.event.Flickr%20Homepage;fpan=0;fpa=P0-1256111687-1379344559411;ns=1;ce=1;cm=;je=1;sr=1920x1200x24;enc=n;dst=1;et=1379344568499;tzo=240;ref=http%3A%2F%2Fwww.flickr.com%2F;url=http%3A%2F%2Fbs.serving-sys.com%2FBurstingPipe%2FActivityServer.bs%3Fcn%3Das%26ActivityID%3D313089%26ifrm%3D1%26rnd%3D748424;ogl=","score_progressive_jpeg":-1,"ssl_start":0,"ssl_end":0,"ssl_ms":0,"connect_start":2042,"connect_end":2117,"dns_start":1791,"dns_end":2042,"load_end":2150,"ttfb_start":"2117","ttfb_end":2150,"download_start":2150,"download_end":2150,"download_ms":0,"all_start":1791,"all_end":2150,"all_ms":359,"headers":{"request":["GET \/pixel;r=2041482766;a=p-GXQdGwMZAv5d_;labels=_fp.event.Flickr%20Homepage;fpan=0;fpa=P0-1256111687-1379344559411;ns=1;ce=1;cm=;je=1;sr=1920x1200x24;enc=n;dst=1;et=1379344568499;tzo=240;ref=http%3A%2F%2Fwww.flickr.com%2F;url=http%3A%2F%2Fbs.serving-sys.com%2FBurstingPipe%2FActivityServer.bs%3Fcn%3Das%26ActivityID%3D313089%26ifrm%3D1%26rnd%3D748424;ogl= HTTP\/1.1","Accept: image\/png, image\/svg+xml, image\/*;q=0.8, *\/*;q=0.5","Referer: http:\/\/bs.serving-sys.com\/BurstingPipe\/ActivityServer.bs?cn=as&ActivityID=313089&ifrm=1&rnd=748424","Accept-Language: en-US","X-Download-Initiator: image=\"doc 03F0 win 7928; image; src; property change\"","User-Agent: Mozilla\/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident\/5.0; PTST 2.366)","Accept-Encoding: gzip, deflate","Host: pixel.quantserve.com","Connection: Keep-Alive","Cookie: mc=523720b3-30e14-bd757-a0671"],"response":["HTTP\/1.1 200 OK","Connection: close","Content-Type: image\/gif","Cache-Control: private, no-cache, no-store, proxy-revalidate","Pragma: no-cache","Expires: Fri, 04 Aug 1978 12:00:00 GMT","Content-Length: 35","Date: Mon, 16 Sep 2013 15:16:12 GMT","Server: QS"]},"country":"United States","countryCode":"USA","city":"Atlanta","region":"GA","lat":33.7516,"long":-84.3915,"location":"Atlanta, GA","index":9,"number":10},{"ip_addr":"76.13.28.70","method":"GET","host":"csc.beap.bc.yahoo.com","url":"\/yi?bv=1.0.0&bs=(135if4tvp(gid$u8gL_DEyNy6GDDWiUjcgsgh5NzIuNgAAAACvLh0W,st$1379344571076037,si$4409551,sp$792600119,pv$1,v$2.0))&t=D_3&al=(as$125looeqe,aid$iEwRZmKLFuQ-,cr$-1,ct$25,at$0,eob$gd1_match_id=-1:ypos=MAST)","responseCode":"200","load_ms":"72","ttfb_ms":"71","load_start":"2118","bytesOut":"703","bytesIn":"460","objectSize":"59","cacheControl":"no-cache, private","contentType":"image\/gif","type":"3","socket":"55","score_cache":"-1","score_cdn":"-1","score_gzip":"-1","score_cookies":"50","score_keep-alive":"-1","score_minify":"-1","score_combine":"-1","score_compress":"100","score_etags":"100","is_secure":"0","dns_ms":"36","connect_ms":"75","gzip_total":"0","gzip_save":"0","minify_total":"0","minify_save":"0","image_total":"43","image_save":"0","server_count":"1","server_rtt":"75","client_port":"52373","jpeg_scan_count":"0","full_url":"http:\/\/csc.beap.bc.yahoo.com\/yi?bv=1.0.0&bs=(135if4tvp(gid$u8gL_DEyNy6GDDWiUjcgsgh5NzIuNgAAAACvLh0W,st$1379344571076037,si$4409551,sp$792600119,pv$1,v$2.0))&t=D_3&al=(as$125looeqe,aid$iEwRZmKLFuQ-,cr$-1,ct$25,at$0,eob$gd1_match_id=-1:ypos=MAST)","score_progressive_jpeg":-1,"ssl_start":0,"ssl_end":0,"ssl_ms":0,"connect_start":2043,"connect_end":2118,"dns_start":2007,"dns_end":2043,"load_end":2190,"ttfb_start":"2118","ttfb_end":2189,"download_start":2189,"download_end":2190,"download_ms":1,"all_start":2007,"all_end":2190,"all_ms":183,"headers":{"request":["GET \/yi?bv=1.0.0&bs=(135if4tvp(gid$u8gL_DEyNy6GDDWiUjcgsgh5NzIuNgAAAACvLh0W,st$1379344571076037,si$4409551,sp$792600119,pv$1,v$2.0))&t=D_3&al=(as$125looeqe,aid$iEwRZmKLFuQ-,cr$-1,ct$25,at$0,eob$gd1_match_id=-1:ypos=MAST) HTTP\/1.1","Accept: image\/png, image\/svg+xml, image\/*;q=0.8, *\/*;q=0.5","Referer: http:\/\/y.flickr.yahoo.com\/ad?spaceid=792600119&position=MAST&adid=none","Accept-Language: en-US","X-Download-Initiator: image=\"doc 03F0; speculative; html tokenizer 2F40; html lookahead 1:4548\"","User-Agent: Mozilla\/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident\/5.0; PTST 2.366)","Accept-Encoding: gzip, deflate","Host: csc.beap.bc.yahoo.com","Connection: Keep-Alive","Cookie: B=8c31lk993e85i&b=3&s=43"],"response":["HTTP\/1.1 200 OK","Date: Mon, 16 Sep 2013 15:16:12 GMT","P3P: policyref=\"http:\/\/info.yahoo.com\/w3c\/p3p.xml\", CP=\"CAO DSP COR CUR ADM DEV TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV\"","Cache-Control: no-cache, private","Accept-Charset: utf-8","Connection: close","Transfer-Encoding: chunked","Content-Type: image\/gif"]},"country":"United States","countryCode":"USA","city":"Sunnyvale","region":"CA","lat":37.4249,"long":-122.0074,"location":"Sunnyvale, CA","index":10,"number":11},{"ip_addr":"107.14.43.227","method":"GET","host":"b.scorecardresearch.com","url":"\/p?c1=2&c2=7241469&c3=&c4=www.flickr.com%252F&c5=792600119&c6=&c15=&ns__t=1379344568988&ns_c=utf-8","responseCode":"200","load_ms":"148","ttfb_ms":"148","load_start":"2286","bytesOut":"547","bytesIn":"309","objectSize":"43","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cacheControl":"private, no-cache, no-cache=set-cookie, no-store, proxy-revalidate","contentType":"image\/gif","type":"3","socket":"61","score_cache":"-1","score_cdn":"-1","score_gzip":"-1","score_cookies":"50","score_keep-alive":"100","score_minify":"-1","score_combine":"-1","score_compress":"100","score_etags":"100","is_secure":"0","dns_ms":"65","connect_ms":"102","gzip_total":"0","gzip_save":"0","minify_total":"0","minify_save":"0","image_total":"43","image_save":"0","cdn_provider":"Akamai","server_count":"6","server_rtt":"102","client_port":"52376","jpeg_scan_count":"0","full_url":"http:\/\/b.scorecardresearch.com\/p?c1=2&c2=7241469&c3=&c4=www.flickr.com%252F&c5=792600119&c6=&c15=&ns__t=1379344568988&ns_c=utf-8","score_progressive_jpeg":-1,"ssl_start":0,"ssl_end":0,"ssl_ms":0,"connect_start":2184,"connect_end":2286,"dns_start":2119,"dns_end":2184,"load_end":2434,"ttfb_start":"2286","ttfb_end":2434,"download_start":2434,"download_end":2434,"download_ms":0,"all_start":2119,"all_end":2434,"all_ms":315,"headers":{"request":["GET \/p?c1=2&c2=7241469&c3=&c4=www.flickr.com%252F&c5=792600119&c6=&c15=&ns__t=1379344568988&ns_c=utf-8 HTTP\/1.1","Accept: image\/png, image\/svg+xml, image\/*;q=0.8, *\/*;q=0.5","Referer: http:\/\/www.flickr.com\/","Accept-Language: en-US","X-Download-Initiator: image=\"doc 03F0 win 1E58; image; src; property change\"","User-Agent: Mozilla\/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident\/5.0; PTST 2.366)","Accept-Encoding: gzip, deflate","Host: b.scorecardresearch.com","Connection: Keep-Alive","Cookie: UID=798187-96.17.197.19-1379344565; UIDR=1379344565"],"response":["HTTP\/1.1 200 OK","Content-Length: 43","Content-Type: image\/gif","Date: Mon, 16 Sep 2013 15:16:12 GMT","Connection: keep-alive","Pragma: no-cache","Expires: Mon, 01 Jan 1990 00:00:00 GMT","Cache-Control: private, no-cache, no-cache=Set-Cookie, no-store, proxy-revalidate"]},"location":"Akamai","index":11,"number":12}];
+var wptNoLinks=1;
+</script><br><a href="/customWaterfall.php?width=930&test=130916_3M_KJD&run=1&cached=1">customize waterfall</a> &#8226; <a id="view-images" href="/pageimages.php?test=130916_3M_KJD&run=1&cached=1">View all Images</a>                <br>
+                <br>
+                <h3 name="connection_view">Connection View</h3>
+                <map name="connection_map">
+                <area href="#request" alt="http://flickr.com" title="http://flickr.com" shape=RECT coords="0,0,250,25">
+<area href="#request1" alt="1: http://flickr.com/" title="1: http://flickr.com/" shape=RECT coords="272,26,297,42">
+<area href="#request2" alt="2: http://www.flickr.com/" title="2: http://www.flickr.com/" shape=RECT coords="326,43,458,59">
+<area href="#request3" alt="3: http://bs.serving-sys.com/BurstingPipe/ActivityServer.bs?cn=as&amp;ActivityID=313089&amp;ifrm=1&amp;rnd=748424" title="3: http://bs.serving-sys.com/BurstingPipe/ActivityServer.bs?cn=as&amp;ActivityID=313089&amp;ifrm=1&amp;rnd=748424" shape=RECT coords="464,60,498,76">
+<area href="#request4" alt="4: http://y.flickr.yahoo.com/ad?spaceid=792600119&amp;position=MAST&amp;adid=none" title="4: http://y.flickr.yahoo.com/ad?spaceid=792600119&amp;position=MAST&amp;adid=none" shape=RECT coords="468,77,690,93">
+<area href="#request5" alt="5: http://l.yimg.com/g/images/ios_marketing/soup_iphone_app.mp4" title="5: http://l.yimg.com/g/images/ios_marketing/soup_iphone_app.mp4" shape=RECT coords="685,94,928,110">
+<area href="#request6" alt="6: http://geo.yahoo.com/b?s=792600119&amp;_R=&amp;_L=m%06eyebrow%01l%06www.yahoo.com%2F%02mail.yahoo.com%2F%02news.yahoo.com%2F%02sports.yahoo.com%2F%02finance.yahoo.com%2F%02weather.yahoo.com%2F%02games.yahoo.com%2F%02groups.yahoo.com%2F%02answers.yahoo.com%2F%02www.flickr.com%2F%02javascript%3Avoid(0)%3B%02omg.yahoo.com%2F%02shine.yahoo.com%2F%02movies.yahoo.com%2F%02music.yahoo.com%2F%02tv.yahoo.com%2F%02health.yahoo.com%2F%02shopping.yahoo.com%2F%02travel.yahoo.com%2F%02autos.yahoo.com%2F%02homes.yahoo.com%2Fown-rent%2F%02mobile.yahoo.com%2F%08m%06global-nav%01l%06Logo-main%02Signup-main%02Explore-main%02Explore-recent_photos%02Explore-the_commons%02Explore-getty_collection%02Explore-galleries%02Explore-world_map%02Explore-app_garden%02Explore-camera_finder%02Explore-flickr_blog%02Upload-main%02Account-sign_in%08m%06home%01l%06signUp%02%23storage%02%23flickrdotcom%02%23mobile-apps%02signIn%08m%06huge-cta-wrapper%01l%06signUpFloaty&amp;t=1379344568&amp;_P=2.9.4%05A_pn%03%2Findex.gne%04A_sid%03luVi0CACpQzT%04_w%03www.flickr.com%2F%04A_%031" title="6: http://geo.yahoo.com/b?s=792600119&amp;_R=&amp;_L=m%06eyebrow%01l%06www.yahoo.com%2F%02mail.yahoo.com%2F%02news.yahoo.com%2F%02sports.yahoo.com%2F%02finance.yahoo.com%2F%02weather.yahoo.com%2F%02games.yahoo.com%2F%02groups.yahoo.com%2F%02answers.yahoo.com%2F%02www.flickr.com%2F%02javascript%3Avoid(0)%3B%02omg.yahoo.com%2F%02shine.yahoo.com%2F%02movies.yahoo.com%2F%02music.yahoo.com%2F%02tv.yahoo.com%2F%02health.yahoo.com%2F%02shopping.yahoo.com%2F%02travel.yahoo.com%2F%02autos.yahoo.com%2F%02homes.yahoo.com%2Fown-rent%2F%02mobile.yahoo.com%2F%08m%06global-nav%01l%06Logo-main%02Signup-main%02Explore-main%02Explore-recent_photos%02Explore-the_commons%02Explore-getty_collection%02Explore-galleries%02Explore-world_map%02Explore-app_garden%02Explore-camera_finder%02Explore-flickr_blog%02Upload-main%02Account-sign_in%08m%06home%01l%06signUp%02%23storage%02%23flickrdotcom%02%23mobile-apps%02signIn%08m%06huge-cta-wrapper%01l%06signUpFloaty&amp;t=1379344568&amp;_P=2.9.4%05A_pn%03%2Findex.gne%04A_sid%03luVi0CACpQzT%04_w%03www.flickr.com%2F%04A_%031" shape=RECT coords="743,111,771,127">
+<area href="#request7" alt="7: http://y.analytics.yahoo.com/fpc.pl?a=10001561398679&amp;b=%2Findex.gne&amp;d=Mon%20Sep%2016%2011%3A16%3A08%20EDT%202013&amp;f=http%3A%2F%2Fwww.flickr.com%2F&amp;j=1920x1200&amp;t=1379344568&amp;l=true&amp;dpid=889710007&amp;fpc=ZUHvdV4D%7CZseuNzkNaa%7Cfses10001561398679%3D%7CZseuNzkNaa%7CZUHvdV4D%7Cfvis10001561398679%3D%7C8MH7MTT10M%7C8MH7MTT10M%7C8MH7MTT10M%7C8%7C8MH7MTT10M%7C8MH7MTT10M&amp;cf07=792600119&amp;cf01=en-us&amp;cf03=Prod&amp;cf04=&amp;cf06=-1&amp;cf09=0&amp;cf10=-1&amp;cf11=-1&amp;cf12=-1&amp;cf13=2&amp;cf16=991x698&amp;cf39=n&amp;cf43=n&amp;cf45=2&amp;cf51=7&amp;cf52=3&amp;cf53=960&amp;cf54=2&amp;cf55=0&amp;cf56=0&amp;cf57=0&amp;cf58=0" title="7: http://y.analytics.yahoo.com/fpc.pl?a=10001561398679&amp;b=%2Findex.gne&amp;d=Mon%20Sep%2016%2011%3A16%3A08%20EDT%202013&amp;f=http%3A%2F%2Fwww.flickr.com%2F&amp;j=1920x1200&amp;t=1379344568&amp;l=true&amp;dpid=889710007&amp;fpc=ZUHvdV4D%7CZseuNzkNaa%7Cfses10001561398679%3D%7CZseuNzkNaa%7CZUHvdV4D%7Cfvis10001561398679%3D%7C8MH7MTT10M%7C8MH7MTT10M%7C8MH7MTT10M%7C8%7C8MH7MTT10M%7C8MH7MTT10M&amp;cf07=792600119&amp;cf01=en-us&amp;cf03=Prod&amp;cf04=&amp;cf06=-1&amp;cf09=0&amp;cf10=-1&amp;cf11=-1&amp;cf12=-1&amp;cf13=2&amp;cf16=991x698&amp;cf39=n&amp;cf43=n&amp;cf45=2&amp;cf51=7&amp;cf52=3&amp;cf53=960&amp;cf54=2&amp;cf55=0&amp;cf56=0&amp;cf57=0&amp;cf58=0" shape=RECT coords="689,128,743,144">
+<area href="#request8" alt="8: http://media.fastclick.net/w/tre?ad_id=30248;evt=23242;cat1=31867;cat2=31868;rand=[CACHEBUSTER]" title="8: http://media.fastclick.net/w/tre?ad_id=30248;evt=23242;cat1=31867;cat2=31868;rand=[CACHEBUSTER]" shape=RECT coords="743,145,771,161">
+<area href="#request9" alt="9: http://www.facebook.com/offsite_event.php?id=6008476725437&amp;amp;value=0&amp;amp;currency=USD" title="9: http://www.facebook.com/offsite_event.php?id=6008476725437&amp;amp;value=0&amp;amp;currency=USD" shape=RECT coords="743,162,775,178">
+<area href="#request10" alt="10: http://pixel.quantserve.com/pixel;r=2041482766;a=p-GXQdGwMZAv5d_;labels=_fp.event.Flickr%20Homepage;fpan=0;fpa=P0-1256111687-1379344559411;ns=1;ce=1;cm=;je=1;sr=1920x1200x24;enc=n;dst=1;et=1379344568499;tzo=240;ref=http%3A%2F%2Fwww.flickr.com%2F;url=http%3A%2F%2Fbs.serving-sys.com%2FBurstingPipe%2FActivityServer.bs%3Fcn%3Das%26ActivityID%3D313089%26ifrm%3D1%26rnd%3D748424;ogl=" title="10: http://pixel.quantserve.com/pixel;r=2041482766;a=p-GXQdGwMZAv5d_;labels=_fp.event.Flickr%20Homepage;fpan=0;fpa=P0-1256111687-1379344559411;ns=1;ce=1;cm=;je=1;sr=1920x1200x24;enc=n;dst=1;et=1379344568499;tzo=240;ref=http%3A%2F%2Fwww.flickr.com%2F;url=http%3A%2F%2Fbs.serving-sys.com%2FBurstingPipe%2FActivityServer.bs%3Fcn%3Das%26ActivityID%3D313089%26ifrm%3D1%26rnd%3D748424;ogl=" shape=RECT coords="771,179,779,195">
+<area href="#request11" alt="11: http://csc.beap.bc.yahoo.com/yi?bv=1.0.0&amp;bs=(135if4tvp(gid$u8gL_DEyNy6GDDWiUjcgsgh5NzIuNgAAAACvLh0W,st$1379344571076037,si$4409551,sp$792600119,pv$1,v$2.0))&amp;t=D_3&amp;al=(as$125looeqe,aid$iEwRZmKLFuQ-,cr$-1,ct$25,at$0,eob$gd1_match_id=-1:ypos=MAST)" title="11: http://csc.beap.bc.yahoo.com/yi?bv=1.0.0&amp;bs=(135if4tvp(gid$u8gL_DEyNy6GDDWiUjcgsgh5NzIuNgAAAACvLh0W,st$1379344571076037,si$4409551,sp$792600119,pv$1,v$2.0))&amp;t=D_3&amp;al=(as$125looeqe,aid$iEwRZmKLFuQ-,cr$-1,ct$25,at$0,eob$gd1_match_id=-1:ypos=MAST)" shape=RECT coords="771,196,789,212">
+<area href="#request12" alt="12: http://b.scorecardresearch.com/p?c1=2&amp;c2=7241469&amp;c3=&amp;c4=www.flickr.com%252F&amp;c5=792600119&amp;c6=&amp;c15=&amp;ns__t=1379344568988&amp;ns_c=utf-8" title="12: http://b.scorecardresearch.com/p?c1=2&amp;c2=7241469&amp;c3=&amp;c4=www.flickr.com%252F&amp;c5=792600119&amp;c6=&amp;c15=&amp;ns__t=1379344568988&amp;ns_c=utf-8" shape=RECT coords="813,213,849,229">
+                </map>
+                <table border="1" bordercolor="silver" cellpadding="2px" cellspacing="0" style="width:auto; font-size:11px; margin-left:auto; margin-right:auto;">
+                    <tr>
+                        <td><table><tr><td><div class="bar" style="width:15px; background-color:#007B84"></div></td><td>DNS Lookup</td></tr></table></td>
+                        <td><table><tr><td><div class="bar" style="width:15px; background-color:#FF7B00"></div></td><td>Initial Connection</td></tr></table></td>
+                                                <td><table><tr><td><div class="bar" style="width:2px; background-color:#28BC00"></div></td><td>Start Render</td></tr></table></td>
+                                                                                                <td><table><tr><td><div class="bar" style="width:2px; background-color:#0000FF"></div></td><td>Document Complete</td></tr></table></td>
+                    </tr>
+                </table>
+                <br>
+                <img class="progress" alt="Connection View waterfall diagram" usemap="#connection_map" id="connectionView" src="/waterfall.png?type=connection&width=930&test=130916_3M_KJD&run=1&cached=1&mime=1">
+                </div>
+                <br><br>
+                <div style="width:100%; height:90; text-align:center; clear: both; padding: 1em 0px; background-color: #AAA;">
+    <script type="text/javascript"><!--
+    google_ad_client = "pub-0388499782819905";
+    /* Webpagetest Details Middle 728x90 */
+    google_ad_slot = "9339196816";
+    google_ad_width = 728;
+    google_ad_height = 90;
+    //-->
+    </script>
+    <script type="text/javascript"
+    src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+    </script>
+</div>
+
+                <br>
+                <div class="center">
+<table id="tableDetails" class="details center">
+	<caption>Request Details</caption>
+    <thead>
+	<tr>
+		<th class="reqNum">#</th>
+		<th class="reqUrl">Resource</th>
+		<th class="reqMime">Content Type</th>
+		<th class="reqStart">Start Offset</th>
+		<th class="reqDNS">DNS Lookup</th>
+		<th class="reqSocket">Initial Connection</th>
+				<th class="reqTTFB">Time to First Byte</th>
+		<th class="reqDownload">Content Download</th>
+		<th class="reqBytes">Bytes Downloaded</th>
+		<th class="reqResult">Error/Status Code</th>
+		<th class="reqIP">IP</th>
+				<th class="reqLocation">Location*</th>
+			</tr>
+    </thead>
+    <tbody>
+
+<tr><td class="reqNum warning oddRender">1</td><td class="reqUrl warning oddRender"><a title="http://flickr.com/" href="#request1">http://flickr.com/</a></td><td class="reqMime warning oddRender">text/html</td><td class="reqStart warning oddRender">0.089 s</td><td class="reqDNS warning oddRender">24 ms</td><td class="reqSocket warning oddRender">64 ms</td><td class="reqTTFB warning oddRender">99 ms</td><td class="reqDownload warning oddRender">2 ms</td><td class="reqBytes warning oddRender">0.6 KB</td><td class="reqResult warning oddRender">302</td><td class="reqIP warning oddRender">98.139.240.139</td><td class="reqLocation warning oddRender">Sunnyvale, CA</td>
+</tr><tr><td class="reqNum evenRender">2</td><td class="reqUrl evenRender"><a title="http://www.flickr.com/" href="#request2">http://www.flickr.com/</a></td><td class="reqMime evenRender">text/html</td><td class="reqStart evenRender">0.307 s</td><td class="reqDNS evenRender">77 ms</td><td class="reqSocket evenRender">38 ms</td><td class="reqTTFB evenRender">322 ms</td><td class="reqDownload evenRender">216 ms</td><td class="reqBytes evenRender">53.8 KB</td><td class="reqResult evenRender">200</td><td class="reqIP evenRender">216.115.101.178</td><td class="reqLocation evenRender">Sunnyvale, CA</td>
+</tr><tr><td class="reqNum oddRender">3</td><td class="reqUrl oddRender"><a title="http://bs.serving-sys.com/BurstingPipe/ActivityServer.bs?cn=as&ActivityID=313089&ifrm=1&rnd=748424" href="#request3">http://bs.serving-sy...89&ifrm=1&rnd=748424</a></td><td class="reqMime oddRender">text/html</td><td class="reqStart oddRender">0.867 s</td><td class="reqDNS oddRender">29 ms</td><td class="reqSocket oddRender">46 ms</td><td class="reqTTFB oddRender">47 ms</td><td class="reqDownload oddRender">91 ms</td><td class="reqBytes oddRender">1.3 KB</td><td class="reqResult oddRender">200</td><td class="reqIP oddRender">63.241.108.124</td><td class="reqLocation oddRender">United States</td>
+</tr><tr><td class="reqNum evenRender">4</td><td class="reqUrl evenRender"><a title="http://y.flickr.yahoo.com/ad?spaceid=792600119&position=MAST&adid=none" href="#request4">http://y.flickr.yaho...ition=MAST&adid=none</a></td><td class="reqMime evenRender">text/html</td><td class="reqStart evenRender">0.883 s</td><td class="reqDNS evenRender">29 ms</td><td class="reqSocket evenRender">63 ms</td><td class="reqTTFB evenRender">408 ms</td><td class="reqDownload evenRender">498 ms</td><td class="reqBytes evenRender">1.2 KB</td><td class="reqResult evenRender">200</td><td class="reqIP evenRender">98.139.240.139</td><td class="reqLocation evenRender">Sunnyvale, CA</td>
+</tr><tr><td class="reqNum oddRender">5</td><td class="reqUrl oddRender"><a title="http://l.yimg.com/g/images/ios_marketing/soup_iphone_app.mp4" href="#request5">http://l.yimg.com/g/.../soup_iphone_app.mp4</a></td><td class="reqMime oddRender">video/mp4</td><td class="reqStart oddRender">1.767 s</td><td class="reqDNS oddRender">189 ms</td><td class="reqSocket oddRender">34 ms</td><td class="reqTTFB oddRender">234 ms</td><td class="reqDownload oddRender">752 ms</td><td class="reqBytes oddRender">497.6 KB</td><td class="reqResult oddRender">200</td><td class="reqIP oddRender">206.190.56.191</td><td class="reqLocation oddRender">Yahoo</td>
+</tr><tr><td class="reqNum evenDoc">6</td><td class="reqUrl evenDoc"><a title="http://geo.yahoo.com/b?s=792600119&_R=&_L=m%06eyebrow%01l%06www.yahoo.com%2F%02mail.yahoo.com%2F%02news.yahoo.com%2F%02sports.yahoo.com%2F%02finance.yahoo.com%2F%02weather.yahoo.com%2F%02games.yahoo.com%2F%02groups.yahoo.com%2F%02answers.yahoo.com%2F%02www.flickr.com%2F%02javascript%3Avoid(0)%3B%02omg.yahoo.com%2F%02shine.yahoo.com%2F%02movies.yahoo.com%2F%02music.yahoo.com%2F%02tv.yahoo.com%2F%02health.yahoo.com%2F%02shopping.yahoo.com%2F%02travel.yahoo.com%2F%02autos.yahoo.com%2F%02homes.yahoo.com%2Fown-rent%2F%02mobile.yahoo.com%2F%08m%06global-nav%01l%06Logo-main%02Signup-main%02Explore-main%02Explore-recent_photos%02Explore-the_commons%02Explore-getty_collection%02Explore-galleries%02Explore-world_map%02Explore-app_garden%02Explore-camera_finder%02Explore-flickr_blog%02Upload-main%02Account-sign_in%08m%06home%01l%06signUp%02%23storage%02%23flickrdotcom%02%23mobile-apps%02signIn%08m%06huge-cta-wrapper%01l%06signUpFloaty&t=1379344568&_P=2.9.4%05A_pn%03%2Findex.gne%04A_sid%03luVi0CACpQzT%04_w%03www.flickr.com%2F%04A_%031" href="#request6">http://geo.yahoo.com...ickr.com%2F%04A_%031</a></td><td class="reqMime evenDoc">image/gif</td><td class="reqStart evenDoc">2.001 s</td><td class="reqDNS evenDoc">110 ms</td><td class="reqSocket evenDoc">266 ms</td><td class="reqTTFB evenDoc">115 ms</td><td class="reqDownload evenDoc">-</td><td class="reqBytes evenDoc">0.4 KB</td><td class="reqResult evenDoc">200</td><td class="reqIP evenDoc">66.196.116.162</td><td class="reqLocation evenDoc">Sunnyvale, CA</td>
+</tr><tr><td class="reqNum oddDoc">7</td><td class="reqUrl oddDoc"><a title="http://y.analytics.yahoo.com/fpc.pl?a=10001561398679&b=%2Findex.gne&d=Mon%20Sep%2016%2011%3A16%3A08%20EDT%202013&f=http%3A%2F%2Fwww.flickr.com%2F&j=1920x1200&t=1379344568&l=true&dpid=889710007&fpc=ZUHvdV4D%7CZseuNzkNaa%7Cfses10001561398679%3D%7CZseuNzkNaa%7CZUHvdV4D%7Cfvis10001561398679%3D%7C8MH7MTT10M%7C8MH7MTT10M%7C8MH7MTT10M%7C8%7C8MH7MTT10M%7C8MH7MTT10M&cf07=792600119&cf01=en-us&cf03=Prod&cf04=&cf06=-1&cf09=0&cf10=-1&cf11=-1&cf12=-1&cf13=2&cf16=991x698&cf39=n&cf43=n&cf45=2&cf51=7&cf52=3&cf53=960&cf54=2&cf55=0&cf56=0&cf57=0&cf58=0" href="#request7">http://y.analytics.y...cf56=0&cf57=0&cf58=0</a></td><td class="reqMime oddDoc">application/x-javascript</td><td class="reqStart oddDoc">1.785 s</td><td class="reqDNS oddDoc">110 ms</td><td class="reqSocket oddDoc">50 ms</td><td class="reqTTFB oddDoc">219 ms</td><td class="reqDownload oddDoc">-</td><td class="reqBytes oddDoc">0.7 KB</td><td class="reqResult oddDoc">200</td><td class="reqIP oddDoc">98.139.225.23</td><td class="reqLocation oddDoc">Sunnyvale, CA</td>
+</tr><tr><td class="reqNum evenDoc">8</td><td class="reqUrl evenDoc"><a title="http://media.fastclick.net/w/tre?ad_id=30248;evt=23242;cat1=31867;cat2=31868;rand=[CACHEBUSTER]" href="#request8">http://media.fastcli...8;rand=[CACHEBUSTER]</a></td><td class="reqMime evenDoc">image/gif</td><td class="reqStart evenDoc">2.001 s</td><td class="reqDNS evenDoc">25 ms</td><td class="reqSocket evenDoc">239 ms</td><td class="reqTTFB evenDoc">114 ms</td><td class="reqDownload evenDoc">1 ms</td><td class="reqBytes evenDoc">0.4 KB</td><td class="reqResult evenDoc">200</td><td class="reqIP evenDoc">8.18.45.90</td><td class="reqLocation evenDoc">New York, NY</td>
+</tr><tr><td class="reqNum oddDoc">9</td><td class="reqUrl oddDoc"><a title="http://www.facebook.com/offsite_event.php?id=6008476725437&amp;value=0&amp;currency=USD" href="#request9">http://www.facebook....e=0&amp;currency=USD</a></td><td class="reqMime oddDoc">image/gif</td><td class="reqStart oddDoc">2.001 s</td><td class="reqDNS oddDoc">26 ms</td><td class="reqSocket oddDoc">234 ms</td><td class="reqTTFB oddDoc">131 ms</td><td class="reqDownload oddDoc">-</td><td class="reqBytes oddDoc">0.5 KB</td><td class="reqResult oddDoc">200</td><td class="reqIP oddDoc">76.13.28.70</td><td class="reqLocation oddDoc">Sunnyvale, CA</td>
+</tr><tr><td class="reqNum evenDoc">10</td><td class="reqUrl evenDoc"><a title="http://pixel.quantserve.com/pixel;r=2041482766;a=p-GXQdGwMZAv5d_;labels=_fp.event.Flickr%20Homepage;fpan=0;fpa=P0-1256111687-1379344559411;ns=1;ce=1;cm=;je=1;sr=1920x1200x24;enc=n;dst=1;et=1379344568499;tzo=240;ref=http%3A%2F%2Fwww.flickr.com%2F;url=http%3A%2F%2Fbs.serving-sys.com%2FBurstingPipe%2FActivityServer.bs%3Fcn%3Das%26ActivityID%3D313089%26ifrm%3D1%26rnd%3D748424;ogl=" href="#request10">http://pixel.quantse...%26rnd%3D748424;ogl=</a></td><td class="reqMime evenDoc">image/gif</td><td class="reqStart evenDoc">2.117 s</td><td class="reqDNS evenDoc">251 ms</td><td class="reqSocket evenDoc">75 ms</td><td class="reqTTFB evenDoc">33 ms</td><td class="reqDownload evenDoc">-</td><td class="reqBytes evenDoc">0.3 KB</td><td class="reqResult evenDoc">200</td><td class="reqIP evenDoc">64.94.107.37</td><td class="reqLocation evenDoc">Atlanta, GA</td>
+</tr><tr><td class="reqNum oddDoc">11</td><td class="reqUrl oddDoc"><a title="http://csc.beap.bc.yahoo.com/yi?bv=1.0.0&bs=(135if4tvp(gid$u8gL_DEyNy6GDDWiUjcgsgh5NzIuNgAAAACvLh0W,st$1379344571076037,si$4409551,sp$792600119,pv$1,v$2.0))&t=D_3&al=(as$125looeqe,aid$iEwRZmKLFuQ-,cr$-1,ct$25,at$0,eob$gd1_match_id=-1:ypos=MAST)" href="#request11">http://csc.beap.bc.y...tch_id=-1:ypos=MAST)</a></td><td class="reqMime oddDoc">image/gif</td><td class="reqStart oddDoc">2.118 s</td><td class="reqDNS oddDoc">36 ms</td><td class="reqSocket oddDoc">75 ms</td><td class="reqTTFB oddDoc">71 ms</td><td class="reqDownload oddDoc">1 ms</td><td class="reqBytes oddDoc">0.4 KB</td><td class="reqResult oddDoc">200</td><td class="reqIP oddDoc">76.13.28.70</td><td class="reqLocation oddDoc">Sunnyvale, CA</td>
+</tr><tr><td class="reqNum even">12</td><td class="reqUrl even"><a title="http://b.scorecardresearch.com/p?c1=2&c2=7241469&c3=&c4=www.flickr.com%252F&c5=792600119&c6=&c15=&ns__t=1379344568988&ns_c=utf-8" href="#request12">http://b.scorecardre...344568988&ns_c=utf-8</a></td><td class="reqMime even">image/gif</td><td class="reqStart even">2.286 s</td><td class="reqDNS even">65 ms</td><td class="reqSocket even">102 ms</td><td class="reqTTFB even">148 ms</td><td class="reqDownload even">-</td><td class="reqBytes even">0.3 KB</td><td class="reqResult even">200</td><td class="reqIP even">107.14.43.227</td><td class="reqLocation even">Akamai</td>
+</tr></tbody>
+</table></div>
+
+<p class="center">*This product includes GeoLite data created by MaxMind, available from <a href="http://maxmind.com/">http://maxmind.com/</a>.</p>
+<br>
+<div style="width:100%; height:90; text-align:center; clear:both; padding: 1em 0px; background-color: #AAA;">
+    <script type="text/javascript"><!--
+    google_ad_client = "pub-0388499782819905";
+    /* Webpagetest Details Bottom 728x90 */
+    google_ad_slot = "7833437511";
+    google_ad_width = 728;
+    google_ad_height = 90;
+    //-->
+    </script>
+    <script type="text/javascript"
+    src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+    </script>
+</div>
+<br>
+
+<div id="headers"><p>Test Machine DNS Server(s): 192.168.102.1,192.168.0.1</p>
+<br><hr><h2>Request Headers</h2><p>+ <a id="all" href="javascript:expandAll();">Expand All</a></p><h4><span class="a_request" id="request1" data-target-id="headers_1">+ Request 1: http://flickr.com/</span></h4><div class="header_details" id="headers_1"><p class="indented2">
+<b>URL:</b> http://flickr.com/<br>
+<b>Host:</b> flickr.com<br>
+<b>IP:</b> 98.139.240.139<br>
+<b>Location:</b> Sunnyvale, CA<br>
+<b>Error/Status Code:</b> 302<br>
+<b>Client Port:</b> 51027<br>
+<b>Start Offset:</b> 0.089 s<br>
+<b>DNS Lookup:</b> 24 ms<br>
+<b>Initial Connection:</b> 64 ms<br>
+<b>Time to First Byte:</b> 99 ms<br>
+<b>Content Download:</b> 2 ms<br>
+<b>Bytes In (downloaded):</b> 0.6 KB<br>
+<b>Bytes Out (uploaded):</b> 0.4 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+GET / HTTP/1.1<br>
+Accept: text/html, application/xhtml+xml, */*<br>
+Accept-Language: en-US<br>
+X-Download-Initiator: html=&quot;doc 03F0 win 1E58; html document&quot;<br>
+User-Agent: Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0; PTST 2.366)<br>
+Accept-Encoding: gzip, deflate<br>
+Host: flickr.com<br>
+Connection: Keep-Alive<br>
+Cookie: BX=cdr94i193e85h&amp;b=3&amp;s=4r; localization=en-us%3Bus%3Bus; xb=516756<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+HTTP/1.1 302 Found<br>
+Date: Mon, 16 Sep 2013 15:16:10 GMT<br>
+P3P: policyref=&quot;http://info.yahoo.com/w3c/p3p.xml&quot;, CP=&quot;CAO DSP COR CUR ADM DEV TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV&quot;<br>
+Set-Cookie: localization=en-us%3Bus%3Bus; expires=Mon, 14-Sep-2015 15:16:10 GMT; path=/; domain=.flickr.com<br>
+location: http://www.flickr.com/<br>
+Cache-Control: private<br>
+X-Served-By: www69.flickr.bf1.yahoo.com<br>
+Vary: Accept-Encoding<br>
+Content-Encoding: gzip<br>
+Content-Length: 20<br>
+Content-Type: text/html; charset=UTF-8<br>
+Age: 0<br>
+Connection: close<br>
+Server: YTS/1.19.11<br>
+</p></div><h4><span class="a_request" id="request2" data-target-id="headers_2">+ Request 2: http://www.flickr.com/</span></h4><div class="header_details" id="headers_2"><p class="indented2">
+<b>URL:</b> http://www.flickr.com/<br>
+<b>Host:</b> www.flickr.com<br>
+<b>IP:</b> 216.115.101.178<br>
+<b>Location:</b> Sunnyvale, CA<br>
+<b>Error/Status Code:</b> 200<br>
+<b>Client Port:</b> 52356<br>
+<b>Start Offset:</b> 0.307 s<br>
+<b>DNS Lookup:</b> 77 ms<br>
+<b>Initial Connection:</b> 38 ms<br>
+<b>Time to First Byte:</b> 322 ms<br>
+<b>Content Download:</b> 216 ms<br>
+<b>Bytes In (downloaded):</b> 53.8 KB<br>
+<b>Bytes Out (uploaded):</b> 0.6 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+GET / HTTP/1.1<br>
+Accept: text/html, application/xhtml+xml, */*<br>
+Accept-Language: en-US<br>
+X-Download-Initiator: html=&quot;doc 03F0 win 1E58; html document&quot;<br>
+User-Agent: Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0; PTST 2.366)<br>
+Accept-Encoding: gzip, deflate<br>
+Host: www.flickr.com<br>
+Connection: Keep-Alive<br>
+Cookie: BX=cdr94i193e85h&amp;b=3&amp;s=4r; localization=en-us%3Bus%3Bus; xb=516756; liqpw=1008; liqph=627; ywadp10001561398679=889710007; fpc10001561398679=ZUHvdV4D|ZseuNzkNaa|fses10001561398679=|ZseuNzkNaa|ZUHvdV4D|fvis10001561398679=|8MH7MTT10M|8MH7MTT10M|8MH7MTT10M|8|8MH7MTT10M|8MH7MTT10M<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+HTTP/1.1 200 OK<br>
+Age: 0<br>
+Cache-Control: private<br>
+Connection: Keep-Alive<br>
+Content-Encoding: gzip<br>
+Content-Type: text/html; charset=utf-8<br>
+Date: Mon, 16 Sep 2013 15:16:10 GMT<br>
+P3P: policyref=&quot;http://info.yahoo.com/w3c/p3p.xml&quot;, CP=&quot;CAO DSP COR CUR ADM DEV TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV&quot;<br>
+Server: YTS/1.19.11<br>
+Set-Cookie: localization=en-us%3Bus%3Bus; expires=Mon, 14-Sep-2015 15:16:10 GMT; path=/; domain=.flickr.com<br>
+Transfer-Encoding: chunked<br>
+Vary: Accept-Encoding<br>
+Via: HTTP/1.1 r03.ycpi.nyc.yahoo.net UserFiberFramework/1.0<br>
+X-Served-By: www265.flickr.bf1.yahoo.com<br>
+X-XRDS-Location: http://open.login.yahooapis.com/openid20/www.flickr.com/xrds<br>
+</p></div><h4><span class="a_request" id="request3" data-target-id="headers_3">+ Request 3: http://bs.serving-sys.com/BurstingPipe/ActivityServer.bs?cn=as&amp;ActivityID=313089&amp;ifrm=1&amp;rnd=748424</span></h4><div class="header_details" id="headers_3"><p class="indented2">
+<b>URL:</b> http://bs.serving-sys.com/BurstingPipe/ActivityServer.bs?cn=as&ActivityID=313089&ifrm=1&rnd=748424<br>
+<b>Host:</b> bs.serving-sys.com<br>
+<b>IP:</b> 63.241.108.124<br>
+<b>Location:</b> United States<br>
+<b>Error/Status Code:</b> 200<br>
+<b>Client Port:</b> 52358<br>
+<b>Start Offset:</b> 0.867 s<br>
+<b>DNS Lookup:</b> 29 ms<br>
+<b>Initial Connection:</b> 46 ms<br>
+<b>Time to First Byte:</b> 47 ms<br>
+<b>Content Download:</b> 91 ms<br>
+<b>Bytes In (downloaded):</b> 1.3 KB<br>
+<b>Bytes Out (uploaded):</b> 0.5 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+GET /BurstingPipe/ActivityServer.bs?cn=as&amp;ActivityID=313089&amp;ifrm=1&amp;rnd=748424 HTTP/1.1<br>
+Accept: text/html, application/xhtml+xml, */*<br>
+Referer: http://www.flickr.com/<br>
+Accept-Language: en-US<br>
+X-Download-Initiator: html=&quot;doc 03F0 win 7928; html frame markup parse&quot;<br>
+User-Agent: Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0; PTST 2.366)<br>
+Accept-Encoding: gzip, deflate<br>
+Host: bs.serving-sys.com<br>
+Connection: Keep-Alive<br>
+Cookie: ActivityInfo2=001jrPhzR0%5f; u2=27c18333-073e-4bed-9959-89660e3012b13Vs070; __qca=P0-1256111687-1379344559411<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+HTTP/1.1 200 OK<br>
+Cache-Control: no-cache, no-store<br>
+Pragma: no-cache<br>
+Content-Type: text/html<br>
+Content-Encoding: gzip<br>
+Expires: Sun, 05-Jun-2005 22:00:00 GMT<br>
+Vary: Accept-Encoding<br>
+Server: Microsoft-IIS/7.5<br>
+Set-Cookie: ActivityInfo2=001jrPhzR0%5f; expires=Sun, 15-Dec-2013 11:16:11 GMT; domain=.serving-sys.com; path=/<br>
+Set-Cookie: u2=27c18333-073e-4bed-9959-89660e3012b13Vs07g; expires=Sun, 15-Dec-2013 11:16:11 GMT; domain=.serving-sys.com; path=/<br>
+Access-Control-Allow-Origin: *<br>
+X-Powered-By: ASP.NET<br>
+P3P: CP=&quot;NOI DEVa OUR BUS UNI&quot;<br>
+Date: Mon, 16 Sep 2013 15:16:10 GMT<br>
+Connection: close<br>
+Content-Length: 680<br>
+</p></div><h4><span class="a_request" id="request4" data-target-id="headers_4">+ Request 4: http://y.flickr.yahoo.com/ad?spaceid=792600119&amp;position=MAST&amp;adid=none</span></h4><div class="header_details" id="headers_4"><p class="indented2">
+<b>URL:</b> http://y.flickr.yahoo.com/ad?spaceid=792600119&position=MAST&adid=none<br>
+<b>Host:</b> y.flickr.yahoo.com<br>
+<b>IP:</b> 98.139.240.139<br>
+<b>Location:</b> Sunnyvale, CA<br>
+<b>Error/Status Code:</b> 200<br>
+<b>Client Port:</b> 52360<br>
+<b>Start Offset:</b> 0.883 s<br>
+<b>DNS Lookup:</b> 29 ms<br>
+<b>Initial Connection:</b> 63 ms<br>
+<b>Time to First Byte:</b> 408 ms<br>
+<b>Content Download:</b> 498 ms<br>
+<b>Bytes In (downloaded):</b> 1.2 KB<br>
+<b>Bytes Out (uploaded):</b> 0.4 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+GET /ad?spaceid=792600119&amp;position=MAST&amp;adid=none HTTP/1.1<br>
+Accept: text/html, application/xhtml+xml, */*<br>
+Referer: http://www.flickr.com/<br>
+Accept-Language: en-US<br>
+X-Download-Initiator: html=&quot;doc 03F0 win CCA8; html frame markup parse&quot;<br>
+User-Agent: Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0; PTST 2.366)<br>
+Accept-Encoding: gzip, deflate<br>
+Host: y.flickr.yahoo.com<br>
+Connection: Keep-Alive<br>
+Cookie: B=8c31lk993e85i&amp;b=3&amp;s=43<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+HTTP/1.1 200 OK<br>
+Date: Mon, 16 Sep 2013 15:16:11 GMT<br>
+P3P: policyref=&quot;http://info.yahoo.com/w3c/p3p.xml&quot;, CP=&quot;CAO DSP COR CUR ADM DEV TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV&quot;<br>
+Set-Cookie: localization=en-us%3Bus%3Bus; expires=Mon, 14-Sep-2015 15:16:11 GMT; path=/; domain=.flickr.com<br>
+Set-Cookie: xb=995700; expires=Thu, 17-Sep-2015 15:16:11 GMT; path=/; domain=.flickr.com<br>
+Cache-Control: private<br>
+X-Served-By: www35.flickr.bf1.yahoo.com<br>
+Vary: Accept-Encoding<br>
+Content-Encoding: gzip<br>
+Content-Length: 570<br>
+Content-Type: text/html; charset=UTF-8<br>
+Age: 0<br>
+Connection: close<br>
+Server: YTS/1.19.11<br>
+</p></div><h4><span class="a_request" id="request5" data-target-id="headers_5">+ Request 5: http://l.yimg.com/g/images/ios_marketing/soup_iphone_app.mp4</span></h4><div class="header_details" id="headers_5"><p class="indented2">
+<b>URL:</b> http://l.yimg.com/g/images/ios_marketing/soup_iphone_app.mp4<br>
+<b>Host:</b> l.yimg.com<br>
+<b>IP:</b> 206.190.56.191<br>
+<b>Location:</b> Yahoo<br>
+<b>Error/Status Code:</b> 200<br>
+<b>Client Port:</b> 52362<br>
+<b>Start Offset:</b> 1.767 s<br>
+<b>DNS Lookup:</b> 189 ms<br>
+<b>Initial Connection:</b> 34 ms<br>
+<b>Time to First Byte:</b> 234 ms<br>
+<b>Content Download:</b> 752 ms<br>
+<b>Bytes In (downloaded):</b> 497.6 KB<br>
+<b>Bytes Out (uploaded):</b> 0.3 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+GET /g/images/ios_marketing/soup_iphone_app.mp4 HTTP/1.1<br>
+Accept: */*<br>
+User-Agent: Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0; PTST 2.366)<br>
+Referer: http://www.flickr.com/<br>
+Accept-Language: en-US<br>
+Accept-Encoding: gzip, deflate<br>
+Host: l.yimg.com<br>
+Connection: Keep-Alive<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+HTTP/1.1 200 OK<br>
+Date: Mon, 09 Sep 2013 23:07:23 GMT<br>
+P3P: policyref=&quot;http://info.yahoo.com/w3c/p3p.xml&quot;, CP=&quot;CAO DSP COR CUR ADM DEV TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV&quot;<br>
+Last-Modified: Sat, 17 Aug 2013 14:48:15 GMT<br>
+Accept-Ranges: bytes<br>
+Content-Length: 3849987<br>
+Cache-Control: max-age=315360000<br>
+X-Served-By: www379.flickr.mud.yahoo.com<br>
+Expires: Mon, 28 Jul 2014 23:30:00 GMT<br>
+Content-Type: video/mp4<br>
+Age: 576529<br>
+Connection: keep-alive<br>
+Via: http/1.1 l18.ycs.dcb.yahoo.com (ApacheTrafficServer/3.2.0)<br>
+Server: ATS/3.2.0<br>
+</p></div><h4><span class="a_request" id="request6" data-target-id="headers_6">+ Request 6: http://geo.yahoo.com/b?s=792600119&amp;_R=&amp;_L=m%06eyebrow%01l%06www.yahoo.com%2F%02mail.yahoo.com%2F%02news.yahoo.com%2F%02sports.yahoo.com%2F%02finance.yahoo.com%2F%02weather.yahoo.com%2F%02games.yahoo.com%2F%02groups.yahoo.com%2F%02answers.yahoo.com%2F%02www.flickr.com%2F%02javascript%3Avoid(0)%3B%02omg.yahoo.com%2F%02shine.yahoo.com%2F%02movies.yahoo.com%2F%02music.yahoo.com%2F%02tv.yahoo.com%2F%02health.yahoo.com%2F%02shopping.yahoo.com%2F%02travel.yahoo.com%2F%02autos.yahoo.com%2F%02homes.yahoo.com%2Fown-rent%2F%02mobile.yahoo.com%2F%08m%06global-nav%01l%06Logo-main%02Signup-main%02Explore-main%02Explore-recent_photos%02Explore-the_commons%02Explore-getty_collection%02Explore-galleries%02Explore-world_map%02Explore-app_garden%02Explore-camera_finder%02Explore-flickr_blog%02Upload-main%02Account-sign_in%08m%06home%01l%06signUp%02%23storage%02%23flickrdotcom%02%23mobile-apps%02signIn%08m%06huge-cta-wrapper%01l%06signUpFloaty&amp;t=1379344568&amp;_P=2.9.4%05A_pn%03%2Findex.gne%04A_sid%03luVi0CACpQzT%04_w%03www.flickr.com%2F%04A_%031</span></h4><div class="header_details" id="headers_6"><p class="indented2">
+<b>URL:</b> http://geo.yahoo.com/b?s=792600119&_R=&_L=m%06eyebrow%01l%06www.yahoo.com%2F%02mail.yahoo.com%2F%02news.yahoo.com%2F%02sports.yahoo.com%2F%02finance.yahoo.com%2F%02weather.yahoo.com%2F%02games.yahoo.com%2F%02groups.yahoo.com%2F%02answers.yahoo.com%2F%02www.flickr.com%2F%02javascript%3Avoid(0)%3B%02omg.yahoo.com%2F%02shine.yahoo.com%2F%02movies.yahoo.com%2F%02music.yahoo.com%2F%02tv.yahoo.com%2F%02health.yahoo.com%2F%02shopping.yahoo.com%2F%02travel.yahoo.com%2F%02autos.yahoo.com%2F%02homes.yahoo.com%2Fown-rent%2F%02mobile.yahoo.com%2F%08m%06global-nav%01l%06Logo-main%02Signup-main%02Explore-main%02Explore-recent_photos%02Explore-the_commons%02Explore-getty_collection%02Explore-galleries%02Explore-world_map%02Explore-app_garden%02Explore-camera_finder%02Explore-flickr_blog%02Upload-main%02Account-sign_in%08m%06home%01l%06signUp%02%23storage%02%23flickrdotcom%02%23mobile-apps%02signIn%08m%06huge-cta-wrapper%01l%06signUpFloaty&t=1379344568&_P=2.9.4%05A_pn%03%2Findex.gne%04A_sid%03luVi0CACpQzT%04_w%03www.flickr.com%2F%04A_%031<br>
+<b>Host:</b> geo.yahoo.com<br>
+<b>IP:</b> 66.196.116.162<br>
+<b>Location:</b> Sunnyvale, CA<br>
+<b>Error/Status Code:</b> 200<br>
+<b>Client Port:</b> 52364<br>
+<b>Start Offset:</b> 2.001 s<br>
+<b>DNS Lookup:</b> 110 ms<br>
+<b>Initial Connection:</b> 266 ms<br>
+<b>Time to First Byte:</b> 115 ms<br>
+<b>Bytes In (downloaded):</b> 0.4 KB<br>
+<b>Bytes Out (uploaded):</b> 1.4 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+GET /b?s=792600119&amp;_R=&amp;_L=m%06eyebrow%01l%06www.yahoo.com%2F%02mail.yahoo.com%2F%02news.yahoo.com%2F%02sports.yahoo.com%2F%02finance.yahoo.com%2F%02weather.yahoo.com%2F%02games.yahoo.com%2F%02groups.yahoo.com%2F%02answers.yahoo.com%2F%02www.flickr.com%2F%02javascript%3Avoid(0)%3B%02omg.yahoo.com%2F%02shine.yahoo.com%2F%02movies.yahoo.com%2F%02music.yahoo.com%2F%02tv.yahoo.com%2F%02health.yahoo.com%2F%02shopping.yahoo.com%2F%02travel.yahoo.com%2F%02autos.yahoo.com%2F%02homes.yahoo.com%2Fown-rent%2F%02mobile.yahoo.com%2F%08m%06global-nav%01l%06Logo-main%02Signup-main%02Explore-main%02Explore-recent_photos%02Explore-the_commons%02Explore-getty_collection%02Explore-galleries%02Explore-world_map%02Explore-app_garden%02Explore-camera_finder%02Explore-flickr_blog%02Upload-main%02Account-sign_in%08m%06home%01l%06signUp%02%23storage%02%23flickrdotcom%02%23mobile-apps%02signIn%08m%06huge-cta-wrapper%01l%06signUpFloaty&amp;t=1379344568&amp;_P=2.9.4%05A_pn%03%2Findex.gne%04A_sid%03luVi0CACpQzT%04_w%03www.flickr.com%2F%04A_%031 HTTP/1.1<br>
+Accept: image/png, image/svg+xml, image/*;q=0.8, */*;q=0.5<br>
+Referer: http://www.flickr.com/<br>
+Accept-Language: en-US<br>
+X-Download-Initiator: image=&quot;doc 03F0 win 1E58; image; src; property change&quot;<br>
+User-Agent: Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0; PTST 2.366)<br>
+Accept-Encoding: gzip, deflate<br>
+Host: geo.yahoo.com<br>
+Connection: Keep-Alive<br>
+Cookie: B=8c31lk993e85i&amp;b=3&amp;s=43<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+HTTP/1.1 200 OK<br>
+Date: Mon, 16 Sep 2013 15:16:12 GMT<br>
+P3P: policyref=&quot;http://info.yahoo.com/w3c/p3p.xml&quot;, CP=&quot;CAO DSP COR CUR ADM DEV TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV&quot;<br>
+Cache-Control: no-cache, no-store, private<br>
+Pragma: no-cache<br>
+Content-Length: 43<br>
+Connection: close<br>
+Content-Type: image/gif<br>
+</p></div><h4><span class="a_request" id="request7" data-target-id="headers_7">+ Request 7: http://y.analytics.yahoo.com/fpc.pl?a=10001561398679&amp;b=%2Findex.gne&amp;d=Mon%20Sep%2016%2011%3A16%3A08%20EDT%202013&amp;f=http%3A%2F%2Fwww.flickr.com%2F&amp;j=1920x1200&amp;t=1379344568&amp;l=true&amp;dpid=889710007&amp;fpc=ZUHvdV4D%7CZseuNzkNaa%7Cfses10001561398679%3D%7CZseuNzkNaa%7CZUHvdV4D%7Cfvis10001561398679%3D%7C8MH7MTT10M%7C8MH7MTT10M%7C8MH7MTT10M%7C8%7C8MH7MTT10M%7C8MH7MTT10M&amp;cf07=792600119&amp;cf01=en-us&amp;cf03=Prod&amp;cf04=&amp;cf06=-1&amp;cf09=0&amp;cf10=-1&amp;cf11=-1&amp;cf12=-1&amp;cf13=2&amp;cf16=991x698&amp;cf39=n&amp;cf43=n&amp;cf45=2&amp;cf51=7&amp;cf52=3&amp;cf53=960&amp;cf54=2&amp;cf55=0&amp;cf56=0&amp;cf57=0&amp;cf58=0</span></h4><div class="header_details" id="headers_7"><p class="indented2">
+<b>URL:</b> http://y.analytics.yahoo.com/fpc.pl?a=10001561398679&b=%2Findex.gne&d=Mon%20Sep%2016%2011%3A16%3A08%20EDT%202013&f=http%3A%2F%2Fwww.flickr.com%2F&j=1920x1200&t=1379344568&l=true&dpid=889710007&fpc=ZUHvdV4D%7CZseuNzkNaa%7Cfses10001561398679%3D%7CZseuNzkNaa%7CZUHvdV4D%7Cfvis10001561398679%3D%7C8MH7MTT10M%7C8MH7MTT10M%7C8MH7MTT10M%7C8%7C8MH7MTT10M%7C8MH7MTT10M&cf07=792600119&cf01=en-us&cf03=Prod&cf04=&cf06=-1&cf09=0&cf10=-1&cf11=-1&cf12=-1&cf13=2&cf16=991x698&cf39=n&cf43=n&cf45=2&cf51=7&cf52=3&cf53=960&cf54=2&cf55=0&cf56=0&cf57=0&cf58=0<br>
+<b>Host:</b> y.analytics.yahoo.com<br>
+<b>IP:</b> 98.139.225.23<br>
+<b>Location:</b> Sunnyvale, CA<br>
+<b>Error/Status Code:</b> 200<br>
+<b>Client Port:</b> 52365<br>
+<b>Start Offset:</b> 1.785 s<br>
+<b>DNS Lookup:</b> 110 ms<br>
+<b>Initial Connection:</b> 50 ms<br>
+<b>Time to First Byte:</b> 219 ms<br>
+<b>Bytes In (downloaded):</b> 0.7 KB<br>
+<b>Bytes Out (uploaded):</b> 0.9 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+GET /fpc.pl?a=10001561398679&amp;b=%2Findex.gne&amp;d=Mon%20Sep%2016%2011%3A16%3A08%20EDT%202013&amp;f=http%3A%2F%2Fwww.flickr.com%2F&amp;j=1920x1200&amp;t=1379344568&amp;l=true&amp;dpid=889710007&amp;fpc=ZUHvdV4D%7CZseuNzkNaa%7Cfses10001561398679%3D%7CZseuNzkNaa%7CZUHvdV4D%7Cfvis10001561398679%3D%7C8MH7MTT10M%7C8MH7MTT10M%7C8MH7MTT10M%7C8%7C8MH7MTT10M%7C8MH7MTT10M&amp;cf07=792600119&amp;cf01=en-us&amp;cf03=Prod&amp;cf04=&amp;cf06=-1&amp;cf09=0&amp;cf10=-1&amp;cf11=-1&amp;cf12=-1&amp;cf13=2&amp;cf16=991x698&amp;cf39=n&amp;cf43=n&amp;cf45=2&amp;cf51=7&amp;cf52=3&amp;cf53=960&amp;cf54=2&amp;cf55=0&amp;cf56=0&amp;cf57=0&amp;cf58=0 HTTP/1.1<br>
+Accept: application/javascript, */*;q=0.8<br>
+Referer: http://www.flickr.com/<br>
+Accept-Language: en-US<br>
+X-Download-Initiator: script=&quot;doc 03F0 win 1E58; script element; src; property change&quot;<br>
+User-Agent: Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0; PTST 2.366)<br>
+Accept-Encoding: gzip, deflate<br>
+Host: y.analytics.yahoo.com<br>
+Connection: Keep-Alive<br>
+Cookie: B=8c31lk993e85i&amp;b=3&amp;s=43<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+HTTP/1.1 200 OK<br>
+Date: Mon, 16 Sep 2013 15:16:11 GMT<br>
+P3P: policyref=&quot;http://info.yahoo.com/w3c/p3p.xml&quot;, CP=&quot;CAO DSP COR CUR ADM DEV TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV&quot;<br>
+Set-Cookie: itsc=ZseuNzkNaa|ZUHvdV4D|fvis10001561398679=|M|M|M|s|8MH7MTT1H8|M; path=/; domain=.analytics.yahoo.com<br>
+TS: 0 741 dc28_bf1<br>
+Pragma: no-cache<br>
+Expires: Mon, 16 Sep 2013 15:16:12 GMT<br>
+Cache-Control: no-cache, private, must-revalidate<br>
+Content-Length: 46<br>
+Accept-Ranges: bytes<br>
+Tracking-Status: fpc site tracked<br>
+Vary: Accept-Encoding<br>
+Connection: close<br>
+Content-Type: application/x-javascript<br>
+</p></div><h4><span class="a_request" id="request8" data-target-id="headers_8">+ Request 8: http://media.fastclick.net/w/tre?ad_id=30248;evt=23242;cat1=31867;cat2=31868;rand=[CACHEBUSTER]</span></h4><div class="header_details" id="headers_8"><p class="indented2">
+<b>URL:</b> http://media.fastclick.net/w/tre?ad_id=30248;evt=23242;cat1=31867;cat2=31868;rand=[CACHEBUSTER]<br>
+<b>Host:</b> media.fastclick.net<br>
+<b>IP:</b> 8.18.45.90<br>
+<b>Location:</b> New York, NY<br>
+<b>Error/Status Code:</b> 200<br>
+<b>Client Port:</b> 52368<br>
+<b>Start Offset:</b> 2.001 s<br>
+<b>DNS Lookup:</b> 25 ms<br>
+<b>Initial Connection:</b> 239 ms<br>
+<b>Time to First Byte:</b> 114 ms<br>
+<b>Content Download:</b> 1 ms<br>
+<b>Bytes In (downloaded):</b> 0.4 KB<br>
+<b>Bytes Out (uploaded):</b> 0.5 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+GET /w/tre?ad_id=30248;evt=23242;cat1=31867;cat2=31868;rand=[CACHEBUSTER] HTTP/1.1<br>
+Accept: image/png, image/svg+xml, image/*;q=0.8, */*;q=0.5<br>
+Referer: http://bs.serving-sys.com/BurstingPipe/ActivityServer.bs?cn=as&amp;ActivityID=313089&amp;ifrm=1&amp;rnd=748424<br>
+Accept-Language: en-US<br>
+X-Download-Initiator: image=&quot;doc 03F0; speculative; html tokenizer 5C98&quot;<br>
+User-Agent: Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0; PTST 2.366)<br>
+Accept-Encoding: gzip, deflate<br>
+Host: media.fastclick.net<br>
+Connection: Keep-Alive<br>
+Cookie: pluto2=453094165939<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+HTTP/1.1 200 OK<br>
+Date: Mon, 16 Sep 2013 15:16:12 GMT<br>
+Server: Apache/2.2.4 (Unix) mod_apreq2-20090110/2.7.1<br>
+Cache-Control: no-cache<br>
+Pragma: no-cache<br>
+Expires: 0<br>
+Content-Length: 43<br>
+Content-Type: image/gif<br>
+P3P: policyref=&quot;/w3c/p3p.xml&quot;, CP=&quot;NOI NID DEVo TAIo PSAo HISo OTPo OUR DELo BUS COM NAV INT DSP COR&quot;<br>
+Keep-Alive: timeout=5, max=19866<br>
+Connection: Keep-Alive<br>
+</p></div><h4><span class="a_request" id="request9" data-target-id="headers_9">+ Request 9: http://www.facebook.com/offsite_event.php?id=6008476725437&amp;amp;value=0&amp;amp;currency=USD</span></h4><div class="header_details" id="headers_9"><p class="indented2">
+<b>URL:</b> http://www.facebook.com/offsite_event.php?id=6008476725437&amp;value=0&amp;currency=USD<br>
+<b>Host:</b> www.facebook.com<br>
+<b>IP:</b> 76.13.28.70<br>
+<b>Location:</b> Sunnyvale, CA<br>
+<b>Error/Status Code:</b> 200<br>
+<b>Start Offset:</b> 2.001 s<br>
+<b>DNS Lookup:</b> 26 ms<br>
+<b>Initial Connection:</b> 234 ms<br>
+<b>Time to First Byte:</b> 131 ms<br>
+<b>Bytes In (downloaded):</b> 0.5 KB<br>
+<b>Bytes Out (uploaded):</b> 0.5 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+GET /offsite_event.php?id=6008476725437&amp;amp;value=0&amp;amp;currency=USD HTTP/1.1<br>
+Accept: image/png, image/svg+xml, image/*;q=0.8, */*;q=0.5<br>
+Referer: http://bs.serving-sys.com/BurstingPipe/ActivityServer.bs?cn=as&amp;ActivityID=313089&amp;ifrm=1&amp;rnd=748424<br>
+Accept-Language: en-US<br>
+X-Download-Initiator: image=&quot;doc 03F0 win 7928; image; src; property change&quot;<br>
+User-Agent: Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0; PTST 2.366)<br>
+Accept-Encoding: gzip, deflate<br>
+Host: www.facebook.com<br>
+Connection: Keep-Alive<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+HTTP/1.1 200 OK<br>
+Cache-Control: public, max-age=0<br>
+Content-Type: image/gif<br>
+Date: Mon, 16 Sep 2013 08:16:12 PDT<br>
+Expires: Mon, 16 Sep 2013 08:16:12 PDT<br>
+Pragma: public<br>
+X-Content-Type-Options: nosniff<br>
+X-UA-Compatible: IE=edge,chrome=1<br>
+X-XSS-Protection: 0<br>
+Content-Encoding: gzip<br>
+X-FB-Debug: v4iyfXYXEuBIFicLnt/2/AKz2k2IdbO1C5GPqmlslXg=<br>
+Transfer-Encoding: chunked<br>
+Connection: keep-alive<br>
+</p></div><h4><span class="a_request" id="request10" data-target-id="headers_10">+ Request 10: http://pixel.quantserve.com/pixel;r=2041482766;a=p-GXQdGwMZAv5d_;labels=_fp.event.Flickr%20Homepage;fpan=0;fpa=P0-1256111687-1379344559411;ns=1;ce=1;cm=;je=1;sr=1920x1200x24;enc=n;dst=1;et=1379344568499;tzo=240;ref=http%3A%2F%2Fwww.flickr.com%2F;url=http%3A%2F%2Fbs.serving-sys.com%2FBurstingPipe%2FActivityServer.bs%3Fcn%3Das%26ActivityID%3D313089%26ifrm%3D1%26rnd%3D748424;ogl=</span></h4><div class="header_details" id="headers_10"><p class="indented2">
+<b>URL:</b> http://pixel.quantserve.com/pixel;r=2041482766;a=p-GXQdGwMZAv5d_;labels=_fp.event.Flickr%20Homepage;fpan=0;fpa=P0-1256111687-1379344559411;ns=1;ce=1;cm=;je=1;sr=1920x1200x24;enc=n;dst=1;et=1379344568499;tzo=240;ref=http%3A%2F%2Fwww.flickr.com%2F;url=http%3A%2F%2Fbs.serving-sys.com%2FBurstingPipe%2FActivityServer.bs%3Fcn%3Das%26ActivityID%3D313089%26ifrm%3D1%26rnd%3D748424;ogl=<br>
+<b>Host:</b> pixel.quantserve.com<br>
+<b>IP:</b> 64.94.107.37<br>
+<b>Location:</b> Atlanta, GA<br>
+<b>Error/Status Code:</b> 200<br>
+<b>Client Port:</b> 52372<br>
+<b>Start Offset:</b> 2.117 s<br>
+<b>DNS Lookup:</b> 251 ms<br>
+<b>Initial Connection:</b> 75 ms<br>
+<b>Time to First Byte:</b> 33 ms<br>
+<b>Bytes In (downloaded):</b> 0.3 KB<br>
+<b>Bytes Out (uploaded):</b> 0.8 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+GET /pixel;r=2041482766;a=p-GXQdGwMZAv5d_;labels=_fp.event.Flickr%20Homepage;fpan=0;fpa=P0-1256111687-1379344559411;ns=1;ce=1;cm=;je=1;sr=1920x1200x24;enc=n;dst=1;et=1379344568499;tzo=240;ref=http%3A%2F%2Fwww.flickr.com%2F;url=http%3A%2F%2Fbs.serving-sys.com%2FBurstingPipe%2FActivityServer.bs%3Fcn%3Das%26ActivityID%3D313089%26ifrm%3D1%26rnd%3D748424;ogl= HTTP/1.1<br>
+Accept: image/png, image/svg+xml, image/*;q=0.8, */*;q=0.5<br>
+Referer: http://bs.serving-sys.com/BurstingPipe/ActivityServer.bs?cn=as&amp;ActivityID=313089&amp;ifrm=1&amp;rnd=748424<br>
+Accept-Language: en-US<br>
+X-Download-Initiator: image=&quot;doc 03F0 win 7928; image; src; property change&quot;<br>
+User-Agent: Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0; PTST 2.366)<br>
+Accept-Encoding: gzip, deflate<br>
+Host: pixel.quantserve.com<br>
+Connection: Keep-Alive<br>
+Cookie: mc=523720b3-30e14-bd757-a0671<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+HTTP/1.1 200 OK<br>
+Connection: close<br>
+Content-Type: image/gif<br>
+Cache-Control: private, no-cache, no-store, proxy-revalidate<br>
+Pragma: no-cache<br>
+Expires: Fri, 04 Aug 1978 12:00:00 GMT<br>
+Content-Length: 35<br>
+Date: Mon, 16 Sep 2013 15:16:12 GMT<br>
+Server: QS<br>
+</p></div><h4><span class="a_request" id="request11" data-target-id="headers_11">+ Request 11: http://csc.beap.bc.yahoo.com/yi?bv=1.0.0&amp;bs=(135if4tvp(gid$u8gL_DEyNy6GDDWiUjcgsgh5NzIuNgAAAACvLh0W,st$1379344571076037,si$4409551,sp$792600119,pv$1,v$2.0))&amp;t=D_3&amp;al=(as$125looeqe,aid$iEwRZmKLFuQ-,cr$-1,ct$25,at$0,eob$gd1_match_id=-1:ypos=MAST)</span></h4><div class="header_details" id="headers_11"><p class="indented2">
+<b>URL:</b> http://csc.beap.bc.yahoo.com/yi?bv=1.0.0&bs=(135if4tvp(gid$u8gL_DEyNy6GDDWiUjcgsgh5NzIuNgAAAACvLh0W,st$1379344571076037,si$4409551,sp$792600119,pv$1,v$2.0))&t=D_3&al=(as$125looeqe,aid$iEwRZmKLFuQ-,cr$-1,ct$25,at$0,eob$gd1_match_id=-1:ypos=MAST)<br>
+<b>Host:</b> csc.beap.bc.yahoo.com<br>
+<b>IP:</b> 76.13.28.70<br>
+<b>Location:</b> Sunnyvale, CA<br>
+<b>Error/Status Code:</b> 200<br>
+<b>Client Port:</b> 52373<br>
+<b>Start Offset:</b> 2.118 s<br>
+<b>DNS Lookup:</b> 36 ms<br>
+<b>Initial Connection:</b> 75 ms<br>
+<b>Time to First Byte:</b> 71 ms<br>
+<b>Content Download:</b> 1 ms<br>
+<b>Bytes In (downloaded):</b> 0.4 KB<br>
+<b>Bytes Out (uploaded):</b> 0.7 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+GET /yi?bv=1.0.0&amp;bs=(135if4tvp(gid$u8gL_DEyNy6GDDWiUjcgsgh5NzIuNgAAAACvLh0W,st$1379344571076037,si$4409551,sp$792600119,pv$1,v$2.0))&amp;t=D_3&amp;al=(as$125looeqe,aid$iEwRZmKLFuQ-,cr$-1,ct$25,at$0,eob$gd1_match_id=-1:ypos=MAST) HTTP/1.1<br>
+Accept: image/png, image/svg+xml, image/*;q=0.8, */*;q=0.5<br>
+Referer: http://y.flickr.yahoo.com/ad?spaceid=792600119&amp;position=MAST&amp;adid=none<br>
+Accept-Language: en-US<br>
+X-Download-Initiator: image=&quot;doc 03F0; speculative; html tokenizer 2F40; html lookahead 1:4548&quot;<br>
+User-Agent: Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0; PTST 2.366)<br>
+Accept-Encoding: gzip, deflate<br>
+Host: csc.beap.bc.yahoo.com<br>
+Connection: Keep-Alive<br>
+Cookie: B=8c31lk993e85i&amp;b=3&amp;s=43<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+HTTP/1.1 200 OK<br>
+Date: Mon, 16 Sep 2013 15:16:12 GMT<br>
+P3P: policyref=&quot;http://info.yahoo.com/w3c/p3p.xml&quot;, CP=&quot;CAO DSP COR CUR ADM DEV TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV&quot;<br>
+Cache-Control: no-cache, private<br>
+Accept-Charset: utf-8<br>
+Connection: close<br>
+Transfer-Encoding: chunked<br>
+Content-Type: image/gif<br>
+</p></div><h4><span class="a_request" id="request12" data-target-id="headers_12">+ Request 12: http://b.scorecardresearch.com/p?c1=2&amp;c2=7241469&amp;c3=&amp;c4=www.flickr.com%252F&amp;c5=792600119&amp;c6=&amp;c15=&amp;ns__t=1379344568988&amp;ns_c=utf-8</span></h4><div class="header_details" id="headers_12"><p class="indented2">
+<b>URL:</b> http://b.scorecardresearch.com/p?c1=2&c2=7241469&c3=&c4=www.flickr.com%252F&c5=792600119&c6=&c15=&ns__t=1379344568988&ns_c=utf-8<br>
+<b>Host:</b> b.scorecardresearch.com<br>
+<b>IP:</b> 107.14.43.227<br>
+<b>Location:</b> Akamai<br>
+<b>Error/Status Code:</b> 200<br>
+<b>Client Port:</b> 52376<br>
+<b>Start Offset:</b> 2.286 s<br>
+<b>DNS Lookup:</b> 65 ms<br>
+<b>Initial Connection:</b> 102 ms<br>
+<b>Time to First Byte:</b> 148 ms<br>
+<b>Bytes In (downloaded):</b> 0.3 KB<br>
+<b>Bytes Out (uploaded):</b> 0.5 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+GET /p?c1=2&amp;c2=7241469&amp;c3=&amp;c4=www.flickr.com%252F&amp;c5=792600119&amp;c6=&amp;c15=&amp;ns__t=1379344568988&amp;ns_c=utf-8 HTTP/1.1<br>
+Accept: image/png, image/svg+xml, image/*;q=0.8, */*;q=0.5<br>
+Referer: http://www.flickr.com/<br>
+Accept-Language: en-US<br>
+X-Download-Initiator: image=&quot;doc 03F0 win 1E58; image; src; property change&quot;<br>
+User-Agent: Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0; PTST 2.366)<br>
+Accept-Encoding: gzip, deflate<br>
+Host: b.scorecardresearch.com<br>
+Connection: Keep-Alive<br>
+Cookie: UID=798187-96.17.197.19-1379344565; UIDR=1379344565<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+HTTP/1.1 200 OK<br>
+Content-Length: 43<br>
+Content-Type: image/gif<br>
+Date: Mon, 16 Sep 2013 15:16:12 GMT<br>
+Connection: keep-alive<br>
+Pragma: no-cache<br>
+Expires: Mon, 01 Jan 1990 00:00:00 GMT<br>
+Cache-Control: private, no-cache, no-cache=Set-Cookie, no-store, proxy-revalidate<br>
+</p></div></div>
+            </div>
+
+                        <div style="width:100%;float:none;clear:both;"></div>
+
+            </div></div>            </div>
+        </div>
+    </div>
+</div>
+
+   
+    <table id="feeds"><tr><th>Recent Industry Blog Posts</th><th>Recent Discussions</th></tr><tr><td><ul><li><a title="Zoompf" href="http://zoompf.com/blog/2013/10/3-must-do-tips-to-get-your-e-commerce-site-ready-for-black-friday">3 Must-Dos for the E-Commerce Web Team Before Black Friday</a></li><li><a title="Strangeloop Networks" href="http://www.webperformancetoday.com/2013/10/02/iphone-speed-test-findings-faster-processor-doesnt-equal-huge-performance-boost/">iPhone speed test findings: Faster processor doesn’t equal huge performance boost</a></li><li><a title="Zoompf" href="http://zoompf.com/blog/2013/10/maximizing-search-rank-by-optimizing-your-ttfb">Improving Search Rank by Optimizing your Time to First Byte</a></li><li><a title="Ilya Grigorik" href="http://feeds.igvita.com/~r/igvita/~3/-ehrQc7PJyQ/">Retrospective: High Performance Browser Networking</a></li><li><a title="Zoompf" href="http://zoompf.com/blog/2013/09/top-9-us-news-sites-race-for-fastest-site">Top 9 US News Sites Race for Fastest Site</a></li><li id="show_more_feeds_1"><a href="javascript:void(o)" onclick="showFeeds(1)">more...</a></li><li class="morefeeds" ><div id="more_feeds_1" class="hidden"><ul><li><a title="Stoyan Stefanov" href="http://www.phpied.com/nyc-bound/">NYC.bind(me)</a></li><li><a title="Strangeloop Networks" href="http://www.webperformancetoday.com/2013/09/19/sneak-peek-this-is-your-brain-on-mobile/">Sneak peek: This is your brain on the mobile web</a></li><li><a title="Guy Podjarny" href="http://www.guypo.com/conferences/walking-on-the-edges/">Walking on the Edge(s)</a></li><li><a title="Gilly Barr" href="http://www.debuggerstepthrough.com/2013/09/prefetching-dns-lookups.html">Prefetching dns lookups</a></li><li><a title="Stoyan Stefanov" href="http://www.phpied.com/server-side-react-with-php-part-2/">Server-side React with PHP – part 2</a></li><li><a title="Stoyan Stefanov" href="http://www.phpied.com/borrowing-typography-tricks-from-the-masters/">Borrowing typography tricks from the masters</a></li><li><a title="Guy Podjarny" href="http://www.guypo.com/uncategorized/responsive-images-meetup-a-subjective-summary/">Responsive Images Meetup – A Subjective Summary</a></li><li><a title="Stoyan Stefanov" href="http://www.phpied.com/server-side-react-with-php/">Server-side React with PHP</a></li><li><a title="Stoyan Stefanov" href="http://www.phpied.com/installing-v8js-for-php-on-a-mac/">Installing v8js for PHP on a Mac</a></li><li><a title="Strangeloop Networks" href="http://www.webperformancetoday.com/2013/09/11/the-slow-web-movement/">The Slow Web: Why fast is important… and why it isn’t</a></li><li><a title="Stoyan Stefanov" href="http://www.phpied.com/reactive-table/">Reactive table</a></li><li><a title="Aaron Peters" href="http://www.aaronpeters.nl/blog/velocity-nyc-2013-raffle">Win a free Velocity NYC conference pass!</a></li></ul></div></li></ul></td><td><ul><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12584">FTTB problems</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12581">Site vs File (Browser Caching) Different? Why?</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12580">Test not found when trying to view tests</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12579">Apache subfolder settings</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12578">RoseHosting.com VPS specials - 25% OFF | Fully Managed | FREE DirectAdmin</a></li><li id="show_more_feeds_2"><a href="javascript:void(o)" onclick="showFeeds(2)">more...</a></li><li class="morefeeds" ><div id="more_feeds_2" class="hidden"><ul><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12577">&quot;The test completed but there were no successful results.&quot; with maxymiser</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12576">CDN detection control file</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12575">Help with my test results</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12573">favicon</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12572">fancybox 404 errors</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12571">Chrome browser window closes automaticaly on starting test</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12570">Testlocation Germany over 152 Pending Tests</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12569">Video tests</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12568">DNS Times from XML data from wpt_batch.py</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12567">cookie less domain need help</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12566">no cache control for file</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12565">SPNego Auth</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12563">Filmstrip API</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12562">Help needed with improvements from Test Results!</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12561">CSV date format - no leading zeros</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12559">Pagespeed and WPT results - Rule set Matrix?</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12558">DGvertTech LLC</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12557">WPT not detecting CDN being used</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12556">Awful Results - Please Help</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12554">Setting JSON style cookie</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12553">Not getting results when hitting a device</a></li></ul></div></li></ul></td></tr></table>
+    <div id="sponsor_header">WebPagetest Partners</div><div id="links"><table class="links"><tr><td ><a href="http://www.ip-label.co.uk/" title="ip-label"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors1.png?v=2); background-position: 0px -240px;"></div></a></td><td ><a href="http://www.fasterize.com/" title="Fasterize"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors3.png?v=1); background-position: 0px -320px;"></div></a></td><td ><a href="http://dev.aol.com/" title="AOL"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors1.png?v=2); background-position: 0px -280px;"></div></a></td><td ><a href="http://www.iispeed.com/" title="Google PageSpeed optimization for Microsoft IIS"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors4.png?v=7); background-position: 0px -240px;"></div></a></td><td ><a href="http://www.neustar.biz/enterprise/web-performance" title="Neustar"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors24.png?v=5); background-position: 0px 0px;"></div></a></td></tr></table><table class="links"><tr><td ><a href="http://www.catchpoint.com/lp/wp_website_monitoring_trial.html" title="Catchpoint Systems"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors2.png?v=3); background-position: 0px -360px;"></div></a></td><td ><a href="http://www.interhost.co.il/" title="interhost.co.il - Israel Web Hosting Services"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors24.png?v=5); background-position: 0px -480px;"></div></a></td><td ><a href="http://www.akamai.com/" title="Akamai"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors3.png?v=1); background-position: 0px -80px;"></div></a></td><td ><a href="http://www.duplika.com/?utm_source=webpagetest&utm_medium=logo&utm_campaign=speed" title="duplika Internet Solutions"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors2.png?v=3); background-position: 0px -200px;"></div></a></td><td ><a href="http://www.cloudshark.org" title="CloudShark"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors2.png?v=3); background-position: 0px -120px;"></div></a></td></tr></table><table class="links"><tr><td ><a href="http://www.rentavault.net/" title="Rentavault"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors2.png?v=3); background-position: 0px -240px;"></div></a></td><td ><a href="http://www.trademe.co.nz/" title="Trade Me"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors4.png?v=7); background-position: 0px 0px;"></div></a></td><td ><a href="http://admo.net/?webpagetest.org" title="Admo.net WebHosting"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors1.png?v=2); background-position: 0px -360px;"></div></a></td><td ><a href="http://www.daum.net/" title="DAUM Communications"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors3.png?v=1); background-position: 0px -280px;"></div></a></td><td ><a href="http://www.measureworks.nl/" title="MeasureWorks"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors3.png?v=1); background-position: 0px -120px;"></div></a></td></tr></table><table class="links"><tr><td ><a href="http://newrelic.com/" title="New Relic"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors2.png?v=3); background-position: 0px -160px;"></div></a></td><td ><a href="http://www.radware.com/Products/ApplicationDelivery/FastView/default.aspx" title="Radware - Smart Network. Smart Business."><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors2.png?v=3); background-position: 0px 0px;"></div></a></td><td ><a href="http://wpengine.com/" title="WP Engine"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors1.png?v=2); background-position: 0px -120px;"></div></a></td><td ><a href="http://www.squixa.com/" title="Squixa MultiCDN and Front End Optimisation"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors24.png?v=5); background-position: 0px -440px;"></div></a></td><td ><a href="http://www.netdna.com/" title="NetDNA"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors2.png?v=3); background-position: 0px -320px;"></div></a></td></tr></table><table class="links"><tr><td ><a href="http://www.bulletproof.net.au/" title="Bulletproof Mission Critical Hosting"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors1.png?v=2); background-position: 0px -200px;"></div></a></td><td ><a href="http://yhost.ro" title="Y Host :: Web Hosting in Romania"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors4.png?v=7); background-position: 0px -120px;"></div></a></td><td ><a href="http://www.maxcdn.com/" title="MaxCDN Content Delivery Network"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors3.png?v=1); background-position: 0px 0px;"></div></a></td><td ><a href="http://www.psw.net/" title="PSW GROUP"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors1.png?v=2); background-position: 0px 0px;"></div></a></td><td ><a href="http://www.turbobytes.com/" title="Faster content delivery - Turbobytes"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors1.png?v=2); background-position: 0px -40px;"></div></a></td></tr></table><table class="links"><tr><td ><a href="http://www.godaddy.com/?isc=WPTlogo" title="World's #1 ICANN-accredited domain registrar | Go Daddy"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors4.png?v=7); background-position: 0px -80px;"></div></a></td><td ><a href="http://www.webogroup.com/?utm_source=webpagetest&utm_medium=logo&utm_campaign=webo" title="WEBO Software. Website acceleration and monitoring solutions"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors3.png?v=1); background-position: 0px -240px;"></div></a></td><td ><a href="http://www.hostinginnederland.nl/" title="Hosting in Nederland - Vind de beste hosting voor je website"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors2.png?v=3); background-position: 0px -40px;"></div></a></td><td ><a href="http://www.gutefrage.net/" title="Gute Fragen - hilfreiche Antworten - die Ratgeber Community gutefrage.net"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors4.png?v=7); background-position: 0px -200px;"></div></a></td><td ><a href="http://pagerain.com/" title="PageRain - The Simplest CDN"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors24.png?v=5); background-position: 0px -320px;"></div></a></td></tr></table><table class="links"><tr><td ><a href="http://www.dotcom-monitor.com/?se=574612167f2948219c65b6ca3120f44f" title="Website and Application Performance Monitoring by Dotcom-Monitor.com"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors3.png?v=1); background-position: 0px -200px;"></div></a></td><td ><a href="http://www.mysitespeed.com/" title="Mysitespeed.com"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors2.png?v=3); background-position: 0px -280px;"></div></a></td><td ><a href="http://www.cisin.com/" title="CIS :: One-Stop Outsourcing Services, Since 2003! | We do IT better"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors24.png?v=5); background-position: 0px -400px;"></div></a></td><td ><a href="http://www.icomcept.de/" title="iCOMcept"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors2.png?v=3); background-position: 0px -80px;"></div></a></td><td ><a href="http://www.tid.es/en/" title="Telef&oacute;nica Digital"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors24.png?v=5); background-position: 0px -160px;"></div></a></td></tr></table><table class="links"><tr><td ><a href="http://www.exceda.com/landing/" title="Exceda"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors3.png?v=1); background-position: 0px -160px;"></div></a></td><td ><a href="http://www.dynatrace.com/" title="dynaTrace Software"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors1.png?v=2); background-position: 0px -320px;"></div></a></td><td ><a href="http://www.kbsd.com/" title="*KBSD Switzerland*"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors1.png?v=2); background-position: 0px -80px;"></div></a></td><td ><a href="http://www.apicasystem.com/" title="Apica Inc"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors24.png?v=5); background-position: 0px -240px;"></div></a></td><td ><a href="http://key-performance.eu/" title="Key Performance"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors24.png?v=5); background-position: 0px -120px;"></div></a></td></tr></table><table class="links"><tr><td ><a href="http://www.globalis-ms.com/" title="GLOBALIS media systems"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors24.png?v=5); background-position: 0px -40px;"></div></a></td><td ><a href="http://www.limelight.com/" title="Limelight Networks"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors24.png?v=5); background-position: 0px -280px;"></div></a></td><td ><a href="http://www.telerik.com/" title="Telerik - making software development easier and more enjoyable"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors4.png?v=7); background-position: 0px -160px;"></div></a></td><td ><a href="http://edgedirector.com/" title="edgedirector.com"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors1.png?v=2); background-position: 0px -160px;"></div></a></td><td ><a href="http://www.efficens-software.com/solution/web-performance-optimization/" title="Efficens Software - Your Israel based partner for Web Performance"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors3.png?v=1); background-position: 0px -360px;"></div></a></td></tr></table><table class="links"><tr><td ><a href="http://www.rusonyx.ru/" title="Rusonyx"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors24.png?v=5); background-position: 0px -200px;"></div></a></td><td></td><td ><a href="http://www.watchmouse.com/" title="WatchMouse website performance monitoring"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors3.png?v=1); background-position: 0px -40px;"></div></a></td><td></td><td ><a href="http://www.neotys.com/" title="Neotys Load &amp; Performance Testing"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors24.png?v=5); background-position: 0px -360px;"></div></a></td></tr></table></div>    <div class="cleared"></div>
+    
+    <script type="text/javascript" src="http://cdn.webpagetest.org/js/site.js?v=30"></script>
+<script>
+wptJSVer = '30';
+wptBrowser = 'Wget 1';
+function getCookie(c_name) {
+    var i,x,y,ARRcookies=document.cookie.split(";");
+    for (i=0;i<ARRcookies.length;i++) {
+      x=ARRcookies[i].substr(0,ARRcookies[i].indexOf("="));
+      y=ARRcookies[i].substr(ARRcookies[i].indexOf("=")+1);
+      x=x.replace(/^\s+|\s+$/g,"");
+      if (x==c_name)
+        return unescape(y);
+    }
+}
+
+function setCookie(c_name,value,exdays) {
+    var exdate=new Date();
+    exdate.setDate(exdate.getDate() + exdays);
+    var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
+    document.cookie=c_name + "=" + c_value;
+}
+
+// see if the browser we are in supports resource timing
+function WptExperiment() {
+    try {
+        if (window['performance'] != undefined &&
+            (window.performance.getEntriesByType ||
+             window.performance.webkitGetEntriesByType)) {
+            if (window.performance.getEntriesByType)
+                var requests = window.performance.getEntriesByType("resource");
+            else
+                var requests = window.performance.webkitGetEntriesByType("resource");
+            var detected = false;
+            var data = {'browser': wptBrowser,
+                        'jsCached': false,
+                        'cookiePresent': false,
+                        'existingSession' : false,
+                        'localStoragePresent' : false,
+                        'jsTime': 0};
+            for (i = 0; i < requests.length; i++) {
+                var url = requests[i].name;
+                if (requests[i].name.indexOf('site.js') != -1) {
+                    detected = true;
+                    if (requests[i].responseStart == 0 ||
+                        requests[i].responseStart == requests[i].requestStart)
+                        data.jsCached = true;
+                    data.jsTime = Math.round(requests[i].duration);
+                }
+            }
+            
+            if (getCookie('exptVer') == wptJSVer) data.cookiePresent = true;
+            setCookie('exptVer', wptJSVer, 365);
+            if (getCookie('exptSession') == wptJSVer) data.existingSession = true;
+            setCookie('exptSession', wptJSVer, null);
+            if (localStorage["exptVer"] == wptJSVer) data.localStoragePresent = true;
+            localStorage["exptVer"] = wptJSVer;
+            if (detected) {
+                console.log(JSON.stringify(data));
+                var debug_str = 'site.js loaded from ';
+                if (data.jsCached)
+                  debug_str += 'cache';
+                else
+                  debug_str += 'network';
+                debug_str += ' in ' + data.jsTime + ' milliseconds';
+                if (data.existingSession)
+                  debug_str += ' (Existing Session)';
+                else
+                  debug_str += ' (New Session)';
+                $("#experiment-timing").html(debug_str);
+                var xhr = new XMLHttpRequest();
+                xhr.open('POST', '/experiment/data.php', true);
+                xhr.send(JSON.stringify(data));
+            }
+        }
+    } catch(e){
+    }
+};
+
+window.addEventListener('load', WptExperiment, false);
+</script>
+    <script type="text/javascript">
+        function showFeeds(column)
+        {
+            var label = document.getElementById("show_more_feeds_" + column);
+            label.parentNode.removeChild( label );
+            
+            document.getElementById("more_feeds_" + column).className = "";
+            return false;
+        }
+
+        if (performance['measure'])
+          performance.measure('Content Processing', 'aft.Site Header');
+    </script>
+    
+<script type="text/javascript">
+(function(a,b,c){function d(){var a=b.createElement(c),d=b.getElementsByTagName(c)[0];a.async=a.src="http://s2.cdnplanet.com/static/rum/rum.js",d.parentNode.insertBefore(a,d)}if(a.location.protocol=="https:")return;a.addEventListener&&a.addEventListener("load",d,!1)})(window,document,"script")
+</script>
+<img height="1" width="1" style="border-style:none;" alt="" src="http://www.googleadservices.com/pagead/conversion/1049562605/?value=0&amp;label=-neBCNO9wwMQ7Zu89AM&amp;guid=ON&amp;script=0"/>    <script type="text/javascript">if(!NREUMQ.f){NREUMQ.f=function(){NREUMQ.push(["load",new Date().getTime()]);var e=document.createElement("script");e.type="text/javascript";e.src=(("http:"===document.location.protocol)?"http:":"https:")+"//"+"js-agent.newrelic.com/nr-100.js";document.body.appendChild(e);if(NREUMQ.a)NREUMQ.a();};NREUMQ.a=window.onload;window.onload=NREUMQ.f;};NREUMQ.push(["nrfj","beacon-1.newrelic.com","5b0327a758","2035125","NFBXZUNRW0ADAkRbCQ0aYENYH1FWFgBZXhVNRV1B",0,42,new Date().getTime(),"","","","",""]);</script>    
+    <div id="experiment-timing" style="color: #77A;"></div>        </div>
+
+        <script type="text/javascript">
+        function expandRequest(targetNode) {
+          if (targetNode.length) {
+            var div_to_expand = $('#' + targetNode.attr('data-target-id'));
+
+            if (div_to_expand.is(":visible")) {
+                div_to_expand.hide();
+                targetNode.html('+' + targetNode.html().substring(1));
+            } else {
+                div_to_expand.show();
+                targetNode.html('-' + targetNode.html().substring(1));
+            }
+          }
+        }
+
+        $(document).ready(function() { $("#tableDetails").tablesorter({
+            headers: { 3: { sorter:'currency' } ,
+                       4: { sorter:'currency' } ,
+                       5: { sorter:'currency' } ,
+                       6: { sorter:'currency' } ,
+                       7: { sorter:'currency' } ,
+                       8: { sorter:'currency' } ,
+                       9: { sorter:'currency' }
+                     }
+        }); } );
+
+        $('.a_request').click(function () {
+            expandRequest($(this));
+        });
+
+        function expandAll() {
+          $(".header_details").each(function(index) {
+            $(this).show();
+          });
+        }
+        
+        if (window.location.hash == '#all') {
+          expandAll();
+        } else
+          expandRequest($(window.location.hash));
+
+        var CloseRequestDialog = function(hash) {
+    hash.w.hide();
+    for (i=1;i<=wptRequestCount;i++) {
+        $("#request-overlay-" + i).removeClass("selected");
+        $("#request-overlay-" + i).addClass("transparent");
+    }
+    $('#radio1').attr('checked', 'checked');
+    $("#request-dialog-radio").buttonset('refresh');
+}
+
+// initialize the pop-up dialog        
+$('#request-dialog').jqm({overlay: 0, onHide: CloseRequestDialog})
+      .jqDrag('.jqDrag');
+$('input.jqmdX')
+    .hover( function(){ $(this).addClass('jqmdXFocus'); }, 
+            function(){ $(this).removeClass('jqmdXFocus'); })
+    .focus( function(){ this.hideFocus=true; $(this).addClass('jqmdXFocus'); })
+    .blur( function(){ $(this).removeClass('jqmdXFocus'); });
+    
+$("#request-dialog-radio").buttonset();
+$("#request-dialog-radio").change(function() {
+    var panel=$('#request-dialog-radio input[type=radio]:checked').val();
+    $("#dialog-contents div.dialog-tab-content").hide();
+    $("#" + panel).show();
+});
+
+var wptBodyRequest;
+
+// Test that a value is a valid duration.
+// Invalid durations include undefined and -1.
+function IsValidDuration(value) {
+    // Explicitly check the type.  Would you have guessed that Number(['9'])
+    // is 9?  We need to support strings because php makes it too easy to
+    // send a number as a string.  We need to support numbers like "123.4".
+    if (typeof value != 'number' && typeof value != 'string')
+        return false;
+
+    // Number('') is 0, but the empty string is not a valid duration.
+    if (value === '')
+        return false;
+
+    var num = Number(value);
+    return (!isNaN(num) && num !== -1);
+}
+
+function NumBytesAsDisplayString(numBytes) {
+    var numKb = numBytes / 1024.0;
+
+    // We display kilobytes with one decimal point.  If the value with that
+    // precision would be zero, display bytes instead.
+    if (numKb >= 0.1) {
+        return numKb.toFixed(1) + ' KB';
+    }
+    return numBytes + ' B';
+}
+
+function SelectRequest(request) {
+    $('#request-dialog').css('top', $("#request-overlay-" + request).position().top + 20);
+    $("#dialog-title").html('<a href="#request' + request + '">Request #' + request + '</a>');
+    var details='';
+    var requestHeaders='';
+    var responseHeaders='';
+    $("#response-body").html('');
+    $('#response-body-button').hide();
+    $("#response-image").html('');
+    $('#response-image-button').hide();
+    try {
+        if (wptBodyRequest !== undefined)
+            wptBodyRequest.abort();
+    } catch (err) {
+    }
+    if (wptRequestData[request - 1] !== undefined) {
+        var r = wptRequestData[request - 1];
+        if (r['full_url'] !== undefined) {
+            if (wptNoLinks) {
+                details += '<b>URL:</b> ' + r['full_url'] + '<br>';
+            } else {
+                details += '<b>URL:</b> <a href="' + r['full_url'] + '">' + r['full_url'] + '</a><br>';
+            }
+        }
+        if (r['initiator'] !== undefined && r['initiator'].length > 0) {
+            details += '<b>Loaded By:</b> ' + r['initiator'];
+            if (r['initiator_line'] !== undefined)
+                details += ':' + r['initiator_line'];
+            details += '<br>';
+        }
+        if (r['host'] !== undefined)
+            details += '<b>Host: </b>' + r['host'] + '<br>';
+        if (r['ip_addr'])
+            details += '<b>IP: </b>' + r['ip_addr'] + '<br>';
+        if (r['location'] !== undefined && r['location'].length)
+            details += '<b>Location: </b>' + r['location'] + '<br>';
+        if (r['responseCode'] !== undefined)
+            details += '<b>Error/Status Code: </b>' + r['responseCode'] + '<br>';
+        if (r['client_port'] !== undefined && r['client_port'])
+            details += '<b>Client Port: </b>' + r['client_port'] + '<br>';
+        if (r['load_start'] !== undefined)
+            details += '<b>Start Offset: </b>' + (r['load_start'] / 1000.0).toFixed(3) + ' s<br>';
+        if (IsValidDuration(r['dns_ms'])) {
+            details += '<b>DNS Lookup: </b>' + r['dns_ms'] + ' ms<br>';
+        } else if( r['dns_end'] !== undefined && r['dns_start'] !== undefined && r['dns_end'] > 0 ) {
+            var dnsTime = r['dns_end'] - r['dns_start'];
+            details += '<b>DNS Lookup: </b>' + dnsTime + ' ms<br>';
+        }
+        if (IsValidDuration(r['connect_ms'])) {
+            details += '<b>Initial Connection: </b>' + r['connect_ms'] + ' ms<br>';
+            if (r['is_secure'] !== undefined && r['is_secure'] && IsValidDuration(r['ssl_ms'])) {
+                details += '<b>SSL Negotiation: </b>' + r['ssl_ms'] + ' ms<br>';
+            }
+        } else if( r['connect_end'] !== undefined && r['connect_start'] !== undefined && r['connect_end'] > 0 ) {
+            var connectTime = r['connect_end'] - r['connect_start'];
+            details += '<b>Initial Connection: </b>' + connectTime + ' ms<br>';
+            if( r['ssl_end'] !== undefined && r['ssl_start'] !== undefined && r['ssl_end'] > 0 ) {
+                var sslTime = r['ssl_end'] - r['ssl_start'];
+                details += '<b>SSL Negotiation: </b>' + sslTime + ' ms<br>';
+            }
+        }
+        if (IsValidDuration(r['ttfb_ms'])) {
+            details += '<b>Time to First Byte: </b>' + r['ttfb_ms'] + ' ms<br>';
+        }
+        if (IsValidDuration(r['download_ms']))
+            details += '<b>Content Download: </b>' + r['download_ms'] + ' ms<br>';
+        if (r['bytesIn'] !== undefined)
+            details += '<b>Bytes In (downloaded): </b>' + NumBytesAsDisplayString(r['bytesIn']) + '<br>';
+        if (r['bytesOut'] !== undefined)
+            details += '<b>Bytes Out (uploaded): </b>' + NumBytesAsDisplayString(r['bytesOut']) + '<br>';
+        if (r['custom_rules'] !== undefined) {
+            for (rule in r['custom_rules']) {
+                details += '<b>Custom Rule - ' + rule + ': </b>(';
+                details += r['custom_rules'][rule]['count'] + ' matches) - ';
+                details += r['custom_rules'][rule]['value'].replace(/>/g, '&gt;').replace(/</g, '&lt;') + '<br>';
+            }
+        }
+        if (r['headers'] !== undefined){
+            if (r.headers['request'] !== undefined){
+                for (i=0;i<r.headers.request.length;i++) {
+                    requestHeaders += r.headers.request[i] + '<br>';
+                }
+            }
+            if (r.headers['response'] !== undefined){
+                for (i=0;i<r.headers.response.length;i++) {
+                    responseHeaders += r.headers.response[i] + '<br>';
+                }
+            }
+        }
+        if (r['body_url'] !== undefined && r['body_url'].length) {
+            try {
+                $("#response-body").text('Loading...');
+                $('#response-body-button').show();
+                wptBodyRequest = new XMLHttpRequest();
+                wptBodyRequest.open('GET', r['body_url'], true);
+                wptBodyRequest.onreadystatechange = function() {
+                if (wptBodyRequest.readyState == 4) {
+                    if (wptBodyRequest.status == 200) {
+                        $("#response-body").text(wptBodyRequest.responseText);
+                    } else {
+                        $("#response-body").text('');
+                    }
+                }
+              }
+              wptBodyRequest.send();
+            } catch (err) {
+            }
+        } else if (r['contentType'] !== undefined && r['contentType'].indexOf('image') >= 0) {
+            $('#response-body-button').show();
+            if (wptNoLinks) {
+                $("#response-body").html('<img style="max-width:100%; max-height:100%;" src="' + r['full_url'] + '">');
+            } else {
+                $("#response-body").html('<a href="' + r['full_url'] + '"><img style="max-width:100%; max-height:100%;" src="' + r['full_url'] + '"></a>');
+            }
+        }
+    }
+    $("#request-details").html(details);
+    $("#request-headers").html(requestHeaders);
+    $("#response-headers").html(responseHeaders);
+    $('#request-dialog').jqmShow();
+
+    // highlight the selected request
+    for (i=1;i<=wptRequestCount;i++) {
+        if (i == request)
+            $("#request-overlay-" + i).addClass("selected");
+        else
+            $("#request-overlay-" + i).removeClass("selected");
+    }
+}
+
+// support for the multi-waterfall translucency
+$(".waterfall-transparency").change(function() {
+    var newValue = this.value;
+    var id = this.name;
+    $("#" + id).css({ opacity: newValue });
+});
+        </script>
+    </body>
+</html>

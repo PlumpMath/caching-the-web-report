@@ -1,0 +1,1276 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WebPagetest Test Details - Dulles : yahoo.co.jp - 09/16/13 14:44:03</title>
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<meta name="keywords" content="Performance Test,Details,Webpagetest,Website Speed Test,Page Speed">
+<meta name="description" content="Website performance test details - Dulles : yahoo.co.jp - 09/16/13 14:44:03">
+<meta name="author" content="Patrick Meenan">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge"> 
+
+<link rel="shortcut icon" href="/images/favicon.ico" type="image/vnd.microsoft.icon">
+<link rel="icon" href="/images/favicon.png" type="image/png">
+
+<script type="text/javascript">var NREUMQ=NREUMQ||[];NREUMQ.push(["mark","firstbyte",new Date().getTime()]);</script>
+<script type="text/javascript">
+var wptTemplate = 'Details';
+rumMapping = {'aft': 'custom0'};
+(function(){
+  var dom,doc,where,iframe = document.createElement('iframe');
+  iframe.src = "javascript:false";
+  (iframe.frameElement || iframe).style.cssText = "width: 0; height: 0; border: 0";
+  where = document.getElementsByTagName('script')[0];
+  where.parentNode.insertBefore(iframe, where);
+
+  try {
+    doc = iframe.contentWindow.document;
+  } catch(e) {
+    dom = document.domain;
+    iframe.src="javascript:var d=document.open();d.domain='"+dom+"';void(0);";
+    doc = iframe.contentWindow.document;
+  }
+  doc.open()._l = function() {
+    var js = this.createElement("script");
+    if(dom) this.domain = dom;
+    js.id = "boomr-if-as";
+    js.src = '//c.go-mpulse.net/boomerang/' +
+    'KLHEA-LW4C7-LHTMB-YZBLM-2BJ54';
+    BOOMR_lstart=new Date().getTime();
+    this.body.appendChild(js);
+  };
+  doc.write('<body onload="document._l();">');
+  doc.close();
+  })();
+        
+</script>
+<script type="text/javascript">
+;(function(){var e=typeof window!="undefined"?window:exports,t=[];e.performance||(e.performance={});e.performance.now||(e.performance.now=performance.now||performance.webkitNow||performance.msNow||performance.mozNow);if(!e.performance.now){var n=Date.now?Date.now():+(new Date);if(performance.timing&&performance.timing)n=performance.timing.navigationStart;e.performance.now=function(){var e=Date.now?Date.now():+(new Date);return e-n}}e.performance.mark||(e.performance.mark=e.performance.webkitMark?e.performance.webkitMark:function(n){t.push({name:n,entryType:"mark",startTime:e.performance.now(),duration:0})});e.performance.getEntriesByType||(e.performance.getEntriesByType=e.performance.webkitGetEntriesByType?e.performance.webkitGetEntriesByType:function(e){return e=="mark"?t:undefined})})();window.markUserTime=function(e){var t=window["requestAnimationFrame"]||function(e){setTimeout(e,0)};t(function(){window.performance.mark(e);if(window["console"]&&console["timeStamp"])console.timeStamp(e)})};(function(){var e=function(e,t,n){t=Math.round(t);if(t>=0&&t<36e5){if(!n&&window["_gaq"])_gaq.push(["_trackTiming","UserTimings",e,t]);if(n&&window["rumMapping"]&&window.rumMapping[e])BOOMR.plugins.RT.setTimer(window.rumMapping[e],t)}};utReportRUM=function(t){var n=window.performance.getEntriesByType("mark");var r={};for(i=0;i<n.length;i++){g="usertiming";if(r[g]==undefined||n[i].startTime>r[g])r[g]=n[i].startTime;p=n[i].name.match(/([^\.]+)\.([^\.]*)/);if(p&&p.length>2&&(r[p[1]]==undefined||n[i].startTime>r[p[1]]))r[p[1]]=n[i].startTime}for(g in r)e(g,r[g],t)};utOnLoad=function(){utReportRUM(false)};if(window["addEventListener"])window.addEventListener("load",utOnLoad,false);else if(window["attachEvent"])window.attachEvent("onload",utOnLoad);utSent=false;BOOMR=window.BOOMR||{};BOOMR.plugins=BOOMR.plugins||{};BOOMR.plugins.UserTiming={init:function(e){BOOMR.subscribe("page_ready",function(){if(!utSent){utReportRUM(true);utSent=true;BOOMR.sendBeacon()}})},is_complete:function(){return utSent}}})();
+</script>
+<link rel="stylesheet" href="http://cdn.webpagetest.org/pagestyle.css?v=65" type="text/css">
+<style type="text/css">
+
+</style>
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3755571-1']);
+_gaq.push(['_setCustomVar', 1, 'Template', 'Details', 3]);
+    _gaq.push(['_setSiteSpeedSampleRate', 100]);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+    var ga = document.createElement('script');
+    ga.src = ('https:' == document.location.protocol ?
+        'https://ssl' : 'http://www') +
+        '.google-analytics.com/ga.js';
+    ga.setAttribute('async', 'true');
+    document.documentElement.firstChild.appendChild(ga);
+    })();
+    </script>
+        <style type="text/css">
+        div.bar {
+            height:12px;
+            margin-top:auto;
+            margin-bottom:auto;
+        }
+
+        .left {text-align:left;}
+        .center {text-align:center;}
+
+        .indented1 {padding-left: 40pt;}
+        .indented2 {padding-left: 80pt;}
+
+        td {
+            white-space:nowrap;
+            text-align:left;
+            vertical-align:middle;
+        }
+
+        td.center {
+            text-align:center;
+        }
+
+        table.details {
+          margin-left:auto; margin-right:auto;
+          background: whitesmoke;
+          border-collapse: collapse;
+        }
+        table.details th, table.details td {
+          border: 1px silver solid;
+          padding: 0.2em;
+          text-align: center;
+          font-size: smaller;
+        }
+        table.details th {
+          background: gainsboro;
+        }
+        table.details caption {
+          margin-left: inherit;
+          margin-right: inherit;
+          background: whitesmoke;
+        }
+        table.details th.reqUrl, table.details td.reqUrl {
+          text-align: left;
+          width: 30em;
+          word-wrap: break-word;
+        }
+        table.details td.even {
+          background: gainsboro;
+        }
+        table.details td.odd {
+          background: whitesmoke;
+        }
+        table.details td.evenRender {
+          background: #dfffdf;
+        }
+        table.details td.oddRender {
+          background: #ecffec;
+        }
+        table.details td.evenDoc {
+          background: #dfdfff;
+        }
+        table.details td.oddDoc {
+          background: #ececff;
+        }
+        table.details td.warning {
+          background: #ffff88;
+        }
+        table.details td.error {
+          background: #ff8888;
+        }
+        .header_details {
+            display: none;
+        }
+        .a_request {
+            cursor: pointer;
+        }
+        
+div.waterfall-container {position: relative; left: 0; top: 0; clear:both; overflow:auto;}
+img.waterfall-image {position: relative; left: 0; top: 0;}
+div.request-overlay {cursor:pointer; padding: 0; margin: 0; width: 928px; left: 1px; background-color: #FFF; overflow: hidden; opacity:0.9; filter:alpha(opacity=90);}
+div.request-overlay.selected {opacity:0.4; background-color: #129828;}
+div.transparent {opacity:0.0; filter:alpha(opacity=0);}
+#dialog-title {display: inline;}
+#dialog-title a {color: #fff;}
+#request-dialog-radio {display:inline; padding-left: 20px; font-weight: normal; }
+#request-headers, #response-headers, #response-body {display:none;}
+
+.jqmWindow {display: none; position: fixed; top: 17%; left: 50%; margin-left: -300px; width: 600px; background-color: #dfdfdf; color: #333; border: 1px solid black; padding: 12px; }
+.jqmOverlay { background-color: #000; }
+div.jqDrag {cursor: move;}
+.jqResize {width: 100%; height: 3px; background: #dfdfdf; border-top: 1px solid #a3a3a3; border-bottom: 1px solid #a3a3a3; cursor: ns-resize;}
+div.jqmDialog {display: none; position: absolute; top: 17%; right: 20px; width: 600px; height: 300px;
+                overflow: hidden; font-family:verdana,tahoma,helvetica;
+                color: #000; background: #fff; border: 1px solid #000; text-align: left;}
+div.jqmdTC { background: #303030; color: #000; height: 25px; padding: 7px 22px 5px 5px; font-family:"sans serif",verdana,tahoma,helvetica; font-weight: bold; * zoom: 1; cursor: move;}
+div.jqmdBC { height: 250px; padding: 7px 7px 7px; overflow: auto;}
+div.jqmdX { position: absolute; right: 7px; top: 8px; padding: 0 0 0 16px; height: 16px; width: 0px; background: url(/images/dialog-close.png) no-repeat 0px -16px; overflow: hidden;}
+div.jqmdX:hover {background-position: 0px 0px;}
+div.jqmdBC button {margin: 8px 10px 4px 10px; color: #777; background-color: #fff; cursor: pointer; }
+
+/* Jquery UI */
+.ui-helper-hidden { display: none; }
+.ui-helper-hidden-accessible { position: absolute !important; clip: rect(1px 1px 1px 1px); clip: rect(1px,1px,1px,1px); }
+.ui-helper-reset { margin: 0; padding: 0; border: 0; outline: 0; line-height: 1.3; text-decoration: none; font-size: 100%; list-style: none; }
+.ui-helper-clearfix:before, .ui-helper-clearfix:after { content: ""; display: table; }
+.ui-helper-clearfix:after { clear: both; }
+.ui-helper-clearfix { zoom: 1; }
+.ui-helper-zfix { width: 100%; height: 100%; top: 0; left: 0; position: absolute; opacity: 0; filter:Alpha(Opacity=0); }
+.ui-state-disabled { cursor: default !important; }
+.ui-icon { display: block; text-indent: -99999px; overflow: hidden; background-repeat: no-repeat; }
+.ui-widget-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+.ui-widget { font-family: Trebuchet MS, Tahoma, Verdana, Arial, sans-serif; font-size: 1.1em; }
+.ui-widget .ui-widget { font-size: 1em; }
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button { font-family: Trebuchet MS, Tahoma, Verdana, Arial, sans-serif; font-size: 1em; }
+.ui-widget-content { border: 1px solid #dddddd; background-color: #eeeeee; color: #333333; }
+.ui-widget-content a { color: #333333; }
+.ui-widget-header { border: 1px solid #e78f08; background-color: #f6a828; color: #ffffff; font-weight: bold; }
+.ui-widget-header a { color: #ffffff; }
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default { border: 1px solid #cccccc; background-color: #cccccc; font-weight: bold; color: #1c94c4; }
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited { color: #1c94c4; text-decoration: none; }
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hovers, { border: 1px solid #cccccc; background-color: #f6f6f6; font-weight: bold; color: #c77405; }
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active { border: 1px solid #C00; background-color: #ffffff; font-weight: bold; color: #c00; }
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited { color: #eb8f00; text-decoration: none; }
+.ui-state-hover a, .ui-state-hover a:hover { color: #c77405; text-decoration: none; }
+.ui-widget :active { outline: none; }
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight  {border: 1px solid #fed22f; background: #ffe45c url(images/ui-bg_highlight-soft_75_ffe45c_1x100.png) 50% top repeat-x; color: #363636; }
+.ui-state-highlight a, .ui-widget-content .ui-state-highlight a,.ui-widget-header .ui-state-highlight a { color: #363636; }
+.ui-state-error, .ui-widget-content .ui-state-error, .ui-widget-header .ui-state-error {border: 1px solid #cd0a0a; background: #b81900 url(images/ui-bg_diagonals-thick_18_b81900_40x40.png) 50% 50% repeat; color: #ffffff; }
+.ui-state-error a, .ui-widget-content .ui-state-error a, .ui-widget-header .ui-state-error a { color: #ffffff; }
+.ui-state-error-text, .ui-widget-content .ui-state-error-text, .ui-widget-header .ui-state-error-text { color: #ffffff; }
+.ui-priority-primary, .ui-widget-content .ui-priority-primary, .ui-widget-header .ui-priority-primary { font-weight: bold; }
+.ui-priority-secondary, .ui-widget-content .ui-priority-secondary,  .ui-widget-header .ui-priority-secondary { opacity: .7; filter:Alpha(Opacity=70); font-weight: normal; }
+.ui-state-disabled, .ui-widget-content .ui-state-disabled, .ui-widget-header .ui-state-disabled { opacity: .35; filter:Alpha(Opacity=35); background-image: none; }
+.ui-icon { width: 16px; height: 16px; background-image: url(/images/ui-icons_222222_256x240.png); }
+.ui-widget-content .ui-icon {background-image: url(/images/ui-icons_222222_256x240.png); }
+.ui-widget-header .ui-icon {background-image: url(/images/ui-icons_ffffff_256x240.png); }
+.ui-state-default .ui-icon { background-image: url(/images/ui-icons_ef8c08_256x240.png); }
+.ui-state-hover .ui-icon, .ui-state-focus .ui-icon {background-image: url(/images/ui-icons_ef8c08_256x240.png); }
+.ui-state-active .ui-icon {background-image: url(/images/ui-icons_ef8c08_256x240.png); }
+.ui-state-highlight .ui-icon {background-image: url(/images/ui-icons_228ef1_256x240.png); }
+.ui-state-error .ui-icon, .ui-state-error-text .ui-icon {background-image: url(/images/ui-icons_ffd27a_256x240.png); }
+
+/* jQuery UI Button 1.8.17
+ *
+ * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Button#theming
+ */
+.ui-button { display: inline-block; position: relative; padding: 0; margin-right: .1em; text-decoration: none !important; cursor: pointer; text-align: center; zoom: 1; overflow: visible; } /* the overflow property removes extra width in IE */
+.ui-button-icon-only { width: 2.2em; } /* to make room for the icon, a width needs to be set here */
+button.ui-button-icon-only { width: 2.4em; } /* button elements seem to need a little more width */
+.ui-button-icons-only { width: 3.4em; } 
+button.ui-button-icons-only { width: 3.7em; } 
+.ui-button .ui-button-text { display: block; line-height: 1.1;  }
+.ui-button-text-only .ui-button-text { padding: 2px 5px; }
+.ui-button-icon-only .ui-button-text, .ui-button-icons-only .ui-button-text { padding: .4em; text-indent: -9999999px; }
+.ui-button-text-icon-primary .ui-button-text, .ui-button-text-icons .ui-button-text { padding: .4em 1em .4em 2.1em; }
+.ui-button-text-icon-secondary .ui-button-text, .ui-button-text-icons .ui-button-text { padding: .4em 2.1em .4em 1em; }
+.ui-button-text-icons .ui-button-text { padding-left: 2.1em; padding-right: 2.1em; }
+input.ui-button { padding: .4em 1em; }
+.ui-button-icon-only .ui-icon, .ui-button-text-icon-primary .ui-icon, .ui-button-text-icon-secondary .ui-icon, .ui-button-text-icons .ui-icon, .ui-button-icons-only .ui-icon { position: absolute; top: 50%; margin-top: -8px; }
+.ui-button-icon-only .ui-icon { left: 50%; margin-left: -8px; }
+.ui-button-text-icon-primary .ui-button-icon-primary, .ui-button-text-icons .ui-button-icon-primary, .ui-button-icons-only .ui-button-icon-primary { left: .5em; }
+.ui-button-text-icon-secondary .ui-button-icon-secondary, .ui-button-text-icons .ui-button-icon-secondary, .ui-button-icons-only .ui-button-icon-secondary { right: .5em; }
+.ui-button-text-icons .ui-button-icon-secondary, .ui-button-icons-only .ui-button-icon-secondary { right: .5em; }
+.ui-buttonset { margin-right: 7px; }
+.ui-buttonset .ui-button { margin-left: 0; margin-right: -.3em; }
+button.ui-button::-moz-focus-inner { border: 0; padding: 0; } /* reset extra padding in Firefox */
+.ui-slider { position: relative; text-align: left; }
+.ui-slider .ui-slider-handle { position: absolute; z-index: 2; width: 1.2em; height: 1.2em; cursor: default; }
+.ui-slider .ui-slider-range { position: absolute; z-index: 1; font-size: .7em; display: block; border: 0; background-position: 0 0; }
+.ui-slider-horizontal { height: .8em; }
+.ui-slider-horizontal .ui-slider-handle { top: -.3em; margin-left: -.6em; }
+.ui-slider-horizontal .ui-slider-range { top: 0; height: 100%; }
+.ui-slider-horizontal .ui-slider-range-min { left: 0; }
+.ui-slider-horizontal .ui-slider-range-max { right: 0; }
+.ui-slider-vertical { width: .8em; height: 100px; }
+.ui-slider-vertical .ui-slider-handle { left: -.3em; margin-left: 0; margin-bottom: -.6em; }
+.ui-slider-vertical .ui-slider-range { left: 0; width: 100%; }
+.ui-slider-vertical .ui-slider-range-min { bottom: 0; }
+.ui-slider-vertical .ui-slider-range-max { top: 0; }
+        </style>
+    </head>
+    <body>
+        <div class="page">
+            <div id="wptAuthBar"><a href="/forums/member.php?action=login">Login</a> &nbsp;|&nbsp; <a href="/forums/member.php?action=register">Register</a> &nbsp;|&nbsp; <a href="/oauth/login.php">Login with Google</a> </div>
+<div id="header">
+    <h1 class="logo"><a href="/">WebPageTest</a></h1>
+    <div class="headerAd">
+    <script type="text/javascript"><!--
+        google_ad_client = "pub-0388499782819905";
+        /* Header 728x90 */
+        google_ad_slot = "6264344813";
+        google_ad_width = 728;
+        google_ad_height = 90;
+        //-->
+        </script>
+        <script type="text/javascript"
+        src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+        </script>    </div>
+</div>
+
+<div id="nav_bkg"><ul id="nav" class="cufon-dincond_black"><li><a title="Home" href="/">Home</a></li><li class="current"><a title="Test Result" href="/result/130916_26_JD7/">Test Result</a></li><li><a title="Test History" href="/testlog/1/">Test History</a></li><li><a title="Forums" href="/forums/">Forums</a></li><li><a title="Documentation (opens in a new tab)" href="http://sites.google.com/a/webpagetest.org/docs/" target="_blank">Documentation</a></li><li><a title="About" href="/about">About</a></li><div class="gplusone"><g:plusone size="medium" count="false" href="http://www.webpagetest.org/" actions="+1,addtocircles"></g:plusone>&nbsp;
+                <a href="http://twitter.com/share" class="twitter-share-button" data-count="none" data-text=" "></a>
+                <script type="text/javascript">
+                        (function() {
+                            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                            po.src = 'https://apis.google.com/js/plusone.js';
+                            var tw = document.createElement('script'); tw.type = 'text/javascript'; tw.async = true;
+                            tw.src = 'http://platform.twitter.com/widgets.js';
+                            var s = document.getElementsByTagName('script')[0]; 
+                            s.parentNode.insertBefore(po, s);
+                            s.parentNode.insertBefore(tw, s);
+                          })();
+                  </script></div>
+                  </ul>
+
+</div>
+
+    
+<div id="main">
+    <div class="level_2">
+        <div class="content-wrap">
+            <div class="content">
+
+            
+<div id="header_container"><div id="optimization"><div id="optimization_header"><div id="opthelp"><a href="http://www.webperformancecentral.com/wiki/WebPagetest/Optimization_Help" title="Optimization Resources" target="_blank">Need help improving?</a></div>
+</div><div id="grades"><ul class="grades"><li class="first_byte_time"><a href="/result/130916_26_JD7/1/performance_optimization/#first_byte_time"><h2 class="D">D</h2></a>First Byte Time</li><li class="keep_alive_enabled"><a href="/result/130916_26_JD7/1/performance_optimization/#keep_alive_enabled"><h2 class="A">A</h2></a>Keep-alive Enabled</li><li class="compress_text"><a href="/result/130916_26_JD7/1/performance_optimization/#compress_text"><h2 class="C">C</h2></a>Compress Transfer</li><li class="compress_images"><a href="/result/130916_26_JD7/1/performance_optimization/#compress_images"><h2 class="B">B</h2></a>Compress Images</li><li class="cache_static_content"><a href="/result/130916_26_JD7/1/performance_optimization/#cache_static_content"><h2 class="B">B</h2></a>Cache static content</li><li class="use_of_cdn"><a href="/result/130916_26_JD7/1/performance_optimization/#use_of_cdn"><h2 class="A"><img src="http://cdn.webpagetest.org/images/grade_check.png" alt="yes"></h2></a>Effective use of CDN</li></ul></div></div><div id="header_data"><h2 class="alternate cufon-dincond_regular">Web Page Performance Test for<br><span class="medium colored">yahoo.co.jp</span></h2><p class="heading_details"><strong>From:</strong> Dulles, VA - <b>Firefox</b> - <b>Cable</b><br><span class="jsdate" date="1379342643">09/16/13 14:44:03</span><br>
+</div></div><div id="test_results-container"><div id="test-1" class="test_results"><ul class="test_menu"><li><a href="/result/130916_26_JD7/">Summary</a></li><li class="current"><a href="/result/130916_26_JD7/1/details/cached/">Details</a></li><li><a href="/performance_optimization.php?test=130916_26_JD7&run=1&cached=1">Performance Review</a></li><li><a href="/breakdown.php?test=130916_26_JD7&run=1&cached=1">Content Breakdown</a></li><li><a href="/domains.php?test=130916_26_JD7&run=1&cached=1">Domains</a></li><li><a href="/screen_shot.php?test=130916_26_JD7&run=1&cached=1">Screen Shot</a></li></ul><div class="test_results-content"><script type="text/javascript">
+  markUserTime('aft.Site Header');
+</script>
+
+            <div id="result">
+                <div id="download">
+                    <div id="testinfo">
+                                            </div>
+                    <a href="/export.php?test=130916_26_JD7&run=1&cached=1">Export HTTP Archive (.har)</a><br>                </div>
+                <div class="cleared"></div>
+                <br>
+                <table id="tableResults" class="pretty" align="center" border="1" cellpadding="10" cellspacing="0">
+                    <tr>
+                                                <th align="center" class="empty" valign="middle" colspan="7" ></th>
+                        <th align="center" class="border" valign="middle" colspan="3">Document Complete</th>
+                        <th align="center" class="border" valign="middle" colspan="3">Fully Loaded</th>
+                    </tr>
+                    <tr>
+                        <th align="center" valign="middle">Load Time</th>
+                        <th align="center" valign="middle">First Byte</th>
+                        <th align="center" valign="middle">Start Render</th>
+                                                                                                <th align="center" valign="middle">Visually Complete</th>
+                                                                        <th align="center" valign="middle"><a href="https://sites.google.com/a/webpagetest.org/docs/using-webpagetest/metrics/speed-index" target="_blank">Speed Index</a></th>
+                                                                                                <th align="center" valign="middle">DOM Elements</th>
+                                                <th align="center" valign="middle">Result (error code)</th>
+
+                        <th align="center" class="border" valign="middle">Time</th>
+                        <th align="center" valign="middle">Requests</th>
+                        <th align="center" valign="middle">Bytes In</th>
+
+                        <th align="center" class="border" valign="middle">Time</th>
+                        <th align="center" valign="middle">Requests</th>
+                        <th align="center" valign="middle">Bytes In</th>
+                    </tr>
+                    <tr>
+                        <td id="LoadTime" valign="middle">3.055s</td>
+<td id="TTFB" valign="middle">0.473s</td>
+<td id="startRender" valign="middle">1.241s</td>
+<td id="visualComplate" valign="middle">5.300s</td>
+<td id="speedIndex" valign="middle">1606</td>
+<td id="domElements" valign="middle">1141</td>
+<td id="result" valign="middle">0</td>
+<td id="docComplete" class="border" valign="middle">3.055s</td>
+<td id="requestsDoc" valign="middle">12</td>
+<td id="bytesInDoc" valign="middle">78 KB</td>
+<td id="fullyLoaded" class="border" valign="middle">3.300s</td>
+<td id="requests" valign="middle">12</td>
+<td id="bytesIn" valign="middle">78 KB</td>
+                    </tr>
+                </table><br>
+                <table id="tableW3CTiming" class="pretty" align="center" border="1" cellpadding="10" cellspacing="0"><tr><th><a href="http://dvcs.w3.org/hg/webperf/raw-file/tip/specs/NavigationTiming/Overview.html#process">domContentLoaded</a></th><th><a href="http://dvcs.w3.org/hg/webperf/raw-file/tip/specs/NavigationTiming/Overview.html#process">loadEvent</a></th></tr><tr><td>2.558s - 2.575s (0.017s)</td><td>3.056s - 3.056s (0.000s)</td></tr></table><br>                <script type="text/javascript">
+                  markUserTime('aft.Detail Table');
+                </script>
+
+                <div style="text-align:center;">
+                <h3 name="waterfall_view">Waterfall View</h3>
+                <table border="1" bordercolor="silver" cellpadding="2px" cellspacing="0" style="width:auto; font-size:11px; margin-left:auto; margin-right:auto;">
+                    <tr>
+                        <td><table><tr><td><div class="bar" style="width:15px; background-color:#1f7c83"></div></td><td>DNS Lookup</td></tr></table></td>
+                        <td><table><tr><td><div class="bar" style="width:15px; background-color:#e58226"></div></td><td>Initial Connection</td></tr></table></td>
+                                                <td><table><tr><td><div class="bar" style="width:15px; background-color:#1fe11f"></div></td><td>Time to First Byte</td></tr></table></td>
+                        <td><table><tr><td><div class="bar" style="width:15px; background-color:#1977dd"></div></td><td>Content Download</td></tr></table></td>
+                        <td style="vertical-align:middle; padding: 4px;"><div style="background-color:#ffff60">&nbsp;3xx response&nbsp;</div></td>
+                        <td style="vertical-align:middle; padding: 4px;"><div style="background-color:#ff6060">&nbsp;4xx+ response&nbsp;</div></td>
+                    </tr>
+                </table>
+                <table border="1" bordercolor="silver" cellpadding="2px" cellspacing="0" style="width:auto; font-size:11px; margin-left:auto; margin-right:auto; margin-top:11px;">
+                    <tr>
+                        <td><table><tr><td><div class="bar" style="width:2px; background-color:#28BC00"></div></td><td>Start Render</td></tr></table></td>
+                        <td><table><tr><td><div class="bar" style="width:15px; background-color:#D888DF"></div></td><td>DOM Content Loaded</td></tr></table></td><td><table><tr><td><div class="bar" style="width:15px; background-color:#C0C0FF"></div></td><td>On Load</td></tr></table></td><td><table><tr><td><div class="bar" style="width:2px; background-color:#0000FF"></div></td><td>Document Complete</td></tr></table></td>                    </tr>
+                </table>
+                <br>
+                <map name="waterfall_map"><area href="#request" alt="http://yahoo.co.jp" title="http://yahoo.co.jp" shape=RECT coords="0,0,250,25">
+<area href="#request1" alt="1: http://www.yahoo.co.jp/" title="1: http://www.yahoo.co.jp/" shape=RECT coords="0,26,929,42">
+<area href="#request2" alt="2: http://k.yimg.jp/images/shp_edit/promotion/scl/lohaco/osere/09/0910osele_rao.jpg" title="2: http://k.yimg.jp/images/shp_edit/promotion/scl/lohaco/osere/09/0910osele_rao.jpg" shape=RECT coords="0,43,929,59">
+<area href="#request3" alt="3: http://k.yimg.jp/images/shp_edit/promotion/scl/lohaco/osere/09/0910osele_net.jpg" title="3: http://k.yimg.jp/images/shp_edit/promotion/scl/lohaco/osere/09/0910osele_net.jpg" shape=RECT coords="0,60,929,76">
+<area href="#request4" alt="4: http://k.yimg.jp/images/shp_edit/promotion/scl/lohaco/osere/09/0910osele_panake.jpg" title="4: http://k.yimg.jp/images/shp_edit/promotion/scl/lohaco/osere/09/0910osele_panake.jpg" shape=RECT coords="0,77,929,93">
+<area href="#request5" alt="5: http://k.yimg.jp/images/shp_edit/promotion/scl/lohaco/osere/09/0910osele_ikuji.jpg" title="5: http://k.yimg.jp/images/shp_edit/promotion/scl/lohaco/osere/09/0910osele_ikuji.jpg" shape=RECT coords="0,94,929,110">
+<area href="#request6" alt="6: http://yads.yahoo.co.jp/tag?t=j&amp;age=&amp;cu=&amp;debug=&amp;enc=UTF-8&amp;f_path=&amp;gen=&amp;i=&amp;oi_path=http%3A%2F%2Fyads.yahoo.co.jp%2Foi&amp;p_elem=&amp;page=1&amp;ref=&amp;rid=&amp;s=25597_3463&amp;sid=2077296265&amp;tag_path=http%3A%2F%2Fyads.yahoo.co.jp%2Ftag&amp;tflg=0&amp;type=&amp;u=http%3A%2F%2Fwww.yahoo.co.jp%2F&amp;w=&amp;fr_support=1&amp;fl_support=0&amp;tagpos=201x897&amp;xd_support=1" title="6: http://yads.yahoo.co.jp/tag?t=j&amp;age=&amp;cu=&amp;debug=&amp;enc=UTF-8&amp;f_path=&amp;gen=&amp;i=&amp;oi_path=http%3A%2F%2Fyads.yahoo.co.jp%2Foi&amp;p_elem=&amp;page=1&amp;ref=&amp;rid=&amp;s=25597_3463&amp;sid=2077296265&amp;tag_path=http%3A%2F%2Fyads.yahoo.co.jp%2Ftag&amp;tflg=0&amp;type=&amp;u=http%3A%2F%2Fwww.yahoo.co.jp%2F&amp;w=&amp;fr_support=1&amp;fl_support=0&amp;tagpos=201x897&amp;xd_support=1" shape=RECT coords="0,111,929,127">
+<area href="#request7" alt="7: http://ai.yimg.jp/bdv/6858/1152446/20130916/ssqtpdjyzinoivqfgusq-a.gif" title="7: http://ai.yimg.jp/bdv/6858/1152446/20130916/ssqtpdjyzinoivqfgusq-a.gif" shape=RECT coords="0,128,929,144">
+<area href="#request8" alt="8: http://ai.yimg.jp/bdv/500052/1151823/20130916/0rth0vwk3zrnzyxhincy-a.jpg" title="8: http://ai.yimg.jp/bdv/500052/1151823/20130916/0rth0vwk3zrnzyxhincy-a.jpg" shape=RECT coords="0,145,929,161">
+<area href="#request9" alt="9: http://yads.yahoo.co.jp/oi?t=t&amp;requestId=fb74f8178ca0c6cf39309c7427ebe07e&amp;tflg=0&amp;page=1&amp;enc=UTF-8&amp;sid=2077296265&amp;u=http%3a%2f%2fwww.yahoo.co.jp%2f&amp;s=25597_3463-4186-4749" title="9: http://yads.yahoo.co.jp/oi?t=t&amp;requestId=fb74f8178ca0c6cf39309c7427ebe07e&amp;tflg=0&amp;page=1&amp;enc=UTF-8&amp;sid=2077296265&amp;u=http%3a%2f%2fwww.yahoo.co.jp%2f&amp;s=25597_3463-4186-4749" shape=RECT coords="0,162,929,178">
+<area href="#request10" alt="10: http://yjaxc.yahoo.co.jp/oi?t=j&amp;s=ytop_ams_rmdl_utf8&amp;i=toppage" title="10: http://yjaxc.yahoo.co.jp/oi?t=j&amp;s=ytop_ams_rmdl_utf8&amp;i=toppage" shape=RECT coords="0,179,929,195">
+<area href="#request11" alt="11: http://b9.yahoo.co.jp/b?P=Wf2KPnxT68w0lJEOUjcZIQn_SEJzDlI3GSwAC_5i&amp;T=1493j7dc7%2fX%3d1379342636%2fE%3d2077296265%2fR%3djp_toppage%2fK%3d5%2fV%3d1.1%2fW%3dJ%2fY%3djp%2fF%3d2855758446%2fG%3dCmpwCgo-%2fS%3d1%2fJ%3dCDEA537C&amp;U=128qiqpbq%2fN%3d0YPQB3xT9Aw-%2fC%3d-2%2fD%3dTCON%2fB%3d-2&amp;U=128nrdhue%2fN%3dzIPQB3xT9Aw-%2fC%3d-1%2fD%3dTCBX%2fB%3d-1&amp;U=126orpf6q%2fN%3d04PQB3xT9Aw-%2fC%3d-1%2fD%3dTN%2fB%3d-1&amp;U=13jfdqp0r%2fN%3dxYPQB3xT9Aw-%2fC%3d300749476.301591591.303214120.312177432%2fD%3dTCT%2fB%3d301801915&amp;U=13jj1nh3q%2fN%3dyIPQB3xT9Aw-%2fC%3d300805382.301652291.303219943.302463196%2fD%3dTPM%2fB%3d301811816&amp;U=13j298ulh%2fN%3dxIPQB3xT9Aw-%2fC%3d300806222.301653244.303220189.301426957%2fD%3dTBP%2fB%3d301812603&amp;U=128cr93t1%2fN%3dzYPQB3xT9Aw-%2fC%3d-2%2fD%3dTEPB%2fB%3d-2&amp;U=13j92mvjm%2fN%3dxoPQB3xT9Aw-%2fC%3d300762453.301606763.303165711.300851453%2fD%3dTRB%2fB%3d301722922&amp;U=128cde6vr%2fN%3dx4PQB3xT9Aw-%2fC%3d-2%2fD%3dTRAP%2fB%3d-2&amp;U=128k1vdhl%2fN%3dz4PQB3xT9Aw-%2fC%3d-1%2fD%3dTULT%2fB%3d-1&amp;U=12785u13e%2fN%3dzoPQB3xT9Aw-%2fC%3d-1%2fD%3dGYJ%2fB%3d-1&amp;U=13jeh3fl5%2fN%3d0oPQB3xT9Aw-%2fC%3d300758906.301602867.303159516.312478425%2fD%3dTAG%2fB%3d301713706&amp;Q=0&amp;O=0.2824681622063031" title="11: http://b9.yahoo.co.jp/b?P=Wf2KPnxT68w0lJEOUjcZIQn_SEJzDlI3GSwAC_5i&amp;T=1493j7dc7%2fX%3d1379342636%2fE%3d2077296265%2fR%3djp_toppage%2fK%3d5%2fV%3d1.1%2fW%3dJ%2fY%3djp%2fF%3d2855758446%2fG%3dCmpwCgo-%2fS%3d1%2fJ%3dCDEA537C&amp;U=128qiqpbq%2fN%3d0YPQB3xT9Aw-%2fC%3d-2%2fD%3dTCON%2fB%3d-2&amp;U=128nrdhue%2fN%3dzIPQB3xT9Aw-%2fC%3d-1%2fD%3dTCBX%2fB%3d-1&amp;U=126orpf6q%2fN%3d04PQB3xT9Aw-%2fC%3d-1%2fD%3dTN%2fB%3d-1&amp;U=13jfdqp0r%2fN%3dxYPQB3xT9Aw-%2fC%3d300749476.301591591.303214120.312177432%2fD%3dTCT%2fB%3d301801915&amp;U=13jj1nh3q%2fN%3dyIPQB3xT9Aw-%2fC%3d300805382.301652291.303219943.302463196%2fD%3dTPM%2fB%3d301811816&amp;U=13j298ulh%2fN%3dxIPQB3xT9Aw-%2fC%3d300806222.301653244.303220189.301426957%2fD%3dTBP%2fB%3d301812603&amp;U=128cr93t1%2fN%3dzYPQB3xT9Aw-%2fC%3d-2%2fD%3dTEPB%2fB%3d-2&amp;U=13j92mvjm%2fN%3dxoPQB3xT9Aw-%2fC%3d300762453.301606763.303165711.300851453%2fD%3dTRB%2fB%3d301722922&amp;U=128cde6vr%2fN%3dx4PQB3xT9Aw-%2fC%3d-2%2fD%3dTRAP%2fB%3d-2&amp;U=128k1vdhl%2fN%3dz4PQB3xT9Aw-%2fC%3d-1%2fD%3dTULT%2fB%3d-1&amp;U=12785u13e%2fN%3dzoPQB3xT9Aw-%2fC%3d-1%2fD%3dGYJ%2fB%3d-1&amp;U=13jeh3fl5%2fN%3d0oPQB3xT9Aw-%2fC%3d300758906.301602867.303159516.312478425%2fD%3dTAG%2fB%3d301713706&amp;Q=0&amp;O=0.2824681622063031" shape=RECT coords="0,196,929,212">
+<area href="#request12" alt="12: http://www.yahoo.co.jp/favicon.ico" title="12: http://www.yahoo.co.jp/favicon.ico" shape=RECT coords="0,213,929,229">
+</map><div class="waterfall-container"><img class="waterfall-image" alt="" onload="markUserTime('aft.Waterfall')" usemap="#waterfall_map" id="waterfall" src="/waterfall.php?test=130916_26_JD7&run=1&cached=1"><div class="transparent request-overlay" id="request-overlay-1" title="1: http://www.yahoo.co.jp/" onclick="SelectRequest(1)" style="position: absolute; top: 26px; height: 17px;"></div>
+<div class="transparent request-overlay" id="request-overlay-2" title="2: http://k.yimg.jp/images/shp_edit/promotion/scl/lohaco/osere/09/0910osele_rao.jpg" onclick="SelectRequest(2)" style="position: absolute; top: 43px; height: 17px;"></div>
+<div class="transparent request-overlay" id="request-overlay-3" title="3: http://k.yimg.jp/images/shp_edit/promotion/scl/lohaco/osere/09/0910osele_net.jpg" onclick="SelectRequest(3)" style="position: absolute; top: 60px; height: 17px;"></div>
+<div class="transparent request-overlay" id="request-overlay-4" title="4: http://k.yimg.jp/images/shp_edit/promotion/scl/lohaco/osere/09/0910osele_panake.jpg" onclick="SelectRequest(4)" style="position: absolute; top: 77px; height: 17px;"></div>
+<div class="transparent request-overlay" id="request-overlay-5" title="5: http://k.yimg.jp/images/shp_edit/promotion/scl/lohaco/osere/09/0910osele_ikuji.jpg" onclick="SelectRequest(5)" style="position: absolute; top: 94px; height: 17px;"></div>
+<div class="transparent request-overlay" id="request-overlay-6" title="6: http://yads.yahoo.co.jp/tag..." onclick="SelectRequest(6)" style="position: absolute; top: 111px; height: 17px;"></div>
+<div class="transparent request-overlay" id="request-overlay-7" title="7: http://ai.yimg.jp/bdv/6858/1152446/20130916/ssqtpdjyzinoivqfgusq-a.gif" onclick="SelectRequest(7)" style="position: absolute; top: 128px; height: 17px;"></div>
+<div class="transparent request-overlay" id="request-overlay-8" title="8: http://ai.yimg.jp/bdv/500052/1151823/20130916/0rth0vwk3zrnzyxhincy-a.jpg" onclick="SelectRequest(8)" style="position: absolute; top: 145px; height: 17px;"></div>
+<div class="transparent request-overlay" id="request-overlay-9" title="9: http://yads.yahoo.co.jp/oi..." onclick="SelectRequest(9)" style="position: absolute; top: 162px; height: 17px;"></div>
+<div class="transparent request-overlay" id="request-overlay-10" title="10: http://yjaxc.yahoo.co.jp/oi?t=j&s=ytop_ams_rmdl_utf8&i=toppage" onclick="SelectRequest(10)" style="position: absolute; top: 179px; height: 17px;"></div>
+<div class="transparent request-overlay" id="request-overlay-11" title="11: http://b9.yahoo.co.jp/b..." onclick="SelectRequest(11)" style="position: absolute; top: 196px; height: 17px;"></div>
+<div class="transparent request-overlay" id="request-overlay-12" title="12: http://www.yahoo.co.jp/favicon.ico" onclick="SelectRequest(12)" style="position: absolute; top: 213px; height: 17px;"></div>
+    <div id="request-dialog" class="jqmDialog">
+        <div id="dialog-header" class="jqmdTC jqDrag">
+            <div id="dialog-title"></div>
+            <div id="request-dialog-radio">
+                <span id="request-details-button"><input type="radio" id="radio1" value="request-details" name="radio" checked="checked" /><label for="radio1">Details</label></span>
+                <span id="request-headers-button"><input type="radio" id="radio2" value="request-headers" name="radio" /><label for="radio2">Request</label></span>
+                <span id="response-headers-button"><input type="radio" id="radio3" value="response-headers" name="radio" /><label for="radio3">Response</label></span>
+                <span id="response-body-button"><input type="radio" id="radio4" value="response-body" name="radio" /><label for="radio4">Object</label></span>
+            </div>
+        </div>
+        <div class="jqmdBC">
+            <div id="dialog-contents" class="jqmdMSG">
+                <div id="request-details" class="dialog-tab-content"></div>
+                <div id="request-headers" class="dialog-tab-content"></div>
+                <div id="response-headers" class="dialog-tab-content"></div>
+                <div id="response-body" class="dialog-tab-content"></div>
+            </div>
+        </div>
+        <div class="jqmdX jqmClose"></div>
+    </div>
+    <div id="marker"></div>
+    </div><script type="text/javascript">
+var wptRequestCount=12;
+var wptRequestData=[{"ip_addr":"124.83.235.204","method":"GET","host":"www.yahoo.co.jp","url":"\/","responseCode":"200","load_ms":"934","ttfb_ms":"248","load_start":"225","bytesOut":"392","bytesIn":"36967","objectSize":"36356","expires":"-1","cacheControl":"private, no-cache, no-store, must-revalidate","contentType":"text\/html","contentEncoding":"gzip","type":"3","socket":"18","score_cache":"-1","score_cdn":"-1","score_gzip":"100","score_cookies":"-1","score_keep-alive":"0","score_minify":"-1","score_combine":"-1","score_compress":"-1","score_etags":"-1","is_secure":"0","dns_ms":"-1","connect_ms":223,"ssl_ms":"-1","gzip_total":"36967","gzip_save":"0","minify_total":"0","minify_save":"0","image_total":"0","image_save":"0","cache_time":"-1","dns_start":"0","dns_end":"2","connect_start":"2","connect_end":"225","ssl_start":"0","ssl_end":"0","server_count":"1","server_rtt":"217","client_port":"52992","jpeg_scan_count":"0","full_url":"http:\/\/www.yahoo.co.jp\/","score_progressive_jpeg":-1,"load_end":1159,"ttfb_start":"225","ttfb_end":473,"download_start":473,"download_end":1159,"download_ms":686,"all_start":"2","all_end":1159,"all_ms":1157,"headers":{"request":["GET \/ HTTP\/1.1","Host: www.yahoo.co.jp","User-Agent: Mozilla\/5.0 (Windows NT 6.1; rv:23.0) Gecko\/20100101 Firefox\/23.0 PTST\/133","Accept: text\/html,application\/xhtml+xml,application\/xml;q=0.9,*\/*;q=0.8","Accept-Language: en-US,en;q=0.5","Accept-Encoding: gzip, deflate","Cookie: B=3954h1p93e691&b=3&s=pm; YABW=v=1&b=246&c=1&i4=SEJzDg--&t4=1379342629&i6=&t6=&e=1380493119","Connection: keep-alive"],"response":["HTTP\/1.1 200 OK","Date: Mon, 16 Sep 2013 14:43:56 GMT","P3P: policyref=\"http:\/\/privacy.yahoo.co.jp\/w3c\/p3p.xml\", CP=\"CAO DSP COR CUR ADM DEV TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE GOV\"","Vary: User-Agent,Cookie,Accept-Encoding","Expires: -1","Pragma: no-cache","Cache-Control: private, no-cache, no-store, must-revalidate","X-XRDS-Location: http:\/\/open.login.yahoo.co.jp\/openid20\/www.yahoo.co.jp\/xrds","Connection: close","Transfer-Encoding: chunked","Content-Type: text\/html; charset=utf-8","Content-Encoding: gzip"]},"country":"Japan","countryCode":"JPN","city":null,"region":null,"lat":35.69,"long":139.69,"location":"Japan","index":0,"number":1},{"ip_addr":"202.93.69.248","method":"GET","host":"k.yimg.jp","url":"\/images\/shp_edit\/promotion\/scl\/lohaco\/osere\/09\/0910osele_rao.jpg","responseCode":"200","load_ms":"378","ttfb_ms":"191","load_start":"1280","bytesOut":"352","bytesIn":"2947","objectSize":"2477","expires":"Mon, 30 Sep 2013 14:43:57 GMT","cacheControl":"public, max-age=1209843","contentType":"image\/jpeg","type":"3","socket":"30","score_cache":"100","score_cdn":"100","score_gzip":"-1","score_cookies":"-1","score_keep-alive":"100","score_minify":"-1","score_combine":"-1","score_compress":"100","score_etags":"-1","is_secure":"0","dns_ms":144,"connect_ms":185,"ssl_ms":"-1","gzip_total":"0","gzip_save":"0","minify_total":"0","minify_save":"0","image_total":"2477","image_save":"0","cache_time":"1209843","cdn_provider":"Yahoo","dns_start":"951","dns_end":"1095","connect_start":"1095","connect_end":"1280","ssl_start":"0","ssl_end":"0","server_count":"1","server_rtt":"184","client_port":"53001","jpeg_scan_count":"1","full_url":"http:\/\/k.yimg.jp\/images\/shp_edit\/promotion\/scl\/lohaco\/osere\/09\/0910osele_rao.jpg","score_progressive_jpeg":50,"load_end":1658,"ttfb_start":"1280","ttfb_end":1471,"download_start":1471,"download_end":1658,"download_ms":187,"all_start":"951","all_end":1658,"all_ms":707,"headers":{"request":["GET \/images\/shp_edit\/promotion\/scl\/lohaco\/osere\/09\/0910osele_rao.jpg HTTP\/1.1","Host: k.yimg.jp","User-Agent: Mozilla\/5.0 (Windows NT 6.1; rv:23.0) Gecko\/20100101 Firefox\/23.0 PTST\/133","Accept: image\/png,image\/*;q=0.8,*\/*;q=0.5","Accept-Language: en-US,en;q=0.5","Accept-Encoding: gzip, deflate","Referer: http:\/\/www.yahoo.co.jp\/","Connection: keep-alive"],"response":["HTTP\/1.1 200 OK","Date: Mon, 16 Sep 2013 14:39:54 GMT","Cache-Control: public, max-age=1209843","Last-Modified: Tue, 10 Sep 2013 04:59:07 GMT","Accept-Ranges: bytes","Content-Length: 2477","Content-Type: image\/jpeg","Age: 243","Via: HTTP\/1.1 ytsorigin7002.img.bbt.yahoo.co.jp (YahooTrafficServer\/1.20.10 [cHs f ]), HTTP\/1.1 yts7138.img.bbt.yahoo.co.jp (YahooTrafficServer\/1.20.10 [cHs f ])","Server: YTS\/1.20.10","Connection: keep-alive","Expires: Mon, 30 Sep 2013 14:43:57 GMT"]},"location":"Yahoo","index":1,"number":2},{"ip_addr":"202.93.69.248","method":"GET","host":"k.yimg.jp","url":"\/images\/shp_edit\/promotion\/scl\/lohaco\/osere\/09\/0910osele_net.jpg","responseCode":"200","load_ms":"381","ttfb_ms":"192","load_start":"1282","bytesOut":"352","bytesIn":"2945","objectSize":"2475","expires":"Mon, 30 Sep 2013 14:43:57 GMT","cacheControl":"public, max-age=1209961","contentType":"image\/jpeg","type":"3","socket":"29","score_cache":"100","score_cdn":"100","score_gzip":"-1","score_cookies":"-1","score_keep-alive":"100","score_minify":"-1","score_combine":"-1","score_compress":"100","score_etags":"-1","is_secure":"0","dns_ms":"-1","connect_ms":187,"ssl_ms":"-1","gzip_total":"0","gzip_save":"0","minify_total":"0","minify_save":"0","image_total":"2475","image_save":"0","cache_time":"1209961","cdn_provider":"Yahoo","dns_start":"0","dns_end":"0","connect_start":"1095","connect_end":"1282","ssl_start":"0","ssl_end":"0","server_count":"1","server_rtt":"184","client_port":"53000","jpeg_scan_count":"1","full_url":"http:\/\/k.yimg.jp\/images\/shp_edit\/promotion\/scl\/lohaco\/osere\/09\/0910osele_net.jpg","score_progressive_jpeg":50,"load_end":1663,"ttfb_start":"1282","ttfb_end":1474,"download_start":1474,"download_end":1663,"download_ms":189,"all_start":"1095","all_end":1663,"all_ms":568,"headers":{"request":["GET \/images\/shp_edit\/promotion\/scl\/lohaco\/osere\/09\/0910osele_net.jpg HTTP\/1.1","Host: k.yimg.jp","User-Agent: Mozilla\/5.0 (Windows NT 6.1; rv:23.0) Gecko\/20100101 Firefox\/23.0 PTST\/133","Accept: image\/png,image\/*;q=0.8,*\/*;q=0.5","Accept-Language: en-US,en;q=0.5","Accept-Encoding: gzip, deflate","Referer: http:\/\/www.yahoo.co.jp\/","Connection: keep-alive"],"response":["HTTP\/1.1 200 OK","Date: Mon, 16 Sep 2013 14:37:56 GMT","Cache-Control: public, max-age=1209961","Last-Modified: Tue, 10 Sep 2013 04:59:07 GMT","Accept-Ranges: bytes","Content-Length: 2475","Content-Type: image\/jpeg","Age: 361","Via: HTTP\/1.1 ytsorigin7011.img.bbt.yahoo.co.jp (YahooTrafficServer\/1.20.10 [cHs f ]), HTTP\/1.1 yts7107.img.bbt.yahoo.co.jp (YahooTrafficServer\/1.20.10 [cHs f ])","Server: YTS\/1.20.10","Connection: keep-alive","Expires: Mon, 30 Sep 2013 14:43:57 GMT"]},"location":"Yahoo","index":2,"number":3},{"ip_addr":"202.93.69.248","method":"GET","host":"k.yimg.jp","url":"\/images\/shp_edit\/promotion\/scl\/lohaco\/osere\/09\/0910osele_panake.jpg","responseCode":"200","load_ms":"396","ttfb_ms":"201","load_start":"1289","bytesOut":"355","bytesIn":"2964","objectSize":"2494","expires":"Mon, 30 Sep 2013 14:43:57 GMT","cacheControl":"public, max-age=1210191","contentType":"image\/jpeg","type":"3","socket":"26","score_cache":"100","score_cdn":"100","score_gzip":"-1","score_cookies":"-1","score_keep-alive":"100","score_minify":"-1","score_combine":"-1","score_compress":"100","score_etags":"-1","is_secure":"0","dns_ms":"-1","connect_ms":194,"ssl_ms":"-1","gzip_total":"0","gzip_save":"0","minify_total":"0","minify_save":"0","image_total":"2494","image_save":"0","cache_time":"1210191","cdn_provider":"Yahoo","dns_start":"0","dns_end":"0","connect_start":"1095","connect_end":"1289","ssl_start":"0","ssl_end":"0","server_count":"1","server_rtt":"184","client_port":"52997","jpeg_scan_count":"1","full_url":"http:\/\/k.yimg.jp\/images\/shp_edit\/promotion\/scl\/lohaco\/osere\/09\/0910osele_panake.jpg","score_progressive_jpeg":50,"load_end":1685,"ttfb_start":"1289","ttfb_end":1490,"download_start":1490,"download_end":1685,"download_ms":195,"all_start":"1095","all_end":1685,"all_ms":590,"headers":{"request":["GET \/images\/shp_edit\/promotion\/scl\/lohaco\/osere\/09\/0910osele_panake.jpg HTTP\/1.1","Host: k.yimg.jp","User-Agent: Mozilla\/5.0 (Windows NT 6.1; rv:23.0) Gecko\/20100101 Firefox\/23.0 PTST\/133","Accept: image\/png,image\/*;q=0.8,*\/*;q=0.5","Accept-Language: en-US,en;q=0.5","Accept-Encoding: gzip, deflate","Referer: http:\/\/www.yahoo.co.jp\/","Connection: keep-alive"],"response":["HTTP\/1.1 200 OK","Date: Mon, 16 Sep 2013 14:34:06 GMT","Cache-Control: public, max-age=1210191","Last-Modified: Tue, 10 Sep 2013 04:59:05 GMT","Accept-Ranges: bytes","Content-Length: 2494","Content-Type: image\/jpeg","Age: 591","Via: HTTP\/1.1 ytsorigin7004.img.bbt.yahoo.co.jp (YahooTrafficServer\/1.20.10 [cHs f ]), HTTP\/1.1 yts7104.img.bbt.yahoo.co.jp (YahooTrafficServer\/1.20.10 [cHs f ])","Server: YTS\/1.20.10","Connection: keep-alive","Expires: Mon, 30 Sep 2013 14:43:57 GMT"]},"location":"Yahoo","index":3,"number":4},{"ip_addr":"202.93.69.248","method":"GET","host":"k.yimg.jp","url":"\/images\/shp_edit\/promotion\/scl\/lohaco\/osere\/09\/0910osele_ikuji.jpg","responseCode":"200","load_ms":"416","ttfb_ms":"210","load_start":"1301","bytesOut":"354","bytesIn":"2959","objectSize":"2489","expires":"Mon, 30 Sep 2013 14:43:57 GMT","cacheControl":"public, max-age=1210189","contentType":"image\/jpeg","type":"3","socket":"27","score_cache":"100","score_cdn":"100","score_gzip":"-1","score_cookies":"-1","score_keep-alive":"100","score_minify":"-1","score_combine":"-1","score_compress":"100","score_etags":"-1","is_secure":"0","dns_ms":"-1","connect_ms":206,"ssl_ms":"-1","gzip_total":"0","gzip_save":"0","minify_total":"0","minify_save":"0","image_total":"2489","image_save":"0","cache_time":"1210189","cdn_provider":"Yahoo","dns_start":"0","dns_end":"0","connect_start":"1095","connect_end":"1301","ssl_start":"0","ssl_end":"0","server_count":"1","server_rtt":"184","client_port":"52998","jpeg_scan_count":"1","full_url":"http:\/\/k.yimg.jp\/images\/shp_edit\/promotion\/scl\/lohaco\/osere\/09\/0910osele_ikuji.jpg","score_progressive_jpeg":50,"load_end":1717,"ttfb_start":"1301","ttfb_end":1511,"download_start":1511,"download_end":1717,"download_ms":206,"all_start":"1095","all_end":1717,"all_ms":622,"headers":{"request":["GET \/images\/shp_edit\/promotion\/scl\/lohaco\/osere\/09\/0910osele_ikuji.jpg HTTP\/1.1","Host: k.yimg.jp","User-Agent: Mozilla\/5.0 (Windows NT 6.1; rv:23.0) Gecko\/20100101 Firefox\/23.0 PTST\/133","Accept: image\/png,image\/*;q=0.8,*\/*;q=0.5","Accept-Language: en-US,en;q=0.5","Accept-Encoding: gzip, deflate","Referer: http:\/\/www.yahoo.co.jp\/","Connection: keep-alive"],"response":["HTTP\/1.1 200 OK","Date: Mon, 16 Sep 2013 14:34:08 GMT","Cache-Control: public, max-age=1210189","Last-Modified: Tue, 10 Sep 2013 04:59:06 GMT","Accept-Ranges: bytes","Content-Length: 2489","Content-Type: image\/jpeg","Age: 589","Via: HTTP\/1.1 ytsorigin7007.img.bbt.yahoo.co.jp (YahooTrafficServer\/1.20.10 [cHs f ]), HTTP\/1.1 yts7110.img.bbt.yahoo.co.jp (YahooTrafficServer\/1.20.10 [cHs f ])","Server: YTS\/1.20.10","Connection: keep-alive","Expires: Mon, 30 Sep 2013 14:43:57 GMT"]},"location":"Yahoo","index":4,"number":5},{"ip_addr":"182.22.59.233","method":"GET","host":"yads.yahoo.co.jp","url":"\/tag?t=j&age=&cu=&debug=&enc=UTF-8&f_path=&gen=&i=&oi_path=http%3A%2F%2Fyads.yahoo.co.jp%2Foi&p_elem=&page=1&ref=&rid=&s=25597_3463&sid=2077296265&tag_path=http%3A%2F%2Fyads.yahoo.co.jp%2Ftag&tflg=0&type=&u=http%3A%2F%2Fwww.yahoo.co.jp%2F&w=&fr_support=1&fl_support=0&tagpos=201x897&xd_support=1","responseCode":"200","load_ms":"201","ttfb_ms":"201","load_start":"1367","bytesOut":"661","bytesIn":"687","objectSize":"205","cacheControl":"private","contentType":"text\/javascript","type":"3","socket":"32","score_cache":"0","score_cdn":"0","score_gzip":"-1","score_cookies":"-1","score_keep-alive":"100","score_minify":"-1","score_combine":"-1","score_compress":"-1","score_etags":"-1","is_secure":"0","dns_ms":6,"connect_ms":209,"ssl_ms":"-1","gzip_total":"0","gzip_save":"0","minify_total":"0","minify_save":"0","image_total":"0","image_save":"0","cache_time":"0","dns_start":"1152","dns_end":"1158","connect_start":"1158","connect_end":"1367","ssl_start":"0","ssl_end":"0","server_count":"1","server_rtt":"199","client_port":"53003","jpeg_scan_count":"0","full_url":"http:\/\/yads.yahoo.co.jp\/tag?t=j&age=&cu=&debug=&enc=UTF-8&f_path=&gen=&i=&oi_path=http%3A%2F%2Fyads.yahoo.co.jp%2Foi&p_elem=&page=1&ref=&rid=&s=25597_3463&sid=2077296265&tag_path=http%3A%2F%2Fyads.yahoo.co.jp%2Ftag&tflg=0&type=&u=http%3A%2F%2Fwww.yahoo.co.jp%2F&w=&fr_support=1&fl_support=0&tagpos=201x897&xd_support=1","score_progressive_jpeg":-1,"load_end":1568,"ttfb_start":"1367","ttfb_end":1568,"download_start":1568,"download_end":1568,"download_ms":0,"all_start":"1152","all_end":1568,"all_ms":416,"headers":{"request":["GET \/tag?t=j&age=&cu=&debug=&enc=UTF-8&f_path=&gen=&i=&oi_path=http%3A%2F%2Fyads.yahoo.co.jp%2Foi&p_elem=&page=1&ref=&rid=&s=25597_3463&sid=2077296265&tag_path=http%3A%2F%2Fyads.yahoo.co.jp%2Ftag&tflg=0&type=&u=http%3A%2F%2Fwww.yahoo.co.jp%2F&w=&fr_support=1&fl_support=0&tagpos=201x897&xd_support=1 HTTP\/1.1","Host: yads.yahoo.co.jp","User-Agent: Mozilla\/5.0 (Windows NT 6.1; rv:23.0) Gecko\/20100101 Firefox\/23.0 PTST\/133","Accept: *\/*","Accept-Language: en-US,en;q=0.5","Accept-Encoding: gzip, deflate","Referer: http:\/\/www.yahoo.co.jp\/","Cookie: B=3954h1p93e691&b=3&s=pm; YABW=v=1&b=246&c=1&i4=SEJzDg--&t4=1379342629&i6=&t6=&e=1380493119","Connection: keep-alive"],"response":["HTTP\/1.1 200 OK","Cache-Control: private","Content-Type: text\/javascript; charset=UTF-8","Date: Mon, 16 Sep 2013 14:43:57 GMT","P3P: policyref=\"http:\/\/info.yahoo.com\/w3c\/p3p.xml\", CP=\"CAO DSP COR CUR ADM DEV TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV\"","Server: UserFiberFramework\/1.0","Transfer-Encoding: chunked","Via: HTTP\/1.1 yads042.ane.ssk.yahoo.co.jp (UserFiberFramework\/1.0)"]},"country":"Japan","countryCode":"JPN","city":"Tokyo","region":"40","lat":35.685,"long":139.7514,"location":"Tokyo, Japan","index":5,"number":6},{"ip_addr":"124.83.229.249","method":"GET","host":"ai.yimg.jp","url":"\/bdv\/6858\/1152446\/20130916\/ssqtpdjyzinoivqfgusq-a.gif","responseCode":"200","load_ms":"869","ttfb_ms":"213","load_start":"1582","bytesOut":"342","bytesIn":"15559","objectSize":"15089","expires":"Mon, 30 Sep 2013 14:43:58 GMT","cacheControl":"public, max-age=1209819","contentType":"image\/gif","type":"3","socket":"35","score_cache":"100","score_cdn":"100","score_gzip":"-1","score_cookies":"-1","score_keep-alive":"100","score_minify":"-1","score_combine":"-1","score_compress":"-1","score_etags":"-1","is_secure":"0","dns_ms":215,"connect_ms":213,"ssl_ms":"-1","gzip_total":"0","gzip_save":"0","minify_total":"0","minify_save":"0","image_total":"0","image_save":"0","cache_time":"1209819","cdn_provider":"Yahoo","dns_start":"1153","dns_end":"1368","connect_start":"1369","connect_end":"1582","ssl_start":"0","ssl_end":"0","server_count":"1","server_rtt":"213","client_port":"53006","jpeg_scan_count":"0","full_url":"http:\/\/ai.yimg.jp\/bdv\/6858\/1152446\/20130916\/ssqtpdjyzinoivqfgusq-a.gif","score_progressive_jpeg":-1,"load_end":2451,"ttfb_start":"1582","ttfb_end":1795,"download_start":1795,"download_end":2451,"download_ms":656,"all_start":"1153","all_end":2451,"all_ms":1297,"headers":{"request":["GET \/bdv\/6858\/1152446\/20130916\/ssqtpdjyzinoivqfgusq-a.gif HTTP\/1.1","Host: ai.yimg.jp","User-Agent: Mozilla\/5.0 (Windows NT 6.1; rv:23.0) Gecko\/20100101 Firefox\/23.0 PTST\/133","Accept: image\/png,image\/*;q=0.8,*\/*;q=0.5","Accept-Language: en-US,en;q=0.5","Accept-Encoding: gzip, deflate","Referer: http:\/\/www.yahoo.co.jp\/","Connection: keep-alive"],"response":["HTTP\/1.1 200 OK","Date: Mon, 16 Sep 2013 14:40:19 GMT","Cache-Control: public, max-age=1209819","Last-Modified: Thu, 12 Sep 2013 06:29:01 GMT","Accept-Ranges: bytes","Content-Length: 15089","Content-Type: image\/gif","Age: 219","Via: HTTP\/1.1 ytsorigin8008.img.djm.yahoo.co.jp (YahooTrafficServer\/1.20.10 [cHs f ]), HTTP\/1.1 yts8021.img.djm.yahoo.co.jp (YahooTrafficServer\/1.20.10 [cHs f ])","Server: YTS\/1.20.10","Connection: keep-alive","Expires: Mon, 30 Sep 2013 14:43:58 GMT"]},"location":"Yahoo","index":6,"number":7},{"ip_addr":"124.83.229.249","method":"GET","host":"ai.yimg.jp","url":"\/bdv\/500052\/1151823\/20130916\/0rth0vwk3zrnzyxhincy-a.jpg","responseCode":"200","load_ms":"451","ttfb_ms":"226","load_start":"1595","bytesOut":"344","bytesIn":"4259","objectSize":"3789","expires":"Mon, 30 Sep 2013 14:43:58 GMT","cacheControl":"public, max-age=1209747","contentType":"image\/jpeg","type":"3","socket":"34","score_cache":"100","score_cdn":"100","score_gzip":"-1","score_cookies":"-1","score_keep-alive":"100","score_minify":"-1","score_combine":"-1","score_compress":"100","score_etags":"-1","is_secure":"0","dns_ms":"-1","connect_ms":227,"ssl_ms":"-1","gzip_total":"0","gzip_save":"0","minify_total":"0","minify_save":"0","image_total":"3789","image_save":"0","cache_time":"1209747","cdn_provider":"Yahoo","dns_start":"0","dns_end":"0","connect_start":"1368","connect_end":"1595","ssl_start":"0","ssl_end":"0","server_count":"1","server_rtt":"213","client_port":"53005","jpeg_scan_count":"1","full_url":"http:\/\/ai.yimg.jp\/bdv\/500052\/1151823\/20130916\/0rth0vwk3zrnzyxhincy-a.jpg","score_progressive_jpeg":50,"load_end":2046,"ttfb_start":"1595","ttfb_end":1821,"download_start":1821,"download_end":2046,"download_ms":225,"all_start":"1368","all_end":2046,"all_ms":678,"headers":{"request":["GET \/bdv\/500052\/1151823\/20130916\/0rth0vwk3zrnzyxhincy-a.jpg HTTP\/1.1","Host: ai.yimg.jp","User-Agent: Mozilla\/5.0 (Windows NT 6.1; rv:23.0) Gecko\/20100101 Firefox\/23.0 PTST\/133","Accept: image\/png,image\/*;q=0.8,*\/*;q=0.5","Accept-Language: en-US,en;q=0.5","Accept-Encoding: gzip, deflate","Referer: http:\/\/www.yahoo.co.jp\/","Connection: keep-alive"],"response":["HTTP\/1.1 200 OK","Date: Mon, 16 Sep 2013 14:41:31 GMT","Cache-Control: public, max-age=1209747","Last-Modified: Wed, 11 Sep 2013 03:13:01 GMT","Accept-Ranges: bytes","Content-Length: 3789","Content-Type: image\/jpeg","Age: 147","Via: HTTP\/1.1 ytsorigin8002.img.djm.yahoo.co.jp (YahooTrafficServer\/1.20.10 [cHs f ]), HTTP\/1.1 yts8030.img.djm.yahoo.co.jp (YahooTrafficServer\/1.20.10 [cHs f ])","Server: YTS\/1.20.10","Connection: keep-alive","Expires: Mon, 30 Sep 2013 14:43:58 GMT"]},"location":"Yahoo","index":7,"number":8},{"ip_addr":"182.22.59.233","method":"GET","host":"yads.yahoo.co.jp","url":"\/oi?t=t&requestId=fb74f8178ca0c6cf39309c7427ebe07e&tflg=0&page=1&enc=UTF-8&sid=2077296265&u=http%3a%2f%2fwww.yahoo.co.jp%2f&s=25597_3463-4186-4749","responseCode":"200","load_ms":"242","ttfb_ms":"242","load_start":"1796","bytesOut":"512","bytesIn":"1253","objectSize":"770","cacheControl":"private","contentType":"text\/javascript","type":"3","socket":"37","score_cache":"0","score_cdn":"0","score_gzip":"-1","score_cookies":"-1","score_keep-alive":"100","score_minify":"-1","score_combine":"-1","score_compress":"-1","score_etags":"-1","is_secure":"0","dns_ms":26,"connect_ms":199,"ssl_ms":"-1","gzip_total":"0","gzip_save":"0","minify_total":"0","minify_save":"0","image_total":"0","image_save":"0","cache_time":"0","dns_start":"1570","dns_end":"1596","connect_start":"1597","connect_end":"1796","ssl_start":"0","ssl_end":"0","server_count":"1","server_rtt":"199","client_port":"53008","jpeg_scan_count":"0","full_url":"http:\/\/yads.yahoo.co.jp\/oi?t=t&requestId=fb74f8178ca0c6cf39309c7427ebe07e&tflg=0&page=1&enc=UTF-8&sid=2077296265&u=http%3a%2f%2fwww.yahoo.co.jp%2f&s=25597_3463-4186-4749","score_progressive_jpeg":-1,"load_end":2038,"ttfb_start":"1796","ttfb_end":2038,"download_start":2038,"download_end":2038,"download_ms":0,"all_start":"1570","all_end":2038,"all_ms":467,"headers":{"request":["GET \/oi?t=t&requestId=fb74f8178ca0c6cf39309c7427ebe07e&tflg=0&page=1&enc=UTF-8&sid=2077296265&u=http%3a%2f%2fwww.yahoo.co.jp%2f&s=25597_3463-4186-4749 HTTP\/1.1","Host: yads.yahoo.co.jp","User-Agent: Mozilla\/5.0 (Windows NT 6.1; rv:23.0) Gecko\/20100101 Firefox\/23.0 PTST\/133","Accept: *\/*","Accept-Language: en-US,en;q=0.5","Accept-Encoding: gzip, deflate","Referer: http:\/\/www.yahoo.co.jp\/","Cookie: B=3954h1p93e691&b=3&s=pm; YABW=v=1&b=246&c=1&i4=SEJzDg--&t4=1379342629&i6=&t6=&e=1380493119","Connection: keep-alive"],"response":["HTTP\/1.1 200 OK","Cache-Control: private","Content-Type: text\/javascript; charset=UTF-8","Date: Mon, 16 Sep 2013 14:43:58 GMT","P3P: policyref=\"http:\/\/info.yahoo.com\/w3c\/p3p.xml\", CP=\"CAO DSP COR CUR ADM DEV TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV\"","Server: UserFiberFramework\/1.0","Transfer-Encoding: chunked","Via: HTTP\/1.1 yads043.ane.ssk.yahoo.co.jp (UserFiberFramework\/1.0)"]},"country":"Japan","countryCode":"JPN","city":"Tokyo","region":"40","lat":35.685,"long":139.7514,"location":"Tokyo, Japan","index":8,"number":9},{"ip_addr":"183.79.131.231","method":"GET","host":"yjaxc.yahoo.co.jp","url":"\/oi?t=j&s=ytop_ams_rmdl_utf8&i=toppage","responseCode":"200","load_ms":"278","ttfb_ms":"275","load_start":"2265","bytesOut":"405","bytesIn":"3402","objectSize":"2941","cacheControl":"private","contentType":"application\/x-javascript","contentEncoding":"gzip","type":"3","socket":"40","score_cache":"0","score_cdn":"0","score_gzip":"100","score_cookies":"-1","score_keep-alive":"-1","score_minify":"-1","score_combine":"-1","score_compress":"-1","score_etags":"-1","is_secure":"0","dns_ms":1,"connect_ms":221,"ssl_ms":"-1","gzip_total":"3402","gzip_save":"0","minify_total":"0","minify_save":"0","image_total":"0","image_save":"0","cache_time":"0","dns_start":"2043","dns_end":"2044","connect_start":"2044","connect_end":"2265","ssl_start":"0","ssl_end":"0","server_count":"1","server_rtt":"221","client_port":"53010","jpeg_scan_count":"0","full_url":"http:\/\/yjaxc.yahoo.co.jp\/oi?t=j&s=ytop_ams_rmdl_utf8&i=toppage","score_progressive_jpeg":-1,"load_end":2543,"ttfb_start":"2265","ttfb_end":2540,"download_start":2540,"download_end":2543,"download_ms":3,"all_start":"2043","all_end":2543,"all_ms":500,"headers":{"request":["GET \/oi?t=j&s=ytop_ams_rmdl_utf8&i=toppage HTTP\/1.1","Host: yjaxc.yahoo.co.jp","User-Agent: Mozilla\/5.0 (Windows NT 6.1; rv:23.0) Gecko\/20100101 Firefox\/23.0 PTST\/133","Accept: *\/*","Accept-Language: en-US,en;q=0.5","Accept-Encoding: gzip, deflate","Referer: http:\/\/www.yahoo.co.jp\/","Cookie: B=3954h1p93e691&b=3&s=pm; YABW=v=1&b=246&c=1&i4=SEJzDg--&t4=1379342629&i6=&t6=&e=1380493119","Connection: keep-alive"],"response":["HTTP\/1.1 200 OK","Date: Mon, 16 Sep 2013 14:43:58 GMT","P3P: policyref=\"http:\/\/info.yahoo.com\/w3c\/p3p.xml\", CP=\"CAO DSP COR CUR ADM DEV TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV\"","Vary: Accept-Encoding","Connection: close","Transfer-Encoding: chunked","Content-Type: application\/x-javascript; charset=UTF-8","Content-Encoding: gzip","Cache-Control: private"]},"country":"Japan","countryCode":"JPN","city":"Akasaka","region":"01","lat":34.85,"long":137.3,"location":"Akasaka, Japan","index":9,"number":10},{"ip_addr":"114.111.109.20","method":"GET","host":"b9.yahoo.co.jp","url":"\/b?P=Wf2KPnxT68w0lJEOUjcZIQn_SEJzDlI3GSwAC_5i&T=1493j7dc7%2fX%3d1379342636%2fE%3d2077296265%2fR%3djp_toppage%2fK%3d5%2fV%3d1.1%2fW%3dJ%2fY%3djp%2fF%3d2855758446%2fG%3dCmpwCgo-%2fS%3d1%2fJ%3dCDEA537C&U=128qiqpbq%2fN%3d0YPQB3xT9Aw-%2fC%3d-2%2fD%3dTCON%2fB%3d-2&U=128nrdhue%2fN%3dzIPQB3xT9Aw-%2fC%3d-1%2fD%3dTCBX%2fB%3d-1&U=126orpf6q%2fN%3d04PQB3xT9Aw-%2fC%3d-1%2fD%3dTN%2fB%3d-1&U=13jfdqp0r%2fN%3dxYPQB3xT9Aw-%2fC%3d300749476.301591591.303214120.312177432%2fD%3dTCT%2fB%3d301801915&U=13jj1nh3q%2fN%3dyIPQB3xT9Aw-%2fC%3d300805382.301652291.303219943.302463196%2fD%3dTPM%2fB%3d301811816&U=13j298ulh%2fN%3dxIPQB3xT9Aw-%2fC%3d300806222.301653244.303220189.301426957%2fD%3dTBP%2fB%3d301812603&U=128cr93t1%2fN%3dzYPQB3xT9Aw-%2fC%3d-2%2fD%3dTEPB%2fB%3d-2&U=13j92mvjm%2fN%3dxoPQB3xT9Aw-%2fC%3d300762453.301606763.303165711.300851453%2fD%3dTRB%2fB%3d301722922&U=128cde6vr%2fN%3dx4PQB3xT9Aw-%2fC%3d-2%2fD%3dTRAP%2fB%3d-2&U=128k1vdhl%2fN%3dz4PQB3xT9Aw-%2fC%3d-1%2fD%3dTULT%2fB%3d-1&U=12785u13e%2fN%3dzoPQB3xT9Aw-%2fC%3d-1%2fD%3dGYJ%2fB%3d-1&U=13jeh3fl5%2fN%3d0oPQB3xT9Aw-%2fC%3d300758906.301602867.303159516.312478425%2fD%3dTAG%2fB%3d301713706&Q=0&O=0.2824681622063031","responseCode":"200","load_ms":"241","ttfb_ms":"241","load_start":"2809","bytesOut":"1549","bytesIn":"409","objectSize":"43","cacheControl":"private","contentType":"image\/gif","type":"3","socket":"42","score_cache":"0","score_cdn":"0","score_gzip":"-1","score_cookies":"-1","score_keep-alive":"-1","score_minify":"-1","score_combine":"-1","score_compress":"-1","score_etags":"-1","is_secure":"0","dns_ms":11,"connect_ms":226,"ssl_ms":"-1","gzip_total":"0","gzip_save":"0","minify_total":"0","minify_save":"0","image_total":"0","image_save":"0","cache_time":"0","dns_start":"2571","dns_end":"2582","connect_start":"2582","connect_end":"2808","ssl_start":"0","ssl_end":"0","server_count":"1","server_rtt":"219","client_port":"53012","jpeg_scan_count":"0","full_url":"http:\/\/b9.yahoo.co.jp\/b?P=Wf2KPnxT68w0lJEOUjcZIQn_SEJzDlI3GSwAC_5i&T=1493j7dc7%2fX%3d1379342636%2fE%3d2077296265%2fR%3djp_toppage%2fK%3d5%2fV%3d1.1%2fW%3dJ%2fY%3djp%2fF%3d2855758446%2fG%3dCmpwCgo-%2fS%3d1%2fJ%3dCDEA537C&U=128qiqpbq%2fN%3d0YPQB3xT9Aw-%2fC%3d-2%2fD%3dTCON%2fB%3d-2&U=128nrdhue%2fN%3dzIPQB3xT9Aw-%2fC%3d-1%2fD%3dTCBX%2fB%3d-1&U=126orpf6q%2fN%3d04PQB3xT9Aw-%2fC%3d-1%2fD%3dTN%2fB%3d-1&U=13jfdqp0r%2fN%3dxYPQB3xT9Aw-%2fC%3d300749476.301591591.303214120.312177432%2fD%3dTCT%2fB%3d301801915&U=13jj1nh3q%2fN%3dyIPQB3xT9Aw-%2fC%3d300805382.301652291.303219943.302463196%2fD%3dTPM%2fB%3d301811816&U=13j298ulh%2fN%3dxIPQB3xT9Aw-%2fC%3d300806222.301653244.303220189.301426957%2fD%3dTBP%2fB%3d301812603&U=128cr93t1%2fN%3dzYPQB3xT9Aw-%2fC%3d-2%2fD%3dTEPB%2fB%3d-2&U=13j92mvjm%2fN%3dxoPQB3xT9Aw-%2fC%3d300762453.301606763.303165711.300851453%2fD%3dTRB%2fB%3d301722922&U=128cde6vr%2fN%3dx4PQB3xT9Aw-%2fC%3d-2%2fD%3dTRAP%2fB%3d-2&U=128k1vdhl%2fN%3dz4PQB3xT9Aw-%2fC%3d-1%2fD%3dTULT%2fB%3d-1&U=12785u13e%2fN%3dzoPQB3xT9Aw-%2fC%3d-1%2fD%3dGYJ%2fB%3d-1&U=13jeh3fl5%2fN%3d0oPQB3xT9Aw-%2fC%3d300758906.301602867.303159516.312478425%2fD%3dTAG%2fB%3d301713706&Q=0&O=0.2824681622063031","score_progressive_jpeg":-1,"load_end":3050,"ttfb_start":"2809","ttfb_end":3050,"download_start":3050,"download_end":3050,"download_ms":0,"all_start":"2571","all_end":3050,"all_ms":478,"headers":{"request":["GET \/b?P=Wf2KPnxT68w0lJEOUjcZIQn_SEJzDlI3GSwAC_5i&T=1493j7dc7%2fX%3d1379342636%2fE%3d2077296265%2fR%3djp_toppage%2fK%3d5%2fV%3d1.1%2fW%3dJ%2fY%3djp%2fF%3d2855758446%2fG%3dCmpwCgo-%2fS%3d1%2fJ%3dCDEA537C&U=128qiqpbq%2fN%3d0YPQB3xT9Aw-%2fC%3d-2%2fD%3dTCON%2fB%3d-2&U=128nrdhue%2fN%3dzIPQB3xT9Aw-%2fC%3d-1%2fD%3dTCBX%2fB%3d-1&U=126orpf6q%2fN%3d04PQB3xT9Aw-%2fC%3d-1%2fD%3dTN%2fB%3d-1&U=13jfdqp0r%2fN%3dxYPQB3xT9Aw-%2fC%3d300749476.301591591.303214120.312177432%2fD%3dTCT%2fB%3d301801915&U=13jj1nh3q%2fN%3dyIPQB3xT9Aw-%2fC%3d300805382.301652291.303219943.302463196%2fD%3dTPM%2fB%3d301811816&U=13j298ulh%2fN%3dxIPQB3xT9Aw-%2fC%3d300806222.301653244.303220189.301426957%2fD%3dTBP%2fB%3d301812603&U=128cr93t1%2fN%3dzYPQB3xT9Aw-%2fC%3d-2%2fD%3dTEPB%2fB%3d-2&U=13j92mvjm%2fN%3dxoPQB3xT9Aw-%2fC%3d300762453.301606763.303165711.300851453%2fD%3dTRB%2fB%3d301722922&U=128cde6vr%2fN%3dx4PQB3xT9Aw-%2fC%3d-2%2fD%3dTRAP%2fB%3d-2&U=128k1vdhl%2fN%3dz4PQB3xT9Aw-%2fC%3d-1%2fD%3dTULT%2fB%3d-1&U=12785u13e%2fN%3dzoPQB3xT9Aw-%2fC%3d-1%2fD%3dGYJ%2fB%3d-1&U=13jeh3fl5%2fN%3d0oPQB3xT9Aw-%2fC%3d300758906.301602867.303159516.312478425%2fD%3dTAG%2fB%3d301713706&Q=0&O=0.2824681622063031 HTTP\/1.1","Host: b9.yahoo.co.jp","User-Agent: Mozilla\/5.0 (Windows NT 6.1; rv:23.0) Gecko\/20100101 Firefox\/23.0 PTST\/133","Accept: image\/png,image\/*;q=0.8,*\/*;q=0.5","Accept-Language: en-US,en;q=0.5","Accept-Encoding: gzip, deflate","Referer: http:\/\/www.yahoo.co.jp\/","Cookie: B=3954h1p93e691&b=3&s=pm; YABW=v=1&b=246&c=1&i4=SEJzDg--&t4=1379342629&i6=&t6=&e=1380493119","Connection: keep-alive"],"response":["HTTP\/1.0 200 OK","Date: Mon, 16 Sep 2013 14:43:59 GMT","P3P: policyref=\"http:\/\/privacy.yahoo.co.jp\/w3c\/p3p.xml\", CP=\"CAO DSP COR CUR ADM DEV TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE GOV\"","Cache-Control: private","Cache-Control: no-cache","Connection: close","Content-Type: image\/gif"]},"country":"Japan","countryCode":"JPN","city":null,"region":null,"lat":35.69,"long":139.69,"location":"Japan","index":10,"number":11},{"ip_addr":"124.83.235.204","method":"GET","host":"www.yahoo.co.jp","url":"\/favicon.ico","responseCode":"304","load_ms":"223","ttfb_ms":"223","load_start":"3054","bytesOut":"453","bytesIn":"157","objectSize":"0","expires":"Fri, 15 Nov 2013 14:43:59 GMT","cacheControl":"max-age=5184000","type":"3","socket":"19","score_cache":"100","score_cdn":"-1","score_gzip":"-1","score_cookies":"-1","score_keep-alive":"-1","score_minify":"-1","score_combine":"-1","score_compress":"-1","score_etags":"-1","is_secure":"0","dns_ms":"-1","connect_ms":218,"ssl_ms":"-1","gzip_total":"0","gzip_save":"0","minify_total":"0","minify_save":"0","image_total":"0","image_save":"0","cache_time":"5184000","dns_start":"0","dns_end":"0","connect_start":"220","connect_end":"438","ssl_start":"0","ssl_end":"0","server_count":"1","server_rtt":"217","client_port":"52993","jpeg_scan_count":"0","full_url":"http:\/\/www.yahoo.co.jp\/favicon.ico","score_progressive_jpeg":-1,"load_end":3277,"ttfb_start":"3054","ttfb_end":3277,"download_start":3277,"download_end":3277,"download_ms":0,"all_start":"220","all_end":3277,"all_ms":441,"headers":{"request":["GET \/favicon.ico HTTP\/1.1","Host: www.yahoo.co.jp","User-Agent: Mozilla\/5.0 (Windows NT 6.1; rv:23.0) Gecko\/20100101 Firefox\/23.0 PTST\/133","Accept: text\/html,application\/xhtml+xml,application\/xml;q=0.9,*\/*;q=0.8","Accept-Language: en-US,en;q=0.5","Accept-Encoding: gzip, deflate","Cookie: B=3954h1p93e691&b=3&s=pm; YABW=v=1&b=246&c=1&i4=SEJzDg--&t4=1379342629&i6=&t6=&e=1380493119","Connection: keep-alive","If-Modified-Since: Fri, 26 Nov 2010 05:21:38 GMT"],"response":["HTTP\/1.1 304 Not Modified","Date: Mon, 16 Sep 2013 14:43:59 GMT","Connection: close","Expires: Fri, 15 Nov 2013 14:43:59 GMT","Cache-Control: max-age=5184000"]},"country":"Japan","countryCode":"JPN","city":null,"region":null,"lat":35.69,"long":139.69,"location":"Japan","index":11,"number":12}];
+var wptNoLinks=1;
+</script><br><a href="/customWaterfall.php?width=930&test=130916_26_JD7&run=1&cached=1">customize waterfall</a> &#8226; <a id="view-images" href="/pageimages.php?test=130916_26_JD7&run=1&cached=1">View all Images</a>                <br>
+                <br>
+                <h3 name="connection_view">Connection View</h3>
+                <map name="connection_map">
+                <area href="#request" alt="http://yahoo.co.jp" title="http://yahoo.co.jp" shape=RECT coords="0,0,250,25">
+<area href="#request1" alt="1: http://www.yahoo.co.jp/" title="1: http://www.yahoo.co.jp/" shape=RECT coords="297,26,490,42">
+<area href="#request12" alt="12: http://www.yahoo.co.jp/favicon.ico" title="12: http://www.yahoo.co.jp/favicon.ico" shape=RECT coords="881,43,928,59">
+<area href="#request2" alt="2: http://k.yimg.jp/images/shp_edit/promotion/scl/lohaco/osere/09/0910osele_rao.jpg" title="2: http://k.yimg.jp/images/shp_edit/promotion/scl/lohaco/osere/09/0910osele_rao.jpg" shape=RECT coords="515,60,593,76">
+<area href="#request3" alt="3: http://k.yimg.jp/images/shp_edit/promotion/scl/lohaco/osere/09/0910osele_net.jpg" title="3: http://k.yimg.jp/images/shp_edit/promotion/scl/lohaco/osere/09/0910osele_net.jpg" shape=RECT coords="515,77,594,93">
+<area href="#request4" alt="4: http://k.yimg.jp/images/shp_edit/promotion/scl/lohaco/osere/09/0910osele_panake.jpg" title="4: http://k.yimg.jp/images/shp_edit/promotion/scl/lohaco/osere/09/0910osele_panake.jpg" shape=RECT coords="517,94,599,110">
+<area href="#request5" alt="5: http://k.yimg.jp/images/shp_edit/promotion/scl/lohaco/osere/09/0910osele_ikuji.jpg" title="5: http://k.yimg.jp/images/shp_edit/promotion/scl/lohaco/osere/09/0910osele_ikuji.jpg" shape=RECT coords="519,111,605,127">
+<area href="#request6" alt="6: http://yads.yahoo.co.jp/tag?t=j&amp;age=&amp;cu=&amp;debug=&amp;enc=UTF-8&amp;f_path=&amp;gen=&amp;i=&amp;oi_path=http%3A%2F%2Fyads.yahoo.co.jp%2Foi&amp;p_elem=&amp;page=1&amp;ref=&amp;rid=&amp;s=25597_3463&amp;sid=2077296265&amp;tag_path=http%3A%2F%2Fyads.yahoo.co.jp%2Ftag&amp;tflg=0&amp;type=&amp;u=http%3A%2F%2Fwww.yahoo.co.jp%2F&amp;w=&amp;fr_support=1&amp;fl_support=0&amp;tagpos=201x897&amp;xd_support=1" title="6: http://yads.yahoo.co.jp/tag?t=j&amp;age=&amp;cu=&amp;debug=&amp;enc=UTF-8&amp;f_path=&amp;gen=&amp;i=&amp;oi_path=http%3A%2F%2Fyads.yahoo.co.jp%2Foi&amp;p_elem=&amp;page=1&amp;ref=&amp;rid=&amp;s=25597_3463&amp;sid=2077296265&amp;tag_path=http%3A%2F%2Fyads.yahoo.co.jp%2Ftag&amp;tflg=0&amp;type=&amp;u=http%3A%2F%2Fwww.yahoo.co.jp%2F&amp;w=&amp;fr_support=1&amp;fl_support=0&amp;tagpos=201x897&amp;xd_support=1" shape=RECT coords="533,128,574,144">
+<area href="#request9" alt="9: http://yads.yahoo.co.jp/oi?t=t&amp;requestId=fb74f8178ca0c6cf39309c7427ebe07e&amp;tflg=0&amp;page=1&amp;enc=UTF-8&amp;sid=2077296265&amp;u=http%3a%2f%2fwww.yahoo.co.jp%2f&amp;s=25597_3463-4186-4749" title="9: http://yads.yahoo.co.jp/oi?t=t&amp;requestId=fb74f8178ca0c6cf39309c7427ebe07e&amp;tflg=0&amp;page=1&amp;enc=UTF-8&amp;sid=2077296265&amp;u=http%3a%2f%2fwww.yahoo.co.jp%2f&amp;s=25597_3463-4186-4749" shape=RECT coords="622,145,672,161">
+<area href="#request7" alt="7: http://ai.yimg.jp/bdv/6858/1152446/20130916/ssqtpdjyzinoivqfgusq-a.gif" title="7: http://ai.yimg.jp/bdv/6858/1152446/20130916/ssqtpdjyzinoivqfgusq-a.gif" shape=RECT coords="577,162,757,178">
+<area href="#request8" alt="8: http://ai.yimg.jp/bdv/500052/1151823/20130916/0rth0vwk3zrnzyxhincy-a.jpg" title="8: http://ai.yimg.jp/bdv/500052/1151823/20130916/0rth0vwk3zrnzyxhincy-a.jpg" shape=RECT coords="580,179,673,195">
+<area href="#request10" alt="10: http://yjaxc.yahoo.co.jp/oi?t=j&amp;s=ytop_ams_rmdl_utf8&amp;i=toppage" title="10: http://yjaxc.yahoo.co.jp/oi?t=j&amp;s=ytop_ams_rmdl_utf8&amp;i=toppage" shape=RECT coords="718,196,776,212">
+<area href="#request11" alt="11: http://b9.yahoo.co.jp/b?P=Wf2KPnxT68w0lJEOUjcZIQn_SEJzDlI3GSwAC_5i&amp;T=1493j7dc7%2fX%3d1379342636%2fE%3d2077296265%2fR%3djp_toppage%2fK%3d5%2fV%3d1.1%2fW%3dJ%2fY%3djp%2fF%3d2855758446%2fG%3dCmpwCgo-%2fS%3d1%2fJ%3dCDEA537C&amp;U=128qiqpbq%2fN%3d0YPQB3xT9Aw-%2fC%3d-2%2fD%3dTCON%2fB%3d-2&amp;U=128nrdhue%2fN%3dzIPQB3xT9Aw-%2fC%3d-1%2fD%3dTCBX%2fB%3d-1&amp;U=126orpf6q%2fN%3d04PQB3xT9Aw-%2fC%3d-1%2fD%3dTN%2fB%3d-1&amp;U=13jfdqp0r%2fN%3dxYPQB3xT9Aw-%2fC%3d300749476.301591591.303214120.312177432%2fD%3dTCT%2fB%3d301801915&amp;U=13jj1nh3q%2fN%3dyIPQB3xT9Aw-%2fC%3d300805382.301652291.303219943.302463196%2fD%3dTPM%2fB%3d301811816&amp;U=13j298ulh%2fN%3dxIPQB3xT9Aw-%2fC%3d300806222.301653244.303220189.301426957%2fD%3dTBP%2fB%3d301812603&amp;U=128cr93t1%2fN%3dzYPQB3xT9Aw-%2fC%3d-2%2fD%3dTEPB%2fB%3d-2&amp;U=13j92mvjm%2fN%3dxoPQB3xT9Aw-%2fC%3d300762453.301606763.303165711.300851453%2fD%3dTRB%2fB%3d301722922&amp;U=128cde6vr%2fN%3dx4PQB3xT9Aw-%2fC%3d-2%2fD%3dTRAP%2fB%3d-2&amp;U=128k1vdhl%2fN%3dz4PQB3xT9Aw-%2fC%3d-1%2fD%3dTULT%2fB%3d-1&amp;U=12785u13e%2fN%3dzoPQB3xT9Aw-%2fC%3d-1%2fD%3dGYJ%2fB%3d-1&amp;U=13jeh3fl5%2fN%3d0oPQB3xT9Aw-%2fC%3d300758906.301602867.303159516.312478425%2fD%3dTAG%2fB%3d301713706&amp;Q=0&amp;O=0.2824681622063031" title="11: http://b9.yahoo.co.jp/b?P=Wf2KPnxT68w0lJEOUjcZIQn_SEJzDlI3GSwAC_5i&amp;T=1493j7dc7%2fX%3d1379342636%2fE%3d2077296265%2fR%3djp_toppage%2fK%3d5%2fV%3d1.1%2fW%3dJ%2fY%3djp%2fF%3d2855758446%2fG%3dCmpwCgo-%2fS%3d1%2fJ%3dCDEA537C&amp;U=128qiqpbq%2fN%3d0YPQB3xT9Aw-%2fC%3d-2%2fD%3dTCON%2fB%3d-2&amp;U=128nrdhue%2fN%3dzIPQB3xT9Aw-%2fC%3d-1%2fD%3dTCBX%2fB%3d-1&amp;U=126orpf6q%2fN%3d04PQB3xT9Aw-%2fC%3d-1%2fD%3dTN%2fB%3d-1&amp;U=13jfdqp0r%2fN%3dxYPQB3xT9Aw-%2fC%3d300749476.301591591.303214120.312177432%2fD%3dTCT%2fB%3d301801915&amp;U=13jj1nh3q%2fN%3dyIPQB3xT9Aw-%2fC%3d300805382.301652291.303219943.302463196%2fD%3dTPM%2fB%3d301811816&amp;U=13j298ulh%2fN%3dxIPQB3xT9Aw-%2fC%3d300806222.301653244.303220189.301426957%2fD%3dTBP%2fB%3d301812603&amp;U=128cr93t1%2fN%3dzYPQB3xT9Aw-%2fC%3d-2%2fD%3dTEPB%2fB%3d-2&amp;U=13j92mvjm%2fN%3dxoPQB3xT9Aw-%2fC%3d300762453.301606763.303165711.300851453%2fD%3dTRB%2fB%3d301722922&amp;U=128cde6vr%2fN%3dx4PQB3xT9Aw-%2fC%3d-2%2fD%3dTRAP%2fB%3d-2&amp;U=128k1vdhl%2fN%3dz4PQB3xT9Aw-%2fC%3d-1%2fD%3dTULT%2fB%3d-1&amp;U=12785u13e%2fN%3dzoPQB3xT9Aw-%2fC%3d-1%2fD%3dGYJ%2fB%3d-1&amp;U=13jeh3fl5%2fN%3d0oPQB3xT9Aw-%2fC%3d300758906.301602867.303159516.312478425%2fD%3dTAG%2fB%3d301713706&amp;Q=0&amp;O=0.2824681622063031" shape=RECT coords="831,213,881,229">
+                </map>
+                <table border="1" bordercolor="silver" cellpadding="2px" cellspacing="0" style="width:auto; font-size:11px; margin-left:auto; margin-right:auto;">
+                    <tr>
+                        <td><table><tr><td><div class="bar" style="width:15px; background-color:#007B84"></div></td><td>DNS Lookup</td></tr></table></td>
+                        <td><table><tr><td><div class="bar" style="width:15px; background-color:#FF7B00"></div></td><td>Initial Connection</td></tr></table></td>
+                                                <td><table><tr><td><div class="bar" style="width:2px; background-color:#28BC00"></div></td><td>Start Render</td></tr></table></td>
+                                                                        <td><table><tr><td><div class="bar" style="width:15px; background-color:#D888DF"></div></td><td>DOM Content Loaded</td></tr></table></td>
+                                                                        <td><table><tr><td><div class="bar" style="width:15px; background-color:#C0C0FF"></div></td><td>On Load</td></tr></table></td>
+                                                <td><table><tr><td><div class="bar" style="width:2px; background-color:#0000FF"></div></td><td>Document Complete</td></tr></table></td>
+                    </tr>
+                </table>
+                <br>
+                <img class="progress" alt="Connection View waterfall diagram" usemap="#connection_map" id="connectionView" src="/waterfall.png?type=connection&width=930&test=130916_26_JD7&run=1&cached=1&mime=1">
+                </div>
+                <br><br>
+                <div style="width:100%; height:90; text-align:center; clear: both; padding: 1em 0px; background-color: #AAA;">
+    <script type="text/javascript"><!--
+    google_ad_client = "pub-0388499782819905";
+    /* Webpagetest Details Middle 728x90 */
+    google_ad_slot = "9339196816";
+    google_ad_width = 728;
+    google_ad_height = 90;
+    //-->
+    </script>
+    <script type="text/javascript"
+    src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+    </script>
+</div>
+
+                <br>
+                <div class="center">
+<table id="tableDetails" class="details center">
+	<caption>Request Details</caption>
+    <thead>
+	<tr>
+		<th class="reqNum">#</th>
+		<th class="reqUrl">Resource</th>
+		<th class="reqMime">Content Type</th>
+		<th class="reqStart">Start Offset</th>
+		<th class="reqDNS">DNS Lookup</th>
+		<th class="reqSocket">Initial Connection</th>
+				<th class="reqTTFB">Time to First Byte</th>
+		<th class="reqDownload">Content Download</th>
+		<th class="reqBytes">Bytes Downloaded</th>
+		<th class="reqResult">Error/Status Code</th>
+		<th class="reqIP">IP</th>
+				<th class="reqLocation">Location*</th>
+			</tr>
+    </thead>
+    <tbody>
+
+<tr><td class="reqNum oddRender">1</td><td class="reqUrl oddRender"><a title="http://www.yahoo.co.jp/" href="#request1">http://www.yahoo.co.jp/</a></td><td class="reqMime oddRender">text/html</td><td class="reqStart oddRender">0.225 s</td><td class="reqDNS oddRender">2 ms</td><td class="reqSocket oddRender">223 ms</td><td class="reqTTFB oddRender">248 ms</td><td class="reqDownload oddRender">686 ms</td><td class="reqBytes oddRender">36.1 KB</td><td class="reqResult oddRender">200</td><td class="reqIP oddRender">124.83.235.204</td><td class="reqLocation oddRender">Japan</td>
+</tr><tr><td class="reqNum evenDoc">2</td><td class="reqUrl evenDoc"><a title="http://k.yimg.jp/images/shp_edit/promotion/scl/lohaco/osere/09/0910osele_rao.jpg" href="#request2">http://k.yimg.jp/ima...09/0910osele_rao.jpg</a></td><td class="reqMime evenDoc">image/jpeg</td><td class="reqStart evenDoc">1.28 s</td><td class="reqDNS evenDoc">144 ms</td><td class="reqSocket evenDoc">185 ms</td><td class="reqTTFB evenDoc">191 ms</td><td class="reqDownload evenDoc">187 ms</td><td class="reqBytes evenDoc">2.9 KB</td><td class="reqResult evenDoc">200</td><td class="reqIP evenDoc">202.93.69.248</td><td class="reqLocation evenDoc">Yahoo</td>
+</tr><tr><td class="reqNum oddDoc">3</td><td class="reqUrl oddDoc"><a title="http://k.yimg.jp/images/shp_edit/promotion/scl/lohaco/osere/09/0910osele_net.jpg" href="#request3">http://k.yimg.jp/ima...09/0910osele_net.jpg</a></td><td class="reqMime oddDoc">image/jpeg</td><td class="reqStart oddDoc">1.282 s</td><td class="reqDNS oddDoc">-</td><td class="reqSocket oddDoc">187 ms</td><td class="reqTTFB oddDoc">192 ms</td><td class="reqDownload oddDoc">189 ms</td><td class="reqBytes oddDoc">2.9 KB</td><td class="reqResult oddDoc">200</td><td class="reqIP oddDoc">202.93.69.248</td><td class="reqLocation oddDoc">Yahoo</td>
+</tr><tr><td class="reqNum evenDoc">4</td><td class="reqUrl evenDoc"><a title="http://k.yimg.jp/images/shp_edit/promotion/scl/lohaco/osere/09/0910osele_panake.jpg" href="#request4">http://k.yimg.jp/ima...0910osele_panake.jpg</a></td><td class="reqMime evenDoc">image/jpeg</td><td class="reqStart evenDoc">1.289 s</td><td class="reqDNS evenDoc">-</td><td class="reqSocket evenDoc">194 ms</td><td class="reqTTFB evenDoc">201 ms</td><td class="reqDownload evenDoc">195 ms</td><td class="reqBytes evenDoc">2.9 KB</td><td class="reqResult evenDoc">200</td><td class="reqIP evenDoc">202.93.69.248</td><td class="reqLocation evenDoc">Yahoo</td>
+</tr><tr><td class="reqNum oddDoc">5</td><td class="reqUrl oddDoc"><a title="http://k.yimg.jp/images/shp_edit/promotion/scl/lohaco/osere/09/0910osele_ikuji.jpg" href="#request5">http://k.yimg.jp/ima.../0910osele_ikuji.jpg</a></td><td class="reqMime oddDoc">image/jpeg</td><td class="reqStart oddDoc">1.301 s</td><td class="reqDNS oddDoc">-</td><td class="reqSocket oddDoc">206 ms</td><td class="reqTTFB oddDoc">210 ms</td><td class="reqDownload oddDoc">206 ms</td><td class="reqBytes oddDoc">2.9 KB</td><td class="reqResult oddDoc">200</td><td class="reqIP oddDoc">202.93.69.248</td><td class="reqLocation oddDoc">Yahoo</td>
+</tr><tr><td class="reqNum evenDoc">6</td><td class="reqUrl evenDoc"><a title="http://yads.yahoo.co.jp/tag?t=j&age=&cu=&debug=&enc=UTF-8&f_path=&gen=&i=&oi_path=http%3A%2F%2Fyads.yahoo.co.jp%2Foi&p_elem=&page=1&ref=&rid=&s=25597_3463&sid=2077296265&tag_path=http%3A%2F%2Fyads.yahoo.co.jp%2Ftag&tflg=0&type=&u=http%3A%2F%2Fwww.yahoo.co.jp%2F&w=&fr_support=1&fl_support=0&tagpos=201x897&xd_support=1" href="#request6">http://yads.yahoo.co...201x897&xd_support=1</a></td><td class="reqMime evenDoc">text/javascript</td><td class="reqStart evenDoc">1.367 s</td><td class="reqDNS evenDoc">6 ms</td><td class="reqSocket evenDoc">209 ms</td><td class="reqTTFB evenDoc">201 ms</td><td class="reqDownload evenDoc">-</td><td class="reqBytes evenDoc">0.7 KB</td><td class="reqResult evenDoc">200</td><td class="reqIP evenDoc">182.22.59.233</td><td class="reqLocation evenDoc">Tokyo, Japan</td>
+</tr><tr><td class="reqNum oddDoc">7</td><td class="reqUrl oddDoc"><a title="http://ai.yimg.jp/bdv/6858/1152446/20130916/ssqtpdjyzinoivqfgusq-a.gif" href="#request7">http://ai.yimg.jp/bd...jyzinoivqfgusq-a.gif</a></td><td class="reqMime oddDoc">image/gif</td><td class="reqStart oddDoc">1.582 s</td><td class="reqDNS oddDoc">215 ms</td><td class="reqSocket oddDoc">213 ms</td><td class="reqTTFB oddDoc">213 ms</td><td class="reqDownload oddDoc">656 ms</td><td class="reqBytes oddDoc">15.2 KB</td><td class="reqResult oddDoc">200</td><td class="reqIP oddDoc">124.83.229.249</td><td class="reqLocation oddDoc">Yahoo</td>
+</tr><tr><td class="reqNum evenDoc">8</td><td class="reqUrl evenDoc"><a title="http://ai.yimg.jp/bdv/500052/1151823/20130916/0rth0vwk3zrnzyxhincy-a.jpg" href="#request8">http://ai.yimg.jp/bd...wk3zrnzyxhincy-a.jpg</a></td><td class="reqMime evenDoc">image/jpeg</td><td class="reqStart evenDoc">1.595 s</td><td class="reqDNS evenDoc">-</td><td class="reqSocket evenDoc">227 ms</td><td class="reqTTFB evenDoc">226 ms</td><td class="reqDownload evenDoc">225 ms</td><td class="reqBytes evenDoc">4.2 KB</td><td class="reqResult evenDoc">200</td><td class="reqIP evenDoc">124.83.229.249</td><td class="reqLocation evenDoc">Yahoo</td>
+</tr><tr><td class="reqNum oddDoc">9</td><td class="reqUrl oddDoc"><a title="http://yads.yahoo.co.jp/oi?t=t&requestId=fb74f8178ca0c6cf39309c7427ebe07e&tflg=0&page=1&enc=UTF-8&sid=2077296265&u=http%3a%2f%2fwww.yahoo.co.jp%2f&s=25597_3463-4186-4749" href="#request9">http://yads.yahoo.co...25597_3463-4186-4749</a></td><td class="reqMime oddDoc">text/javascript</td><td class="reqStart oddDoc">1.796 s</td><td class="reqDNS oddDoc">26 ms</td><td class="reqSocket oddDoc">199 ms</td><td class="reqTTFB oddDoc">242 ms</td><td class="reqDownload oddDoc">-</td><td class="reqBytes oddDoc">1.2 KB</td><td class="reqResult oddDoc">200</td><td class="reqIP oddDoc">182.22.59.233</td><td class="reqLocation oddDoc">Tokyo, Japan</td>
+</tr><tr><td class="reqNum evenDoc">10</td><td class="reqUrl evenDoc"><a title="http://yjaxc.yahoo.co.jp/oi?t=j&s=ytop_ams_rmdl_utf8&i=toppage" href="#request10">http://yjaxc.yahoo.c..._rmdl_utf8&i=toppage</a></td><td class="reqMime evenDoc">application/x-javascript</td><td class="reqStart evenDoc">2.265 s</td><td class="reqDNS evenDoc">1 ms</td><td class="reqSocket evenDoc">221 ms</td><td class="reqTTFB evenDoc">275 ms</td><td class="reqDownload evenDoc">3 ms</td><td class="reqBytes evenDoc">3.3 KB</td><td class="reqResult evenDoc">200</td><td class="reqIP evenDoc">183.79.131.231</td><td class="reqLocation evenDoc">Akasaka, Japan</td>
+</tr><tr><td class="reqNum oddDoc">11</td><td class="reqUrl oddDoc"><a title="http://b9.yahoo.co.jp/b?P=Wf2KPnxT68w0lJEOUjcZIQn_SEJzDlI3GSwAC_5i&T=1493j7dc7%2fX%3d1379342636%2fE%3d2077296265%2fR%3djp_toppage%2fK%3d5%2fV%3d1.1%2fW%3dJ%2fY%3djp%2fF%3d2855758446%2fG%3dCmpwCgo-%2fS%3d1%2fJ%3dCDEA537C&U=128qiqpbq%2fN%3d0YPQB3xT9Aw-%2fC%3d-2%2fD%3dTCON%2fB%3d-2&U=128nrdhue%2fN%3dzIPQB3xT9Aw-%2fC%3d-1%2fD%3dTCBX%2fB%3d-1&U=126orpf6q%2fN%3d04PQB3xT9Aw-%2fC%3d-1%2fD%3dTN%2fB%3d-1&U=13jfdqp0r%2fN%3dxYPQB3xT9Aw-%2fC%3d300749476.301591591.303214120.312177432%2fD%3dTCT%2fB%3d301801915&U=13jj1nh3q%2fN%3dyIPQB3xT9Aw-%2fC%3d300805382.301652291.303219943.302463196%2fD%3dTPM%2fB%3d301811816&U=13j298ulh%2fN%3dxIPQB3xT9Aw-%2fC%3d300806222.301653244.303220189.301426957%2fD%3dTBP%2fB%3d301812603&U=128cr93t1%2fN%3dzYPQB3xT9Aw-%2fC%3d-2%2fD%3dTEPB%2fB%3d-2&U=13j92mvjm%2fN%3dxoPQB3xT9Aw-%2fC%3d300762453.301606763.303165711.300851453%2fD%3dTRB%2fB%3d301722922&U=128cde6vr%2fN%3dx4PQB3xT9Aw-%2fC%3d-2%2fD%3dTRAP%2fB%3d-2&U=128k1vdhl%2fN%3dz4PQB3xT9Aw-%2fC%3d-1%2fD%3dTULT%2fB%3d-1&U=12785u13e%2fN%3dzoPQB3xT9Aw-%2fC%3d-1%2fD%3dGYJ%2fB%3d-1&U=13jeh3fl5%2fN%3d0oPQB3xT9Aw-%2fC%3d300758906.301602867.303159516.312478425%2fD%3dTAG%2fB%3d301713706&Q=0&O=0.2824681622063031" href="#request11">http://b9.yahoo.co.j...O=0.2824681622063031</a></td><td class="reqMime oddDoc">image/gif</td><td class="reqStart oddDoc">2.809 s</td><td class="reqDNS oddDoc">11 ms</td><td class="reqSocket oddDoc">226 ms</td><td class="reqTTFB oddDoc">241 ms</td><td class="reqDownload oddDoc">-</td><td class="reqBytes oddDoc">0.4 KB</td><td class="reqResult oddDoc">200</td><td class="reqIP oddDoc">114.111.109.20</td><td class="reqLocation oddDoc">Japan</td>
+</tr><tr><td class="reqNum warning evenDoc">12</td><td class="reqUrl warning evenDoc"><a title="http://www.yahoo.co.jp/favicon.ico" href="#request12">http://www.yahoo.co.jp/favicon.ico</a></td><td class="reqMime warning evenDoc">-</td><td class="reqStart warning evenDoc">3.054 s</td><td class="reqDNS warning evenDoc">-</td><td class="reqSocket warning evenDoc">218 ms</td><td class="reqTTFB warning evenDoc">223 ms</td><td class="reqDownload warning evenDoc">-</td><td class="reqBytes warning evenDoc">0.2 KB</td><td class="reqResult warning evenDoc">304</td><td class="reqIP warning evenDoc">124.83.235.204</td><td class="reqLocation warning evenDoc">Japan</td>
+</tr></tbody>
+</table></div>
+
+<p class="center">*This product includes GeoLite data created by MaxMind, available from <a href="http://maxmind.com/">http://maxmind.com/</a>.</p>
+<br>
+<div style="width:100%; height:90; text-align:center; clear:both; padding: 1em 0px; background-color: #AAA;">
+    <script type="text/javascript"><!--
+    google_ad_client = "pub-0388499782819905";
+    /* Webpagetest Details Bottom 728x90 */
+    google_ad_slot = "7833437511";
+    google_ad_width = 728;
+    google_ad_height = 90;
+    //-->
+    </script>
+    <script type="text/javascript"
+    src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+    </script>
+</div>
+<br>
+
+<div id="headers"><p>Test Machine DNS Server(s): 192.168.104.1,192.168.0.1</p>
+<br><hr><h2>Request Headers</h2><p>+ <a id="all" href="javascript:expandAll();">Expand All</a></p><h4><span class="a_request" id="request1" data-target-id="headers_1">+ Request 1: http://www.yahoo.co.jp/</span></h4><div class="header_details" id="headers_1"><p class="indented2">
+<b>URL:</b> http://www.yahoo.co.jp/<br>
+<b>Host:</b> www.yahoo.co.jp<br>
+<b>IP:</b> 124.83.235.204<br>
+<b>Location:</b> Japan<br>
+<b>Error/Status Code:</b> 200<br>
+<b>Client Port:</b> 52992<br>
+<b>Start Offset:</b> 0.225 s<br>
+<b>Initial Connection:</b> 223 ms<br>
+<b>Time to First Byte:</b> 248 ms<br>
+<b>Content Download:</b> 686 ms<br>
+<b>Bytes In (downloaded):</b> 36.1 KB<br>
+<b>Bytes Out (uploaded):</b> 0.4 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+GET / HTTP/1.1<br>
+Host: www.yahoo.co.jp<br>
+User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:23.0) Gecko/20100101 Firefox/23.0 PTST/133<br>
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8<br>
+Accept-Language: en-US,en;q=0.5<br>
+Accept-Encoding: gzip, deflate<br>
+Cookie: B=3954h1p93e691&amp;b=3&amp;s=pm; YABW=v=1&amp;b=246&amp;c=1&amp;i4=SEJzDg--&amp;t4=1379342629&amp;i6=&amp;t6=&amp;e=1380493119<br>
+Connection: keep-alive<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+HTTP/1.1 200 OK<br>
+Date: Mon, 16 Sep 2013 14:43:56 GMT<br>
+P3P: policyref=&quot;http://privacy.yahoo.co.jp/w3c/p3p.xml&quot;, CP=&quot;CAO DSP COR CUR ADM DEV TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE GOV&quot;<br>
+Vary: User-Agent,Cookie,Accept-Encoding<br>
+Expires: -1<br>
+Pragma: no-cache<br>
+Cache-Control: private, no-cache, no-store, must-revalidate<br>
+X-XRDS-Location: http://open.login.yahoo.co.jp/openid20/www.yahoo.co.jp/xrds<br>
+Connection: close<br>
+Transfer-Encoding: chunked<br>
+Content-Type: text/html; charset=utf-8<br>
+Content-Encoding: gzip<br>
+</p></div><h4><span class="a_request" id="request2" data-target-id="headers_2">+ Request 2: http://k.yimg.jp/images/shp_edit/promotion/scl/lohaco/osere/09/0910osele_rao.jpg</span></h4><div class="header_details" id="headers_2"><p class="indented2">
+<b>URL:</b> http://k.yimg.jp/images/shp_edit/promotion/scl/lohaco/osere/09/0910osele_rao.jpg<br>
+<b>Host:</b> k.yimg.jp<br>
+<b>IP:</b> 202.93.69.248<br>
+<b>Location:</b> Yahoo<br>
+<b>Error/Status Code:</b> 200<br>
+<b>Client Port:</b> 53001<br>
+<b>Start Offset:</b> 1.280 s<br>
+<b>DNS Lookup:</b> 144 ms<br>
+<b>Initial Connection:</b> 185 ms<br>
+<b>Time to First Byte:</b> 191 ms<br>
+<b>Content Download:</b> 187 ms<br>
+<b>Bytes In (downloaded):</b> 2.9 KB<br>
+<b>Bytes Out (uploaded):</b> 0.3 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+GET /images/shp_edit/promotion/scl/lohaco/osere/09/0910osele_rao.jpg HTTP/1.1<br>
+Host: k.yimg.jp<br>
+User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:23.0) Gecko/20100101 Firefox/23.0 PTST/133<br>
+Accept: image/png,image/*;q=0.8,*/*;q=0.5<br>
+Accept-Language: en-US,en;q=0.5<br>
+Accept-Encoding: gzip, deflate<br>
+Referer: http://www.yahoo.co.jp/<br>
+Connection: keep-alive<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+HTTP/1.1 200 OK<br>
+Date: Mon, 16 Sep 2013 14:39:54 GMT<br>
+Cache-Control: public, max-age=1209843<br>
+Last-Modified: Tue, 10 Sep 2013 04:59:07 GMT<br>
+Accept-Ranges: bytes<br>
+Content-Length: 2477<br>
+Content-Type: image/jpeg<br>
+Age: 243<br>
+Via: HTTP/1.1 ytsorigin7002.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ]), HTTP/1.1 yts7138.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ])<br>
+Server: YTS/1.20.10<br>
+Connection: keep-alive<br>
+Expires: Mon, 30 Sep 2013 14:43:57 GMT<br>
+</p></div><h4><span class="a_request" id="request3" data-target-id="headers_3">+ Request 3: http://k.yimg.jp/images/shp_edit/promotion/scl/lohaco/osere/09/0910osele_net.jpg</span></h4><div class="header_details" id="headers_3"><p class="indented2">
+<b>URL:</b> http://k.yimg.jp/images/shp_edit/promotion/scl/lohaco/osere/09/0910osele_net.jpg<br>
+<b>Host:</b> k.yimg.jp<br>
+<b>IP:</b> 202.93.69.248<br>
+<b>Location:</b> Yahoo<br>
+<b>Error/Status Code:</b> 200<br>
+<b>Client Port:</b> 53000<br>
+<b>Start Offset:</b> 1.282 s<br>
+<b>Initial Connection:</b> 187 ms<br>
+<b>Time to First Byte:</b> 192 ms<br>
+<b>Content Download:</b> 189 ms<br>
+<b>Bytes In (downloaded):</b> 2.9 KB<br>
+<b>Bytes Out (uploaded):</b> 0.3 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+GET /images/shp_edit/promotion/scl/lohaco/osere/09/0910osele_net.jpg HTTP/1.1<br>
+Host: k.yimg.jp<br>
+User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:23.0) Gecko/20100101 Firefox/23.0 PTST/133<br>
+Accept: image/png,image/*;q=0.8,*/*;q=0.5<br>
+Accept-Language: en-US,en;q=0.5<br>
+Accept-Encoding: gzip, deflate<br>
+Referer: http://www.yahoo.co.jp/<br>
+Connection: keep-alive<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+HTTP/1.1 200 OK<br>
+Date: Mon, 16 Sep 2013 14:37:56 GMT<br>
+Cache-Control: public, max-age=1209961<br>
+Last-Modified: Tue, 10 Sep 2013 04:59:07 GMT<br>
+Accept-Ranges: bytes<br>
+Content-Length: 2475<br>
+Content-Type: image/jpeg<br>
+Age: 361<br>
+Via: HTTP/1.1 ytsorigin7011.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ]), HTTP/1.1 yts7107.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ])<br>
+Server: YTS/1.20.10<br>
+Connection: keep-alive<br>
+Expires: Mon, 30 Sep 2013 14:43:57 GMT<br>
+</p></div><h4><span class="a_request" id="request4" data-target-id="headers_4">+ Request 4: http://k.yimg.jp/images/shp_edit/promotion/scl/lohaco/osere/09/0910osele_panake.jpg</span></h4><div class="header_details" id="headers_4"><p class="indented2">
+<b>URL:</b> http://k.yimg.jp/images/shp_edit/promotion/scl/lohaco/osere/09/0910osele_panake.jpg<br>
+<b>Host:</b> k.yimg.jp<br>
+<b>IP:</b> 202.93.69.248<br>
+<b>Location:</b> Yahoo<br>
+<b>Error/Status Code:</b> 200<br>
+<b>Client Port:</b> 52997<br>
+<b>Start Offset:</b> 1.289 s<br>
+<b>Initial Connection:</b> 194 ms<br>
+<b>Time to First Byte:</b> 201 ms<br>
+<b>Content Download:</b> 195 ms<br>
+<b>Bytes In (downloaded):</b> 2.9 KB<br>
+<b>Bytes Out (uploaded):</b> 0.3 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+GET /images/shp_edit/promotion/scl/lohaco/osere/09/0910osele_panake.jpg HTTP/1.1<br>
+Host: k.yimg.jp<br>
+User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:23.0) Gecko/20100101 Firefox/23.0 PTST/133<br>
+Accept: image/png,image/*;q=0.8,*/*;q=0.5<br>
+Accept-Language: en-US,en;q=0.5<br>
+Accept-Encoding: gzip, deflate<br>
+Referer: http://www.yahoo.co.jp/<br>
+Connection: keep-alive<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+HTTP/1.1 200 OK<br>
+Date: Mon, 16 Sep 2013 14:34:06 GMT<br>
+Cache-Control: public, max-age=1210191<br>
+Last-Modified: Tue, 10 Sep 2013 04:59:05 GMT<br>
+Accept-Ranges: bytes<br>
+Content-Length: 2494<br>
+Content-Type: image/jpeg<br>
+Age: 591<br>
+Via: HTTP/1.1 ytsorigin7004.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ]), HTTP/1.1 yts7104.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ])<br>
+Server: YTS/1.20.10<br>
+Connection: keep-alive<br>
+Expires: Mon, 30 Sep 2013 14:43:57 GMT<br>
+</p></div><h4><span class="a_request" id="request5" data-target-id="headers_5">+ Request 5: http://k.yimg.jp/images/shp_edit/promotion/scl/lohaco/osere/09/0910osele_ikuji.jpg</span></h4><div class="header_details" id="headers_5"><p class="indented2">
+<b>URL:</b> http://k.yimg.jp/images/shp_edit/promotion/scl/lohaco/osere/09/0910osele_ikuji.jpg<br>
+<b>Host:</b> k.yimg.jp<br>
+<b>IP:</b> 202.93.69.248<br>
+<b>Location:</b> Yahoo<br>
+<b>Error/Status Code:</b> 200<br>
+<b>Client Port:</b> 52998<br>
+<b>Start Offset:</b> 1.301 s<br>
+<b>Initial Connection:</b> 206 ms<br>
+<b>Time to First Byte:</b> 210 ms<br>
+<b>Content Download:</b> 206 ms<br>
+<b>Bytes In (downloaded):</b> 2.9 KB<br>
+<b>Bytes Out (uploaded):</b> 0.3 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+GET /images/shp_edit/promotion/scl/lohaco/osere/09/0910osele_ikuji.jpg HTTP/1.1<br>
+Host: k.yimg.jp<br>
+User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:23.0) Gecko/20100101 Firefox/23.0 PTST/133<br>
+Accept: image/png,image/*;q=0.8,*/*;q=0.5<br>
+Accept-Language: en-US,en;q=0.5<br>
+Accept-Encoding: gzip, deflate<br>
+Referer: http://www.yahoo.co.jp/<br>
+Connection: keep-alive<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+HTTP/1.1 200 OK<br>
+Date: Mon, 16 Sep 2013 14:34:08 GMT<br>
+Cache-Control: public, max-age=1210189<br>
+Last-Modified: Tue, 10 Sep 2013 04:59:06 GMT<br>
+Accept-Ranges: bytes<br>
+Content-Length: 2489<br>
+Content-Type: image/jpeg<br>
+Age: 589<br>
+Via: HTTP/1.1 ytsorigin7007.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ]), HTTP/1.1 yts7110.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ])<br>
+Server: YTS/1.20.10<br>
+Connection: keep-alive<br>
+Expires: Mon, 30 Sep 2013 14:43:57 GMT<br>
+</p></div><h4><span class="a_request" id="request6" data-target-id="headers_6">+ Request 6: http://yads.yahoo.co.jp/tag?t=j&amp;age=&amp;cu=&amp;debug=&amp;enc=UTF-8&amp;f_path=&amp;gen=&amp;i=&amp;oi_path=http%3A%2F%2Fyads.yahoo.co.jp%2Foi&amp;p_elem=&amp;page=1&amp;ref=&amp;rid=&amp;s=25597_3463&amp;sid=2077296265&amp;tag_path=http%3A%2F%2Fyads.yahoo.co.jp%2Ftag&amp;tflg=0&amp;type=&amp;u=http%3A%2F%2Fwww.yahoo.co.jp%2F&amp;w=&amp;fr_support=1&amp;fl_support=0&amp;tagpos=201x897&amp;xd_support=1</span></h4><div class="header_details" id="headers_6"><p class="indented2">
+<b>URL:</b> http://yads.yahoo.co.jp/tag?t=j&age=&cu=&debug=&enc=UTF-8&f_path=&gen=&i=&oi_path=http%3A%2F%2Fyads.yahoo.co.jp%2Foi&p_elem=&page=1&ref=&rid=&s=25597_3463&sid=2077296265&tag_path=http%3A%2F%2Fyads.yahoo.co.jp%2Ftag&tflg=0&type=&u=http%3A%2F%2Fwww.yahoo.co.jp%2F&w=&fr_support=1&fl_support=0&tagpos=201x897&xd_support=1<br>
+<b>Host:</b> yads.yahoo.co.jp<br>
+<b>IP:</b> 182.22.59.233<br>
+<b>Location:</b> Tokyo, Japan<br>
+<b>Error/Status Code:</b> 200<br>
+<b>Client Port:</b> 53003<br>
+<b>Start Offset:</b> 1.367 s<br>
+<b>DNS Lookup:</b> 6 ms<br>
+<b>Initial Connection:</b> 209 ms<br>
+<b>Time to First Byte:</b> 201 ms<br>
+<b>Bytes In (downloaded):</b> 0.7 KB<br>
+<b>Bytes Out (uploaded):</b> 0.6 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+GET /tag?t=j&amp;age=&amp;cu=&amp;debug=&amp;enc=UTF-8&amp;f_path=&amp;gen=&amp;i=&amp;oi_path=http%3A%2F%2Fyads.yahoo.co.jp%2Foi&amp;p_elem=&amp;page=1&amp;ref=&amp;rid=&amp;s=25597_3463&amp;sid=2077296265&amp;tag_path=http%3A%2F%2Fyads.yahoo.co.jp%2Ftag&amp;tflg=0&amp;type=&amp;u=http%3A%2F%2Fwww.yahoo.co.jp%2F&amp;w=&amp;fr_support=1&amp;fl_support=0&amp;tagpos=201x897&amp;xd_support=1 HTTP/1.1<br>
+Host: yads.yahoo.co.jp<br>
+User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:23.0) Gecko/20100101 Firefox/23.0 PTST/133<br>
+Accept: */*<br>
+Accept-Language: en-US,en;q=0.5<br>
+Accept-Encoding: gzip, deflate<br>
+Referer: http://www.yahoo.co.jp/<br>
+Cookie: B=3954h1p93e691&amp;b=3&amp;s=pm; YABW=v=1&amp;b=246&amp;c=1&amp;i4=SEJzDg--&amp;t4=1379342629&amp;i6=&amp;t6=&amp;e=1380493119<br>
+Connection: keep-alive<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+HTTP/1.1 200 OK<br>
+Cache-Control: private<br>
+Content-Type: text/javascript; charset=UTF-8<br>
+Date: Mon, 16 Sep 2013 14:43:57 GMT<br>
+P3P: policyref=&quot;http://info.yahoo.com/w3c/p3p.xml&quot;, CP=&quot;CAO DSP COR CUR ADM DEV TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV&quot;<br>
+Server: UserFiberFramework/1.0<br>
+Transfer-Encoding: chunked<br>
+Via: HTTP/1.1 yads042.ane.ssk.yahoo.co.jp (UserFiberFramework/1.0)<br>
+</p></div><h4><span class="a_request" id="request7" data-target-id="headers_7">+ Request 7: http://ai.yimg.jp/bdv/6858/1152446/20130916/ssqtpdjyzinoivqfgusq-a.gif</span></h4><div class="header_details" id="headers_7"><p class="indented2">
+<b>URL:</b> http://ai.yimg.jp/bdv/6858/1152446/20130916/ssqtpdjyzinoivqfgusq-a.gif<br>
+<b>Host:</b> ai.yimg.jp<br>
+<b>IP:</b> 124.83.229.249<br>
+<b>Location:</b> Yahoo<br>
+<b>Error/Status Code:</b> 200<br>
+<b>Client Port:</b> 53006<br>
+<b>Start Offset:</b> 1.582 s<br>
+<b>DNS Lookup:</b> 215 ms<br>
+<b>Initial Connection:</b> 213 ms<br>
+<b>Time to First Byte:</b> 213 ms<br>
+<b>Content Download:</b> 656 ms<br>
+<b>Bytes In (downloaded):</b> 15.2 KB<br>
+<b>Bytes Out (uploaded):</b> 0.3 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+GET /bdv/6858/1152446/20130916/ssqtpdjyzinoivqfgusq-a.gif HTTP/1.1<br>
+Host: ai.yimg.jp<br>
+User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:23.0) Gecko/20100101 Firefox/23.0 PTST/133<br>
+Accept: image/png,image/*;q=0.8,*/*;q=0.5<br>
+Accept-Language: en-US,en;q=0.5<br>
+Accept-Encoding: gzip, deflate<br>
+Referer: http://www.yahoo.co.jp/<br>
+Connection: keep-alive<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+HTTP/1.1 200 OK<br>
+Date: Mon, 16 Sep 2013 14:40:19 GMT<br>
+Cache-Control: public, max-age=1209819<br>
+Last-Modified: Thu, 12 Sep 2013 06:29:01 GMT<br>
+Accept-Ranges: bytes<br>
+Content-Length: 15089<br>
+Content-Type: image/gif<br>
+Age: 219<br>
+Via: HTTP/1.1 ytsorigin8008.img.djm.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ]), HTTP/1.1 yts8021.img.djm.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ])<br>
+Server: YTS/1.20.10<br>
+Connection: keep-alive<br>
+Expires: Mon, 30 Sep 2013 14:43:58 GMT<br>
+</p></div><h4><span class="a_request" id="request8" data-target-id="headers_8">+ Request 8: http://ai.yimg.jp/bdv/500052/1151823/20130916/0rth0vwk3zrnzyxhincy-a.jpg</span></h4><div class="header_details" id="headers_8"><p class="indented2">
+<b>URL:</b> http://ai.yimg.jp/bdv/500052/1151823/20130916/0rth0vwk3zrnzyxhincy-a.jpg<br>
+<b>Host:</b> ai.yimg.jp<br>
+<b>IP:</b> 124.83.229.249<br>
+<b>Location:</b> Yahoo<br>
+<b>Error/Status Code:</b> 200<br>
+<b>Client Port:</b> 53005<br>
+<b>Start Offset:</b> 1.595 s<br>
+<b>Initial Connection:</b> 227 ms<br>
+<b>Time to First Byte:</b> 226 ms<br>
+<b>Content Download:</b> 225 ms<br>
+<b>Bytes In (downloaded):</b> 4.2 KB<br>
+<b>Bytes Out (uploaded):</b> 0.3 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+GET /bdv/500052/1151823/20130916/0rth0vwk3zrnzyxhincy-a.jpg HTTP/1.1<br>
+Host: ai.yimg.jp<br>
+User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:23.0) Gecko/20100101 Firefox/23.0 PTST/133<br>
+Accept: image/png,image/*;q=0.8,*/*;q=0.5<br>
+Accept-Language: en-US,en;q=0.5<br>
+Accept-Encoding: gzip, deflate<br>
+Referer: http://www.yahoo.co.jp/<br>
+Connection: keep-alive<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+HTTP/1.1 200 OK<br>
+Date: Mon, 16 Sep 2013 14:41:31 GMT<br>
+Cache-Control: public, max-age=1209747<br>
+Last-Modified: Wed, 11 Sep 2013 03:13:01 GMT<br>
+Accept-Ranges: bytes<br>
+Content-Length: 3789<br>
+Content-Type: image/jpeg<br>
+Age: 147<br>
+Via: HTTP/1.1 ytsorigin8002.img.djm.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ]), HTTP/1.1 yts8030.img.djm.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ])<br>
+Server: YTS/1.20.10<br>
+Connection: keep-alive<br>
+Expires: Mon, 30 Sep 2013 14:43:58 GMT<br>
+</p></div><h4><span class="a_request" id="request9" data-target-id="headers_9">+ Request 9: http://yads.yahoo.co.jp/oi?t=t&amp;requestId=fb74f8178ca0c6cf39309c7427ebe07e&amp;tflg=0&amp;page=1&amp;enc=UTF-8&amp;sid=2077296265&amp;u=http%3a%2f%2fwww.yahoo.co.jp%2f&amp;s=25597_3463-4186-4749</span></h4><div class="header_details" id="headers_9"><p class="indented2">
+<b>URL:</b> http://yads.yahoo.co.jp/oi?t=t&requestId=fb74f8178ca0c6cf39309c7427ebe07e&tflg=0&page=1&enc=UTF-8&sid=2077296265&u=http%3a%2f%2fwww.yahoo.co.jp%2f&s=25597_3463-4186-4749<br>
+<b>Host:</b> yads.yahoo.co.jp<br>
+<b>IP:</b> 182.22.59.233<br>
+<b>Location:</b> Tokyo, Japan<br>
+<b>Error/Status Code:</b> 200<br>
+<b>Client Port:</b> 53008<br>
+<b>Start Offset:</b> 1.796 s<br>
+<b>DNS Lookup:</b> 26 ms<br>
+<b>Initial Connection:</b> 199 ms<br>
+<b>Time to First Byte:</b> 242 ms<br>
+<b>Bytes In (downloaded):</b> 1.2 KB<br>
+<b>Bytes Out (uploaded):</b> 0.5 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+GET /oi?t=t&amp;requestId=fb74f8178ca0c6cf39309c7427ebe07e&amp;tflg=0&amp;page=1&amp;enc=UTF-8&amp;sid=2077296265&amp;u=http%3a%2f%2fwww.yahoo.co.jp%2f&amp;s=25597_3463-4186-4749 HTTP/1.1<br>
+Host: yads.yahoo.co.jp<br>
+User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:23.0) Gecko/20100101 Firefox/23.0 PTST/133<br>
+Accept: */*<br>
+Accept-Language: en-US,en;q=0.5<br>
+Accept-Encoding: gzip, deflate<br>
+Referer: http://www.yahoo.co.jp/<br>
+Cookie: B=3954h1p93e691&amp;b=3&amp;s=pm; YABW=v=1&amp;b=246&amp;c=1&amp;i4=SEJzDg--&amp;t4=1379342629&amp;i6=&amp;t6=&amp;e=1380493119<br>
+Connection: keep-alive<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+HTTP/1.1 200 OK<br>
+Cache-Control: private<br>
+Content-Type: text/javascript; charset=UTF-8<br>
+Date: Mon, 16 Sep 2013 14:43:58 GMT<br>
+P3P: policyref=&quot;http://info.yahoo.com/w3c/p3p.xml&quot;, CP=&quot;CAO DSP COR CUR ADM DEV TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV&quot;<br>
+Server: UserFiberFramework/1.0<br>
+Transfer-Encoding: chunked<br>
+Via: HTTP/1.1 yads043.ane.ssk.yahoo.co.jp (UserFiberFramework/1.0)<br>
+</p></div><h4><span class="a_request" id="request10" data-target-id="headers_10">+ Request 10: http://yjaxc.yahoo.co.jp/oi?t=j&amp;s=ytop_ams_rmdl_utf8&amp;i=toppage</span></h4><div class="header_details" id="headers_10"><p class="indented2">
+<b>URL:</b> http://yjaxc.yahoo.co.jp/oi?t=j&s=ytop_ams_rmdl_utf8&i=toppage<br>
+<b>Host:</b> yjaxc.yahoo.co.jp<br>
+<b>IP:</b> 183.79.131.231<br>
+<b>Location:</b> Akasaka, Japan<br>
+<b>Error/Status Code:</b> 200<br>
+<b>Client Port:</b> 53010<br>
+<b>Start Offset:</b> 2.265 s<br>
+<b>DNS Lookup:</b> 1 ms<br>
+<b>Initial Connection:</b> 221 ms<br>
+<b>Time to First Byte:</b> 275 ms<br>
+<b>Content Download:</b> 3 ms<br>
+<b>Bytes In (downloaded):</b> 3.3 KB<br>
+<b>Bytes Out (uploaded):</b> 0.4 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+GET /oi?t=j&amp;s=ytop_ams_rmdl_utf8&amp;i=toppage HTTP/1.1<br>
+Host: yjaxc.yahoo.co.jp<br>
+User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:23.0) Gecko/20100101 Firefox/23.0 PTST/133<br>
+Accept: */*<br>
+Accept-Language: en-US,en;q=0.5<br>
+Accept-Encoding: gzip, deflate<br>
+Referer: http://www.yahoo.co.jp/<br>
+Cookie: B=3954h1p93e691&amp;b=3&amp;s=pm; YABW=v=1&amp;b=246&amp;c=1&amp;i4=SEJzDg--&amp;t4=1379342629&amp;i6=&amp;t6=&amp;e=1380493119<br>
+Connection: keep-alive<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+HTTP/1.1 200 OK<br>
+Date: Mon, 16 Sep 2013 14:43:58 GMT<br>
+P3P: policyref=&quot;http://info.yahoo.com/w3c/p3p.xml&quot;, CP=&quot;CAO DSP COR CUR ADM DEV TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV&quot;<br>
+Vary: Accept-Encoding<br>
+Connection: close<br>
+Transfer-Encoding: chunked<br>
+Content-Type: application/x-javascript; charset=UTF-8<br>
+Content-Encoding: gzip<br>
+Cache-Control: private<br>
+</p></div><h4><span class="a_request" id="request11" data-target-id="headers_11">+ Request 11: http://b9.yahoo.co.jp/b?P=Wf2KPnxT68w0lJEOUjcZIQn_SEJzDlI3GSwAC_5i&amp;T=1493j7dc7%2fX%3d1379342636%2fE%3d2077296265%2fR%3djp_toppage%2fK%3d5%2fV%3d1.1%2fW%3dJ%2fY%3djp%2fF%3d2855758446%2fG%3dCmpwCgo-%2fS%3d1%2fJ%3dCDEA537C&amp;U=128qiqpbq%2fN%3d0YPQB3xT9Aw-%2fC%3d-2%2fD%3dTCON%2fB%3d-2&amp;U=128nrdhue%2fN%3dzIPQB3xT9Aw-%2fC%3d-1%2fD%3dTCBX%2fB%3d-1&amp;U=126orpf6q%2fN%3d04PQB3xT9Aw-%2fC%3d-1%2fD%3dTN%2fB%3d-1&amp;U=13jfdqp0r%2fN%3dxYPQB3xT9Aw-%2fC%3d300749476.301591591.303214120.312177432%2fD%3dTCT%2fB%3d301801915&amp;U=13jj1nh3q%2fN%3dyIPQB3xT9Aw-%2fC%3d300805382.301652291.303219943.302463196%2fD%3dTPM%2fB%3d301811816&amp;U=13j298ulh%2fN%3dxIPQB3xT9Aw-%2fC%3d300806222.301653244.303220189.301426957%2fD%3dTBP%2fB%3d301812603&amp;U=128cr93t1%2fN%3dzYPQB3xT9Aw-%2fC%3d-2%2fD%3dTEPB%2fB%3d-2&amp;U=13j92mvjm%2fN%3dxoPQB3xT9Aw-%2fC%3d300762453.301606763.303165711.300851453%2fD%3dTRB%2fB%3d301722922&amp;U=128cde6vr%2fN%3dx4PQB3xT9Aw-%2fC%3d-2%2fD%3dTRAP%2fB%3d-2&amp;U=128k1vdhl%2fN%3dz4PQB3xT9Aw-%2fC%3d-1%2fD%3dTULT%2fB%3d-1&amp;U=12785u13e%2fN%3dzoPQB3xT9Aw-%2fC%3d-1%2fD%3dGYJ%2fB%3d-1&amp;U=13jeh3fl5%2fN%3d0oPQB3xT9Aw-%2fC%3d300758906.301602867.303159516.312478425%2fD%3dTAG%2fB%3d301713706&amp;Q=0&amp;O=0.2824681622063031</span></h4><div class="header_details" id="headers_11"><p class="indented2">
+<b>URL:</b> http://b9.yahoo.co.jp/b?P=Wf2KPnxT68w0lJEOUjcZIQn_SEJzDlI3GSwAC_5i&T=1493j7dc7%2fX%3d1379342636%2fE%3d2077296265%2fR%3djp_toppage%2fK%3d5%2fV%3d1.1%2fW%3dJ%2fY%3djp%2fF%3d2855758446%2fG%3dCmpwCgo-%2fS%3d1%2fJ%3dCDEA537C&U=128qiqpbq%2fN%3d0YPQB3xT9Aw-%2fC%3d-2%2fD%3dTCON%2fB%3d-2&U=128nrdhue%2fN%3dzIPQB3xT9Aw-%2fC%3d-1%2fD%3dTCBX%2fB%3d-1&U=126orpf6q%2fN%3d04PQB3xT9Aw-%2fC%3d-1%2fD%3dTN%2fB%3d-1&U=13jfdqp0r%2fN%3dxYPQB3xT9Aw-%2fC%3d300749476.301591591.303214120.312177432%2fD%3dTCT%2fB%3d301801915&U=13jj1nh3q%2fN%3dyIPQB3xT9Aw-%2fC%3d300805382.301652291.303219943.302463196%2fD%3dTPM%2fB%3d301811816&U=13j298ulh%2fN%3dxIPQB3xT9Aw-%2fC%3d300806222.301653244.303220189.301426957%2fD%3dTBP%2fB%3d301812603&U=128cr93t1%2fN%3dzYPQB3xT9Aw-%2fC%3d-2%2fD%3dTEPB%2fB%3d-2&U=13j92mvjm%2fN%3dxoPQB3xT9Aw-%2fC%3d300762453.301606763.303165711.300851453%2fD%3dTRB%2fB%3d301722922&U=128cde6vr%2fN%3dx4PQB3xT9Aw-%2fC%3d-2%2fD%3dTRAP%2fB%3d-2&U=128k1vdhl%2fN%3dz4PQB3xT9Aw-%2fC%3d-1%2fD%3dTULT%2fB%3d-1&U=12785u13e%2fN%3dzoPQB3xT9Aw-%2fC%3d-1%2fD%3dGYJ%2fB%3d-1&U=13jeh3fl5%2fN%3d0oPQB3xT9Aw-%2fC%3d300758906.301602867.303159516.312478425%2fD%3dTAG%2fB%3d301713706&Q=0&O=0.2824681622063031<br>
+<b>Host:</b> b9.yahoo.co.jp<br>
+<b>IP:</b> 114.111.109.20<br>
+<b>Location:</b> Japan<br>
+<b>Error/Status Code:</b> 200<br>
+<b>Client Port:</b> 53012<br>
+<b>Start Offset:</b> 2.809 s<br>
+<b>DNS Lookup:</b> 11 ms<br>
+<b>Initial Connection:</b> 226 ms<br>
+<b>Time to First Byte:</b> 241 ms<br>
+<b>Bytes In (downloaded):</b> 0.4 KB<br>
+<b>Bytes Out (uploaded):</b> 1.5 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+GET /b?P=Wf2KPnxT68w0lJEOUjcZIQn_SEJzDlI3GSwAC_5i&amp;T=1493j7dc7%2fX%3d1379342636%2fE%3d2077296265%2fR%3djp_toppage%2fK%3d5%2fV%3d1.1%2fW%3dJ%2fY%3djp%2fF%3d2855758446%2fG%3dCmpwCgo-%2fS%3d1%2fJ%3dCDEA537C&amp;U=128qiqpbq%2fN%3d0YPQB3xT9Aw-%2fC%3d-2%2fD%3dTCON%2fB%3d-2&amp;U=128nrdhue%2fN%3dzIPQB3xT9Aw-%2fC%3d-1%2fD%3dTCBX%2fB%3d-1&amp;U=126orpf6q%2fN%3d04PQB3xT9Aw-%2fC%3d-1%2fD%3dTN%2fB%3d-1&amp;U=13jfdqp0r%2fN%3dxYPQB3xT9Aw-%2fC%3d300749476.301591591.303214120.312177432%2fD%3dTCT%2fB%3d301801915&amp;U=13jj1nh3q%2fN%3dyIPQB3xT9Aw-%2fC%3d300805382.301652291.303219943.302463196%2fD%3dTPM%2fB%3d301811816&amp;U=13j298ulh%2fN%3dxIPQB3xT9Aw-%2fC%3d300806222.301653244.303220189.301426957%2fD%3dTBP%2fB%3d301812603&amp;U=128cr93t1%2fN%3dzYPQB3xT9Aw-%2fC%3d-2%2fD%3dTEPB%2fB%3d-2&amp;U=13j92mvjm%2fN%3dxoPQB3xT9Aw-%2fC%3d300762453.301606763.303165711.300851453%2fD%3dTRB%2fB%3d301722922&amp;U=128cde6vr%2fN%3dx4PQB3xT9Aw-%2fC%3d-2%2fD%3dTRAP%2fB%3d-2&amp;U=128k1vdhl%2fN%3dz4PQB3xT9Aw-%2fC%3d-1%2fD%3dTULT%2fB%3d-1&amp;U=12785u13e%2fN%3dzoPQB3xT9Aw-%2fC%3d-1%2fD%3dGYJ%2fB%3d-1&amp;U=13jeh3fl5%2fN%3d0oPQB3xT9Aw-%2fC%3d300758906.301602867.303159516.312478425%2fD%3dTAG%2fB%3d301713706&amp;Q=0&amp;O=0.2824681622063031 HTTP/1.1<br>
+Host: b9.yahoo.co.jp<br>
+User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:23.0) Gecko/20100101 Firefox/23.0 PTST/133<br>
+Accept: image/png,image/*;q=0.8,*/*;q=0.5<br>
+Accept-Language: en-US,en;q=0.5<br>
+Accept-Encoding: gzip, deflate<br>
+Referer: http://www.yahoo.co.jp/<br>
+Cookie: B=3954h1p93e691&amp;b=3&amp;s=pm; YABW=v=1&amp;b=246&amp;c=1&amp;i4=SEJzDg--&amp;t4=1379342629&amp;i6=&amp;t6=&amp;e=1380493119<br>
+Connection: keep-alive<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+HTTP/1.0 200 OK<br>
+Date: Mon, 16 Sep 2013 14:43:59 GMT<br>
+P3P: policyref=&quot;http://privacy.yahoo.co.jp/w3c/p3p.xml&quot;, CP=&quot;CAO DSP COR CUR ADM DEV TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE GOV&quot;<br>
+Cache-Control: private<br>
+Cache-Control: no-cache<br>
+Connection: close<br>
+Content-Type: image/gif<br>
+</p></div><h4><span class="a_request" id="request12" data-target-id="headers_12">+ Request 12: http://www.yahoo.co.jp/favicon.ico</span></h4><div class="header_details" id="headers_12"><p class="indented2">
+<b>URL:</b> http://www.yahoo.co.jp/favicon.ico<br>
+<b>Host:</b> www.yahoo.co.jp<br>
+<b>IP:</b> 124.83.235.204<br>
+<b>Location:</b> Japan<br>
+<b>Error/Status Code:</b> 304<br>
+<b>Client Port:</b> 52993<br>
+<b>Start Offset:</b> 3.054 s<br>
+<b>Initial Connection:</b> 218 ms<br>
+<b>Time to First Byte:</b> 223 ms<br>
+<b>Bytes In (downloaded):</b> 0.2 KB<br>
+<b>Bytes Out (uploaded):</b> 0.4 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+GET /favicon.ico HTTP/1.1<br>
+Host: www.yahoo.co.jp<br>
+User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:23.0) Gecko/20100101 Firefox/23.0 PTST/133<br>
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8<br>
+Accept-Language: en-US,en;q=0.5<br>
+Accept-Encoding: gzip, deflate<br>
+Cookie: B=3954h1p93e691&amp;b=3&amp;s=pm; YABW=v=1&amp;b=246&amp;c=1&amp;i4=SEJzDg--&amp;t4=1379342629&amp;i6=&amp;t6=&amp;e=1380493119<br>
+Connection: keep-alive<br>
+If-Modified-Since: Fri, 26 Nov 2010 05:21:38 GMT<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+HTTP/1.1 304 Not Modified<br>
+Date: Mon, 16 Sep 2013 14:43:59 GMT<br>
+Connection: close<br>
+Expires: Fri, 15 Nov 2013 14:43:59 GMT<br>
+Cache-Control: max-age=5184000<br>
+</p></div></div>
+            </div>
+
+                        <div style="width:100%;float:none;clear:both;"></div>
+
+            </div></div>            </div>
+        </div>
+    </div>
+</div>
+
+   
+    <table id="feeds"><tr><th>Recent Industry Blog Posts</th><th>Recent Discussions</th></tr><tr><td><ul><li><a title="Zoompf" href="http://zoompf.com/blog/2013/10/3-must-do-tips-to-get-your-e-commerce-site-ready-for-black-friday">3 Must-Dos for the E-Commerce Web Team Before Black Friday</a></li><li><a title="Strangeloop Networks" href="http://www.webperformancetoday.com/2013/10/02/iphone-speed-test-findings-faster-processor-doesnt-equal-huge-performance-boost/">iPhone speed test findings: Faster processor doesn’t equal huge performance boost</a></li><li><a title="Zoompf" href="http://zoompf.com/blog/2013/10/maximizing-search-rank-by-optimizing-your-ttfb">Improving Search Rank by Optimizing your Time to First Byte</a></li><li><a title="Ilya Grigorik" href="http://feeds.igvita.com/~r/igvita/~3/-ehrQc7PJyQ/">Retrospective: High Performance Browser Networking</a></li><li><a title="Zoompf" href="http://zoompf.com/blog/2013/09/top-9-us-news-sites-race-for-fastest-site">Top 9 US News Sites Race for Fastest Site</a></li><li id="show_more_feeds_1"><a href="javascript:void(o)" onclick="showFeeds(1)">more...</a></li><li class="morefeeds" ><div id="more_feeds_1" class="hidden"><ul><li><a title="Stoyan Stefanov" href="http://www.phpied.com/nyc-bound/">NYC.bind(me)</a></li><li><a title="Strangeloop Networks" href="http://www.webperformancetoday.com/2013/09/19/sneak-peek-this-is-your-brain-on-mobile/">Sneak peek: This is your brain on the mobile web</a></li><li><a title="Guy Podjarny" href="http://www.guypo.com/conferences/walking-on-the-edges/">Walking on the Edge(s)</a></li><li><a title="Gilly Barr" href="http://www.debuggerstepthrough.com/2013/09/prefetching-dns-lookups.html">Prefetching dns lookups</a></li><li><a title="Stoyan Stefanov" href="http://www.phpied.com/server-side-react-with-php-part-2/">Server-side React with PHP – part 2</a></li><li><a title="Stoyan Stefanov" href="http://www.phpied.com/borrowing-typography-tricks-from-the-masters/">Borrowing typography tricks from the masters</a></li><li><a title="Guy Podjarny" href="http://www.guypo.com/uncategorized/responsive-images-meetup-a-subjective-summary/">Responsive Images Meetup – A Subjective Summary</a></li><li><a title="Stoyan Stefanov" href="http://www.phpied.com/server-side-react-with-php/">Server-side React with PHP</a></li><li><a title="Stoyan Stefanov" href="http://www.phpied.com/installing-v8js-for-php-on-a-mac/">Installing v8js for PHP on a Mac</a></li><li><a title="Strangeloop Networks" href="http://www.webperformancetoday.com/2013/09/11/the-slow-web-movement/">The Slow Web: Why fast is important… and why it isn’t</a></li><li><a title="Stoyan Stefanov" href="http://www.phpied.com/reactive-table/">Reactive table</a></li><li><a title="Aaron Peters" href="http://www.aaronpeters.nl/blog/velocity-nyc-2013-raffle">Win a free Velocity NYC conference pass!</a></li></ul></div></li></ul></td><td><ul><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12584">FTTB problems</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12581">Site vs File (Browser Caching) Different? Why?</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12580">Test not found when trying to view tests</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12579">Apache subfolder settings</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12578">RoseHosting.com VPS specials - 25% OFF | Fully Managed | FREE DirectAdmin</a></li><li id="show_more_feeds_2"><a href="javascript:void(o)" onclick="showFeeds(2)">more...</a></li><li class="morefeeds" ><div id="more_feeds_2" class="hidden"><ul><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12577">&quot;The test completed but there were no successful results.&quot; with maxymiser</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12576">CDN detection control file</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12575">Help with my test results</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12573">favicon</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12572">fancybox 404 errors</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12571">Chrome browser window closes automaticaly on starting test</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12570">Testlocation Germany over 152 Pending Tests</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12569">Video tests</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12568">DNS Times from XML data from wpt_batch.py</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12567">cookie less domain need help</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12566">no cache control for file</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12565">SPNego Auth</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12563">Filmstrip API</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12562">Help needed with improvements from Test Results!</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12561">CSV date format - no leading zeros</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12559">Pagespeed and WPT results - Rule set Matrix?</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12558">DGvertTech LLC</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12557">WPT not detecting CDN being used</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12556">Awful Results - Please Help</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12554">Setting JSON style cookie</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12553">Not getting results when hitting a device</a></li></ul></div></li></ul></td></tr></table>
+    <div id="sponsor_header">WebPagetest Partners</div><div id="links"><table class="links"><tr><td ><a href="http://www.fasterize.com/" title="Fasterize"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors3.png?v=1); background-position: 0px -320px;"></div></a></td><td ><a href="http://www.ip-label.co.uk/" title="ip-label"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors1.png?v=2); background-position: 0px -240px;"></div></a></td><td ><a href="http://yhost.ro" title="Y Host :: Web Hosting in Romania"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors4.png?v=7); background-position: 0px -120px;"></div></a></td><td ><a href="http://www.rentavault.net/" title="Rentavault"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors2.png?v=3); background-position: 0px -240px;"></div></a></td><td ><a href="http://www.tid.es/en/" title="Telef&oacute;nica Digital"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors24.png?v=5); background-position: 0px -160px;"></div></a></td></tr></table><table class="links"><tr><td ><a href="http://www.dynatrace.com/" title="dynaTrace Software"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors1.png?v=2); background-position: 0px -320px;"></div></a></td><td ><a href="http://www.mysitespeed.com/" title="Mysitespeed.com"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors2.png?v=3); background-position: 0px -280px;"></div></a></td><td ><a href="http://www.maxcdn.com/" title="MaxCDN Content Delivery Network"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors3.png?v=1); background-position: 0px 0px;"></div></a></td><td ><a href="http://www.webogroup.com/?utm_source=webpagetest&utm_medium=logo&utm_campaign=webo" title="WEBO Software. Website acceleration and monitoring solutions"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors3.png?v=1); background-position: 0px -240px;"></div></a></td><td ><a href="http://www.iispeed.com/" title="Google PageSpeed optimization for Microsoft IIS"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors4.png?v=7); background-position: 0px -240px;"></div></a></td></tr></table><table class="links"><tr><td ><a href="http://www.bulletproof.net.au/" title="Bulletproof Mission Critical Hosting"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors1.png?v=2); background-position: 0px -200px;"></div></a></td><td ><a href="http://www.neotys.com/" title="Neotys Load &amp; Performance Testing"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors24.png?v=5); background-position: 0px -360px;"></div></a></td><td ><a href="http://wpengine.com/" title="WP Engine"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors1.png?v=2); background-position: 0px -120px;"></div></a></td><td ><a href="http://www.daum.net/" title="DAUM Communications"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors3.png?v=1); background-position: 0px -280px;"></div></a></td><td ><a href="http://www.turbobytes.com/" title="Faster content delivery - Turbobytes"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors1.png?v=2); background-position: 0px -40px;"></div></a></td></tr></table><table class="links"><tr><td ><a href="http://www.cisin.com/" title="CIS :: One-Stop Outsourcing Services, Since 2003! | We do IT better"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors24.png?v=5); background-position: 0px -400px;"></div></a></td><td ><a href="http://www.interhost.co.il/" title="interhost.co.il - Israel Web Hosting Services"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors24.png?v=5); background-position: 0px -480px;"></div></a></td><td ><a href="http://dev.aol.com/" title="AOL"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors1.png?v=2); background-position: 0px -280px;"></div></a></td><td ><a href="http://www.netdna.com/" title="NetDNA"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors2.png?v=3); background-position: 0px -320px;"></div></a></td><td ><a href="http://www.globalis-ms.com/" title="GLOBALIS media systems"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors24.png?v=5); background-position: 0px -40px;"></div></a></td></tr></table><table class="links"><tr><td ><a href="http://www.godaddy.com/?isc=WPTlogo" title="World's #1 ICANN-accredited domain registrar | Go Daddy"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors4.png?v=7); background-position: 0px -80px;"></div></a></td><td ><a href="http://www.squixa.com/" title="Squixa MultiCDN and Front End Optimisation"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors24.png?v=5); background-position: 0px -440px;"></div></a></td><td ><a href="http://www.gutefrage.net/" title="Gute Fragen - hilfreiche Antworten - die Ratgeber Community gutefrage.net"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors4.png?v=7); background-position: 0px -200px;"></div></a></td><td ><a href="http://www.cloudshark.org" title="CloudShark"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors2.png?v=3); background-position: 0px -120px;"></div></a></td><td ><a href="http://www.radware.com/Products/ApplicationDelivery/FastView/default.aspx" title="Radware - Smart Network. Smart Business."><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors2.png?v=3); background-position: 0px 0px;"></div></a></td></tr></table><table class="links"><tr><td ><a href="http://www.hostinginnederland.nl/" title="Hosting in Nederland - Vind de beste hosting voor je website"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors2.png?v=3); background-position: 0px -40px;"></div></a></td><td ><a href="http://www.limelight.com/" title="Limelight Networks"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors24.png?v=5); background-position: 0px -280px;"></div></a></td><td ><a href="http://admo.net/?webpagetest.org" title="Admo.net WebHosting"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors1.png?v=2); background-position: 0px -360px;"></div></a></td><td ><a href="http://edgedirector.com/" title="edgedirector.com"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors1.png?v=2); background-position: 0px -160px;"></div></a></td><td ><a href="http://www.exceda.com/landing/" title="Exceda"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors3.png?v=1); background-position: 0px -160px;"></div></a></td></tr></table><table class="links"><tr><td ><a href="http://pagerain.com/" title="PageRain - The Simplest CDN"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors24.png?v=5); background-position: 0px -320px;"></div></a></td><td ><a href="http://www.trademe.co.nz/" title="Trade Me"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors4.png?v=7); background-position: 0px 0px;"></div></a></td><td ><a href="http://www.icomcept.de/" title="iCOMcept"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors2.png?v=3); background-position: 0px -80px;"></div></a></td><td ><a href="http://www.rusonyx.ru/" title="Rusonyx"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors24.png?v=5); background-position: 0px -200px;"></div></a></td><td ><a href="http://www.telerik.com/" title="Telerik - making software development easier and more enjoyable"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors4.png?v=7); background-position: 0px -160px;"></div></a></td></tr></table><table class="links"><tr><td ><a href="http://www.apicasystem.com/" title="Apica Inc"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors24.png?v=5); background-position: 0px -240px;"></div></a></td><td ><a href="http://www.measureworks.nl/" title="MeasureWorks"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors3.png?v=1); background-position: 0px -120px;"></div></a></td><td ><a href="http://www.psw.net/" title="PSW GROUP"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors1.png?v=2); background-position: 0px 0px;"></div></a></td><td ><a href="http://www.neustar.biz/enterprise/web-performance" title="Neustar"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors24.png?v=5); background-position: 0px 0px;"></div></a></td><td ><a href="http://www.dotcom-monitor.com/?se=574612167f2948219c65b6ca3120f44f" title="Website and Application Performance Monitoring by Dotcom-Monitor.com"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors3.png?v=1); background-position: 0px -200px;"></div></a></td></tr></table><table class="links"><tr><td ><a href="http://key-performance.eu/" title="Key Performance"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors24.png?v=5); background-position: 0px -120px;"></div></a></td><td ><a href="http://www.efficens-software.com/solution/web-performance-optimization/" title="Efficens Software - Your Israel based partner for Web Performance"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors3.png?v=1); background-position: 0px -360px;"></div></a></td><td ><a href="http://www.duplika.com/?utm_source=webpagetest&utm_medium=logo&utm_campaign=speed" title="duplika Internet Solutions"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors2.png?v=3); background-position: 0px -200px;"></div></a></td><td ><a href="http://newrelic.com/" title="New Relic"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors2.png?v=3); background-position: 0px -160px;"></div></a></td><td ><a href="http://www.watchmouse.com/" title="WatchMouse website performance monitoring"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors3.png?v=1); background-position: 0px -40px;"></div></a></td></tr></table><table class="links"><tr><td ><a href="http://www.akamai.com/" title="Akamai"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors3.png?v=1); background-position: 0px -80px;"></div></a></td><td></td><td ><a href="http://www.catchpoint.com/lp/wp_website_monitoring_trial.html" title="Catchpoint Systems"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors2.png?v=3); background-position: 0px -360px;"></div></a></td><td></td><td ><a href="http://www.kbsd.com/" title="*KBSD Switzerland*"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors1.png?v=2); background-position: 0px -80px;"></div></a></td></tr></table></div>    <div class="cleared"></div>
+    
+    <script type="text/javascript" src="http://cdn.webpagetest.org/js/site.js?v=30"></script>
+<script>
+wptJSVer = '30';
+wptBrowser = 'Wget 1';
+function getCookie(c_name) {
+    var i,x,y,ARRcookies=document.cookie.split(";");
+    for (i=0;i<ARRcookies.length;i++) {
+      x=ARRcookies[i].substr(0,ARRcookies[i].indexOf("="));
+      y=ARRcookies[i].substr(ARRcookies[i].indexOf("=")+1);
+      x=x.replace(/^\s+|\s+$/g,"");
+      if (x==c_name)
+        return unescape(y);
+    }
+}
+
+function setCookie(c_name,value,exdays) {
+    var exdate=new Date();
+    exdate.setDate(exdate.getDate() + exdays);
+    var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
+    document.cookie=c_name + "=" + c_value;
+}
+
+// see if the browser we are in supports resource timing
+function WptExperiment() {
+    try {
+        if (window['performance'] != undefined &&
+            (window.performance.getEntriesByType ||
+             window.performance.webkitGetEntriesByType)) {
+            if (window.performance.getEntriesByType)
+                var requests = window.performance.getEntriesByType("resource");
+            else
+                var requests = window.performance.webkitGetEntriesByType("resource");
+            var detected = false;
+            var data = {'browser': wptBrowser,
+                        'jsCached': false,
+                        'cookiePresent': false,
+                        'existingSession' : false,
+                        'localStoragePresent' : false,
+                        'jsTime': 0};
+            for (i = 0; i < requests.length; i++) {
+                var url = requests[i].name;
+                if (requests[i].name.indexOf('site.js') != -1) {
+                    detected = true;
+                    if (requests[i].responseStart == 0 ||
+                        requests[i].responseStart == requests[i].requestStart)
+                        data.jsCached = true;
+                    data.jsTime = Math.round(requests[i].duration);
+                }
+            }
+            
+            if (getCookie('exptVer') == wptJSVer) data.cookiePresent = true;
+            setCookie('exptVer', wptJSVer, 365);
+            if (getCookie('exptSession') == wptJSVer) data.existingSession = true;
+            setCookie('exptSession', wptJSVer, null);
+            if (localStorage["exptVer"] == wptJSVer) data.localStoragePresent = true;
+            localStorage["exptVer"] = wptJSVer;
+            if (detected) {
+                console.log(JSON.stringify(data));
+                var debug_str = 'site.js loaded from ';
+                if (data.jsCached)
+                  debug_str += 'cache';
+                else
+                  debug_str += 'network';
+                debug_str += ' in ' + data.jsTime + ' milliseconds';
+                if (data.existingSession)
+                  debug_str += ' (Existing Session)';
+                else
+                  debug_str += ' (New Session)';
+                $("#experiment-timing").html(debug_str);
+                var xhr = new XMLHttpRequest();
+                xhr.open('POST', '/experiment/data.php', true);
+                xhr.send(JSON.stringify(data));
+            }
+        }
+    } catch(e){
+    }
+};
+
+window.addEventListener('load', WptExperiment, false);
+</script>
+    <script type="text/javascript">
+        function showFeeds(column)
+        {
+            var label = document.getElementById("show_more_feeds_" + column);
+            label.parentNode.removeChild( label );
+            
+            document.getElementById("more_feeds_" + column).className = "";
+            return false;
+        }
+
+        if (performance['measure'])
+          performance.measure('Content Processing', 'aft.Site Header');
+    </script>
+    
+<script type="text/javascript">
+(function(a,b,c){function d(){var a=b.createElement(c),d=b.getElementsByTagName(c)[0];a.async=a.src="http://s2.cdnplanet.com/static/rum/rum.js",d.parentNode.insertBefore(a,d)}if(a.location.protocol=="https:")return;a.addEventListener&&a.addEventListener("load",d,!1)})(window,document,"script")
+</script>
+<img height="1" width="1" style="border-style:none;" alt="" src="http://www.googleadservices.com/pagead/conversion/1049562605/?value=0&amp;label=-neBCNO9wwMQ7Zu89AM&amp;guid=ON&amp;script=0"/>    <script type="text/javascript">if(!NREUMQ.f){NREUMQ.f=function(){NREUMQ.push(["load",new Date().getTime()]);var e=document.createElement("script");e.type="text/javascript";e.src=(("http:"===document.location.protocol)?"http:":"https:")+"//"+"js-agent.newrelic.com/nr-100.js";document.body.appendChild(e);if(NREUMQ.a)NREUMQ.a();};NREUMQ.a=window.onload;window.onload=NREUMQ.f;};NREUMQ.push(["nrfj","beacon-1.newrelic.com","5b0327a758","2035125","NFBXZUNRW0ADAkRbCQ0aYENYH1FWFgBZXhVNRV1B",0,37,new Date().getTime(),"","","","",""]);</script>    
+    <div id="experiment-timing" style="color: #77A;"></div>        </div>
+
+        <script type="text/javascript">
+        function expandRequest(targetNode) {
+          if (targetNode.length) {
+            var div_to_expand = $('#' + targetNode.attr('data-target-id'));
+
+            if (div_to_expand.is(":visible")) {
+                div_to_expand.hide();
+                targetNode.html('+' + targetNode.html().substring(1));
+            } else {
+                div_to_expand.show();
+                targetNode.html('-' + targetNode.html().substring(1));
+            }
+          }
+        }
+
+        $(document).ready(function() { $("#tableDetails").tablesorter({
+            headers: { 3: { sorter:'currency' } ,
+                       4: { sorter:'currency' } ,
+                       5: { sorter:'currency' } ,
+                       6: { sorter:'currency' } ,
+                       7: { sorter:'currency' } ,
+                       8: { sorter:'currency' } ,
+                       9: { sorter:'currency' }
+                     }
+        }); } );
+
+        $('.a_request').click(function () {
+            expandRequest($(this));
+        });
+
+        function expandAll() {
+          $(".header_details").each(function(index) {
+            $(this).show();
+          });
+        }
+        
+        if (window.location.hash == '#all') {
+          expandAll();
+        } else
+          expandRequest($(window.location.hash));
+
+        var CloseRequestDialog = function(hash) {
+    hash.w.hide();
+    for (i=1;i<=wptRequestCount;i++) {
+        $("#request-overlay-" + i).removeClass("selected");
+        $("#request-overlay-" + i).addClass("transparent");
+    }
+    $('#radio1').attr('checked', 'checked');
+    $("#request-dialog-radio").buttonset('refresh');
+}
+
+// initialize the pop-up dialog        
+$('#request-dialog').jqm({overlay: 0, onHide: CloseRequestDialog})
+      .jqDrag('.jqDrag');
+$('input.jqmdX')
+    .hover( function(){ $(this).addClass('jqmdXFocus'); }, 
+            function(){ $(this).removeClass('jqmdXFocus'); })
+    .focus( function(){ this.hideFocus=true; $(this).addClass('jqmdXFocus'); })
+    .blur( function(){ $(this).removeClass('jqmdXFocus'); });
+    
+$("#request-dialog-radio").buttonset();
+$("#request-dialog-radio").change(function() {
+    var panel=$('#request-dialog-radio input[type=radio]:checked').val();
+    $("#dialog-contents div.dialog-tab-content").hide();
+    $("#" + panel).show();
+});
+
+var wptBodyRequest;
+
+// Test that a value is a valid duration.
+// Invalid durations include undefined and -1.
+function IsValidDuration(value) {
+    // Explicitly check the type.  Would you have guessed that Number(['9'])
+    // is 9?  We need to support strings because php makes it too easy to
+    // send a number as a string.  We need to support numbers like "123.4".
+    if (typeof value != 'number' && typeof value != 'string')
+        return false;
+
+    // Number('') is 0, but the empty string is not a valid duration.
+    if (value === '')
+        return false;
+
+    var num = Number(value);
+    return (!isNaN(num) && num !== -1);
+}
+
+function NumBytesAsDisplayString(numBytes) {
+    var numKb = numBytes / 1024.0;
+
+    // We display kilobytes with one decimal point.  If the value with that
+    // precision would be zero, display bytes instead.
+    if (numKb >= 0.1) {
+        return numKb.toFixed(1) + ' KB';
+    }
+    return numBytes + ' B';
+}
+
+function SelectRequest(request) {
+    $('#request-dialog').css('top', $("#request-overlay-" + request).position().top + 20);
+    $("#dialog-title").html('<a href="#request' + request + '">Request #' + request + '</a>');
+    var details='';
+    var requestHeaders='';
+    var responseHeaders='';
+    $("#response-body").html('');
+    $('#response-body-button').hide();
+    $("#response-image").html('');
+    $('#response-image-button').hide();
+    try {
+        if (wptBodyRequest !== undefined)
+            wptBodyRequest.abort();
+    } catch (err) {
+    }
+    if (wptRequestData[request - 1] !== undefined) {
+        var r = wptRequestData[request - 1];
+        if (r['full_url'] !== undefined) {
+            if (wptNoLinks) {
+                details += '<b>URL:</b> ' + r['full_url'] + '<br>';
+            } else {
+                details += '<b>URL:</b> <a href="' + r['full_url'] + '">' + r['full_url'] + '</a><br>';
+            }
+        }
+        if (r['initiator'] !== undefined && r['initiator'].length > 0) {
+            details += '<b>Loaded By:</b> ' + r['initiator'];
+            if (r['initiator_line'] !== undefined)
+                details += ':' + r['initiator_line'];
+            details += '<br>';
+        }
+        if (r['host'] !== undefined)
+            details += '<b>Host: </b>' + r['host'] + '<br>';
+        if (r['ip_addr'])
+            details += '<b>IP: </b>' + r['ip_addr'] + '<br>';
+        if (r['location'] !== undefined && r['location'].length)
+            details += '<b>Location: </b>' + r['location'] + '<br>';
+        if (r['responseCode'] !== undefined)
+            details += '<b>Error/Status Code: </b>' + r['responseCode'] + '<br>';
+        if (r['client_port'] !== undefined && r['client_port'])
+            details += '<b>Client Port: </b>' + r['client_port'] + '<br>';
+        if (r['load_start'] !== undefined)
+            details += '<b>Start Offset: </b>' + (r['load_start'] / 1000.0).toFixed(3) + ' s<br>';
+        if (IsValidDuration(r['dns_ms'])) {
+            details += '<b>DNS Lookup: </b>' + r['dns_ms'] + ' ms<br>';
+        } else if( r['dns_end'] !== undefined && r['dns_start'] !== undefined && r['dns_end'] > 0 ) {
+            var dnsTime = r['dns_end'] - r['dns_start'];
+            details += '<b>DNS Lookup: </b>' + dnsTime + ' ms<br>';
+        }
+        if (IsValidDuration(r['connect_ms'])) {
+            details += '<b>Initial Connection: </b>' + r['connect_ms'] + ' ms<br>';
+            if (r['is_secure'] !== undefined && r['is_secure'] && IsValidDuration(r['ssl_ms'])) {
+                details += '<b>SSL Negotiation: </b>' + r['ssl_ms'] + ' ms<br>';
+            }
+        } else if( r['connect_end'] !== undefined && r['connect_start'] !== undefined && r['connect_end'] > 0 ) {
+            var connectTime = r['connect_end'] - r['connect_start'];
+            details += '<b>Initial Connection: </b>' + connectTime + ' ms<br>';
+            if( r['ssl_end'] !== undefined && r['ssl_start'] !== undefined && r['ssl_end'] > 0 ) {
+                var sslTime = r['ssl_end'] - r['ssl_start'];
+                details += '<b>SSL Negotiation: </b>' + sslTime + ' ms<br>';
+            }
+        }
+        if (IsValidDuration(r['ttfb_ms'])) {
+            details += '<b>Time to First Byte: </b>' + r['ttfb_ms'] + ' ms<br>';
+        }
+        if (IsValidDuration(r['download_ms']))
+            details += '<b>Content Download: </b>' + r['download_ms'] + ' ms<br>';
+        if (r['bytesIn'] !== undefined)
+            details += '<b>Bytes In (downloaded): </b>' + NumBytesAsDisplayString(r['bytesIn']) + '<br>';
+        if (r['bytesOut'] !== undefined)
+            details += '<b>Bytes Out (uploaded): </b>' + NumBytesAsDisplayString(r['bytesOut']) + '<br>';
+        if (r['custom_rules'] !== undefined) {
+            for (rule in r['custom_rules']) {
+                details += '<b>Custom Rule - ' + rule + ': </b>(';
+                details += r['custom_rules'][rule]['count'] + ' matches) - ';
+                details += r['custom_rules'][rule]['value'].replace(/>/g, '&gt;').replace(/</g, '&lt;') + '<br>';
+            }
+        }
+        if (r['headers'] !== undefined){
+            if (r.headers['request'] !== undefined){
+                for (i=0;i<r.headers.request.length;i++) {
+                    requestHeaders += r.headers.request[i] + '<br>';
+                }
+            }
+            if (r.headers['response'] !== undefined){
+                for (i=0;i<r.headers.response.length;i++) {
+                    responseHeaders += r.headers.response[i] + '<br>';
+                }
+            }
+        }
+        if (r['body_url'] !== undefined && r['body_url'].length) {
+            try {
+                $("#response-body").text('Loading...');
+                $('#response-body-button').show();
+                wptBodyRequest = new XMLHttpRequest();
+                wptBodyRequest.open('GET', r['body_url'], true);
+                wptBodyRequest.onreadystatechange = function() {
+                if (wptBodyRequest.readyState == 4) {
+                    if (wptBodyRequest.status == 200) {
+                        $("#response-body").text(wptBodyRequest.responseText);
+                    } else {
+                        $("#response-body").text('');
+                    }
+                }
+              }
+              wptBodyRequest.send();
+            } catch (err) {
+            }
+        } else if (r['contentType'] !== undefined && r['contentType'].indexOf('image') >= 0) {
+            $('#response-body-button').show();
+            if (wptNoLinks) {
+                $("#response-body").html('<img style="max-width:100%; max-height:100%;" src="' + r['full_url'] + '">');
+            } else {
+                $("#response-body").html('<a href="' + r['full_url'] + '"><img style="max-width:100%; max-height:100%;" src="' + r['full_url'] + '"></a>');
+            }
+        }
+    }
+    $("#request-details").html(details);
+    $("#request-headers").html(requestHeaders);
+    $("#response-headers").html(responseHeaders);
+    $('#request-dialog').jqmShow();
+
+    // highlight the selected request
+    for (i=1;i<=wptRequestCount;i++) {
+        if (i == request)
+            $("#request-overlay-" + i).addClass("selected");
+        else
+            $("#request-overlay-" + i).removeClass("selected");
+    }
+}
+
+// support for the multi-waterfall translucency
+$(".waterfall-transparency").change(function() {
+    var newValue = this.value;
+    var id = this.name;
+    $("#" + id).css({ opacity: newValue });
+});
+        </script>
+    </body>
+</html>

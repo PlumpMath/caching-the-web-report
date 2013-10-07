@@ -1,0 +1,1269 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WebPagetest Test Details - Dulles : youtube.com - 09/16/13 14:39:31</title>
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<meta name="keywords" content="Performance Test,Details,Webpagetest,Website Speed Test,Page Speed">
+<meta name="description" content="Website performance test details - Dulles : youtube.com - 09/16/13 14:39:31">
+<meta name="author" content="Patrick Meenan">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge"> 
+
+<link rel="shortcut icon" href="/images/favicon.ico" type="image/vnd.microsoft.icon">
+<link rel="icon" href="/images/favicon.png" type="image/png">
+
+<script type="text/javascript">var NREUMQ=NREUMQ||[];NREUMQ.push(["mark","firstbyte",new Date().getTime()]);</script>
+<script type="text/javascript">
+var wptTemplate = 'Details';
+rumMapping = {'aft': 'custom0'};
+(function(){
+  var dom,doc,where,iframe = document.createElement('iframe');
+  iframe.src = "javascript:false";
+  (iframe.frameElement || iframe).style.cssText = "width: 0; height: 0; border: 0";
+  where = document.getElementsByTagName('script')[0];
+  where.parentNode.insertBefore(iframe, where);
+
+  try {
+    doc = iframe.contentWindow.document;
+  } catch(e) {
+    dom = document.domain;
+    iframe.src="javascript:var d=document.open();d.domain='"+dom+"';void(0);";
+    doc = iframe.contentWindow.document;
+  }
+  doc.open()._l = function() {
+    var js = this.createElement("script");
+    if(dom) this.domain = dom;
+    js.id = "boomr-if-as";
+    js.src = '//c.go-mpulse.net/boomerang/' +
+    'KLHEA-LW4C7-LHTMB-YZBLM-2BJ54';
+    BOOMR_lstart=new Date().getTime();
+    this.body.appendChild(js);
+  };
+  doc.write('<body onload="document._l();">');
+  doc.close();
+  })();
+        
+</script>
+<script type="text/javascript">
+;(function(){var e=typeof window!="undefined"?window:exports,t=[];e.performance||(e.performance={});e.performance.now||(e.performance.now=performance.now||performance.webkitNow||performance.msNow||performance.mozNow);if(!e.performance.now){var n=Date.now?Date.now():+(new Date);if(performance.timing&&performance.timing)n=performance.timing.navigationStart;e.performance.now=function(){var e=Date.now?Date.now():+(new Date);return e-n}}e.performance.mark||(e.performance.mark=e.performance.webkitMark?e.performance.webkitMark:function(n){t.push({name:n,entryType:"mark",startTime:e.performance.now(),duration:0})});e.performance.getEntriesByType||(e.performance.getEntriesByType=e.performance.webkitGetEntriesByType?e.performance.webkitGetEntriesByType:function(e){return e=="mark"?t:undefined})})();window.markUserTime=function(e){var t=window["requestAnimationFrame"]||function(e){setTimeout(e,0)};t(function(){window.performance.mark(e);if(window["console"]&&console["timeStamp"])console.timeStamp(e)})};(function(){var e=function(e,t,n){t=Math.round(t);if(t>=0&&t<36e5){if(!n&&window["_gaq"])_gaq.push(["_trackTiming","UserTimings",e,t]);if(n&&window["rumMapping"]&&window.rumMapping[e])BOOMR.plugins.RT.setTimer(window.rumMapping[e],t)}};utReportRUM=function(t){var n=window.performance.getEntriesByType("mark");var r={};for(i=0;i<n.length;i++){g="usertiming";if(r[g]==undefined||n[i].startTime>r[g])r[g]=n[i].startTime;p=n[i].name.match(/([^\.]+)\.([^\.]*)/);if(p&&p.length>2&&(r[p[1]]==undefined||n[i].startTime>r[p[1]]))r[p[1]]=n[i].startTime}for(g in r)e(g,r[g],t)};utOnLoad=function(){utReportRUM(false)};if(window["addEventListener"])window.addEventListener("load",utOnLoad,false);else if(window["attachEvent"])window.attachEvent("onload",utOnLoad);utSent=false;BOOMR=window.BOOMR||{};BOOMR.plugins=BOOMR.plugins||{};BOOMR.plugins.UserTiming={init:function(e){BOOMR.subscribe("page_ready",function(){if(!utSent){utReportRUM(true);utSent=true;BOOMR.sendBeacon()}})},is_complete:function(){return utSent}}})();
+</script>
+<link rel="stylesheet" href="http://cdn.webpagetest.org/pagestyle.css?v=65" type="text/css">
+<style type="text/css">
+
+</style>
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3755571-1']);
+_gaq.push(['_setCustomVar', 1, 'Template', 'Details', 3]);
+    _gaq.push(['_setSiteSpeedSampleRate', 100]);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+    var ga = document.createElement('script');
+    ga.src = ('https:' == document.location.protocol ?
+        'https://ssl' : 'http://www') +
+        '.google-analytics.com/ga.js';
+    ga.setAttribute('async', 'true');
+    document.documentElement.firstChild.appendChild(ga);
+    })();
+    </script>
+        <style type="text/css">
+        div.bar {
+            height:12px;
+            margin-top:auto;
+            margin-bottom:auto;
+        }
+
+        .left {text-align:left;}
+        .center {text-align:center;}
+
+        .indented1 {padding-left: 40pt;}
+        .indented2 {padding-left: 80pt;}
+
+        td {
+            white-space:nowrap;
+            text-align:left;
+            vertical-align:middle;
+        }
+
+        td.center {
+            text-align:center;
+        }
+
+        table.details {
+          margin-left:auto; margin-right:auto;
+          background: whitesmoke;
+          border-collapse: collapse;
+        }
+        table.details th, table.details td {
+          border: 1px silver solid;
+          padding: 0.2em;
+          text-align: center;
+          font-size: smaller;
+        }
+        table.details th {
+          background: gainsboro;
+        }
+        table.details caption {
+          margin-left: inherit;
+          margin-right: inherit;
+          background: whitesmoke;
+        }
+        table.details th.reqUrl, table.details td.reqUrl {
+          text-align: left;
+          width: 30em;
+          word-wrap: break-word;
+        }
+        table.details td.even {
+          background: gainsboro;
+        }
+        table.details td.odd {
+          background: whitesmoke;
+        }
+        table.details td.evenRender {
+          background: #dfffdf;
+        }
+        table.details td.oddRender {
+          background: #ecffec;
+        }
+        table.details td.evenDoc {
+          background: #dfdfff;
+        }
+        table.details td.oddDoc {
+          background: #ececff;
+        }
+        table.details td.warning {
+          background: #ffff88;
+        }
+        table.details td.error {
+          background: #ff8888;
+        }
+        .header_details {
+            display: none;
+        }
+        .a_request {
+            cursor: pointer;
+        }
+        
+div.waterfall-container {position: relative; left: 0; top: 0; clear:both; overflow:auto;}
+img.waterfall-image {position: relative; left: 0; top: 0;}
+div.request-overlay {cursor:pointer; padding: 0; margin: 0; width: 928px; left: 1px; background-color: #FFF; overflow: hidden; opacity:0.9; filter:alpha(opacity=90);}
+div.request-overlay.selected {opacity:0.4; background-color: #129828;}
+div.transparent {opacity:0.0; filter:alpha(opacity=0);}
+#dialog-title {display: inline;}
+#dialog-title a {color: #fff;}
+#request-dialog-radio {display:inline; padding-left: 20px; font-weight: normal; }
+#request-headers, #response-headers, #response-body {display:none;}
+
+.jqmWindow {display: none; position: fixed; top: 17%; left: 50%; margin-left: -300px; width: 600px; background-color: #dfdfdf; color: #333; border: 1px solid black; padding: 12px; }
+.jqmOverlay { background-color: #000; }
+div.jqDrag {cursor: move;}
+.jqResize {width: 100%; height: 3px; background: #dfdfdf; border-top: 1px solid #a3a3a3; border-bottom: 1px solid #a3a3a3; cursor: ns-resize;}
+div.jqmDialog {display: none; position: absolute; top: 17%; right: 20px; width: 600px; height: 300px;
+                overflow: hidden; font-family:verdana,tahoma,helvetica;
+                color: #000; background: #fff; border: 1px solid #000; text-align: left;}
+div.jqmdTC { background: #303030; color: #000; height: 25px; padding: 7px 22px 5px 5px; font-family:"sans serif",verdana,tahoma,helvetica; font-weight: bold; * zoom: 1; cursor: move;}
+div.jqmdBC { height: 250px; padding: 7px 7px 7px; overflow: auto;}
+div.jqmdX { position: absolute; right: 7px; top: 8px; padding: 0 0 0 16px; height: 16px; width: 0px; background: url(/images/dialog-close.png) no-repeat 0px -16px; overflow: hidden;}
+div.jqmdX:hover {background-position: 0px 0px;}
+div.jqmdBC button {margin: 8px 10px 4px 10px; color: #777; background-color: #fff; cursor: pointer; }
+
+/* Jquery UI */
+.ui-helper-hidden { display: none; }
+.ui-helper-hidden-accessible { position: absolute !important; clip: rect(1px 1px 1px 1px); clip: rect(1px,1px,1px,1px); }
+.ui-helper-reset { margin: 0; padding: 0; border: 0; outline: 0; line-height: 1.3; text-decoration: none; font-size: 100%; list-style: none; }
+.ui-helper-clearfix:before, .ui-helper-clearfix:after { content: ""; display: table; }
+.ui-helper-clearfix:after { clear: both; }
+.ui-helper-clearfix { zoom: 1; }
+.ui-helper-zfix { width: 100%; height: 100%; top: 0; left: 0; position: absolute; opacity: 0; filter:Alpha(Opacity=0); }
+.ui-state-disabled { cursor: default !important; }
+.ui-icon { display: block; text-indent: -99999px; overflow: hidden; background-repeat: no-repeat; }
+.ui-widget-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+.ui-widget { font-family: Trebuchet MS, Tahoma, Verdana, Arial, sans-serif; font-size: 1.1em; }
+.ui-widget .ui-widget { font-size: 1em; }
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button { font-family: Trebuchet MS, Tahoma, Verdana, Arial, sans-serif; font-size: 1em; }
+.ui-widget-content { border: 1px solid #dddddd; background-color: #eeeeee; color: #333333; }
+.ui-widget-content a { color: #333333; }
+.ui-widget-header { border: 1px solid #e78f08; background-color: #f6a828; color: #ffffff; font-weight: bold; }
+.ui-widget-header a { color: #ffffff; }
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default { border: 1px solid #cccccc; background-color: #cccccc; font-weight: bold; color: #1c94c4; }
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited { color: #1c94c4; text-decoration: none; }
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hovers, { border: 1px solid #cccccc; background-color: #f6f6f6; font-weight: bold; color: #c77405; }
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active { border: 1px solid #C00; background-color: #ffffff; font-weight: bold; color: #c00; }
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited { color: #eb8f00; text-decoration: none; }
+.ui-state-hover a, .ui-state-hover a:hover { color: #c77405; text-decoration: none; }
+.ui-widget :active { outline: none; }
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight  {border: 1px solid #fed22f; background: #ffe45c url(images/ui-bg_highlight-soft_75_ffe45c_1x100.png) 50% top repeat-x; color: #363636; }
+.ui-state-highlight a, .ui-widget-content .ui-state-highlight a,.ui-widget-header .ui-state-highlight a { color: #363636; }
+.ui-state-error, .ui-widget-content .ui-state-error, .ui-widget-header .ui-state-error {border: 1px solid #cd0a0a; background: #b81900 url(images/ui-bg_diagonals-thick_18_b81900_40x40.png) 50% 50% repeat; color: #ffffff; }
+.ui-state-error a, .ui-widget-content .ui-state-error a, .ui-widget-header .ui-state-error a { color: #ffffff; }
+.ui-state-error-text, .ui-widget-content .ui-state-error-text, .ui-widget-header .ui-state-error-text { color: #ffffff; }
+.ui-priority-primary, .ui-widget-content .ui-priority-primary, .ui-widget-header .ui-priority-primary { font-weight: bold; }
+.ui-priority-secondary, .ui-widget-content .ui-priority-secondary,  .ui-widget-header .ui-priority-secondary { opacity: .7; filter:Alpha(Opacity=70); font-weight: normal; }
+.ui-state-disabled, .ui-widget-content .ui-state-disabled, .ui-widget-header .ui-state-disabled { opacity: .35; filter:Alpha(Opacity=35); background-image: none; }
+.ui-icon { width: 16px; height: 16px; background-image: url(/images/ui-icons_222222_256x240.png); }
+.ui-widget-content .ui-icon {background-image: url(/images/ui-icons_222222_256x240.png); }
+.ui-widget-header .ui-icon {background-image: url(/images/ui-icons_ffffff_256x240.png); }
+.ui-state-default .ui-icon { background-image: url(/images/ui-icons_ef8c08_256x240.png); }
+.ui-state-hover .ui-icon, .ui-state-focus .ui-icon {background-image: url(/images/ui-icons_ef8c08_256x240.png); }
+.ui-state-active .ui-icon {background-image: url(/images/ui-icons_ef8c08_256x240.png); }
+.ui-state-highlight .ui-icon {background-image: url(/images/ui-icons_228ef1_256x240.png); }
+.ui-state-error .ui-icon, .ui-state-error-text .ui-icon {background-image: url(/images/ui-icons_ffd27a_256x240.png); }
+
+/* jQuery UI Button 1.8.17
+ *
+ * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Button#theming
+ */
+.ui-button { display: inline-block; position: relative; padding: 0; margin-right: .1em; text-decoration: none !important; cursor: pointer; text-align: center; zoom: 1; overflow: visible; } /* the overflow property removes extra width in IE */
+.ui-button-icon-only { width: 2.2em; } /* to make room for the icon, a width needs to be set here */
+button.ui-button-icon-only { width: 2.4em; } /* button elements seem to need a little more width */
+.ui-button-icons-only { width: 3.4em; } 
+button.ui-button-icons-only { width: 3.7em; } 
+.ui-button .ui-button-text { display: block; line-height: 1.1;  }
+.ui-button-text-only .ui-button-text { padding: 2px 5px; }
+.ui-button-icon-only .ui-button-text, .ui-button-icons-only .ui-button-text { padding: .4em; text-indent: -9999999px; }
+.ui-button-text-icon-primary .ui-button-text, .ui-button-text-icons .ui-button-text { padding: .4em 1em .4em 2.1em; }
+.ui-button-text-icon-secondary .ui-button-text, .ui-button-text-icons .ui-button-text { padding: .4em 2.1em .4em 1em; }
+.ui-button-text-icons .ui-button-text { padding-left: 2.1em; padding-right: 2.1em; }
+input.ui-button { padding: .4em 1em; }
+.ui-button-icon-only .ui-icon, .ui-button-text-icon-primary .ui-icon, .ui-button-text-icon-secondary .ui-icon, .ui-button-text-icons .ui-icon, .ui-button-icons-only .ui-icon { position: absolute; top: 50%; margin-top: -8px; }
+.ui-button-icon-only .ui-icon { left: 50%; margin-left: -8px; }
+.ui-button-text-icon-primary .ui-button-icon-primary, .ui-button-text-icons .ui-button-icon-primary, .ui-button-icons-only .ui-button-icon-primary { left: .5em; }
+.ui-button-text-icon-secondary .ui-button-icon-secondary, .ui-button-text-icons .ui-button-icon-secondary, .ui-button-icons-only .ui-button-icon-secondary { right: .5em; }
+.ui-button-text-icons .ui-button-icon-secondary, .ui-button-icons-only .ui-button-icon-secondary { right: .5em; }
+.ui-buttonset { margin-right: 7px; }
+.ui-buttonset .ui-button { margin-left: 0; margin-right: -.3em; }
+button.ui-button::-moz-focus-inner { border: 0; padding: 0; } /* reset extra padding in Firefox */
+.ui-slider { position: relative; text-align: left; }
+.ui-slider .ui-slider-handle { position: absolute; z-index: 2; width: 1.2em; height: 1.2em; cursor: default; }
+.ui-slider .ui-slider-range { position: absolute; z-index: 1; font-size: .7em; display: block; border: 0; background-position: 0 0; }
+.ui-slider-horizontal { height: .8em; }
+.ui-slider-horizontal .ui-slider-handle { top: -.3em; margin-left: -.6em; }
+.ui-slider-horizontal .ui-slider-range { top: 0; height: 100%; }
+.ui-slider-horizontal .ui-slider-range-min { left: 0; }
+.ui-slider-horizontal .ui-slider-range-max { right: 0; }
+.ui-slider-vertical { width: .8em; height: 100px; }
+.ui-slider-vertical .ui-slider-handle { left: -.3em; margin-left: 0; margin-bottom: -.6em; }
+.ui-slider-vertical .ui-slider-range { left: 0; width: 100%; }
+.ui-slider-vertical .ui-slider-range-min { bottom: 0; }
+.ui-slider-vertical .ui-slider-range-max { top: 0; }
+        </style>
+    </head>
+    <body>
+        <div class="page">
+            <div id="wptAuthBar"><a href="/forums/member.php?action=login">Login</a> &nbsp;|&nbsp; <a href="/forums/member.php?action=register">Register</a> &nbsp;|&nbsp; <a href="/oauth/login.php">Login with Google</a> </div>
+<div id="header">
+    <h1 class="logo"><a href="/">WebPageTest</a></h1>
+    <div class="headerAd">
+    <a href="http://www.hostinginnederland.nl/" target="_blank" onclick="wptBannerTrack();" title="Hosting in Nederland - Vind de beste hosting voor je website">
+<img src="http://cdn.webpagetest.org/custom/Vianen/banner.png">
+</a>
+<script type="text/javascript">
+try{
+if( _gaq != undefined )
+    _gaq.push(['_trackEvent', 'Banner', 'Impression', 'Vianen']);
+}catch(err){}
+
+function wptBannerTrack()
+{
+    try{
+    if( _gaq != undefined )
+        _gaq.push(['_trackEvent', 'Banner', 'Click', 'Vianen']);
+    }catch(err){}
+    return true;
+}
+</script>
+    </div>
+</div>
+
+<div id="nav_bkg"><ul id="nav" class="cufon-dincond_black"><li><a title="Home" href="/">Home</a></li><li class="current"><a title="Test Result" href="/result/130916_F7_J85/">Test Result</a></li><li><a title="Test History" href="/testlog/1/">Test History</a></li><li><a title="Forums" href="/forums/">Forums</a></li><li><a title="Documentation (opens in a new tab)" href="http://sites.google.com/a/webpagetest.org/docs/" target="_blank">Documentation</a></li><li><a title="About" href="/about">About</a></li><div class="gplusone"><g:plusone size="medium" count="false" href="http://www.webpagetest.org/" actions="+1,addtocircles"></g:plusone>&nbsp;
+                <a href="http://twitter.com/share" class="twitter-share-button" data-count="none" data-text=" "></a>
+                <script type="text/javascript">
+                        (function() {
+                            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                            po.src = 'https://apis.google.com/js/plusone.js';
+                            var tw = document.createElement('script'); tw.type = 'text/javascript'; tw.async = true;
+                            tw.src = 'http://platform.twitter.com/widgets.js';
+                            var s = document.getElementsByTagName('script')[0]; 
+                            s.parentNode.insertBefore(po, s);
+                            s.parentNode.insertBefore(tw, s);
+                          })();
+                  </script></div>
+                  </ul>
+
+</div>
+
+    
+<div id="main">
+    <div class="level_2">
+        <div class="content-wrap">
+            <div class="content">
+
+            
+<div id="header_container"><div id="optimization"><div id="optimization_header"><div id="opthelp"><a href="http://www.webperformancecentral.com/wiki/WebPagetest/Optimization_Help" title="Optimization Resources" target="_blank">Need help improving?</a></div>
+</div><div id="grades"><ul class="grades smaller"><li class="first_byte_time"><a href="/result/130916_F7_J85/1/performance_optimization/#first_byte_time"><h2 class="F">F</h2></a>First Byte Time</li><li class="keep_alive_enabled"><a href="/result/130916_F7_J85/1/performance_optimization/#keep_alive_enabled"><h2 class="A">A</h2></a>Keep-alive Enabled</li><li class="compress_text"><a href="/result/130916_F7_J85/1/performance_optimization/#compress_text"><h2 class="A">A</h2></a>Compress Transfer</li><li class="compress_images"><a href="/result/130916_F7_J85/1/performance_optimization/#compress_images"><h2 class="A">A</h2></a>Compress Images</li><li class="progressive_jpeg"><a href="/result/130916_F7_J85/1/performance_optimization/#progressive_jpeg"><h2 class="F">F</h2></a>Progressive JPEGs</li><li class="cache_static_content"><a href="/result/130916_F7_J85/1/performance_optimization/#cache_static_content"><h2 class="F">F</h2></a>Cache static content</li><li class="use_of_cdn"><a href="/result/130916_F7_J85/1/performance_optimization/#use_of_cdn"><h2 class="A"><img src="http://cdn.webpagetest.org/images/grade_check.png" alt="yes"></h2></a>Effective use of CDN</li></ul></div></div><div id="header_data"><h2 class="alternate cufon-dincond_regular">Web Page Performance Test for<br><span class="medium colored">youtube.com</span></h2><p class="heading_details"><strong>From:</strong> Dulles, VA - <b>Firefox</b> - <b>Cable</b><br><span class="jsdate" date="1379342371">09/16/13 14:39:31</span><br>
+</div></div><div id="test_results-container"><div id="test-1" class="test_results"><ul class="test_menu"><li><a href="/result/130916_F7_J85/">Summary</a></li><li class="current"><a href="/result/130916_F7_J85/1/details/cached/">Details</a></li><li><a href="/performance_optimization.php?test=130916_F7_J85&run=1&cached=1">Performance Review</a></li><li><a href="/breakdown.php?test=130916_F7_J85&run=1&cached=1">Content Breakdown</a></li><li><a href="/domains.php?test=130916_F7_J85&run=1&cached=1">Domains</a></li><li><a href="/screen_shot.php?test=130916_F7_J85&run=1&cached=1">Screen Shot</a></li></ul><div class="test_results-content"><script type="text/javascript">
+  markUserTime('aft.Site Header');
+</script>
+
+            <div id="result">
+                <div id="download">
+                    <div id="testinfo">
+                                            </div>
+                    <a href="/export.php?test=130916_F7_J85&run=1&cached=1">Export HTTP Archive (.har)</a><br>                </div>
+                <div class="cleared"></div>
+                <br>
+                <table id="tableResults" class="pretty" align="center" border="1" cellpadding="10" cellspacing="0">
+                    <tr>
+                                                <th align="center" class="empty" valign="middle" colspan="7" ></th>
+                        <th align="center" class="border" valign="middle" colspan="3">Document Complete</th>
+                        <th align="center" class="border" valign="middle" colspan="3">Fully Loaded</th>
+                    </tr>
+                    <tr>
+                        <th align="center" valign="middle">Load Time</th>
+                        <th align="center" valign="middle">First Byte</th>
+                        <th align="center" valign="middle">Start Render</th>
+                                                                                                <th align="center" valign="middle">Visually Complete</th>
+                                                                        <th align="center" valign="middle"><a href="https://sites.google.com/a/webpagetest.org/docs/using-webpagetest/metrics/speed-index" target="_blank">Speed Index</a></th>
+                                                                                                <th align="center" valign="middle">DOM Elements</th>
+                                                <th align="center" valign="middle">Result (error code)</th>
+
+                        <th align="center" class="border" valign="middle">Time</th>
+                        <th align="center" valign="middle">Requests</th>
+                        <th align="center" valign="middle">Bytes In</th>
+
+                        <th align="center" class="border" valign="middle">Time</th>
+                        <th align="center" valign="middle">Requests</th>
+                        <th align="center" valign="middle">Bytes In</th>
+                    </tr>
+                    <tr>
+                        <td id="LoadTime" valign="middle">1.035s</td>
+<td id="TTFB" valign="middle">0.347s</td>
+<td id="startRender" valign="middle">0.724s</td>
+<td id="visualComplate" valign="middle">5.300s</td>
+<td id="speedIndex" valign="middle">2948</td>
+<td id="domElements" valign="middle">1141</td>
+<td id="result" valign="middle">0</td>
+<td id="docComplete" class="border" valign="middle">1.035s</td>
+<td id="requestsDoc" valign="middle">7</td>
+<td id="bytesInDoc" valign="middle">42 KB</td>
+<td id="fullyLoaded" class="border" valign="middle">3.273s</td>
+<td id="requests" valign="middle">11</td>
+<td id="bytesIn" valign="middle">915 KB</td>
+                    </tr>
+                </table><br>
+                <table id="tableW3CTiming" class="pretty" align="center" border="1" cellpadding="10" cellspacing="0"><tr><th><a href="http://dvcs.w3.org/hg/webperf/raw-file/tip/specs/NavigationTiming/Overview.html#process">domContentLoaded</a></th><th><a href="http://dvcs.w3.org/hg/webperf/raw-file/tip/specs/NavigationTiming/Overview.html#process">loadEvent</a></th></tr><tr><td>0.564s - 0.564s (0.000s)</td><td>0.985s - 0.987s (0.002s)</td></tr></table><br>                <script type="text/javascript">
+                  markUserTime('aft.Detail Table');
+                </script>
+
+                <div style="text-align:center;">
+                <h3 name="waterfall_view">Waterfall View</h3>
+                <table border="1" bordercolor="silver" cellpadding="2px" cellspacing="0" style="width:auto; font-size:11px; margin-left:auto; margin-right:auto;">
+                    <tr>
+                        <td><table><tr><td><div class="bar" style="width:15px; background-color:#1f7c83"></div></td><td>DNS Lookup</td></tr></table></td>
+                        <td><table><tr><td><div class="bar" style="width:15px; background-color:#e58226"></div></td><td>Initial Connection</td></tr></table></td>
+                                                <td><table><tr><td><div class="bar" style="width:15px; background-color:#1fe11f"></div></td><td>Time to First Byte</td></tr></table></td>
+                        <td><table><tr><td><div class="bar" style="width:15px; background-color:#1977dd"></div></td><td>Content Download</td></tr></table></td>
+                        <td style="vertical-align:middle; padding: 4px;"><div style="background-color:#ffff60">&nbsp;3xx response&nbsp;</div></td>
+                        <td style="vertical-align:middle; padding: 4px;"><div style="background-color:#ff6060">&nbsp;4xx+ response&nbsp;</div></td>
+                    </tr>
+                </table>
+                <table border="1" bordercolor="silver" cellpadding="2px" cellspacing="0" style="width:auto; font-size:11px; margin-left:auto; margin-right:auto; margin-top:11px;">
+                    <tr>
+                        <td><table><tr><td><div class="bar" style="width:2px; background-color:#28BC00"></div></td><td>Start Render</td></tr></table></td>
+                        <td><table><tr><td><div class="bar" style="width:15px; background-color:#D888DF"></div></td><td>DOM Content Loaded</td></tr></table></td><td><table><tr><td><div class="bar" style="width:15px; background-color:#C0C0FF"></div></td><td>On Load</td></tr></table></td><td><table><tr><td><div class="bar" style="width:2px; background-color:#0000FF"></div></td><td>Document Complete</td></tr></table></td>                    </tr>
+                </table>
+                <br>
+                <map name="waterfall_map"><area href="#request" alt="http://youtube.com" title="http://youtube.com" shape=RECT coords="0,0,250,25">
+<area href="#request1" alt="1: http://www.youtube.com/" title="1: http://www.youtube.com/" shape=RECT coords="0,26,929,42">
+<area href="#request2" alt="2: http://i1.ytimg.com/i/qyku6Kofy1nV86yh9R8n8A/1.jpg" title="2: http://i1.ytimg.com/i/qyku6Kofy1nV86yh9R8n8A/1.jpg" shape=RECT coords="0,43,929,59">
+<area href="#request3" alt="3: http://i1.ytimg.com/i/aBf1a-dpIsw8OxqH4ki2Kg/1.jpg" title="3: http://i1.ytimg.com/i/aBf1a-dpIsw8OxqH4ki2Kg/1.jpg" shape=RECT coords="0,60,929,76">
+<area href="#request4" alt="4: http://i1.ytimg.com/i/cMTZY1rFXO3Rj44D5VMyiw/1.jpg" title="4: http://i1.ytimg.com/i/cMTZY1rFXO3Rj44D5VMyiw/1.jpg" shape=RECT coords="0,77,929,93">
+<area href="#request5" alt="5: http://i1.ytimg.com/i/pSgg_ECBj25s9moCDfSTsA/1.jpg" title="5: http://i1.ytimg.com/i/pSgg_ECBj25s9moCDfSTsA/1.jpg" shape=RECT coords="0,94,929,110">
+<area href="#request6" alt="6: http://ad.doubleclick.net/N4061/adi/com.ythome/_default;sz=970x250;tile=1;plat=pc;dc_yt=1;kbsg=HPUS130916;kga=-1;kgg=-1;klg=en;kmyd=ad_creative_1;ord=8488572462040933?" title="6: http://ad.doubleclick.net/N4061/adi/com.ythome/_default;sz=970x250;tile=1;plat=pc;dc_yt=1;kbsg=HPUS130916;kga=-1;kgg=-1;klg=en;kmyd=ad_creative_1;ord=8488572462040933?" shape=RECT coords="0,111,929,127">
+<area href="#request7" alt="7: http://ad.doubleclick.net/N6762/adi/mkt.ythome_1x1/;sz=1x1;tile=3;plat=pc;dc_yt=1;kga=-1;kgg=-1;klg=en;kmyd=ad_creative_3;ord=6771752735849270?" title="7: http://ad.doubleclick.net/N6762/adi/mkt.ythome_1x1/;sz=1x1;tile=3;plat=pc;dc_yt=1;kga=-1;kgg=-1;klg=en;kmyd=ad_creative_3;ord=6771752735849270?" shape=RECT coords="0,128,929,144">
+<area href="#request8" alt="8: http://clients1.google.com/generate_204" title="8: http://clients1.google.com/generate_204" shape=RECT coords="0,145,929,161">
+<area href="#request9" alt="9: http://csi.gstatic.com/csi?v=2&amp;s=youtube&amp;action=glo&amp;yt_spf=0&amp;ei=Gxg3UrXvGeGBygHa04EI&amp;yt_lt=cold&amp;yt_li=0&amp;e=916904,932247,900817,916612&amp;srt=354&amp;rt=ce.62,cl.78,hr.166,je.208,jl.210,ol.632,aft.632&amp;it=st.169" title="9: http://csi.gstatic.com/csi?v=2&amp;s=youtube&amp;action=glo&amp;yt_spf=0&amp;ei=Gxg3UrXvGeGBygHa04EI&amp;yt_lt=cold&amp;yt_li=0&amp;e=916904,932247,900817,916612&amp;srt=354&amp;rt=ce.62,cl.78,hr.166,je.208,jl.210,ol.632,aft.632&amp;it=st.169" shape=RECT coords="0,162,929,178">
+<area href="#request10" alt="10: http://gcdn.2mdn.net/videoplayback/id/4be7727f2b3d58fb/itag/15/source/doubleclick/ratebypass/yes/ip/0.0.0.0/ipbits/0/expire/3523552036/sparams/id,itag,source,ratebypass,ip,ipbits,expire/signature/AAFA0A98A7093B977F1688A3EF5AD0E20326EFC.8C317F2EC9E813F7443F9F2223463BEAD9EA2E19/key/ck2/file/file.flv" title="10: http://gcdn.2mdn.net/videoplayback/id/4be7727f2b3d58fb/itag/15/source/doubleclick/ratebypass/yes/ip/0.0.0.0/ipbits/0/expire/3523552036/sparams/id,itag,source,ratebypass,ip,ipbits,expire/signature/AAFA0A98A7093B977F1688A3EF5AD0E20326EFC.8C317F2EC9E813F7443F9F2223463BEAD9EA2E19/key/ck2/file/file.flv" shape=RECT coords="0,179,929,195">
+<area href="#request11" alt="11: http://r2---sn-p5qlsn7e.c.2mdn.net/videoplayback/id/4be7727f2b3d58fb/itag/15/source/doubleclick/ratebypass/yes/ip/72.66.115.14/ipbits/0/expire/3523552036/sparams/expire,id,ip,ipbits,itag,ratebypass,source/signature/5751B22A1BBB3D277B2CAF9196B0D801CAF9D332.0DCC31B03C26EF1D0379B3B1B5613653DC9BE520/key/cms1?cms_redirect=yes&amp;ms=au&amp;mt=1379342277&amp;mv=m&amp;file=file" title="11: http://r2---sn-p5qlsn7e.c.2mdn.net/videoplayback/id/4be7727f2b3d58fb/itag/15/source/doubleclick/ratebypass/yes/ip/72.66.115.14/ipbits/0/expire/3523552036/sparams/expire,id,ip,ipbits,itag,ratebypass,source/signature/5751B22A1BBB3D277B2CAF9196B0D801CAF9D332.0DCC31B03C26EF1D0379B3B1B5613653DC9BE520/key/cms1?cms_redirect=yes&amp;ms=au&amp;mt=1379342277&amp;mv=m&amp;file=file" shape=RECT coords="0,196,929,212">
+</map><div class="waterfall-container"><img class="waterfall-image" alt="" onload="markUserTime('aft.Waterfall')" usemap="#waterfall_map" id="waterfall" src="/waterfall.php?test=130916_F7_J85&run=1&cached=1"><div class="transparent request-overlay" id="request-overlay-1" title="1: http://www.youtube.com/" onclick="SelectRequest(1)" style="position: absolute; top: 26px; height: 17px;"></div>
+<div class="transparent request-overlay" id="request-overlay-2" title="2: http://i1.ytimg.com/i/qyku6Kofy1nV86yh9R8n8A/1.jpg" onclick="SelectRequest(2)" style="position: absolute; top: 43px; height: 17px;"></div>
+<div class="transparent request-overlay" id="request-overlay-3" title="3: http://i1.ytimg.com/i/aBf1a-dpIsw8OxqH4ki2Kg/1.jpg" onclick="SelectRequest(3)" style="position: absolute; top: 60px; height: 17px;"></div>
+<div class="transparent request-overlay" id="request-overlay-4" title="4: http://i1.ytimg.com/i/cMTZY1rFXO3Rj44D5VMyiw/1.jpg" onclick="SelectRequest(4)" style="position: absolute; top: 77px; height: 17px;"></div>
+<div class="transparent request-overlay" id="request-overlay-5" title="5: http://i1.ytimg.com/i/pSgg_ECBj25s9moCDfSTsA/1.jpg" onclick="SelectRequest(5)" style="position: absolute; top: 94px; height: 17px;"></div>
+<div class="transparent request-overlay" id="request-overlay-6" title="6: http://ad.doubleclick.net/N4061/adi/com.ythome...lg=en;kmyd=ad_creative_1;ord=8488572462040933..." onclick="SelectRequest(6)" style="position: absolute; top: 111px; height: 17px;"></div>
+<div class="transparent request-overlay" id="request-overlay-7" title="7: http://ad.doubleclick.net/N6762/adi/mkt.ythome...lg=en;kmyd=ad_creative_3;ord=6771752735849270..." onclick="SelectRequest(7)" style="position: absolute; top: 128px; height: 17px;"></div>
+<div class="transparent request-overlay" id="request-overlay-8" title="8: http://clients1.google.com/generate_204" onclick="SelectRequest(8)" style="position: absolute; top: 145px; height: 17px;"></div>
+<div class="transparent request-overlay" id="request-overlay-9" title="9: http://csi.gstatic.com/csi..." onclick="SelectRequest(9)" style="position: absolute; top: 162px; height: 17px;"></div>
+<div class="transparent request-overlay" id="request-overlay-10" title="10: http://gcdn.2mdn.net/videoplayback/id/4be7727...F7443F9F2223463BEAD9EA2E19/key/ck2/file/file.flv" onclick="SelectRequest(10)" style="position: absolute; top: 179px; height: 17px;"></div>
+<div class="transparent request-overlay" id="request-overlay-11" title="11: http://r2---sn-p5qlsn7e.c.2mdn.net/videoplayb...31B03C26EF1D0379B3B1B5613653DC9BE520/key/cms1..." onclick="SelectRequest(11)" style="position: absolute; top: 196px; height: 17px;"></div>
+    <div id="request-dialog" class="jqmDialog">
+        <div id="dialog-header" class="jqmdTC jqDrag">
+            <div id="dialog-title"></div>
+            <div id="request-dialog-radio">
+                <span id="request-details-button"><input type="radio" id="radio1" value="request-details" name="radio" checked="checked" /><label for="radio1">Details</label></span>
+                <span id="request-headers-button"><input type="radio" id="radio2" value="request-headers" name="radio" /><label for="radio2">Request</label></span>
+                <span id="response-headers-button"><input type="radio" id="radio3" value="response-headers" name="radio" /><label for="radio3">Response</label></span>
+                <span id="response-body-button"><input type="radio" id="radio4" value="response-body" name="radio" /><label for="radio4">Object</label></span>
+            </div>
+        </div>
+        <div class="jqmdBC">
+            <div id="dialog-contents" class="jqmdMSG">
+                <div id="request-details" class="dialog-tab-content"></div>
+                <div id="request-headers" class="dialog-tab-content"></div>
+                <div id="response-headers" class="dialog-tab-content"></div>
+                <div id="response-body" class="dialog-tab-content"></div>
+            </div>
+        </div>
+        <div class="jqmdX jqmClose"></div>
+    </div>
+    <div id="marker"></div>
+    </div><script type="text/javascript">
+var wptRequestCount=11;
+var wptRequestData=[{"ip_addr":"74.125.225.65","method":"GET","host":"www.youtube.com","url":"\/","responseCode":"200","load_ms":"353","ttfb_ms":"292","load_start":"55","bytesOut":"349","bytesIn":"17283","objectSize":"16592","expires":"Tue, 27 Apr 1971 19:44:06 EST","cacheControl":"no-cache","contentType":"text\/html","contentEncoding":"gzip","type":"3","socket":"18","score_cache":"-1","score_cdn":"-1","score_gzip":"100","score_cookies":"-1","score_keep-alive":"-1","score_minify":"-1","score_combine":"-1","score_compress":"-1","score_etags":"-1","is_secure":"0","dns_ms":2,"connect_ms":52,"ssl_ms":"-1","gzip_total":"17283","gzip_save":"0","minify_total":"0","minify_save":"0","image_total":"0","image_save":"0","cache_time":"-1","cdn_provider":"Google","dns_start":"1","dns_end":"3","connect_start":"3","connect_end":"55","ssl_start":"0","ssl_end":"0","server_count":"11","server_rtt":"49","client_port":"64361","jpeg_scan_count":"0","full_url":"http:\/\/www.youtube.com\/","score_progressive_jpeg":-1,"load_end":408,"ttfb_start":"55","ttfb_end":347,"download_start":347,"download_end":408,"download_ms":61,"all_start":"1","all_end":408,"all_ms":407,"headers":{"request":["GET \/ HTTP\/1.1","Host: www.youtube.com","User-Agent: Mozilla\/5.0 (Windows NT 6.1; rv:23.0) Gecko\/20100101 Firefox\/23.0 PTST\/133","Accept: text\/html,application\/xhtml+xml,application\/xml;q=0.9,*\/*;q=0.8","Accept-Language: en-US,en;q=0.5","Accept-Encoding: gzip, deflate","Cookie: VISITOR_INFO1_LIVE=eAo8xKj-8mU; PREF=fv=11.8.800","Connection: keep-alive"],"response":["HTTP\/1.1 200 OK","Date: Mon, 16 Sep 2013 14:39:23 GMT","Server: gwiseguy\/2.0","X-Frame-Options: SAMEORIGIN","Set-Cookie: YSC=mtPI9mN-gjI; path=\/; domain=.youtube.com; httponly","Expires: Tue, 27 Apr 1971 19:44:06 EST","Content-Encoding: gzip","X-Content-Type-Options: nosniff","X-XSS-Protection: 1; mode=block; report=https:\/\/www.google.com\/appserve\/security-bugs\/logs\/youtube","Content-Type: text\/html; charset=utf-8","X-YouTube-Other-Cookies: VISITOR_INFO1_LIVE=eAo8xKj-8mU;PREF=fv=11.8.800","P3P: CP=\"This is not a P3P policy! See http:\/\/support.google.com\/accounts\/bin\/answer.py?answer=151657&hl=en-US for more info.\"","Cache-Control: no-cache","Content-Length: 16592","Alternate-Protocol: 80:quic"]},"location":"Google","index":0,"number":1},{"ip_addr":"74.125.225.64","method":"GET","host":"i1.ytimg.com","url":"\/i\/qyku6Kofy1nV86yh9R8n8A\/1.jpg","responseCode":"200","load_ms":"78","ttfb_ms":"57","load_start":"626","bytesOut":"322","bytesIn":"5826","objectSize":"5478","expires":"Mon, 16 Sep 2013 15:25:28 GMT","cacheControl":"public, max-age=21600","contentType":"image\/png","type":"3","socket":"27","score_cache":"50","score_cdn":"100","score_gzip":"-1","score_cookies":"-1","score_keep-alive":"100","score_minify":"-1","score_combine":"-1","score_compress":"-1","score_etags":"-1","is_secure":"0","dns_ms":188,"connect_ms":51,"ssl_ms":"-1","gzip_total":"0","gzip_save":"0","minify_total":"0","minify_save":"0","image_total":"0","image_save":"0","cache_time":"21600","cdn_provider":"Google","dns_start":"387","dns_end":"575","connect_start":"575","connect_end":"626","ssl_start":"0","ssl_end":"0","server_count":"11","server_rtt":"51","client_port":"64368","jpeg_scan_count":"0","full_url":"http:\/\/i1.ytimg.com\/i\/qyku6Kofy1nV86yh9R8n8A\/1.jpg","score_progressive_jpeg":-1,"load_end":704,"ttfb_start":"626","ttfb_end":683,"download_start":683,"download_end":704,"download_ms":21,"all_start":"387","all_end":704,"all_ms":317,"headers":{"request":["GET \/i\/qyku6Kofy1nV86yh9R8n8A\/1.jpg HTTP\/1.1","Host: i1.ytimg.com","User-Agent: Mozilla\/5.0 (Windows NT 6.1; rv:23.0) Gecko\/20100101 Firefox\/23.0 PTST\/133","Accept: image\/png,image\/*;q=0.8,*\/*;q=0.5","Accept-Language: en-US,en;q=0.5","Accept-Encoding: gzip, deflate","Referer: http:\/\/www.youtube.com\/","Connection: keep-alive"],"response":["HTTP\/1.1 200 OK","Content-Type: image\/png","Last-Modified: Mon, 16 Sep 2013 09:25:28 GMT","Date: Mon, 16 Sep 2013 09:25:28 GMT","Expires: Mon, 16 Sep 2013 15:25:28 GMT","X-Content-Type-Options: nosniff","Server: sffe","Content-Length: 5478","X-XSS-Protection: 1; mode=block","Cache-Control: public, max-age=21600","Age: 18835","Alternate-Protocol: 80:quic"]},"location":"Google","index":1,"number":2},{"ip_addr":"74.125.225.64","method":"GET","host":"i1.ytimg.com","url":"\/i\/aBf1a-dpIsw8OxqH4ki2Kg\/1.jpg","responseCode":"200","load_ms":"59","ttfb_ms":"59","load_start":"627","bytesOut":"322","bytesIn":"2782","objectSize":"2433","expires":"Mon, 16 Sep 2013 16:02:39 GMT","cacheControl":"public, max-age=21600","contentType":"image\/jpeg","type":"3","socket":"28","score_cache":"50","score_cdn":"100","score_gzip":"-1","score_cookies":"-1","score_keep-alive":"100","score_minify":"-1","score_combine":"-1","score_compress":"100","score_etags":"-1","is_secure":"0","dns_ms":"-1","connect_ms":52,"ssl_ms":"-1","gzip_total":"0","gzip_save":"0","minify_total":"0","minify_save":"0","image_total":"2433","image_save":"0","cache_time":"21600","cdn_provider":"Google","dns_start":"0","dns_end":"0","connect_start":"575","connect_end":"627","ssl_start":"0","ssl_end":"0","server_count":"11","server_rtt":"51","client_port":"64369","jpeg_scan_count":"1","full_url":"http:\/\/i1.ytimg.com\/i\/aBf1a-dpIsw8OxqH4ki2Kg\/1.jpg","score_progressive_jpeg":50,"load_end":686,"ttfb_start":"627","ttfb_end":686,"download_start":686,"download_end":686,"download_ms":0,"all_start":"575","all_end":686,"all_ms":111,"headers":{"request":["GET \/i\/aBf1a-dpIsw8OxqH4ki2Kg\/1.jpg HTTP\/1.1","Host: i1.ytimg.com","User-Agent: Mozilla\/5.0 (Windows NT 6.1; rv:23.0) Gecko\/20100101 Firefox\/23.0 PTST\/133","Accept: image\/png,image\/*;q=0.8,*\/*;q=0.5","Accept-Language: en-US,en;q=0.5","Accept-Encoding: gzip, deflate","Referer: http:\/\/www.youtube.com\/","Connection: keep-alive"],"response":["HTTP\/1.1 200 OK","Content-Type: image\/jpeg","Last-Modified: Mon, 16 Sep 2013 10:02:39 GMT","Date: Mon, 16 Sep 2013 10:02:39 GMT","Expires: Mon, 16 Sep 2013 16:02:39 GMT","X-Content-Type-Options: nosniff","Server: sffe","Content-Length: 2433","X-XSS-Protection: 1; mode=block","Cache-Control: public, max-age=21600","Age: 16604","Alternate-Protocol: 80:quic"]},"location":"Google","index":2,"number":3},{"ip_addr":"74.125.225.64","method":"GET","host":"i1.ytimg.com","url":"\/i\/cMTZY1rFXO3Rj44D5VMyiw\/1.jpg","responseCode":"200","load_ms":"76","ttfb_ms":"57","load_start":"628","bytesOut":"322","bytesIn":"6249","objectSize":"5901","expires":"Mon, 16 Sep 2013 16:00:55 GMT","cacheControl":"public, max-age=21600","contentType":"image\/png","type":"3","socket":"32","score_cache":"50","score_cdn":"100","score_gzip":"-1","score_cookies":"-1","score_keep-alive":"100","score_minify":"-1","score_combine":"-1","score_compress":"-1","score_etags":"-1","is_secure":"0","dns_ms":"-1","connect_ms":52,"ssl_ms":"-1","gzip_total":"0","gzip_save":"0","minify_total":"0","minify_save":"0","image_total":"0","image_save":"0","cache_time":"21600","cdn_provider":"Google","dns_start":"0","dns_end":"0","connect_start":"576","connect_end":"628","ssl_start":"0","ssl_end":"0","server_count":"11","server_rtt":"51","client_port":"64373","jpeg_scan_count":"0","full_url":"http:\/\/i1.ytimg.com\/i\/cMTZY1rFXO3Rj44D5VMyiw\/1.jpg","score_progressive_jpeg":-1,"load_end":704,"ttfb_start":"628","ttfb_end":685,"download_start":685,"download_end":704,"download_ms":19,"all_start":"576","all_end":704,"all_ms":128,"headers":{"request":["GET \/i\/cMTZY1rFXO3Rj44D5VMyiw\/1.jpg HTTP\/1.1","Host: i1.ytimg.com","User-Agent: Mozilla\/5.0 (Windows NT 6.1; rv:23.0) Gecko\/20100101 Firefox\/23.0 PTST\/133","Accept: image\/png,image\/*;q=0.8,*\/*;q=0.5","Accept-Language: en-US,en;q=0.5","Accept-Encoding: gzip, deflate","Referer: http:\/\/www.youtube.com\/","Connection: keep-alive"],"response":["HTTP\/1.1 200 OK","Content-Type: image\/png","Last-Modified: Mon, 16 Sep 2013 10:00:55 GMT","Date: Mon, 16 Sep 2013 10:00:55 GMT","Expires: Mon, 16 Sep 2013 16:00:55 GMT","X-Content-Type-Options: nosniff","Server: sffe","Content-Length: 5901","X-XSS-Protection: 1; mode=block","Cache-Control: public, max-age=21600","Age: 16708","Alternate-Protocol: 80:quic"]},"location":"Google","index":3,"number":4},{"ip_addr":"74.125.225.64","method":"GET","host":"i1.ytimg.com","url":"\/i\/pSgg_ECBj25s9moCDfSTsA\/1.jpg","responseCode":"200","load_ms":"67","ttfb_ms":"57","load_start":"628","bytesOut":"322","bytesIn":"3392","objectSize":"3043","expires":"Mon, 16 Sep 2013 16:08:37 GMT","cacheControl":"public, max-age=21600","contentType":"image\/jpeg","type":"3","socket":"29","score_cache":"50","score_cdn":"100","score_gzip":"-1","score_cookies":"-1","score_keep-alive":"100","score_minify":"-1","score_combine":"-1","score_compress":"100","score_etags":"-1","is_secure":"0","dns_ms":"-1","connect_ms":53,"ssl_ms":"-1","gzip_total":"0","gzip_save":"0","minify_total":"0","minify_save":"0","image_total":"3043","image_save":"0","cache_time":"21600","cdn_provider":"Google","dns_start":"0","dns_end":"0","connect_start":"575","connect_end":"628","ssl_start":"0","ssl_end":"0","server_count":"11","server_rtt":"51","client_port":"64370","jpeg_scan_count":"1","full_url":"http:\/\/i1.ytimg.com\/i\/pSgg_ECBj25s9moCDfSTsA\/1.jpg","score_progressive_jpeg":50,"load_end":695,"ttfb_start":"628","ttfb_end":685,"download_start":685,"download_end":695,"download_ms":10,"all_start":"575","all_end":695,"all_ms":120,"headers":{"request":["GET \/i\/pSgg_ECBj25s9moCDfSTsA\/1.jpg HTTP\/1.1","Host: i1.ytimg.com","User-Agent: Mozilla\/5.0 (Windows NT 6.1; rv:23.0) Gecko\/20100101 Firefox\/23.0 PTST\/133","Accept: image\/png,image\/*;q=0.8,*\/*;q=0.5","Accept-Language: en-US,en;q=0.5","Accept-Encoding: gzip, deflate","Referer: http:\/\/www.youtube.com\/","Connection: keep-alive"],"response":["HTTP\/1.1 200 OK","Content-Type: image\/jpeg","Last-Modified: Mon, 16 Sep 2013 10:08:37 GMT","Date: Mon, 16 Sep 2013 10:08:37 GMT","Expires: Mon, 16 Sep 2013 16:08:37 GMT","X-Content-Type-Options: nosniff","Server: sffe","Content-Length: 3043","X-XSS-Protection: 1; mode=block","Cache-Control: public, max-age=21600","Age: 16246","Alternate-Protocol: 80:quic"]},"location":"Google","index":4,"number":5},{"ip_addr":"74.125.225.124","method":"GET","host":"ad.doubleclick.net","url":"\/N4061\/adi\/com.ythome\/_default;sz=970x250;tile=1;plat=pc;dc_yt=1;kbsg=HPUS130916;kga=-1;kgg=-1;klg=en;kmyd=ad_creative_1;ord=8488572462040933?","responseCode":"200","load_ms":"127","ttfb_ms":"124","load_start":"628","bytesOut":"524","bytesIn":"4414","objectSize":"3606","expires":"Mon, 16 Sep 2013 14:39:24 GMT","cacheControl":"private","contentType":"text\/html","contentEncoding":"gzip","type":"3","socket":"33","score_cache":"0","score_cdn":"-1","score_gzip":"100","score_cookies":"-1","score_keep-alive":"100","score_minify":"-1","score_combine":"-1","score_compress":"-1","score_etags":"-1","is_secure":"0","dns_ms":2,"connect_ms":52,"ssl_ms":"-1","gzip_total":"4414","gzip_save":"0","minify_total":"0","minify_save":"0","image_total":"0","image_save":"0","cache_time":"0","dns_start":"574","dns_end":"576","connect_start":"576","connect_end":"628","ssl_start":"0","ssl_end":"0","server_count":"2","server_rtt":"51","client_port":"64374","jpeg_scan_count":"0","full_url":"http:\/\/ad.doubleclick.net\/N4061\/adi\/com.ythome\/_default;sz=970x250;tile=1;plat=pc;dc_yt=1;kbsg=HPUS130916;kga=-1;kgg=-1;klg=en;kmyd=ad_creative_1;ord=8488572462040933?","score_progressive_jpeg":-1,"load_end":755,"ttfb_start":"628","ttfb_end":752,"download_start":752,"download_end":755,"download_ms":3,"all_start":"574","all_end":755,"all_ms":181,"headers":{"request":["GET \/N4061\/adi\/com.ythome\/_default;sz=970x250;tile=1;plat=pc;dc_yt=1;kbsg=HPUS130916;kga=-1;kgg=-1;klg=en;kmyd=ad_creative_1;ord=8488572462040933? HTTP\/1.1","Host: ad.doubleclick.net","User-Agent: Mozilla\/5.0 (Windows NT 6.1; rv:23.0) Gecko\/20100101 Firefox\/23.0 PTST\/133","Accept: text\/html,application\/xhtml+xml,application\/xml;q=0.9,*\/*;q=0.8","Accept-Language: en-US,en;q=0.5","Accept-Encoding: gzip, deflate","Referer: http:\/\/www.youtube.com\/","Cookie: test_cookie=CheckForPermission; _drt_=NO_DATA","Connection: keep-alive"],"response":["HTTP\/1.1 200 OK","P3P: policyref=\"http:\/\/googleads.g.doubleclick.net\/pagead\/gcn_p3p_.xml\", CP=\"CURa ADMa DEVa TAIo PSAo PSDo OUR IND UNI PUR INT DEM STA PRE COM NAV OTC NOI DSP COR\"","Google-LineItem-Id: 95935669","Google-Creative-Id: 34070643709","Content-Type: text\/html; charset=UTF-8","Set-Cookie: id=2232b53bb50100b3||t=1379342363|et=730|cs=002213fd48907a85b205b124d8; expires=Wed, 16-Sep-2015 14:39:23 GMT; path=\/; domain=.doubleclick.net","Set-Cookie: test_cookie=; domain=.doubleclick.net; path=\/; Max-Age=0; expires=Mon, 21 Jul 2008 23:59:00 GMT","X-Content-Type-Options: nosniff","Content-Encoding: gzip","Date: Mon, 16 Sep 2013 14:39:24 GMT","Server: cafe","Cache-Control: private","Content-Length: 3606","X-XSS-Protection: 1; mode=block","Expires: Mon, 16 Sep 2013 14:39:24 GMT","Alternate-Protocol: 80:quic"]},"country":"United States","countryCode":"USA","city":"Mountain View","region":"CA","lat":37.4192,"long":-122.0574,"location":"Mountain View, CA","index":5,"number":6},{"ip_addr":"74.125.225.124","method":"GET","host":"ad.doubleclick.net","url":"\/N6762\/adi\/mkt.ythome_1x1\/;sz=1x1;tile=3;plat=pc;dc_yt=1;kga=-1;kgg=-1;klg=en;kmyd=ad_creative_3;ord=6771752735849270?","responseCode":"200","load_ms":"99","ttfb_ms":"96","load_start":"629","bytesOut":"500","bytesIn":"2767","objectSize":"1959","expires":"Mon, 16 Sep 2013 14:39:24 GMT","cacheControl":"private","contentType":"text\/html","contentEncoding":"gzip","type":"3","socket":"34","score_cache":"0","score_cdn":"-1","score_gzip":"100","score_cookies":"-1","score_keep-alive":"100","score_minify":"-1","score_combine":"-1","score_compress":"-1","score_etags":"-1","is_secure":"0","dns_ms":"-1","connect_ms":51,"ssl_ms":"-1","gzip_total":"2767","gzip_save":"0","minify_total":"0","minify_save":"0","image_total":"0","image_save":"0","cache_time":"0","dns_start":"0","dns_end":"0","connect_start":"577","connect_end":"628","ssl_start":"0","ssl_end":"0","server_count":"2","server_rtt":"51","client_port":"64375","jpeg_scan_count":"0","full_url":"http:\/\/ad.doubleclick.net\/N6762\/adi\/mkt.ythome_1x1\/;sz=1x1;tile=3;plat=pc;dc_yt=1;kga=-1;kgg=-1;klg=en;kmyd=ad_creative_3;ord=6771752735849270?","score_progressive_jpeg":-1,"load_end":728,"ttfb_start":"629","ttfb_end":725,"download_start":725,"download_end":728,"download_ms":3,"all_start":"577","all_end":728,"all_ms":150,"headers":{"request":["GET \/N6762\/adi\/mkt.ythome_1x1\/;sz=1x1;tile=3;plat=pc;dc_yt=1;kga=-1;kgg=-1;klg=en;kmyd=ad_creative_3;ord=6771752735849270? HTTP\/1.1","Host: ad.doubleclick.net","User-Agent: Mozilla\/5.0 (Windows NT 6.1; rv:23.0) Gecko\/20100101 Firefox\/23.0 PTST\/133","Accept: text\/html,application\/xhtml+xml,application\/xml;q=0.9,*\/*;q=0.8","Accept-Language: en-US,en;q=0.5","Accept-Encoding: gzip, deflate","Referer: http:\/\/www.youtube.com\/","Cookie: test_cookie=CheckForPermission; _drt_=NO_DATA","Connection: keep-alive"],"response":["HTTP\/1.1 200 OK","P3P: policyref=\"http:\/\/googleads.g.doubleclick.net\/pagead\/gcn_p3p_.xml\", CP=\"CURa ADMa DEVa TAIo PSAo PSDo OUR IND UNI PUR INT DEM STA PRE COM NAV OTC NOI DSP COR\"","Google-LineItem-Id: 41854556","Google-Creative-Id: 17542624796","Content-Type: text\/html; charset=UTF-8","Set-Cookie: id=222b563cb50100ef||t=1379342363|et=730|cs=002213fd489bb2b77b52bb7fd7; expires=Wed, 16-Sep-2015 14:39:23 GMT; path=\/; domain=.doubleclick.net","Set-Cookie: test_cookie=; domain=.doubleclick.net; path=\/; Max-Age=0; expires=Mon, 21 Jul 2008 23:59:00 GMT","X-Content-Type-Options: nosniff","Content-Encoding: gzip","Date: Mon, 16 Sep 2013 14:39:24 GMT","Server: cafe","Cache-Control: private","Content-Length: 1959","X-XSS-Protection: 1; mode=block","Expires: Mon, 16 Sep 2013 14:39:24 GMT","Alternate-Protocol: 80:quic"]},"country":"United States","countryCode":"USA","city":"Mountain View","region":"CA","lat":37.4192,"long":-122.0574,"location":"Mountain View, CA","index":6,"number":7},{"ip_addr":"74.125.228.73","method":"GET","host":"clients1.google.com","url":"\/generate_204","responseCode":"204","load_ms":"36","ttfb_ms":"36","load_start":"1605","bytesOut":"311","bytesIn":"140","objectSize":"0","contentType":"text\/html","type":"3","socket":"47","score_cache":"0","score_cdn":"-1","score_gzip":"-1","score_cookies":"-1","score_keep-alive":"-1","score_minify":"-1","score_combine":"-1","score_compress":"-1","score_etags":"-1","is_secure":"0","dns_ms":11,"connect_ms":33,"ssl_ms":"-1","gzip_total":"0","gzip_save":"0","minify_total":"0","minify_save":"0","image_total":"0","image_save":"0","cache_time":"0","cdn_provider":"Google","dns_start":"1561","dns_end":"1572","connect_start":"1572","connect_end":"1605","ssl_start":"0","ssl_end":"0","server_count":"11","server_rtt":"33","client_port":"64386","jpeg_scan_count":"0","full_url":"http:\/\/clients1.google.com\/generate_204","score_progressive_jpeg":-1,"load_end":1641,"ttfb_start":"1605","ttfb_end":1641,"download_start":1641,"download_end":1641,"download_ms":0,"all_start":"1561","all_end":1641,"all_ms":80,"headers":{"request":["GET \/generate_204 HTTP\/1.1","Host: clients1.google.com","User-Agent: Mozilla\/5.0 (Windows NT 6.1; rv:23.0) Gecko\/20100101 Firefox\/23.0 PTST\/133","Accept: image\/png,image\/*;q=0.8,*\/*;q=0.5","Accept-Language: en-US,en;q=0.5","Accept-Encoding: gzip, deflate","Referer: http:\/\/www.youtube.com\/","Connection: keep-alive"],"response":["HTTP\/1.1 204 No Content","Content-Length: 0","Content-Type: text\/html; charset=UTF-8","Date: Mon, 16 Sep 2013 14:39:24 GMT","Server: GFE\/2.0"]},"location":"Google","index":7,"number":8},{"ip_addr":"173.194.126.79","method":"GET","host":"csi.gstatic.com","url":"\/csi?v=2&s=youtube&action=glo&yt_spf=0&ei=Gxg3UrXvGeGBygHa04EI&yt_lt=cold&yt_li=0&e=916904,932247,900817,916612&srt=354&rt=ce.62,cl.78,hr.166,je.208,jl.210,ol.632,aft.632&it=st.169","responseCode":"204","load_ms":"309","ttfb_ms":"309","load_start":"1617","bytesOut":"474","bytesIn":"323","objectSize":"0","expires":"Wed, 17 Sep 1975 21:32:10 GMT","cacheControl":"private, no-cache","contentType":"image\/gif","type":"3","socket":"44","score_cache":"-1","score_cdn":"-1","score_gzip":"-1","score_cookies":"-1","score_keep-alive":"-1","score_minify":"-1","score_combine":"-1","score_compress":"-1","score_etags":"-1","is_secure":"0","dns_ms":328,"connect_ms":271,"ssl_ms":"-1","gzip_total":"0","gzip_save":"0","minify_total":"0","minify_save":"0","image_total":"0","image_save":"0","cache_time":"-1","dns_start":"1018","dns_end":"1346","connect_start":"1346","connect_end":"1617","ssl_start":"0","ssl_end":"0","server_count":"1","server_rtt":"268","client_port":"64383","jpeg_scan_count":"0","full_url":"http:\/\/csi.gstatic.com\/csi?v=2&s=youtube&action=glo&yt_spf=0&ei=Gxg3UrXvGeGBygHa04EI&yt_lt=cold&yt_li=0&e=916904,932247,900817,916612&srt=354&rt=ce.62,cl.78,hr.166,je.208,jl.210,ol.632,aft.632&it=st.169","score_progressive_jpeg":-1,"load_end":1926,"ttfb_start":"1617","ttfb_end":1926,"download_start":1926,"download_end":1926,"download_ms":0,"all_start":"1018","all_end":1926,"all_ms":908,"headers":{"request":["GET \/csi?v=2&s=youtube&action=glo&yt_spf=0&ei=Gxg3UrXvGeGBygHa04EI&yt_lt=cold&yt_li=0&e=916904,932247,900817,916612&srt=354&rt=ce.62,cl.78,hr.166,je.208,jl.210,ol.632,aft.632&it=st.169 HTTP\/1.1","Host: csi.gstatic.com","User-Agent: Mozilla\/5.0 (Windows NT 6.1; rv:23.0) Gecko\/20100101 Firefox\/23.0 PTST\/133","Accept: image\/png,image\/*;q=0.8,*\/*;q=0.5","Accept-Language: en-US,en;q=0.5","Accept-Encoding: gzip, deflate","Referer: http:\/\/www.youtube.com\/","Connection: keep-alive"],"response":["HTTP\/1.1 204 No Content","Pragma: no-cache","Cache-Control: private, no-cache","Expires: Wed, 17 Sep 1975 21:32:10 GMT","Access-Control-Allow-Origin: *","Last-Modified: Wed, 21 Jan 2004 19:51:30 GMT","Content-Type: image\/gif","Date: Mon, 16 Sep 2013 14:39:25 GMT","Server: Golfe2","Content-Length: 0","Alternate-Protocol: 80:quic"]},"country":"United States","countryCode":"USA","city":"Mountain View","region":"CA","lat":37.4192,"long":-122.0574,"location":"Mountain View, CA","index":8,"number":9},{"ip_addr":"74.125.225.73","method":"GET","host":"gcdn.2mdn.net","url":"\/videoplayback\/id\/4be7727f2b3d58fb\/itag\/15\/source\/doubleclick\/ratebypass\/yes\/ip\/0.0.0.0\/ipbits\/0\/expire\/3523552036\/sparams\/id,itag,source,ratebypass,ip,ipbits,expire\/signature\/AAFA0A98A7093B977F1688A3EF5AD0E20326EFC.8C317F2EC9E813F7443F9F2223463BEAD9EA2E19\/key\/ck2\/file\/file.flv","responseCode":"302","load_ms":"70","ttfb_ms":"70","load_start":"1665","bytesOut":"672","bytesIn":"1275","objectSize":"570","expires":"Fri, 01 Jan 1990 00:00:00 GMT","cacheControl":"no-cache, must-revalidate","contentType":"text\/html","type":"3","socket":"49","score_cache":"-1","score_cdn":"-1","score_gzip":"-1","score_cookies":"-1","score_keep-alive":"-1","score_minify":"-1","score_combine":"-1","score_compress":"-1","score_etags":"-1","is_secure":"0","dns_ms":12,"connect_ms":54,"ssl_ms":"-1","gzip_total":"0","gzip_save":"0","minify_total":"0","minify_save":"0","image_total":"0","image_save":"0","cache_time":"-1","cdn_provider":"Google","dns_start":"1599","dns_end":"1611","connect_start":"1611","connect_end":"1665","ssl_start":"0","ssl_end":"0","server_count":"11","server_rtt":"53","client_port":"64388","jpeg_scan_count":"0","full_url":"http:\/\/gcdn.2mdn.net\/videoplayback\/id\/4be7727f2b3d58fb\/itag\/15\/source\/doubleclick\/ratebypass\/yes\/ip\/0.0.0.0\/ipbits\/0\/expire\/3523552036\/sparams\/id,itag,source,ratebypass,ip,ipbits,expire\/signature\/AAFA0A98A7093B977F1688A3EF5AD0E20326EFC.8C317F2EC9E813F7443F9F2223463BEAD9EA2E19\/key\/ck2\/file\/file.flv","score_progressive_jpeg":-1,"load_end":1735,"ttfb_start":"1665","ttfb_end":1735,"download_start":1735,"download_end":1735,"download_ms":0,"all_start":"1599","all_end":1735,"all_ms":136,"headers":{"request":["GET \/videoplayback\/id\/4be7727f2b3d58fb\/itag\/15\/source\/doubleclick\/ratebypass\/yes\/ip\/0.0.0.0\/ipbits\/0\/expire\/3523552036\/sparams\/id,itag,source,ratebypass,ip,ipbits,expire\/signature\/AAFA0A98A7093B977F1688A3EF5AD0E20326EFC.8C317F2EC9E813F7443F9F2223463BEAD9EA2E19\/key\/ck2\/file\/file.flv HTTP\/1.1","Host: gcdn.2mdn.net","User-Agent: Mozilla\/5.0 (Windows NT 6.1; rv:23.0) Gecko\/20100101 Firefox\/23.0 PTST\/133","Accept: text\/html,application\/xhtml+xml,application\/xml;q=0.9,*\/*;q=0.8","Accept-Language: en-US,en;q=0.5","Accept-Encoding: gzip, deflate","Referer: http:\/\/s0.2mdn.net\/ads\/richmedia\/studio\/23002232\/24883709_20130912141930234_main_polite_INP.swf","Connection: keep-alive"],"response":["HTTP\/1.1 302 Found","Date: Mon, 16 Sep 2013 14:39:25 GMT","Pragma: no-cache","Expires: Fri, 01 Jan 1990 00:00:00 GMT","Cache-Control: no-cache, must-revalidate","Location: http:\/\/r2---sn-p5qlsn7e.c.2mdn.net\/videoplayback\/id\/4be7727f2b3d58fb\/itag\/15\/source\/doubleclick\/ratebypass\/yes\/ip\/72.66.115.14\/ipbits\/0\/expire\/3523552036\/sparams\/expire,id,ip,ipbits,itag,ratebypass,source\/signature\/5751B22A1BBB3D277B2CAF9196B0D801CAF9D332.0DCC31B03C26EF1D0379B3B1B5613653DC9BE520\/key\/cms1?cms_redirect=yes&ms=au&mt=1379342277&mv=m&file=file","Content-Type: text\/html; charset=UTF-8","Server: ClientMapServer","Content-Length: 570","X-XSS-Protection: 1; mode=block","X-Frame-Options: SAMEORIGIN","Alternate-Protocol: 80:quic"]},"location":"Google","index":9,"number":10},{"ip_addr":"173.194.63.7","method":"GET","host":"r2---sn-p5qlsn7e.c.2mdn.net","url":"\/videoplayback\/id\/4be7727f2b3d58fb\/itag\/15\/source\/doubleclick\/ratebypass\/yes\/ip\/72.66.115.14\/ipbits\/0\/expire\/3523552036\/sparams\/expire,id,ip,ipbits,itag,ratebypass,source\/signature\/5751B22A1BBB3D277B2CAF9196B0D801CAF9D332.0DCC31B03C26EF1D0379B3B1B5613653DC9BE520\/key\/cms1?cms_redirect=yes&ms=au&mt=1379342277&mv=m&file=file","responseCode":"200","load_ms":"1502","ttfb_ms":"41","load_start":"1771","bytesOut":"731","bytesIn":"888063","objectSize":"887698","expires":"Mon, 16 Sep 2013 14:39:25 GMT","cacheControl":"private, max-age=86400","contentType":"application\/octet-stream","type":"3","socket":"52","score_cache":"0","score_cdn":"-1","score_gzip":"-1","score_cookies":"-1","score_keep-alive":"-1","score_minify":"-1","score_combine":"-1","score_compress":"-1","score_etags":"-1","is_secure":"0","dns_ms":1,"connect_ms":31,"ssl_ms":"-1","gzip_total":"0","gzip_save":"0","minify_total":"0","minify_save":"0","image_total":"0","image_save":"0","cache_time":"0","dns_start":"1738","dns_end":"1739","connect_start":"1739","connect_end":"1770","ssl_start":"0","ssl_end":"0","server_count":"1","server_rtt":"31","client_port":"64391","jpeg_scan_count":"0","full_url":"http:\/\/r2---sn-p5qlsn7e.c.2mdn.net\/videoplayback\/id\/4be7727f2b3d58fb\/itag\/15\/source\/doubleclick\/ratebypass\/yes\/ip\/72.66.115.14\/ipbits\/0\/expire\/3523552036\/sparams\/expire,id,ip,ipbits,itag,ratebypass,source\/signature\/5751B22A1BBB3D277B2CAF9196B0D801CAF9D332.0DCC31B03C26EF1D0379B3B1B5613653DC9BE520\/key\/cms1?cms_redirect=yes&ms=au&mt=1379342277&mv=m&file=file","score_progressive_jpeg":-1,"load_end":3273,"ttfb_start":"1771","ttfb_end":1812,"download_start":1812,"download_end":3273,"download_ms":1461,"all_start":"1738","all_end":3273,"all_ms":1534,"headers":{"request":["GET \/videoplayback\/id\/4be7727f2b3d58fb\/itag\/15\/source\/doubleclick\/ratebypass\/yes\/ip\/72.66.115.14\/ipbits\/0\/expire\/3523552036\/sparams\/expire,id,ip,ipbits,itag,ratebypass,source\/signature\/5751B22A1BBB3D277B2CAF9196B0D801CAF9D332.0DCC31B03C26EF1D0379B3B1B5613653DC9BE520\/key\/cms1?cms_redirect=yes&ms=au&mt=1379342277&mv=m&file=file HTTP\/1.1","Host: r2---sn-p5qlsn7e.c.2mdn.net","User-Agent: Mozilla\/5.0 (Windows NT 6.1; rv:23.0) Gecko\/20100101 Firefox\/23.0 PTST\/133","Accept: text\/html,application\/xhtml+xml,application\/xml;q=0.9,*\/*;q=0.8","Accept-Language: en-US,en;q=0.5","Accept-Encoding: gzip, deflate","Referer: http:\/\/s0.2mdn.net\/ads\/richmedia\/studio\/23002232\/24883709_20130912141930234_main_polite_INP.swf","Connection: keep-alive"],"response":["HTTP\/1.1 200 OK","Last-Modified: Fri, 06 Sep 2013 20:20:12 GMT","Content-Type: application\/octet-stream","Date: Mon, 16 Sep 2013 14:39:25 GMT","Expires: Mon, 16 Sep 2013 14:39:25 GMT","Cache-Control: private, max-age=86400","Accept-Ranges: bytes","Content-Length: 887698","Connection: close","Alternate-Protocol: 80:quic","X-Content-Type-Options: nosniff","Server: gvs 1.0"]},"country":"United States","countryCode":"USA","city":"Mountain View","region":"CA","lat":37.4192,"long":-122.0574,"location":"Mountain View, CA","index":10,"number":11}];
+var wptNoLinks=1;
+</script><br><a href="/customWaterfall.php?width=930&test=130916_F7_J85&run=1&cached=1">customize waterfall</a> &#8226; <a id="view-images" href="/pageimages.php?test=130916_F7_J85&run=1&cached=1">View all Images</a>                <br>
+                <br>
+                <h3 name="connection_view">Connection View</h3>
+                <map name="connection_map">
+                <area href="#request" alt="http://youtube.com" title="http://youtube.com" shape=RECT coords="0,0,250,25">
+<area href="#request1" alt="1: http://www.youtube.com/" title="1: http://www.youtube.com/" shape=RECT coords="262,26,335,42">
+<area href="#request2" alt="2: http://i1.ytimg.com/i/qyku6Kofy1nV86yh9R8n8A/1.jpg" title="2: http://i1.ytimg.com/i/qyku6Kofy1nV86yh9R8n8A/1.jpg" shape=RECT coords="380,43,396,59">
+<area href="#request3" alt="3: http://i1.ytimg.com/i/aBf1a-dpIsw8OxqH4ki2Kg/1.jpg" title="3: http://i1.ytimg.com/i/aBf1a-dpIsw8OxqH4ki2Kg/1.jpg" shape=RECT coords="380,60,392,76">
+<area href="#request4" alt="4: http://i1.ytimg.com/i/cMTZY1rFXO3Rj44D5VMyiw/1.jpg" title="4: http://i1.ytimg.com/i/cMTZY1rFXO3Rj44D5VMyiw/1.jpg" shape=RECT coords="380,77,396,93">
+<area href="#request5" alt="5: http://i1.ytimg.com/i/pSgg_ECBj25s9moCDfSTsA/1.jpg" title="5: http://i1.ytimg.com/i/pSgg_ECBj25s9moCDfSTsA/1.jpg" shape=RECT coords="380,94,394,110">
+<area href="#request6" alt="6: http://ad.doubleclick.net/N4061/adi/com.ythome/_default;sz=970x250;tile=1;plat=pc;dc_yt=1;kbsg=HPUS130916;kga=-1;kgg=-1;klg=en;kmyd=ad_creative_1;ord=8488572462040933?" title="6: http://ad.doubleclick.net/N4061/adi/com.ythome/_default;sz=970x250;tile=1;plat=pc;dc_yt=1;kbsg=HPUS130916;kga=-1;kgg=-1;klg=en;kmyd=ad_creative_1;ord=8488572462040933?" shape=RECT coords="380,111,407,127">
+<area href="#request7" alt="7: http://ad.doubleclick.net/N6762/adi/mkt.ythome_1x1/;sz=1x1;tile=3;plat=pc;dc_yt=1;kga=-1;kgg=-1;klg=en;kmyd=ad_creative_3;ord=6771752735849270?" title="7: http://ad.doubleclick.net/N6762/adi/mkt.ythome_1x1/;sz=1x1;tile=3;plat=pc;dc_yt=1;kga=-1;kgg=-1;klg=en;kmyd=ad_creative_3;ord=6771752735849270?" shape=RECT coords="381,128,401,144">
+<area href="#request8" alt="8: http://clients1.google.com/generate_204" title="8: http://clients1.google.com/generate_204" shape=RECT coords="582,145,590,161">
+<area href="#request9" alt="9: http://csi.gstatic.com/csi?v=2&amp;s=youtube&amp;action=glo&amp;yt_spf=0&amp;ei=Gxg3UrXvGeGBygHa04EI&amp;yt_lt=cold&amp;yt_li=0&amp;e=916904,932247,900817,916612&amp;srt=354&amp;rt=ce.62,cl.78,hr.166,je.208,jl.210,ol.632,aft.632&amp;it=st.169" title="9: http://csi.gstatic.com/csi?v=2&amp;s=youtube&amp;action=glo&amp;yt_spf=0&amp;ei=Gxg3UrXvGeGBygHa04EI&amp;yt_lt=cold&amp;yt_li=0&amp;e=916904,932247,900817,916612&amp;srt=354&amp;rt=ce.62,cl.78,hr.166,je.208,jl.210,ol.632,aft.632&amp;it=st.169" shape=RECT coords="585,162,649,178">
+<area href="#request10" alt="10: http://gcdn.2mdn.net/videoplayback/id/4be7727f2b3d58fb/itag/15/source/doubleclick/ratebypass/yes/ip/0.0.0.0/ipbits/0/expire/3523552036/sparams/id,itag,source,ratebypass,ip,ipbits,expire/signature/AAFA0A98A7093B977F1688A3EF5AD0E20326EFC.8C317F2EC9E813F7443F9F2223463BEAD9EA2E19/key/ck2/file/file.flv" title="10: http://gcdn.2mdn.net/videoplayback/id/4be7727f2b3d58fb/itag/15/source/doubleclick/ratebypass/yes/ip/0.0.0.0/ipbits/0/expire/3523552036/sparams/id,itag,source,ratebypass,ip,ipbits,expire/signature/AAFA0A98A7093B977F1688A3EF5AD0E20326EFC.8C317F2EC9E813F7443F9F2223463BEAD9EA2E19/key/ck2/file/file.flv" shape=RECT coords="595,179,609,195">
+<area href="#request11" alt="11: http://r2---sn-p5qlsn7e.c.2mdn.net/videoplayback/id/4be7727f2b3d58fb/itag/15/source/doubleclick/ratebypass/yes/ip/72.66.115.14/ipbits/0/expire/3523552036/sparams/expire,id,ip,ipbits,itag,ratebypass,source/signature/5751B22A1BBB3D277B2CAF9196B0D801CAF9D332.0DCC31B03C26EF1D0379B3B1B5613653DC9BE520/key/cms1?cms_redirect=yes&amp;ms=au&amp;mt=1379342277&amp;mv=m&amp;file=file" title="11: http://r2---sn-p5qlsn7e.c.2mdn.net/videoplayback/id/4be7727f2b3d58fb/itag/15/source/doubleclick/ratebypass/yes/ip/72.66.115.14/ipbits/0/expire/3523552036/sparams/expire,id,ip,ipbits,itag,ratebypass,source/signature/5751B22A1BBB3D277B2CAF9196B0D801CAF9D332.0DCC31B03C26EF1D0379B3B1B5613653DC9BE520/key/cms1?cms_redirect=yes&amp;ms=au&amp;mt=1379342277&amp;mv=m&amp;file=file" shape=RECT coords="617,196,928,212">
+                </map>
+                <table border="1" bordercolor="silver" cellpadding="2px" cellspacing="0" style="width:auto; font-size:11px; margin-left:auto; margin-right:auto;">
+                    <tr>
+                        <td><table><tr><td><div class="bar" style="width:15px; background-color:#007B84"></div></td><td>DNS Lookup</td></tr></table></td>
+                        <td><table><tr><td><div class="bar" style="width:15px; background-color:#FF7B00"></div></td><td>Initial Connection</td></tr></table></td>
+                                                <td><table><tr><td><div class="bar" style="width:2px; background-color:#28BC00"></div></td><td>Start Render</td></tr></table></td>
+                                                                        <td><table><tr><td><div class="bar" style="width:15px; background-color:#D888DF"></div></td><td>DOM Content Loaded</td></tr></table></td>
+                                                                        <td><table><tr><td><div class="bar" style="width:15px; background-color:#C0C0FF"></div></td><td>On Load</td></tr></table></td>
+                                                <td><table><tr><td><div class="bar" style="width:2px; background-color:#0000FF"></div></td><td>Document Complete</td></tr></table></td>
+                    </tr>
+                </table>
+                <br>
+                <img class="progress" alt="Connection View waterfall diagram" usemap="#connection_map" id="connectionView" src="/waterfall.png?type=connection&width=930&test=130916_F7_J85&run=1&cached=1&mime=1">
+                </div>
+                <br><br>
+                <div style="width:100%; height:90; text-align:center; clear: both; padding: 1em 0px; background-color: #AAA;">
+    <script type="text/javascript"><!--
+    google_ad_client = "pub-0388499782819905";
+    /* Webpagetest Details Middle 728x90 */
+    google_ad_slot = "9339196816";
+    google_ad_width = 728;
+    google_ad_height = 90;
+    //-->
+    </script>
+    <script type="text/javascript"
+    src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+    </script>
+</div>
+
+                <br>
+                <div class="center">
+<table id="tableDetails" class="details center">
+	<caption>Request Details</caption>
+    <thead>
+	<tr>
+		<th class="reqNum">#</th>
+		<th class="reqUrl">Resource</th>
+		<th class="reqMime">Content Type</th>
+		<th class="reqStart">Start Offset</th>
+		<th class="reqDNS">DNS Lookup</th>
+		<th class="reqSocket">Initial Connection</th>
+				<th class="reqTTFB">Time to First Byte</th>
+		<th class="reqDownload">Content Download</th>
+		<th class="reqBytes">Bytes Downloaded</th>
+		<th class="reqResult">Error/Status Code</th>
+		<th class="reqIP">IP</th>
+				<th class="reqLocation">Location*</th>
+			</tr>
+    </thead>
+    <tbody>
+
+<tr><td class="reqNum oddRender">1</td><td class="reqUrl oddRender"><a title="http://www.youtube.com/" href="#request1">http://www.youtube.com/</a></td><td class="reqMime oddRender">text/html</td><td class="reqStart oddRender">0.055 s</td><td class="reqDNS oddRender">2 ms</td><td class="reqSocket oddRender">52 ms</td><td class="reqTTFB oddRender">292 ms</td><td class="reqDownload oddRender">61 ms</td><td class="reqBytes oddRender">16.9 KB</td><td class="reqResult oddRender">200</td><td class="reqIP oddRender">74.125.225.65</td><td class="reqLocation oddRender">Google</td>
+</tr><tr><td class="reqNum evenRender">2</td><td class="reqUrl evenRender"><a title="http://i1.ytimg.com/i/qyku6Kofy1nV86yh9R8n8A/1.jpg" href="#request2">http://i1.ytimg.com/...y1nV86yh9R8n8A/1.jpg</a></td><td class="reqMime evenRender">image/png</td><td class="reqStart evenRender">0.626 s</td><td class="reqDNS evenRender">188 ms</td><td class="reqSocket evenRender">51 ms</td><td class="reqTTFB evenRender">57 ms</td><td class="reqDownload evenRender">21 ms</td><td class="reqBytes evenRender">5.7 KB</td><td class="reqResult evenRender">200</td><td class="reqIP evenRender">74.125.225.64</td><td class="reqLocation evenRender">Google</td>
+</tr><tr><td class="reqNum oddRender">3</td><td class="reqUrl oddRender"><a title="http://i1.ytimg.com/i/aBf1a-dpIsw8OxqH4ki2Kg/1.jpg" href="#request3">http://i1.ytimg.com/...Isw8OxqH4ki2Kg/1.jpg</a></td><td class="reqMime oddRender">image/jpeg</td><td class="reqStart oddRender">0.627 s</td><td class="reqDNS oddRender">-</td><td class="reqSocket oddRender">52 ms</td><td class="reqTTFB oddRender">59 ms</td><td class="reqDownload oddRender">-</td><td class="reqBytes oddRender">2.7 KB</td><td class="reqResult oddRender">200</td><td class="reqIP oddRender">74.125.225.64</td><td class="reqLocation oddRender">Google</td>
+</tr><tr><td class="reqNum evenRender">4</td><td class="reqUrl evenRender"><a title="http://i1.ytimg.com/i/cMTZY1rFXO3Rj44D5VMyiw/1.jpg" href="#request4">http://i1.ytimg.com/...XO3Rj44D5VMyiw/1.jpg</a></td><td class="reqMime evenRender">image/png</td><td class="reqStart evenRender">0.628 s</td><td class="reqDNS evenRender">-</td><td class="reqSocket evenRender">52 ms</td><td class="reqTTFB evenRender">57 ms</td><td class="reqDownload evenRender">19 ms</td><td class="reqBytes evenRender">6.1 KB</td><td class="reqResult evenRender">200</td><td class="reqIP evenRender">74.125.225.64</td><td class="reqLocation evenRender">Google</td>
+</tr><tr><td class="reqNum oddRender">5</td><td class="reqUrl oddRender"><a title="http://i1.ytimg.com/i/pSgg_ECBj25s9moCDfSTsA/1.jpg" href="#request5">http://i1.ytimg.com/...j25s9moCDfSTsA/1.jpg</a></td><td class="reqMime oddRender">image/jpeg</td><td class="reqStart oddRender">0.628 s</td><td class="reqDNS oddRender">-</td><td class="reqSocket oddRender">53 ms</td><td class="reqTTFB oddRender">57 ms</td><td class="reqDownload oddRender">10 ms</td><td class="reqBytes oddRender">3.3 KB</td><td class="reqResult oddRender">200</td><td class="reqIP oddRender">74.125.225.64</td><td class="reqLocation oddRender">Google</td>
+</tr><tr><td class="reqNum evenRender">6</td><td class="reqUrl evenRender"><a title="http://ad.doubleclick.net/N4061/adi/com.ythome/_default;sz=970x250;tile=1;plat=pc;dc_yt=1;kbsg=HPUS130916;kga=-1;kgg=-1;klg=en;kmyd=ad_creative_1;ord=8488572462040933?" href="#request6">http://ad.doubleclic...rd=8488572462040933?</a></td><td class="reqMime evenRender">text/html</td><td class="reqStart evenRender">0.628 s</td><td class="reqDNS evenRender">2 ms</td><td class="reqSocket evenRender">52 ms</td><td class="reqTTFB evenRender">124 ms</td><td class="reqDownload evenRender">3 ms</td><td class="reqBytes evenRender">4.3 KB</td><td class="reqResult evenRender">200</td><td class="reqIP evenRender">74.125.225.124</td><td class="reqLocation evenRender">Mountain View, CA</td>
+</tr><tr><td class="reqNum oddRender">7</td><td class="reqUrl oddRender"><a title="http://ad.doubleclick.net/N6762/adi/mkt.ythome_1x1/;sz=1x1;tile=3;plat=pc;dc_yt=1;kga=-1;kgg=-1;klg=en;kmyd=ad_creative_3;ord=6771752735849270?" href="#request7">http://ad.doubleclic...rd=6771752735849270?</a></td><td class="reqMime oddRender">text/html</td><td class="reqStart oddRender">0.629 s</td><td class="reqDNS oddRender">-</td><td class="reqSocket oddRender">51 ms</td><td class="reqTTFB oddRender">96 ms</td><td class="reqDownload oddRender">3 ms</td><td class="reqBytes oddRender">2.7 KB</td><td class="reqResult oddRender">200</td><td class="reqIP oddRender">74.125.225.124</td><td class="reqLocation oddRender">Mountain View, CA</td>
+</tr><tr><td class="reqNum even">8</td><td class="reqUrl even"><a title="http://clients1.google.com/generate_204" href="#request8">http://clients1.google.com/generate_204</a></td><td class="reqMime even">text/html</td><td class="reqStart even">1.605 s</td><td class="reqDNS even">11 ms</td><td class="reqSocket even">33 ms</td><td class="reqTTFB even">36 ms</td><td class="reqDownload even">-</td><td class="reqBytes even">0.1 KB</td><td class="reqResult even">204</td><td class="reqIP even">74.125.228.73</td><td class="reqLocation even">Google</td>
+</tr><tr><td class="reqNum odd">9</td><td class="reqUrl odd"><a title="http://csi.gstatic.com/csi?v=2&s=youtube&action=glo&yt_spf=0&ei=Gxg3UrXvGeGBygHa04EI&yt_lt=cold&yt_li=0&e=916904,932247,900817,916612&srt=354&rt=ce.62,cl.78,hr.166,je.208,jl.210,ol.632,aft.632&it=st.169" href="#request9">http://csi.gstatic.c...32,aft.632&it=st.169</a></td><td class="reqMime odd">image/gif</td><td class="reqStart odd">1.617 s</td><td class="reqDNS odd">328 ms</td><td class="reqSocket odd">271 ms</td><td class="reqTTFB odd">309 ms</td><td class="reqDownload odd">-</td><td class="reqBytes odd">0.3 KB</td><td class="reqResult odd">204</td><td class="reqIP odd">173.194.126.79</td><td class="reqLocation odd">Mountain View, CA</td>
+</tr><tr><td class="reqNum warning even">10</td><td class="reqUrl warning even"><a title="http://gcdn.2mdn.net/videoplayback/id/4be7727f2b3d58fb/itag/15/source/doubleclick/ratebypass/yes/ip/0.0.0.0/ipbits/0/expire/3523552036/sparams/id,itag,source,ratebypass,ip,ipbits,expire/signature/AAFA0A98A7093B977F1688A3EF5AD0E20326EFC.8C317F2EC9E813F7443F9F2223463BEAD9EA2E19/key/ck2/file/file.flv" href="#request10">http://gcdn.2mdn.net...ey/ck2/file/file.flv</a></td><td class="reqMime warning even">text/html</td><td class="reqStart warning even">1.665 s</td><td class="reqDNS warning even">12 ms</td><td class="reqSocket warning even">54 ms</td><td class="reqTTFB warning even">70 ms</td><td class="reqDownload warning even">-</td><td class="reqBytes warning even">1.2 KB</td><td class="reqResult warning even">302</td><td class="reqIP warning even">74.125.225.73</td><td class="reqLocation warning even">Google</td>
+</tr><tr><td class="reqNum odd">11</td><td class="reqUrl odd"><a title="http://r2---sn-p5qlsn7e.c.2mdn.net/videoplayback/id/4be7727f2b3d58fb/itag/15/source/doubleclick/ratebypass/yes/ip/72.66.115.14/ipbits/0/expire/3523552036/sparams/expire,id,ip,ipbits,itag,ratebypass,source/signature/5751B22A1BBB3D277B2CAF9196B0D801CAF9D332.0DCC31B03C26EF1D0379B3B1B5613653DC9BE520/key/cms1?cms_redirect=yes&ms=au&mt=1379342277&mv=m&file=file" href="#request11">http://r2---sn-p5qls...42277&mv=m&file=file</a></td><td class="reqMime odd">application/octet-stream</td><td class="reqStart odd">1.771 s</td><td class="reqDNS odd">1 ms</td><td class="reqSocket odd">31 ms</td><td class="reqTTFB odd">41 ms</td><td class="reqDownload odd">1461 ms</td><td class="reqBytes odd">867.2 KB</td><td class="reqResult odd">200</td><td class="reqIP odd">173.194.63.7</td><td class="reqLocation odd">Mountain View, CA</td>
+</tr></tbody>
+</table></div>
+
+<p class="center">*This product includes GeoLite data created by MaxMind, available from <a href="http://maxmind.com/">http://maxmind.com/</a>.</p>
+<br>
+<div style="width:100%; height:90; text-align:center; clear:both; padding: 1em 0px; background-color: #AAA;">
+    <script type="text/javascript"><!--
+    google_ad_client = "pub-0388499782819905";
+    /* Webpagetest Details Bottom 728x90 */
+    google_ad_slot = "7833437511";
+    google_ad_width = 728;
+    google_ad_height = 90;
+    //-->
+    </script>
+    <script type="text/javascript"
+    src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+    </script>
+</div>
+<br>
+
+<div id="headers"><p>Test Machine DNS Server(s): 192.168.101.1</p>
+<br><hr><h2>Request Headers</h2><p>+ <a id="all" href="javascript:expandAll();">Expand All</a></p><h4><span class="a_request" id="request1" data-target-id="headers_1">+ Request 1: http://www.youtube.com/</span></h4><div class="header_details" id="headers_1"><p class="indented2">
+<b>URL:</b> http://www.youtube.com/<br>
+<b>Host:</b> www.youtube.com<br>
+<b>IP:</b> 74.125.225.65<br>
+<b>Location:</b> Google<br>
+<b>Error/Status Code:</b> 200<br>
+<b>Client Port:</b> 64361<br>
+<b>Start Offset:</b> 0.055 s<br>
+<b>DNS Lookup:</b> 2 ms<br>
+<b>Initial Connection:</b> 52 ms<br>
+<b>Time to First Byte:</b> 292 ms<br>
+<b>Content Download:</b> 61 ms<br>
+<b>Bytes In (downloaded):</b> 16.9 KB<br>
+<b>Bytes Out (uploaded):</b> 0.3 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+GET / HTTP/1.1<br>
+Host: www.youtube.com<br>
+User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:23.0) Gecko/20100101 Firefox/23.0 PTST/133<br>
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8<br>
+Accept-Language: en-US,en;q=0.5<br>
+Accept-Encoding: gzip, deflate<br>
+Cookie: VISITOR_INFO1_LIVE=eAo8xKj-8mU; PREF=fv=11.8.800<br>
+Connection: keep-alive<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+HTTP/1.1 200 OK<br>
+Date: Mon, 16 Sep 2013 14:39:23 GMT<br>
+Server: gwiseguy/2.0<br>
+X-Frame-Options: SAMEORIGIN<br>
+Set-Cookie: YSC=mtPI9mN-gjI; path=/; domain=.youtube.com; httponly<br>
+Expires: Tue, 27 Apr 1971 19:44:06 EST<br>
+Content-Encoding: gzip<br>
+X-Content-Type-Options: nosniff<br>
+X-XSS-Protection: 1; mode=block; report=https://www.google.com/appserve/security-bugs/logs/youtube<br>
+Content-Type: text/html; charset=utf-8<br>
+X-YouTube-Other-Cookies: VISITOR_INFO1_LIVE=eAo8xKj-8mU;PREF=fv=11.8.800<br>
+P3P: CP=&quot;This is not a P3P policy! See http://support.google.com/accounts/bin/answer.py?answer=151657&amp;hl=en-US for more info.&quot;<br>
+Cache-Control: no-cache<br>
+Content-Length: 16592<br>
+Alternate-Protocol: 80:quic<br>
+</p></div><h4><span class="a_request" id="request2" data-target-id="headers_2">+ Request 2: http://i1.ytimg.com/i/qyku6Kofy1nV86yh9R8n8A/1.jpg</span></h4><div class="header_details" id="headers_2"><p class="indented2">
+<b>URL:</b> http://i1.ytimg.com/i/qyku6Kofy1nV86yh9R8n8A/1.jpg<br>
+<b>Host:</b> i1.ytimg.com<br>
+<b>IP:</b> 74.125.225.64<br>
+<b>Location:</b> Google<br>
+<b>Error/Status Code:</b> 200<br>
+<b>Client Port:</b> 64368<br>
+<b>Start Offset:</b> 0.626 s<br>
+<b>DNS Lookup:</b> 188 ms<br>
+<b>Initial Connection:</b> 51 ms<br>
+<b>Time to First Byte:</b> 57 ms<br>
+<b>Content Download:</b> 21 ms<br>
+<b>Bytes In (downloaded):</b> 5.7 KB<br>
+<b>Bytes Out (uploaded):</b> 0.3 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+GET /i/qyku6Kofy1nV86yh9R8n8A/1.jpg HTTP/1.1<br>
+Host: i1.ytimg.com<br>
+User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:23.0) Gecko/20100101 Firefox/23.0 PTST/133<br>
+Accept: image/png,image/*;q=0.8,*/*;q=0.5<br>
+Accept-Language: en-US,en;q=0.5<br>
+Accept-Encoding: gzip, deflate<br>
+Referer: http://www.youtube.com/<br>
+Connection: keep-alive<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+HTTP/1.1 200 OK<br>
+Content-Type: image/png<br>
+Last-Modified: Mon, 16 Sep 2013 09:25:28 GMT<br>
+Date: Mon, 16 Sep 2013 09:25:28 GMT<br>
+Expires: Mon, 16 Sep 2013 15:25:28 GMT<br>
+X-Content-Type-Options: nosniff<br>
+Server: sffe<br>
+Content-Length: 5478<br>
+X-XSS-Protection: 1; mode=block<br>
+Cache-Control: public, max-age=21600<br>
+Age: 18835<br>
+Alternate-Protocol: 80:quic<br>
+</p></div><h4><span class="a_request" id="request3" data-target-id="headers_3">+ Request 3: http://i1.ytimg.com/i/aBf1a-dpIsw8OxqH4ki2Kg/1.jpg</span></h4><div class="header_details" id="headers_3"><p class="indented2">
+<b>URL:</b> http://i1.ytimg.com/i/aBf1a-dpIsw8OxqH4ki2Kg/1.jpg<br>
+<b>Host:</b> i1.ytimg.com<br>
+<b>IP:</b> 74.125.225.64<br>
+<b>Location:</b> Google<br>
+<b>Error/Status Code:</b> 200<br>
+<b>Client Port:</b> 64369<br>
+<b>Start Offset:</b> 0.627 s<br>
+<b>Initial Connection:</b> 52 ms<br>
+<b>Time to First Byte:</b> 59 ms<br>
+<b>Bytes In (downloaded):</b> 2.7 KB<br>
+<b>Bytes Out (uploaded):</b> 0.3 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+GET /i/aBf1a-dpIsw8OxqH4ki2Kg/1.jpg HTTP/1.1<br>
+Host: i1.ytimg.com<br>
+User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:23.0) Gecko/20100101 Firefox/23.0 PTST/133<br>
+Accept: image/png,image/*;q=0.8,*/*;q=0.5<br>
+Accept-Language: en-US,en;q=0.5<br>
+Accept-Encoding: gzip, deflate<br>
+Referer: http://www.youtube.com/<br>
+Connection: keep-alive<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+HTTP/1.1 200 OK<br>
+Content-Type: image/jpeg<br>
+Last-Modified: Mon, 16 Sep 2013 10:02:39 GMT<br>
+Date: Mon, 16 Sep 2013 10:02:39 GMT<br>
+Expires: Mon, 16 Sep 2013 16:02:39 GMT<br>
+X-Content-Type-Options: nosniff<br>
+Server: sffe<br>
+Content-Length: 2433<br>
+X-XSS-Protection: 1; mode=block<br>
+Cache-Control: public, max-age=21600<br>
+Age: 16604<br>
+Alternate-Protocol: 80:quic<br>
+</p></div><h4><span class="a_request" id="request4" data-target-id="headers_4">+ Request 4: http://i1.ytimg.com/i/cMTZY1rFXO3Rj44D5VMyiw/1.jpg</span></h4><div class="header_details" id="headers_4"><p class="indented2">
+<b>URL:</b> http://i1.ytimg.com/i/cMTZY1rFXO3Rj44D5VMyiw/1.jpg<br>
+<b>Host:</b> i1.ytimg.com<br>
+<b>IP:</b> 74.125.225.64<br>
+<b>Location:</b> Google<br>
+<b>Error/Status Code:</b> 200<br>
+<b>Client Port:</b> 64373<br>
+<b>Start Offset:</b> 0.628 s<br>
+<b>Initial Connection:</b> 52 ms<br>
+<b>Time to First Byte:</b> 57 ms<br>
+<b>Content Download:</b> 19 ms<br>
+<b>Bytes In (downloaded):</b> 6.1 KB<br>
+<b>Bytes Out (uploaded):</b> 0.3 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+GET /i/cMTZY1rFXO3Rj44D5VMyiw/1.jpg HTTP/1.1<br>
+Host: i1.ytimg.com<br>
+User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:23.0) Gecko/20100101 Firefox/23.0 PTST/133<br>
+Accept: image/png,image/*;q=0.8,*/*;q=0.5<br>
+Accept-Language: en-US,en;q=0.5<br>
+Accept-Encoding: gzip, deflate<br>
+Referer: http://www.youtube.com/<br>
+Connection: keep-alive<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+HTTP/1.1 200 OK<br>
+Content-Type: image/png<br>
+Last-Modified: Mon, 16 Sep 2013 10:00:55 GMT<br>
+Date: Mon, 16 Sep 2013 10:00:55 GMT<br>
+Expires: Mon, 16 Sep 2013 16:00:55 GMT<br>
+X-Content-Type-Options: nosniff<br>
+Server: sffe<br>
+Content-Length: 5901<br>
+X-XSS-Protection: 1; mode=block<br>
+Cache-Control: public, max-age=21600<br>
+Age: 16708<br>
+Alternate-Protocol: 80:quic<br>
+</p></div><h4><span class="a_request" id="request5" data-target-id="headers_5">+ Request 5: http://i1.ytimg.com/i/pSgg_ECBj25s9moCDfSTsA/1.jpg</span></h4><div class="header_details" id="headers_5"><p class="indented2">
+<b>URL:</b> http://i1.ytimg.com/i/pSgg_ECBj25s9moCDfSTsA/1.jpg<br>
+<b>Host:</b> i1.ytimg.com<br>
+<b>IP:</b> 74.125.225.64<br>
+<b>Location:</b> Google<br>
+<b>Error/Status Code:</b> 200<br>
+<b>Client Port:</b> 64370<br>
+<b>Start Offset:</b> 0.628 s<br>
+<b>Initial Connection:</b> 53 ms<br>
+<b>Time to First Byte:</b> 57 ms<br>
+<b>Content Download:</b> 10 ms<br>
+<b>Bytes In (downloaded):</b> 3.3 KB<br>
+<b>Bytes Out (uploaded):</b> 0.3 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+GET /i/pSgg_ECBj25s9moCDfSTsA/1.jpg HTTP/1.1<br>
+Host: i1.ytimg.com<br>
+User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:23.0) Gecko/20100101 Firefox/23.0 PTST/133<br>
+Accept: image/png,image/*;q=0.8,*/*;q=0.5<br>
+Accept-Language: en-US,en;q=0.5<br>
+Accept-Encoding: gzip, deflate<br>
+Referer: http://www.youtube.com/<br>
+Connection: keep-alive<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+HTTP/1.1 200 OK<br>
+Content-Type: image/jpeg<br>
+Last-Modified: Mon, 16 Sep 2013 10:08:37 GMT<br>
+Date: Mon, 16 Sep 2013 10:08:37 GMT<br>
+Expires: Mon, 16 Sep 2013 16:08:37 GMT<br>
+X-Content-Type-Options: nosniff<br>
+Server: sffe<br>
+Content-Length: 3043<br>
+X-XSS-Protection: 1; mode=block<br>
+Cache-Control: public, max-age=21600<br>
+Age: 16246<br>
+Alternate-Protocol: 80:quic<br>
+</p></div><h4><span class="a_request" id="request6" data-target-id="headers_6">+ Request 6: http://ad.doubleclick.net/N4061/adi/com.ythome/_default;sz=970x250;tile=1;plat=pc;dc_yt=1;kbsg=HPUS130916;kga=-1;kgg=-1;klg=en;kmyd=ad_creative_1;ord=8488572462040933?</span></h4><div class="header_details" id="headers_6"><p class="indented2">
+<b>URL:</b> http://ad.doubleclick.net/N4061/adi/com.ythome/_default;sz=970x250;tile=1;plat=pc;dc_yt=1;kbsg=HPUS130916;kga=-1;kgg=-1;klg=en;kmyd=ad_creative_1;ord=8488572462040933?<br>
+<b>Host:</b> ad.doubleclick.net<br>
+<b>IP:</b> 74.125.225.124<br>
+<b>Location:</b> Mountain View, CA<br>
+<b>Error/Status Code:</b> 200<br>
+<b>Client Port:</b> 64374<br>
+<b>Start Offset:</b> 0.628 s<br>
+<b>DNS Lookup:</b> 2 ms<br>
+<b>Initial Connection:</b> 52 ms<br>
+<b>Time to First Byte:</b> 124 ms<br>
+<b>Content Download:</b> 3 ms<br>
+<b>Bytes In (downloaded):</b> 4.3 KB<br>
+<b>Bytes Out (uploaded):</b> 0.5 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+GET /N4061/adi/com.ythome/_default;sz=970x250;tile=1;plat=pc;dc_yt=1;kbsg=HPUS130916;kga=-1;kgg=-1;klg=en;kmyd=ad_creative_1;ord=8488572462040933? HTTP/1.1<br>
+Host: ad.doubleclick.net<br>
+User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:23.0) Gecko/20100101 Firefox/23.0 PTST/133<br>
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8<br>
+Accept-Language: en-US,en;q=0.5<br>
+Accept-Encoding: gzip, deflate<br>
+Referer: http://www.youtube.com/<br>
+Cookie: test_cookie=CheckForPermission; _drt_=NO_DATA<br>
+Connection: keep-alive<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+HTTP/1.1 200 OK<br>
+P3P: policyref=&quot;http://googleads.g.doubleclick.net/pagead/gcn_p3p_.xml&quot;, CP=&quot;CURa ADMa DEVa TAIo PSAo PSDo OUR IND UNI PUR INT DEM STA PRE COM NAV OTC NOI DSP COR&quot;<br>
+Google-LineItem-Id: 95935669<br>
+Google-Creative-Id: 34070643709<br>
+Content-Type: text/html; charset=UTF-8<br>
+Set-Cookie: id=2232b53bb50100b3||t=1379342363|et=730|cs=002213fd48907a85b205b124d8; expires=Wed, 16-Sep-2015 14:39:23 GMT; path=/; domain=.doubleclick.net<br>
+Set-Cookie: test_cookie=; domain=.doubleclick.net; path=/; Max-Age=0; expires=Mon, 21 Jul 2008 23:59:00 GMT<br>
+X-Content-Type-Options: nosniff<br>
+Content-Encoding: gzip<br>
+Date: Mon, 16 Sep 2013 14:39:24 GMT<br>
+Server: cafe<br>
+Cache-Control: private<br>
+Content-Length: 3606<br>
+X-XSS-Protection: 1; mode=block<br>
+Expires: Mon, 16 Sep 2013 14:39:24 GMT<br>
+Alternate-Protocol: 80:quic<br>
+</p></div><h4><span class="a_request" id="request7" data-target-id="headers_7">+ Request 7: http://ad.doubleclick.net/N6762/adi/mkt.ythome_1x1/;sz=1x1;tile=3;plat=pc;dc_yt=1;kga=-1;kgg=-1;klg=en;kmyd=ad_creative_3;ord=6771752735849270?</span></h4><div class="header_details" id="headers_7"><p class="indented2">
+<b>URL:</b> http://ad.doubleclick.net/N6762/adi/mkt.ythome_1x1/;sz=1x1;tile=3;plat=pc;dc_yt=1;kga=-1;kgg=-1;klg=en;kmyd=ad_creative_3;ord=6771752735849270?<br>
+<b>Host:</b> ad.doubleclick.net<br>
+<b>IP:</b> 74.125.225.124<br>
+<b>Location:</b> Mountain View, CA<br>
+<b>Error/Status Code:</b> 200<br>
+<b>Client Port:</b> 64375<br>
+<b>Start Offset:</b> 0.629 s<br>
+<b>Initial Connection:</b> 51 ms<br>
+<b>Time to First Byte:</b> 96 ms<br>
+<b>Content Download:</b> 3 ms<br>
+<b>Bytes In (downloaded):</b> 2.7 KB<br>
+<b>Bytes Out (uploaded):</b> 0.5 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+GET /N6762/adi/mkt.ythome_1x1/;sz=1x1;tile=3;plat=pc;dc_yt=1;kga=-1;kgg=-1;klg=en;kmyd=ad_creative_3;ord=6771752735849270? HTTP/1.1<br>
+Host: ad.doubleclick.net<br>
+User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:23.0) Gecko/20100101 Firefox/23.0 PTST/133<br>
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8<br>
+Accept-Language: en-US,en;q=0.5<br>
+Accept-Encoding: gzip, deflate<br>
+Referer: http://www.youtube.com/<br>
+Cookie: test_cookie=CheckForPermission; _drt_=NO_DATA<br>
+Connection: keep-alive<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+HTTP/1.1 200 OK<br>
+P3P: policyref=&quot;http://googleads.g.doubleclick.net/pagead/gcn_p3p_.xml&quot;, CP=&quot;CURa ADMa DEVa TAIo PSAo PSDo OUR IND UNI PUR INT DEM STA PRE COM NAV OTC NOI DSP COR&quot;<br>
+Google-LineItem-Id: 41854556<br>
+Google-Creative-Id: 17542624796<br>
+Content-Type: text/html; charset=UTF-8<br>
+Set-Cookie: id=222b563cb50100ef||t=1379342363|et=730|cs=002213fd489bb2b77b52bb7fd7; expires=Wed, 16-Sep-2015 14:39:23 GMT; path=/; domain=.doubleclick.net<br>
+Set-Cookie: test_cookie=; domain=.doubleclick.net; path=/; Max-Age=0; expires=Mon, 21 Jul 2008 23:59:00 GMT<br>
+X-Content-Type-Options: nosniff<br>
+Content-Encoding: gzip<br>
+Date: Mon, 16 Sep 2013 14:39:24 GMT<br>
+Server: cafe<br>
+Cache-Control: private<br>
+Content-Length: 1959<br>
+X-XSS-Protection: 1; mode=block<br>
+Expires: Mon, 16 Sep 2013 14:39:24 GMT<br>
+Alternate-Protocol: 80:quic<br>
+</p></div><h4><span class="a_request" id="request8" data-target-id="headers_8">+ Request 8: http://clients1.google.com/generate_204</span></h4><div class="header_details" id="headers_8"><p class="indented2">
+<b>URL:</b> http://clients1.google.com/generate_204<br>
+<b>Host:</b> clients1.google.com<br>
+<b>IP:</b> 74.125.228.73<br>
+<b>Location:</b> Google<br>
+<b>Error/Status Code:</b> 204<br>
+<b>Client Port:</b> 64386<br>
+<b>Start Offset:</b> 1.605 s<br>
+<b>DNS Lookup:</b> 11 ms<br>
+<b>Initial Connection:</b> 33 ms<br>
+<b>Time to First Byte:</b> 36 ms<br>
+<b>Bytes In (downloaded):</b> 0.1 KB<br>
+<b>Bytes Out (uploaded):</b> 0.3 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+GET /generate_204 HTTP/1.1<br>
+Host: clients1.google.com<br>
+User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:23.0) Gecko/20100101 Firefox/23.0 PTST/133<br>
+Accept: image/png,image/*;q=0.8,*/*;q=0.5<br>
+Accept-Language: en-US,en;q=0.5<br>
+Accept-Encoding: gzip, deflate<br>
+Referer: http://www.youtube.com/<br>
+Connection: keep-alive<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+HTTP/1.1 204 No Content<br>
+Content-Length: 0<br>
+Content-Type: text/html; charset=UTF-8<br>
+Date: Mon, 16 Sep 2013 14:39:24 GMT<br>
+Server: GFE/2.0<br>
+</p></div><h4><span class="a_request" id="request9" data-target-id="headers_9">+ Request 9: http://csi.gstatic.com/csi?v=2&amp;s=youtube&amp;action=glo&amp;yt_spf=0&amp;ei=Gxg3UrXvGeGBygHa04EI&amp;yt_lt=cold&amp;yt_li=0&amp;e=916904,932247,900817,916612&amp;srt=354&amp;rt=ce.62,cl.78,hr.166,je.208,jl.210,ol.632,aft.632&amp;it=st.169</span></h4><div class="header_details" id="headers_9"><p class="indented2">
+<b>URL:</b> http://csi.gstatic.com/csi?v=2&s=youtube&action=glo&yt_spf=0&ei=Gxg3UrXvGeGBygHa04EI&yt_lt=cold&yt_li=0&e=916904,932247,900817,916612&srt=354&rt=ce.62,cl.78,hr.166,je.208,jl.210,ol.632,aft.632&it=st.169<br>
+<b>Host:</b> csi.gstatic.com<br>
+<b>IP:</b> 173.194.126.79<br>
+<b>Location:</b> Mountain View, CA<br>
+<b>Error/Status Code:</b> 204<br>
+<b>Client Port:</b> 64383<br>
+<b>Start Offset:</b> 1.617 s<br>
+<b>DNS Lookup:</b> 328 ms<br>
+<b>Initial Connection:</b> 271 ms<br>
+<b>Time to First Byte:</b> 309 ms<br>
+<b>Bytes In (downloaded):</b> 0.3 KB<br>
+<b>Bytes Out (uploaded):</b> 0.5 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+GET /csi?v=2&amp;s=youtube&amp;action=glo&amp;yt_spf=0&amp;ei=Gxg3UrXvGeGBygHa04EI&amp;yt_lt=cold&amp;yt_li=0&amp;e=916904,932247,900817,916612&amp;srt=354&amp;rt=ce.62,cl.78,hr.166,je.208,jl.210,ol.632,aft.632&amp;it=st.169 HTTP/1.1<br>
+Host: csi.gstatic.com<br>
+User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:23.0) Gecko/20100101 Firefox/23.0 PTST/133<br>
+Accept: image/png,image/*;q=0.8,*/*;q=0.5<br>
+Accept-Language: en-US,en;q=0.5<br>
+Accept-Encoding: gzip, deflate<br>
+Referer: http://www.youtube.com/<br>
+Connection: keep-alive<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+HTTP/1.1 204 No Content<br>
+Pragma: no-cache<br>
+Cache-Control: private, no-cache<br>
+Expires: Wed, 17 Sep 1975 21:32:10 GMT<br>
+Access-Control-Allow-Origin: *<br>
+Last-Modified: Wed, 21 Jan 2004 19:51:30 GMT<br>
+Content-Type: image/gif<br>
+Date: Mon, 16 Sep 2013 14:39:25 GMT<br>
+Server: Golfe2<br>
+Content-Length: 0<br>
+Alternate-Protocol: 80:quic<br>
+</p></div><h4><span class="a_request" id="request10" data-target-id="headers_10">+ Request 10: http://gcdn.2mdn.net/videoplayback/id/4be7727f2b3d58fb/itag/15/source/doubleclick/ratebypass/yes/ip/0.0.0.0/ipbits/0/expire/3523552036/sparams/id,itag,source,ratebypass,ip,ipbits,expire/signature/AAFA0A98A7093B977F1688A3EF5AD0E20326EFC.8C317F2EC9E813F7443F9F2223463BEAD9EA2E19/key/ck2/file/file.flv</span></h4><div class="header_details" id="headers_10"><p class="indented2">
+<b>URL:</b> http://gcdn.2mdn.net/videoplayback/id/4be7727f2b3d58fb/itag/15/source/doubleclick/ratebypass/yes/ip/0.0.0.0/ipbits/0/expire/3523552036/sparams/id,itag,source,ratebypass,ip,ipbits,expire/signature/AAFA0A98A7093B977F1688A3EF5AD0E20326EFC.8C317F2EC9E813F7443F9F2223463BEAD9EA2E19/key/ck2/file/file.flv<br>
+<b>Host:</b> gcdn.2mdn.net<br>
+<b>IP:</b> 74.125.225.73<br>
+<b>Location:</b> Google<br>
+<b>Error/Status Code:</b> 302<br>
+<b>Client Port:</b> 64388<br>
+<b>Start Offset:</b> 1.665 s<br>
+<b>DNS Lookup:</b> 12 ms<br>
+<b>Initial Connection:</b> 54 ms<br>
+<b>Time to First Byte:</b> 70 ms<br>
+<b>Bytes In (downloaded):</b> 1.2 KB<br>
+<b>Bytes Out (uploaded):</b> 0.7 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+GET /videoplayback/id/4be7727f2b3d58fb/itag/15/source/doubleclick/ratebypass/yes/ip/0.0.0.0/ipbits/0/expire/3523552036/sparams/id,itag,source,ratebypass,ip,ipbits,expire/signature/AAFA0A98A7093B977F1688A3EF5AD0E20326EFC.8C317F2EC9E813F7443F9F2223463BEAD9EA2E19/key/ck2/file/file.flv HTTP/1.1<br>
+Host: gcdn.2mdn.net<br>
+User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:23.0) Gecko/20100101 Firefox/23.0 PTST/133<br>
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8<br>
+Accept-Language: en-US,en;q=0.5<br>
+Accept-Encoding: gzip, deflate<br>
+Referer: http://s0.2mdn.net/ads/richmedia/studio/23002232/24883709_20130912141930234_main_polite_INP.swf<br>
+Connection: keep-alive<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+HTTP/1.1 302 Found<br>
+Date: Mon, 16 Sep 2013 14:39:25 GMT<br>
+Pragma: no-cache<br>
+Expires: Fri, 01 Jan 1990 00:00:00 GMT<br>
+Cache-Control: no-cache, must-revalidate<br>
+Location: http://r2---sn-p5qlsn7e.c.2mdn.net/videoplayback/id/4be7727f2b3d58fb/itag/15/source/doubleclick/ratebypass/yes/ip/72.66.115.14/ipbits/0/expire/3523552036/sparams/expire,id,ip,ipbits,itag,ratebypass,source/signature/5751B22A1BBB3D277B2CAF9196B0D801CAF9D332.0DCC31B03C26EF1D0379B3B1B5613653DC9BE520/key/cms1?cms_redirect=yes&amp;ms=au&amp;mt=1379342277&amp;mv=m&amp;file=file<br>
+Content-Type: text/html; charset=UTF-8<br>
+Server: ClientMapServer<br>
+Content-Length: 570<br>
+X-XSS-Protection: 1; mode=block<br>
+X-Frame-Options: SAMEORIGIN<br>
+Alternate-Protocol: 80:quic<br>
+</p></div><h4><span class="a_request" id="request11" data-target-id="headers_11">+ Request 11: http://r2---sn-p5qlsn7e.c.2mdn.net/videoplayback/id/4be7727f2b3d58fb/itag/15/source/doubleclick/ratebypass/yes/ip/72.66.115.14/ipbits/0/expire/3523552036/sparams/expire,id,ip,ipbits,itag,ratebypass,source/signature/5751B22A1BBB3D277B2CAF9196B0D801CAF9D332.0DCC31B03C26EF1D0379B3B1B5613653DC9BE520/key/cms1?cms_redirect=yes&amp;ms=au&amp;mt=1379342277&amp;mv=m&amp;file=file</span></h4><div class="header_details" id="headers_11"><p class="indented2">
+<b>URL:</b> http://r2---sn-p5qlsn7e.c.2mdn.net/videoplayback/id/4be7727f2b3d58fb/itag/15/source/doubleclick/ratebypass/yes/ip/72.66.115.14/ipbits/0/expire/3523552036/sparams/expire,id,ip,ipbits,itag,ratebypass,source/signature/5751B22A1BBB3D277B2CAF9196B0D801CAF9D332.0DCC31B03C26EF1D0379B3B1B5613653DC9BE520/key/cms1?cms_redirect=yes&ms=au&mt=1379342277&mv=m&file=file<br>
+<b>Host:</b> r2---sn-p5qlsn7e.c.2mdn.net<br>
+<b>IP:</b> 173.194.63.7<br>
+<b>Location:</b> Mountain View, CA<br>
+<b>Error/Status Code:</b> 200<br>
+<b>Client Port:</b> 64391<br>
+<b>Start Offset:</b> 1.771 s<br>
+<b>DNS Lookup:</b> 1 ms<br>
+<b>Initial Connection:</b> 31 ms<br>
+<b>Time to First Byte:</b> 41 ms<br>
+<b>Content Download:</b> 1461 ms<br>
+<b>Bytes In (downloaded):</b> 867.2 KB<br>
+<b>Bytes Out (uploaded):</b> 0.7 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+GET /videoplayback/id/4be7727f2b3d58fb/itag/15/source/doubleclick/ratebypass/yes/ip/72.66.115.14/ipbits/0/expire/3523552036/sparams/expire,id,ip,ipbits,itag,ratebypass,source/signature/5751B22A1BBB3D277B2CAF9196B0D801CAF9D332.0DCC31B03C26EF1D0379B3B1B5613653DC9BE520/key/cms1?cms_redirect=yes&amp;ms=au&amp;mt=1379342277&amp;mv=m&amp;file=file HTTP/1.1<br>
+Host: r2---sn-p5qlsn7e.c.2mdn.net<br>
+User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:23.0) Gecko/20100101 Firefox/23.0 PTST/133<br>
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8<br>
+Accept-Language: en-US,en;q=0.5<br>
+Accept-Encoding: gzip, deflate<br>
+Referer: http://s0.2mdn.net/ads/richmedia/studio/23002232/24883709_20130912141930234_main_polite_INP.swf<br>
+Connection: keep-alive<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+HTTP/1.1 200 OK<br>
+Last-Modified: Fri, 06 Sep 2013 20:20:12 GMT<br>
+Content-Type: application/octet-stream<br>
+Date: Mon, 16 Sep 2013 14:39:25 GMT<br>
+Expires: Mon, 16 Sep 2013 14:39:25 GMT<br>
+Cache-Control: private, max-age=86400<br>
+Accept-Ranges: bytes<br>
+Content-Length: 887698<br>
+Connection: close<br>
+Alternate-Protocol: 80:quic<br>
+X-Content-Type-Options: nosniff<br>
+Server: gvs 1.0<br>
+</p></div></div>
+            </div>
+
+                        <div style="width:100%;float:none;clear:both;"></div>
+
+            </div></div>            </div>
+        </div>
+    </div>
+</div>
+
+   
+    <table id="feeds"><tr><th>Recent Industry Blog Posts</th><th>Recent Discussions</th></tr><tr><td><ul><li><a title="Zoompf" href="http://zoompf.com/blog/2013/10/3-must-do-tips-to-get-your-e-commerce-site-ready-for-black-friday">3 Must-Dos for the E-Commerce Web Team Before Black Friday</a></li><li><a title="Strangeloop Networks" href="http://www.webperformancetoday.com/2013/10/02/iphone-speed-test-findings-faster-processor-doesnt-equal-huge-performance-boost/">iPhone speed test findings: Faster processor doesn’t equal huge performance boost</a></li><li><a title="Zoompf" href="http://zoompf.com/blog/2013/10/maximizing-search-rank-by-optimizing-your-ttfb">Improving Search Rank by Optimizing your Time to First Byte</a></li><li><a title="Ilya Grigorik" href="http://feeds.igvita.com/~r/igvita/~3/-ehrQc7PJyQ/">Retrospective: High Performance Browser Networking</a></li><li><a title="Zoompf" href="http://zoompf.com/blog/2013/09/top-9-us-news-sites-race-for-fastest-site">Top 9 US News Sites Race for Fastest Site</a></li><li id="show_more_feeds_1"><a href="javascript:void(o)" onclick="showFeeds(1)">more...</a></li><li class="morefeeds" ><div id="more_feeds_1" class="hidden"><ul><li><a title="Stoyan Stefanov" href="http://www.phpied.com/nyc-bound/">NYC.bind(me)</a></li><li><a title="Strangeloop Networks" href="http://www.webperformancetoday.com/2013/09/19/sneak-peek-this-is-your-brain-on-mobile/">Sneak peek: This is your brain on the mobile web</a></li><li><a title="Guy Podjarny" href="http://www.guypo.com/conferences/walking-on-the-edges/">Walking on the Edge(s)</a></li><li><a title="Gilly Barr" href="http://www.debuggerstepthrough.com/2013/09/prefetching-dns-lookups.html">Prefetching dns lookups</a></li><li><a title="Stoyan Stefanov" href="http://www.phpied.com/server-side-react-with-php-part-2/">Server-side React with PHP – part 2</a></li><li><a title="Stoyan Stefanov" href="http://www.phpied.com/borrowing-typography-tricks-from-the-masters/">Borrowing typography tricks from the masters</a></li><li><a title="Guy Podjarny" href="http://www.guypo.com/uncategorized/responsive-images-meetup-a-subjective-summary/">Responsive Images Meetup – A Subjective Summary</a></li><li><a title="Stoyan Stefanov" href="http://www.phpied.com/server-side-react-with-php/">Server-side React with PHP</a></li><li><a title="Stoyan Stefanov" href="http://www.phpied.com/installing-v8js-for-php-on-a-mac/">Installing v8js for PHP on a Mac</a></li><li><a title="Strangeloop Networks" href="http://www.webperformancetoday.com/2013/09/11/the-slow-web-movement/">The Slow Web: Why fast is important… and why it isn’t</a></li><li><a title="Stoyan Stefanov" href="http://www.phpied.com/reactive-table/">Reactive table</a></li><li><a title="Aaron Peters" href="http://www.aaronpeters.nl/blog/velocity-nyc-2013-raffle">Win a free Velocity NYC conference pass!</a></li></ul></div></li></ul></td><td><ul><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12584">FTTB problems</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12581">Site vs File (Browser Caching) Different? Why?</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12580">Test not found when trying to view tests</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12579">Apache subfolder settings</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12578">RoseHosting.com VPS specials - 25% OFF | Fully Managed | FREE DirectAdmin</a></li><li id="show_more_feeds_2"><a href="javascript:void(o)" onclick="showFeeds(2)">more...</a></li><li class="morefeeds" ><div id="more_feeds_2" class="hidden"><ul><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12577">&quot;The test completed but there were no successful results.&quot; with maxymiser</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12576">CDN detection control file</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12575">Help with my test results</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12573">favicon</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12572">fancybox 404 errors</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12571">Chrome browser window closes automaticaly on starting test</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12570">Testlocation Germany over 152 Pending Tests</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12569">Video tests</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12568">DNS Times from XML data from wpt_batch.py</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12567">cookie less domain need help</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12566">no cache control for file</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12565">SPNego Auth</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12563">Filmstrip API</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12562">Help needed with improvements from Test Results!</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12561">CSV date format - no leading zeros</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12559">Pagespeed and WPT results - Rule set Matrix?</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12558">DGvertTech LLC</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12557">WPT not detecting CDN being used</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12556">Awful Results - Please Help</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12554">Setting JSON style cookie</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12553">Not getting results when hitting a device</a></li></ul></div></li></ul></td></tr></table>
+    <div id="sponsor_header">WebPagetest Partners</div><div id="links"><table class="links"><tr><td ><a href="http://www.neustar.biz/enterprise/web-performance" title="Neustar"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors24.png?v=5); background-position: 0px 0px;"></div></a></td><td ><a href="http://newrelic.com/" title="New Relic"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors2.png?v=3); background-position: 0px -160px;"></div></a></td><td ><a href="http://www.tid.es/en/" title="Telef&oacute;nica Digital"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors24.png?v=5); background-position: 0px -160px;"></div></a></td><td ><a href="http://www.telerik.com/" title="Telerik - making software development easier and more enjoyable"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors4.png?v=7); background-position: 0px -160px;"></div></a></td><td ><a href="http://www.netdna.com/" title="NetDNA"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors2.png?v=3); background-position: 0px -320px;"></div></a></td></tr></table><table class="links"><tr><td ><a href="http://www.webogroup.com/?utm_source=webpagetest&utm_medium=logo&utm_campaign=webo" title="WEBO Software. Website acceleration and monitoring solutions"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors3.png?v=1); background-position: 0px -240px;"></div></a></td><td ><a href="http://dev.aol.com/" title="AOL"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors1.png?v=2); background-position: 0px -280px;"></div></a></td><td ><a href="http://www.maxcdn.com/" title="MaxCDN Content Delivery Network"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors3.png?v=1); background-position: 0px 0px;"></div></a></td><td ><a href="http://www.gutefrage.net/" title="Gute Fragen - hilfreiche Antworten - die Ratgeber Community gutefrage.net"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors4.png?v=7); background-position: 0px -200px;"></div></a></td><td ><a href="http://www.turbobytes.com/" title="Faster content delivery - Turbobytes"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors1.png?v=2); background-position: 0px -40px;"></div></a></td></tr></table><table class="links"><tr><td ><a href="http://www.fasterize.com/" title="Fasterize"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors3.png?v=1); background-position: 0px -320px;"></div></a></td><td ><a href="http://www.godaddy.com/?isc=WPTlogo" title="World's #1 ICANN-accredited domain registrar | Go Daddy"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors4.png?v=7); background-position: 0px -80px;"></div></a></td><td ><a href="http://www.exceda.com/landing/" title="Exceda"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors3.png?v=1); background-position: 0px -160px;"></div></a></td><td ><a href="http://www.watchmouse.com/" title="WatchMouse website performance monitoring"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors3.png?v=1); background-position: 0px -40px;"></div></a></td><td ><a href="http://www.globalis-ms.com/" title="GLOBALIS media systems"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors24.png?v=5); background-position: 0px -40px;"></div></a></td></tr></table><table class="links"><tr><td ><a href="http://www.cisin.com/" title="CIS :: One-Stop Outsourcing Services, Since 2003! | We do IT better"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors24.png?v=5); background-position: 0px -400px;"></div></a></td><td ><a href="http://www.ip-label.co.uk/" title="ip-label"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors1.png?v=2); background-position: 0px -240px;"></div></a></td><td ><a href="http://wpengine.com/" title="WP Engine"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors1.png?v=2); background-position: 0px -120px;"></div></a></td><td ><a href="http://www.efficens-software.com/solution/web-performance-optimization/" title="Efficens Software - Your Israel based partner for Web Performance"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors3.png?v=1); background-position: 0px -360px;"></div></a></td><td ><a href="http://www.mysitespeed.com/" title="Mysitespeed.com"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors2.png?v=3); background-position: 0px -280px;"></div></a></td></tr></table><table class="links"><tr><td ><a href="http://www.dotcom-monitor.com/?se=574612167f2948219c65b6ca3120f44f" title="Website and Application Performance Monitoring by Dotcom-Monitor.com"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors3.png?v=1); background-position: 0px -200px;"></div></a></td><td ><a href="http://www.interhost.co.il/" title="interhost.co.il - Israel Web Hosting Services"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors24.png?v=5); background-position: 0px -480px;"></div></a></td><td ><a href="http://key-performance.eu/" title="Key Performance"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors24.png?v=5); background-position: 0px -120px;"></div></a></td><td ><a href="http://www.trademe.co.nz/" title="Trade Me"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors4.png?v=7); background-position: 0px 0px;"></div></a></td><td ><a href="http://www.cloudshark.org" title="CloudShark"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors2.png?v=3); background-position: 0px -120px;"></div></a></td></tr></table><table class="links"><tr><td ><a href="http://www.iispeed.com/" title="Google PageSpeed optimization for Microsoft IIS"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors4.png?v=7); background-position: 0px -240px;"></div></a></td><td ><a href="http://www.rentavault.net/" title="Rentavault"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors2.png?v=3); background-position: 0px -240px;"></div></a></td><td ><a href="http://www.squixa.com/" title="Squixa MultiCDN and Front End Optimisation"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors24.png?v=5); background-position: 0px -440px;"></div></a></td><td ><a href="http://www.icomcept.de/" title="iCOMcept"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors2.png?v=3); background-position: 0px -80px;"></div></a></td><td ><a href="http://www.rusonyx.ru/" title="Rusonyx"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors24.png?v=5); background-position: 0px -200px;"></div></a></td></tr></table><table class="links"><tr><td ><a href="http://www.apicasystem.com/" title="Apica Inc"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors24.png?v=5); background-position: 0px -240px;"></div></a></td><td ><a href="http://www.akamai.com/" title="Akamai"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors3.png?v=1); background-position: 0px -80px;"></div></a></td><td ><a href="http://www.neotys.com/" title="Neotys Load &amp; Performance Testing"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors24.png?v=5); background-position: 0px -360px;"></div></a></td><td ><a href="http://www.kbsd.com/" title="*KBSD Switzerland*"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors1.png?v=2); background-position: 0px -80px;"></div></a></td><td ><a href="http://pagerain.com/" title="PageRain - The Simplest CDN"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors24.png?v=5); background-position: 0px -320px;"></div></a></td></tr></table><table class="links"><tr><td ><a href="http://yhost.ro" title="Y Host :: Web Hosting in Romania"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors4.png?v=7); background-position: 0px -120px;"></div></a></td><td ><a href="http://www.hostinginnederland.nl/" title="Hosting in Nederland - Vind de beste hosting voor je website"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors2.png?v=3); background-position: 0px -40px;"></div></a></td><td ><a href="http://admo.net/?webpagetest.org" title="Admo.net WebHosting"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors1.png?v=2); background-position: 0px -360px;"></div></a></td><td ><a href="http://www.limelight.com/" title="Limelight Networks"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors24.png?v=5); background-position: 0px -280px;"></div></a></td><td ><a href="http://www.bulletproof.net.au/" title="Bulletproof Mission Critical Hosting"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors1.png?v=2); background-position: 0px -200px;"></div></a></td></tr></table><table class="links"><tr><td ><a href="http://edgedirector.com/" title="edgedirector.com"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors1.png?v=2); background-position: 0px -160px;"></div></a></td><td ><a href="http://www.catchpoint.com/lp/wp_website_monitoring_trial.html" title="Catchpoint Systems"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors2.png?v=3); background-position: 0px -360px;"></div></a></td><td ><a href="http://www.dynatrace.com/" title="dynaTrace Software"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors1.png?v=2); background-position: 0px -320px;"></div></a></td><td ><a href="http://www.psw.net/" title="PSW GROUP"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors1.png?v=2); background-position: 0px 0px;"></div></a></td><td ><a href="http://www.radware.com/Products/ApplicationDelivery/FastView/default.aspx" title="Radware - Smart Network. Smart Business."><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors2.png?v=3); background-position: 0px 0px;"></div></a></td></tr></table><table class="links"><tr><td ><a href="http://www.daum.net/" title="DAUM Communications"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors3.png?v=1); background-position: 0px -280px;"></div></a></td><td></td><td ><a href="http://www.duplika.com/?utm_source=webpagetest&utm_medium=logo&utm_campaign=speed" title="duplika Internet Solutions"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors2.png?v=3); background-position: 0px -200px;"></div></a></td><td></td><td ><a href="http://www.measureworks.nl/" title="MeasureWorks"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors3.png?v=1); background-position: 0px -120px;"></div></a></td></tr></table></div>    <div class="cleared"></div>
+    
+    <script type="text/javascript" src="http://cdn.webpagetest.org/js/site.js?v=30"></script>
+<script>
+wptJSVer = '30';
+wptBrowser = 'Wget 1';
+function getCookie(c_name) {
+    var i,x,y,ARRcookies=document.cookie.split(";");
+    for (i=0;i<ARRcookies.length;i++) {
+      x=ARRcookies[i].substr(0,ARRcookies[i].indexOf("="));
+      y=ARRcookies[i].substr(ARRcookies[i].indexOf("=")+1);
+      x=x.replace(/^\s+|\s+$/g,"");
+      if (x==c_name)
+        return unescape(y);
+    }
+}
+
+function setCookie(c_name,value,exdays) {
+    var exdate=new Date();
+    exdate.setDate(exdate.getDate() + exdays);
+    var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
+    document.cookie=c_name + "=" + c_value;
+}
+
+// see if the browser we are in supports resource timing
+function WptExperiment() {
+    try {
+        if (window['performance'] != undefined &&
+            (window.performance.getEntriesByType ||
+             window.performance.webkitGetEntriesByType)) {
+            if (window.performance.getEntriesByType)
+                var requests = window.performance.getEntriesByType("resource");
+            else
+                var requests = window.performance.webkitGetEntriesByType("resource");
+            var detected = false;
+            var data = {'browser': wptBrowser,
+                        'jsCached': false,
+                        'cookiePresent': false,
+                        'existingSession' : false,
+                        'localStoragePresent' : false,
+                        'jsTime': 0};
+            for (i = 0; i < requests.length; i++) {
+                var url = requests[i].name;
+                if (requests[i].name.indexOf('site.js') != -1) {
+                    detected = true;
+                    if (requests[i].responseStart == 0 ||
+                        requests[i].responseStart == requests[i].requestStart)
+                        data.jsCached = true;
+                    data.jsTime = Math.round(requests[i].duration);
+                }
+            }
+            
+            if (getCookie('exptVer') == wptJSVer) data.cookiePresent = true;
+            setCookie('exptVer', wptJSVer, 365);
+            if (getCookie('exptSession') == wptJSVer) data.existingSession = true;
+            setCookie('exptSession', wptJSVer, null);
+            if (localStorage["exptVer"] == wptJSVer) data.localStoragePresent = true;
+            localStorage["exptVer"] = wptJSVer;
+            if (detected) {
+                console.log(JSON.stringify(data));
+                var debug_str = 'site.js loaded from ';
+                if (data.jsCached)
+                  debug_str += 'cache';
+                else
+                  debug_str += 'network';
+                debug_str += ' in ' + data.jsTime + ' milliseconds';
+                if (data.existingSession)
+                  debug_str += ' (Existing Session)';
+                else
+                  debug_str += ' (New Session)';
+                $("#experiment-timing").html(debug_str);
+                var xhr = new XMLHttpRequest();
+                xhr.open('POST', '/experiment/data.php', true);
+                xhr.send(JSON.stringify(data));
+            }
+        }
+    } catch(e){
+    }
+};
+
+window.addEventListener('load', WptExperiment, false);
+</script>
+    <script type="text/javascript">
+        function showFeeds(column)
+        {
+            var label = document.getElementById("show_more_feeds_" + column);
+            label.parentNode.removeChild( label );
+            
+            document.getElementById("more_feeds_" + column).className = "";
+            return false;
+        }
+
+        if (performance['measure'])
+          performance.measure('Content Processing', 'aft.Site Header');
+    </script>
+    
+<script type="text/javascript">
+(function(a,b,c){function d(){var a=b.createElement(c),d=b.getElementsByTagName(c)[0];a.async=a.src="http://s2.cdnplanet.com/static/rum/rum.js",d.parentNode.insertBefore(a,d)}if(a.location.protocol=="https:")return;a.addEventListener&&a.addEventListener("load",d,!1)})(window,document,"script")
+</script>
+<img height="1" width="1" style="border-style:none;" alt="" src="http://www.googleadservices.com/pagead/conversion/1049562605/?value=0&amp;label=-neBCNO9wwMQ7Zu89AM&amp;guid=ON&amp;script=0"/>    <script type="text/javascript">if(!NREUMQ.f){NREUMQ.f=function(){NREUMQ.push(["load",new Date().getTime()]);var e=document.createElement("script");e.type="text/javascript";e.src=(("http:"===document.location.protocol)?"http:":"https:")+"//"+"js-agent.newrelic.com/nr-100.js";document.body.appendChild(e);if(NREUMQ.a)NREUMQ.a();};NREUMQ.a=window.onload;window.onload=NREUMQ.f;};NREUMQ.push(["nrfj","beacon-1.newrelic.com","5b0327a758","2035125","NFBXZUNRW0ADAkRbCQ0aYENYH1FWFgBZXhVNRV1B",0,38,new Date().getTime(),"","","","",""]);</script>    
+    <div id="experiment-timing" style="color: #77A;"></div>        </div>
+
+        <script type="text/javascript">
+        function expandRequest(targetNode) {
+          if (targetNode.length) {
+            var div_to_expand = $('#' + targetNode.attr('data-target-id'));
+
+            if (div_to_expand.is(":visible")) {
+                div_to_expand.hide();
+                targetNode.html('+' + targetNode.html().substring(1));
+            } else {
+                div_to_expand.show();
+                targetNode.html('-' + targetNode.html().substring(1));
+            }
+          }
+        }
+
+        $(document).ready(function() { $("#tableDetails").tablesorter({
+            headers: { 3: { sorter:'currency' } ,
+                       4: { sorter:'currency' } ,
+                       5: { sorter:'currency' } ,
+                       6: { sorter:'currency' } ,
+                       7: { sorter:'currency' } ,
+                       8: { sorter:'currency' } ,
+                       9: { sorter:'currency' }
+                     }
+        }); } );
+
+        $('.a_request').click(function () {
+            expandRequest($(this));
+        });
+
+        function expandAll() {
+          $(".header_details").each(function(index) {
+            $(this).show();
+          });
+        }
+        
+        if (window.location.hash == '#all') {
+          expandAll();
+        } else
+          expandRequest($(window.location.hash));
+
+        var CloseRequestDialog = function(hash) {
+    hash.w.hide();
+    for (i=1;i<=wptRequestCount;i++) {
+        $("#request-overlay-" + i).removeClass("selected");
+        $("#request-overlay-" + i).addClass("transparent");
+    }
+    $('#radio1').attr('checked', 'checked');
+    $("#request-dialog-radio").buttonset('refresh');
+}
+
+// initialize the pop-up dialog        
+$('#request-dialog').jqm({overlay: 0, onHide: CloseRequestDialog})
+      .jqDrag('.jqDrag');
+$('input.jqmdX')
+    .hover( function(){ $(this).addClass('jqmdXFocus'); }, 
+            function(){ $(this).removeClass('jqmdXFocus'); })
+    .focus( function(){ this.hideFocus=true; $(this).addClass('jqmdXFocus'); })
+    .blur( function(){ $(this).removeClass('jqmdXFocus'); });
+    
+$("#request-dialog-radio").buttonset();
+$("#request-dialog-radio").change(function() {
+    var panel=$('#request-dialog-radio input[type=radio]:checked').val();
+    $("#dialog-contents div.dialog-tab-content").hide();
+    $("#" + panel).show();
+});
+
+var wptBodyRequest;
+
+// Test that a value is a valid duration.
+// Invalid durations include undefined and -1.
+function IsValidDuration(value) {
+    // Explicitly check the type.  Would you have guessed that Number(['9'])
+    // is 9?  We need to support strings because php makes it too easy to
+    // send a number as a string.  We need to support numbers like "123.4".
+    if (typeof value != 'number' && typeof value != 'string')
+        return false;
+
+    // Number('') is 0, but the empty string is not a valid duration.
+    if (value === '')
+        return false;
+
+    var num = Number(value);
+    return (!isNaN(num) && num !== -1);
+}
+
+function NumBytesAsDisplayString(numBytes) {
+    var numKb = numBytes / 1024.0;
+
+    // We display kilobytes with one decimal point.  If the value with that
+    // precision would be zero, display bytes instead.
+    if (numKb >= 0.1) {
+        return numKb.toFixed(1) + ' KB';
+    }
+    return numBytes + ' B';
+}
+
+function SelectRequest(request) {
+    $('#request-dialog').css('top', $("#request-overlay-" + request).position().top + 20);
+    $("#dialog-title").html('<a href="#request' + request + '">Request #' + request + '</a>');
+    var details='';
+    var requestHeaders='';
+    var responseHeaders='';
+    $("#response-body").html('');
+    $('#response-body-button').hide();
+    $("#response-image").html('');
+    $('#response-image-button').hide();
+    try {
+        if (wptBodyRequest !== undefined)
+            wptBodyRequest.abort();
+    } catch (err) {
+    }
+    if (wptRequestData[request - 1] !== undefined) {
+        var r = wptRequestData[request - 1];
+        if (r['full_url'] !== undefined) {
+            if (wptNoLinks) {
+                details += '<b>URL:</b> ' + r['full_url'] + '<br>';
+            } else {
+                details += '<b>URL:</b> <a href="' + r['full_url'] + '">' + r['full_url'] + '</a><br>';
+            }
+        }
+        if (r['initiator'] !== undefined && r['initiator'].length > 0) {
+            details += '<b>Loaded By:</b> ' + r['initiator'];
+            if (r['initiator_line'] !== undefined)
+                details += ':' + r['initiator_line'];
+            details += '<br>';
+        }
+        if (r['host'] !== undefined)
+            details += '<b>Host: </b>' + r['host'] + '<br>';
+        if (r['ip_addr'])
+            details += '<b>IP: </b>' + r['ip_addr'] + '<br>';
+        if (r['location'] !== undefined && r['location'].length)
+            details += '<b>Location: </b>' + r['location'] + '<br>';
+        if (r['responseCode'] !== undefined)
+            details += '<b>Error/Status Code: </b>' + r['responseCode'] + '<br>';
+        if (r['client_port'] !== undefined && r['client_port'])
+            details += '<b>Client Port: </b>' + r['client_port'] + '<br>';
+        if (r['load_start'] !== undefined)
+            details += '<b>Start Offset: </b>' + (r['load_start'] / 1000.0).toFixed(3) + ' s<br>';
+        if (IsValidDuration(r['dns_ms'])) {
+            details += '<b>DNS Lookup: </b>' + r['dns_ms'] + ' ms<br>';
+        } else if( r['dns_end'] !== undefined && r['dns_start'] !== undefined && r['dns_end'] > 0 ) {
+            var dnsTime = r['dns_end'] - r['dns_start'];
+            details += '<b>DNS Lookup: </b>' + dnsTime + ' ms<br>';
+        }
+        if (IsValidDuration(r['connect_ms'])) {
+            details += '<b>Initial Connection: </b>' + r['connect_ms'] + ' ms<br>';
+            if (r['is_secure'] !== undefined && r['is_secure'] && IsValidDuration(r['ssl_ms'])) {
+                details += '<b>SSL Negotiation: </b>' + r['ssl_ms'] + ' ms<br>';
+            }
+        } else if( r['connect_end'] !== undefined && r['connect_start'] !== undefined && r['connect_end'] > 0 ) {
+            var connectTime = r['connect_end'] - r['connect_start'];
+            details += '<b>Initial Connection: </b>' + connectTime + ' ms<br>';
+            if( r['ssl_end'] !== undefined && r['ssl_start'] !== undefined && r['ssl_end'] > 0 ) {
+                var sslTime = r['ssl_end'] - r['ssl_start'];
+                details += '<b>SSL Negotiation: </b>' + sslTime + ' ms<br>';
+            }
+        }
+        if (IsValidDuration(r['ttfb_ms'])) {
+            details += '<b>Time to First Byte: </b>' + r['ttfb_ms'] + ' ms<br>';
+        }
+        if (IsValidDuration(r['download_ms']))
+            details += '<b>Content Download: </b>' + r['download_ms'] + ' ms<br>';
+        if (r['bytesIn'] !== undefined)
+            details += '<b>Bytes In (downloaded): </b>' + NumBytesAsDisplayString(r['bytesIn']) + '<br>';
+        if (r['bytesOut'] !== undefined)
+            details += '<b>Bytes Out (uploaded): </b>' + NumBytesAsDisplayString(r['bytesOut']) + '<br>';
+        if (r['custom_rules'] !== undefined) {
+            for (rule in r['custom_rules']) {
+                details += '<b>Custom Rule - ' + rule + ': </b>(';
+                details += r['custom_rules'][rule]['count'] + ' matches) - ';
+                details += r['custom_rules'][rule]['value'].replace(/>/g, '&gt;').replace(/</g, '&lt;') + '<br>';
+            }
+        }
+        if (r['headers'] !== undefined){
+            if (r.headers['request'] !== undefined){
+                for (i=0;i<r.headers.request.length;i++) {
+                    requestHeaders += r.headers.request[i] + '<br>';
+                }
+            }
+            if (r.headers['response'] !== undefined){
+                for (i=0;i<r.headers.response.length;i++) {
+                    responseHeaders += r.headers.response[i] + '<br>';
+                }
+            }
+        }
+        if (r['body_url'] !== undefined && r['body_url'].length) {
+            try {
+                $("#response-body").text('Loading...');
+                $('#response-body-button').show();
+                wptBodyRequest = new XMLHttpRequest();
+                wptBodyRequest.open('GET', r['body_url'], true);
+                wptBodyRequest.onreadystatechange = function() {
+                if (wptBodyRequest.readyState == 4) {
+                    if (wptBodyRequest.status == 200) {
+                        $("#response-body").text(wptBodyRequest.responseText);
+                    } else {
+                        $("#response-body").text('');
+                    }
+                }
+              }
+              wptBodyRequest.send();
+            } catch (err) {
+            }
+        } else if (r['contentType'] !== undefined && r['contentType'].indexOf('image') >= 0) {
+            $('#response-body-button').show();
+            if (wptNoLinks) {
+                $("#response-body").html('<img style="max-width:100%; max-height:100%;" src="' + r['full_url'] + '">');
+            } else {
+                $("#response-body").html('<a href="' + r['full_url'] + '"><img style="max-width:100%; max-height:100%;" src="' + r['full_url'] + '"></a>');
+            }
+        }
+    }
+    $("#request-details").html(details);
+    $("#request-headers").html(requestHeaders);
+    $("#response-headers").html(responseHeaders);
+    $('#request-dialog').jqmShow();
+
+    // highlight the selected request
+    for (i=1;i<=wptRequestCount;i++) {
+        if (i == request)
+            $("#request-overlay-" + i).addClass("selected");
+        else
+            $("#request-overlay-" + i).removeClass("selected");
+    }
+}
+
+// support for the multi-waterfall translucency
+$(".waterfall-transparency").change(function() {
+    var newValue = this.value;
+    var id = this.name;
+    $("#" + id).css({ opacity: newValue });
+});
+        </script>
+    </body>
+</html>

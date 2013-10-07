@@ -1,0 +1,1431 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WebPagetest Test Details - Dulles : livejasmin.com - 09/16/13 15:34:08</title>
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<meta name="keywords" content="Performance Test,Details,Webpagetest,Website Speed Test,Page Speed">
+<meta name="description" content="Website performance test details - Dulles : livejasmin.com - 09/16/13 15:34:08">
+<meta name="author" content="Patrick Meenan">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge"> 
+
+<link rel="shortcut icon" href="/images/favicon.ico" type="image/vnd.microsoft.icon">
+<link rel="icon" href="/images/favicon.png" type="image/png">
+
+<script type="text/javascript">var NREUMQ=NREUMQ||[];NREUMQ.push(["mark","firstbyte",new Date().getTime()]);</script>
+<script type="text/javascript">
+var wptTemplate = 'Details';
+rumMapping = {'aft': 'custom0'};
+(function(){
+  var dom,doc,where,iframe = document.createElement('iframe');
+  iframe.src = "javascript:false";
+  (iframe.frameElement || iframe).style.cssText = "width: 0; height: 0; border: 0";
+  where = document.getElementsByTagName('script')[0];
+  where.parentNode.insertBefore(iframe, where);
+
+  try {
+    doc = iframe.contentWindow.document;
+  } catch(e) {
+    dom = document.domain;
+    iframe.src="javascript:var d=document.open();d.domain='"+dom+"';void(0);";
+    doc = iframe.contentWindow.document;
+  }
+  doc.open()._l = function() {
+    var js = this.createElement("script");
+    if(dom) this.domain = dom;
+    js.id = "boomr-if-as";
+    js.src = '//c.go-mpulse.net/boomerang/' +
+    'KLHEA-LW4C7-LHTMB-YZBLM-2BJ54';
+    BOOMR_lstart=new Date().getTime();
+    this.body.appendChild(js);
+  };
+  doc.write('<body onload="document._l();">');
+  doc.close();
+  })();
+        
+</script>
+<script type="text/javascript">
+;(function(){var e=typeof window!="undefined"?window:exports,t=[];e.performance||(e.performance={});e.performance.now||(e.performance.now=performance.now||performance.webkitNow||performance.msNow||performance.mozNow);if(!e.performance.now){var n=Date.now?Date.now():+(new Date);if(performance.timing&&performance.timing)n=performance.timing.navigationStart;e.performance.now=function(){var e=Date.now?Date.now():+(new Date);return e-n}}e.performance.mark||(e.performance.mark=e.performance.webkitMark?e.performance.webkitMark:function(n){t.push({name:n,entryType:"mark",startTime:e.performance.now(),duration:0})});e.performance.getEntriesByType||(e.performance.getEntriesByType=e.performance.webkitGetEntriesByType?e.performance.webkitGetEntriesByType:function(e){return e=="mark"?t:undefined})})();window.markUserTime=function(e){var t=window["requestAnimationFrame"]||function(e){setTimeout(e,0)};t(function(){window.performance.mark(e);if(window["console"]&&console["timeStamp"])console.timeStamp(e)})};(function(){var e=function(e,t,n){t=Math.round(t);if(t>=0&&t<36e5){if(!n&&window["_gaq"])_gaq.push(["_trackTiming","UserTimings",e,t]);if(n&&window["rumMapping"]&&window.rumMapping[e])BOOMR.plugins.RT.setTimer(window.rumMapping[e],t)}};utReportRUM=function(t){var n=window.performance.getEntriesByType("mark");var r={};for(i=0;i<n.length;i++){g="usertiming";if(r[g]==undefined||n[i].startTime>r[g])r[g]=n[i].startTime;p=n[i].name.match(/([^\.]+)\.([^\.]*)/);if(p&&p.length>2&&(r[p[1]]==undefined||n[i].startTime>r[p[1]]))r[p[1]]=n[i].startTime}for(g in r)e(g,r[g],t)};utOnLoad=function(){utReportRUM(false)};if(window["addEventListener"])window.addEventListener("load",utOnLoad,false);else if(window["attachEvent"])window.attachEvent("onload",utOnLoad);utSent=false;BOOMR=window.BOOMR||{};BOOMR.plugins=BOOMR.plugins||{};BOOMR.plugins.UserTiming={init:function(e){BOOMR.subscribe("page_ready",function(){if(!utSent){utReportRUM(true);utSent=true;BOOMR.sendBeacon()}})},is_complete:function(){return utSent}}})();
+</script>
+<link rel="stylesheet" href="http://cdn.webpagetest.org/pagestyle.css?v=65" type="text/css">
+<style type="text/css">
+
+</style>
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3755571-1']);
+_gaq.push(['_setCustomVar', 1, 'Template', 'Details', 3]);
+    _gaq.push(['_setSiteSpeedSampleRate', 100]);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+    var ga = document.createElement('script');
+    ga.src = ('https:' == document.location.protocol ?
+        'https://ssl' : 'http://www') +
+        '.google-analytics.com/ga.js';
+    ga.setAttribute('async', 'true');
+    document.documentElement.firstChild.appendChild(ga);
+    })();
+    </script>
+        <style type="text/css">
+        div.bar {
+            height:12px;
+            margin-top:auto;
+            margin-bottom:auto;
+        }
+
+        .left {text-align:left;}
+        .center {text-align:center;}
+
+        .indented1 {padding-left: 40pt;}
+        .indented2 {padding-left: 80pt;}
+
+        td {
+            white-space:nowrap;
+            text-align:left;
+            vertical-align:middle;
+        }
+
+        td.center {
+            text-align:center;
+        }
+
+        table.details {
+          margin-left:auto; margin-right:auto;
+          background: whitesmoke;
+          border-collapse: collapse;
+        }
+        table.details th, table.details td {
+          border: 1px silver solid;
+          padding: 0.2em;
+          text-align: center;
+          font-size: smaller;
+        }
+        table.details th {
+          background: gainsboro;
+        }
+        table.details caption {
+          margin-left: inherit;
+          margin-right: inherit;
+          background: whitesmoke;
+        }
+        table.details th.reqUrl, table.details td.reqUrl {
+          text-align: left;
+          width: 30em;
+          word-wrap: break-word;
+        }
+        table.details td.even {
+          background: gainsboro;
+        }
+        table.details td.odd {
+          background: whitesmoke;
+        }
+        table.details td.evenRender {
+          background: #dfffdf;
+        }
+        table.details td.oddRender {
+          background: #ecffec;
+        }
+        table.details td.evenDoc {
+          background: #dfdfff;
+        }
+        table.details td.oddDoc {
+          background: #ececff;
+        }
+        table.details td.warning {
+          background: #ffff88;
+        }
+        table.details td.error {
+          background: #ff8888;
+        }
+        .header_details {
+            display: none;
+        }
+        .a_request {
+            cursor: pointer;
+        }
+        
+div.waterfall-container {position: relative; left: 0; top: 0; clear:both; overflow:auto;}
+img.waterfall-image {position: relative; left: 0; top: 0;}
+div.request-overlay {cursor:pointer; padding: 0; margin: 0; width: 928px; left: 1px; background-color: #FFF; overflow: hidden; opacity:0.9; filter:alpha(opacity=90);}
+div.request-overlay.selected {opacity:0.4; background-color: #129828;}
+div.transparent {opacity:0.0; filter:alpha(opacity=0);}
+#dialog-title {display: inline;}
+#dialog-title a {color: #fff;}
+#request-dialog-radio {display:inline; padding-left: 20px; font-weight: normal; }
+#request-headers, #response-headers, #response-body {display:none;}
+
+.jqmWindow {display: none; position: fixed; top: 17%; left: 50%; margin-left: -300px; width: 600px; background-color: #dfdfdf; color: #333; border: 1px solid black; padding: 12px; }
+.jqmOverlay { background-color: #000; }
+div.jqDrag {cursor: move;}
+.jqResize {width: 100%; height: 3px; background: #dfdfdf; border-top: 1px solid #a3a3a3; border-bottom: 1px solid #a3a3a3; cursor: ns-resize;}
+div.jqmDialog {display: none; position: absolute; top: 17%; right: 20px; width: 600px; height: 300px;
+                overflow: hidden; font-family:verdana,tahoma,helvetica;
+                color: #000; background: #fff; border: 1px solid #000; text-align: left;}
+div.jqmdTC { background: #303030; color: #000; height: 25px; padding: 7px 22px 5px 5px; font-family:"sans serif",verdana,tahoma,helvetica; font-weight: bold; * zoom: 1; cursor: move;}
+div.jqmdBC { height: 250px; padding: 7px 7px 7px; overflow: auto;}
+div.jqmdX { position: absolute; right: 7px; top: 8px; padding: 0 0 0 16px; height: 16px; width: 0px; background: url(/images/dialog-close.png) no-repeat 0px -16px; overflow: hidden;}
+div.jqmdX:hover {background-position: 0px 0px;}
+div.jqmdBC button {margin: 8px 10px 4px 10px; color: #777; background-color: #fff; cursor: pointer; }
+
+/* Jquery UI */
+.ui-helper-hidden { display: none; }
+.ui-helper-hidden-accessible { position: absolute !important; clip: rect(1px 1px 1px 1px); clip: rect(1px,1px,1px,1px); }
+.ui-helper-reset { margin: 0; padding: 0; border: 0; outline: 0; line-height: 1.3; text-decoration: none; font-size: 100%; list-style: none; }
+.ui-helper-clearfix:before, .ui-helper-clearfix:after { content: ""; display: table; }
+.ui-helper-clearfix:after { clear: both; }
+.ui-helper-clearfix { zoom: 1; }
+.ui-helper-zfix { width: 100%; height: 100%; top: 0; left: 0; position: absolute; opacity: 0; filter:Alpha(Opacity=0); }
+.ui-state-disabled { cursor: default !important; }
+.ui-icon { display: block; text-indent: -99999px; overflow: hidden; background-repeat: no-repeat; }
+.ui-widget-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+.ui-widget { font-family: Trebuchet MS, Tahoma, Verdana, Arial, sans-serif; font-size: 1.1em; }
+.ui-widget .ui-widget { font-size: 1em; }
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button { font-family: Trebuchet MS, Tahoma, Verdana, Arial, sans-serif; font-size: 1em; }
+.ui-widget-content { border: 1px solid #dddddd; background-color: #eeeeee; color: #333333; }
+.ui-widget-content a { color: #333333; }
+.ui-widget-header { border: 1px solid #e78f08; background-color: #f6a828; color: #ffffff; font-weight: bold; }
+.ui-widget-header a { color: #ffffff; }
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default { border: 1px solid #cccccc; background-color: #cccccc; font-weight: bold; color: #1c94c4; }
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited { color: #1c94c4; text-decoration: none; }
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hovers, { border: 1px solid #cccccc; background-color: #f6f6f6; font-weight: bold; color: #c77405; }
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active { border: 1px solid #C00; background-color: #ffffff; font-weight: bold; color: #c00; }
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited { color: #eb8f00; text-decoration: none; }
+.ui-state-hover a, .ui-state-hover a:hover { color: #c77405; text-decoration: none; }
+.ui-widget :active { outline: none; }
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight  {border: 1px solid #fed22f; background: #ffe45c url(images/ui-bg_highlight-soft_75_ffe45c_1x100.png) 50% top repeat-x; color: #363636; }
+.ui-state-highlight a, .ui-widget-content .ui-state-highlight a,.ui-widget-header .ui-state-highlight a { color: #363636; }
+.ui-state-error, .ui-widget-content .ui-state-error, .ui-widget-header .ui-state-error {border: 1px solid #cd0a0a; background: #b81900 url(images/ui-bg_diagonals-thick_18_b81900_40x40.png) 50% 50% repeat; color: #ffffff; }
+.ui-state-error a, .ui-widget-content .ui-state-error a, .ui-widget-header .ui-state-error a { color: #ffffff; }
+.ui-state-error-text, .ui-widget-content .ui-state-error-text, .ui-widget-header .ui-state-error-text { color: #ffffff; }
+.ui-priority-primary, .ui-widget-content .ui-priority-primary, .ui-widget-header .ui-priority-primary { font-weight: bold; }
+.ui-priority-secondary, .ui-widget-content .ui-priority-secondary,  .ui-widget-header .ui-priority-secondary { opacity: .7; filter:Alpha(Opacity=70); font-weight: normal; }
+.ui-state-disabled, .ui-widget-content .ui-state-disabled, .ui-widget-header .ui-state-disabled { opacity: .35; filter:Alpha(Opacity=35); background-image: none; }
+.ui-icon { width: 16px; height: 16px; background-image: url(/images/ui-icons_222222_256x240.png); }
+.ui-widget-content .ui-icon {background-image: url(/images/ui-icons_222222_256x240.png); }
+.ui-widget-header .ui-icon {background-image: url(/images/ui-icons_ffffff_256x240.png); }
+.ui-state-default .ui-icon { background-image: url(/images/ui-icons_ef8c08_256x240.png); }
+.ui-state-hover .ui-icon, .ui-state-focus .ui-icon {background-image: url(/images/ui-icons_ef8c08_256x240.png); }
+.ui-state-active .ui-icon {background-image: url(/images/ui-icons_ef8c08_256x240.png); }
+.ui-state-highlight .ui-icon {background-image: url(/images/ui-icons_228ef1_256x240.png); }
+.ui-state-error .ui-icon, .ui-state-error-text .ui-icon {background-image: url(/images/ui-icons_ffd27a_256x240.png); }
+
+/* jQuery UI Button 1.8.17
+ *
+ * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Button#theming
+ */
+.ui-button { display: inline-block; position: relative; padding: 0; margin-right: .1em; text-decoration: none !important; cursor: pointer; text-align: center; zoom: 1; overflow: visible; } /* the overflow property removes extra width in IE */
+.ui-button-icon-only { width: 2.2em; } /* to make room for the icon, a width needs to be set here */
+button.ui-button-icon-only { width: 2.4em; } /* button elements seem to need a little more width */
+.ui-button-icons-only { width: 3.4em; } 
+button.ui-button-icons-only { width: 3.7em; } 
+.ui-button .ui-button-text { display: block; line-height: 1.1;  }
+.ui-button-text-only .ui-button-text { padding: 2px 5px; }
+.ui-button-icon-only .ui-button-text, .ui-button-icons-only .ui-button-text { padding: .4em; text-indent: -9999999px; }
+.ui-button-text-icon-primary .ui-button-text, .ui-button-text-icons .ui-button-text { padding: .4em 1em .4em 2.1em; }
+.ui-button-text-icon-secondary .ui-button-text, .ui-button-text-icons .ui-button-text { padding: .4em 2.1em .4em 1em; }
+.ui-button-text-icons .ui-button-text { padding-left: 2.1em; padding-right: 2.1em; }
+input.ui-button { padding: .4em 1em; }
+.ui-button-icon-only .ui-icon, .ui-button-text-icon-primary .ui-icon, .ui-button-text-icon-secondary .ui-icon, .ui-button-text-icons .ui-icon, .ui-button-icons-only .ui-icon { position: absolute; top: 50%; margin-top: -8px; }
+.ui-button-icon-only .ui-icon { left: 50%; margin-left: -8px; }
+.ui-button-text-icon-primary .ui-button-icon-primary, .ui-button-text-icons .ui-button-icon-primary, .ui-button-icons-only .ui-button-icon-primary { left: .5em; }
+.ui-button-text-icon-secondary .ui-button-icon-secondary, .ui-button-text-icons .ui-button-icon-secondary, .ui-button-icons-only .ui-button-icon-secondary { right: .5em; }
+.ui-button-text-icons .ui-button-icon-secondary, .ui-button-icons-only .ui-button-icon-secondary { right: .5em; }
+.ui-buttonset { margin-right: 7px; }
+.ui-buttonset .ui-button { margin-left: 0; margin-right: -.3em; }
+button.ui-button::-moz-focus-inner { border: 0; padding: 0; } /* reset extra padding in Firefox */
+.ui-slider { position: relative; text-align: left; }
+.ui-slider .ui-slider-handle { position: absolute; z-index: 2; width: 1.2em; height: 1.2em; cursor: default; }
+.ui-slider .ui-slider-range { position: absolute; z-index: 1; font-size: .7em; display: block; border: 0; background-position: 0 0; }
+.ui-slider-horizontal { height: .8em; }
+.ui-slider-horizontal .ui-slider-handle { top: -.3em; margin-left: -.6em; }
+.ui-slider-horizontal .ui-slider-range { top: 0; height: 100%; }
+.ui-slider-horizontal .ui-slider-range-min { left: 0; }
+.ui-slider-horizontal .ui-slider-range-max { right: 0; }
+.ui-slider-vertical { width: .8em; height: 100px; }
+.ui-slider-vertical .ui-slider-handle { left: -.3em; margin-left: 0; margin-bottom: -.6em; }
+.ui-slider-vertical .ui-slider-range { left: 0; width: 100%; }
+.ui-slider-vertical .ui-slider-range-min { bottom: 0; }
+.ui-slider-vertical .ui-slider-range-max { top: 0; }
+        </style>
+    </head>
+    <body>
+        <div class="page">
+            <div id="wptAuthBar"><a href="/forums/member.php?action=login">Login</a> &nbsp;|&nbsp; <a href="/forums/member.php?action=register">Register</a> &nbsp;|&nbsp; <a href="/oauth/login.php">Login with Google</a> </div>
+<div id="header">
+    <h1 class="logo"><a href="/">WebPageTest</a></h1>
+    <div class="headerAd">
+    <a href="http://pagerain.com/" target="_blank" onclick="wptBannerTrack();">
+<img alt="PageRain - The Simplest CDN" src="http://cdn.webpagetest.org/custom/Chicago/banner.png">
+</a>
+<script type="text/javascript">
+try{
+if( _gaq != undefined )
+    _gaq.push(['_trackEvent', 'Banner', 'Impression', 'Chicago']);
+}catch(err){}
+
+function wptBannerTrack()
+{
+    try{
+    if( _gaq != undefined )
+        _gaq.push(['_trackEvent', 'Banner', 'Click', 'Chicago']);
+    }catch(err){}
+    return true;
+}
+</script>
+    </div>
+</div>
+
+<div id="nav_bkg"><ul id="nav" class="cufon-dincond_black"><li><a title="Home" href="/">Home</a></li><li class="current"><a title="Test Result" href="/result/130916_5E_M2P/">Test Result</a></li><li><a title="Test History" href="/testlog/1/">Test History</a></li><li><a title="Forums" href="/forums/">Forums</a></li><li><a title="Documentation (opens in a new tab)" href="http://sites.google.com/a/webpagetest.org/docs/" target="_blank">Documentation</a></li><li><a title="About" href="/about">About</a></li><div class="gplusone"><g:plusone size="medium" count="false" href="http://www.webpagetest.org/" actions="+1,addtocircles"></g:plusone>&nbsp;
+                <a href="http://twitter.com/share" class="twitter-share-button" data-count="none" data-text=" "></a>
+                <script type="text/javascript">
+                        (function() {
+                            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                            po.src = 'https://apis.google.com/js/plusone.js';
+                            var tw = document.createElement('script'); tw.type = 'text/javascript'; tw.async = true;
+                            tw.src = 'http://platform.twitter.com/widgets.js';
+                            var s = document.getElementsByTagName('script')[0]; 
+                            s.parentNode.insertBefore(po, s);
+                            s.parentNode.insertBefore(tw, s);
+                          })();
+                  </script></div>
+                  </ul>
+
+</div>
+
+    
+<div id="main">
+    <div class="level_2">
+        <div class="content-wrap">
+            <div class="content">
+
+            
+<div id="header_container"><div id="optimization"><div id="optimization_header"><span id="headerPagespeedScore"><a href="/result/130916_5E_M2P/1/pagespeed/">PageSpeed 1.12 Score</a>: <b>98/100</b></span><div id="opthelp"><a href="http://www.webperformancecentral.com/wiki/WebPagetest/Optimization_Help" title="Optimization Resources" target="_blank">Need help improving?</a></div>
+</div><div id="grades"><ul class="grades smaller"><li class="first_byte_time"><a href="/result/130916_5E_M2P/1/performance_optimization/#first_byte_time"><h2 class="F">F</h2></a>First Byte Time</li><li class="keep_alive_enabled"><a href="/result/130916_5E_M2P/1/performance_optimization/#keep_alive_enabled"><h2 class="A">A</h2></a>Keep-alive Enabled</li><li class="compress_text"><a href="/result/130916_5E_M2P/1/performance_optimization/#compress_text"><h2 class="A">A</h2></a>Compress Transfer</li><li class="compress_images"><a href="/result/130916_5E_M2P/1/performance_optimization/#compress_images"><h2 class="C">C</h2></a>Compress Images</li><li class="progressive_jpeg"><a href="/result/130916_5E_M2P/1/performance_optimization/#progressive_jpeg"><h2 class="B">B</h2></a>Progressive JPEGs</li><li class="cache_static_content"><a href="/result/130916_5E_M2P/1/performance_optimization/#cache_static_content"><h2 class="A">A</h2></a>Cache static content</li><li class="use_of_cdn"><a href="/result/130916_5E_M2P/1/performance_optimization/#use_of_cdn"><h2 class="A"><img src="http://cdn.webpagetest.org/images/grade_check.png" alt="yes"></h2></a>Effective use of CDN</li></ul></div></div><div id="header_data"><h2 class="alternate cufon-dincond_regular">Web Page Performance Test for<br><span class="medium colored">livejasmin.com</span></h2><p class="heading_details"><strong>From:</strong> Dulles, VA - IE 9 - <b>Cable</b><br><span class="jsdate" date="1379345648">09/16/13 15:34:08</span><br>
+</div></div><div id="test_results-container"><div id="test-1" class="test_results"><ul class="test_menu"><li><a href="/result/130916_5E_M2P/">Summary</a></li><li class="current"><a href="/result/130916_5E_M2P/1/details/cached/">Details</a></li><li><a href="/performance_optimization.php?test=130916_5E_M2P&run=1&cached=1">Performance Review</a></li><li><a href="/pagespeed.php?test=130916_5E_M2P&run=1&cached=1">PageSpeed</a></li><li><a href="/breakdown.php?test=130916_5E_M2P&run=1&cached=1">Content Breakdown</a></li><li><a href="/domains.php?test=130916_5E_M2P&run=1&cached=1">Domains</a></li><li><a href="/screen_shot.php?test=130916_5E_M2P&run=1&cached=1">Screen Shot</a></li></ul><div class="test_results-content"><script type="text/javascript">
+  markUserTime('aft.Site Header');
+</script>
+
+            <div id="result">
+                <div id="download">
+                    <div id="testinfo">
+                                            </div>
+                    <a href="/export.php?test=130916_5E_M2P&run=1&cached=1">Export HTTP Archive (.har)</a><br>                </div>
+                <div class="cleared"></div>
+                <br>
+                <table id="tableResults" class="pretty" align="center" border="1" cellpadding="10" cellspacing="0">
+                    <tr>
+                                                <th align="center" class="empty" valign="middle" colspan="7" ></th>
+                        <th align="center" class="border" valign="middle" colspan="3">Document Complete</th>
+                        <th align="center" class="border" valign="middle" colspan="3">Fully Loaded</th>
+                    </tr>
+                    <tr>
+                        <th align="center" valign="middle">Load Time</th>
+                        <th align="center" valign="middle">First Byte</th>
+                        <th align="center" valign="middle">Start Render</th>
+                                                                                                <th align="center" valign="middle">Visually Complete</th>
+                                                                        <th align="center" valign="middle"><a href="https://sites.google.com/a/webpagetest.org/docs/using-webpagetest/metrics/speed-index" target="_blank">Speed Index</a></th>
+                                                                                                <th align="center" valign="middle">DOM Elements</th>
+                                                <th align="center" valign="middle">Result (error code)</th>
+
+                        <th align="center" class="border" valign="middle">Time</th>
+                        <th align="center" valign="middle">Requests</th>
+                        <th align="center" valign="middle">Bytes In</th>
+
+                        <th align="center" class="border" valign="middle">Time</th>
+                        <th align="center" valign="middle">Requests</th>
+                        <th align="center" valign="middle">Bytes In</th>
+                    </tr>
+                    <tr>
+                        <td id="LoadTime" valign="middle">1.161s</td>
+<td id="TTFB" valign="middle">0.538s</td>
+<td id="startRender" valign="middle">1.701s</td>
+<td id="visualComplate" valign="middle">2.100s</td>
+<td id="speedIndex" valign="middle">1818</td>
+<td id="domElements" valign="middle">623</td>
+<td id="result" valign="middle">0</td>
+<td id="docComplete" class="border" valign="middle">1.161s</td>
+<td id="requestsDoc" valign="middle">12</td>
+<td id="bytesInDoc" valign="middle">142 KB</td>
+<td id="fullyLoaded" class="border" valign="middle">30.755s</td>
+<td id="requests" valign="middle">16</td>
+<td id="bytesIn" valign="middle">160 KB</td>
+                    </tr>
+                </table><br>
+                                <script type="text/javascript">
+                  markUserTime('aft.Detail Table');
+                </script>
+
+                <div style="text-align:center;">
+                <h3 name="waterfall_view">Waterfall View</h3>
+                <table border="1" bordercolor="silver" cellpadding="2px" cellspacing="0" style="width:auto; font-size:11px; margin-left:auto; margin-right:auto;">
+                    <tr>
+                        <td><table><tr><td><div class="bar" style="width:15px; background-color:#1f7c83"></div></td><td>DNS Lookup</td></tr></table></td>
+                        <td><table><tr><td><div class="bar" style="width:15px; background-color:#e58226"></div></td><td>Initial Connection</td></tr></table></td>
+                                                <td><table><tr><td><div class="bar" style="width:15px; background-color:#c141cd"></div></td><td>SSL Negotiation</td></tr></table></td>
+                                                <td><table><tr><td><div class="bar" style="width:15px; background-color:#1fe11f"></div></td><td>Time to First Byte</td></tr></table></td>
+                        <td><table><tr><td><div class="bar" style="width:15px; background-color:#1977dd"></div></td><td>Content Download</td></tr></table></td>
+                        <td style="vertical-align:middle; padding: 4px;"><div style="background-color:#ffff60">&nbsp;3xx response&nbsp;</div></td>
+                        <td style="vertical-align:middle; padding: 4px;"><div style="background-color:#ff6060">&nbsp;4xx+ response&nbsp;</div></td>
+                    </tr>
+                </table>
+                <table border="1" bordercolor="silver" cellpadding="2px" cellspacing="0" style="width:auto; font-size:11px; margin-left:auto; margin-right:auto; margin-top:11px;">
+                    <tr>
+                        <td><table><tr><td><div class="bar" style="width:2px; background-color:#28BC00"></div></td><td>Start Render</td></tr></table></td>
+                        <td><table><tr><td><div class="bar" style="width:2px; background-color:#0000FF"></div></td><td>Document Complete</td></tr></table></td>                    </tr>
+                </table>
+                <br>
+                <map name="waterfall_map"><area href="#request" alt="http://livejasmin.com" title="http://livejasmin.com" shape=RECT coords="0,0,250,25">
+<area href="#request1" alt="1: http://www.livejasmin.com/" title="1: http://www.livejasmin.com/" shape=RECT coords="0,26,929,42">
+<area href="#request2" alt="2: http://new.livejasmin.com/" title="2: http://new.livejasmin.com/" shape=RECT coords="0,43,929,59">
+<area href="#request3" alt="3: http://new.livejasmin.com/en/" title="3: http://new.livejasmin.com/en/" shape=RECT coords="0,60,929,76">
+<area href="#request4" alt="4: http://staticx1.new.livejasmincdn.com/master/script/cdntestpack-e12a8.js?r=1379345613" title="4: http://staticx1.new.livejasmincdn.com/master/script/cdntestpack-e12a8.js?r=1379345613" shape=RECT coords="0,77,929,93">
+<area href="#request5" alt="5: http://staticx1.new.livejasmincdn.com/master/script/cdntestpack-e12a8.js?r=1379345613" title="5: http://staticx1.new.livejasmincdn.com/master/script/cdntestpack-e12a8.js?r=1379345613" shape=RECT coords="0,94,929,110">
+<area href="#request6" alt="6: http://imgx0.livejasmincdn.com/wa/A/An/AnomimWoman/live/tmbImage6.jpg?cno=bcc2" title="6: http://imgx0.livejasmincdn.com/wa/A/An/AnomimWoman/live/tmbImage6.jpg?cno=bcc2" shape=RECT coords="0,111,929,127">
+<area href="#request7" alt="7: http://imgx0.livejasmincdn.com/wa/N/Ni/NightEnigma/live/tmbImage5.jpg?cno=860e" title="7: http://imgx0.livejasmincdn.com/wa/N/Ni/NightEnigma/live/tmbImage5.jpg?cno=860e" shape=RECT coords="0,128,929,144">
+<area href="#request8" alt="8: http://imgx3.livejasmincdn.com/wa/Q/Qu/QueenSex/live/tmbImage6.jpg?cno=46e9" title="8: http://imgx3.livejasmincdn.com/wa/Q/Qu/QueenSex/live/tmbImage6.jpg?cno=46e9" shape=RECT coords="0,145,929,161">
+<area href="#request9" alt="9: http://imgx1.livejasmincdn.com/wa/0/0o/0ohBabyD0ll/live/tmbImage6.jpg?cno=defe" title="9: http://imgx1.livejasmincdn.com/wa/0/0o/0ohBabyD0ll/live/tmbImage6.jpg?cno=defe" shape=RECT coords="0,162,929,178">
+<area href="#request10" alt="10: http://imgx2.livejasmincdn.com/wa/0/00/00love4you/live/tmbImage6.jpg?cno=0c08" title="10: http://imgx2.livejasmincdn.com/wa/0/00/00love4you/live/tmbImage6.jpg?cno=0c08" shape=RECT coords="0,179,929,195">
+<area href="#request11" alt="11: http://imgx0.livejasmincdn.com/wa/B/Bi/BigBoobsCheryl/live/tmbImage6.jpg?cno=f30f" title="11: http://imgx0.livejasmincdn.com/wa/B/Bi/BigBoobsCheryl/live/tmbImage6.jpg?cno=f30f" shape=RECT coords="0,196,929,212">
+<area href="#request12" alt="12: http://imgx3.livejasmincdn.com/wa/p/po/poisonivyxx/live/tmbImage6.jpg?cno=7997" title="12: http://imgx3.livejasmincdn.com/wa/p/po/poisonivyxx/live/tmbImage6.jpg?cno=7997" shape=RECT coords="0,213,929,229">
+<area href="#request13" alt="13: https://www.dditservices.com/sohandler_1.swf" title="13: https://www.dditservices.com/sohandler_1.swf" shape=RECT coords="0,230,929,246">
+<area href="#request14" alt="14: http://new.livejasmin.com/en/overlay/get-over-eighteenblock" title="14: http://new.livejasmin.com/en/overlay/get-over-eighteenblock" shape=RECT coords="0,247,929,263">
+<area href="#request15" alt="15: http://new.livejasmin.com/en/tracking/save-sohash" title="15: http://new.livejasmin.com/en/tracking/save-sohash" shape=RECT coords="0,264,929,280">
+<area href="#request16" alt="16: http://new.livejasmin.com/en/flash/check-user" title="16: http://new.livejasmin.com/en/flash/check-user" shape=RECT coords="0,281,929,297">
+</map><div class="waterfall-container"><img class="waterfall-image" alt="" onload="markUserTime('aft.Waterfall')" usemap="#waterfall_map" id="waterfall" src="/waterfall.php?test=130916_5E_M2P&run=1&cached=1"><div class="transparent request-overlay" id="request-overlay-1" title="1: http://www.livejasmin.com/" onclick="SelectRequest(1)" style="position: absolute; top: 26px; height: 17px;"></div>
+<div class="transparent request-overlay" id="request-overlay-2" title="2: http://new.livejasmin.com/" onclick="SelectRequest(2)" style="position: absolute; top: 43px; height: 17px;"></div>
+<div class="transparent request-overlay" id="request-overlay-3" title="3: http://new.livejasmin.com/en/" onclick="SelectRequest(3)" style="position: absolute; top: 60px; height: 17px;"></div>
+<div class="transparent request-overlay" id="request-overlay-4" title="4: http://staticx1.new.livejasmincdn.com/master/script/cdntestpack-e12a8.js?r=1379345613" onclick="SelectRequest(4)" style="position: absolute; top: 77px; height: 17px;"></div>
+<div class="transparent request-overlay" id="request-overlay-5" title="5: http://staticx1.new.livejasmincdn.com/master/script/cdntestpack-e12a8.js?r=1379345613" onclick="SelectRequest(5)" style="position: absolute; top: 94px; height: 17px;"></div>
+<div class="transparent request-overlay" id="request-overlay-6" title="6: http://imgx0.livejasmincdn.com/wa/A/An/AnomimWoman/live/tmbImage6.jpg?cno=bcc2" onclick="SelectRequest(6)" style="position: absolute; top: 111px; height: 17px;"></div>
+<div class="transparent request-overlay" id="request-overlay-7" title="7: http://imgx0.livejasmincdn.com/wa/N/Ni/NightEnigma/live/tmbImage5.jpg?cno=860e" onclick="SelectRequest(7)" style="position: absolute; top: 128px; height: 17px;"></div>
+<div class="transparent request-overlay" id="request-overlay-8" title="8: http://imgx3.livejasmincdn.com/wa/Q/Qu/QueenSex/live/tmbImage6.jpg?cno=46e9" onclick="SelectRequest(8)" style="position: absolute; top: 145px; height: 17px;"></div>
+<div class="transparent request-overlay" id="request-overlay-9" title="9: http://imgx1.livejasmincdn.com/wa/0/0o/0ohBabyD0ll/live/tmbImage6.jpg?cno=defe" onclick="SelectRequest(9)" style="position: absolute; top: 162px; height: 17px;"></div>
+<div class="transparent request-overlay" id="request-overlay-10" title="10: http://imgx2.livejasmincdn.com/wa/0/00/00love4you/live/tmbImage6.jpg?cno=0c08" onclick="SelectRequest(10)" style="position: absolute; top: 179px; height: 17px;"></div>
+<div class="transparent request-overlay" id="request-overlay-11" title="11: http://imgx0.livejasmincdn.com/wa/B/Bi/BigBoobsCheryl/live/tmbImage6.jpg?cno=f30f" onclick="SelectRequest(11)" style="position: absolute; top: 196px; height: 17px;"></div>
+<div class="transparent request-overlay" id="request-overlay-12" title="12: http://imgx3.livejasmincdn.com/wa/p/po/poisonivyxx/live/tmbImage6.jpg?cno=7997" onclick="SelectRequest(12)" style="position: absolute; top: 213px; height: 17px;"></div>
+<div class="transparent request-overlay" id="request-overlay-13" title="13: https://www.dditservices.com/sohandler_1.swf" onclick="SelectRequest(13)" style="position: absolute; top: 230px; height: 17px;"></div>
+<div class="transparent request-overlay" id="request-overlay-14" title="14: http://new.livejasmin.com/en/overlay/get-over-eighteenblock" onclick="SelectRequest(14)" style="position: absolute; top: 247px; height: 17px;"></div>
+<div class="transparent request-overlay" id="request-overlay-15" title="15: http://new.livejasmin.com/en/tracking/save-sohash" onclick="SelectRequest(15)" style="position: absolute; top: 264px; height: 17px;"></div>
+<div class="transparent request-overlay" id="request-overlay-16" title="16: http://new.livejasmin.com/en/flash/check-user" onclick="SelectRequest(16)" style="position: absolute; top: 281px; height: 17px;"></div>
+    <div id="request-dialog" class="jqmDialog">
+        <div id="dialog-header" class="jqmdTC jqDrag">
+            <div id="dialog-title"></div>
+            <div id="request-dialog-radio">
+                <span id="request-details-button"><input type="radio" id="radio1" value="request-details" name="radio" checked="checked" /><label for="radio1">Details</label></span>
+                <span id="request-headers-button"><input type="radio" id="radio2" value="request-headers" name="radio" /><label for="radio2">Request</label></span>
+                <span id="response-headers-button"><input type="radio" id="radio3" value="response-headers" name="radio" /><label for="radio3">Response</label></span>
+                <span id="response-body-button"><input type="radio" id="radio4" value="response-body" name="radio" /><label for="radio4">Object</label></span>
+            </div>
+        </div>
+        <div class="jqmdBC">
+            <div id="dialog-contents" class="jqmdMSG">
+                <div id="request-details" class="dialog-tab-content"></div>
+                <div id="request-headers" class="dialog-tab-content"></div>
+                <div id="response-headers" class="dialog-tab-content"></div>
+                <div id="response-body" class="dialog-tab-content"></div>
+            </div>
+        </div>
+        <div class="jqmdX jqmClose"></div>
+    </div>
+    <div id="marker"></div>
+    </div><script type="text/javascript">
+var wptRequestCount=16;
+var wptRequestData=[{"ip_addr":"109.71.160.200","method":"GET","host":"www.livejasmin.com","url":"\/","responseCode":"302","load_ms":"117","ttfb_ms":"114","load_start":"134","bytesOut":"518","bytesIn":"475","objectSize":"20","contentType":"text\/html","contentEncoding":"gzip","type":"3","socket":"6","score_cache":"-1","score_cdn":"-1","score_gzip":"-1","score_cookies":"50","score_keep-alive":"-1","score_minify":"-1","score_combine":"-1","score_compress":"-1","score_etags":"100","is_secure":"0","dns_ms":"24","connect_ms":"106","gzip_total":"0","gzip_save":"0","minify_total":"0","minify_save":"0","image_total":"0","image_save":"0","server_count":"1","server_rtt":"106","client_port":"56971","jpeg_scan_count":"0","full_url":"http:\/\/www.livejasmin.com\/","score_progressive_jpeg":-1,"ssl_start":0,"ssl_end":0,"ssl_ms":0,"connect_start":28,"connect_end":134,"dns_start":4,"dns_end":28,"load_end":251,"ttfb_start":"134","ttfb_end":248,"download_start":248,"download_end":251,"download_ms":3,"all_start":4,"all_end":251,"all_ms":247,"headers":{"request":["GET \/ HTTP\/1.1","Accept: text\/html, application\/xhtml+xml, *\/*","Accept-Language: en-US","X-Download-Initiator: html=\"doc 03F0 win 1E58; html document\"","User-Agent: Mozilla\/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident\/5.0; PTST 2.366)","Accept-Encoding: gzip, deflate","Host: www.livejasmin.com","Connection: Keep-Alive","Cookie: jasminsite=YToxOntzOjc6InNpdGVfaWQiO2k6Mjt9; site_lang=en; lang=en; tppId=c1700d4a0229b0a249a9a3c2b2be6b53c282c413523724be; speedtest=1; gravity_cookie=a5ab8028723dc8fdb4b825800ccbbde92"],"response":["HTTP\/1.1 302 Found","Server: unknown","Date: Mon, 16 Sep 2013 15:33:32 GMT","Content-Type: text\/html; charset=utf-8","Connection: close","P3P: CP=\"CAO PSA OUR\"","Set-Cookie: originalNode=uslax; path=\/; domain=.livejasmin.com","Set-Cookie: jasminsite=YToxOntzOjc6InNpdGVfaWQiO2k6Mjt9; expires=Tue, 16-Sep-2014 15:33:32 GMT; path=\/; domain=.livejasmin.com","Location: http:\/\/new.livejasmin.com\/","Vary: Accept-Encoding","Content-Encoding: gzip","Content-Length: 20"]},"country":"Portugal","countryCode":"PRT","city":null,"region":"06","lat":39.9453,"long":-8.0422,"location":null,"index":0,"number":1},{"ip_addr":"109.71.161.161","method":"GET","host":"new.livejasmin.com","url":"\/","responseCode":"302","load_ms":"75","ttfb_ms":"74","load_start":"340","bytesOut":"601","bytesIn":"506","objectSize":"20","expires":"0","cacheControl":"max-age=0,no-cache,no-store,must-revalidate,post-check=0,pre-check=0","contentType":"text\/html","contentEncoding":"gzip","type":"3","socket":"11","score_cache":"-1","score_cdn":"-1","score_gzip":"-1","score_cookies":"50","score_keep-alive":"-1","score_minify":"-1","score_combine":"-1","score_compress":"-1","score_etags":"100","is_secure":"0","dns_ms":"24","connect_ms":"63","gzip_total":"0","gzip_save":"0","minify_total":"0","minify_save":"0","image_total":"0","image_save":"0","server_count":"1","server_rtt":"63","client_port":"56973","jpeg_scan_count":"0","full_url":"http:\/\/new.livejasmin.com\/","score_progressive_jpeg":-1,"ssl_start":0,"ssl_end":0,"ssl_ms":0,"connect_start":277,"connect_end":340,"dns_start":253,"dns_end":277,"load_end":415,"ttfb_start":"340","ttfb_end":414,"download_start":414,"download_end":415,"download_ms":1,"all_start":253,"all_end":415,"all_ms":162,"headers":{"request":["GET \/ HTTP\/1.1","Accept: text\/html, application\/xhtml+xml, *\/*","Accept-Language: en-US","X-Download-Initiator: html=\"doc 03F0 win 1E58; html document\"","User-Agent: Mozilla\/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident\/5.0; PTST 2.366)","Accept-Encoding: gzip, deflate","Host: new.livejasmin.com","Connection: Keep-Alive","Cookie: jasminsite=YToxOntzOjc6InNpdGVfaWQiO2k6Mjt9; site_lang=en; lang=en; tppId=c1700d4a0229b0a249a9a3c2b2be6b53c282c413523724be; speedtest=1; gravity_cookie=a5ab8028723dc8fdb4b825800ccbbde92; originalNode=uslax; category=girls; loadedFromServer=0; memberAppletSize=fullSize"],"response":["HTTP\/1.1 302 Found","Server: unknown","Date: Mon, 16 Sep 2013 15:33:33 GMT","Content-Type: text\/html; charset=utf-8","Connection: close","Set-Cookie: jasminsite=YToxOntzOjc6InNpdGVfaWQiO2k6Mjt9; expires=Tue, 16-Sep-2014 15:33:33 GMT; path=\/; domain=.livejasmin.com","Location: http:\/\/new.livejasmin.com\/en\/","Cache-Control: max-age=0,no-cache,no-store,must-revalidate,post-check=0,pre-check=0","Expires: 0","Pragma: no-cache","Vary: Accept-Encoding","Content-Encoding: gzip","Content-Length: 20"]},"country":"Portugal","countryCode":"PRT","city":null,"region":"06","lat":39.9453,"long":-8.0422,"location":null,"index":1,"number":2},{"ip_addr":"109.71.161.161","method":"GET","host":"new.livejasmin.com","url":"\/en\/","responseCode":"200","load_ms":"585","ttfb_ms":"120","load_start":"417","bytesOut":"604","bytesIn":"17355","objectSize":"16551","expires":"0","cacheControl":"max-age=0,no-cache,no-store,must-revalidate,post-check=0,pre-check=0","contentType":"text\/html","contentEncoding":"gzip","type":"3","socket":"12","score_cache":"-1","score_cdn":"-1","score_gzip":"100","score_cookies":"50","score_keep-alive":"0","score_minify":"-1","score_combine":"-1","score_compress":"-1","score_etags":"100","is_secure":"0","gzip_total":"17355","gzip_save":"0","minify_total":"0","minify_save":"0","image_total":"0","image_save":"0","server_count":"1","server_rtt":"63","client_port":"56974","jpeg_scan_count":"0","full_url":"http:\/\/new.livejasmin.com\/en\/","score_progressive_jpeg":-1,"ssl_start":0,"ssl_end":0,"ssl_ms":0,"connect_start":0,"connect_end":0,"connect_ms":0,"dns_start":0,"dns_end":0,"dns_ms":0,"load_end":1002,"ttfb_start":"417","ttfb_end":537,"download_start":537,"download_end":1002,"download_ms":465,"all_start":"417","all_end":1002,"all_ms":"585","headers":{"request":["GET \/en\/ HTTP\/1.1","Accept: text\/html, application\/xhtml+xml, *\/*","Accept-Language: en-US","X-Download-Initiator: html=\"doc 03F0 win 1E58; html document\"","User-Agent: Mozilla\/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident\/5.0; PTST 2.366)","Accept-Encoding: gzip, deflate","Host: new.livejasmin.com","Connection: Keep-Alive","Cookie: jasminsite=YToxOntzOjc6InNpdGVfaWQiO2k6Mjt9; site_lang=en; lang=en; tppId=c1700d4a0229b0a249a9a3c2b2be6b53c282c413523724be; speedtest=1; gravity_cookie=a5ab8028723dc8fdb4b825800ccbbde92; originalNode=uslax; category=girls; loadedFromServer=0; memberAppletSize=fullSize"],"response":["HTTP\/1.1 200 OK","Server: unknown","Date: Mon, 16 Sep 2013 15:33:33 GMT","Content-Type: text\/html; charset=utf-8","Connection: close","Set-Cookie: jasminsite=YToxOntzOjc6InNpdGVfaWQiO2k6Mjt9; expires=Tue, 16-Sep-2014 15:33:33 GMT; path=\/; domain=.livejasmin.com","Set-Cookie: session=gb7ad1d6457bc398c5cef371a74d397de; path=\/; domain=.livejasmin.com","Set-Cookie: originalNode=usmia; path=\/; domain=.livejasmin.com","Set-Cookie: category=girls; expires=Tue, 16-Sep-2014 15:33:33 GMT; path=\/; domain=new.livejasmin.com","Set-Cookie: loadedFromServer=1; expires=Wed, 16-Oct-2013 15:33:33 GMT; path=\/; domain=new.livejasmin.com","Cache-Control: max-age=0,no-cache,no-store,must-revalidate,post-check=0,pre-check=0","Expires: 0","Pragma: no-cache","Vary: Accept-Encoding","Content-Encoding: gzip","Content-Length: 16551"]},"country":"Portugal","countryCode":"PRT","city":null,"region":"06","lat":39.9453,"long":-8.0422,"location":null,"index":2,"number":3},{"ip_addr":"72.21.91.9","method":"GET","host":"staticx1.new.livejasmincdn.com","url":"\/master\/script\/cdntestpack-e12a8.js?r=1379345613","responseCode":"0","load_ms":"0","ttfb_ms":"0","load_start":"557","bytesOut":"0","bytesIn":"0","objectSize":"0","type":"3","socket":"17","score_cache":"-1","score_cdn":"-1","score_gzip":"-1","score_cookies":"100","score_keep-alive":"-1","score_minify":"-1","score_combine":"-1","score_compress":"-1","score_etags":"100","is_secure":"0","dns_ms":"0","gzip_total":"0","gzip_save":"0","minify_total":"0","minify_save":"0","image_total":"0","image_save":"0","cdn_provider":"Edgecast","server_count":"1","server_rtt":"31","client_port":"0","jpeg_scan_count":"0","full_url":"http:\/\/staticx1.new.livejasmincdn.com\/master\/script\/cdntestpack-e12a8.js?r=1379345613","score_progressive_jpeg":-1,"ssl_start":0,"ssl_end":0,"ssl_ms":0,"connect_start":0,"connect_end":0,"connect_ms":0,"dns_start":0,"dns_end":0,"load_end":557,"ttfb_start":"557","ttfb_end":557,"download_start":557,"download_end":557,"download_ms":0,"all_start":"557","all_end":557,"all_ms":"0","location":"Edgecast","index":3,"number":4},{"ip_addr":"72.21.91.9","method":"GET","host":"staticx1.new.livejasmincdn.com","url":"\/master\/script\/cdntestpack-e12a8.js?r=1379345613","responseCode":"200","load_ms":"38","ttfb_ms":"38","load_start":"595","bytesOut":"463","bytesIn":"353","objectSize":"61","expires":"Mon, 14 Oct 2013 15:33:33 GMT","cacheControl":"max-age=2419200","contentType":"application\/javascript","type":"3","socket":"18","score_cache":"100","score_cdn":"100","score_gzip":"-1","score_cookies":"100","score_keep-alive":"100","score_minify":"100","score_combine":"100","score_compress":"-1","score_etags":"100","is_secure":"0","connect_ms":"31","gzip_total":"0","gzip_save":"0","minify_total":"353","minify_save":"0","image_total":"0","image_save":"0","cache_time":"2419200","cdn_provider":"Edgecast","server_count":"1","server_rtt":"31","client_port":"56977","jpeg_scan_count":"0","full_url":"http:\/\/staticx1.new.livejasmincdn.com\/master\/script\/cdntestpack-e12a8.js?r=1379345613","score_progressive_jpeg":-1,"ssl_start":0,"ssl_end":0,"ssl_ms":0,"connect_start":564,"connect_end":595,"dns_start":0,"dns_end":0,"dns_ms":0,"load_end":633,"ttfb_start":"595","ttfb_end":633,"download_start":633,"download_end":633,"download_ms":0,"all_start":564,"all_end":633,"all_ms":69,"headers":{"request":["GET \/master\/script\/cdntestpack-e12a8.js?r=1379345613 HTTP\/1.1","Accept: application\/javascript, *\/*;q=0.8","Referer: http:\/\/new.livejasmin.com\/en\/","Accept-Language: en-US","X-Download-Initiator: script=\"doc 03F0; speculative; restarted html tokenizer 8A28; html lookahead 1:B828\"","User-Agent: Mozilla\/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident\/5.0; PTST 2.366)","Accept-Encoding: gzip, deflate","Host: staticx1.new.livejasmincdn.com","Connection: Keep-Alive"],"response":["HTTP\/1.1 200 OK","Accept-Ranges: bytes","Cache-Control: max-age=2419200","Content-Type: application\/javascript","Date: Mon, 16 Sep 2013 15:33:33 GMT","Expires: Mon, 14 Oct 2013 15:33:33 GMT","Last-Modified: Sat, 14 Sep 2013 17:31:29 GMT","Server: ECS (dca\/FEB4)","X-Cache: HIT","Content-Length: 61"]},"location":"Edgecast","index":4,"number":5},{"ip_addr":"72.21.91.9","method":"GET","host":"imgx0.livejasmincdn.com","url":"\/wa\/A\/An\/AnomimWoman\/live\/tmbImage6.jpg?cno=bcc2","responseCode":"200","load_ms":"121","ttfb_ms":"101","load_start":"618","bytesOut":"472","bytesIn":"28169","objectSize":"27857","expires":"Mon, 14 Oct 2013 15:33:33 GMT","cacheControl":"max-age=2419200","contentType":"image\/jpeg","type":"3","socket":"22","score_cache":"100","score_cdn":"100","score_gzip":"-1","score_cookies":"100","score_keep-alive":"100","score_minify":"-1","score_combine":"-1","score_compress":"0","score_etags":"100","is_secure":"0","dns_ms":"13","connect_ms":"35","gzip_total":"0","gzip_save":"0","minify_total":"0","minify_save":"0","image_total":"27857","image_save":"20366","cache_time":"2419200","cdn_provider":"Edgecast","server_count":"1","server_rtt":"31","client_port":"56978","jpeg_scan_count":"10","full_url":"http:\/\/imgx0.livejasmincdn.com\/wa\/A\/An\/AnomimWoman\/live\/tmbImage6.jpg?cno=bcc2","score_progressive_jpeg":100,"ssl_start":0,"ssl_end":0,"ssl_ms":0,"connect_start":583,"connect_end":618,"dns_start":570,"dns_end":583,"load_end":739,"ttfb_start":"618","ttfb_end":719,"download_start":719,"download_end":739,"download_ms":20,"all_start":570,"all_end":739,"all_ms":169,"headers":{"request":["GET \/wa\/A\/An\/AnomimWoman\/live\/tmbImage6.jpg?cno=bcc2 HTTP\/1.1","Accept: image\/png, image\/svg+xml, image\/*;q=0.8, *\/*;q=0.5","Referer: http:\/\/new.livejasmin.com\/en\/","Accept-Language: en-US","X-Download-Initiator: image=\"doc 03F0; speculative; restarted html tokenizer 8A28; html lookahead 1:B828\"","User-Agent: Mozilla\/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident\/5.0; PTST 2.366)","Accept-Encoding: gzip, deflate","Host: imgx0.livejasmincdn.com","Connection: Keep-Alive"],"response":["HTTP\/1.1 200 OK","Accept-Ranges: bytes","Cache-Control: max-age=2419200","Content-Type: image\/jpeg","Date: Mon, 16 Sep 2013 15:33:33 GMT","Expires: Mon, 14 Oct 2013 15:33:33 GMT","Last-Modified: Wed, 07 Aug 2013 07:23:38 GMT","Server: ECS (dca\/24BE)","X-Cache: HIT","X-Real-Source: usmia-swww-1","Content-Length: 27857"]},"location":"Edgecast","index":5,"number":6},{"ip_addr":"72.21.91.9","method":"GET","host":"imgx0.livejasmincdn.com","url":"\/wa\/N\/Ni\/NightEnigma\/live\/tmbImage5.jpg?cno=860e","responseCode":"200","load_ms":"205","ttfb_ms":"101","load_start":"616","bytesOut":"472","bytesIn":"40281","objectSize":"39998","expires":"Mon, 14 Oct 2013 15:33:33 GMT","cacheControl":"max-age=2419200","contentType":"image\/jpeg","type":"3","socket":"24","score_cache":"100","score_cdn":"100","score_gzip":"-1","score_cookies":"100","score_keep-alive":"100","score_minify":"-1","score_combine":"-1","score_compress":"50","score_etags":"100","is_secure":"0","connect_ms":"32","gzip_total":"0","gzip_save":"0","minify_total":"0","minify_save":"0","image_total":"39998","image_save":"5461","cache_time":"2419200","cdn_provider":"Edgecast","server_count":"1","server_rtt":"31","client_port":"56980","jpeg_scan_count":"10","full_url":"http:\/\/imgx0.livejasmincdn.com\/wa\/N\/Ni\/NightEnigma\/live\/tmbImage5.jpg?cno=860e","score_progressive_jpeg":100,"ssl_start":0,"ssl_end":0,"ssl_ms":0,"connect_start":584,"connect_end":616,"dns_start":0,"dns_end":0,"dns_ms":0,"load_end":821,"ttfb_start":"616","ttfb_end":717,"download_start":717,"download_end":821,"download_ms":104,"all_start":584,"all_end":821,"all_ms":237,"headers":{"request":["GET \/wa\/N\/Ni\/NightEnigma\/live\/tmbImage5.jpg?cno=860e HTTP\/1.1","Accept: image\/png, image\/svg+xml, image\/*;q=0.8, *\/*;q=0.5","Referer: http:\/\/new.livejasmin.com\/en\/","Accept-Language: en-US","X-Download-Initiator: image=\"doc 03F0; speculative; restarted html tokenizer 8A28; html lookahead 1:B828\"","User-Agent: Mozilla\/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident\/5.0; PTST 2.366)","Accept-Encoding: gzip, deflate","Host: imgx0.livejasmincdn.com","Connection: Keep-Alive"],"response":["HTTP\/1.1 200 OK","Accept-Ranges: bytes","Cache-Control: max-age=2419200","Content-Type: image\/jpeg","Date: Mon, 16 Sep 2013 15:33:33 GMT","Expires: Mon, 14 Oct 2013 15:33:33 GMT","Last-Modified: Wed, 07 Aug 2013 19:46:19 GMT","Server: ECS (dca\/FEDE)","X-Cache: HIT","Content-Length: 39998"]},"location":"Edgecast","index":6,"number":7},{"ip_addr":"72.21.91.9","method":"GET","host":"imgx3.livejasmincdn.com","url":"\/wa\/Q\/Qu\/QueenSex\/live\/tmbImage6.jpg?cno=46e9","responseCode":"200","load_ms":"61","ttfb_ms":"40","load_start":"1023","bytesOut":"446","bytesIn":"11870","objectSize":"11587","expires":"Mon, 14 Oct 2013 15:33:34 GMT","cacheControl":"max-age=2419200","contentType":"image\/jpeg","type":"3","socket":"28","score_cache":"100","score_cdn":"100","score_gzip":"-1","score_cookies":"100","score_keep-alive":"100","score_minify":"-1","score_combine":"-1","score_compress":"50","score_etags":"100","is_secure":"0","dns_ms":"113","connect_ms":"37","gzip_total":"0","gzip_save":"0","minify_total":"0","minify_save":"0","image_total":"11587","image_save":"1402","cache_time":"2419200","cdn_provider":"Edgecast","server_count":"1","server_rtt":"31","client_port":"56981","jpeg_scan_count":"10","full_url":"http:\/\/imgx3.livejasmincdn.com\/wa\/Q\/Qu\/QueenSex\/live\/tmbImage6.jpg?cno=46e9","score_progressive_jpeg":100,"ssl_start":0,"ssl_end":0,"ssl_ms":0,"connect_start":986,"connect_end":1023,"dns_start":873,"dns_end":986,"load_end":1084,"ttfb_start":"1023","ttfb_end":1063,"download_start":1063,"download_end":1084,"download_ms":21,"all_start":873,"all_end":1084,"all_ms":211,"headers":{"request":["GET \/wa\/Q\/Qu\/QueenSex\/live\/tmbImage6.jpg?cno=46e9 HTTP\/1.1","Accept: image\/png, image\/svg+xml, image\/*;q=0.8, *\/*;q=0.5","Referer: http:\/\/new.livejasmin.com\/en\/","Accept-Language: en-US","X-Download-Initiator: image=\"doc 03F0; speculative; restarted html tokenizer 8A28\"","User-Agent: Mozilla\/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident\/5.0; PTST 2.366)","Accept-Encoding: gzip, deflate","Host: imgx3.livejasmincdn.com","Connection: Keep-Alive"],"response":["HTTP\/1.1 200 OK","Accept-Ranges: bytes","Cache-Control: max-age=2419200","Content-Type: image\/jpeg","Date: Mon, 16 Sep 2013 15:33:34 GMT","Expires: Mon, 14 Oct 2013 15:33:34 GMT","Last-Modified: Fri, 06 Sep 2013 20:46:13 GMT","Server: ECS (dca\/533E)","X-Cache: HIT","Content-Length: 11587"]},"location":"Edgecast","index":7,"number":8},{"ip_addr":"72.21.91.9","method":"GET","host":"imgx1.livejasmincdn.com","url":"\/wa\/0\/0o\/0ohBabyD0ll\/live\/tmbImage6.jpg?cno=defe","responseCode":"200","load_ms":"73","ttfb_ms":"39","load_start":"1033","bytesOut":"449","bytesIn":"9479","objectSize":"9168","expires":"Mon, 14 Oct 2013 15:33:34 GMT","cacheControl":"max-age=2419200","contentType":"image\/jpeg","type":"3","socket":"34","score_cache":"100","score_cdn":"100","score_gzip":"-1","score_cookies":"100","score_keep-alive":"-1","score_minify":"-1","score_combine":"-1","score_compress":"50","score_etags":"100","is_secure":"0","dns_ms":"14","connect_ms":"33","gzip_total":"0","gzip_save":"0","minify_total":"0","minify_save":"0","image_total":"9168","image_save":"1190","cache_time":"2419200","cdn_provider":"Edgecast","server_count":"1","server_rtt":"31","client_port":"56982","jpeg_scan_count":"10","full_url":"http:\/\/imgx1.livejasmincdn.com\/wa\/0\/0o\/0ohBabyD0ll\/live\/tmbImage6.jpg?cno=defe","score_progressive_jpeg":100,"ssl_start":0,"ssl_end":0,"ssl_ms":0,"connect_start":1000,"connect_end":1033,"dns_start":986,"dns_end":1000,"load_end":1106,"ttfb_start":"1033","ttfb_end":1072,"download_start":1072,"download_end":1106,"download_ms":34,"all_start":986,"all_end":1106,"all_ms":120,"headers":{"request":["GET \/wa\/0\/0o\/0ohBabyD0ll\/live\/tmbImage6.jpg?cno=defe HTTP\/1.1","Accept: image\/png, image\/svg+xml, image\/*;q=0.8, *\/*;q=0.5","Referer: http:\/\/new.livejasmin.com\/en\/","Accept-Language: en-US","X-Download-Initiator: image=\"doc 03F0; speculative; restarted html tokenizer 8A28\"","User-Agent: Mozilla\/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident\/5.0; PTST 2.366)","Accept-Encoding: gzip, deflate","Host: imgx1.livejasmincdn.com","Connection: Keep-Alive"],"response":["HTTP\/1.1 200 OK","Accept-Ranges: bytes","Cache-Control: max-age=2419200","Content-Type: image\/jpeg","Date: Mon, 16 Sep 2013 15:33:34 GMT","Expires: Mon, 14 Oct 2013 15:33:34 GMT","Last-Modified: Sat, 17 Aug 2013 10:00:40 GMT","Server: ECS (dca\/FEBF)","X-Cache: HIT","X-Real-Source: usmia-swww-2","Content-Length: 9168"]},"location":"Edgecast","index":8,"number":9},{"ip_addr":"72.21.91.9","method":"GET","host":"imgx2.livejasmincdn.com","url":"\/wa\/0\/00\/00love4you\/live\/tmbImage6.jpg?cno=0c08","responseCode":"200","load_ms":"81","ttfb_ms":"43","load_start":"1038","bytesOut":"448","bytesIn":"11186","objectSize":"10903","expires":"Mon, 14 Oct 2013 15:33:34 GMT","cacheControl":"max-age=2419200","contentType":"image\/jpeg","type":"3","socket":"38","score_cache":"100","score_cdn":"100","score_gzip":"-1","score_cookies":"100","score_keep-alive":"-1","score_minify":"-1","score_combine":"-1","score_compress":"50","score_etags":"100","is_secure":"0","dns_ms":"15","connect_ms":"36","gzip_total":"0","gzip_save":"0","minify_total":"0","minify_save":"0","image_total":"10903","image_save":"1334","cache_time":"2419200","cdn_provider":"Edgecast","server_count":"1","server_rtt":"31","client_port":"56985","jpeg_scan_count":"10","full_url":"http:\/\/imgx2.livejasmincdn.com\/wa\/0\/00\/00love4you\/live\/tmbImage6.jpg?cno=0c08","score_progressive_jpeg":100,"ssl_start":0,"ssl_end":0,"ssl_ms":0,"connect_start":1002,"connect_end":1038,"dns_start":987,"dns_end":1002,"load_end":1119,"ttfb_start":"1038","ttfb_end":1081,"download_start":1081,"download_end":1119,"download_ms":38,"all_start":987,"all_end":1119,"all_ms":132,"headers":{"request":["GET \/wa\/0\/00\/00love4you\/live\/tmbImage6.jpg?cno=0c08 HTTP\/1.1","Accept: image\/png, image\/svg+xml, image\/*;q=0.8, *\/*;q=0.5","Referer: http:\/\/new.livejasmin.com\/en\/","Accept-Language: en-US","X-Download-Initiator: image=\"doc 03F0; speculative; restarted html tokenizer 8A28\"","User-Agent: Mozilla\/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident\/5.0; PTST 2.366)","Accept-Encoding: gzip, deflate","Host: imgx2.livejasmincdn.com","Connection: Keep-Alive"],"response":["HTTP\/1.1 200 OK","Accept-Ranges: bytes","Cache-Control: max-age=2419200","Content-Type: image\/jpeg","Date: Mon, 16 Sep 2013 15:33:34 GMT","Expires: Mon, 14 Oct 2013 15:33:34 GMT","Last-Modified: Wed, 11 Sep 2013 12:43:23 GMT","Server: ECS (dca\/24BC)","X-Cache: HIT","Content-Length: 10903"]},"location":"Edgecast","index":9,"number":10},{"ip_addr":"72.21.91.9","method":"GET","host":"imgx0.livejasmincdn.com","url":"\/wa\/B\/Bi\/BigBoobsCheryl\/live\/tmbImage6.jpg?cno=f30f","responseCode":"200","load_ms":"56","ttfb_ms":"40","load_start":"1000","bytesOut":"452","bytesIn":"12804","objectSize":"12521","expires":"Mon, 14 Oct 2013 15:33:34 GMT","cacheControl":"max-age=2419200","contentType":"image\/jpeg","type":"3","socket":"23","score_cache":"100","score_cdn":"100","score_gzip":"-1","score_cookies":"100","score_keep-alive":"100","score_minify":"-1","score_combine":"-1","score_compress":"50","score_etags":"100","is_secure":"0","gzip_total":"0","gzip_save":"0","minify_total":"0","minify_save":"0","image_total":"12521","image_save":"1490","cache_time":"2419200","cdn_provider":"Edgecast","server_count":"1","server_rtt":"31","client_port":"56979","jpeg_scan_count":"10","full_url":"http:\/\/imgx0.livejasmincdn.com\/wa\/B\/Bi\/BigBoobsCheryl\/live\/tmbImage6.jpg?cno=f30f","score_progressive_jpeg":100,"ssl_start":0,"ssl_end":0,"ssl_ms":0,"connect_start":0,"connect_end":0,"connect_ms":0,"dns_start":0,"dns_end":0,"dns_ms":0,"load_end":1056,"ttfb_start":"1000","ttfb_end":1040,"download_start":1040,"download_end":1056,"download_ms":16,"all_start":"1000","all_end":1056,"all_ms":"56","headers":{"request":["GET \/wa\/B\/Bi\/BigBoobsCheryl\/live\/tmbImage6.jpg?cno=f30f HTTP\/1.1","Accept: image\/png, image\/svg+xml, image\/*;q=0.8, *\/*;q=0.5","Referer: http:\/\/new.livejasmin.com\/en\/","Accept-Language: en-US","X-Download-Initiator: image=\"doc 03F0; speculative; restarted html tokenizer 8A28\"","User-Agent: Mozilla\/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident\/5.0; PTST 2.366)","Accept-Encoding: gzip, deflate","Host: imgx0.livejasmincdn.com","Connection: Keep-Alive"],"response":["HTTP\/1.1 200 OK","Accept-Ranges: bytes","Cache-Control: max-age=2419200","Content-Type: image\/jpeg","Date: Mon, 16 Sep 2013 15:33:34 GMT","Expires: Mon, 14 Oct 2013 15:33:34 GMT","Last-Modified: Fri, 14 Jun 2013 12:34:09 GMT","Server: ECS (dca\/53E8)","X-Cache: HIT","Content-Length: 12521"]},"location":"Edgecast","index":10,"number":11},{"ip_addr":"72.21.91.9","method":"GET","host":"imgx3.livejasmincdn.com","url":"\/wa\/p\/po\/poisonivyxx\/live\/tmbImage6.jpg?cno=7997","responseCode":"200","load_ms":"83","ttfb_ms":"39","load_start":"1038","bytesOut":"449","bytesIn":"12982","objectSize":"12699","expires":"Mon, 14 Oct 2013 15:33:34 GMT","cacheControl":"max-age=2419200","contentType":"image\/jpeg","type":"3","socket":"40","score_cache":"100","score_cdn":"100","score_gzip":"-1","score_cookies":"100","score_keep-alive":"100","score_minify":"-1","score_combine":"-1","score_compress":"50","score_etags":"100","is_secure":"0","connect_ms":"36","gzip_total":"0","gzip_save":"0","minify_total":"0","minify_save":"0","image_total":"12699","image_save":"1670","cache_time":"2419200","cdn_provider":"Edgecast","server_count":"1","server_rtt":"31","client_port":"56987","jpeg_scan_count":"10","full_url":"http:\/\/imgx3.livejasmincdn.com\/wa\/p\/po\/poisonivyxx\/live\/tmbImage6.jpg?cno=7997","score_progressive_jpeg":100,"ssl_start":0,"ssl_end":0,"ssl_ms":0,"connect_start":1002,"connect_end":1038,"dns_start":0,"dns_end":0,"dns_ms":0,"load_end":1121,"ttfb_start":"1038","ttfb_end":1077,"download_start":1077,"download_end":1121,"download_ms":44,"all_start":1002,"all_end":1121,"all_ms":119,"headers":{"request":["GET \/wa\/p\/po\/poisonivyxx\/live\/tmbImage6.jpg?cno=7997 HTTP\/1.1","Accept: image\/png, image\/svg+xml, image\/*;q=0.8, *\/*;q=0.5","Referer: http:\/\/new.livejasmin.com\/en\/","Accept-Language: en-US","X-Download-Initiator: image=\"doc 03F0; speculative; restarted html tokenizer 8A28\"","User-Agent: Mozilla\/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident\/5.0; PTST 2.366)","Accept-Encoding: gzip, deflate","Host: imgx3.livejasmincdn.com","Connection: Keep-Alive"],"response":["HTTP\/1.1 200 OK","Accept-Ranges: bytes","Cache-Control: max-age=2419200","Content-Type: image\/jpeg","Date: Mon, 16 Sep 2013 15:33:34 GMT","Expires: Mon, 14 Oct 2013 15:33:34 GMT","Last-Modified: Thu, 12 Sep 2013 10:34:07 GMT","Server: ECS (dca\/5334)","X-Cache: HIT","Content-Length: 12699"]},"location":"Edgecast","index":11,"number":12},{"ip_addr":"185.13.89.12","method":"GET","host":"www.dditservices.com","url":"\/sohandler_1.swf","responseCode":"304","load_ms":"142","ttfb_ms":"142","load_start":"2654","bytesOut":"377","bytesIn":"135","objectSize":"0","contentType":"application\/x-shockwave-flash","type":"3","socket":"46","score_cache":"-1","score_cdn":"-1","score_gzip":"-1","score_cookies":"100","score_keep-alive":"-1","score_minify":"-1","score_combine":"-1","score_compress":"-1","score_etags":"0","is_secure":"1","dns_ms":"133","connect_ms":"142","ssl_ms":"801","gzip_total":"0","gzip_save":"0","minify_total":"0","minify_save":"0","image_total":"0","image_save":"0","server_count":"1","server_rtt":"142","client_port":"56990","jpeg_scan_count":"0","full_url":"https:\/\/www.dditservices.com\/sohandler_1.swf","score_progressive_jpeg":-1,"ssl_start":1853,"ssl_end":2654,"connect_start":1711,"connect_end":1853,"dns_start":1578,"dns_end":1711,"load_end":2796,"ttfb_start":"2654","ttfb_end":2796,"download_start":2796,"download_end":2796,"download_ms":0,"all_start":1578,"all_end":2796,"all_ms":1218,"headers":{"request":["GET \/sohandler_1.swf HTTP\/1.1","Accept: *\/*","Accept-Language: en-US","Referer: http:\/\/new.livejasmin.com\/en\/","x-flash-version: 11,8,800,174","Accept-Encoding: gzip, deflate","User-Agent: Mozilla\/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident\/5.0; PTST 2.366)","Host: www.dditservices.com","If-Modified-Since: Tue, 30 Jul 2013 14:06:37 GMT; length=2511","Connection: Keep-Alive"],"response":["HTTP\/1.0 304 Not Modified","Date: Mon, 16 Sep 2013 15:33:36 GMT","Server: Apache","Connection: close","ETag: \"2090d4-9cf-4e2bb1e013540\"","Cached Response Headers:","HTTP\/1.0 200 OK","ETag: \"2090d4-9cf-4e2bb1e013540\"","Content-Length: 2511","Content-Type: application\/x-shockwave-flash","Last-Modified: Tue, 30 Jul 2013 14:06:37 GMT"]},"country":"Luxembourg","countryCode":"LUX","city":null,"region":null,"lat":49.75,"long":6.1667,"location":"Luxembourg","index":12,"number":13},{"ip_addr":"109.71.161.161","method":"POST","host":"new.livejasmin.com","url":"\/en\/overlay\/get-over-eighteenblock","responseCode":"200","load_ms":"79","ttfb_ms":"77","load_start":"1793","bytesOut":"699","bytesIn":"1078","objectSize":"283","expires":"0","cacheControl":"max-age=0,no-cache,no-store,must-revalidate,post-check=0,pre-check=0","contentType":"text\/plain","contentEncoding":"gzip","type":"3","socket":"44","score_cache":"-1","score_cdn":"-1","score_gzip":"100","score_cookies":"50","score_keep-alive":"0","score_minify":"-1","score_combine":"-1","score_compress":"-1","score_etags":"100","is_secure":"0","connect_ms":"114","gzip_total":"1078","gzip_save":"0","minify_total":"0","minify_save":"0","image_total":"0","image_save":"0","server_count":"1","server_rtt":"63","client_port":"56989","jpeg_scan_count":"0","full_url":"http:\/\/new.livejasmin.com\/en\/overlay\/get-over-eighteenblock","score_progressive_jpeg":-1,"ssl_start":0,"ssl_end":0,"ssl_ms":0,"connect_start":1679,"connect_end":1793,"dns_start":0,"dns_end":0,"dns_ms":0,"load_end":1872,"ttfb_start":"1793","ttfb_end":1870,"download_start":1870,"download_end":1872,"download_ms":2,"all_start":1679,"all_end":1872,"all_ms":193,"headers":{"request":["POST \/en\/overlay\/get-over-eighteenblock HTTP\/1.1","Accept: *\/*","X-Requested-With: XMLHttpRequest","Referer: http:\/\/new.livejasmin.com\/en\/","Accept-Language: en-us","Accept-Encoding: gzip, deflate","User-Agent: Mozilla\/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident\/5.0; PTST 2.366)","Host: new.livejasmin.com","Content-Length: 0","Connection: Keep-Alive","Cache-Control: no-cache","Cookie: jasminsite=YToxOntzOjc6InNpdGVfaWQiO2k6Mjt9; site_lang=en; lang=en; tppId=c1700d4a0229b0a249a9a3c2b2be6b53c282c413523724be; speedtest=1; gravity_cookie=a5ab8028723dc8fdb4b825800ccbbde92; originalNode=usmia; session=gb7ad1d6457bc398c5cef371a74d397de; category=girls; loadedFromServer=0; memberAppletSize=fullSize"],"response":["HTTP\/1.1 200 OK","Server: unknown","Date: Mon, 16 Sep 2013 15:33:35 GMT","Content-Type: text\/plain; charset=utf-8","Connection: close","Set-Cookie: session=gb7ad1d6457bc398c5cef371a74d397de; path=\/; domain=.livejasmin.com","Set-Cookie: listpage_member_id=958317423; path=\/; domain=.livejasmin.com","Set-Cookie: listPageIds=1307807287590938368; path=\/; domain=.livejasmin.com","Set-Cookie: category=girls; expires=Tue, 16-Sep-2014 15:33:35 GMT; path=\/; domain=new.livejasmin.com","Set-Cookie: tppId=c1700d4a0229b0a249a9a3c2b2be6b53c282c413523724be; expires=Tue, 16-Sep-2014 15:33:35 GMT; path=\/; domain=.livejasmin.com","Cache-Control: max-age=0,no-cache,no-store,must-revalidate,post-check=0,pre-check=0","Expires: 0","Pragma: no-cache","Vary: Accept-Encoding","Content-Encoding: gzip","Content-Length: 283"]},"country":"Portugal","countryCode":"PRT","city":null,"region":"06","lat":39.9453,"long":-8.0422,"location":null,"index":13,"number":14},{"ip_addr":"109.71.161.162","method":"POST","host":"new.livejasmin.com","url":"\/en\/tracking\/save-sohash","responseCode":"200","load_ms":"27894","ttfb_ms":"87","load_start":"2860","bytesOut":"8","bytesIn":"16047","objectSize":"15471","expires":"0","cacheControl":"max-age=0,no-cache,no-store,must-revalidate,post-check=0,pre-check=0","contentType":"text\/plain","type":"3","socket":"49","score_cache":"-1","score_cdn":"-1","score_gzip":"0","score_cookies":"50","score_keep-alive":"0","score_minify":"-1","score_combine":"-1","score_compress":"-1","score_etags":"100","is_secure":"0","gzip_total":"16047","gzip_save":"15447","minify_total":"0","minify_save":"0","image_total":"0","image_save":"0","server_count":"1","server_rtt":"59","client_port":"56993","jpeg_scan_count":"0","full_url":"http:\/\/new.livejasmin.com\/en\/tracking\/save-sohash","score_progressive_jpeg":-1,"ssl_start":0,"ssl_end":0,"ssl_ms":0,"connect_start":0,"connect_end":0,"connect_ms":0,"dns_start":0,"dns_end":0,"dns_ms":0,"load_end":30754,"ttfb_start":"2860","ttfb_end":2947,"download_start":2947,"download_end":30754,"download_ms":27807,"all_start":"2860","all_end":30754,"all_ms":"27894","headers":{"request":["POST \/en\/tracking\/save-sohash HTTP\/1.1","Accept: *\/*","X-Requested-With: XMLHttpRequest","Content-Type: application\/x-www-form-urlencoded; charset=UTF-8","Referer: http:\/\/new.livejasmin.com\/en\/","Accept-Language: en-us","Accept-Encoding: gzip, deflate","User-Agent: Mozilla\/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident\/5.0; PTST 2.366)","Host: new.livejasmin.com","Content-Length: 55","Connection: Keep-Alive","Cache-Control: no-cache","Cookie: jasminsite=YToxOntzOjc6InNpdGVfaWQiO2k6Mjt9; site_lang=en; lang=en; tppId=c1700d4a0229b0a249a9a3c2b2be6b53c282c413523724be; speedtest=1; gravity_cookie=a5ab8028723dc8fdb4b825800ccbbde92; originalNode=usmia; session=gb7ad1d6457bc398c5cef371a74d397de; listpage_member_id=958317423; listPageIds=1307807287590938368; category=girls; loadedFromServer=0; memberAppletSize=fullSize"],"response":["HTTP\/1.1 200 OK","Server: unknown","Date: Mon, 16 Sep 2013 15:33:36 GMT","Content-Type: text\/plain; charset=utf-8","Connection: close","Set-Cookie: session=gb7ad1d6457bc398c5cef371a74d397de; path=\/; domain=.livejasmin.com","Set-Cookie: category=girls; expires=Tue, 16-Sep-2014 15:33:36 GMT; path=\/; domain=new.livejasmin.com","Set-Cookie: tppId=c1700d4a0229b0a249a9a3c2b2be6b53c282c413523724be; expires=Tue, 16-Sep-2014 15:33:36 GMT; path=\/; domain=.livejasmin.com","Cache-Control: max-age=0,no-cache,no-store,must-revalidate,post-check=0,pre-check=0","Expires: 0","Pragma: no-cache"]},"country":"Portugal","countryCode":"PRT","city":null,"region":"06","lat":39.9453,"long":-8.0422,"location":null,"index":14,"number":15},{"ip_addr":"109.71.161.161","method":"POST","host":"new.livejasmin.com","url":"\/en\/flash\/check-user","responseCode":"200","load_ms":"90","ttfb_ms":"86","load_start":"4596","bytesOut":"886","bytesIn":"896","objectSize":"38","expires":"0","cacheControl":"max-age=0,no-cache,no-store,must-revalidate,post-check=0,pre-check=0","contentType":"text\/plain","contentEncoding":"gzip","type":"3","socket":"50","score_cache":"-1","score_cdn":"-1","score_gzip":"100","score_cookies":"50","score_keep-alive":"0","score_minify":"-1","score_combine":"-1","score_compress":"-1","score_etags":"100","is_secure":"0","connect_ms":"67","gzip_total":"896","gzip_save":"0","minify_total":"0","minify_save":"0","image_total":"0","image_save":"0","server_count":"1","server_rtt":"63","client_port":"56994","jpeg_scan_count":"0","full_url":"http:\/\/new.livejasmin.com\/en\/flash\/check-user","score_progressive_jpeg":-1,"ssl_start":0,"ssl_end":0,"ssl_ms":0,"connect_start":4529,"connect_end":4596,"dns_start":0,"dns_end":0,"dns_ms":0,"load_end":4686,"ttfb_start":"4596","ttfb_end":4682,"download_start":4682,"download_end":4686,"download_ms":4,"all_start":4529,"all_end":4686,"all_ms":157,"headers":{"request":["POST \/en\/flash\/check-user HTTP\/1.1","Accept: *\/*","Accept-Language: en-US","Referer: http:\/\/flashx.new.livejasmincdn.com\/1488\/memberapplet\/memberappletcontainer.swf","x-flash-version: 11,8,800,174","Content-Type: application\/x-www-form-urlencoded","Content-Length: 41","Accept-Encoding: gzip, deflate","User-Agent: Mozilla\/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident\/5.0; PTST 2.366)","Host: new.livejasmin.com","Connection: Keep-Alive","Cache-Control: no-cache","Cookie: jasminsite=YToxOntzOjc6InNpdGVfaWQiO2k6Mjt9; site_lang=en; lang=en; tppId=c1700d4a0229b0a249a9a3c2b2be6b53c282c413523724be; speedtest=1; gravity_cookie=a5ab8028723dc8fdb4b825800ccbbde92; originalNode=usmia; session=gb7ad1d6457bc398c5cef371a74d397de; listpage_member_id=958317423; listPageIds=1307807287590938368; category=girls; loadedFromServer=0; memberAppletSize=fullSize"],"response":["HTTP\/1.1 200 OK","Server: unknown","Date: Mon, 16 Sep 2013 15:33:37 GMT","Content-Type: text\/plain; charset=utf-8","Connection: close","Set-Cookie: jasminsite=YToxOntzOjc6InNpdGVfaWQiO2k6Mjt9; expires=Tue, 16-Sep-2014 15:33:37 GMT; path=\/; domain=.livejasmin.com","Set-Cookie: session=gb7ad1d6457bc398c5cef371a74d397de; path=\/; domain=.livejasmin.com","Set-Cookie: category=girls; expires=Tue, 16-Sep-2014 15:33:37 GMT; path=\/; domain=new.livejasmin.com","Set-Cookie: tppId=c1700d4a0229b0a249a9a3c2b2be6b53c282c413523724be; expires=Tue, 16-Sep-2014 15:33:37 GMT; path=\/; domain=.livejasmin.com","Set-Cookie: session=gb7ad1d6457bc398c5cef371a74d397de; path=\/; domain=.livejasmin.com","Cache-Control: max-age=0,no-cache,no-store,must-revalidate,post-check=0,pre-check=0","Expires: 0","Pragma: no-cache","Vary: Accept-Encoding","Content-Encoding: gzip","Content-Length: 38"]},"country":"Portugal","countryCode":"PRT","city":null,"region":"06","lat":39.9453,"long":-8.0422,"location":null,"index":15,"number":16}];
+var wptNoLinks=1;
+</script><br><a href="/customWaterfall.php?width=930&test=130916_5E_M2P&run=1&cached=1">customize waterfall</a> &#8226; <a id="view-images" href="/pageimages.php?test=130916_5E_M2P&run=1&cached=1">View all Images</a>                <br>
+                <br>
+                <h3 name="connection_view">Connection View</h3>
+                <map name="connection_map">
+                <area href="#request" alt="http://livejasmin.com" title="http://livejasmin.com" shape=RECT coords="0,0,250,25">
+<area href="#request1" alt="1: http://www.livejasmin.com/" title="1: http://www.livejasmin.com/" shape=RECT coords="253,26,256,42">
+<area href="#request2" alt="2: http://new.livejasmin.com/" title="2: http://new.livejasmin.com/" shape=RECT coords="258,43,260,59">
+<area href="#request3" alt="3: http://new.livejasmin.com/en/" title="3: http://new.livejasmin.com/en/" shape=RECT coords="260,60,273,76">
+<area href="#request14" alt="14: http://new.livejasmin.com/en/overlay/get-over-eighteenblock" title="14: http://new.livejasmin.com/en/overlay/get-over-eighteenblock" shape=RECT coords="290,77,292,93">
+<area href="#request15" alt="15: http://new.livejasmin.com/en/tracking/save-sohash" title="15: http://new.livejasmin.com/en/tracking/save-sohash" shape=RECT coords="313,94,928,110">
+<area href="#request16" alt="16: http://new.livejasmin.com/en/flash/check-user" title="16: http://new.livejasmin.com/en/flash/check-user" shape=RECT coords="352,111,354,127">
+<area href="#request4" alt="4: http://staticx1.new.livejasmincdn.com/master/script/cdntestpack-e12a8.js?r=1379345613" title="4: http://staticx1.new.livejasmincdn.com/master/script/cdntestpack-e12a8.js?r=1379345613" shape=RECT coords="263,128,263,144">
+<area href="#request5" alt="5: http://staticx1.new.livejasmincdn.com/master/script/cdntestpack-e12a8.js?r=1379345613" title="5: http://staticx1.new.livejasmincdn.com/master/script/cdntestpack-e12a8.js?r=1379345613" shape=RECT coords="264,145,264,161">
+<area href="#request6" alt="6: http://imgx0.livejasmincdn.com/wa/A/An/AnomimWoman/live/tmbImage6.jpg?cno=bcc2" title="6: http://imgx0.livejasmincdn.com/wa/A/An/AnomimWoman/live/tmbImage6.jpg?cno=bcc2" shape=RECT coords="264,162,267,178">
+<area href="#request7" alt="7: http://imgx0.livejasmincdn.com/wa/N/Ni/NightEnigma/live/tmbImage5.jpg?cno=860e" title="7: http://imgx0.livejasmincdn.com/wa/N/Ni/NightEnigma/live/tmbImage5.jpg?cno=860e" shape=RECT coords="264,179,269,195">
+<area href="#request11" alt="11: http://imgx0.livejasmincdn.com/wa/B/Bi/BigBoobsCheryl/live/tmbImage6.jpg?cno=f30f" title="11: http://imgx0.livejasmincdn.com/wa/B/Bi/BigBoobsCheryl/live/tmbImage6.jpg?cno=f30f" shape=RECT coords="273,196,274,212">
+<area href="#request8" alt="8: http://imgx3.livejasmincdn.com/wa/Q/Qu/QueenSex/live/tmbImage6.jpg?cno=46e9" title="8: http://imgx3.livejasmincdn.com/wa/Q/Qu/QueenSex/live/tmbImage6.jpg?cno=46e9" shape=RECT coords="273,213,274,229">
+<area href="#request12" alt="12: http://imgx3.livejasmincdn.com/wa/p/po/poisonivyxx/live/tmbImage6.jpg?cno=7997" title="12: http://imgx3.livejasmincdn.com/wa/p/po/poisonivyxx/live/tmbImage6.jpg?cno=7997" shape=RECT coords="273,230,275,246">
+<area href="#request9" alt="9: http://imgx1.livejasmincdn.com/wa/0/0o/0ohBabyD0ll/live/tmbImage6.jpg?cno=defe" title="9: http://imgx1.livejasmincdn.com/wa/0/0o/0ohBabyD0ll/live/tmbImage6.jpg?cno=defe" shape=RECT coords="273,247,275,263">
+<area href="#request10" alt="10: http://imgx2.livejasmincdn.com/wa/0/00/00love4you/live/tmbImage6.jpg?cno=0c08" title="10: http://imgx2.livejasmincdn.com/wa/0/00/00love4you/live/tmbImage6.jpg?cno=0c08" shape=RECT coords="273,264,275,280">
+<area href="#request13" alt="13: https://www.dditservices.com/sohandler_1.swf" title="13: https://www.dditservices.com/sohandler_1.swf" shape=RECT coords="309,281,312,297">
+                </map>
+                <table border="1" bordercolor="silver" cellpadding="2px" cellspacing="0" style="width:auto; font-size:11px; margin-left:auto; margin-right:auto;">
+                    <tr>
+                        <td><table><tr><td><div class="bar" style="width:15px; background-color:#007B84"></div></td><td>DNS Lookup</td></tr></table></td>
+                        <td><table><tr><td><div class="bar" style="width:15px; background-color:#FF7B00"></div></td><td>Initial Connection</td></tr></table></td>
+                                                <td><table><tr><td><div class="bar" style="width:15px; background-color:#CF25DF"></div></td><td>SSL Negotiation</td></tr></table></td>
+                                                <td><table><tr><td><div class="bar" style="width:2px; background-color:#28BC00"></div></td><td>Start Render</td></tr></table></td>
+                                                                                                <td><table><tr><td><div class="bar" style="width:2px; background-color:#0000FF"></div></td><td>Document Complete</td></tr></table></td>
+                    </tr>
+                </table>
+                <br>
+                <img class="progress" alt="Connection View waterfall diagram" usemap="#connection_map" id="connectionView" src="/waterfall.png?type=connection&width=930&test=130916_5E_M2P&run=1&cached=1&mime=1">
+                </div>
+                <br><br>
+                
+                <br>
+                <div class="center">
+<table id="tableDetails" class="details center">
+	<caption>Request Details</caption>
+    <thead>
+	<tr>
+		<th class="reqNum">#</th>
+		<th class="reqUrl">Resource</th>
+		<th class="reqMime">Content Type</th>
+		<th class="reqStart">Start Offset</th>
+		<th class="reqDNS">DNS Lookup</th>
+		<th class="reqSocket">Initial Connection</th>
+				<th class="reqSSL">SSL Negotiation</th>
+				<th class="reqTTFB">Time to First Byte</th>
+		<th class="reqDownload">Content Download</th>
+		<th class="reqBytes">Bytes Downloaded</th>
+		<th class="reqResult">Error/Status Code</th>
+		<th class="reqIP">IP</th>
+				<th class="reqLocation">Location*</th>
+			</tr>
+    </thead>
+    <tbody>
+
+<tr><td class="reqNum warning oddRender">1</td><td class="reqUrl warning oddRender"><a title="http://www.livejasmin.com/" href="#request1">http://www.livejasmin.com/</a></td><td class="reqMime warning oddRender">text/html</td><td class="reqStart warning oddRender">0.134 s</td><td class="reqDNS warning oddRender">24 ms</td><td class="reqSocket warning oddRender">106 ms</td><td class="reqSSL warning oddRender">-</td><td class="reqTTFB warning oddRender">114 ms</td><td class="reqDownload warning oddRender">3 ms</td><td class="reqBytes warning oddRender">0.5 KB</td><td class="reqResult warning oddRender">302</td><td class="reqIP warning oddRender">109.71.160.200</td><td class="reqLocation warning oddRender">Madeirã, Portugal</td>
+</tr><tr><td class="reqNum warning evenRender">2</td><td class="reqUrl warning evenRender"><a title="http://new.livejasmin.com/" href="#request2">http://new.livejasmin.com/</a></td><td class="reqMime warning evenRender">text/html</td><td class="reqStart warning evenRender">0.34 s</td><td class="reqDNS warning evenRender">24 ms</td><td class="reqSocket warning evenRender">63 ms</td><td class="reqSSL warning evenRender">-</td><td class="reqTTFB warning evenRender">74 ms</td><td class="reqDownload warning evenRender">1 ms</td><td class="reqBytes warning evenRender">0.5 KB</td><td class="reqResult warning evenRender">302</td><td class="reqIP warning evenRender">109.71.161.161</td><td class="reqLocation warning evenRender">Madeirã, Portugal</td>
+</tr><tr><td class="reqNum oddRender">3</td><td class="reqUrl oddRender"><a title="http://new.livejasmin.com/en/" href="#request3">http://new.livejasmin.com/en/</a></td><td class="reqMime oddRender">text/html</td><td class="reqStart oddRender">0.417 s</td><td class="reqDNS oddRender">-</td><td class="reqSocket oddRender">-</td><td class="reqSSL oddRender">-</td><td class="reqTTFB oddRender">120 ms</td><td class="reqDownload oddRender">465 ms</td><td class="reqBytes oddRender">16.9 KB</td><td class="reqResult oddRender">200</td><td class="reqIP oddRender">109.71.161.161</td><td class="reqLocation oddRender">Madeirã, Portugal</td>
+</tr><tr><td class="reqNum evenRender">4</td><td class="reqUrl evenRender"><a title="http://staticx1.new.livejasmincdn.com/master/script/cdntestpack-e12a8.js?r=1379345613" href="#request4">http://staticx1.new....12a8.js?r=1379345613</a></td><td class="reqMime evenRender">-</td><td class="reqStart evenRender">0.557 s</td><td class="reqDNS evenRender">-</td><td class="reqSocket evenRender">-</td><td class="reqSSL evenRender">-</td><td class="reqTTFB evenRender">-</td><td class="reqDownload evenRender">-</td><td class="reqBytes evenRender">-</td><td class="reqResult evenRender">-</td><td class="reqIP evenRender">72.21.91.9</td><td class="reqLocation evenRender">Edgecast</td>
+</tr><tr><td class="reqNum oddRender">5</td><td class="reqUrl oddRender"><a title="http://staticx1.new.livejasmincdn.com/master/script/cdntestpack-e12a8.js?r=1379345613" href="#request5">http://staticx1.new....12a8.js?r=1379345613</a></td><td class="reqMime oddRender">application/javascript</td><td class="reqStart oddRender">0.595 s</td><td class="reqDNS oddRender">-</td><td class="reqSocket oddRender">31 ms</td><td class="reqSSL oddRender">-</td><td class="reqTTFB oddRender">38 ms</td><td class="reqDownload oddRender">-</td><td class="reqBytes oddRender">0.3 KB</td><td class="reqResult oddRender">200</td><td class="reqIP oddRender">72.21.91.9</td><td class="reqLocation oddRender">Edgecast</td>
+</tr><tr><td class="reqNum evenRender">6</td><td class="reqUrl evenRender"><a title="http://imgx0.livejasmincdn.com/wa/A/An/AnomimWoman/live/tmbImage6.jpg?cno=bcc2" href="#request6">http://imgx0.livejas...bImage6.jpg?cno=bcc2</a></td><td class="reqMime evenRender">image/jpeg</td><td class="reqStart evenRender">0.618 s</td><td class="reqDNS evenRender">13 ms</td><td class="reqSocket evenRender">35 ms</td><td class="reqSSL evenRender">-</td><td class="reqTTFB evenRender">101 ms</td><td class="reqDownload evenRender">20 ms</td><td class="reqBytes evenRender">27.5 KB</td><td class="reqResult evenRender">200</td><td class="reqIP evenRender">72.21.91.9</td><td class="reqLocation evenRender">Edgecast</td>
+</tr><tr><td class="reqNum oddRender">7</td><td class="reqUrl oddRender"><a title="http://imgx0.livejasmincdn.com/wa/N/Ni/NightEnigma/live/tmbImage5.jpg?cno=860e" href="#request7">http://imgx0.livejas...bImage5.jpg?cno=860e</a></td><td class="reqMime oddRender">image/jpeg</td><td class="reqStart oddRender">0.616 s</td><td class="reqDNS oddRender">-</td><td class="reqSocket oddRender">32 ms</td><td class="reqSSL oddRender">-</td><td class="reqTTFB oddRender">101 ms</td><td class="reqDownload oddRender">104 ms</td><td class="reqBytes oddRender">39.3 KB</td><td class="reqResult oddRender">200</td><td class="reqIP oddRender">72.21.91.9</td><td class="reqLocation oddRender">Edgecast</td>
+</tr><tr><td class="reqNum evenRender">8</td><td class="reqUrl evenRender"><a title="http://imgx3.livejasmincdn.com/wa/Q/Qu/QueenSex/live/tmbImage6.jpg?cno=46e9" href="#request8">http://imgx3.livejas...bImage6.jpg?cno=46e9</a></td><td class="reqMime evenRender">image/jpeg</td><td class="reqStart evenRender">1.023 s</td><td class="reqDNS evenRender">113 ms</td><td class="reqSocket evenRender">37 ms</td><td class="reqSSL evenRender">-</td><td class="reqTTFB evenRender">40 ms</td><td class="reqDownload evenRender">21 ms</td><td class="reqBytes evenRender">11.6 KB</td><td class="reqResult evenRender">200</td><td class="reqIP evenRender">72.21.91.9</td><td class="reqLocation evenRender">Edgecast</td>
+</tr><tr><td class="reqNum oddRender">9</td><td class="reqUrl oddRender"><a title="http://imgx1.livejasmincdn.com/wa/0/0o/0ohBabyD0ll/live/tmbImage6.jpg?cno=defe" href="#request9">http://imgx1.livejas...bImage6.jpg?cno=defe</a></td><td class="reqMime oddRender">image/jpeg</td><td class="reqStart oddRender">1.033 s</td><td class="reqDNS oddRender">14 ms</td><td class="reqSocket oddRender">33 ms</td><td class="reqSSL oddRender">-</td><td class="reqTTFB oddRender">39 ms</td><td class="reqDownload oddRender">34 ms</td><td class="reqBytes oddRender">9.3 KB</td><td class="reqResult oddRender">200</td><td class="reqIP oddRender">72.21.91.9</td><td class="reqLocation oddRender">Edgecast</td>
+</tr><tr><td class="reqNum evenRender">10</td><td class="reqUrl evenRender"><a title="http://imgx2.livejasmincdn.com/wa/0/00/00love4you/live/tmbImage6.jpg?cno=0c08" href="#request10">http://imgx2.livejas...bImage6.jpg?cno=0c08</a></td><td class="reqMime evenRender">image/jpeg</td><td class="reqStart evenRender">1.038 s</td><td class="reqDNS evenRender">15 ms</td><td class="reqSocket evenRender">36 ms</td><td class="reqSSL evenRender">-</td><td class="reqTTFB evenRender">43 ms</td><td class="reqDownload evenRender">38 ms</td><td class="reqBytes evenRender">10.9 KB</td><td class="reqResult evenRender">200</td><td class="reqIP evenRender">72.21.91.9</td><td class="reqLocation evenRender">Edgecast</td>
+</tr><tr><td class="reqNum oddRender">11</td><td class="reqUrl oddRender"><a title="http://imgx0.livejasmincdn.com/wa/B/Bi/BigBoobsCheryl/live/tmbImage6.jpg?cno=f30f" href="#request11">http://imgx0.livejas...bImage6.jpg?cno=f30f</a></td><td class="reqMime oddRender">image/jpeg</td><td class="reqStart oddRender">1 s</td><td class="reqDNS oddRender">-</td><td class="reqSocket oddRender">-</td><td class="reqSSL oddRender">-</td><td class="reqTTFB oddRender">40 ms</td><td class="reqDownload oddRender">16 ms</td><td class="reqBytes oddRender">12.5 KB</td><td class="reqResult oddRender">200</td><td class="reqIP oddRender">72.21.91.9</td><td class="reqLocation oddRender">Edgecast</td>
+</tr><tr><td class="reqNum evenRender">12</td><td class="reqUrl evenRender"><a title="http://imgx3.livejasmincdn.com/wa/p/po/poisonivyxx/live/tmbImage6.jpg?cno=7997" href="#request12">http://imgx3.livejas...bImage6.jpg?cno=7997</a></td><td class="reqMime evenRender">image/jpeg</td><td class="reqStart evenRender">1.038 s</td><td class="reqDNS evenRender">-</td><td class="reqSocket evenRender">36 ms</td><td class="reqSSL evenRender">-</td><td class="reqTTFB evenRender">39 ms</td><td class="reqDownload evenRender">44 ms</td><td class="reqBytes evenRender">12.7 KB</td><td class="reqResult evenRender">200</td><td class="reqIP evenRender">72.21.91.9</td><td class="reqLocation evenRender">Edgecast</td>
+</tr><tr><td class="reqNum warning odd">13</td><td class="reqUrl warning odd"><a title="https://www.dditservices.com/sohandler_1.swf" href="#request13">https://www.dditserv....com/sohandler_1.swf</a></td><td class="reqMime warning odd">application/x-shockwave-flash</td><td class="reqStart warning odd">2.654 s</td><td class="reqDNS warning odd">133 ms</td><td class="reqSocket warning odd">142 ms</td><td class="reqSSL warning odd">801 ms</td><td class="reqTTFB warning odd">142 ms</td><td class="reqDownload warning odd">-</td><td class="reqBytes warning odd">0.1 KB</td><td class="reqResult warning odd">304</td><td class="reqIP warning odd">185.13.89.12</td><td class="reqLocation warning odd">Luxembourg</td>
+</tr><tr><td class="reqNum even">14</td><td class="reqUrl even"><a title="http://new.livejasmin.com/en/overlay/get-over-eighteenblock" href="#request14">http://new.livejasmi...t-over-eighteenblock</a></td><td class="reqMime even">text/plain</td><td class="reqStart even">1.793 s</td><td class="reqDNS even">-</td><td class="reqSocket even">114 ms</td><td class="reqSSL even">-</td><td class="reqTTFB even">77 ms</td><td class="reqDownload even">2 ms</td><td class="reqBytes even">1.1 KB</td><td class="reqResult even">200</td><td class="reqIP even">109.71.161.161</td><td class="reqLocation even">Madeirã, Portugal</td>
+</tr><tr><td class="reqNum odd">15</td><td class="reqUrl odd"><a title="http://new.livejasmin.com/en/tracking/save-sohash" href="#request15">http://new.livejasmi...tracking/save-sohash</a></td><td class="reqMime odd">text/plain</td><td class="reqStart odd">2.86 s</td><td class="reqDNS odd">-</td><td class="reqSocket odd">-</td><td class="reqSSL odd">-</td><td class="reqTTFB odd">87 ms</td><td class="reqDownload odd">27807 ms</td><td class="reqBytes odd">15.7 KB</td><td class="reqResult odd">200</td><td class="reqIP odd">109.71.161.162</td><td class="reqLocation odd">Madeirã, Portugal</td>
+</tr><tr><td class="reqNum even">16</td><td class="reqUrl even"><a title="http://new.livejasmin.com/en/flash/check-user" href="#request16">http://new.livejasmi.../en/flash/check-user</a></td><td class="reqMime even">text/plain</td><td class="reqStart even">4.596 s</td><td class="reqDNS even">-</td><td class="reqSocket even">67 ms</td><td class="reqSSL even">-</td><td class="reqTTFB even">86 ms</td><td class="reqDownload even">4 ms</td><td class="reqBytes even">0.9 KB</td><td class="reqResult even">200</td><td class="reqIP even">109.71.161.161</td><td class="reqLocation even">Madeirã, Portugal</td>
+</tr></tbody>
+</table></div>
+
+<p class="center">*This product includes GeoLite data created by MaxMind, available from <a href="http://maxmind.com/">http://maxmind.com/</a>.</p>
+<br>
+<br>
+
+<div id="headers"><p>Test Machine DNS Server(s): 192.168.102.1,192.168.0.1</p>
+<br><hr><h2>Request Headers</h2><p>+ <a id="all" href="javascript:expandAll();">Expand All</a></p><h4><span class="a_request" id="request1" data-target-id="headers_1">+ Request 1: http://www.livejasmin.com/</span></h4><div class="header_details" id="headers_1"><p class="indented2">
+<b>URL:</b> http://www.livejasmin.com/<br>
+<b>Host:</b> www.livejasmin.com<br>
+<b>IP:</b> 109.71.160.200<br>
+<b>Location:</b> Madeirã, Portugal<br>
+<b>Error/Status Code:</b> 302<br>
+<b>Client Port:</b> 56971<br>
+<b>Start Offset:</b> 0.134 s<br>
+<b>DNS Lookup:</b> 24 ms<br>
+<b>Initial Connection:</b> 106 ms<br>
+<b>Time to First Byte:</b> 114 ms<br>
+<b>Content Download:</b> 3 ms<br>
+<b>Bytes In (downloaded):</b> 0.5 KB<br>
+<b>Bytes Out (uploaded):</b> 0.5 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+GET / HTTP/1.1<br>
+Accept: text/html, application/xhtml+xml, */*<br>
+Accept-Language: en-US<br>
+X-Download-Initiator: html=&quot;doc 03F0 win 1E58; html document&quot;<br>
+User-Agent: Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0; PTST 2.366)<br>
+Accept-Encoding: gzip, deflate<br>
+Host: www.livejasmin.com<br>
+Connection: Keep-Alive<br>
+Cookie: jasminsite=YToxOntzOjc6InNpdGVfaWQiO2k6Mjt9; site_lang=en; lang=en; tppId=c1700d4a0229b0a249a9a3c2b2be6b53c282c413523724be; speedtest=1; gravity_cookie=a5ab8028723dc8fdb4b825800ccbbde92<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+HTTP/1.1 302 Found<br>
+Server: unknown<br>
+Date: Mon, 16 Sep 2013 15:33:32 GMT<br>
+Content-Type: text/html; charset=utf-8<br>
+Connection: close<br>
+P3P: CP=&quot;CAO PSA OUR&quot;<br>
+Set-Cookie: originalNode=uslax; path=/; domain=.livejasmin.com<br>
+Set-Cookie: jasminsite=YToxOntzOjc6InNpdGVfaWQiO2k6Mjt9; expires=Tue, 16-Sep-2014 15:33:32 GMT; path=/; domain=.livejasmin.com<br>
+Location: http://new.livejasmin.com/<br>
+Vary: Accept-Encoding<br>
+Content-Encoding: gzip<br>
+Content-Length: 20<br>
+</p></div><h4><span class="a_request" id="request2" data-target-id="headers_2">+ Request 2: http://new.livejasmin.com/</span></h4><div class="header_details" id="headers_2"><p class="indented2">
+<b>URL:</b> http://new.livejasmin.com/<br>
+<b>Host:</b> new.livejasmin.com<br>
+<b>IP:</b> 109.71.161.161<br>
+<b>Location:</b> Madeirã, Portugal<br>
+<b>Error/Status Code:</b> 302<br>
+<b>Client Port:</b> 56973<br>
+<b>Start Offset:</b> 0.340 s<br>
+<b>DNS Lookup:</b> 24 ms<br>
+<b>Initial Connection:</b> 63 ms<br>
+<b>Time to First Byte:</b> 74 ms<br>
+<b>Content Download:</b> 1 ms<br>
+<b>Bytes In (downloaded):</b> 0.5 KB<br>
+<b>Bytes Out (uploaded):</b> 0.6 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+GET / HTTP/1.1<br>
+Accept: text/html, application/xhtml+xml, */*<br>
+Accept-Language: en-US<br>
+X-Download-Initiator: html=&quot;doc 03F0 win 1E58; html document&quot;<br>
+User-Agent: Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0; PTST 2.366)<br>
+Accept-Encoding: gzip, deflate<br>
+Host: new.livejasmin.com<br>
+Connection: Keep-Alive<br>
+Cookie: jasminsite=YToxOntzOjc6InNpdGVfaWQiO2k6Mjt9; site_lang=en; lang=en; tppId=c1700d4a0229b0a249a9a3c2b2be6b53c282c413523724be; speedtest=1; gravity_cookie=a5ab8028723dc8fdb4b825800ccbbde92; originalNode=uslax; category=girls; loadedFromServer=0; memberAppletSize=fullSize<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+HTTP/1.1 302 Found<br>
+Server: unknown<br>
+Date: Mon, 16 Sep 2013 15:33:33 GMT<br>
+Content-Type: text/html; charset=utf-8<br>
+Connection: close<br>
+Set-Cookie: jasminsite=YToxOntzOjc6InNpdGVfaWQiO2k6Mjt9; expires=Tue, 16-Sep-2014 15:33:33 GMT; path=/; domain=.livejasmin.com<br>
+Location: http://new.livejasmin.com/en/<br>
+Cache-Control: max-age=0,no-cache,no-store,must-revalidate,post-check=0,pre-check=0<br>
+Expires: 0<br>
+Pragma: no-cache<br>
+Vary: Accept-Encoding<br>
+Content-Encoding: gzip<br>
+Content-Length: 20<br>
+</p></div><h4><span class="a_request" id="request3" data-target-id="headers_3">+ Request 3: http://new.livejasmin.com/en/</span></h4><div class="header_details" id="headers_3"><p class="indented2">
+<b>URL:</b> http://new.livejasmin.com/en/<br>
+<b>Host:</b> new.livejasmin.com<br>
+<b>IP:</b> 109.71.161.161<br>
+<b>Location:</b> Madeirã, Portugal<br>
+<b>Error/Status Code:</b> 200<br>
+<b>Client Port:</b> 56974<br>
+<b>Start Offset:</b> 0.417 s<br>
+<b>Time to First Byte:</b> 120 ms<br>
+<b>Content Download:</b> 465 ms<br>
+<b>Bytes In (downloaded):</b> 16.9 KB<br>
+<b>Bytes Out (uploaded):</b> 0.6 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+GET /en/ HTTP/1.1<br>
+Accept: text/html, application/xhtml+xml, */*<br>
+Accept-Language: en-US<br>
+X-Download-Initiator: html=&quot;doc 03F0 win 1E58; html document&quot;<br>
+User-Agent: Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0; PTST 2.366)<br>
+Accept-Encoding: gzip, deflate<br>
+Host: new.livejasmin.com<br>
+Connection: Keep-Alive<br>
+Cookie: jasminsite=YToxOntzOjc6InNpdGVfaWQiO2k6Mjt9; site_lang=en; lang=en; tppId=c1700d4a0229b0a249a9a3c2b2be6b53c282c413523724be; speedtest=1; gravity_cookie=a5ab8028723dc8fdb4b825800ccbbde92; originalNode=uslax; category=girls; loadedFromServer=0; memberAppletSize=fullSize<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+HTTP/1.1 200 OK<br>
+Server: unknown<br>
+Date: Mon, 16 Sep 2013 15:33:33 GMT<br>
+Content-Type: text/html; charset=utf-8<br>
+Connection: close<br>
+Set-Cookie: jasminsite=YToxOntzOjc6InNpdGVfaWQiO2k6Mjt9; expires=Tue, 16-Sep-2014 15:33:33 GMT; path=/; domain=.livejasmin.com<br>
+Set-Cookie: session=gb7ad1d6457bc398c5cef371a74d397de; path=/; domain=.livejasmin.com<br>
+Set-Cookie: originalNode=usmia; path=/; domain=.livejasmin.com<br>
+Set-Cookie: category=girls; expires=Tue, 16-Sep-2014 15:33:33 GMT; path=/; domain=new.livejasmin.com<br>
+Set-Cookie: loadedFromServer=1; expires=Wed, 16-Oct-2013 15:33:33 GMT; path=/; domain=new.livejasmin.com<br>
+Cache-Control: max-age=0,no-cache,no-store,must-revalidate,post-check=0,pre-check=0<br>
+Expires: 0<br>
+Pragma: no-cache<br>
+Vary: Accept-Encoding<br>
+Content-Encoding: gzip<br>
+Content-Length: 16551<br>
+</p></div><h4><span class="a_request" id="request4" data-target-id="headers_4">+ Request 4: http://staticx1.new.livejasmincdn.com/master/script/cdntestpack-e12a8.js?r=1379345613</span></h4><div class="header_details" id="headers_4"><p class="indented2">
+<b>URL:</b> http://staticx1.new.livejasmincdn.com/master/script/cdntestpack-e12a8.js?r=1379345613<br>
+<b>Host:</b> staticx1.new.livejasmincdn.com<br>
+<b>IP:</b> 72.21.91.9<br>
+<b>Location:</b> Edgecast<br>
+<b>Error/Status Code:</b> 0<br>
+<b>Start Offset:</b> 0.557 s<br>
+<b>Bytes In (downloaded):</b> 0.0 KB<br>
+<b>Bytes Out (uploaded):</b> 0.0 KB<br>
+</p></div><h4><span class="a_request" id="request5" data-target-id="headers_5">+ Request 5: http://staticx1.new.livejasmincdn.com/master/script/cdntestpack-e12a8.js?r=1379345613</span></h4><div class="header_details" id="headers_5"><p class="indented2">
+<b>URL:</b> http://staticx1.new.livejasmincdn.com/master/script/cdntestpack-e12a8.js?r=1379345613<br>
+<b>Host:</b> staticx1.new.livejasmincdn.com<br>
+<b>IP:</b> 72.21.91.9<br>
+<b>Location:</b> Edgecast<br>
+<b>Error/Status Code:</b> 200<br>
+<b>Client Port:</b> 56977<br>
+<b>Start Offset:</b> 0.595 s<br>
+<b>Initial Connection:</b> 31 ms<br>
+<b>Time to First Byte:</b> 38 ms<br>
+<b>Bytes In (downloaded):</b> 0.3 KB<br>
+<b>Bytes Out (uploaded):</b> 0.5 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+GET /master/script/cdntestpack-e12a8.js?r=1379345613 HTTP/1.1<br>
+Accept: application/javascript, */*;q=0.8<br>
+Referer: http://new.livejasmin.com/en/<br>
+Accept-Language: en-US<br>
+X-Download-Initiator: script=&quot;doc 03F0; speculative; restarted html tokenizer 8A28; html lookahead 1:B828&quot;<br>
+User-Agent: Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0; PTST 2.366)<br>
+Accept-Encoding: gzip, deflate<br>
+Host: staticx1.new.livejasmincdn.com<br>
+Connection: Keep-Alive<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+HTTP/1.1 200 OK<br>
+Accept-Ranges: bytes<br>
+Cache-Control: max-age=2419200<br>
+Content-Type: application/javascript<br>
+Date: Mon, 16 Sep 2013 15:33:33 GMT<br>
+Expires: Mon, 14 Oct 2013 15:33:33 GMT<br>
+Last-Modified: Sat, 14 Sep 2013 17:31:29 GMT<br>
+Server: ECS (dca/FEB4)<br>
+X-Cache: HIT<br>
+Content-Length: 61<br>
+</p></div><h4><span class="a_request" id="request6" data-target-id="headers_6">+ Request 6: http://imgx0.livejasmincdn.com/wa/A/An/AnomimWoman/live/tmbImage6.jpg?cno=bcc2</span></h4><div class="header_details" id="headers_6"><p class="indented2">
+<b>URL:</b> http://imgx0.livejasmincdn.com/wa/A/An/AnomimWoman/live/tmbImage6.jpg?cno=bcc2<br>
+<b>Host:</b> imgx0.livejasmincdn.com<br>
+<b>IP:</b> 72.21.91.9<br>
+<b>Location:</b> Edgecast<br>
+<b>Error/Status Code:</b> 200<br>
+<b>Client Port:</b> 56978<br>
+<b>Start Offset:</b> 0.618 s<br>
+<b>DNS Lookup:</b> 13 ms<br>
+<b>Initial Connection:</b> 35 ms<br>
+<b>Time to First Byte:</b> 101 ms<br>
+<b>Content Download:</b> 20 ms<br>
+<b>Bytes In (downloaded):</b> 27.5 KB<br>
+<b>Bytes Out (uploaded):</b> 0.5 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+GET /wa/A/An/AnomimWoman/live/tmbImage6.jpg?cno=bcc2 HTTP/1.1<br>
+Accept: image/png, image/svg+xml, image/*;q=0.8, */*;q=0.5<br>
+Referer: http://new.livejasmin.com/en/<br>
+Accept-Language: en-US<br>
+X-Download-Initiator: image=&quot;doc 03F0; speculative; restarted html tokenizer 8A28; html lookahead 1:B828&quot;<br>
+User-Agent: Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0; PTST 2.366)<br>
+Accept-Encoding: gzip, deflate<br>
+Host: imgx0.livejasmincdn.com<br>
+Connection: Keep-Alive<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+HTTP/1.1 200 OK<br>
+Accept-Ranges: bytes<br>
+Cache-Control: max-age=2419200<br>
+Content-Type: image/jpeg<br>
+Date: Mon, 16 Sep 2013 15:33:33 GMT<br>
+Expires: Mon, 14 Oct 2013 15:33:33 GMT<br>
+Last-Modified: Wed, 07 Aug 2013 07:23:38 GMT<br>
+Server: ECS (dca/24BE)<br>
+X-Cache: HIT<br>
+X-Real-Source: usmia-swww-1<br>
+Content-Length: 27857<br>
+</p></div><h4><span class="a_request" id="request7" data-target-id="headers_7">+ Request 7: http://imgx0.livejasmincdn.com/wa/N/Ni/NightEnigma/live/tmbImage5.jpg?cno=860e</span></h4><div class="header_details" id="headers_7"><p class="indented2">
+<b>URL:</b> http://imgx0.livejasmincdn.com/wa/N/Ni/NightEnigma/live/tmbImage5.jpg?cno=860e<br>
+<b>Host:</b> imgx0.livejasmincdn.com<br>
+<b>IP:</b> 72.21.91.9<br>
+<b>Location:</b> Edgecast<br>
+<b>Error/Status Code:</b> 200<br>
+<b>Client Port:</b> 56980<br>
+<b>Start Offset:</b> 0.616 s<br>
+<b>Initial Connection:</b> 32 ms<br>
+<b>Time to First Byte:</b> 101 ms<br>
+<b>Content Download:</b> 104 ms<br>
+<b>Bytes In (downloaded):</b> 39.3 KB<br>
+<b>Bytes Out (uploaded):</b> 0.5 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+GET /wa/N/Ni/NightEnigma/live/tmbImage5.jpg?cno=860e HTTP/1.1<br>
+Accept: image/png, image/svg+xml, image/*;q=0.8, */*;q=0.5<br>
+Referer: http://new.livejasmin.com/en/<br>
+Accept-Language: en-US<br>
+X-Download-Initiator: image=&quot;doc 03F0; speculative; restarted html tokenizer 8A28; html lookahead 1:B828&quot;<br>
+User-Agent: Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0; PTST 2.366)<br>
+Accept-Encoding: gzip, deflate<br>
+Host: imgx0.livejasmincdn.com<br>
+Connection: Keep-Alive<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+HTTP/1.1 200 OK<br>
+Accept-Ranges: bytes<br>
+Cache-Control: max-age=2419200<br>
+Content-Type: image/jpeg<br>
+Date: Mon, 16 Sep 2013 15:33:33 GMT<br>
+Expires: Mon, 14 Oct 2013 15:33:33 GMT<br>
+Last-Modified: Wed, 07 Aug 2013 19:46:19 GMT<br>
+Server: ECS (dca/FEDE)<br>
+X-Cache: HIT<br>
+Content-Length: 39998<br>
+</p></div><h4><span class="a_request" id="request8" data-target-id="headers_8">+ Request 8: http://imgx3.livejasmincdn.com/wa/Q/Qu/QueenSex/live/tmbImage6.jpg?cno=46e9</span></h4><div class="header_details" id="headers_8"><p class="indented2">
+<b>URL:</b> http://imgx3.livejasmincdn.com/wa/Q/Qu/QueenSex/live/tmbImage6.jpg?cno=46e9<br>
+<b>Host:</b> imgx3.livejasmincdn.com<br>
+<b>IP:</b> 72.21.91.9<br>
+<b>Location:</b> Edgecast<br>
+<b>Error/Status Code:</b> 200<br>
+<b>Client Port:</b> 56981<br>
+<b>Start Offset:</b> 1.023 s<br>
+<b>DNS Lookup:</b> 113 ms<br>
+<b>Initial Connection:</b> 37 ms<br>
+<b>Time to First Byte:</b> 40 ms<br>
+<b>Content Download:</b> 21 ms<br>
+<b>Bytes In (downloaded):</b> 11.6 KB<br>
+<b>Bytes Out (uploaded):</b> 0.4 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+GET /wa/Q/Qu/QueenSex/live/tmbImage6.jpg?cno=46e9 HTTP/1.1<br>
+Accept: image/png, image/svg+xml, image/*;q=0.8, */*;q=0.5<br>
+Referer: http://new.livejasmin.com/en/<br>
+Accept-Language: en-US<br>
+X-Download-Initiator: image=&quot;doc 03F0; speculative; restarted html tokenizer 8A28&quot;<br>
+User-Agent: Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0; PTST 2.366)<br>
+Accept-Encoding: gzip, deflate<br>
+Host: imgx3.livejasmincdn.com<br>
+Connection: Keep-Alive<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+HTTP/1.1 200 OK<br>
+Accept-Ranges: bytes<br>
+Cache-Control: max-age=2419200<br>
+Content-Type: image/jpeg<br>
+Date: Mon, 16 Sep 2013 15:33:34 GMT<br>
+Expires: Mon, 14 Oct 2013 15:33:34 GMT<br>
+Last-Modified: Fri, 06 Sep 2013 20:46:13 GMT<br>
+Server: ECS (dca/533E)<br>
+X-Cache: HIT<br>
+Content-Length: 11587<br>
+</p></div><h4><span class="a_request" id="request9" data-target-id="headers_9">+ Request 9: http://imgx1.livejasmincdn.com/wa/0/0o/0ohBabyD0ll/live/tmbImage6.jpg?cno=defe</span></h4><div class="header_details" id="headers_9"><p class="indented2">
+<b>URL:</b> http://imgx1.livejasmincdn.com/wa/0/0o/0ohBabyD0ll/live/tmbImage6.jpg?cno=defe<br>
+<b>Host:</b> imgx1.livejasmincdn.com<br>
+<b>IP:</b> 72.21.91.9<br>
+<b>Location:</b> Edgecast<br>
+<b>Error/Status Code:</b> 200<br>
+<b>Client Port:</b> 56982<br>
+<b>Start Offset:</b> 1.033 s<br>
+<b>DNS Lookup:</b> 14 ms<br>
+<b>Initial Connection:</b> 33 ms<br>
+<b>Time to First Byte:</b> 39 ms<br>
+<b>Content Download:</b> 34 ms<br>
+<b>Bytes In (downloaded):</b> 9.3 KB<br>
+<b>Bytes Out (uploaded):</b> 0.4 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+GET /wa/0/0o/0ohBabyD0ll/live/tmbImage6.jpg?cno=defe HTTP/1.1<br>
+Accept: image/png, image/svg+xml, image/*;q=0.8, */*;q=0.5<br>
+Referer: http://new.livejasmin.com/en/<br>
+Accept-Language: en-US<br>
+X-Download-Initiator: image=&quot;doc 03F0; speculative; restarted html tokenizer 8A28&quot;<br>
+User-Agent: Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0; PTST 2.366)<br>
+Accept-Encoding: gzip, deflate<br>
+Host: imgx1.livejasmincdn.com<br>
+Connection: Keep-Alive<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+HTTP/1.1 200 OK<br>
+Accept-Ranges: bytes<br>
+Cache-Control: max-age=2419200<br>
+Content-Type: image/jpeg<br>
+Date: Mon, 16 Sep 2013 15:33:34 GMT<br>
+Expires: Mon, 14 Oct 2013 15:33:34 GMT<br>
+Last-Modified: Sat, 17 Aug 2013 10:00:40 GMT<br>
+Server: ECS (dca/FEBF)<br>
+X-Cache: HIT<br>
+X-Real-Source: usmia-swww-2<br>
+Content-Length: 9168<br>
+</p></div><h4><span class="a_request" id="request10" data-target-id="headers_10">+ Request 10: http://imgx2.livejasmincdn.com/wa/0/00/00love4you/live/tmbImage6.jpg?cno=0c08</span></h4><div class="header_details" id="headers_10"><p class="indented2">
+<b>URL:</b> http://imgx2.livejasmincdn.com/wa/0/00/00love4you/live/tmbImage6.jpg?cno=0c08<br>
+<b>Host:</b> imgx2.livejasmincdn.com<br>
+<b>IP:</b> 72.21.91.9<br>
+<b>Location:</b> Edgecast<br>
+<b>Error/Status Code:</b> 200<br>
+<b>Client Port:</b> 56985<br>
+<b>Start Offset:</b> 1.038 s<br>
+<b>DNS Lookup:</b> 15 ms<br>
+<b>Initial Connection:</b> 36 ms<br>
+<b>Time to First Byte:</b> 43 ms<br>
+<b>Content Download:</b> 38 ms<br>
+<b>Bytes In (downloaded):</b> 10.9 KB<br>
+<b>Bytes Out (uploaded):</b> 0.4 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+GET /wa/0/00/00love4you/live/tmbImage6.jpg?cno=0c08 HTTP/1.1<br>
+Accept: image/png, image/svg+xml, image/*;q=0.8, */*;q=0.5<br>
+Referer: http://new.livejasmin.com/en/<br>
+Accept-Language: en-US<br>
+X-Download-Initiator: image=&quot;doc 03F0; speculative; restarted html tokenizer 8A28&quot;<br>
+User-Agent: Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0; PTST 2.366)<br>
+Accept-Encoding: gzip, deflate<br>
+Host: imgx2.livejasmincdn.com<br>
+Connection: Keep-Alive<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+HTTP/1.1 200 OK<br>
+Accept-Ranges: bytes<br>
+Cache-Control: max-age=2419200<br>
+Content-Type: image/jpeg<br>
+Date: Mon, 16 Sep 2013 15:33:34 GMT<br>
+Expires: Mon, 14 Oct 2013 15:33:34 GMT<br>
+Last-Modified: Wed, 11 Sep 2013 12:43:23 GMT<br>
+Server: ECS (dca/24BC)<br>
+X-Cache: HIT<br>
+Content-Length: 10903<br>
+</p></div><h4><span class="a_request" id="request11" data-target-id="headers_11">+ Request 11: http://imgx0.livejasmincdn.com/wa/B/Bi/BigBoobsCheryl/live/tmbImage6.jpg?cno=f30f</span></h4><div class="header_details" id="headers_11"><p class="indented2">
+<b>URL:</b> http://imgx0.livejasmincdn.com/wa/B/Bi/BigBoobsCheryl/live/tmbImage6.jpg?cno=f30f<br>
+<b>Host:</b> imgx0.livejasmincdn.com<br>
+<b>IP:</b> 72.21.91.9<br>
+<b>Location:</b> Edgecast<br>
+<b>Error/Status Code:</b> 200<br>
+<b>Client Port:</b> 56979<br>
+<b>Start Offset:</b> 1.000 s<br>
+<b>Time to First Byte:</b> 40 ms<br>
+<b>Content Download:</b> 16 ms<br>
+<b>Bytes In (downloaded):</b> 12.5 KB<br>
+<b>Bytes Out (uploaded):</b> 0.4 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+GET /wa/B/Bi/BigBoobsCheryl/live/tmbImage6.jpg?cno=f30f HTTP/1.1<br>
+Accept: image/png, image/svg+xml, image/*;q=0.8, */*;q=0.5<br>
+Referer: http://new.livejasmin.com/en/<br>
+Accept-Language: en-US<br>
+X-Download-Initiator: image=&quot;doc 03F0; speculative; restarted html tokenizer 8A28&quot;<br>
+User-Agent: Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0; PTST 2.366)<br>
+Accept-Encoding: gzip, deflate<br>
+Host: imgx0.livejasmincdn.com<br>
+Connection: Keep-Alive<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+HTTP/1.1 200 OK<br>
+Accept-Ranges: bytes<br>
+Cache-Control: max-age=2419200<br>
+Content-Type: image/jpeg<br>
+Date: Mon, 16 Sep 2013 15:33:34 GMT<br>
+Expires: Mon, 14 Oct 2013 15:33:34 GMT<br>
+Last-Modified: Fri, 14 Jun 2013 12:34:09 GMT<br>
+Server: ECS (dca/53E8)<br>
+X-Cache: HIT<br>
+Content-Length: 12521<br>
+</p></div><h4><span class="a_request" id="request12" data-target-id="headers_12">+ Request 12: http://imgx3.livejasmincdn.com/wa/p/po/poisonivyxx/live/tmbImage6.jpg?cno=7997</span></h4><div class="header_details" id="headers_12"><p class="indented2">
+<b>URL:</b> http://imgx3.livejasmincdn.com/wa/p/po/poisonivyxx/live/tmbImage6.jpg?cno=7997<br>
+<b>Host:</b> imgx3.livejasmincdn.com<br>
+<b>IP:</b> 72.21.91.9<br>
+<b>Location:</b> Edgecast<br>
+<b>Error/Status Code:</b> 200<br>
+<b>Client Port:</b> 56987<br>
+<b>Start Offset:</b> 1.038 s<br>
+<b>Initial Connection:</b> 36 ms<br>
+<b>Time to First Byte:</b> 39 ms<br>
+<b>Content Download:</b> 44 ms<br>
+<b>Bytes In (downloaded):</b> 12.7 KB<br>
+<b>Bytes Out (uploaded):</b> 0.4 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+GET /wa/p/po/poisonivyxx/live/tmbImage6.jpg?cno=7997 HTTP/1.1<br>
+Accept: image/png, image/svg+xml, image/*;q=0.8, */*;q=0.5<br>
+Referer: http://new.livejasmin.com/en/<br>
+Accept-Language: en-US<br>
+X-Download-Initiator: image=&quot;doc 03F0; speculative; restarted html tokenizer 8A28&quot;<br>
+User-Agent: Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0; PTST 2.366)<br>
+Accept-Encoding: gzip, deflate<br>
+Host: imgx3.livejasmincdn.com<br>
+Connection: Keep-Alive<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+HTTP/1.1 200 OK<br>
+Accept-Ranges: bytes<br>
+Cache-Control: max-age=2419200<br>
+Content-Type: image/jpeg<br>
+Date: Mon, 16 Sep 2013 15:33:34 GMT<br>
+Expires: Mon, 14 Oct 2013 15:33:34 GMT<br>
+Last-Modified: Thu, 12 Sep 2013 10:34:07 GMT<br>
+Server: ECS (dca/5334)<br>
+X-Cache: HIT<br>
+Content-Length: 12699<br>
+</p></div><h4><span class="a_request" id="request13" data-target-id="headers_13">+ Request 13: https://www.dditservices.com/sohandler_1.swf</span></h4><div class="header_details" id="headers_13"><p class="indented2">
+<b>URL:</b> https://www.dditservices.com/sohandler_1.swf<br>
+<b>Host:</b> www.dditservices.com<br>
+<b>IP:</b> 185.13.89.12<br>
+<b>Location:</b> Luxembourg<br>
+<b>Error/Status Code:</b> 304<br>
+<b>Client Port:</b> 56990<br>
+<b>Start Offset:</b> 2.654 s<br>
+<b>DNS Lookup:</b> 133 ms<br>
+<b>Initial Connection:</b> 142 ms<br>
+<b>Time to First Byte:</b> 142 ms<br>
+<b>Bytes In (downloaded):</b> 0.1 KB<br>
+<b>Bytes Out (uploaded):</b> 0.4 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+GET /sohandler_1.swf HTTP/1.1<br>
+Accept: */*<br>
+Accept-Language: en-US<br>
+Referer: http://new.livejasmin.com/en/<br>
+x-flash-version: 11,8,800,174<br>
+Accept-Encoding: gzip, deflate<br>
+User-Agent: Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0; PTST 2.366)<br>
+Host: www.dditservices.com<br>
+If-Modified-Since: Tue, 30 Jul 2013 14:06:37 GMT; length=2511<br>
+Connection: Keep-Alive<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+HTTP/1.0 304 Not Modified<br>
+Date: Mon, 16 Sep 2013 15:33:36 GMT<br>
+Server: Apache<br>
+Connection: close<br>
+ETag: &quot;2090d4-9cf-4e2bb1e013540&quot;<br>
+Cached Response Headers:<br>
+HTTP/1.0 200 OK<br>
+ETag: &quot;2090d4-9cf-4e2bb1e013540&quot;<br>
+Content-Length: 2511<br>
+Content-Type: application/x-shockwave-flash<br>
+Last-Modified: Tue, 30 Jul 2013 14:06:37 GMT<br>
+</p></div><h4><span class="a_request" id="request14" data-target-id="headers_14">+ Request 14: http://new.livejasmin.com/en/overlay/get-over-eighteenblock</span></h4><div class="header_details" id="headers_14"><p class="indented2">
+<b>URL:</b> http://new.livejasmin.com/en/overlay/get-over-eighteenblock<br>
+<b>Host:</b> new.livejasmin.com<br>
+<b>IP:</b> 109.71.161.161<br>
+<b>Location:</b> Madeirã, Portugal<br>
+<b>Error/Status Code:</b> 200<br>
+<b>Client Port:</b> 56989<br>
+<b>Start Offset:</b> 1.793 s<br>
+<b>Initial Connection:</b> 114 ms<br>
+<b>Time to First Byte:</b> 77 ms<br>
+<b>Content Download:</b> 2 ms<br>
+<b>Bytes In (downloaded):</b> 1.1 KB<br>
+<b>Bytes Out (uploaded):</b> 0.7 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+POST /en/overlay/get-over-eighteenblock HTTP/1.1<br>
+Accept: */*<br>
+X-Requested-With: XMLHttpRequest<br>
+Referer: http://new.livejasmin.com/en/<br>
+Accept-Language: en-us<br>
+Accept-Encoding: gzip, deflate<br>
+User-Agent: Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0; PTST 2.366)<br>
+Host: new.livejasmin.com<br>
+Content-Length: 0<br>
+Connection: Keep-Alive<br>
+Cache-Control: no-cache<br>
+Cookie: jasminsite=YToxOntzOjc6InNpdGVfaWQiO2k6Mjt9; site_lang=en; lang=en; tppId=c1700d4a0229b0a249a9a3c2b2be6b53c282c413523724be; speedtest=1; gravity_cookie=a5ab8028723dc8fdb4b825800ccbbde92; originalNode=usmia; session=gb7ad1d6457bc398c5cef371a74d397de; category=girls; loadedFromServer=0; memberAppletSize=fullSize<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+HTTP/1.1 200 OK<br>
+Server: unknown<br>
+Date: Mon, 16 Sep 2013 15:33:35 GMT<br>
+Content-Type: text/plain; charset=utf-8<br>
+Connection: close<br>
+Set-Cookie: session=gb7ad1d6457bc398c5cef371a74d397de; path=/; domain=.livejasmin.com<br>
+Set-Cookie: listpage_member_id=958317423; path=/; domain=.livejasmin.com<br>
+Set-Cookie: listPageIds=1307807287590938368; path=/; domain=.livejasmin.com<br>
+Set-Cookie: category=girls; expires=Tue, 16-Sep-2014 15:33:35 GMT; path=/; domain=new.livejasmin.com<br>
+Set-Cookie: tppId=c1700d4a0229b0a249a9a3c2b2be6b53c282c413523724be; expires=Tue, 16-Sep-2014 15:33:35 GMT; path=/; domain=.livejasmin.com<br>
+Cache-Control: max-age=0,no-cache,no-store,must-revalidate,post-check=0,pre-check=0<br>
+Expires: 0<br>
+Pragma: no-cache<br>
+Vary: Accept-Encoding<br>
+Content-Encoding: gzip<br>
+Content-Length: 283<br>
+</p></div><h4><span class="a_request" id="request15" data-target-id="headers_15">+ Request 15: http://new.livejasmin.com/en/tracking/save-sohash</span></h4><div class="header_details" id="headers_15"><p class="indented2">
+<b>URL:</b> http://new.livejasmin.com/en/tracking/save-sohash<br>
+<b>Host:</b> new.livejasmin.com<br>
+<b>IP:</b> 109.71.161.162<br>
+<b>Location:</b> Madeirã, Portugal<br>
+<b>Error/Status Code:</b> 200<br>
+<b>Client Port:</b> 56993<br>
+<b>Start Offset:</b> 2.860 s<br>
+<b>Time to First Byte:</b> 87 ms<br>
+<b>Content Download:</b> 27807 ms<br>
+<b>Bytes In (downloaded):</b> 15.7 KB<br>
+<b>Bytes Out (uploaded):</b> 0.0 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+POST /en/tracking/save-sohash HTTP/1.1<br>
+Accept: */*<br>
+X-Requested-With: XMLHttpRequest<br>
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8<br>
+Referer: http://new.livejasmin.com/en/<br>
+Accept-Language: en-us<br>
+Accept-Encoding: gzip, deflate<br>
+User-Agent: Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0; PTST 2.366)<br>
+Host: new.livejasmin.com<br>
+Content-Length: 55<br>
+Connection: Keep-Alive<br>
+Cache-Control: no-cache<br>
+Cookie: jasminsite=YToxOntzOjc6InNpdGVfaWQiO2k6Mjt9; site_lang=en; lang=en; tppId=c1700d4a0229b0a249a9a3c2b2be6b53c282c413523724be; speedtest=1; gravity_cookie=a5ab8028723dc8fdb4b825800ccbbde92; originalNode=usmia; session=gb7ad1d6457bc398c5cef371a74d397de; listpage_member_id=958317423; listPageIds=1307807287590938368; category=girls; loadedFromServer=0; memberAppletSize=fullSize<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+HTTP/1.1 200 OK<br>
+Server: unknown<br>
+Date: Mon, 16 Sep 2013 15:33:36 GMT<br>
+Content-Type: text/plain; charset=utf-8<br>
+Connection: close<br>
+Set-Cookie: session=gb7ad1d6457bc398c5cef371a74d397de; path=/; domain=.livejasmin.com<br>
+Set-Cookie: category=girls; expires=Tue, 16-Sep-2014 15:33:36 GMT; path=/; domain=new.livejasmin.com<br>
+Set-Cookie: tppId=c1700d4a0229b0a249a9a3c2b2be6b53c282c413523724be; expires=Tue, 16-Sep-2014 15:33:36 GMT; path=/; domain=.livejasmin.com<br>
+Cache-Control: max-age=0,no-cache,no-store,must-revalidate,post-check=0,pre-check=0<br>
+Expires: 0<br>
+Pragma: no-cache<br>
+</p></div><h4><span class="a_request" id="request16" data-target-id="headers_16">+ Request 16: http://new.livejasmin.com/en/flash/check-user</span></h4><div class="header_details" id="headers_16"><p class="indented2">
+<b>URL:</b> http://new.livejasmin.com/en/flash/check-user<br>
+<b>Host:</b> new.livejasmin.com<br>
+<b>IP:</b> 109.71.161.161<br>
+<b>Location:</b> Madeirã, Portugal<br>
+<b>Error/Status Code:</b> 200<br>
+<b>Client Port:</b> 56994<br>
+<b>Start Offset:</b> 4.596 s<br>
+<b>Initial Connection:</b> 67 ms<br>
+<b>Time to First Byte:</b> 86 ms<br>
+<b>Content Download:</b> 4 ms<br>
+<b>Bytes In (downloaded):</b> 0.9 KB<br>
+<b>Bytes Out (uploaded):</b> 0.9 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+POST /en/flash/check-user HTTP/1.1<br>
+Accept: */*<br>
+Accept-Language: en-US<br>
+Referer: http://flashx.new.livejasmincdn.com/1488/memberapplet/memberappletcontainer.swf<br>
+x-flash-version: 11,8,800,174<br>
+Content-Type: application/x-www-form-urlencoded<br>
+Content-Length: 41<br>
+Accept-Encoding: gzip, deflate<br>
+User-Agent: Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0; PTST 2.366)<br>
+Host: new.livejasmin.com<br>
+Connection: Keep-Alive<br>
+Cache-Control: no-cache<br>
+Cookie: jasminsite=YToxOntzOjc6InNpdGVfaWQiO2k6Mjt9; site_lang=en; lang=en; tppId=c1700d4a0229b0a249a9a3c2b2be6b53c282c413523724be; speedtest=1; gravity_cookie=a5ab8028723dc8fdb4b825800ccbbde92; originalNode=usmia; session=gb7ad1d6457bc398c5cef371a74d397de; listpage_member_id=958317423; listPageIds=1307807287590938368; category=girls; loadedFromServer=0; memberAppletSize=fullSize<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+HTTP/1.1 200 OK<br>
+Server: unknown<br>
+Date: Mon, 16 Sep 2013 15:33:37 GMT<br>
+Content-Type: text/plain; charset=utf-8<br>
+Connection: close<br>
+Set-Cookie: jasminsite=YToxOntzOjc6InNpdGVfaWQiO2k6Mjt9; expires=Tue, 16-Sep-2014 15:33:37 GMT; path=/; domain=.livejasmin.com<br>
+Set-Cookie: session=gb7ad1d6457bc398c5cef371a74d397de; path=/; domain=.livejasmin.com<br>
+Set-Cookie: category=girls; expires=Tue, 16-Sep-2014 15:33:37 GMT; path=/; domain=new.livejasmin.com<br>
+Set-Cookie: tppId=c1700d4a0229b0a249a9a3c2b2be6b53c282c413523724be; expires=Tue, 16-Sep-2014 15:33:37 GMT; path=/; domain=.livejasmin.com<br>
+Set-Cookie: session=gb7ad1d6457bc398c5cef371a74d397de; path=/; domain=.livejasmin.com<br>
+Cache-Control: max-age=0,no-cache,no-store,must-revalidate,post-check=0,pre-check=0<br>
+Expires: 0<br>
+Pragma: no-cache<br>
+Vary: Accept-Encoding<br>
+Content-Encoding: gzip<br>
+Content-Length: 38<br>
+</p></div></div>
+            </div>
+
+                        <div style="width:100%;float:none;clear:both;"></div>
+
+            </div></div>            </div>
+        </div>
+    </div>
+</div>
+
+   
+    <table id="feeds"><tr><th>Recent Industry Blog Posts</th><th>Recent Discussions</th></tr><tr><td><ul><li><a title="Zoompf" href="http://zoompf.com/blog/2013/10/3-must-do-tips-to-get-your-e-commerce-site-ready-for-black-friday">3 Must-Dos for the E-Commerce Web Team Before Black Friday</a></li><li><a title="Strangeloop Networks" href="http://www.webperformancetoday.com/2013/10/02/iphone-speed-test-findings-faster-processor-doesnt-equal-huge-performance-boost/">iPhone speed test findings: Faster processor doesnâ€™t equal huge performance boost</a></li><li><a title="Zoompf" href="http://zoompf.com/blog/2013/10/maximizing-search-rank-by-optimizing-your-ttfb">Improving Search Rank by Optimizing your Time to First Byte</a></li><li><a title="Ilya Grigorik" href="http://feeds.igvita.com/~r/igvita/~3/-ehrQc7PJyQ/">Retrospective: High Performance Browser Networking</a></li><li><a title="Zoompf" href="http://zoompf.com/blog/2013/09/top-9-us-news-sites-race-for-fastest-site">Top 9 US News Sites Race for Fastest Site</a></li><li id="show_more_feeds_1"><a href="javascript:void(o)" onclick="showFeeds(1)">more...</a></li><li class="morefeeds" ><div id="more_feeds_1" class="hidden"><ul><li><a title="Stoyan Stefanov" href="http://www.phpied.com/nyc-bound/">NYC.bind(me)</a></li><li><a title="Strangeloop Networks" href="http://www.webperformancetoday.com/2013/09/19/sneak-peek-this-is-your-brain-on-mobile/">Sneak peek: This is your brain on the mobile web</a></li><li><a title="Guy Podjarny" href="http://www.guypo.com/conferences/walking-on-the-edges/">Walking on the Edge(s)</a></li><li><a title="Gilly Barr" href="http://www.debuggerstepthrough.com/2013/09/prefetching-dns-lookups.html">Prefetching dns lookups</a></li><li><a title="Stoyan Stefanov" href="http://www.phpied.com/server-side-react-with-php-part-2/">Server-side React with PHP â€“ part 2</a></li><li><a title="Stoyan Stefanov" href="http://www.phpied.com/borrowing-typography-tricks-from-the-masters/">Borrowing typography tricks from the masters</a></li><li><a title="Guy Podjarny" href="http://www.guypo.com/uncategorized/responsive-images-meetup-a-subjective-summary/">Responsive Images Meetup â€“ A Subjective Summary</a></li><li><a title="Stoyan Stefanov" href="http://www.phpied.com/server-side-react-with-php/">Server-side React with PHP</a></li><li><a title="Stoyan Stefanov" href="http://www.phpied.com/installing-v8js-for-php-on-a-mac/">Installing v8js for PHP on a Mac</a></li><li><a title="Strangeloop Networks" href="http://www.webperformancetoday.com/2013/09/11/the-slow-web-movement/">The Slow Web: Why fast is importantâ€¦ and why it isnâ€™t</a></li><li><a title="Stoyan Stefanov" href="http://www.phpied.com/reactive-table/">Reactive table</a></li><li><a title="Aaron Peters" href="http://www.aaronpeters.nl/blog/velocity-nyc-2013-raffle">Win a free Velocity NYC conference pass!</a></li></ul></div></li></ul></td><td><ul><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12584">FTTB problems</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12581">Site vs File (Browser Caching) Different? Why?</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12580">Test not found when trying to view tests</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12579">Apache subfolder settings</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12578">RoseHosting.com VPS specials - 25% OFF | Fully Managed | FREE DirectAdmin</a></li><li id="show_more_feeds_2"><a href="javascript:void(o)" onclick="showFeeds(2)">more...</a></li><li class="morefeeds" ><div id="more_feeds_2" class="hidden"><ul><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12577">&quot;The test completed but there were no successful results.&quot; with maxymiser</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12576">CDN detection control file</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12575">Help with my test results</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12573">favicon</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12572">fancybox 404 errors</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12571">Chrome browser window closes automaticaly on starting test</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12570">Testlocation Germany over 152 Pending Tests</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12569">Video tests</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12568">DNS Times from XML data from wpt_batch.py</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12567">cookie less domain need help</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12566">no cache control for file</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12565">SPNego Auth</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12563">Filmstrip API</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12562">Help needed with improvements from Test Results!</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12561">CSV date format - no leading zeros</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12559">Pagespeed and WPT results - Rule set Matrix?</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12558">DGvertTech LLC</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12557">WPT not detecting CDN being used</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12556">Awful Results - Please Help</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12554">Setting JSON style cookie</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12553">Not getting results when hitting a device</a></li></ul></div></li></ul></td></tr></table>
+    <div id="sponsor_header">WebPagetest Partners</div><div id="links"><table class="links"><tr><td ><a href="http://www.efficens-software.com/solution/web-performance-optimization/" title="Efficens Software - Your Israel based partner for Web Performance"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors3.png?v=1); background-position: 0px -360px;"></div></a></td><td ><a href="http://www.duplika.com/?utm_source=webpagetest&utm_medium=logo&utm_campaign=speed" title="duplika Internet Solutions"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors2.png?v=3); background-position: 0px -200px;"></div></a></td><td ><a href="http://www.apicasystem.com/" title="Apica Inc"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors24.png?v=5); background-position: 0px -240px;"></div></a></td><td ><a href="http://www.rusonyx.ru/" title="Rusonyx"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors24.png?v=5); background-position: 0px -200px;"></div></a></td><td ><a href="http://edgedirector.com/" title="edgedirector.com"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors1.png?v=2); background-position: 0px -160px;"></div></a></td></tr></table><table class="links"><tr><td ><a href="http://www.squixa.com/" title="Squixa MultiCDN and Front End Optimisation"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors24.png?v=5); background-position: 0px -440px;"></div></a></td><td ><a href="http://www.akamai.com/" title="Akamai"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors3.png?v=1); background-position: 0px -80px;"></div></a></td><td ><a href="http://pagerain.com/" title="PageRain - The Simplest CDN"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors24.png?v=5); background-position: 0px -320px;"></div></a></td><td ><a href="http://www.psw.net/" title="PSW GROUP"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors1.png?v=2); background-position: 0px 0px;"></div></a></td><td ><a href="http://www.globalis-ms.com/" title="GLOBALIS media systems"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors24.png?v=5); background-position: 0px -40px;"></div></a></td></tr></table><table class="links"><tr><td ><a href="http://www.cisin.com/" title="CIS :: One-Stop Outsourcing Services, Since 2003! | We do IT better"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors24.png?v=5); background-position: 0px -400px;"></div></a></td><td ><a href="http://key-performance.eu/" title="Key Performance"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors24.png?v=5); background-position: 0px -120px;"></div></a></td><td ><a href="http://www.iispeed.com/" title="Google PageSpeed optimization for Microsoft IIS"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors4.png?v=7); background-position: 0px -240px;"></div></a></td><td ><a href="http://www.dotcom-monitor.com/?se=574612167f2948219c65b6ca3120f44f" title="Website and Application Performance Monitoring by Dotcom-Monitor.com"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors3.png?v=1); background-position: 0px -200px;"></div></a></td><td ><a href="http://www.radware.com/Products/ApplicationDelivery/FastView/default.aspx" title="Radware - Smart Network. Smart Business."><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors2.png?v=3); background-position: 0px 0px;"></div></a></td></tr></table><table class="links"><tr><td ><a href="http://dev.aol.com/" title="AOL"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors1.png?v=2); background-position: 0px -280px;"></div></a></td><td ><a href="http://www.neustar.biz/enterprise/web-performance" title="Neustar"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors24.png?v=5); background-position: 0px 0px;"></div></a></td><td ><a href="http://www.neotys.com/" title="Neotys Load &amp; Performance Testing"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors24.png?v=5); background-position: 0px -360px;"></div></a></td><td ><a href="http://www.measureworks.nl/" title="MeasureWorks"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors3.png?v=1); background-position: 0px -120px;"></div></a></td><td ><a href="http://www.rentavault.net/" title="Rentavault"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors2.png?v=3); background-position: 0px -240px;"></div></a></td></tr></table><table class="links"><tr><td ><a href="http://www.icomcept.de/" title="iCOMcept"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors2.png?v=3); background-position: 0px -80px;"></div></a></td><td ><a href="http://www.kbsd.com/" title="*KBSD Switzerland*"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors1.png?v=2); background-position: 0px -80px;"></div></a></td><td ><a href="http://www.catchpoint.com/lp/wp_website_monitoring_trial.html" title="Catchpoint Systems"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors2.png?v=3); background-position: 0px -360px;"></div></a></td><td ><a href="http://www.fasterize.com/" title="Fasterize"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors3.png?v=1); background-position: 0px -320px;"></div></a></td><td ><a href="http://www.trademe.co.nz/" title="Trade Me"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors4.png?v=7); background-position: 0px 0px;"></div></a></td></tr></table><table class="links"><tr><td ><a href="http://www.daum.net/" title="DAUM Communications"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors3.png?v=1); background-position: 0px -280px;"></div></a></td><td ><a href="http://www.bulletproof.net.au/" title="Bulletproof Mission Critical Hosting"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors1.png?v=2); background-position: 0px -200px;"></div></a></td><td ><a href="http://admo.net/?webpagetest.org" title="Admo.net WebHosting"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors1.png?v=2); background-position: 0px -360px;"></div></a></td><td ><a href="http://www.cloudshark.org" title="CloudShark"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors2.png?v=3); background-position: 0px -120px;"></div></a></td><td ><a href="http://www.telerik.com/" title="Telerik - making software development easier and more enjoyable"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors4.png?v=7); background-position: 0px -160px;"></div></a></td></tr></table><table class="links"><tr><td ><a href="http://www.gutefrage.net/" title="Gute Fragen - hilfreiche Antworten - die Ratgeber Community gutefrage.net"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors4.png?v=7); background-position: 0px -200px;"></div></a></td><td ><a href="http://www.limelight.com/" title="Limelight Networks"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors24.png?v=5); background-position: 0px -280px;"></div></a></td><td ><a href="http://www.interhost.co.il/" title="interhost.co.il - Israel Web Hosting Services"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors24.png?v=5); background-position: 0px -480px;"></div></a></td><td ><a href="http://www.mysitespeed.com/" title="Mysitespeed.com"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors2.png?v=3); background-position: 0px -280px;"></div></a></td><td ><a href="http://wpengine.com/" title="WP Engine"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors1.png?v=2); background-position: 0px -120px;"></div></a></td></tr></table><table class="links"><tr><td ><a href="http://www.netdna.com/" title="NetDNA"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors2.png?v=3); background-position: 0px -320px;"></div></a></td><td ><a href="http://newrelic.com/" title="New Relic"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors2.png?v=3); background-position: 0px -160px;"></div></a></td><td ><a href="http://www.turbobytes.com/" title="Faster content delivery - Turbobytes"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors1.png?v=2); background-position: 0px -40px;"></div></a></td><td ><a href="http://yhost.ro" title="Y Host :: Web Hosting in Romania"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors4.png?v=7); background-position: 0px -120px;"></div></a></td><td ><a href="http://www.exceda.com/landing/" title="Exceda"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors3.png?v=1); background-position: 0px -160px;"></div></a></td></tr></table><table class="links"><tr><td ><a href="http://www.tid.es/en/" title="Telef&oacute;nica Digital"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors24.png?v=5); background-position: 0px -160px;"></div></a></td><td ><a href="http://www.webogroup.com/?utm_source=webpagetest&utm_medium=logo&utm_campaign=webo" title="WEBO Software. Website acceleration and monitoring solutions"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors3.png?v=1); background-position: 0px -240px;"></div></a></td><td ><a href="http://www.hostinginnederland.nl/" title="Hosting in Nederland - Vind de beste hosting voor je website"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors2.png?v=3); background-position: 0px -40px;"></div></a></td><td ><a href="http://www.dynatrace.com/" title="dynaTrace Software"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors1.png?v=2); background-position: 0px -320px;"></div></a></td><td ><a href="http://www.godaddy.com/?isc=WPTlogo" title="World's #1 ICANN-accredited domain registrar | Go Daddy"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors4.png?v=7); background-position: 0px -80px;"></div></a></td></tr></table><table class="links"><tr><td ><a href="http://www.watchmouse.com/" title="WatchMouse website performance monitoring"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors3.png?v=1); background-position: 0px -40px;"></div></a></td><td></td><td ><a href="http://www.ip-label.co.uk/" title="ip-label"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors1.png?v=2); background-position: 0px -240px;"></div></a></td><td></td><td ><a href="http://www.maxcdn.com/" title="MaxCDN Content Delivery Network"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors3.png?v=1); background-position: 0px 0px;"></div></a></td></tr></table></div>    <div class="cleared"></div>
+    
+    <script type="text/javascript" src="http://cdn.webpagetest.org/js/site.js?v=30"></script>
+<script>
+wptJSVer = '30';
+wptBrowser = 'Wget 1';
+function getCookie(c_name) {
+    var i,x,y,ARRcookies=document.cookie.split(";");
+    for (i=0;i<ARRcookies.length;i++) {
+      x=ARRcookies[i].substr(0,ARRcookies[i].indexOf("="));
+      y=ARRcookies[i].substr(ARRcookies[i].indexOf("=")+1);
+      x=x.replace(/^\s+|\s+$/g,"");
+      if (x==c_name)
+        return unescape(y);
+    }
+}
+
+function setCookie(c_name,value,exdays) {
+    var exdate=new Date();
+    exdate.setDate(exdate.getDate() + exdays);
+    var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
+    document.cookie=c_name + "=" + c_value;
+}
+
+// see if the browser we are in supports resource timing
+function WptExperiment() {
+    try {
+        if (window['performance'] != undefined &&
+            (window.performance.getEntriesByType ||
+             window.performance.webkitGetEntriesByType)) {
+            if (window.performance.getEntriesByType)
+                var requests = window.performance.getEntriesByType("resource");
+            else
+                var requests = window.performance.webkitGetEntriesByType("resource");
+            var detected = false;
+            var data = {'browser': wptBrowser,
+                        'jsCached': false,
+                        'cookiePresent': false,
+                        'existingSession' : false,
+                        'localStoragePresent' : false,
+                        'jsTime': 0};
+            for (i = 0; i < requests.length; i++) {
+                var url = requests[i].name;
+                if (requests[i].name.indexOf('site.js') != -1) {
+                    detected = true;
+                    if (requests[i].responseStart == 0 ||
+                        requests[i].responseStart == requests[i].requestStart)
+                        data.jsCached = true;
+                    data.jsTime = Math.round(requests[i].duration);
+                }
+            }
+            
+            if (getCookie('exptVer') == wptJSVer) data.cookiePresent = true;
+            setCookie('exptVer', wptJSVer, 365);
+            if (getCookie('exptSession') == wptJSVer) data.existingSession = true;
+            setCookie('exptSession', wptJSVer, null);
+            if (localStorage["exptVer"] == wptJSVer) data.localStoragePresent = true;
+            localStorage["exptVer"] = wptJSVer;
+            if (detected) {
+                console.log(JSON.stringify(data));
+                var debug_str = 'site.js loaded from ';
+                if (data.jsCached)
+                  debug_str += 'cache';
+                else
+                  debug_str += 'network';
+                debug_str += ' in ' + data.jsTime + ' milliseconds';
+                if (data.existingSession)
+                  debug_str += ' (Existing Session)';
+                else
+                  debug_str += ' (New Session)';
+                $("#experiment-timing").html(debug_str);
+                var xhr = new XMLHttpRequest();
+                xhr.open('POST', '/experiment/data.php', true);
+                xhr.send(JSON.stringify(data));
+            }
+        }
+    } catch(e){
+    }
+};
+
+window.addEventListener('load', WptExperiment, false);
+</script>
+    <script type="text/javascript">
+        function showFeeds(column)
+        {
+            var label = document.getElementById("show_more_feeds_" + column);
+            label.parentNode.removeChild( label );
+            
+            document.getElementById("more_feeds_" + column).className = "";
+            return false;
+        }
+
+        if (performance['measure'])
+          performance.measure('Content Processing', 'aft.Site Header');
+    </script>
+    
+<script type="text/javascript">
+(function(a,b,c){function d(){var a=b.createElement(c),d=b.getElementsByTagName(c)[0];a.async=a.src="http://s2.cdnplanet.com/static/rum/rum.js",d.parentNode.insertBefore(a,d)}if(a.location.protocol=="https:")return;a.addEventListener&&a.addEventListener("load",d,!1)})(window,document,"script")
+</script>
+<img height="1" width="1" style="border-style:none;" alt="" src="http://www.googleadservices.com/pagead/conversion/1049562605/?value=0&amp;label=-neBCNO9wwMQ7Zu89AM&amp;guid=ON&amp;script=0"/>    <script type="text/javascript">if(!NREUMQ.f){NREUMQ.f=function(){NREUMQ.push(["load",new Date().getTime()]);var e=document.createElement("script");e.type="text/javascript";e.src=(("http:"===document.location.protocol)?"http:":"https:")+"//"+"js-agent.newrelic.com/nr-100.js";document.body.appendChild(e);if(NREUMQ.a)NREUMQ.a();};NREUMQ.a=window.onload;window.onload=NREUMQ.f;};NREUMQ.push(["nrfj","beacon-1.newrelic.com","5b0327a758","2035125","NFBXZUNRW0ADAkRbCQ0aYENYH1FWFgBZXhVNRV1B",0,56,new Date().getTime(),"","","","",""]);</script>    
+    <div id="experiment-timing" style="color: #77A;"></div>        </div>
+
+        <script type="text/javascript">
+        function expandRequest(targetNode) {
+          if (targetNode.length) {
+            var div_to_expand = $('#' + targetNode.attr('data-target-id'));
+
+            if (div_to_expand.is(":visible")) {
+                div_to_expand.hide();
+                targetNode.html('+' + targetNode.html().substring(1));
+            } else {
+                div_to_expand.show();
+                targetNode.html('-' + targetNode.html().substring(1));
+            }
+          }
+        }
+
+        $(document).ready(function() { $("#tableDetails").tablesorter({
+            headers: { 3: { sorter:'currency' } ,
+                       4: { sorter:'currency' } ,
+                       5: { sorter:'currency' } ,
+                       6: { sorter:'currency' } ,
+                       7: { sorter:'currency' } ,
+                       8: { sorter:'currency' } ,
+                       9: { sorter:'currency' }
+                     }
+        }); } );
+
+        $('.a_request').click(function () {
+            expandRequest($(this));
+        });
+
+        function expandAll() {
+          $(".header_details").each(function(index) {
+            $(this).show();
+          });
+        }
+        
+        if (window.location.hash == '#all') {
+          expandAll();
+        } else
+          expandRequest($(window.location.hash));
+
+        var CloseRequestDialog = function(hash) {
+    hash.w.hide();
+    for (i=1;i<=wptRequestCount;i++) {
+        $("#request-overlay-" + i).removeClass("selected");
+        $("#request-overlay-" + i).addClass("transparent");
+    }
+    $('#radio1').attr('checked', 'checked');
+    $("#request-dialog-radio").buttonset('refresh');
+}
+
+// initialize the pop-up dialog        
+$('#request-dialog').jqm({overlay: 0, onHide: CloseRequestDialog})
+      .jqDrag('.jqDrag');
+$('input.jqmdX')
+    .hover( function(){ $(this).addClass('jqmdXFocus'); }, 
+            function(){ $(this).removeClass('jqmdXFocus'); })
+    .focus( function(){ this.hideFocus=true; $(this).addClass('jqmdXFocus'); })
+    .blur( function(){ $(this).removeClass('jqmdXFocus'); });
+    
+$("#request-dialog-radio").buttonset();
+$("#request-dialog-radio").change(function() {
+    var panel=$('#request-dialog-radio input[type=radio]:checked').val();
+    $("#dialog-contents div.dialog-tab-content").hide();
+    $("#" + panel).show();
+});
+
+var wptBodyRequest;
+
+// Test that a value is a valid duration.
+// Invalid durations include undefined and -1.
+function IsValidDuration(value) {
+    // Explicitly check the type.  Would you have guessed that Number(['9'])
+    // is 9?  We need to support strings because php makes it too easy to
+    // send a number as a string.  We need to support numbers like "123.4".
+    if (typeof value != 'number' && typeof value != 'string')
+        return false;
+
+    // Number('') is 0, but the empty string is not a valid duration.
+    if (value === '')
+        return false;
+
+    var num = Number(value);
+    return (!isNaN(num) && num !== -1);
+}
+
+function NumBytesAsDisplayString(numBytes) {
+    var numKb = numBytes / 1024.0;
+
+    // We display kilobytes with one decimal point.  If the value with that
+    // precision would be zero, display bytes instead.
+    if (numKb >= 0.1) {
+        return numKb.toFixed(1) + ' KB';
+    }
+    return numBytes + ' B';
+}
+
+function SelectRequest(request) {
+    $('#request-dialog').css('top', $("#request-overlay-" + request).position().top + 20);
+    $("#dialog-title").html('<a href="#request' + request + '">Request #' + request + '</a>');
+    var details='';
+    var requestHeaders='';
+    var responseHeaders='';
+    $("#response-body").html('');
+    $('#response-body-button').hide();
+    $("#response-image").html('');
+    $('#response-image-button').hide();
+    try {
+        if (wptBodyRequest !== undefined)
+            wptBodyRequest.abort();
+    } catch (err) {
+    }
+    if (wptRequestData[request - 1] !== undefined) {
+        var r = wptRequestData[request - 1];
+        if (r['full_url'] !== undefined) {
+            if (wptNoLinks) {
+                details += '<b>URL:</b> ' + r['full_url'] + '<br>';
+            } else {
+                details += '<b>URL:</b> <a href="' + r['full_url'] + '">' + r['full_url'] + '</a><br>';
+            }
+        }
+        if (r['initiator'] !== undefined && r['initiator'].length > 0) {
+            details += '<b>Loaded By:</b> ' + r['initiator'];
+            if (r['initiator_line'] !== undefined)
+                details += ':' + r['initiator_line'];
+            details += '<br>';
+        }
+        if (r['host'] !== undefined)
+            details += '<b>Host: </b>' + r['host'] + '<br>';
+        if (r['ip_addr'])
+            details += '<b>IP: </b>' + r['ip_addr'] + '<br>';
+        if (r['location'] !== undefined && r['location'].length)
+            details += '<b>Location: </b>' + r['location'] + '<br>';
+        if (r['responseCode'] !== undefined)
+            details += '<b>Error/Status Code: </b>' + r['responseCode'] + '<br>';
+        if (r['client_port'] !== undefined && r['client_port'])
+            details += '<b>Client Port: </b>' + r['client_port'] + '<br>';
+        if (r['load_start'] !== undefined)
+            details += '<b>Start Offset: </b>' + (r['load_start'] / 1000.0).toFixed(3) + ' s<br>';
+        if (IsValidDuration(r['dns_ms'])) {
+            details += '<b>DNS Lookup: </b>' + r['dns_ms'] + ' ms<br>';
+        } else if( r['dns_end'] !== undefined && r['dns_start'] !== undefined && r['dns_end'] > 0 ) {
+            var dnsTime = r['dns_end'] - r['dns_start'];
+            details += '<b>DNS Lookup: </b>' + dnsTime + ' ms<br>';
+        }
+        if (IsValidDuration(r['connect_ms'])) {
+            details += '<b>Initial Connection: </b>' + r['connect_ms'] + ' ms<br>';
+            if (r['is_secure'] !== undefined && r['is_secure'] && IsValidDuration(r['ssl_ms'])) {
+                details += '<b>SSL Negotiation: </b>' + r['ssl_ms'] + ' ms<br>';
+            }
+        } else if( r['connect_end'] !== undefined && r['connect_start'] !== undefined && r['connect_end'] > 0 ) {
+            var connectTime = r['connect_end'] - r['connect_start'];
+            details += '<b>Initial Connection: </b>' + connectTime + ' ms<br>';
+            if( r['ssl_end'] !== undefined && r['ssl_start'] !== undefined && r['ssl_end'] > 0 ) {
+                var sslTime = r['ssl_end'] - r['ssl_start'];
+                details += '<b>SSL Negotiation: </b>' + sslTime + ' ms<br>';
+            }
+        }
+        if (IsValidDuration(r['ttfb_ms'])) {
+            details += '<b>Time to First Byte: </b>' + r['ttfb_ms'] + ' ms<br>';
+        }
+        if (IsValidDuration(r['download_ms']))
+            details += '<b>Content Download: </b>' + r['download_ms'] + ' ms<br>';
+        if (r['bytesIn'] !== undefined)
+            details += '<b>Bytes In (downloaded): </b>' + NumBytesAsDisplayString(r['bytesIn']) + '<br>';
+        if (r['bytesOut'] !== undefined)
+            details += '<b>Bytes Out (uploaded): </b>' + NumBytesAsDisplayString(r['bytesOut']) + '<br>';
+        if (r['custom_rules'] !== undefined) {
+            for (rule in r['custom_rules']) {
+                details += '<b>Custom Rule - ' + rule + ': </b>(';
+                details += r['custom_rules'][rule]['count'] + ' matches) - ';
+                details += r['custom_rules'][rule]['value'].replace(/>/g, '&gt;').replace(/</g, '&lt;') + '<br>';
+            }
+        }
+        if (r['headers'] !== undefined){
+            if (r.headers['request'] !== undefined){
+                for (i=0;i<r.headers.request.length;i++) {
+                    requestHeaders += r.headers.request[i] + '<br>';
+                }
+            }
+            if (r.headers['response'] !== undefined){
+                for (i=0;i<r.headers.response.length;i++) {
+                    responseHeaders += r.headers.response[i] + '<br>';
+                }
+            }
+        }
+        if (r['body_url'] !== undefined && r['body_url'].length) {
+            try {
+                $("#response-body").text('Loading...');
+                $('#response-body-button').show();
+                wptBodyRequest = new XMLHttpRequest();
+                wptBodyRequest.open('GET', r['body_url'], true);
+                wptBodyRequest.onreadystatechange = function() {
+                if (wptBodyRequest.readyState == 4) {
+                    if (wptBodyRequest.status == 200) {
+                        $("#response-body").text(wptBodyRequest.responseText);
+                    } else {
+                        $("#response-body").text('');
+                    }
+                }
+              }
+              wptBodyRequest.send();
+            } catch (err) {
+            }
+        } else if (r['contentType'] !== undefined && r['contentType'].indexOf('image') >= 0) {
+            $('#response-body-button').show();
+            if (wptNoLinks) {
+                $("#response-body").html('<img style="max-width:100%; max-height:100%;" src="' + r['full_url'] + '">');
+            } else {
+                $("#response-body").html('<a href="' + r['full_url'] + '"><img style="max-width:100%; max-height:100%;" src="' + r['full_url'] + '"></a>');
+            }
+        }
+    }
+    $("#request-details").html(details);
+    $("#request-headers").html(requestHeaders);
+    $("#response-headers").html(responseHeaders);
+    $('#request-dialog').jqmShow();
+
+    // highlight the selected request
+    for (i=1;i<=wptRequestCount;i++) {
+        if (i == request)
+            $("#request-overlay-" + i).addClass("selected");
+        else
+            $("#request-overlay-" + i).removeClass("selected");
+    }
+}
+
+// support for the multi-waterfall translucency
+$(".waterfall-transparency").change(function() {
+    var newValue = this.value;
+    var id = this.name;
+    $("#" + id).css({ opacity: newValue });
+});
+        </script>
+    </body>
+</html>

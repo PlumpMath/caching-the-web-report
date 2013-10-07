@@ -1,0 +1,1611 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WebPagetest Test Details - Dulles : wordpress.com - 09/16/13 14:43:51</title>
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<meta name="keywords" content="Performance Test,Details,Webpagetest,Website Speed Test,Page Speed">
+<meta name="description" content="Website performance test details - Dulles : wordpress.com - 09/16/13 14:43:51">
+<meta name="author" content="Patrick Meenan">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge"> 
+
+<link rel="shortcut icon" href="/images/favicon.ico" type="image/vnd.microsoft.icon">
+<link rel="icon" href="/images/favicon.png" type="image/png">
+
+<script type="text/javascript">var NREUMQ=NREUMQ||[];NREUMQ.push(["mark","firstbyte",new Date().getTime()]);</script>
+<script type="text/javascript">
+var wptTemplate = 'Details';
+rumMapping = {'aft': 'custom0'};
+(function(){
+  var dom,doc,where,iframe = document.createElement('iframe');
+  iframe.src = "javascript:false";
+  (iframe.frameElement || iframe).style.cssText = "width: 0; height: 0; border: 0";
+  where = document.getElementsByTagName('script')[0];
+  where.parentNode.insertBefore(iframe, where);
+
+  try {
+    doc = iframe.contentWindow.document;
+  } catch(e) {
+    dom = document.domain;
+    iframe.src="javascript:var d=document.open();d.domain='"+dom+"';void(0);";
+    doc = iframe.contentWindow.document;
+  }
+  doc.open()._l = function() {
+    var js = this.createElement("script");
+    if(dom) this.domain = dom;
+    js.id = "boomr-if-as";
+    js.src = '//c.go-mpulse.net/boomerang/' +
+    'KLHEA-LW4C7-LHTMB-YZBLM-2BJ54';
+    BOOMR_lstart=new Date().getTime();
+    this.body.appendChild(js);
+  };
+  doc.write('<body onload="document._l();">');
+  doc.close();
+  })();
+        
+</script>
+<script type="text/javascript">
+;(function(){var e=typeof window!="undefined"?window:exports,t=[];e.performance||(e.performance={});e.performance.now||(e.performance.now=performance.now||performance.webkitNow||performance.msNow||performance.mozNow);if(!e.performance.now){var n=Date.now?Date.now():+(new Date);if(performance.timing&&performance.timing)n=performance.timing.navigationStart;e.performance.now=function(){var e=Date.now?Date.now():+(new Date);return e-n}}e.performance.mark||(e.performance.mark=e.performance.webkitMark?e.performance.webkitMark:function(n){t.push({name:n,entryType:"mark",startTime:e.performance.now(),duration:0})});e.performance.getEntriesByType||(e.performance.getEntriesByType=e.performance.webkitGetEntriesByType?e.performance.webkitGetEntriesByType:function(e){return e=="mark"?t:undefined})})();window.markUserTime=function(e){var t=window["requestAnimationFrame"]||function(e){setTimeout(e,0)};t(function(){window.performance.mark(e);if(window["console"]&&console["timeStamp"])console.timeStamp(e)})};(function(){var e=function(e,t,n){t=Math.round(t);if(t>=0&&t<36e5){if(!n&&window["_gaq"])_gaq.push(["_trackTiming","UserTimings",e,t]);if(n&&window["rumMapping"]&&window.rumMapping[e])BOOMR.plugins.RT.setTimer(window.rumMapping[e],t)}};utReportRUM=function(t){var n=window.performance.getEntriesByType("mark");var r={};for(i=0;i<n.length;i++){g="usertiming";if(r[g]==undefined||n[i].startTime>r[g])r[g]=n[i].startTime;p=n[i].name.match(/([^\.]+)\.([^\.]*)/);if(p&&p.length>2&&(r[p[1]]==undefined||n[i].startTime>r[p[1]]))r[p[1]]=n[i].startTime}for(g in r)e(g,r[g],t)};utOnLoad=function(){utReportRUM(false)};if(window["addEventListener"])window.addEventListener("load",utOnLoad,false);else if(window["attachEvent"])window.attachEvent("onload",utOnLoad);utSent=false;BOOMR=window.BOOMR||{};BOOMR.plugins=BOOMR.plugins||{};BOOMR.plugins.UserTiming={init:function(e){BOOMR.subscribe("page_ready",function(){if(!utSent){utReportRUM(true);utSent=true;BOOMR.sendBeacon()}})},is_complete:function(){return utSent}}})();
+</script>
+<link rel="stylesheet" href="http://cdn.webpagetest.org/pagestyle.css?v=65" type="text/css">
+<style type="text/css">
+
+</style>
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3755571-1']);
+_gaq.push(['_setCustomVar', 1, 'Template', 'Details', 3]);
+    _gaq.push(['_setSiteSpeedSampleRate', 100]);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+    var ga = document.createElement('script');
+    ga.src = ('https:' == document.location.protocol ?
+        'https://ssl' : 'http://www') +
+        '.google-analytics.com/ga.js';
+    ga.setAttribute('async', 'true');
+    document.documentElement.firstChild.appendChild(ga);
+    })();
+    </script>
+        <style type="text/css">
+        div.bar {
+            height:12px;
+            margin-top:auto;
+            margin-bottom:auto;
+        }
+
+        .left {text-align:left;}
+        .center {text-align:center;}
+
+        .indented1 {padding-left: 40pt;}
+        .indented2 {padding-left: 80pt;}
+
+        td {
+            white-space:nowrap;
+            text-align:left;
+            vertical-align:middle;
+        }
+
+        td.center {
+            text-align:center;
+        }
+
+        table.details {
+          margin-left:auto; margin-right:auto;
+          background: whitesmoke;
+          border-collapse: collapse;
+        }
+        table.details th, table.details td {
+          border: 1px silver solid;
+          padding: 0.2em;
+          text-align: center;
+          font-size: smaller;
+        }
+        table.details th {
+          background: gainsboro;
+        }
+        table.details caption {
+          margin-left: inherit;
+          margin-right: inherit;
+          background: whitesmoke;
+        }
+        table.details th.reqUrl, table.details td.reqUrl {
+          text-align: left;
+          width: 30em;
+          word-wrap: break-word;
+        }
+        table.details td.even {
+          background: gainsboro;
+        }
+        table.details td.odd {
+          background: whitesmoke;
+        }
+        table.details td.evenRender {
+          background: #dfffdf;
+        }
+        table.details td.oddRender {
+          background: #ecffec;
+        }
+        table.details td.evenDoc {
+          background: #dfdfff;
+        }
+        table.details td.oddDoc {
+          background: #ececff;
+        }
+        table.details td.warning {
+          background: #ffff88;
+        }
+        table.details td.error {
+          background: #ff8888;
+        }
+        .header_details {
+            display: none;
+        }
+        .a_request {
+            cursor: pointer;
+        }
+        
+div.waterfall-container {position: relative; left: 0; top: 0; clear:both; overflow:auto;}
+img.waterfall-image {position: relative; left: 0; top: 0;}
+div.request-overlay {cursor:pointer; padding: 0; margin: 0; width: 928px; left: 1px; background-color: #FFF; overflow: hidden; opacity:0.9; filter:alpha(opacity=90);}
+div.request-overlay.selected {opacity:0.4; background-color: #129828;}
+div.transparent {opacity:0.0; filter:alpha(opacity=0);}
+#dialog-title {display: inline;}
+#dialog-title a {color: #fff;}
+#request-dialog-radio {display:inline; padding-left: 20px; font-weight: normal; }
+#request-headers, #response-headers, #response-body {display:none;}
+
+.jqmWindow {display: none; position: fixed; top: 17%; left: 50%; margin-left: -300px; width: 600px; background-color: #dfdfdf; color: #333; border: 1px solid black; padding: 12px; }
+.jqmOverlay { background-color: #000; }
+div.jqDrag {cursor: move;}
+.jqResize {width: 100%; height: 3px; background: #dfdfdf; border-top: 1px solid #a3a3a3; border-bottom: 1px solid #a3a3a3; cursor: ns-resize;}
+div.jqmDialog {display: none; position: absolute; top: 17%; right: 20px; width: 600px; height: 300px;
+                overflow: hidden; font-family:verdana,tahoma,helvetica;
+                color: #000; background: #fff; border: 1px solid #000; text-align: left;}
+div.jqmdTC { background: #303030; color: #000; height: 25px; padding: 7px 22px 5px 5px; font-family:"sans serif",verdana,tahoma,helvetica; font-weight: bold; * zoom: 1; cursor: move;}
+div.jqmdBC { height: 250px; padding: 7px 7px 7px; overflow: auto;}
+div.jqmdX { position: absolute; right: 7px; top: 8px; padding: 0 0 0 16px; height: 16px; width: 0px; background: url(/images/dialog-close.png) no-repeat 0px -16px; overflow: hidden;}
+div.jqmdX:hover {background-position: 0px 0px;}
+div.jqmdBC button {margin: 8px 10px 4px 10px; color: #777; background-color: #fff; cursor: pointer; }
+
+/* Jquery UI */
+.ui-helper-hidden { display: none; }
+.ui-helper-hidden-accessible { position: absolute !important; clip: rect(1px 1px 1px 1px); clip: rect(1px,1px,1px,1px); }
+.ui-helper-reset { margin: 0; padding: 0; border: 0; outline: 0; line-height: 1.3; text-decoration: none; font-size: 100%; list-style: none; }
+.ui-helper-clearfix:before, .ui-helper-clearfix:after { content: ""; display: table; }
+.ui-helper-clearfix:after { clear: both; }
+.ui-helper-clearfix { zoom: 1; }
+.ui-helper-zfix { width: 100%; height: 100%; top: 0; left: 0; position: absolute; opacity: 0; filter:Alpha(Opacity=0); }
+.ui-state-disabled { cursor: default !important; }
+.ui-icon { display: block; text-indent: -99999px; overflow: hidden; background-repeat: no-repeat; }
+.ui-widget-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+.ui-widget { font-family: Trebuchet MS, Tahoma, Verdana, Arial, sans-serif; font-size: 1.1em; }
+.ui-widget .ui-widget { font-size: 1em; }
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button { font-family: Trebuchet MS, Tahoma, Verdana, Arial, sans-serif; font-size: 1em; }
+.ui-widget-content { border: 1px solid #dddddd; background-color: #eeeeee; color: #333333; }
+.ui-widget-content a { color: #333333; }
+.ui-widget-header { border: 1px solid #e78f08; background-color: #f6a828; color: #ffffff; font-weight: bold; }
+.ui-widget-header a { color: #ffffff; }
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default { border: 1px solid #cccccc; background-color: #cccccc; font-weight: bold; color: #1c94c4; }
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited { color: #1c94c4; text-decoration: none; }
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hovers, { border: 1px solid #cccccc; background-color: #f6f6f6; font-weight: bold; color: #c77405; }
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active { border: 1px solid #C00; background-color: #ffffff; font-weight: bold; color: #c00; }
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited { color: #eb8f00; text-decoration: none; }
+.ui-state-hover a, .ui-state-hover a:hover { color: #c77405; text-decoration: none; }
+.ui-widget :active { outline: none; }
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight  {border: 1px solid #fed22f; background: #ffe45c url(images/ui-bg_highlight-soft_75_ffe45c_1x100.png) 50% top repeat-x; color: #363636; }
+.ui-state-highlight a, .ui-widget-content .ui-state-highlight a,.ui-widget-header .ui-state-highlight a { color: #363636; }
+.ui-state-error, .ui-widget-content .ui-state-error, .ui-widget-header .ui-state-error {border: 1px solid #cd0a0a; background: #b81900 url(images/ui-bg_diagonals-thick_18_b81900_40x40.png) 50% 50% repeat; color: #ffffff; }
+.ui-state-error a, .ui-widget-content .ui-state-error a, .ui-widget-header .ui-state-error a { color: #ffffff; }
+.ui-state-error-text, .ui-widget-content .ui-state-error-text, .ui-widget-header .ui-state-error-text { color: #ffffff; }
+.ui-priority-primary, .ui-widget-content .ui-priority-primary, .ui-widget-header .ui-priority-primary { font-weight: bold; }
+.ui-priority-secondary, .ui-widget-content .ui-priority-secondary,  .ui-widget-header .ui-priority-secondary { opacity: .7; filter:Alpha(Opacity=70); font-weight: normal; }
+.ui-state-disabled, .ui-widget-content .ui-state-disabled, .ui-widget-header .ui-state-disabled { opacity: .35; filter:Alpha(Opacity=35); background-image: none; }
+.ui-icon { width: 16px; height: 16px; background-image: url(/images/ui-icons_222222_256x240.png); }
+.ui-widget-content .ui-icon {background-image: url(/images/ui-icons_222222_256x240.png); }
+.ui-widget-header .ui-icon {background-image: url(/images/ui-icons_ffffff_256x240.png); }
+.ui-state-default .ui-icon { background-image: url(/images/ui-icons_ef8c08_256x240.png); }
+.ui-state-hover .ui-icon, .ui-state-focus .ui-icon {background-image: url(/images/ui-icons_ef8c08_256x240.png); }
+.ui-state-active .ui-icon {background-image: url(/images/ui-icons_ef8c08_256x240.png); }
+.ui-state-highlight .ui-icon {background-image: url(/images/ui-icons_228ef1_256x240.png); }
+.ui-state-error .ui-icon, .ui-state-error-text .ui-icon {background-image: url(/images/ui-icons_ffd27a_256x240.png); }
+
+/* jQuery UI Button 1.8.17
+ *
+ * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Button#theming
+ */
+.ui-button { display: inline-block; position: relative; padding: 0; margin-right: .1em; text-decoration: none !important; cursor: pointer; text-align: center; zoom: 1; overflow: visible; } /* the overflow property removes extra width in IE */
+.ui-button-icon-only { width: 2.2em; } /* to make room for the icon, a width needs to be set here */
+button.ui-button-icon-only { width: 2.4em; } /* button elements seem to need a little more width */
+.ui-button-icons-only { width: 3.4em; } 
+button.ui-button-icons-only { width: 3.7em; } 
+.ui-button .ui-button-text { display: block; line-height: 1.1;  }
+.ui-button-text-only .ui-button-text { padding: 2px 5px; }
+.ui-button-icon-only .ui-button-text, .ui-button-icons-only .ui-button-text { padding: .4em; text-indent: -9999999px; }
+.ui-button-text-icon-primary .ui-button-text, .ui-button-text-icons .ui-button-text { padding: .4em 1em .4em 2.1em; }
+.ui-button-text-icon-secondary .ui-button-text, .ui-button-text-icons .ui-button-text { padding: .4em 2.1em .4em 1em; }
+.ui-button-text-icons .ui-button-text { padding-left: 2.1em; padding-right: 2.1em; }
+input.ui-button { padding: .4em 1em; }
+.ui-button-icon-only .ui-icon, .ui-button-text-icon-primary .ui-icon, .ui-button-text-icon-secondary .ui-icon, .ui-button-text-icons .ui-icon, .ui-button-icons-only .ui-icon { position: absolute; top: 50%; margin-top: -8px; }
+.ui-button-icon-only .ui-icon { left: 50%; margin-left: -8px; }
+.ui-button-text-icon-primary .ui-button-icon-primary, .ui-button-text-icons .ui-button-icon-primary, .ui-button-icons-only .ui-button-icon-primary { left: .5em; }
+.ui-button-text-icon-secondary .ui-button-icon-secondary, .ui-button-text-icons .ui-button-icon-secondary, .ui-button-icons-only .ui-button-icon-secondary { right: .5em; }
+.ui-button-text-icons .ui-button-icon-secondary, .ui-button-icons-only .ui-button-icon-secondary { right: .5em; }
+.ui-buttonset { margin-right: 7px; }
+.ui-buttonset .ui-button { margin-left: 0; margin-right: -.3em; }
+button.ui-button::-moz-focus-inner { border: 0; padding: 0; } /* reset extra padding in Firefox */
+.ui-slider { position: relative; text-align: left; }
+.ui-slider .ui-slider-handle { position: absolute; z-index: 2; width: 1.2em; height: 1.2em; cursor: default; }
+.ui-slider .ui-slider-range { position: absolute; z-index: 1; font-size: .7em; display: block; border: 0; background-position: 0 0; }
+.ui-slider-horizontal { height: .8em; }
+.ui-slider-horizontal .ui-slider-handle { top: -.3em; margin-left: -.6em; }
+.ui-slider-horizontal .ui-slider-range { top: 0; height: 100%; }
+.ui-slider-horizontal .ui-slider-range-min { left: 0; }
+.ui-slider-horizontal .ui-slider-range-max { right: 0; }
+.ui-slider-vertical { width: .8em; height: 100px; }
+.ui-slider-vertical .ui-slider-handle { left: -.3em; margin-left: 0; margin-bottom: -.6em; }
+.ui-slider-vertical .ui-slider-range { left: 0; width: 100%; }
+.ui-slider-vertical .ui-slider-range-min { bottom: 0; }
+.ui-slider-vertical .ui-slider-range-max { top: 0; }
+        </style>
+    </head>
+    <body>
+        <div class="page">
+            <div id="wptAuthBar"><a href="/forums/member.php?action=login">Login</a> &nbsp;|&nbsp; <a href="/forums/member.php?action=register">Register</a> &nbsp;|&nbsp; <a href="/oauth/login.php">Login with Google</a> </div>
+<div id="header">
+    <h1 class="logo"><a href="/">WebPageTest</a></h1>
+    <div class="headerAd">
+    <script type="text/javascript"><!--
+        google_ad_client = "pub-0388499782819905";
+        /* Header 728x90 */
+        google_ad_slot = "6264344813";
+        google_ad_width = 728;
+        google_ad_height = 90;
+        //-->
+        </script>
+        <script type="text/javascript"
+        src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+        </script>    </div>
+</div>
+
+<div id="nav_bkg"><ul id="nav" class="cufon-dincond_black"><li><a title="Home" href="/">Home</a></li><li class="current"><a title="Test Result" href="/result/130916_SG_JD5/">Test Result</a></li><li><a title="Test History" href="/testlog/1/">Test History</a></li><li><a title="Forums" href="/forums/">Forums</a></li><li><a title="Documentation (opens in a new tab)" href="http://sites.google.com/a/webpagetest.org/docs/" target="_blank">Documentation</a></li><li><a title="About" href="/about">About</a></li><div class="gplusone"><g:plusone size="medium" count="false" href="http://www.webpagetest.org/" actions="+1,addtocircles"></g:plusone>&nbsp;
+                <a href="http://twitter.com/share" class="twitter-share-button" data-count="none" data-text=" "></a>
+                <script type="text/javascript">
+                        (function() {
+                            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                            po.src = 'https://apis.google.com/js/plusone.js';
+                            var tw = document.createElement('script'); tw.type = 'text/javascript'; tw.async = true;
+                            tw.src = 'http://platform.twitter.com/widgets.js';
+                            var s = document.getElementsByTagName('script')[0]; 
+                            s.parentNode.insertBefore(po, s);
+                            s.parentNode.insertBefore(tw, s);
+                          })();
+                  </script></div>
+                  </ul>
+
+</div>
+
+    
+<div id="main">
+    <div class="level_2">
+        <div class="content-wrap">
+            <div class="content">
+
+            
+<div id="header_container"><div id="optimization"><div id="optimization_header"><div id="opthelp"><a href="http://www.webperformancecentral.com/wiki/WebPagetest/Optimization_Help" title="Optimization Resources" target="_blank">Need help improving?</a></div>
+</div><div id="grades"><ul class="grades smaller"><li class="first_byte_time"><a href="/result/130916_SG_JD5/1/performance_optimization/#first_byte_time"><h2 class="A">A</h2></a>First Byte Time</li><li class="keep_alive_enabled"><a href="/result/130916_SG_JD5/1/performance_optimization/#keep_alive_enabled"><h2 class="A">A</h2></a>Keep-alive Enabled</li><li class="compress_text"><a href="/result/130916_SG_JD5/1/performance_optimization/#compress_text"><h2 class="D">D</h2></a>Compress Transfer</li><li class="compress_images"><a href="/result/130916_SG_JD5/1/performance_optimization/#compress_images"><h2 class="A">A</h2></a>Compress Images</li><li class="progressive_jpeg"><a href="/result/130916_SG_JD5/1/performance_optimization/#progressive_jpeg"><h2 class="A">A</h2></a>Progressive JPEGs</li><li class="cache_static_content"><a href="/result/130916_SG_JD5/1/performance_optimization/#cache_static_content"><h2 class="F">F</h2></a>Cache static content</li><li class="use_of_cdn"><a href="/result/130916_SG_JD5/1/performance_optimization/#use_of_cdn"><h2 class="NA">X</h2></a>Effective use of CDN</li></ul></div></div><div id="header_data"><h2 class="alternate cufon-dincond_regular">Web Page Performance Test for<br><span class="medium colored">wordpress.com</span></h2><p class="heading_details"><strong>From:</strong> Dulles, VA - <b>Firefox</b> - <b>Cable</b><br><span class="jsdate" date="1379342631">09/16/13 14:43:51</span><br>
+</div></div><div id="test_results-container"><div id="test-1" class="test_results"><ul class="test_menu"><li><a href="/result/130916_SG_JD5/">Summary</a></li><li class="current"><a href="/result/130916_SG_JD5/1/details/">Details</a></li><li><a href="/performance_optimization.php?test=130916_SG_JD5&run=1&cached=0">Performance Review</a></li><li><a href="/breakdown.php?test=130916_SG_JD5&run=1&cached=0">Content Breakdown</a></li><li><a href="/domains.php?test=130916_SG_JD5&run=1&cached=0">Domains</a></li><li><a href="/screen_shot.php?test=130916_SG_JD5&run=1&cached=0">Screen Shot</a></li></ul><div class="test_results-content"><script type="text/javascript">
+  markUserTime('aft.Site Header');
+</script>
+
+            <div id="result">
+                <div id="download">
+                    <div id="testinfo">
+                                            </div>
+                    <a href="/export.php?test=130916_SG_JD5&run=1&cached=0">Export HTTP Archive (.har)</a><br>                </div>
+                <div class="cleared"></div>
+                <br>
+                <table id="tableResults" class="pretty" align="center" border="1" cellpadding="10" cellspacing="0">
+                    <tr>
+                                                <th align="center" class="empty" valign="middle" colspan="7" ></th>
+                        <th align="center" class="border" valign="middle" colspan="3">Document Complete</th>
+                        <th align="center" class="border" valign="middle" colspan="3">Fully Loaded</th>
+                    </tr>
+                    <tr>
+                        <th align="center" valign="middle">Load Time</th>
+                        <th align="center" valign="middle">First Byte</th>
+                        <th align="center" valign="middle">Start Render</th>
+                                                                                                <th align="center" valign="middle">Visually Complete</th>
+                                                                        <th align="center" valign="middle"><a href="https://sites.google.com/a/webpagetest.org/docs/using-webpagetest/metrics/speed-index" target="_blank">Speed Index</a></th>
+                                                                                                <th align="center" valign="middle">DOM Elements</th>
+                                                <th align="center" valign="middle">Result (error code)</th>
+
+                        <th align="center" class="border" valign="middle">Time</th>
+                        <th align="center" valign="middle">Requests</th>
+                        <th align="center" valign="middle">Bytes In</th>
+
+                        <th align="center" class="border" valign="middle">Time</th>
+                        <th align="center" valign="middle">Requests</th>
+                        <th align="center" valign="middle">Bytes In</th>
+                    </tr>
+                    <tr>
+                        <td id="LoadTime" valign="middle">1.110s</td>
+<td id="TTFB" valign="middle">0.212s</td>
+<td id="startRender" valign="middle">0.753s</td>
+<td id="visualComplate" valign="middle">2.200s</td>
+<td id="speedIndex" valign="middle">1483</td>
+<td id="domElements" valign="middle">1141</td>
+<td id="result" valign="middle">0</td>
+<td id="docComplete" class="border" valign="middle">1.110s</td>
+<td id="requestsDoc" valign="middle">14</td>
+<td id="bytesInDoc" valign="middle">154 KB</td>
+<td id="fullyLoaded" class="border" valign="middle">2.533s</td>
+<td id="requests" valign="middle">21</td>
+<td id="bytesIn" valign="middle">304 KB</td>
+                    </tr>
+                </table><br>
+                <table id="tableW3CTiming" class="pretty" align="center" border="1" cellpadding="10" cellspacing="0"><tr><th><a href="http://dvcs.w3.org/hg/webperf/raw-file/tip/specs/NavigationTiming/Overview.html#process">domContentLoaded</a></th><th><a href="http://dvcs.w3.org/hg/webperf/raw-file/tip/specs/NavigationTiming/Overview.html#process">loadEvent</a></th></tr><tr><td>0.665s - 0.665s (0.000s)</td><td>1.075s - 1.086s (0.011s)</td></tr></table><br>                <script type="text/javascript">
+                  markUserTime('aft.Detail Table');
+                </script>
+
+                <div style="text-align:center;">
+                <h3 name="waterfall_view">Waterfall View</h3>
+                <table border="1" bordercolor="silver" cellpadding="2px" cellspacing="0" style="width:auto; font-size:11px; margin-left:auto; margin-right:auto;">
+                    <tr>
+                        <td><table><tr><td><div class="bar" style="width:15px; background-color:#1f7c83"></div></td><td>DNS Lookup</td></tr></table></td>
+                        <td><table><tr><td><div class="bar" style="width:15px; background-color:#e58226"></div></td><td>Initial Connection</td></tr></table></td>
+                                                <td><table><tr><td><div class="bar" style="width:15px; background-color:#1fe11f"></div></td><td>Time to First Byte</td></tr></table></td>
+                        <td><table><tr><td><div class="bar" style="width:15px; background-color:#1977dd"></div></td><td>Content Download</td></tr></table></td>
+                        <td style="vertical-align:middle; padding: 4px;"><div style="background-color:#ffff60">&nbsp;3xx response&nbsp;</div></td>
+                        <td style="vertical-align:middle; padding: 4px;"><div style="background-color:#ff6060">&nbsp;4xx+ response&nbsp;</div></td>
+                    </tr>
+                </table>
+                <table border="1" bordercolor="silver" cellpadding="2px" cellspacing="0" style="width:auto; font-size:11px; margin-left:auto; margin-right:auto; margin-top:11px;">
+                    <tr>
+                        <td><table><tr><td><div class="bar" style="width:2px; background-color:#28BC00"></div></td><td>Start Render</td></tr></table></td>
+                        <td><table><tr><td><div class="bar" style="width:15px; background-color:#D888DF"></div></td><td>DOM Content Loaded</td></tr></table></td><td><table><tr><td><div class="bar" style="width:15px; background-color:#C0C0FF"></div></td><td>On Load</td></tr></table></td><td><table><tr><td><div class="bar" style="width:2px; background-color:#0000FF"></div></td><td>Document Complete</td></tr></table></td>                    </tr>
+                </table>
+                <br>
+                <map name="waterfall_map"><area href="#request" alt="http://wordpress.com" title="http://wordpress.com" shape=RECT coords="0,0,250,25">
+<area href="#request1" alt="1: http://wordpress.com/" title="1: http://wordpress.com/" shape=RECT coords="0,26,929,42">
+<area href="#request2" alt="2: http://wordpress.com/home.logged-out/css/style.css?20130904" title="2: http://wordpress.com/home.logged-out/css/style.css?20130904" shape=RECT coords="0,43,929,59">
+<area href="#request3" alt="3: http://wordpress.com/i/noticons/noticons.css?20130416" title="3: http://wordpress.com/i/noticons/noticons.css?20130416" shape=RECT coords="0,60,929,76">
+<area href="#request4" alt="4: http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600|Merriweather:300" title="4: http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600|Merriweather:300" shape=RECT coords="0,77,929,93">
+<area href="#request5" alt="5: http://s1.wp.com/i/favicon-stacked.ico?m=1311976025g" title="5: http://s1.wp.com/i/favicon-stacked.ico?m=1311976025g" shape=RECT coords="0,94,929,110">
+<area href="#request6" alt="6: http://s2.wp.com/i/favicon.ico?m=1311976025g" title="6: http://s2.wp.com/i/favicon.ico?m=1311976025g" shape=RECT coords="0,111,929,127">
+<area href="#request7" alt="7: http://s1.wp.com/i/favicon-stacked.ico?m=1311976025g" title="7: http://s1.wp.com/i/favicon-stacked.ico?m=1311976025g" shape=RECT coords="0,128,929,144">
+<area href="#request8" alt="8: http://wordpress.com/home.logged-out/js/wp.js?20130508" title="8: http://wordpress.com/home.logged-out/js/wp.js?20130508" shape=RECT coords="0,145,929,161">
+<area href="#request9" alt="9: http://s2.wp.com/i/favicon.ico?m=1311976025g" title="9: http://s2.wp.com/i/favicon.ico?m=1311976025g" shape=RECT coords="0,162,929,178">
+<area href="#request10" alt="10: http://themes.googleusercontent.com/static/fonts/opensans/v6/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff" title="10: http://themes.googleusercontent.com/static/fonts/opensans/v6/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff" shape=RECT coords="0,179,929,195">
+<area href="#request11" alt="11: http://themes.googleusercontent.com/static/fonts/opensans/v6/DXI1ORHCpsQm3Vp6mXoaTXhCUOGz7vYGh680lGh-uXM.woff" title="11: http://themes.googleusercontent.com/static/fonts/opensans/v6/DXI1ORHCpsQm3Vp6mXoaTXhCUOGz7vYGh680lGh-uXM.woff" shape=RECT coords="0,196,929,212">
+<area href="#request12" alt="12: http://themes.googleusercontent.com/static/fonts/merriweather/v5/ZvcMqxEwPfh2qDWBPxn6nmFp2sMiApZm5Dx7NpSTOZk.woff" title="12: http://themes.googleusercontent.com/static/fonts/merriweather/v5/ZvcMqxEwPfh2qDWBPxn6nmFp2sMiApZm5Dx7NpSTOZk.woff" shape=RECT coords="0,213,929,229">
+<area href="#request13" alt="13: http://themes.googleusercontent.com/static/fonts/opensans/v6/MTP_ySUJH_bn48VBG8sNSnhCUOGz7vYGh680lGh-uXM.woff" title="13: http://themes.googleusercontent.com/static/fonts/opensans/v6/MTP_ySUJH_bn48VBG8sNSnhCUOGz7vYGh680lGh-uXM.woff" shape=RECT coords="0,230,929,246">
+<area href="#request14" alt="14: http://wordpress.com/home.logged-out/images/pic-c.jpg?1" title="14: http://wordpress.com/home.logged-out/images/pic-c.jpg?1" shape=RECT coords="0,247,929,263">
+<area href="#request15" alt="15: http://pixel.quantserve.com/pixel/p-18-mFEk4J448M.gif?labels=%2Clanguage.en%2Ctype.wpcom%2Cwp.homepage" title="15: http://pixel.quantserve.com/pixel/p-18-mFEk4J448M.gif?labels=%2Clanguage.en%2Ctype.wpcom%2Cwp.homepage" shape=RECT coords="0,264,929,280">
+<area href="#request16" alt="16: http://stats.wordpress.com/g.gif?host=wordpress.com&amp;rand=0.34289189912718365&amp;blog=1&amp;v=wpcom&amp;tz=0&amp;user_id=0&amp;subd=wordpress.com" title="16: http://stats.wordpress.com/g.gif?host=wordpress.com&amp;rand=0.34289189912718365&amp;blog=1&amp;v=wpcom&amp;tz=0&amp;user_id=0&amp;subd=wordpress.com" shape=RECT coords="0,281,929,297">
+<area href="#request17" alt="17: http://google-analytics.com/ga.js" title="17: http://google-analytics.com/ga.js" shape=RECT coords="0,298,929,314">
+<area href="#request18" alt="18: http://i.kissmetrics.com/i.js" title="18: http://i.kissmetrics.com/i.js" shape=RECT coords="0,315,929,331">
+<area href="#request19" alt="19: http://doug1izaerwt3.cloudfront.net/39e3e583aca28fab00c85ad9019b51d9f073fc6d.1.js" title="19: http://doug1izaerwt3.cloudfront.net/39e3e583aca28fab00c85ad9019b51d9f073fc6d.1.js" shape=RECT coords="0,332,929,348">
+<area href="#request20" alt="20: http://www.google-analytics.com/__utm.gif?utmwv=5.4.4&amp;utms=1&amp;utmn=858714781&amp;utmhn=wordpress.com&amp;utmcs=UTF-8&amp;utmsr=1920x1200&amp;utmvp=991x667&amp;utmsc=24-bit&amp;utmul=en-us&amp;utmje=0&amp;utmfl=11.8%20r800&amp;utmdt=WordPress.com%20-%20Get%20a%20Free%20Blog%20Here&amp;utmhid=2023775255&amp;utmr=-&amp;utmp=%2F&amp;utmht=1379342615353&amp;utmac=UA-10673494-4&amp;utmcc=__utma%3D214977736.1479568976.1379342615.1379342615.1379342615.1%3B%2B__utmz%3D214977736.1379342615.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&amp;utmu=qBAgAAAAAAAAAAAAAAAAAAB~" title="20: http://www.google-analytics.com/__utm.gif?utmwv=5.4.4&amp;utms=1&amp;utmn=858714781&amp;utmhn=wordpress.com&amp;utmcs=UTF-8&amp;utmsr=1920x1200&amp;utmvp=991x667&amp;utmsc=24-bit&amp;utmul=en-us&amp;utmje=0&amp;utmfl=11.8%20r800&amp;utmdt=WordPress.com%20-%20Get%20a%20Free%20Blog%20Here&amp;utmhid=2023775255&amp;utmr=-&amp;utmp=%2F&amp;utmht=1379342615353&amp;utmac=UA-10673494-4&amp;utmcc=__utma%3D214977736.1479568976.1379342615.1379342615.1379342615.1%3B%2B__utmz%3D214977736.1379342615.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&amp;utmu=qBAgAAAAAAAAAAAAAAAAAAB~" shape=RECT coords="0,349,929,365">
+<area href="#request21" alt="21: http://trk.kissmetrics.com/e?Viewed_Homepage%20%7C%20Language=en&amp;Viewed_Homepage%20%7C%20Homepage_Version_20130405=existing&amp;_n=Viewed_Homepage&amp;_k=39e3e583aca28fab00c85ad9019b51d9f073fc6d&amp;_p=3Hp1EKU5eqt6BEMfBckdqWIfMGc%3D&amp;_t=1379342616" title="21: http://trk.kissmetrics.com/e?Viewed_Homepage%20%7C%20Language=en&amp;Viewed_Homepage%20%7C%20Homepage_Version_20130405=existing&amp;_n=Viewed_Homepage&amp;_k=39e3e583aca28fab00c85ad9019b51d9f073fc6d&amp;_p=3Hp1EKU5eqt6BEMfBckdqWIfMGc%3D&amp;_t=1379342616" shape=RECT coords="0,366,929,382">
+</map><div class="waterfall-container"><img class="waterfall-image" alt="" onload="markUserTime('aft.Waterfall')" usemap="#waterfall_map" id="waterfall" src="/waterfall.php?test=130916_SG_JD5&run=1&cached=0"><div class="transparent request-overlay" id="request-overlay-1" title="1: http://wordpress.com/" onclick="SelectRequest(1)" style="position: absolute; top: 26px; height: 17px;"></div>
+<div class="transparent request-overlay" id="request-overlay-2" title="2: http://wordpress.com/home.logged-out/css/style.css?20130904" onclick="SelectRequest(2)" style="position: absolute; top: 43px; height: 17px;"></div>
+<div class="transparent request-overlay" id="request-overlay-3" title="3: http://wordpress.com/i/noticons/noticons.css?20130416" onclick="SelectRequest(3)" style="position: absolute; top: 60px; height: 17px;"></div>
+<div class="transparent request-overlay" id="request-overlay-4" title="4: http://fonts.googleapis.com/css..." onclick="SelectRequest(4)" style="position: absolute; top: 77px; height: 17px;"></div>
+<div class="transparent request-overlay" id="request-overlay-5" title="5: http://s1.wp.com/i/favicon-stacked.ico?m=1311976025g" onclick="SelectRequest(5)" style="position: absolute; top: 94px; height: 17px;"></div>
+<div class="transparent request-overlay" id="request-overlay-6" title="6: http://s2.wp.com/i/favicon.ico?m=1311976025g" onclick="SelectRequest(6)" style="position: absolute; top: 111px; height: 17px;"></div>
+<div class="transparent request-overlay" id="request-overlay-7" title="7: http://s1.wp.com/i/favicon-stacked.ico?m=1311976025g" onclick="SelectRequest(7)" style="position: absolute; top: 128px; height: 17px;"></div>
+<div class="transparent request-overlay" id="request-overlay-8" title="8: http://wordpress.com/home.logged-out/js/wp.js?20130508" onclick="SelectRequest(8)" style="position: absolute; top: 145px; height: 17px;"></div>
+<div class="transparent request-overlay" id="request-overlay-9" title="9: http://s2.wp.com/i/favicon.ico?m=1311976025g" onclick="SelectRequest(9)" style="position: absolute; top: 162px; height: 17px;"></div>
+<div class="transparent request-overlay" id="request-overlay-10" title="10: http://themes.googleusercontent.com/static/fo...cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff" onclick="SelectRequest(10)" style="position: absolute; top: 179px; height: 17px;"></div>
+<div class="transparent request-overlay" id="request-overlay-11" title="11: http://themes.googleusercontent.com/static/fo...DXI1ORHCpsQm3Vp6mXoaTXhCUOGz7vYGh680lGh-uXM.woff" onclick="SelectRequest(11)" style="position: absolute; top: 196px; height: 17px;"></div>
+<div class="transparent request-overlay" id="request-overlay-12" title="12: http://themes.googleusercontent.com/static/fo...ZvcMqxEwPfh2qDWBPxn6nmFp2sMiApZm5Dx7NpSTOZk.woff" onclick="SelectRequest(12)" style="position: absolute; top: 213px; height: 17px;"></div>
+<div class="transparent request-overlay" id="request-overlay-13" title="13: http://themes.googleusercontent.com/static/fo...MTP_ySUJH_bn48VBG8sNSnhCUOGz7vYGh680lGh-uXM.woff" onclick="SelectRequest(13)" style="position: absolute; top: 230px; height: 17px;"></div>
+<div class="transparent request-overlay" id="request-overlay-14" title="14: http://wordpress.com/home.logged-out/images/pic-c.jpg?1" onclick="SelectRequest(14)" style="position: absolute; top: 247px; height: 17px;"></div>
+<div class="transparent request-overlay" id="request-overlay-15" title="15: http://pixel.quantserve.com/pixel/p-18-mFEk4J448M.gif..." onclick="SelectRequest(15)" style="position: absolute; top: 264px; height: 17px;"></div>
+<div class="transparent request-overlay" id="request-overlay-16" title="16: http://stats.wordpress.com/g.gif..." onclick="SelectRequest(16)" style="position: absolute; top: 281px; height: 17px;"></div>
+<div class="transparent request-overlay" id="request-overlay-17" title="17: http://google-analytics.com/ga.js" onclick="SelectRequest(17)" style="position: absolute; top: 298px; height: 17px;"></div>
+<div class="transparent request-overlay" id="request-overlay-18" title="18: http://i.kissmetrics.com/i.js" onclick="SelectRequest(18)" style="position: absolute; top: 315px; height: 17px;"></div>
+<div class="transparent request-overlay" id="request-overlay-19" title="19: http://doug1izaerwt3.cloudfront.net/39e3e583aca28fab00c85ad9019b51d9f073fc6d.1.js" onclick="SelectRequest(19)" style="position: absolute; top: 332px; height: 17px;"></div>
+<div class="transparent request-overlay" id="request-overlay-20" title="20: http://www.google-analytics.com/__utm.gif..." onclick="SelectRequest(20)" style="position: absolute; top: 349px; height: 17px;"></div>
+<div class="transparent request-overlay" id="request-overlay-21" title="21: http://trk.kissmetrics.com/e..." onclick="SelectRequest(21)" style="position: absolute; top: 366px; height: 17px;"></div>
+    <div id="request-dialog" class="jqmDialog">
+        <div id="dialog-header" class="jqmdTC jqDrag">
+            <div id="dialog-title"></div>
+            <div id="request-dialog-radio">
+                <span id="request-details-button"><input type="radio" id="radio1" value="request-details" name="radio" checked="checked" /><label for="radio1">Details</label></span>
+                <span id="request-headers-button"><input type="radio" id="radio2" value="request-headers" name="radio" /><label for="radio2">Request</label></span>
+                <span id="response-headers-button"><input type="radio" id="radio3" value="response-headers" name="radio" /><label for="radio3">Response</label></span>
+                <span id="response-body-button"><input type="radio" id="radio4" value="response-body" name="radio" /><label for="radio4">Object</label></span>
+            </div>
+        </div>
+        <div class="jqmdBC">
+            <div id="dialog-contents" class="jqmdMSG">
+                <div id="request-details" class="dialog-tab-content"></div>
+                <div id="request-headers" class="dialog-tab-content"></div>
+                <div id="response-headers" class="dialog-tab-content"></div>
+                <div id="response-body" class="dialog-tab-content"></div>
+            </div>
+        </div>
+        <div class="jqmdX jqmClose"></div>
+    </div>
+    <div id="marker"></div>
+    </div><script type="text/javascript">
+var wptRequestCount=21;
+var wptRequestData=[{"ip_addr":"76.74.254.126","method":"GET","host":"wordpress.com","url":"\/","responseCode":"200","load_ms":"95","ttfb_ms":"89","load_start":"123","bytesOut":"289","bytesIn":"3064","objectSize":"2799","contentType":"text\/html","contentEncoding":"gzip","type":"3","socket":"15","score_cache":"0","score_cdn":"-1","score_gzip":"100","score_cookies":"-1","score_keep-alive":"100","score_minify":"-1","score_combine":"-1","score_compress":"-1","score_etags":"-1","is_secure":"0","dns_ms":"-1","connect_ms":81,"ssl_ms":"-1","gzip_total":"3064","gzip_save":"0","minify_total":"0","minify_save":"0","image_total":"0","image_save":"0","cache_time":"0","dns_start":"0","dns_end":"42","connect_start":"42","connect_end":"123","ssl_start":"0","ssl_end":"0","server_count":"3","server_rtt":"80","client_port":"50714","jpeg_scan_count":"0","full_url":"http:\/\/wordpress.com\/","score_progressive_jpeg":-1,"load_end":218,"ttfb_start":"123","ttfb_end":212,"download_start":212,"download_end":218,"download_ms":6,"all_start":"42","all_end":218,"all_ms":176,"headers":{"request":["GET \/ HTTP\/1.1","Host: wordpress.com","User-Agent: Mozilla\/5.0 (Windows NT 6.1; rv:23.0) Gecko\/20100101 Firefox\/23.0 PTST\/133","Accept: text\/html,application\/xhtml+xml,application\/xml;q=0.9,*\/*;q=0.8","Accept-Language: en-US,en;q=0.5","Accept-Encoding: gzip, deflate","Connection: keep-alive"],"response":["HTTP\/1.1 200 OK","Server: nginx","Date: Mon, 16 Sep 2013 14:43:37 GMT","Content-Type: text\/html; charset=utf-8","Transfer-Encoding: chunked","Connection: keep-alive","Vary: Accept-Encoding","X-Frame-Options: SAMEORIGIN","Vary: Cookie","Content-Encoding: gzip"]},"country":"United States","countryCode":"USA","city":"San Antonio","region":"TX","lat":29.4889,"long":-98.3987,"location":"San Antonio, TX","index":0,"number":1},{"ip_addr":"76.74.254.126","method":"GET","host":"wordpress.com","url":"\/home.logged-out\/css\/style.css?20130904","responseCode":"200","load_ms":"94","ttfb_ms":"87","load_start":"239","bytesOut":"314","bytesIn":"12136","objectSize":"11848","expires":"Tue, 16 Sep 2014 14:43:38 GMT","cacheControl":"max-age=31536000","contentType":"text\/css","contentEncoding":"gzip","type":"3","socket":"15","score_cache":"100","score_cdn":"0","score_gzip":"100","score_cookies":"-1","score_keep-alive":"100","score_minify":"-1","score_combine":"0","score_compress":"-1","score_etags":"-1","is_secure":"0","dns_ms":"-1","connect_ms":"-1","ssl_ms":"-1","gzip_total":"12136","gzip_save":"0","minify_total":"0","minify_save":"0","image_total":"0","image_save":"0","cache_time":"31536000","dns_start":"0","dns_end":"0","connect_start":"0","connect_end":"0","ssl_start":"0","ssl_end":"0","server_count":"3","server_rtt":"80","client_port":"50714","jpeg_scan_count":"0","full_url":"http:\/\/wordpress.com\/home.logged-out\/css\/style.css?20130904","score_progressive_jpeg":-1,"load_end":333,"ttfb_start":"239","ttfb_end":326,"download_start":326,"download_end":333,"download_ms":7,"all_start":"239","all_end":333,"all_ms":"94","headers":{"request":["GET \/home.logged-out\/css\/style.css?20130904 HTTP\/1.1","Host: wordpress.com","User-Agent: Mozilla\/5.0 (Windows NT 6.1; rv:23.0) Gecko\/20100101 Firefox\/23.0 PTST\/133","Accept: text\/css,*\/*;q=0.1","Accept-Language: en-US,en;q=0.5","Accept-Encoding: gzip, deflate","Referer: http:\/\/wordpress.com\/","Connection: keep-alive"],"response":["HTTP\/1.1 200 OK","Server: nginx","Date: Mon, 16 Sep 2013 14:43:38 GMT","Content-Type: text\/css","Transfer-Encoding: chunked","Connection: keep-alive","Vary: Accept-Encoding","Content-Encoding: gzip","Expires: Tue, 16 Sep 2014 14:43:38 GMT","Cache-Control: max-age=31536000"]},"country":"United States","countryCode":"USA","city":"San Antonio","region":"TX","lat":29.4889,"long":-98.3987,"location":"San Antonio, TX","index":1,"number":2},{"ip_addr":"76.74.254.126","method":"GET","host":"wordpress.com","url":"\/i\/noticons\/noticons.css?20130416","responseCode":"200","load_ms":"125","ttfb_ms":"90","load_start":"333","bytesOut":"308","bytesIn":"11462","objectSize":"11182","expires":"Tue, 16 Sep 2014 14:43:38 GMT","cacheControl":"max-age=31536000","contentType":"text\/css","contentEncoding":"gzip","type":"3","socket":"15","score_cache":"100","score_cdn":"0","score_gzip":"100","score_cookies":"-1","score_keep-alive":"100","score_minify":"-1","score_combine":"0","score_compress":"-1","score_etags":"-1","is_secure":"0","dns_ms":"-1","connect_ms":"-1","ssl_ms":"-1","gzip_total":"11462","gzip_save":"0","minify_total":"0","minify_save":"0","image_total":"0","image_save":"0","cache_time":"31536000","dns_start":"0","dns_end":"0","connect_start":"0","connect_end":"0","ssl_start":"0","ssl_end":"0","server_count":"3","server_rtt":"80","client_port":"50714","jpeg_scan_count":"0","full_url":"http:\/\/wordpress.com\/i\/noticons\/noticons.css?20130416","score_progressive_jpeg":-1,"load_end":458,"ttfb_start":"333","ttfb_end":423,"download_start":423,"download_end":458,"download_ms":35,"all_start":"333","all_end":458,"all_ms":"125","headers":{"request":["GET \/i\/noticons\/noticons.css?20130416 HTTP\/1.1","Host: wordpress.com","User-Agent: Mozilla\/5.0 (Windows NT 6.1; rv:23.0) Gecko\/20100101 Firefox\/23.0 PTST\/133","Accept: text\/css,*\/*;q=0.1","Accept-Language: en-US,en;q=0.5","Accept-Encoding: gzip, deflate","Referer: http:\/\/wordpress.com\/","Connection: keep-alive"],"response":["HTTP\/1.1 200 OK","Server: nginx","Date: Mon, 16 Sep 2013 14:43:38 GMT","Content-Type: text\/css","Transfer-Encoding: chunked","Connection: keep-alive","Vary: Accept-Encoding","Content-Encoding: gzip","Expires: Tue, 16 Sep 2014 14:43:38 GMT","Cache-Control: max-age=31536000"]},"country":"United States","countryCode":"USA","city":"San Antonio","region":"TX","lat":29.4889,"long":-98.3987,"location":"San Antonio, TX","index":2,"number":3},{"ip_addr":"74.125.193.95","method":"GET","host":"fonts.googleapis.com","url":"\/css?family=Open+Sans:300italic,400italic,600italic,400,300,600|Merriweather:300","responseCode":"200","load_ms":"71","ttfb_ms":"71","load_start":"351","bytesOut":"362","bytesIn":"887","objectSize":"522","expires":"Mon, 16 Sep 2013 14:43:38 GMT","cacheControl":"private, max-age=86400","contentType":"text\/css","contentEncoding":"gzip","type":"3","socket":"20","score_cache":"0","score_cdn":"100","score_gzip":"100","score_cookies":"-1","score_keep-alive":"-1","score_minify":"-1","score_combine":"0","score_compress":"-1","score_etags":"-1","is_secure":"0","dns_ms":50,"connect_ms":60,"ssl_ms":"-1","gzip_total":"887","gzip_save":"0","minify_total":"0","minify_save":"0","image_total":"0","image_save":"0","cache_time":"0","cdn_provider":"Google","dns_start":"240","dns_end":"290","connect_start":"291","connect_end":"351","ssl_start":"0","ssl_end":"0","server_count":"1","server_rtt":"60","client_port":"50717","jpeg_scan_count":"0","full_url":"http:\/\/fonts.googleapis.com\/css?family=Open+Sans:300italic,400italic,600italic,400,300,600|Merriweather:300","score_progressive_jpeg":-1,"load_end":422,"ttfb_start":"351","ttfb_end":422,"download_start":422,"download_end":422,"download_ms":0,"all_start":"240","all_end":422,"all_ms":181,"headers":{"request":["GET \/css?family=Open+Sans:300italic,400italic,600italic,400,300,600|Merriweather:300 HTTP\/1.1","Host: fonts.googleapis.com","User-Agent: Mozilla\/5.0 (Windows NT 6.1; rv:23.0) Gecko\/20100101 Firefox\/23.0 PTST\/133","Accept: text\/css,*\/*;q=0.1","Accept-Language: en-US,en;q=0.5","Accept-Encoding: gzip, deflate","Referer: http:\/\/wordpress.com\/","Connection: keep-alive"],"response":["HTTP\/1.1 200 OK","Content-Type: text\/css","Timing-Allow-Origin: *","Expires: Mon, 16 Sep 2013 14:43:38 GMT","Date: Mon, 16 Sep 2013 14:43:38 GMT","Cache-Control: private, max-age=86400","Content-Encoding: gzip","Content-Length: 522","X-Content-Type-Options: nosniff","X-Frame-Options: SAMEORIGIN","X-XSS-Protection: 1; mode=block","Server: GSE","Alternate-Protocol: 80:quic"]},"location":"Google","index":3,"number":4},{"ip_addr":"72.21.91.111","method":"GET","host":"s1.wp.com","url":"\/i\/favicon-stacked.ico?m=1311976025g","responseCode":"200","load_ms":"77","ttfb_ms":"37","load_start":"365","bytesOut":"320","bytesIn":"18135","objectSize":"17910","contentType":"image\/vnd.microsoft.icon","type":"3","socket":"22","score_cache":"0","score_cdn":"100","score_gzip":"0","score_cookies":"-1","score_keep-alive":"100","score_minify":"-1","score_combine":"-1","score_compress":"-1","score_etags":"-1","is_secure":"0","dns_ms":40,"connect_ms":34,"ssl_ms":"-1","gzip_total":"18135","gzip_save":"11859","minify_total":"0","minify_save":"0","image_total":"0","image_save":"0","cache_time":"0","cdn_provider":"Edgecast","dns_start":"291","dns_end":"331","connect_start":"331","connect_end":"365","ssl_start":"0","ssl_end":"0","server_count":"1","server_rtt":"31","client_port":"50719","jpeg_scan_count":"0","full_url":"http:\/\/s1.wp.com\/i\/favicon-stacked.ico?m=1311976025g","score_progressive_jpeg":-1,"load_end":442,"ttfb_start":"365","ttfb_end":402,"download_start":402,"download_end":442,"download_ms":40,"all_start":"291","all_end":442,"all_ms":151,"headers":{"request":["GET \/i\/favicon-stacked.ico?m=1311976025g HTTP\/1.1","Host: s1.wp.com","User-Agent: Mozilla\/5.0 (Windows NT 6.1; rv:23.0) Gecko\/20100101 Firefox\/23.0 PTST\/133","Accept: text\/html,application\/xhtml+xml,application\/xml;q=0.9,*\/*;q=0.8","Accept-Language: en-US,en;q=0.5","Accept-Encoding: gzip, deflate","Connection: keep-alive"],"response":["HTTP\/1.1 200 OK","Accept-Ranges: bytes","Content-Type: image\/vnd.microsoft.icon","Date: Mon, 16 Sep 2013 14:43:38 GMT","Last-Modified: Fri, 29 Jul 2011 21:43:44 GMT","Server: ECS (dca\/FEC0)","X-Cache: HIT","Content-Length: 17910"]},"location":"Edgecast","index":4,"number":5},{"ip_addr":"72.21.91.111","method":"GET","host":"s2.wp.com","url":"\/i\/favicon.ico?m=1311976025g","responseCode":"200","load_ms":"208","ttfb_ms":"40","load_start":"391","bytesOut":"312","bytesIn":"18135","objectSize":"17910","contentType":"image\/vnd.microsoft.icon","type":"3","socket":"23","score_cache":"0","score_cdn":"100","score_gzip":"0","score_cookies":"-1","score_keep-alive":"100","score_minify":"-1","score_combine":"-1","score_compress":"-1","score_etags":"-1","is_secure":"0","dns_ms":26,"connect_ms":34,"ssl_ms":"-1","gzip_total":"18135","gzip_save":"11859","minify_total":"0","minify_save":"0","image_total":"0","image_save":"0","cache_time":"0","cdn_provider":"Edgecast","dns_start":"331","dns_end":"357","connect_start":"357","connect_end":"391","ssl_start":"0","ssl_end":"0","server_count":"1","server_rtt":"31","client_port":"50720","jpeg_scan_count":"0","full_url":"http:\/\/s2.wp.com\/i\/favicon.ico?m=1311976025g","score_progressive_jpeg":-1,"load_end":599,"ttfb_start":"391","ttfb_end":431,"download_start":431,"download_end":599,"download_ms":168,"all_start":"331","all_end":599,"all_ms":268,"headers":{"request":["GET \/i\/favicon.ico?m=1311976025g HTTP\/1.1","Host: s2.wp.com","User-Agent: Mozilla\/5.0 (Windows NT 6.1; rv:23.0) Gecko\/20100101 Firefox\/23.0 PTST\/133","Accept: text\/html,application\/xhtml+xml,application\/xml;q=0.9,*\/*;q=0.8","Accept-Language: en-US,en;q=0.5","Accept-Encoding: gzip, deflate","Connection: keep-alive"],"response":["HTTP\/1.1 200 OK","Accept-Ranges: bytes","Content-Type: image\/vnd.microsoft.icon","Date: Mon, 16 Sep 2013 14:43:38 GMT","Last-Modified: Fri, 29 Jul 2011 21:43:44 GMT","Server: ECS (dca\/24C4)","X-Cache: HIT","Content-Length: 17910"]},"location":"Edgecast","index":5,"number":6},{"ip_addr":"72.21.91.111","method":"GET","host":"s1.wp.com","url":"\/i\/favicon-stacked.ico?m=1311976025g","responseCode":"304","load_ms":"156","ttfb_ms":"156","load_start":"443","bytesOut":"370","bytesIn":"172","objectSize":"0","type":"3","socket":"22","score_cache":"0","score_cdn":"-1","score_gzip":"-1","score_cookies":"-1","score_keep-alive":"-1","score_minify":"-1","score_combine":"-1","score_compress":"-1","score_etags":"-1","is_secure":"0","dns_ms":"-1","connect_ms":"-1","ssl_ms":"-1","gzip_total":"0","gzip_save":"0","minify_total":"0","minify_save":"0","image_total":"0","image_save":"0","cache_time":"0","cdn_provider":"Edgecast","dns_start":"0","dns_end":"0","connect_start":"0","connect_end":"0","ssl_start":"0","ssl_end":"0","server_count":"1","server_rtt":"31","client_port":"50719","jpeg_scan_count":"0","full_url":"http:\/\/s1.wp.com\/i\/favicon-stacked.ico?m=1311976025g","score_progressive_jpeg":-1,"load_end":599,"ttfb_start":"443","ttfb_end":599,"download_start":599,"download_end":599,"download_ms":0,"all_start":"443","all_end":599,"all_ms":"156","headers":{"request":["GET \/i\/favicon-stacked.ico?m=1311976025g HTTP\/1.1","Host: s1.wp.com","User-Agent: Mozilla\/5.0 (Windows NT 6.1; rv:23.0) Gecko\/20100101 Firefox\/23.0 PTST\/133","Accept: text\/html,application\/xhtml+xml,application\/xml;q=0.9,*\/*;q=0.8","Accept-Language: en-US,en;q=0.5","Accept-Encoding: gzip, deflate","Connection: keep-alive","If-Modified-Since: Fri, 29 Jul 2011 21:43:44 GMT"],"response":["HTTP\/1.1 304 Not Modified","Accept-Ranges: bytes","Date: Mon, 16 Sep 2013 14:43:38 GMT","Last-Modified: Fri, 29 Jul 2011 21:43:44 GMT","Server: ECS (dca\/FEC0)","X-Cache: HIT"]},"location":"Edgecast","index":6,"number":7},{"ip_addr":"76.74.254.126","method":"GET","host":"wordpress.com","url":"\/home.logged-out\/js\/wp.js?20130508","responseCode":"200","load_ms":"141","ttfb_ms":"141","load_start":"458","bytesOut":"294","bytesIn":"5547","objectSize":"5251","expires":"Tue, 16 Sep 2014 14:43:38 GMT","cacheControl":"max-age=31536000","contentType":"application\/x-javascript","contentEncoding":"gzip","type":"3","socket":"15","score_cache":"100","score_cdn":"0","score_gzip":"100","score_cookies":"-1","score_keep-alive":"100","score_minify":"-1","score_combine":"100","score_compress":"-1","score_etags":"-1","is_secure":"0","dns_ms":27,"connect_ms":"-1","ssl_ms":"-1","gzip_total":"5547","gzip_save":"0","minify_total":"0","minify_save":"0","image_total":"0","image_save":"0","cache_time":"31536000","dns_start":"358","dns_end":"385","connect_start":"0","connect_end":"0","ssl_start":"0","ssl_end":"0","server_count":"3","server_rtt":"80","client_port":"50714","jpeg_scan_count":"0","full_url":"http:\/\/wordpress.com\/home.logged-out\/js\/wp.js?20130508","score_progressive_jpeg":-1,"load_end":599,"ttfb_start":"458","ttfb_end":599,"download_start":599,"download_end":599,"download_ms":0,"all_start":"358","all_end":599,"all_ms":168,"headers":{"request":["GET \/home.logged-out\/js\/wp.js?20130508 HTTP\/1.1","Host: wordpress.com","User-Agent: Mozilla\/5.0 (Windows NT 6.1; rv:23.0) Gecko\/20100101 Firefox\/23.0 PTST\/133","Accept: *\/*","Accept-Language: en-US,en;q=0.5","Accept-Encoding: gzip, deflate","Referer: http:\/\/wordpress.com\/","Connection: keep-alive"],"response":["HTTP\/1.1 200 OK","Server: nginx","Date: Mon, 16 Sep 2013 14:43:38 GMT","Content-Type: application\/x-javascript","Transfer-Encoding: chunked","Connection: keep-alive","Vary: Accept-Encoding","Content-Encoding: gzip","Expires: Tue, 16 Sep 2014 14:43:38 GMT","Cache-Control: max-age=31536000"]},"country":"United States","countryCode":"USA","city":"San Antonio","region":"TX","lat":29.4889,"long":-98.3987,"location":"San Antonio, TX","index":7,"number":8},{"ip_addr":"72.21.91.111","method":"GET","host":"s2.wp.com","url":"\/i\/favicon.ico?m=1311976025g","responseCode":"304","load_ms":"34","ttfb_ms":"34","load_start":"660","bytesOut":"362","bytesIn":"172","objectSize":"0","type":"3","socket":"23","score_cache":"0","score_cdn":"-1","score_gzip":"-1","score_cookies":"-1","score_keep-alive":"-1","score_minify":"-1","score_combine":"-1","score_compress":"-1","score_etags":"-1","is_secure":"0","dns_ms":"-1","connect_ms":"-1","ssl_ms":"-1","gzip_total":"0","gzip_save":"0","minify_total":"0","minify_save":"0","image_total":"0","image_save":"0","cache_time":"0","cdn_provider":"Edgecast","dns_start":"0","dns_end":"0","connect_start":"0","connect_end":"0","ssl_start":"0","ssl_end":"0","server_count":"1","server_rtt":"31","client_port":"50720","jpeg_scan_count":"0","full_url":"http:\/\/s2.wp.com\/i\/favicon.ico?m=1311976025g","score_progressive_jpeg":-1,"load_end":694,"ttfb_start":"660","ttfb_end":694,"download_start":694,"download_end":694,"download_ms":0,"all_start":"660","all_end":694,"all_ms":"34","headers":{"request":["GET \/i\/favicon.ico?m=1311976025g HTTP\/1.1","Host: s2.wp.com","User-Agent: Mozilla\/5.0 (Windows NT 6.1; rv:23.0) Gecko\/20100101 Firefox\/23.0 PTST\/133","Accept: text\/html,application\/xhtml+xml,application\/xml;q=0.9,*\/*;q=0.8","Accept-Language: en-US,en;q=0.5","Accept-Encoding: gzip, deflate","Connection: keep-alive","If-Modified-Since: Fri, 29 Jul 2011 21:43:44 GMT"],"response":["HTTP\/1.1 304 Not Modified","Accept-Ranges: bytes","Date: Mon, 16 Sep 2013 14:43:38 GMT","Last-Modified: Fri, 29 Jul 2011 21:43:44 GMT","Server: ECS (dca\/24C4)","X-Cache: HIT"]},"location":"Edgecast","index":8,"number":9},{"ip_addr":"74.125.228.76","method":"GET","host":"themes.googleusercontent.com","url":"\/static\/fonts\/opensans\/v6\/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff","responseCode":"200","load_ms":"121","ttfb_ms":"39","load_start":"752","bytesOut":"525","bytesIn":"22341","objectSize":"21956","expires":"Fri, 12 Sep 2014 08:41:06 GMT","cacheControl":"public, max-age=31536000","contentType":"font\/woff","type":"3","socket":"28","score_cache":"100","score_cdn":"-1","score_gzip":"-1","score_cookies":"-1","score_keep-alive":"100","score_minify":"-1","score_combine":"-1","score_compress":"-1","score_etags":"-1","is_secure":"0","dns_ms":51,"connect_ms":42,"ssl_ms":"-1","gzip_total":"0","gzip_save":"0","minify_total":"0","minify_save":"0","image_total":"0","image_save":"0","cache_time":"31536000","cdn_provider":"Google","dns_start":"659","dns_end":"710","connect_start":"710","connect_end":"752","ssl_start":"0","ssl_end":"0","server_count":"3","server_rtt":"40","client_port":"50725","jpeg_scan_count":"0","full_url":"http:\/\/themes.googleusercontent.com\/static\/fonts\/opensans\/v6\/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff","score_progressive_jpeg":-1,"load_end":873,"ttfb_start":"752","ttfb_end":791,"download_start":791,"download_end":873,"download_ms":82,"all_start":"659","all_end":873,"all_ms":214,"headers":{"request":["GET \/static\/fonts\/opensans\/v6\/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff HTTP\/1.1","Host: themes.googleusercontent.com","User-Agent: Mozilla\/5.0 (Windows NT 6.1; rv:23.0) Gecko\/20100101 Firefox\/23.0 PTST\/133","Accept: text\/html,application\/xhtml+xml,application\/xml;q=0.9,*\/*;q=0.8","Accept-Language: en-US,en;q=0.5","Accept-Encoding: gzip, deflate","Referer: http:\/\/fonts.googleapis.com\/css?family=Open+Sans:300italic,400italic,600italic,400,300,600|Merriweather:300","Origin: http:\/\/wordpress.com","Connection: keep-alive"],"response":["HTTP\/1.1 200 OK","Content-Type: font\/woff","Last-Modified: Mon, 02 Apr 2012 00:13:23 GMT","Date: Thu, 12 Sep 2013 08:41:06 GMT","Expires: Fri, 12 Sep 2014 08:41:06 GMT","Access-Control-Allow-Origin: *","X-Content-Type-Options: nosniff","Server: sffe","Content-Length: 21956","X-XSS-Protection: 1; mode=block","Cache-Control: public, max-age=31536000","Age: 367352","Alternate-Protocol: 80:quic"]},"location":"Google","index":9,"number":10},{"ip_addr":"74.125.228.76","method":"GET","host":"themes.googleusercontent.com","url":"\/static\/fonts\/opensans\/v6\/DXI1ORHCpsQm3Vp6mXoaTXhCUOGz7vYGh680lGh-uXM.woff","responseCode":"200","load_ms":"141","ttfb_ms":"42","load_start":"752","bytesOut":"525","bytesIn":"23041","objectSize":"22656","expires":"Fri, 12 Sep 2014 08:42:02 GMT","cacheControl":"public, max-age=31536000","contentType":"font\/woff","type":"3","socket":"29","score_cache":"100","score_cdn":"-1","score_gzip":"-1","score_cookies":"-1","score_keep-alive":"100","score_minify":"-1","score_combine":"-1","score_compress":"-1","score_etags":"-1","is_secure":"0","dns_ms":"-1","connect_ms":42,"ssl_ms":"-1","gzip_total":"0","gzip_save":"0","minify_total":"0","minify_save":"0","image_total":"0","image_save":"0","cache_time":"31536000","cdn_provider":"Google","dns_start":"0","dns_end":"0","connect_start":"710","connect_end":"752","ssl_start":"0","ssl_end":"0","server_count":"3","server_rtt":"40","client_port":"50726","jpeg_scan_count":"0","full_url":"http:\/\/themes.googleusercontent.com\/static\/fonts\/opensans\/v6\/DXI1ORHCpsQm3Vp6mXoaTXhCUOGz7vYGh680lGh-uXM.woff","score_progressive_jpeg":-1,"load_end":893,"ttfb_start":"752","ttfb_end":794,"download_start":794,"download_end":893,"download_ms":99,"all_start":"710","all_end":893,"all_ms":183,"headers":{"request":["GET \/static\/fonts\/opensans\/v6\/DXI1ORHCpsQm3Vp6mXoaTXhCUOGz7vYGh680lGh-uXM.woff HTTP\/1.1","Host: themes.googleusercontent.com","User-Agent: Mozilla\/5.0 (Windows NT 6.1; rv:23.0) Gecko\/20100101 Firefox\/23.0 PTST\/133","Accept: text\/html,application\/xhtml+xml,application\/xml;q=0.9,*\/*;q=0.8","Accept-Language: en-US,en;q=0.5","Accept-Encoding: gzip, deflate","Referer: http:\/\/fonts.googleapis.com\/css?family=Open+Sans:300italic,400italic,600italic,400,300,600|Merriweather:300","Origin: http:\/\/wordpress.com","Connection: keep-alive"],"response":["HTTP\/1.1 200 OK","Content-Type: font\/woff","Last-Modified: Mon, 02 Apr 2012 00:13:23 GMT","Date: Thu, 12 Sep 2013 08:42:02 GMT","Expires: Fri, 12 Sep 2014 08:42:02 GMT","Access-Control-Allow-Origin: *","X-Content-Type-Options: nosniff","Server: sffe","Content-Length: 22656","X-XSS-Protection: 1; mode=block","Cache-Control: public, max-age=31536000","Age: 367296","Alternate-Protocol: 80:quic"]},"location":"Google","index":10,"number":11},{"ip_addr":"74.125.228.76","method":"GET","host":"themes.googleusercontent.com","url":"\/static\/fonts\/merriweather\/v5\/ZvcMqxEwPfh2qDWBPxn6nmFp2sMiApZm5Dx7NpSTOZk.woff","responseCode":"200","load_ms":"124","ttfb_ms":"42","load_start":"752","bytesOut":"529","bytesIn":"19518","objectSize":"19132","expires":"Thu, 04 Sep 2014 08:17:34 GMT","cacheControl":"public, max-age=31536000","contentType":"font\/woff","type":"3","socket":"30","score_cache":"100","score_cdn":"-1","score_gzip":"-1","score_cookies":"-1","score_keep-alive":"100","score_minify":"-1","score_combine":"-1","score_compress":"-1","score_etags":"-1","is_secure":"0","dns_ms":"-1","connect_ms":42,"ssl_ms":"-1","gzip_total":"0","gzip_save":"0","minify_total":"0","minify_save":"0","image_total":"0","image_save":"0","cache_time":"31536000","cdn_provider":"Google","dns_start":"0","dns_end":"0","connect_start":"710","connect_end":"752","ssl_start":"0","ssl_end":"0","server_count":"3","server_rtt":"40","client_port":"50727","jpeg_scan_count":"0","full_url":"http:\/\/themes.googleusercontent.com\/static\/fonts\/merriweather\/v5\/ZvcMqxEwPfh2qDWBPxn6nmFp2sMiApZm5Dx7NpSTOZk.woff","score_progressive_jpeg":-1,"load_end":876,"ttfb_start":"752","ttfb_end":794,"download_start":794,"download_end":876,"download_ms":82,"all_start":"710","all_end":876,"all_ms":166,"headers":{"request":["GET \/static\/fonts\/merriweather\/v5\/ZvcMqxEwPfh2qDWBPxn6nmFp2sMiApZm5Dx7NpSTOZk.woff HTTP\/1.1","Host: themes.googleusercontent.com","User-Agent: Mozilla\/5.0 (Windows NT 6.1; rv:23.0) Gecko\/20100101 Firefox\/23.0 PTST\/133","Accept: text\/html,application\/xhtml+xml,application\/xml;q=0.9,*\/*;q=0.8","Accept-Language: en-US,en;q=0.5","Accept-Encoding: gzip, deflate","Referer: http:\/\/fonts.googleapis.com\/css?family=Open+Sans:300italic,400italic,600italic,400,300,600|Merriweather:300","Origin: http:\/\/wordpress.com","Connection: keep-alive"],"response":["HTTP\/1.1 200 OK","Content-Type: font\/woff","Last-Modified: Wed, 22 May 2013 19:51:43 GMT","Date: Wed, 04 Sep 2013 08:17:34 GMT","Expires: Thu, 04 Sep 2014 08:17:34 GMT","Access-Control-Allow-Origin: *","X-Content-Type-Options: nosniff","Server: sffe","Content-Length: 19132","X-XSS-Protection: 1; mode=block","Cache-Control: public, max-age=31536000","Age: 1059964","Alternate-Protocol: 80:quic"]},"location":"Google","index":11,"number":12},{"ip_addr":"74.125.228.76","method":"GET","host":"themes.googleusercontent.com","url":"\/static\/fonts\/opensans\/v6\/MTP_ySUJH_bn48VBG8sNSnhCUOGz7vYGh680lGh-uXM.woff","responseCode":"200","load_ms":"307","ttfb_ms":"208","load_start":"753","bytesOut":"525","bytesIn":"22989","objectSize":"22604","expires":"Fri, 12 Sep 2014 08:40:58 GMT","cacheControl":"public, max-age=31536000","contentType":"font\/woff","type":"3","socket":"31","score_cache":"100","score_cdn":"-1","score_gzip":"-1","score_cookies":"-1","score_keep-alive":"100","score_minify":"-1","score_combine":"-1","score_compress":"-1","score_etags":"-1","is_secure":"0","dns_ms":"-1","connect_ms":41,"ssl_ms":"-1","gzip_total":"0","gzip_save":"0","minify_total":"0","minify_save":"0","image_total":"0","image_save":"0","cache_time":"31536000","cdn_provider":"Google","dns_start":"0","dns_end":"0","connect_start":"711","connect_end":"752","ssl_start":"0","ssl_end":"0","server_count":"3","server_rtt":"40","client_port":"50728","jpeg_scan_count":"0","full_url":"http:\/\/themes.googleusercontent.com\/static\/fonts\/opensans\/v6\/MTP_ySUJH_bn48VBG8sNSnhCUOGz7vYGh680lGh-uXM.woff","score_progressive_jpeg":-1,"load_end":1060,"ttfb_start":"753","ttfb_end":961,"download_start":961,"download_end":1060,"download_ms":99,"all_start":"711","all_end":1060,"all_ms":348,"headers":{"request":["GET \/static\/fonts\/opensans\/v6\/MTP_ySUJH_bn48VBG8sNSnhCUOGz7vYGh680lGh-uXM.woff HTTP\/1.1","Host: themes.googleusercontent.com","User-Agent: Mozilla\/5.0 (Windows NT 6.1; rv:23.0) Gecko\/20100101 Firefox\/23.0 PTST\/133","Accept: text\/html,application\/xhtml+xml,application\/xml;q=0.9,*\/*;q=0.8","Accept-Language: en-US,en;q=0.5","Accept-Encoding: gzip, deflate","Referer: http:\/\/fonts.googleapis.com\/css?family=Open+Sans:300italic,400italic,600italic,400,300,600|Merriweather:300","Origin: http:\/\/wordpress.com","Connection: keep-alive"],"response":["HTTP\/1.1 200 OK","Content-Type: font\/woff","Last-Modified: Mon, 02 Apr 2012 00:13:23 GMT","Date: Thu, 12 Sep 2013 08:40:58 GMT","Expires: Fri, 12 Sep 2014 08:40:58 GMT","Access-Control-Allow-Origin: *","X-Content-Type-Options: nosniff","Server: sffe","Content-Length: 22604","X-XSS-Protection: 1; mode=block","Cache-Control: public, max-age=31536000","Age: 367360","Alternate-Protocol: 80:quic"]},"location":"Google","index":12,"number":13},{"ip_addr":"76.74.254.126","method":"GET","host":"wordpress.com","url":"\/home.logged-out\/images\/pic-c.jpg?1","responseCode":"200","load_ms":"437","ttfb_ms":"85","load_start":"1091","bytesOut":"363","bytesIn":"114482","objectSize":"114196","expires":"Tue, 16 Sep 2014 14:43:38 GMT","cacheControl":"max-age=31536000","contentType":"image\/jpeg","type":"3","socket":"15","score_cache":"100","score_cdn":"0","score_gzip":"-1","score_cookies":"-1","score_keep-alive":"100","score_minify":"-1","score_combine":"-1","score_compress":"100","score_etags":"-1","is_secure":"0","dns_ms":"-1","connect_ms":"-1","ssl_ms":"-1","gzip_total":"0","gzip_save":"0","minify_total":"0","minify_save":"0","image_total":"114196","image_save":"0","cache_time":"31536000","dns_start":"0","dns_end":"0","connect_start":"0","connect_end":"0","ssl_start":"0","ssl_end":"0","server_count":"3","server_rtt":"80","client_port":"50714","jpeg_scan_count":"7","full_url":"http:\/\/wordpress.com\/home.logged-out\/images\/pic-c.jpg?1","score_progressive_jpeg":100,"load_end":1528,"ttfb_start":"1091","ttfb_end":1176,"download_start":1176,"download_end":1528,"download_ms":352,"all_start":"1091","all_end":1528,"all_ms":"437","headers":{"request":["GET \/home.logged-out\/images\/pic-c.jpg?1 HTTP\/1.1","Host: wordpress.com","User-Agent: Mozilla\/5.0 (Windows NT 6.1; rv:23.0) Gecko\/20100101 Firefox\/23.0 PTST\/133","Accept: image\/png,image\/*;q=0.8,*\/*;q=0.5","Accept-Language: en-US,en;q=0.5","Accept-Encoding: gzip, deflate","Referer: http:\/\/wordpress.com\/home.logged-out\/css\/style.css?20130904","Connection: keep-alive"],"response":["HTTP\/1.1 200 OK","Server: nginx","Date: Mon, 16 Sep 2013 14:43:38 GMT","Content-Type: image\/jpeg","Content-Length: 114196","Connection: keep-alive","Last-Modified: Wed, 14 Aug 2013 06:44:45 GMT","Accept-Ranges: bytes","Expires: Tue, 16 Sep 2014 14:43:38 GMT","Cache-Control: max-age=31536000"]},"country":"United States","countryCode":"USA","city":"San Antonio","region":"TX","lat":29.4889,"long":-98.3987,"location":"San Antonio, TX","index":13,"number":14},{"ip_addr":"64.94.107.64","method":"GET","host":"pixel.quantserve.com","url":"\/pixel\/p-18-mFEk4J448M.gif?labels=%2Clanguage.en%2Ctype.wpcom%2Cwp.homepage","responseCode":"200","load_ms":"34","ttfb_ms":"34","load_start":"1223","bytesOut":"372","bytesIn":"474","objectSize":"35","expires":"Fri, 04 Aug 1978 12:00:00 GMT","cacheControl":"private, no-cache, no-store, proxy-revalidate","contentType":"image\/gif","type":"3","socket":"41","score_cache":"-1","score_cdn":"-1","score_gzip":"-1","score_cookies":"-1","score_keep-alive":"-1","score_minify":"-1","score_combine":"-1","score_compress":"-1","score_etags":"-1","is_secure":"0","dns_ms":31,"connect_ms":31,"ssl_ms":"-1","gzip_total":"0","gzip_save":"0","minify_total":"0","minify_save":"0","image_total":"0","image_save":"0","cache_time":"-1","dns_start":"1161","dns_end":"1192","connect_start":"1192","connect_end":"1223","ssl_start":"0","ssl_end":"0","server_count":"8","server_rtt":"30","client_port":"50736","jpeg_scan_count":"0","full_url":"http:\/\/pixel.quantserve.com\/pixel\/p-18-mFEk4J448M.gif?labels=%2Clanguage.en%2Ctype.wpcom%2Cwp.homepage","score_progressive_jpeg":-1,"load_end":1257,"ttfb_start":"1223","ttfb_end":1257,"download_start":1257,"download_end":1257,"download_ms":0,"all_start":"1161","all_end":1257,"all_ms":96,"headers":{"request":["GET \/pixel\/p-18-mFEk4J448M.gif?labels=%2Clanguage.en%2Ctype.wpcom%2Cwp.homepage HTTP\/1.1","Host: pixel.quantserve.com","User-Agent: Mozilla\/5.0 (Windows NT 6.1; rv:23.0) Gecko\/20100101 Firefox\/23.0 PTST\/133","Accept: image\/png,image\/*;q=0.8,*\/*;q=0.5","Accept-Language: en-US,en;q=0.5","Accept-Encoding: gzip, deflate","Referer: http:\/\/wordpress.com\/","Connection: keep-alive"],"response":["HTTP\/1.1 200 OK","Connection: close","Content-Type: image\/gif","Set-Cookie: mc=5237191b-059c7-6a82d-0ab84; expires=Wed, 18-Mar-2015 14:43:39 GMT; path=\/; domain=.quantserve.com","P3P: CP=\"NOI DSP COR NID CURa ADMa DEVa PSAo PSDo OUR SAMa IND COM NAV\"","Cache-Control: private, no-cache, no-store, proxy-revalidate","Pragma: no-cache","Expires: Fri, 04 Aug 1978 12:00:00 GMT","Content-Length: 35","Date: Mon, 16 Sep 2013 14:43:39 GMT","Server: QS"]},"country":"United States","countryCode":"USA","city":"Atlanta","region":"GA","lat":33.7516,"long":-84.3915,"location":"Atlanta, GA","index":14,"number":15},{"ip_addr":"72.233.111.159","method":"GET","host":"stats.wordpress.com","url":"\/g.gif?host=wordpress.com&rand=0.34289189912718365&blog=1&v=wpcom&tz=0&user_id=0&subd=wordpress.com","responseCode":"200","load_ms":"81","ttfb_ms":"81","load_start":"1233","bytesOut":"395","bytesIn":"291","objectSize":"50","contentType":"image\/gif","type":"3","socket":"38","score_cache":"0","score_cdn":"0","score_gzip":"-1","score_cookies":"-1","score_keep-alive":"100","score_minify":"-1","score_combine":"-1","score_compress":"-1","score_etags":"-1","is_secure":"0","dns_ms":52,"connect_ms":72,"ssl_ms":"-1","gzip_total":"0","gzip_save":"0","minify_total":"0","minify_save":"0","image_total":"0","image_save":"0","cache_time":"0","dns_start":"1109","dns_end":"1161","connect_start":"1161","connect_end":"1233","ssl_start":"0","ssl_end":"0","server_count":"6","server_rtt":"72","client_port":"50733","jpeg_scan_count":"0","full_url":"http:\/\/stats.wordpress.com\/g.gif?host=wordpress.com&rand=0.34289189912718365&blog=1&v=wpcom&tz=0&user_id=0&subd=wordpress.com","score_progressive_jpeg":-1,"load_end":1314,"ttfb_start":"1233","ttfb_end":1314,"download_start":1314,"download_end":1314,"download_ms":0,"all_start":"1109","all_end":1314,"all_ms":205,"headers":{"request":["GET \/g.gif?host=wordpress.com&rand=0.34289189912718365&blog=1&v=wpcom&tz=0&user_id=0&subd=wordpress.com HTTP\/1.1","Host: stats.wordpress.com","User-Agent: Mozilla\/5.0 (Windows NT 6.1; rv:23.0) Gecko\/20100101 Firefox\/23.0 PTST\/133","Accept: image\/png,image\/*;q=0.8,*\/*;q=0.5","Accept-Language: en-US,en;q=0.5","Accept-Encoding: gzip, deflate","Referer: http:\/\/wordpress.com\/","Connection: keep-alive"],"response":["HTTP\/1.1 200 OK","Server: nginx","Date: Mon, 16 Sep 2013 14:43:39 GMT","Content-Type: image\/gif","Content-Length: 50","Connection: keep-alive","Last-Modified: Mon, 19 Feb 2007 20:12:37 GMT","ETag: \"1c0f4d-32-429d9f252d740\"","Accept-Ranges: bytes"]},"country":"United States","countryCode":"USA","city":"Plano","region":"TX","lat":33.0347,"long":-96.8134,"location":"Plano, TX","index":15,"number":16},{"ip_addr":"74.125.228.81","method":"GET","host":"google-analytics.com","url":"\/ga.js","responseCode":"200","load_ms":"74","ttfb_ms":"39","load_start":"1260","bytesOut":"273","bytesIn":"16025","objectSize":"15654","expires":"Mon, 16 Sep 2013 20:43:20 GMT","cacheControl":"public, max-age=43200","contentType":"text\/javascript","contentEncoding":"gzip","type":"3","socket":"42","score_cache":"50","score_cdn":"0","score_gzip":"100","score_cookies":"-1","score_keep-alive":"-1","score_minify":"-1","score_combine":"-1","score_compress":"-1","score_etags":"-1","is_secure":"0","dns_ms":33,"connect_ms":33,"ssl_ms":"-1","gzip_total":"16025","gzip_save":"0","minify_total":"0","minify_save":"0","image_total":"0","image_save":"0","cache_time":"43200","dns_start":"1193","dns_end":"1226","connect_start":"1227","connect_end":"1260","ssl_start":"0","ssl_end":"0","server_count":"5","server_rtt":"33","client_port":"50737","jpeg_scan_count":"0","full_url":"http:\/\/google-analytics.com\/ga.js","score_progressive_jpeg":-1,"load_end":1334,"ttfb_start":"1260","ttfb_end":1299,"download_start":1299,"download_end":1334,"download_ms":35,"all_start":"1193","all_end":1334,"all_ms":140,"headers":{"request":["GET \/ga.js HTTP\/1.1","Host: google-analytics.com","User-Agent: Mozilla\/5.0 (Windows NT 6.1; rv:23.0) Gecko\/20100101 Firefox\/23.0 PTST\/133","Accept: *\/*","Accept-Language: en-US,en;q=0.5","Accept-Encoding: gzip, deflate","Referer: http:\/\/wordpress.com\/","Connection: keep-alive"],"response":["HTTP\/1.1 200 OK","Date: Mon, 16 Sep 2013 08:43:20 GMT","Expires: Mon, 16 Sep 2013 20:43:20 GMT","Last-Modified: Fri, 02 Aug 2013 23:34:37 GMT","X-Content-Type-Options: nosniff","Content-Type: text\/javascript","Vary: Accept-Encoding","Content-Encoding: gzip","Server: Golfe2","Content-Length: 15654","Age: 21619","Cache-Control: public, max-age=43200","Alternate-Protocol: 80:quic"]},"country":"United States","countryCode":"USA","city":"Mountain View","region":"CA","lat":37.4192,"long":-122.0574,"location":"Mountain View, CA","index":16,"number":17},{"ip_addr":"50.19.84.40","method":"GET","host":"i.kissmetrics.com","url":"\/i.js","responseCode":"200","load_ms":"40","ttfb_ms":"40","load_start":"1286","bytesOut":"269","bytesIn":"404","objectSize":"39","expires":"Wed, 16 Oct 2013 14:36:21 GMT","cacheControl":"max-age=2592000, public","contentType":"application\/x-javascript","type":"3","socket":"44","score_cache":"100","score_cdn":"0","score_gzip":"-1","score_cookies":"-1","score_keep-alive":"100","score_minify":"-1","score_combine":"-1","score_compress":"-1","score_etags":"-1","is_secure":"0","dns_ms":26,"connect_ms":33,"ssl_ms":"-1","gzip_total":"0","gzip_save":"0","minify_total":"0","minify_save":"0","image_total":"0","image_save":"0","cache_time":"2592000","dns_start":"1227","dns_end":"1253","connect_start":"1253","connect_end":"1286","ssl_start":"0","ssl_end":"0","server_count":"6","server_rtt":"32","client_port":"50739","jpeg_scan_count":"0","full_url":"http:\/\/i.kissmetrics.com\/i.js","score_progressive_jpeg":-1,"load_end":1326,"ttfb_start":"1286","ttfb_end":1326,"download_start":1326,"download_end":1326,"download_ms":0,"all_start":"1227","all_end":1326,"all_ms":99,"headers":{"request":["GET \/i.js HTTP\/1.1","Host: i.kissmetrics.com","User-Agent: Mozilla\/5.0 (Windows NT 6.1; rv:23.0) Gecko\/20100101 Firefox\/23.0 PTST\/133","Accept: *\/*","Accept-Language: en-US,en;q=0.5","Accept-Encoding: gzip, deflate","Referer: http:\/\/wordpress.com\/","Connection: keep-alive"],"response":["HTTP\/1.1 200 OK","Cache-Control: max-age=2592000, public","Content-Type: application\/x-javascript","Date: Mon, 16 Sep 2013 14:36:21 GMT","Expires: Wed, 16 Oct 2013 14:36:21 GMT","Last-Modified: Mon, 16 Sep 2013 13:36:21 GMT","P3P: CP=\"NOI CURa ADMa DEVa TAIa OUR IND UNI NAV INT\"","Server: nginx","X-whom: id3.kissmetrics.com","Content-Length: 39","Connection: keep-alive"]},"country":"United States","countryCode":"USA","city":"Ashburn","region":"VA","lat":39.0437,"long":-77.4875,"location":"Ashburn, VA","index":17,"number":18},{"ip_addr":"54.230.103.175","method":"GET","host":"doug1izaerwt3.cloudfront.net","url":"\/39e3e583aca28fab00c85ad9019b51d9f073fc6d.1.js","responseCode":"200","load_ms":"102","ttfb_ms":"42","load_start":"1320","bytesOut":"321","bytesIn":"21284","objectSize":"20804","cacheControl":"max-age=60","contentType":"application\/x-javascript","type":"3","socket":"47","score_cache":"0","score_cdn":"100","score_gzip":"0","score_cookies":"-1","score_keep-alive":"100","score_minify":"-1","score_combine":"-1","score_compress":"-1","score_etags":"-1","is_secure":"0","dns_ms":31,"connect_ms":35,"ssl_ms":"-1","gzip_total":"21284","gzip_save":"12571","minify_total":"0","minify_save":"0","image_total":"0","image_save":"0","cache_time":"-302","cdn_provider":"Amazon CloudFront","dns_start":"1254","dns_end":"1285","connect_start":"1285","connect_end":"1320","ssl_start":"0","ssl_end":"0","server_count":"8","server_rtt":"34","client_port":"50742","jpeg_scan_count":"0","full_url":"http:\/\/doug1izaerwt3.cloudfront.net\/39e3e583aca28fab00c85ad9019b51d9f073fc6d.1.js","score_progressive_jpeg":-1,"load_end":1422,"ttfb_start":"1320","ttfb_end":1362,"download_start":1362,"download_end":1422,"download_ms":60,"all_start":"1254","all_end":1422,"all_ms":168,"headers":{"request":["GET \/39e3e583aca28fab00c85ad9019b51d9f073fc6d.1.js HTTP\/1.1","Host: doug1izaerwt3.cloudfront.net","User-Agent: Mozilla\/5.0 (Windows NT 6.1; rv:23.0) Gecko\/20100101 Firefox\/23.0 PTST\/133","Accept: *\/*","Accept-Language: en-US,en;q=0.5","Accept-Encoding: gzip, deflate","Referer: http:\/\/wordpress.com\/","Connection: keep-alive"],"response":["HTTP\/1.1 200 OK","Content-Type: application\/x-javascript","Content-Length: 20804","Connection: keep-alive","Date: Mon, 29 Jul 2013 23:52:18 GMT","Cache-Control: max-age=60","Last-Modified: Mon, 29 Jul 2013 23:04:13 GMT","ETag: \"2a0e5944dee6652d2ad89a7cee810975\"","Accept-Ranges: bytes","Server: AmazonS3","Age: 362","Via: 1.0 56f62b31efe8df7139e0feefd13c918a.cloudfront.net (CloudFront)","X-Cache: Hit from cloudfront","X-Amz-Cf-Id: UXDlZw0e9dMfFQLRycmfCyWRb6uDhGdl4Ghc6MHgCdyWAjTZbykE5g=="]},"location":"Amazon CloudFront","index":18,"number":19},{"ip_addr":"173.194.43.39","method":"GET","host":"www.google-analytics.com","url":"\/__utm.gif?utmwv=5.4.4&utms=1&utmn=858714781&utmhn=wordpress.com&utmcs=UTF-8&utmsr=1920x1200&utmvp=991x667&utmsc=24-bit&utmul=en-us&utmje=0&utmfl=11.8%20r800&utmdt=WordPress.com%20-%20Get%20a%20Free%20Blog%20Here&utmhid=2023775255&utmr=-&utmp=%2F&utmht=1379342615353&utmac=UA-10673494-4&utmcc=__utma%3D214977736.1479568976.1379342615.1379342615.1379342615.1%3B%2B__utmz%3D214977736.1379342615.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&utmu=qBAgAAAAAAAAAAAAAAAAAAB~","responseCode":"200","load_ms":"45","ttfb_ms":"45","load_start":"1451","bytesOut":"786","bytesIn":"404","objectSize":"35","expires":"Wed, 19 Apr 2000 11:43:00 GMT","cacheControl":"private, no-cache, no-cache=Set-Cookie, proxy-revalidate","contentType":"image\/gif","type":"3","socket":"48","score_cache":"-1","score_cdn":"-1","score_gzip":"-1","score_cookies":"-1","score_keep-alive":"-1","score_minify":"-1","score_combine":"-1","score_compress":"-1","score_etags":"-1","is_secure":"0","dns_ms":26,"connect_ms":39,"ssl_ms":"-1","gzip_total":"0","gzip_save":"0","minify_total":"0","minify_save":"0","image_total":"0","image_save":"0","cache_time":"-1","cdn_provider":"Google","dns_start":"1386","dns_end":"1412","connect_start":"1412","connect_end":"1451","ssl_start":"0","ssl_end":"0","server_count":"11","server_rtt":"37","client_port":"50743","jpeg_scan_count":"0","full_url":"http:\/\/www.google-analytics.com\/__utm.gif?utmwv=5.4.4&utms=1&utmn=858714781&utmhn=wordpress.com&utmcs=UTF-8&utmsr=1920x1200&utmvp=991x667&utmsc=24-bit&utmul=en-us&utmje=0&utmfl=11.8%20r800&utmdt=WordPress.com%20-%20Get%20a%20Free%20Blog%20Here&utmhid=2023775255&utmr=-&utmp=%2F&utmht=1379342615353&utmac=UA-10673494-4&utmcc=__utma%3D214977736.1479568976.1379342615.1379342615.1379342615.1%3B%2B__utmz%3D214977736.1379342615.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&utmu=qBAgAAAAAAAAAAAAAAAAAAB~","score_progressive_jpeg":-1,"load_end":1496,"ttfb_start":"1451","ttfb_end":1496,"download_start":1496,"download_end":1496,"download_ms":0,"all_start":"1386","all_end":1496,"all_ms":110,"headers":{"request":["GET \/__utm.gif?utmwv=5.4.4&utms=1&utmn=858714781&utmhn=wordpress.com&utmcs=UTF-8&utmsr=1920x1200&utmvp=991x667&utmsc=24-bit&utmul=en-us&utmje=0&utmfl=11.8%20r800&utmdt=WordPress.com%20-%20Get%20a%20Free%20Blog%20Here&utmhid=2023775255&utmr=-&utmp=%2F&utmht=1379342615353&utmac=UA-10673494-4&utmcc=__utma%3D214977736.1479568976.1379342615.1379342615.1379342615.1%3B%2B__utmz%3D214977736.1379342615.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&utmu=qBAgAAAAAAAAAAAAAAAAAAB~ HTTP\/1.1","Host: www.google-analytics.com","User-Agent: Mozilla\/5.0 (Windows NT 6.1; rv:23.0) Gecko\/20100101 Firefox\/23.0 PTST\/133","Accept: image\/png,image\/*;q=0.8,*\/*;q=0.5","Accept-Language: en-US,en;q=0.5","Accept-Encoding: gzip, deflate","Referer: http:\/\/wordpress.com\/","Connection: keep-alive"],"response":["HTTP\/1.1 200 OK","Pragma: no-cache","Expires: Wed, 19 Apr 2000 11:43:00 GMT","Last-Modified: Wed, 21 Jan 2004 19:51:30 GMT","X-Content-Type-Options: nosniff","Content-Type: image\/gif","Date: Thu, 12 Sep 2013 18:29:59 GMT","Server: Golfe2","Content-Length: 35","Cache-Control: private, no-cache, no-cache=Set-Cookie, proxy-revalidate","Age: 332020","Alternate-Protocol: 80:quic"]},"location":"Google","index":19,"number":20},{"ip_addr":"23.21.108.99","method":"GET","host":"trk.kissmetrics.com","url":"\/e?Viewed_Homepage%20%7C%20Language=en&Viewed_Homepage%20%7C%20Homepage_Version_20130405=existing&_n=Viewed_Homepage&_k=39e3e583aca28fab00c85ad9019b51d9f073fc6d&_p=3Hp1EKU5eqt6BEMfBckdqWIfMGc%3D&_t=1379342616","responseCode":"200","load_ms":"41","ttfb_ms":"41","load_start":"2492","bytesOut":"504","bytesIn":"294","objectSize":"43","expires":"Mon, 16 Sep 2013 14:43:39 GMT","cacheControl":"no-cache","contentType":"image\/gif","type":"3","socket":"52","score_cache":"-1","score_cdn":"-1","score_gzip":"-1","score_cookies":"-1","score_keep-alive":"100","score_minify":"-1","score_combine":"-1","score_compress":"-1","score_etags":"-1","is_secure":"0","dns_ms":26,"connect_ms":31,"ssl_ms":"-1","gzip_total":"0","gzip_save":"0","minify_total":"0","minify_save":"0","image_total":"0","image_save":"0","cache_time":"-1","dns_start":"2435","dns_end":"2461","connect_start":"2461","connect_end":"2492","ssl_start":"0","ssl_end":"0","server_count":"8","server_rtt":"31","client_port":"50746","jpeg_scan_count":"0","full_url":"http:\/\/trk.kissmetrics.com\/e?Viewed_Homepage%20%7C%20Language=en&Viewed_Homepage%20%7C%20Homepage_Version_20130405=existing&_n=Viewed_Homepage&_k=39e3e583aca28fab00c85ad9019b51d9f073fc6d&_p=3Hp1EKU5eqt6BEMfBckdqWIfMGc%3D&_t=1379342616","score_progressive_jpeg":-1,"load_end":2533,"ttfb_start":"2492","ttfb_end":2533,"download_start":2533,"download_end":2533,"download_ms":0,"all_start":"2435","all_end":2533,"all_ms":98,"headers":{"request":["GET \/e?Viewed_Homepage%20%7C%20Language=en&Viewed_Homepage%20%7C%20Homepage_Version_20130405=existing&_n=Viewed_Homepage&_k=39e3e583aca28fab00c85ad9019b51d9f073fc6d&_p=3Hp1EKU5eqt6BEMfBckdqWIfMGc%3D&_t=1379342616 HTTP\/1.1","Host: trk.kissmetrics.com","User-Agent: Mozilla\/5.0 (Windows NT 6.1; rv:23.0) Gecko\/20100101 Firefox\/23.0 PTST\/133","Accept: image\/png,image\/*;q=0.8,*\/*;q=0.5","Accept-Language: en-US,en;q=0.5","Accept-Encoding: gzip, deflate","Referer: http:\/\/wordpress.com\/","Connection: keep-alive"],"response":["HTTP\/1.1 200 OK","Cache-Control: no-cache","Content-Type: image\/gif","Date: Mon, 16 Sep 2013 14:43:40 GMT","Expires: Mon, 16 Sep 2013 14:43:39 GMT","Last-Modified: Mon, 28 Sep 1970 06:00:00 GMT","Server: nginx","Content-Length: 43","Connection: keep-alive"]},"country":"United States","countryCode":"USA","city":"Ashburn","region":"VA","lat":39.0437,"long":-77.4875,"location":"Ashburn, VA","index":20,"number":21}];
+var wptNoLinks=1;
+</script><br><a href="/customWaterfall.php?width=930&test=130916_SG_JD5&run=1&cached=0">customize waterfall</a> &#8226; <a id="view-images" href="/pageimages.php?test=130916_SG_JD5&run=1&cached=0">View all Images</a>                <br>
+                <br>
+                <h3 name="connection_view">Connection View</h3>
+                <map name="connection_map">
+                <area href="#request" alt="http://wordpress.com" title="http://wordpress.com" shape=RECT coords="0,0,250,25">
+<area href="#request1" alt="1: http://wordpress.com/" title="1: http://wordpress.com/" shape=RECT coords="283,26,309,42">
+<area href="#request2" alt="2: http://wordpress.com/home.logged-out/css/style.css?20130904" title="2: http://wordpress.com/home.logged-out/css/style.css?20130904" shape=RECT coords="314,26,340,42">
+<area href="#request3" alt="3: http://wordpress.com/i/noticons/noticons.css?20130416" title="3: http://wordpress.com/i/noticons/noticons.css?20130416" shape=RECT coords="340,26,373,42">
+<area href="#request8" alt="8: http://wordpress.com/home.logged-out/js/wp.js?20130508" title="8: http://wordpress.com/home.logged-out/js/wp.js?20130508" shape=RECT coords="373,26,411,42">
+<area href="#request14" alt="14: http://wordpress.com/home.logged-out/images/pic-c.jpg?1" title="14: http://wordpress.com/home.logged-out/images/pic-c.jpg?1" shape=RECT coords="542,26,659,42">
+<area href="#request4" alt="4: http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600|Merriweather:300" title="4: http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600|Merriweather:300" shape=RECT coords="344,43,363,59">
+<area href="#request5" alt="5: http://s1.wp.com/i/favicon-stacked.ico?m=1311976025g" title="5: http://s1.wp.com/i/favicon-stacked.ico?m=1311976025g" shape=RECT coords="348,60,369,76">
+<area href="#request7" alt="7: http://s1.wp.com/i/favicon-stacked.ico?m=1311976025g" title="7: http://s1.wp.com/i/favicon-stacked.ico?m=1311976025g" shape=RECT coords="369,60,411,76">
+<area href="#request6" alt="6: http://s2.wp.com/i/favicon.ico?m=1311976025g" title="6: http://s2.wp.com/i/favicon.ico?m=1311976025g" shape=RECT coords="355,77,411,93">
+<area href="#request9" alt="9: http://s2.wp.com/i/favicon.ico?m=1311976025g" title="9: http://s2.wp.com/i/favicon.ico?m=1311976025g" shape=RECT coords="427,77,436,93">
+<area href="#request10" alt="10: http://themes.googleusercontent.com/static/fonts/opensans/v6/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff" title="10: http://themes.googleusercontent.com/static/fonts/opensans/v6/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff" shape=RECT coords="451,94,484,110">
+<area href="#request11" alt="11: http://themes.googleusercontent.com/static/fonts/opensans/v6/DXI1ORHCpsQm3Vp6mXoaTXhCUOGz7vYGh680lGh-uXM.woff" title="11: http://themes.googleusercontent.com/static/fonts/opensans/v6/DXI1ORHCpsQm3Vp6mXoaTXhCUOGz7vYGh680lGh-uXM.woff" shape=RECT coords="451,111,489,127">
+<area href="#request12" alt="12: http://themes.googleusercontent.com/static/fonts/merriweather/v5/ZvcMqxEwPfh2qDWBPxn6nmFp2sMiApZm5Dx7NpSTOZk.woff" title="12: http://themes.googleusercontent.com/static/fonts/merriweather/v5/ZvcMqxEwPfh2qDWBPxn6nmFp2sMiApZm5Dx7NpSTOZk.woff" shape=RECT coords="451,128,485,144">
+<area href="#request13" alt="13: http://themes.googleusercontent.com/static/fonts/opensans/v6/MTP_ySUJH_bn48VBG8sNSnhCUOGz7vYGh680lGh-uXM.woff" title="13: http://themes.googleusercontent.com/static/fonts/opensans/v6/MTP_ySUJH_bn48VBG8sNSnhCUOGz7vYGh680lGh-uXM.woff" shape=RECT coords="452,145,534,161">
+<area href="#request15" alt="15: http://pixel.quantserve.com/pixel/p-18-mFEk4J448M.gif?labels=%2Clanguage.en%2Ctype.wpcom%2Cwp.homepage" title="15: http://pixel.quantserve.com/pixel/p-18-mFEk4J448M.gif?labels=%2Clanguage.en%2Ctype.wpcom%2Cwp.homepage" shape=RECT coords="577,162,586,178">
+<area href="#request16" alt="16: http://stats.wordpress.com/g.gif?host=wordpress.com&amp;rand=0.34289189912718365&amp;blog=1&amp;v=wpcom&amp;tz=0&amp;user_id=0&amp;subd=wordpress.com" title="16: http://stats.wordpress.com/g.gif?host=wordpress.com&amp;rand=0.34289189912718365&amp;blog=1&amp;v=wpcom&amp;tz=0&amp;user_id=0&amp;subd=wordpress.com" shape=RECT coords="580,179,602,195">
+<area href="#request17" alt="17: http://google-analytics.com/ga.js" title="17: http://google-analytics.com/ga.js" shape=RECT coords="587,196,607,212">
+<area href="#request18" alt="18: http://i.kissmetrics.com/i.js" title="18: http://i.kissmetrics.com/i.js" shape=RECT coords="594,213,605,229">
+<area href="#request19" alt="19: http://doug1izaerwt3.cloudfront.net/39e3e583aca28fab00c85ad9019b51d9f073fc6d.1.js" title="19: http://doug1izaerwt3.cloudfront.net/39e3e583aca28fab00c85ad9019b51d9f073fc6d.1.js" shape=RECT coords="603,230,631,246">
+<area href="#request20" alt="20: http://www.google-analytics.com/__utm.gif?utmwv=5.4.4&amp;utms=1&amp;utmn=858714781&amp;utmhn=wordpress.com&amp;utmcs=UTF-8&amp;utmsr=1920x1200&amp;utmvp=991x667&amp;utmsc=24-bit&amp;utmul=en-us&amp;utmje=0&amp;utmfl=11.8%20r800&amp;utmdt=WordPress.com%20-%20Get%20a%20Free%20Blog%20Here&amp;utmhid=2023775255&amp;utmr=-&amp;utmp=%2F&amp;utmht=1379342615353&amp;utmac=UA-10673494-4&amp;utmcc=__utma%3D214977736.1479568976.1379342615.1379342615.1379342615.1%3B%2B__utmz%3D214977736.1379342615.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&amp;utmu=qBAgAAAAAAAAAAAAAAAAAAB~" title="20: http://www.google-analytics.com/__utm.gif?utmwv=5.4.4&amp;utms=1&amp;utmn=858714781&amp;utmhn=wordpress.com&amp;utmcs=UTF-8&amp;utmsr=1920x1200&amp;utmvp=991x667&amp;utmsc=24-bit&amp;utmul=en-us&amp;utmje=0&amp;utmfl=11.8%20r800&amp;utmdt=WordPress.com%20-%20Get%20a%20Free%20Blog%20Here&amp;utmhid=2023775255&amp;utmr=-&amp;utmp=%2F&amp;utmht=1379342615353&amp;utmac=UA-10673494-4&amp;utmcc=__utma%3D214977736.1479568976.1379342615.1379342615.1379342615.1%3B%2B__utmz%3D214977736.1379342615.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&amp;utmu=qBAgAAAAAAAAAAAAAAAAAAB~" shape=RECT coords="638,247,650,263">
+<area href="#request21" alt="21: http://trk.kissmetrics.com/e?Viewed_Homepage%20%7C%20Language=en&amp;Viewed_Homepage%20%7C%20Homepage_Version_20130405=existing&amp;_n=Viewed_Homepage&amp;_k=39e3e583aca28fab00c85ad9019b51d9f073fc6d&amp;_p=3Hp1EKU5eqt6BEMfBckdqWIfMGc%3D&amp;_t=1379342616" title="21: http://trk.kissmetrics.com/e?Viewed_Homepage%20%7C%20Language=en&amp;Viewed_Homepage%20%7C%20Homepage_Version_20130405=existing&amp;_n=Viewed_Homepage&amp;_k=39e3e583aca28fab00c85ad9019b51d9f073fc6d&amp;_p=3Hp1EKU5eqt6BEMfBckdqWIfMGc%3D&amp;_t=1379342616" shape=RECT coords="917,264,928,280">
+                </map>
+                <table border="1" bordercolor="silver" cellpadding="2px" cellspacing="0" style="width:auto; font-size:11px; margin-left:auto; margin-right:auto;">
+                    <tr>
+                        <td><table><tr><td><div class="bar" style="width:15px; background-color:#007B84"></div></td><td>DNS Lookup</td></tr></table></td>
+                        <td><table><tr><td><div class="bar" style="width:15px; background-color:#FF7B00"></div></td><td>Initial Connection</td></tr></table></td>
+                                                <td><table><tr><td><div class="bar" style="width:2px; background-color:#28BC00"></div></td><td>Start Render</td></tr></table></td>
+                                                                        <td><table><tr><td><div class="bar" style="width:15px; background-color:#D888DF"></div></td><td>DOM Content Loaded</td></tr></table></td>
+                                                                        <td><table><tr><td><div class="bar" style="width:15px; background-color:#C0C0FF"></div></td><td>On Load</td></tr></table></td>
+                                                <td><table><tr><td><div class="bar" style="width:2px; background-color:#0000FF"></div></td><td>Document Complete</td></tr></table></td>
+                    </tr>
+                </table>
+                <br>
+                <img class="progress" alt="Connection View waterfall diagram" usemap="#connection_map" id="connectionView" src="/waterfall.png?type=connection&width=930&test=130916_SG_JD5&run=1&cached=0&mime=1">
+                </div>
+                <br><br>
+                <div style="width:100%; height:90; text-align:center; clear: both; padding: 1em 0px; background-color: #AAA;">
+    <script type="text/javascript"><!--
+    google_ad_client = "pub-0388499782819905";
+    /* Webpagetest Details Middle 728x90 */
+    google_ad_slot = "9339196816";
+    google_ad_width = 728;
+    google_ad_height = 90;
+    //-->
+    </script>
+    <script type="text/javascript"
+    src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+    </script>
+</div>
+
+                <br>
+                <div class="center">
+<table id="tableDetails" class="details center">
+	<caption>Request Details</caption>
+    <thead>
+	<tr>
+		<th class="reqNum">#</th>
+		<th class="reqUrl">Resource</th>
+		<th class="reqMime">Content Type</th>
+		<th class="reqStart">Start Offset</th>
+		<th class="reqDNS">DNS Lookup</th>
+		<th class="reqSocket">Initial Connection</th>
+				<th class="reqTTFB">Time to First Byte</th>
+		<th class="reqDownload">Content Download</th>
+		<th class="reqBytes">Bytes Downloaded</th>
+		<th class="reqResult">Error/Status Code</th>
+		<th class="reqIP">IP</th>
+				<th class="reqLocation">Location*</th>
+			</tr>
+    </thead>
+    <tbody>
+
+<tr><td class="reqNum oddRender">1</td><td class="reqUrl oddRender"><a title="http://wordpress.com/" href="#request1">http://wordpress.com/</a></td><td class="reqMime oddRender">text/html</td><td class="reqStart oddRender">0.123 s</td><td class="reqDNS oddRender">42 ms</td><td class="reqSocket oddRender">81 ms</td><td class="reqTTFB oddRender">89 ms</td><td class="reqDownload oddRender">6 ms</td><td class="reqBytes oddRender">3.0 KB</td><td class="reqResult oddRender">200</td><td class="reqIP oddRender">76.74.254.126</td><td class="reqLocation oddRender">San Antonio, TX</td>
+</tr><tr><td class="reqNum evenRender">2</td><td class="reqUrl evenRender"><a title="http://wordpress.com/home.logged-out/css/style.css?20130904" href="#request2">http://wordpress.com...s/style.css?20130904</a></td><td class="reqMime evenRender">text/css</td><td class="reqStart evenRender">0.239 s</td><td class="reqDNS evenRender">-</td><td class="reqSocket evenRender">-</td><td class="reqTTFB evenRender">87 ms</td><td class="reqDownload evenRender">7 ms</td><td class="reqBytes evenRender">11.9 KB</td><td class="reqResult evenRender">200</td><td class="reqIP evenRender">76.74.254.126</td><td class="reqLocation evenRender">San Antonio, TX</td>
+</tr><tr><td class="reqNum oddRender">3</td><td class="reqUrl oddRender"><a title="http://wordpress.com/i/noticons/noticons.css?20130416" href="#request3">http://wordpress.com...oticons.css?20130416</a></td><td class="reqMime oddRender">text/css</td><td class="reqStart oddRender">0.333 s</td><td class="reqDNS oddRender">-</td><td class="reqSocket oddRender">-</td><td class="reqTTFB oddRender">90 ms</td><td class="reqDownload oddRender">35 ms</td><td class="reqBytes oddRender">11.2 KB</td><td class="reqResult oddRender">200</td><td class="reqIP oddRender">76.74.254.126</td><td class="reqLocation oddRender">San Antonio, TX</td>
+</tr><tr><td class="reqNum evenRender">4</td><td class="reqUrl evenRender"><a title="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600|Merriweather:300" href="#request4">http://fonts.googlea...600|Merriweather:300</a></td><td class="reqMime evenRender">text/css</td><td class="reqStart evenRender">0.351 s</td><td class="reqDNS evenRender">50 ms</td><td class="reqSocket evenRender">60 ms</td><td class="reqTTFB evenRender">71 ms</td><td class="reqDownload evenRender">-</td><td class="reqBytes evenRender">0.9 KB</td><td class="reqResult evenRender">200</td><td class="reqIP evenRender">74.125.193.95</td><td class="reqLocation evenRender">Google</td>
+</tr><tr><td class="reqNum oddRender">5</td><td class="reqUrl oddRender"><a title="http://s1.wp.com/i/favicon-stacked.ico?m=1311976025g" href="#request5">http://s1.wp.com/i/f...ed.ico?m=1311976025g</a></td><td class="reqMime oddRender">image/vnd.microsoft.icon</td><td class="reqStart oddRender">0.365 s</td><td class="reqDNS oddRender">40 ms</td><td class="reqSocket oddRender">34 ms</td><td class="reqTTFB oddRender">37 ms</td><td class="reqDownload oddRender">40 ms</td><td class="reqBytes oddRender">17.7 KB</td><td class="reqResult oddRender">200</td><td class="reqIP oddRender">72.21.91.111</td><td class="reqLocation oddRender">Edgecast</td>
+</tr><tr><td class="reqNum evenRender">6</td><td class="reqUrl evenRender"><a title="http://s2.wp.com/i/favicon.ico?m=1311976025g" href="#request6">http://s2.wp.com/i/f...on.ico?m=1311976025g</a></td><td class="reqMime evenRender">image/vnd.microsoft.icon</td><td class="reqStart evenRender">0.391 s</td><td class="reqDNS evenRender">26 ms</td><td class="reqSocket evenRender">34 ms</td><td class="reqTTFB evenRender">40 ms</td><td class="reqDownload evenRender">168 ms</td><td class="reqBytes evenRender">17.7 KB</td><td class="reqResult evenRender">200</td><td class="reqIP evenRender">72.21.91.111</td><td class="reqLocation evenRender">Edgecast</td>
+</tr><tr><td class="reqNum warning oddRender">7</td><td class="reqUrl warning oddRender"><a title="http://s1.wp.com/i/favicon-stacked.ico?m=1311976025g" href="#request7">http://s1.wp.com/i/f...ed.ico?m=1311976025g</a></td><td class="reqMime warning oddRender">-</td><td class="reqStart warning oddRender">0.443 s</td><td class="reqDNS warning oddRender">-</td><td class="reqSocket warning oddRender">-</td><td class="reqTTFB warning oddRender">156 ms</td><td class="reqDownload warning oddRender">-</td><td class="reqBytes warning oddRender">0.2 KB</td><td class="reqResult warning oddRender">304</td><td class="reqIP warning oddRender">72.21.91.111</td><td class="reqLocation warning oddRender">Edgecast</td>
+</tr><tr><td class="reqNum evenRender">8</td><td class="reqUrl evenRender"><a title="http://wordpress.com/home.logged-out/js/wp.js?20130508" href="#request8">http://wordpress.com...ut/js/wp.js?20130508</a></td><td class="reqMime evenRender">application/x-javascript</td><td class="reqStart evenRender">0.458 s</td><td class="reqDNS evenRender">27 ms</td><td class="reqSocket evenRender">-</td><td class="reqTTFB evenRender">141 ms</td><td class="reqDownload evenRender">-</td><td class="reqBytes evenRender">5.4 KB</td><td class="reqResult evenRender">200</td><td class="reqIP evenRender">76.74.254.126</td><td class="reqLocation evenRender">San Antonio, TX</td>
+</tr><tr><td class="reqNum warning oddRender">9</td><td class="reqUrl warning oddRender"><a title="http://s2.wp.com/i/favicon.ico?m=1311976025g" href="#request9">http://s2.wp.com/i/f...on.ico?m=1311976025g</a></td><td class="reqMime warning oddRender">-</td><td class="reqStart warning oddRender">0.66 s</td><td class="reqDNS warning oddRender">-</td><td class="reqSocket warning oddRender">-</td><td class="reqTTFB warning oddRender">34 ms</td><td class="reqDownload warning oddRender">-</td><td class="reqBytes warning oddRender">0.2 KB</td><td class="reqResult warning oddRender">304</td><td class="reqIP warning oddRender">72.21.91.111</td><td class="reqLocation warning oddRender">Edgecast</td>
+</tr><tr><td class="reqNum evenRender">10</td><td class="reqUrl evenRender"><a title="http://themes.googleusercontent.com/static/fonts/opensans/v6/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff" href="#request10">http://themes.google...Zn-EPnyo3HZu7kw.woff</a></td><td class="reqMime evenRender">font/woff</td><td class="reqStart evenRender">0.752 s</td><td class="reqDNS evenRender">51 ms</td><td class="reqSocket evenRender">42 ms</td><td class="reqTTFB evenRender">39 ms</td><td class="reqDownload evenRender">82 ms</td><td class="reqBytes evenRender">21.8 KB</td><td class="reqResult evenRender">200</td><td class="reqIP evenRender">74.125.228.76</td><td class="reqLocation evenRender">Google</td>
+</tr><tr><td class="reqNum oddRender">11</td><td class="reqUrl oddRender"><a title="http://themes.googleusercontent.com/static/fonts/opensans/v6/DXI1ORHCpsQm3Vp6mXoaTXhCUOGz7vYGh680lGh-uXM.woff" href="#request11">http://themes.google...7vYGh680lGh-uXM.woff</a></td><td class="reqMime oddRender">font/woff</td><td class="reqStart oddRender">0.752 s</td><td class="reqDNS oddRender">-</td><td class="reqSocket oddRender">42 ms</td><td class="reqTTFB oddRender">42 ms</td><td class="reqDownload oddRender">99 ms</td><td class="reqBytes oddRender">22.5 KB</td><td class="reqResult oddRender">200</td><td class="reqIP oddRender">74.125.228.76</td><td class="reqLocation oddRender">Google</td>
+</tr><tr><td class="reqNum evenRender">12</td><td class="reqUrl evenRender"><a title="http://themes.googleusercontent.com/static/fonts/merriweather/v5/ZvcMqxEwPfh2qDWBPxn6nmFp2sMiApZm5Dx7NpSTOZk.woff" href="#request12">http://themes.google...ApZm5Dx7NpSTOZk.woff</a></td><td class="reqMime evenRender">font/woff</td><td class="reqStart evenRender">0.752 s</td><td class="reqDNS evenRender">-</td><td class="reqSocket evenRender">42 ms</td><td class="reqTTFB evenRender">42 ms</td><td class="reqDownload evenRender">82 ms</td><td class="reqBytes evenRender">19.1 KB</td><td class="reqResult evenRender">200</td><td class="reqIP evenRender">74.125.228.76</td><td class="reqLocation evenRender">Google</td>
+</tr><tr><td class="reqNum oddDoc">13</td><td class="reqUrl oddDoc"><a title="http://themes.googleusercontent.com/static/fonts/opensans/v6/MTP_ySUJH_bn48VBG8sNSnhCUOGz7vYGh680lGh-uXM.woff" href="#request13">http://themes.google...7vYGh680lGh-uXM.woff</a></td><td class="reqMime oddDoc">font/woff</td><td class="reqStart oddDoc">0.753 s</td><td class="reqDNS oddDoc">-</td><td class="reqSocket oddDoc">41 ms</td><td class="reqTTFB oddDoc">208 ms</td><td class="reqDownload oddDoc">99 ms</td><td class="reqBytes oddDoc">22.5 KB</td><td class="reqResult oddDoc">200</td><td class="reqIP oddDoc">74.125.228.76</td><td class="reqLocation oddDoc">Google</td>
+</tr><tr><td class="reqNum evenDoc">14</td><td class="reqUrl evenDoc"><a title="http://wordpress.com/home.logged-out/images/pic-c.jpg?1" href="#request14">http://wordpress.com...t/images/pic-c.jpg?1</a></td><td class="reqMime evenDoc">image/jpeg</td><td class="reqStart evenDoc">1.091 s</td><td class="reqDNS evenDoc">-</td><td class="reqSocket evenDoc">-</td><td class="reqTTFB evenDoc">85 ms</td><td class="reqDownload evenDoc">352 ms</td><td class="reqBytes evenDoc">111.8 KB</td><td class="reqResult evenDoc">200</td><td class="reqIP evenDoc">76.74.254.126</td><td class="reqLocation evenDoc">San Antonio, TX</td>
+</tr><tr><td class="reqNum odd">15</td><td class="reqUrl odd"><a title="http://pixel.quantserve.com/pixel/p-18-mFEk4J448M.gif?labels=%2Clanguage.en%2Ctype.wpcom%2Cwp.homepage" href="#request15">http://pixel.quantse....wpcom%2Cwp.homepage</a></td><td class="reqMime odd">image/gif</td><td class="reqStart odd">1.223 s</td><td class="reqDNS odd">31 ms</td><td class="reqSocket odd">31 ms</td><td class="reqTTFB odd">34 ms</td><td class="reqDownload odd">-</td><td class="reqBytes odd">0.5 KB</td><td class="reqResult odd">200</td><td class="reqIP odd">64.94.107.64</td><td class="reqLocation odd">Atlanta, GA</td>
+</tr><tr><td class="reqNum even">16</td><td class="reqUrl even"><a title="http://stats.wordpress.com/g.gif?host=wordpress.com&rand=0.34289189912718365&blog=1&v=wpcom&tz=0&user_id=0&subd=wordpress.com" href="#request16">http://stats.wordpre...0&subd=wordpress.com</a></td><td class="reqMime even">image/gif</td><td class="reqStart even">1.233 s</td><td class="reqDNS even">52 ms</td><td class="reqSocket even">72 ms</td><td class="reqTTFB even">81 ms</td><td class="reqDownload even">-</td><td class="reqBytes even">0.3 KB</td><td class="reqResult even">200</td><td class="reqIP even">72.233.111.159</td><td class="reqLocation even">Plano, TX</td>
+</tr><tr><td class="reqNum odd">17</td><td class="reqUrl odd"><a title="http://google-analytics.com/ga.js" href="#request17">http://google-analytics.com/ga.js</a></td><td class="reqMime odd">text/javascript</td><td class="reqStart odd">1.26 s</td><td class="reqDNS odd">33 ms</td><td class="reqSocket odd">33 ms</td><td class="reqTTFB odd">39 ms</td><td class="reqDownload odd">35 ms</td><td class="reqBytes odd">15.6 KB</td><td class="reqResult odd">200</td><td class="reqIP odd">74.125.228.81</td><td class="reqLocation odd">Mountain View, CA</td>
+</tr><tr><td class="reqNum even">18</td><td class="reqUrl even"><a title="http://i.kissmetrics.com/i.js" href="#request18">http://i.kissmetrics.com/i.js</a></td><td class="reqMime even">application/x-javascript</td><td class="reqStart even">1.286 s</td><td class="reqDNS even">26 ms</td><td class="reqSocket even">33 ms</td><td class="reqTTFB even">40 ms</td><td class="reqDownload even">-</td><td class="reqBytes even">0.4 KB</td><td class="reqResult even">200</td><td class="reqIP even">50.19.84.40</td><td class="reqLocation even">Ashburn, VA</td>
+</tr><tr><td class="reqNum odd">19</td><td class="reqUrl odd"><a title="http://doug1izaerwt3.cloudfront.net/39e3e583aca28fab00c85ad9019b51d9f073fc6d.1.js" href="#request19">http://doug1izaerwt3...19b51d9f073fc6d.1.js</a></td><td class="reqMime odd">application/x-javascript</td><td class="reqStart odd">1.32 s</td><td class="reqDNS odd">31 ms</td><td class="reqSocket odd">35 ms</td><td class="reqTTFB odd">42 ms</td><td class="reqDownload odd">60 ms</td><td class="reqBytes odd">20.8 KB</td><td class="reqResult odd">200</td><td class="reqIP odd">54.230.103.175</td><td class="reqLocation odd">Amazon CloudFront</td>
+</tr><tr><td class="reqNum even">20</td><td class="reqUrl even"><a title="http://www.google-analytics.com/__utm.gif?utmwv=5.4.4&utms=1&utmn=858714781&utmhn=wordpress.com&utmcs=UTF-8&utmsr=1920x1200&utmvp=991x667&utmsc=24-bit&utmul=en-us&utmje=0&utmfl=11.8%20r800&utmdt=WordPress.com%20-%20Get%20a%20Free%20Blog%20Here&utmhid=2023775255&utmr=-&utmp=%2F&utmht=1379342615353&utmac=UA-10673494-4&utmcc=__utma%3D214977736.1479568976.1379342615.1379342615.1379342615.1%3B%2B__utmz%3D214977736.1379342615.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&utmu=qBAgAAAAAAAAAAAAAAAAAAB~" href="#request20">http://www.google-an...AAAAAAAAAAAAAAAAAAB~</a></td><td class="reqMime even">image/gif</td><td class="reqStart even">1.451 s</td><td class="reqDNS even">26 ms</td><td class="reqSocket even">39 ms</td><td class="reqTTFB even">45 ms</td><td class="reqDownload even">-</td><td class="reqBytes even">0.4 KB</td><td class="reqResult even">200</td><td class="reqIP even">173.194.43.39</td><td class="reqLocation even">Google</td>
+</tr><tr><td class="reqNum odd">21</td><td class="reqUrl odd"><a title="http://trk.kissmetrics.com/e?Viewed_Homepage%20%7C%20Language=en&Viewed_Homepage%20%7C%20Homepage_Version_20130405=existing&_n=Viewed_Homepage&_k=39e3e583aca28fab00c85ad9019b51d9f073fc6d&_p=3Hp1EKU5eqt6BEMfBckdqWIfMGc%3D&_t=1379342616" href="#request21">http://trk.kissmetri...MGc%3D&_t=1379342616</a></td><td class="reqMime odd">image/gif</td><td class="reqStart odd">2.492 s</td><td class="reqDNS odd">26 ms</td><td class="reqSocket odd">31 ms</td><td class="reqTTFB odd">41 ms</td><td class="reqDownload odd">-</td><td class="reqBytes odd">0.3 KB</td><td class="reqResult odd">200</td><td class="reqIP odd">23.21.108.99</td><td class="reqLocation odd">Ashburn, VA</td>
+</tr></tbody>
+</table></div>
+
+<p class="center">*This product includes GeoLite data created by MaxMind, available from <a href="http://maxmind.com/">http://maxmind.com/</a>.</p>
+<br>
+<div style="width:100%; height:90; text-align:center; clear:both; padding: 1em 0px; background-color: #AAA;">
+    <script type="text/javascript"><!--
+    google_ad_client = "pub-0388499782819905";
+    /* Webpagetest Details Bottom 728x90 */
+    google_ad_slot = "7833437511";
+    google_ad_width = 728;
+    google_ad_height = 90;
+    //-->
+    </script>
+    <script type="text/javascript"
+    src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+    </script>
+</div>
+<br>
+
+<div id="headers"><p>Test Machine DNS Server(s): 192.168.102.1,192.168.0.1</p>
+<br><hr><h2>Request Headers</h2><p>+ <a id="all" href="javascript:expandAll();">Expand All</a></p><h4><span class="a_request" id="request1" data-target-id="headers_1">+ Request 1: http://wordpress.com/</span></h4><div class="header_details" id="headers_1"><p class="indented2">
+<b>URL:</b> http://wordpress.com/<br>
+<b>Host:</b> wordpress.com<br>
+<b>IP:</b> 76.74.254.126<br>
+<b>Location:</b> San Antonio, TX<br>
+<b>Error/Status Code:</b> 200<br>
+<b>Client Port:</b> 50714<br>
+<b>Start Offset:</b> 0.123 s<br>
+<b>Initial Connection:</b> 81 ms<br>
+<b>Time to First Byte:</b> 89 ms<br>
+<b>Content Download:</b> 6 ms<br>
+<b>Bytes In (downloaded):</b> 3.0 KB<br>
+<b>Bytes Out (uploaded):</b> 0.3 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+GET / HTTP/1.1<br>
+Host: wordpress.com<br>
+User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:23.0) Gecko/20100101 Firefox/23.0 PTST/133<br>
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8<br>
+Accept-Language: en-US,en;q=0.5<br>
+Accept-Encoding: gzip, deflate<br>
+Connection: keep-alive<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+HTTP/1.1 200 OK<br>
+Server: nginx<br>
+Date: Mon, 16 Sep 2013 14:43:37 GMT<br>
+Content-Type: text/html; charset=utf-8<br>
+Transfer-Encoding: chunked<br>
+Connection: keep-alive<br>
+Vary: Accept-Encoding<br>
+X-Frame-Options: SAMEORIGIN<br>
+Vary: Cookie<br>
+Content-Encoding: gzip<br>
+</p></div><h4><span class="a_request" id="request2" data-target-id="headers_2">+ Request 2: http://wordpress.com/home.logged-out/css/style.css?20130904</span></h4><div class="header_details" id="headers_2"><p class="indented2">
+<b>URL:</b> http://wordpress.com/home.logged-out/css/style.css?20130904<br>
+<b>Host:</b> wordpress.com<br>
+<b>IP:</b> 76.74.254.126<br>
+<b>Location:</b> San Antonio, TX<br>
+<b>Error/Status Code:</b> 200<br>
+<b>Client Port:</b> 50714<br>
+<b>Start Offset:</b> 0.239 s<br>
+<b>Time to First Byte:</b> 87 ms<br>
+<b>Content Download:</b> 7 ms<br>
+<b>Bytes In (downloaded):</b> 11.9 KB<br>
+<b>Bytes Out (uploaded):</b> 0.3 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+GET /home.logged-out/css/style.css?20130904 HTTP/1.1<br>
+Host: wordpress.com<br>
+User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:23.0) Gecko/20100101 Firefox/23.0 PTST/133<br>
+Accept: text/css,*/*;q=0.1<br>
+Accept-Language: en-US,en;q=0.5<br>
+Accept-Encoding: gzip, deflate<br>
+Referer: http://wordpress.com/<br>
+Connection: keep-alive<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+HTTP/1.1 200 OK<br>
+Server: nginx<br>
+Date: Mon, 16 Sep 2013 14:43:38 GMT<br>
+Content-Type: text/css<br>
+Transfer-Encoding: chunked<br>
+Connection: keep-alive<br>
+Vary: Accept-Encoding<br>
+Content-Encoding: gzip<br>
+Expires: Tue, 16 Sep 2014 14:43:38 GMT<br>
+Cache-Control: max-age=31536000<br>
+</p></div><h4><span class="a_request" id="request3" data-target-id="headers_3">+ Request 3: http://wordpress.com/i/noticons/noticons.css?20130416</span></h4><div class="header_details" id="headers_3"><p class="indented2">
+<b>URL:</b> http://wordpress.com/i/noticons/noticons.css?20130416<br>
+<b>Host:</b> wordpress.com<br>
+<b>IP:</b> 76.74.254.126<br>
+<b>Location:</b> San Antonio, TX<br>
+<b>Error/Status Code:</b> 200<br>
+<b>Client Port:</b> 50714<br>
+<b>Start Offset:</b> 0.333 s<br>
+<b>Time to First Byte:</b> 90 ms<br>
+<b>Content Download:</b> 35 ms<br>
+<b>Bytes In (downloaded):</b> 11.2 KB<br>
+<b>Bytes Out (uploaded):</b> 0.3 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+GET /i/noticons/noticons.css?20130416 HTTP/1.1<br>
+Host: wordpress.com<br>
+User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:23.0) Gecko/20100101 Firefox/23.0 PTST/133<br>
+Accept: text/css,*/*;q=0.1<br>
+Accept-Language: en-US,en;q=0.5<br>
+Accept-Encoding: gzip, deflate<br>
+Referer: http://wordpress.com/<br>
+Connection: keep-alive<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+HTTP/1.1 200 OK<br>
+Server: nginx<br>
+Date: Mon, 16 Sep 2013 14:43:38 GMT<br>
+Content-Type: text/css<br>
+Transfer-Encoding: chunked<br>
+Connection: keep-alive<br>
+Vary: Accept-Encoding<br>
+Content-Encoding: gzip<br>
+Expires: Tue, 16 Sep 2014 14:43:38 GMT<br>
+Cache-Control: max-age=31536000<br>
+</p></div><h4><span class="a_request" id="request4" data-target-id="headers_4">+ Request 4: http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600|Merriweather:300</span></h4><div class="header_details" id="headers_4"><p class="indented2">
+<b>URL:</b> http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600|Merriweather:300<br>
+<b>Host:</b> fonts.googleapis.com<br>
+<b>IP:</b> 74.125.193.95<br>
+<b>Location:</b> Google<br>
+<b>Error/Status Code:</b> 200<br>
+<b>Client Port:</b> 50717<br>
+<b>Start Offset:</b> 0.351 s<br>
+<b>DNS Lookup:</b> 50 ms<br>
+<b>Initial Connection:</b> 60 ms<br>
+<b>Time to First Byte:</b> 71 ms<br>
+<b>Bytes In (downloaded):</b> 0.9 KB<br>
+<b>Bytes Out (uploaded):</b> 0.4 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+GET /css?family=Open+Sans:300italic,400italic,600italic,400,300,600|Merriweather:300 HTTP/1.1<br>
+Host: fonts.googleapis.com<br>
+User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:23.0) Gecko/20100101 Firefox/23.0 PTST/133<br>
+Accept: text/css,*/*;q=0.1<br>
+Accept-Language: en-US,en;q=0.5<br>
+Accept-Encoding: gzip, deflate<br>
+Referer: http://wordpress.com/<br>
+Connection: keep-alive<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+HTTP/1.1 200 OK<br>
+Content-Type: text/css<br>
+Timing-Allow-Origin: *<br>
+Expires: Mon, 16 Sep 2013 14:43:38 GMT<br>
+Date: Mon, 16 Sep 2013 14:43:38 GMT<br>
+Cache-Control: private, max-age=86400<br>
+Content-Encoding: gzip<br>
+Content-Length: 522<br>
+X-Content-Type-Options: nosniff<br>
+X-Frame-Options: SAMEORIGIN<br>
+X-XSS-Protection: 1; mode=block<br>
+Server: GSE<br>
+Alternate-Protocol: 80:quic<br>
+</p></div><h4><span class="a_request" id="request5" data-target-id="headers_5">+ Request 5: http://s1.wp.com/i/favicon-stacked.ico?m=1311976025g</span></h4><div class="header_details" id="headers_5"><p class="indented2">
+<b>URL:</b> http://s1.wp.com/i/favicon-stacked.ico?m=1311976025g<br>
+<b>Host:</b> s1.wp.com<br>
+<b>IP:</b> 72.21.91.111<br>
+<b>Location:</b> Edgecast<br>
+<b>Error/Status Code:</b> 200<br>
+<b>Client Port:</b> 50719<br>
+<b>Start Offset:</b> 0.365 s<br>
+<b>DNS Lookup:</b> 40 ms<br>
+<b>Initial Connection:</b> 34 ms<br>
+<b>Time to First Byte:</b> 37 ms<br>
+<b>Content Download:</b> 40 ms<br>
+<b>Bytes In (downloaded):</b> 17.7 KB<br>
+<b>Bytes Out (uploaded):</b> 0.3 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+GET /i/favicon-stacked.ico?m=1311976025g HTTP/1.1<br>
+Host: s1.wp.com<br>
+User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:23.0) Gecko/20100101 Firefox/23.0 PTST/133<br>
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8<br>
+Accept-Language: en-US,en;q=0.5<br>
+Accept-Encoding: gzip, deflate<br>
+Connection: keep-alive<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+HTTP/1.1 200 OK<br>
+Accept-Ranges: bytes<br>
+Content-Type: image/vnd.microsoft.icon<br>
+Date: Mon, 16 Sep 2013 14:43:38 GMT<br>
+Last-Modified: Fri, 29 Jul 2011 21:43:44 GMT<br>
+Server: ECS (dca/FEC0)<br>
+X-Cache: HIT<br>
+Content-Length: 17910<br>
+</p></div><h4><span class="a_request" id="request6" data-target-id="headers_6">+ Request 6: http://s2.wp.com/i/favicon.ico?m=1311976025g</span></h4><div class="header_details" id="headers_6"><p class="indented2">
+<b>URL:</b> http://s2.wp.com/i/favicon.ico?m=1311976025g<br>
+<b>Host:</b> s2.wp.com<br>
+<b>IP:</b> 72.21.91.111<br>
+<b>Location:</b> Edgecast<br>
+<b>Error/Status Code:</b> 200<br>
+<b>Client Port:</b> 50720<br>
+<b>Start Offset:</b> 0.391 s<br>
+<b>DNS Lookup:</b> 26 ms<br>
+<b>Initial Connection:</b> 34 ms<br>
+<b>Time to First Byte:</b> 40 ms<br>
+<b>Content Download:</b> 168 ms<br>
+<b>Bytes In (downloaded):</b> 17.7 KB<br>
+<b>Bytes Out (uploaded):</b> 0.3 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+GET /i/favicon.ico?m=1311976025g HTTP/1.1<br>
+Host: s2.wp.com<br>
+User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:23.0) Gecko/20100101 Firefox/23.0 PTST/133<br>
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8<br>
+Accept-Language: en-US,en;q=0.5<br>
+Accept-Encoding: gzip, deflate<br>
+Connection: keep-alive<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+HTTP/1.1 200 OK<br>
+Accept-Ranges: bytes<br>
+Content-Type: image/vnd.microsoft.icon<br>
+Date: Mon, 16 Sep 2013 14:43:38 GMT<br>
+Last-Modified: Fri, 29 Jul 2011 21:43:44 GMT<br>
+Server: ECS (dca/24C4)<br>
+X-Cache: HIT<br>
+Content-Length: 17910<br>
+</p></div><h4><span class="a_request" id="request7" data-target-id="headers_7">+ Request 7: http://s1.wp.com/i/favicon-stacked.ico?m=1311976025g</span></h4><div class="header_details" id="headers_7"><p class="indented2">
+<b>URL:</b> http://s1.wp.com/i/favicon-stacked.ico?m=1311976025g<br>
+<b>Host:</b> s1.wp.com<br>
+<b>IP:</b> 72.21.91.111<br>
+<b>Location:</b> Edgecast<br>
+<b>Error/Status Code:</b> 304<br>
+<b>Client Port:</b> 50719<br>
+<b>Start Offset:</b> 0.443 s<br>
+<b>Time to First Byte:</b> 156 ms<br>
+<b>Bytes In (downloaded):</b> 0.2 KB<br>
+<b>Bytes Out (uploaded):</b> 0.4 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+GET /i/favicon-stacked.ico?m=1311976025g HTTP/1.1<br>
+Host: s1.wp.com<br>
+User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:23.0) Gecko/20100101 Firefox/23.0 PTST/133<br>
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8<br>
+Accept-Language: en-US,en;q=0.5<br>
+Accept-Encoding: gzip, deflate<br>
+Connection: keep-alive<br>
+If-Modified-Since: Fri, 29 Jul 2011 21:43:44 GMT<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+HTTP/1.1 304 Not Modified<br>
+Accept-Ranges: bytes<br>
+Date: Mon, 16 Sep 2013 14:43:38 GMT<br>
+Last-Modified: Fri, 29 Jul 2011 21:43:44 GMT<br>
+Server: ECS (dca/FEC0)<br>
+X-Cache: HIT<br>
+</p></div><h4><span class="a_request" id="request8" data-target-id="headers_8">+ Request 8: http://wordpress.com/home.logged-out/js/wp.js?20130508</span></h4><div class="header_details" id="headers_8"><p class="indented2">
+<b>URL:</b> http://wordpress.com/home.logged-out/js/wp.js?20130508<br>
+<b>Host:</b> wordpress.com<br>
+<b>IP:</b> 76.74.254.126<br>
+<b>Location:</b> San Antonio, TX<br>
+<b>Error/Status Code:</b> 200<br>
+<b>Client Port:</b> 50714<br>
+<b>Start Offset:</b> 0.458 s<br>
+<b>DNS Lookup:</b> 27 ms<br>
+<b>Time to First Byte:</b> 141 ms<br>
+<b>Bytes In (downloaded):</b> 5.4 KB<br>
+<b>Bytes Out (uploaded):</b> 0.3 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+GET /home.logged-out/js/wp.js?20130508 HTTP/1.1<br>
+Host: wordpress.com<br>
+User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:23.0) Gecko/20100101 Firefox/23.0 PTST/133<br>
+Accept: */*<br>
+Accept-Language: en-US,en;q=0.5<br>
+Accept-Encoding: gzip, deflate<br>
+Referer: http://wordpress.com/<br>
+Connection: keep-alive<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+HTTP/1.1 200 OK<br>
+Server: nginx<br>
+Date: Mon, 16 Sep 2013 14:43:38 GMT<br>
+Content-Type: application/x-javascript<br>
+Transfer-Encoding: chunked<br>
+Connection: keep-alive<br>
+Vary: Accept-Encoding<br>
+Content-Encoding: gzip<br>
+Expires: Tue, 16 Sep 2014 14:43:38 GMT<br>
+Cache-Control: max-age=31536000<br>
+</p></div><h4><span class="a_request" id="request9" data-target-id="headers_9">+ Request 9: http://s2.wp.com/i/favicon.ico?m=1311976025g</span></h4><div class="header_details" id="headers_9"><p class="indented2">
+<b>URL:</b> http://s2.wp.com/i/favicon.ico?m=1311976025g<br>
+<b>Host:</b> s2.wp.com<br>
+<b>IP:</b> 72.21.91.111<br>
+<b>Location:</b> Edgecast<br>
+<b>Error/Status Code:</b> 304<br>
+<b>Client Port:</b> 50720<br>
+<b>Start Offset:</b> 0.660 s<br>
+<b>Time to First Byte:</b> 34 ms<br>
+<b>Bytes In (downloaded):</b> 0.2 KB<br>
+<b>Bytes Out (uploaded):</b> 0.4 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+GET /i/favicon.ico?m=1311976025g HTTP/1.1<br>
+Host: s2.wp.com<br>
+User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:23.0) Gecko/20100101 Firefox/23.0 PTST/133<br>
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8<br>
+Accept-Language: en-US,en;q=0.5<br>
+Accept-Encoding: gzip, deflate<br>
+Connection: keep-alive<br>
+If-Modified-Since: Fri, 29 Jul 2011 21:43:44 GMT<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+HTTP/1.1 304 Not Modified<br>
+Accept-Ranges: bytes<br>
+Date: Mon, 16 Sep 2013 14:43:38 GMT<br>
+Last-Modified: Fri, 29 Jul 2011 21:43:44 GMT<br>
+Server: ECS (dca/24C4)<br>
+X-Cache: HIT<br>
+</p></div><h4><span class="a_request" id="request10" data-target-id="headers_10">+ Request 10: http://themes.googleusercontent.com/static/fonts/opensans/v6/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff</span></h4><div class="header_details" id="headers_10"><p class="indented2">
+<b>URL:</b> http://themes.googleusercontent.com/static/fonts/opensans/v6/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff<br>
+<b>Host:</b> themes.googleusercontent.com<br>
+<b>IP:</b> 74.125.228.76<br>
+<b>Location:</b> Google<br>
+<b>Error/Status Code:</b> 200<br>
+<b>Client Port:</b> 50725<br>
+<b>Start Offset:</b> 0.752 s<br>
+<b>DNS Lookup:</b> 51 ms<br>
+<b>Initial Connection:</b> 42 ms<br>
+<b>Time to First Byte:</b> 39 ms<br>
+<b>Content Download:</b> 82 ms<br>
+<b>Bytes In (downloaded):</b> 21.8 KB<br>
+<b>Bytes Out (uploaded):</b> 0.5 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+GET /static/fonts/opensans/v6/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff HTTP/1.1<br>
+Host: themes.googleusercontent.com<br>
+User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:23.0) Gecko/20100101 Firefox/23.0 PTST/133<br>
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8<br>
+Accept-Language: en-US,en;q=0.5<br>
+Accept-Encoding: gzip, deflate<br>
+Referer: http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600|Merriweather:300<br>
+Origin: http://wordpress.com<br>
+Connection: keep-alive<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+HTTP/1.1 200 OK<br>
+Content-Type: font/woff<br>
+Last-Modified: Mon, 02 Apr 2012 00:13:23 GMT<br>
+Date: Thu, 12 Sep 2013 08:41:06 GMT<br>
+Expires: Fri, 12 Sep 2014 08:41:06 GMT<br>
+Access-Control-Allow-Origin: *<br>
+X-Content-Type-Options: nosniff<br>
+Server: sffe<br>
+Content-Length: 21956<br>
+X-XSS-Protection: 1; mode=block<br>
+Cache-Control: public, max-age=31536000<br>
+Age: 367352<br>
+Alternate-Protocol: 80:quic<br>
+</p></div><h4><span class="a_request" id="request11" data-target-id="headers_11">+ Request 11: http://themes.googleusercontent.com/static/fonts/opensans/v6/DXI1ORHCpsQm3Vp6mXoaTXhCUOGz7vYGh680lGh-uXM.woff</span></h4><div class="header_details" id="headers_11"><p class="indented2">
+<b>URL:</b> http://themes.googleusercontent.com/static/fonts/opensans/v6/DXI1ORHCpsQm3Vp6mXoaTXhCUOGz7vYGh680lGh-uXM.woff<br>
+<b>Host:</b> themes.googleusercontent.com<br>
+<b>IP:</b> 74.125.228.76<br>
+<b>Location:</b> Google<br>
+<b>Error/Status Code:</b> 200<br>
+<b>Client Port:</b> 50726<br>
+<b>Start Offset:</b> 0.752 s<br>
+<b>Initial Connection:</b> 42 ms<br>
+<b>Time to First Byte:</b> 42 ms<br>
+<b>Content Download:</b> 99 ms<br>
+<b>Bytes In (downloaded):</b> 22.5 KB<br>
+<b>Bytes Out (uploaded):</b> 0.5 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+GET /static/fonts/opensans/v6/DXI1ORHCpsQm3Vp6mXoaTXhCUOGz7vYGh680lGh-uXM.woff HTTP/1.1<br>
+Host: themes.googleusercontent.com<br>
+User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:23.0) Gecko/20100101 Firefox/23.0 PTST/133<br>
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8<br>
+Accept-Language: en-US,en;q=0.5<br>
+Accept-Encoding: gzip, deflate<br>
+Referer: http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600|Merriweather:300<br>
+Origin: http://wordpress.com<br>
+Connection: keep-alive<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+HTTP/1.1 200 OK<br>
+Content-Type: font/woff<br>
+Last-Modified: Mon, 02 Apr 2012 00:13:23 GMT<br>
+Date: Thu, 12 Sep 2013 08:42:02 GMT<br>
+Expires: Fri, 12 Sep 2014 08:42:02 GMT<br>
+Access-Control-Allow-Origin: *<br>
+X-Content-Type-Options: nosniff<br>
+Server: sffe<br>
+Content-Length: 22656<br>
+X-XSS-Protection: 1; mode=block<br>
+Cache-Control: public, max-age=31536000<br>
+Age: 367296<br>
+Alternate-Protocol: 80:quic<br>
+</p></div><h4><span class="a_request" id="request12" data-target-id="headers_12">+ Request 12: http://themes.googleusercontent.com/static/fonts/merriweather/v5/ZvcMqxEwPfh2qDWBPxn6nmFp2sMiApZm5Dx7NpSTOZk.woff</span></h4><div class="header_details" id="headers_12"><p class="indented2">
+<b>URL:</b> http://themes.googleusercontent.com/static/fonts/merriweather/v5/ZvcMqxEwPfh2qDWBPxn6nmFp2sMiApZm5Dx7NpSTOZk.woff<br>
+<b>Host:</b> themes.googleusercontent.com<br>
+<b>IP:</b> 74.125.228.76<br>
+<b>Location:</b> Google<br>
+<b>Error/Status Code:</b> 200<br>
+<b>Client Port:</b> 50727<br>
+<b>Start Offset:</b> 0.752 s<br>
+<b>Initial Connection:</b> 42 ms<br>
+<b>Time to First Byte:</b> 42 ms<br>
+<b>Content Download:</b> 82 ms<br>
+<b>Bytes In (downloaded):</b> 19.1 KB<br>
+<b>Bytes Out (uploaded):</b> 0.5 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+GET /static/fonts/merriweather/v5/ZvcMqxEwPfh2qDWBPxn6nmFp2sMiApZm5Dx7NpSTOZk.woff HTTP/1.1<br>
+Host: themes.googleusercontent.com<br>
+User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:23.0) Gecko/20100101 Firefox/23.0 PTST/133<br>
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8<br>
+Accept-Language: en-US,en;q=0.5<br>
+Accept-Encoding: gzip, deflate<br>
+Referer: http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600|Merriweather:300<br>
+Origin: http://wordpress.com<br>
+Connection: keep-alive<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+HTTP/1.1 200 OK<br>
+Content-Type: font/woff<br>
+Last-Modified: Wed, 22 May 2013 19:51:43 GMT<br>
+Date: Wed, 04 Sep 2013 08:17:34 GMT<br>
+Expires: Thu, 04 Sep 2014 08:17:34 GMT<br>
+Access-Control-Allow-Origin: *<br>
+X-Content-Type-Options: nosniff<br>
+Server: sffe<br>
+Content-Length: 19132<br>
+X-XSS-Protection: 1; mode=block<br>
+Cache-Control: public, max-age=31536000<br>
+Age: 1059964<br>
+Alternate-Protocol: 80:quic<br>
+</p></div><h4><span class="a_request" id="request13" data-target-id="headers_13">+ Request 13: http://themes.googleusercontent.com/static/fonts/opensans/v6/MTP_ySUJH_bn48VBG8sNSnhCUOGz7vYGh680lGh-uXM.woff</span></h4><div class="header_details" id="headers_13"><p class="indented2">
+<b>URL:</b> http://themes.googleusercontent.com/static/fonts/opensans/v6/MTP_ySUJH_bn48VBG8sNSnhCUOGz7vYGh680lGh-uXM.woff<br>
+<b>Host:</b> themes.googleusercontent.com<br>
+<b>IP:</b> 74.125.228.76<br>
+<b>Location:</b> Google<br>
+<b>Error/Status Code:</b> 200<br>
+<b>Client Port:</b> 50728<br>
+<b>Start Offset:</b> 0.753 s<br>
+<b>Initial Connection:</b> 41 ms<br>
+<b>Time to First Byte:</b> 208 ms<br>
+<b>Content Download:</b> 99 ms<br>
+<b>Bytes In (downloaded):</b> 22.5 KB<br>
+<b>Bytes Out (uploaded):</b> 0.5 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+GET /static/fonts/opensans/v6/MTP_ySUJH_bn48VBG8sNSnhCUOGz7vYGh680lGh-uXM.woff HTTP/1.1<br>
+Host: themes.googleusercontent.com<br>
+User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:23.0) Gecko/20100101 Firefox/23.0 PTST/133<br>
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8<br>
+Accept-Language: en-US,en;q=0.5<br>
+Accept-Encoding: gzip, deflate<br>
+Referer: http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600|Merriweather:300<br>
+Origin: http://wordpress.com<br>
+Connection: keep-alive<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+HTTP/1.1 200 OK<br>
+Content-Type: font/woff<br>
+Last-Modified: Mon, 02 Apr 2012 00:13:23 GMT<br>
+Date: Thu, 12 Sep 2013 08:40:58 GMT<br>
+Expires: Fri, 12 Sep 2014 08:40:58 GMT<br>
+Access-Control-Allow-Origin: *<br>
+X-Content-Type-Options: nosniff<br>
+Server: sffe<br>
+Content-Length: 22604<br>
+X-XSS-Protection: 1; mode=block<br>
+Cache-Control: public, max-age=31536000<br>
+Age: 367360<br>
+Alternate-Protocol: 80:quic<br>
+</p></div><h4><span class="a_request" id="request14" data-target-id="headers_14">+ Request 14: http://wordpress.com/home.logged-out/images/pic-c.jpg?1</span></h4><div class="header_details" id="headers_14"><p class="indented2">
+<b>URL:</b> http://wordpress.com/home.logged-out/images/pic-c.jpg?1<br>
+<b>Host:</b> wordpress.com<br>
+<b>IP:</b> 76.74.254.126<br>
+<b>Location:</b> San Antonio, TX<br>
+<b>Error/Status Code:</b> 200<br>
+<b>Client Port:</b> 50714<br>
+<b>Start Offset:</b> 1.091 s<br>
+<b>Time to First Byte:</b> 85 ms<br>
+<b>Content Download:</b> 352 ms<br>
+<b>Bytes In (downloaded):</b> 111.8 KB<br>
+<b>Bytes Out (uploaded):</b> 0.4 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+GET /home.logged-out/images/pic-c.jpg?1 HTTP/1.1<br>
+Host: wordpress.com<br>
+User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:23.0) Gecko/20100101 Firefox/23.0 PTST/133<br>
+Accept: image/png,image/*;q=0.8,*/*;q=0.5<br>
+Accept-Language: en-US,en;q=0.5<br>
+Accept-Encoding: gzip, deflate<br>
+Referer: http://wordpress.com/home.logged-out/css/style.css?20130904<br>
+Connection: keep-alive<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+HTTP/1.1 200 OK<br>
+Server: nginx<br>
+Date: Mon, 16 Sep 2013 14:43:38 GMT<br>
+Content-Type: image/jpeg<br>
+Content-Length: 114196<br>
+Connection: keep-alive<br>
+Last-Modified: Wed, 14 Aug 2013 06:44:45 GMT<br>
+Accept-Ranges: bytes<br>
+Expires: Tue, 16 Sep 2014 14:43:38 GMT<br>
+Cache-Control: max-age=31536000<br>
+</p></div><h4><span class="a_request" id="request15" data-target-id="headers_15">+ Request 15: http://pixel.quantserve.com/pixel/p-18-mFEk4J448M.gif?labels=%2Clanguage.en%2Ctype.wpcom%2Cwp.homepage</span></h4><div class="header_details" id="headers_15"><p class="indented2">
+<b>URL:</b> http://pixel.quantserve.com/pixel/p-18-mFEk4J448M.gif?labels=%2Clanguage.en%2Ctype.wpcom%2Cwp.homepage<br>
+<b>Host:</b> pixel.quantserve.com<br>
+<b>IP:</b> 64.94.107.64<br>
+<b>Location:</b> Atlanta, GA<br>
+<b>Error/Status Code:</b> 200<br>
+<b>Client Port:</b> 50736<br>
+<b>Start Offset:</b> 1.223 s<br>
+<b>DNS Lookup:</b> 31 ms<br>
+<b>Initial Connection:</b> 31 ms<br>
+<b>Time to First Byte:</b> 34 ms<br>
+<b>Bytes In (downloaded):</b> 0.5 KB<br>
+<b>Bytes Out (uploaded):</b> 0.4 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+GET /pixel/p-18-mFEk4J448M.gif?labels=%2Clanguage.en%2Ctype.wpcom%2Cwp.homepage HTTP/1.1<br>
+Host: pixel.quantserve.com<br>
+User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:23.0) Gecko/20100101 Firefox/23.0 PTST/133<br>
+Accept: image/png,image/*;q=0.8,*/*;q=0.5<br>
+Accept-Language: en-US,en;q=0.5<br>
+Accept-Encoding: gzip, deflate<br>
+Referer: http://wordpress.com/<br>
+Connection: keep-alive<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+HTTP/1.1 200 OK<br>
+Connection: close<br>
+Content-Type: image/gif<br>
+Set-Cookie: mc=5237191b-059c7-6a82d-0ab84; expires=Wed, 18-Mar-2015 14:43:39 GMT; path=/; domain=.quantserve.com<br>
+P3P: CP=&quot;NOI DSP COR NID CURa ADMa DEVa PSAo PSDo OUR SAMa IND COM NAV&quot;<br>
+Cache-Control: private, no-cache, no-store, proxy-revalidate<br>
+Pragma: no-cache<br>
+Expires: Fri, 04 Aug 1978 12:00:00 GMT<br>
+Content-Length: 35<br>
+Date: Mon, 16 Sep 2013 14:43:39 GMT<br>
+Server: QS<br>
+</p></div><h4><span class="a_request" id="request16" data-target-id="headers_16">+ Request 16: http://stats.wordpress.com/g.gif?host=wordpress.com&amp;rand=0.34289189912718365&amp;blog=1&amp;v=wpcom&amp;tz=0&amp;user_id=0&amp;subd=wordpress.com</span></h4><div class="header_details" id="headers_16"><p class="indented2">
+<b>URL:</b> http://stats.wordpress.com/g.gif?host=wordpress.com&rand=0.34289189912718365&blog=1&v=wpcom&tz=0&user_id=0&subd=wordpress.com<br>
+<b>Host:</b> stats.wordpress.com<br>
+<b>IP:</b> 72.233.111.159<br>
+<b>Location:</b> Plano, TX<br>
+<b>Error/Status Code:</b> 200<br>
+<b>Client Port:</b> 50733<br>
+<b>Start Offset:</b> 1.233 s<br>
+<b>DNS Lookup:</b> 52 ms<br>
+<b>Initial Connection:</b> 72 ms<br>
+<b>Time to First Byte:</b> 81 ms<br>
+<b>Bytes In (downloaded):</b> 0.3 KB<br>
+<b>Bytes Out (uploaded):</b> 0.4 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+GET /g.gif?host=wordpress.com&amp;rand=0.34289189912718365&amp;blog=1&amp;v=wpcom&amp;tz=0&amp;user_id=0&amp;subd=wordpress.com HTTP/1.1<br>
+Host: stats.wordpress.com<br>
+User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:23.0) Gecko/20100101 Firefox/23.0 PTST/133<br>
+Accept: image/png,image/*;q=0.8,*/*;q=0.5<br>
+Accept-Language: en-US,en;q=0.5<br>
+Accept-Encoding: gzip, deflate<br>
+Referer: http://wordpress.com/<br>
+Connection: keep-alive<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+HTTP/1.1 200 OK<br>
+Server: nginx<br>
+Date: Mon, 16 Sep 2013 14:43:39 GMT<br>
+Content-Type: image/gif<br>
+Content-Length: 50<br>
+Connection: keep-alive<br>
+Last-Modified: Mon, 19 Feb 2007 20:12:37 GMT<br>
+ETag: &quot;1c0f4d-32-429d9f252d740&quot;<br>
+Accept-Ranges: bytes<br>
+</p></div><h4><span class="a_request" id="request17" data-target-id="headers_17">+ Request 17: http://google-analytics.com/ga.js</span></h4><div class="header_details" id="headers_17"><p class="indented2">
+<b>URL:</b> http://google-analytics.com/ga.js<br>
+<b>Host:</b> google-analytics.com<br>
+<b>IP:</b> 74.125.228.81<br>
+<b>Location:</b> Mountain View, CA<br>
+<b>Error/Status Code:</b> 200<br>
+<b>Client Port:</b> 50737<br>
+<b>Start Offset:</b> 1.260 s<br>
+<b>DNS Lookup:</b> 33 ms<br>
+<b>Initial Connection:</b> 33 ms<br>
+<b>Time to First Byte:</b> 39 ms<br>
+<b>Content Download:</b> 35 ms<br>
+<b>Bytes In (downloaded):</b> 15.6 KB<br>
+<b>Bytes Out (uploaded):</b> 0.3 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+GET /ga.js HTTP/1.1<br>
+Host: google-analytics.com<br>
+User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:23.0) Gecko/20100101 Firefox/23.0 PTST/133<br>
+Accept: */*<br>
+Accept-Language: en-US,en;q=0.5<br>
+Accept-Encoding: gzip, deflate<br>
+Referer: http://wordpress.com/<br>
+Connection: keep-alive<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+HTTP/1.1 200 OK<br>
+Date: Mon, 16 Sep 2013 08:43:20 GMT<br>
+Expires: Mon, 16 Sep 2013 20:43:20 GMT<br>
+Last-Modified: Fri, 02 Aug 2013 23:34:37 GMT<br>
+X-Content-Type-Options: nosniff<br>
+Content-Type: text/javascript<br>
+Vary: Accept-Encoding<br>
+Content-Encoding: gzip<br>
+Server: Golfe2<br>
+Content-Length: 15654<br>
+Age: 21619<br>
+Cache-Control: public, max-age=43200<br>
+Alternate-Protocol: 80:quic<br>
+</p></div><h4><span class="a_request" id="request18" data-target-id="headers_18">+ Request 18: http://i.kissmetrics.com/i.js</span></h4><div class="header_details" id="headers_18"><p class="indented2">
+<b>URL:</b> http://i.kissmetrics.com/i.js<br>
+<b>Host:</b> i.kissmetrics.com<br>
+<b>IP:</b> 50.19.84.40<br>
+<b>Location:</b> Ashburn, VA<br>
+<b>Error/Status Code:</b> 200<br>
+<b>Client Port:</b> 50739<br>
+<b>Start Offset:</b> 1.286 s<br>
+<b>DNS Lookup:</b> 26 ms<br>
+<b>Initial Connection:</b> 33 ms<br>
+<b>Time to First Byte:</b> 40 ms<br>
+<b>Bytes In (downloaded):</b> 0.4 KB<br>
+<b>Bytes Out (uploaded):</b> 0.3 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+GET /i.js HTTP/1.1<br>
+Host: i.kissmetrics.com<br>
+User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:23.0) Gecko/20100101 Firefox/23.0 PTST/133<br>
+Accept: */*<br>
+Accept-Language: en-US,en;q=0.5<br>
+Accept-Encoding: gzip, deflate<br>
+Referer: http://wordpress.com/<br>
+Connection: keep-alive<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+HTTP/1.1 200 OK<br>
+Cache-Control: max-age=2592000, public<br>
+Content-Type: application/x-javascript<br>
+Date: Mon, 16 Sep 2013 14:36:21 GMT<br>
+Expires: Wed, 16 Oct 2013 14:36:21 GMT<br>
+Last-Modified: Mon, 16 Sep 2013 13:36:21 GMT<br>
+P3P: CP=&quot;NOI CURa ADMa DEVa TAIa OUR IND UNI NAV INT&quot;<br>
+Server: nginx<br>
+X-whom: id3.kissmetrics.com<br>
+Content-Length: 39<br>
+Connection: keep-alive<br>
+</p></div><h4><span class="a_request" id="request19" data-target-id="headers_19">+ Request 19: http://doug1izaerwt3.cloudfront.net/39e3e583aca28fab00c85ad9019b51d9f073fc6d.1.js</span></h4><div class="header_details" id="headers_19"><p class="indented2">
+<b>URL:</b> http://doug1izaerwt3.cloudfront.net/39e3e583aca28fab00c85ad9019b51d9f073fc6d.1.js<br>
+<b>Host:</b> doug1izaerwt3.cloudfront.net<br>
+<b>IP:</b> 54.230.103.175<br>
+<b>Location:</b> Amazon CloudFront<br>
+<b>Error/Status Code:</b> 200<br>
+<b>Client Port:</b> 50742<br>
+<b>Start Offset:</b> 1.320 s<br>
+<b>DNS Lookup:</b> 31 ms<br>
+<b>Initial Connection:</b> 35 ms<br>
+<b>Time to First Byte:</b> 42 ms<br>
+<b>Content Download:</b> 60 ms<br>
+<b>Bytes In (downloaded):</b> 20.8 KB<br>
+<b>Bytes Out (uploaded):</b> 0.3 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+GET /39e3e583aca28fab00c85ad9019b51d9f073fc6d.1.js HTTP/1.1<br>
+Host: doug1izaerwt3.cloudfront.net<br>
+User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:23.0) Gecko/20100101 Firefox/23.0 PTST/133<br>
+Accept: */*<br>
+Accept-Language: en-US,en;q=0.5<br>
+Accept-Encoding: gzip, deflate<br>
+Referer: http://wordpress.com/<br>
+Connection: keep-alive<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+HTTP/1.1 200 OK<br>
+Content-Type: application/x-javascript<br>
+Content-Length: 20804<br>
+Connection: keep-alive<br>
+Date: Mon, 29 Jul 2013 23:52:18 GMT<br>
+Cache-Control: max-age=60<br>
+Last-Modified: Mon, 29 Jul 2013 23:04:13 GMT<br>
+ETag: &quot;2a0e5944dee6652d2ad89a7cee810975&quot;<br>
+Accept-Ranges: bytes<br>
+Server: AmazonS3<br>
+Age: 362<br>
+Via: 1.0 56f62b31efe8df7139e0feefd13c918a.cloudfront.net (CloudFront)<br>
+X-Cache: Hit from cloudfront<br>
+X-Amz-Cf-Id: UXDlZw0e9dMfFQLRycmfCyWRb6uDhGdl4Ghc6MHgCdyWAjTZbykE5g==<br>
+</p></div><h4><span class="a_request" id="request20" data-target-id="headers_20">+ Request 20: http://www.google-analytics.com/__utm.gif?utmwv=5.4.4&amp;utms=1&amp;utmn=858714781&amp;utmhn=wordpress.com&amp;utmcs=UTF-8&amp;utmsr=1920x1200&amp;utmvp=991x667&amp;utmsc=24-bit&amp;utmul=en-us&amp;utmje=0&amp;utmfl=11.8%20r800&amp;utmdt=WordPress.com%20-%20Get%20a%20Free%20Blog%20Here&amp;utmhid=2023775255&amp;utmr=-&amp;utmp=%2F&amp;utmht=1379342615353&amp;utmac=UA-10673494-4&amp;utmcc=__utma%3D214977736.1479568976.1379342615.1379342615.1379342615.1%3B%2B__utmz%3D214977736.1379342615.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&amp;utmu=qBAgAAAAAAAAAAAAAAAAAAB~</span></h4><div class="header_details" id="headers_20"><p class="indented2">
+<b>URL:</b> http://www.google-analytics.com/__utm.gif?utmwv=5.4.4&utms=1&utmn=858714781&utmhn=wordpress.com&utmcs=UTF-8&utmsr=1920x1200&utmvp=991x667&utmsc=24-bit&utmul=en-us&utmje=0&utmfl=11.8%20r800&utmdt=WordPress.com%20-%20Get%20a%20Free%20Blog%20Here&utmhid=2023775255&utmr=-&utmp=%2F&utmht=1379342615353&utmac=UA-10673494-4&utmcc=__utma%3D214977736.1479568976.1379342615.1379342615.1379342615.1%3B%2B__utmz%3D214977736.1379342615.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&utmu=qBAgAAAAAAAAAAAAAAAAAAB~<br>
+<b>Host:</b> www.google-analytics.com<br>
+<b>IP:</b> 173.194.43.39<br>
+<b>Location:</b> Google<br>
+<b>Error/Status Code:</b> 200<br>
+<b>Client Port:</b> 50743<br>
+<b>Start Offset:</b> 1.451 s<br>
+<b>DNS Lookup:</b> 26 ms<br>
+<b>Initial Connection:</b> 39 ms<br>
+<b>Time to First Byte:</b> 45 ms<br>
+<b>Bytes In (downloaded):</b> 0.4 KB<br>
+<b>Bytes Out (uploaded):</b> 0.8 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+GET /__utm.gif?utmwv=5.4.4&amp;utms=1&amp;utmn=858714781&amp;utmhn=wordpress.com&amp;utmcs=UTF-8&amp;utmsr=1920x1200&amp;utmvp=991x667&amp;utmsc=24-bit&amp;utmul=en-us&amp;utmje=0&amp;utmfl=11.8%20r800&amp;utmdt=WordPress.com%20-%20Get%20a%20Free%20Blog%20Here&amp;utmhid=2023775255&amp;utmr=-&amp;utmp=%2F&amp;utmht=1379342615353&amp;utmac=UA-10673494-4&amp;utmcc=__utma%3D214977736.1479568976.1379342615.1379342615.1379342615.1%3B%2B__utmz%3D214977736.1379342615.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&amp;utmu=qBAgAAAAAAAAAAAAAAAAAAB~ HTTP/1.1<br>
+Host: www.google-analytics.com<br>
+User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:23.0) Gecko/20100101 Firefox/23.0 PTST/133<br>
+Accept: image/png,image/*;q=0.8,*/*;q=0.5<br>
+Accept-Language: en-US,en;q=0.5<br>
+Accept-Encoding: gzip, deflate<br>
+Referer: http://wordpress.com/<br>
+Connection: keep-alive<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+HTTP/1.1 200 OK<br>
+Pragma: no-cache<br>
+Expires: Wed, 19 Apr 2000 11:43:00 GMT<br>
+Last-Modified: Wed, 21 Jan 2004 19:51:30 GMT<br>
+X-Content-Type-Options: nosniff<br>
+Content-Type: image/gif<br>
+Date: Thu, 12 Sep 2013 18:29:59 GMT<br>
+Server: Golfe2<br>
+Content-Length: 35<br>
+Cache-Control: private, no-cache, no-cache=Set-Cookie, proxy-revalidate<br>
+Age: 332020<br>
+Alternate-Protocol: 80:quic<br>
+</p></div><h4><span class="a_request" id="request21" data-target-id="headers_21">+ Request 21: http://trk.kissmetrics.com/e?Viewed_Homepage%20%7C%20Language=en&amp;Viewed_Homepage%20%7C%20Homepage_Version_20130405=existing&amp;_n=Viewed_Homepage&amp;_k=39e3e583aca28fab00c85ad9019b51d9f073fc6d&amp;_p=3Hp1EKU5eqt6BEMfBckdqWIfMGc%3D&amp;_t=1379342616</span></h4><div class="header_details" id="headers_21"><p class="indented2">
+<b>URL:</b> http://trk.kissmetrics.com/e?Viewed_Homepage%20%7C%20Language=en&Viewed_Homepage%20%7C%20Homepage_Version_20130405=existing&_n=Viewed_Homepage&_k=39e3e583aca28fab00c85ad9019b51d9f073fc6d&_p=3Hp1EKU5eqt6BEMfBckdqWIfMGc%3D&_t=1379342616<br>
+<b>Host:</b> trk.kissmetrics.com<br>
+<b>IP:</b> 23.21.108.99<br>
+<b>Location:</b> Ashburn, VA<br>
+<b>Error/Status Code:</b> 200<br>
+<b>Client Port:</b> 50746<br>
+<b>Start Offset:</b> 2.492 s<br>
+<b>DNS Lookup:</b> 26 ms<br>
+<b>Initial Connection:</b> 31 ms<br>
+<b>Time to First Byte:</b> 41 ms<br>
+<b>Bytes In (downloaded):</b> 0.3 KB<br>
+<b>Bytes Out (uploaded):</b> 0.5 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+GET /e?Viewed_Homepage%20%7C%20Language=en&amp;Viewed_Homepage%20%7C%20Homepage_Version_20130405=existing&amp;_n=Viewed_Homepage&amp;_k=39e3e583aca28fab00c85ad9019b51d9f073fc6d&amp;_p=3Hp1EKU5eqt6BEMfBckdqWIfMGc%3D&amp;_t=1379342616 HTTP/1.1<br>
+Host: trk.kissmetrics.com<br>
+User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:23.0) Gecko/20100101 Firefox/23.0 PTST/133<br>
+Accept: image/png,image/*;q=0.8,*/*;q=0.5<br>
+Accept-Language: en-US,en;q=0.5<br>
+Accept-Encoding: gzip, deflate<br>
+Referer: http://wordpress.com/<br>
+Connection: keep-alive<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+HTTP/1.1 200 OK<br>
+Cache-Control: no-cache<br>
+Content-Type: image/gif<br>
+Date: Mon, 16 Sep 2013 14:43:40 GMT<br>
+Expires: Mon, 16 Sep 2013 14:43:39 GMT<br>
+Last-Modified: Mon, 28 Sep 1970 06:00:00 GMT<br>
+Server: nginx<br>
+Content-Length: 43<br>
+Connection: keep-alive<br>
+</p></div></div>
+            </div>
+
+                        <div style="width:100%;float:none;clear:both;"></div>
+
+            </div></div>            </div>
+        </div>
+    </div>
+</div>
+
+   
+    <table id="feeds"><tr><th>Recent Industry Blog Posts</th><th>Recent Discussions</th></tr><tr><td><ul><li><a title="Zoompf" href="http://zoompf.com/blog/2013/10/3-must-do-tips-to-get-your-e-commerce-site-ready-for-black-friday">3 Must-Dos for the E-Commerce Web Team Before Black Friday</a></li><li><a title="Strangeloop Networks" href="http://www.webperformancetoday.com/2013/10/02/iphone-speed-test-findings-faster-processor-doesnt-equal-huge-performance-boost/">iPhone speed test findings: Faster processor doesn’t equal huge performance boost</a></li><li><a title="Zoompf" href="http://zoompf.com/blog/2013/10/maximizing-search-rank-by-optimizing-your-ttfb">Improving Search Rank by Optimizing your Time to First Byte</a></li><li><a title="Ilya Grigorik" href="http://feeds.igvita.com/~r/igvita/~3/-ehrQc7PJyQ/">Retrospective: High Performance Browser Networking</a></li><li><a title="Zoompf" href="http://zoompf.com/blog/2013/09/top-9-us-news-sites-race-for-fastest-site">Top 9 US News Sites Race for Fastest Site</a></li><li id="show_more_feeds_1"><a href="javascript:void(o)" onclick="showFeeds(1)">more...</a></li><li class="morefeeds" ><div id="more_feeds_1" class="hidden"><ul><li><a title="Stoyan Stefanov" href="http://www.phpied.com/nyc-bound/">NYC.bind(me)</a></li><li><a title="Strangeloop Networks" href="http://www.webperformancetoday.com/2013/09/19/sneak-peek-this-is-your-brain-on-mobile/">Sneak peek: This is your brain on the mobile web</a></li><li><a title="Guy Podjarny" href="http://www.guypo.com/conferences/walking-on-the-edges/">Walking on the Edge(s)</a></li><li><a title="Gilly Barr" href="http://www.debuggerstepthrough.com/2013/09/prefetching-dns-lookups.html">Prefetching dns lookups</a></li><li><a title="Stoyan Stefanov" href="http://www.phpied.com/server-side-react-with-php-part-2/">Server-side React with PHP – part 2</a></li><li><a title="Stoyan Stefanov" href="http://www.phpied.com/borrowing-typography-tricks-from-the-masters/">Borrowing typography tricks from the masters</a></li><li><a title="Guy Podjarny" href="http://www.guypo.com/uncategorized/responsive-images-meetup-a-subjective-summary/">Responsive Images Meetup – A Subjective Summary</a></li><li><a title="Stoyan Stefanov" href="http://www.phpied.com/server-side-react-with-php/">Server-side React with PHP</a></li><li><a title="Stoyan Stefanov" href="http://www.phpied.com/installing-v8js-for-php-on-a-mac/">Installing v8js for PHP on a Mac</a></li><li><a title="Strangeloop Networks" href="http://www.webperformancetoday.com/2013/09/11/the-slow-web-movement/">The Slow Web: Why fast is important… and why it isn’t</a></li><li><a title="Stoyan Stefanov" href="http://www.phpied.com/reactive-table/">Reactive table</a></li><li><a title="Aaron Peters" href="http://www.aaronpeters.nl/blog/velocity-nyc-2013-raffle">Win a free Velocity NYC conference pass!</a></li></ul></div></li></ul></td><td><ul><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12584">FTTB problems</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12581">Site vs File (Browser Caching) Different? Why?</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12580">Test not found when trying to view tests</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12579">Apache subfolder settings</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12578">RoseHosting.com VPS specials - 25% OFF | Fully Managed | FREE DirectAdmin</a></li><li id="show_more_feeds_2"><a href="javascript:void(o)" onclick="showFeeds(2)">more...</a></li><li class="morefeeds" ><div id="more_feeds_2" class="hidden"><ul><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12577">&quot;The test completed but there were no successful results.&quot; with maxymiser</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12576">CDN detection control file</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12575">Help with my test results</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12573">favicon</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12572">fancybox 404 errors</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12571">Chrome browser window closes automaticaly on starting test</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12570">Testlocation Germany over 152 Pending Tests</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12569">Video tests</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12568">DNS Times from XML data from wpt_batch.py</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12567">cookie less domain need help</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12566">no cache control for file</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12565">SPNego Auth</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12563">Filmstrip API</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12562">Help needed with improvements from Test Results!</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12561">CSV date format - no leading zeros</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12559">Pagespeed and WPT results - Rule set Matrix?</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12558">DGvertTech LLC</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12557">WPT not detecting CDN being used</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12556">Awful Results - Please Help</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12554">Setting JSON style cookie</a></li><li><a title="WebPagetest Forums" href="http://www.webpagetest.org/forums/showthread.php?tid=12553">Not getting results when hitting a device</a></li></ul></div></li></ul></td></tr></table>
+    <div id="sponsor_header">WebPagetest Partners</div><div id="links"><table class="links"><tr><td ><a href="http://edgedirector.com/" title="edgedirector.com"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors1.png?v=2); background-position: 0px -160px;"></div></a></td><td ><a href="http://www.squixa.com/" title="Squixa MultiCDN and Front End Optimisation"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors24.png?v=5); background-position: 0px -440px;"></div></a></td><td ><a href="http://www.netdna.com/" title="NetDNA"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors2.png?v=3); background-position: 0px -320px;"></div></a></td><td ><a href="http://www.mysitespeed.com/" title="Mysitespeed.com"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors2.png?v=3); background-position: 0px -280px;"></div></a></td><td ><a href="http://www.exceda.com/landing/" title="Exceda"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors3.png?v=1); background-position: 0px -160px;"></div></a></td></tr></table><table class="links"><tr><td ><a href="http://www.icomcept.de/" title="iCOMcept"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors2.png?v=3); background-position: 0px -80px;"></div></a></td><td ><a href="http://www.efficens-software.com/solution/web-performance-optimization/" title="Efficens Software - Your Israel based partner for Web Performance"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors3.png?v=1); background-position: 0px -360px;"></div></a></td><td ><a href="http://www.measureworks.nl/" title="MeasureWorks"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors3.png?v=1); background-position: 0px -120px;"></div></a></td><td ><a href="http://www.bulletproof.net.au/" title="Bulletproof Mission Critical Hosting"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors1.png?v=2); background-position: 0px -200px;"></div></a></td><td ><a href="http://www.godaddy.com/?isc=WPTlogo" title="World's #1 ICANN-accredited domain registrar | Go Daddy"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors4.png?v=7); background-position: 0px -80px;"></div></a></td></tr></table><table class="links"><tr><td ><a href="http://www.rentavault.net/" title="Rentavault"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors2.png?v=3); background-position: 0px -240px;"></div></a></td><td ><a href="http://www.gutefrage.net/" title="Gute Fragen - hilfreiche Antworten - die Ratgeber Community gutefrage.net"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors4.png?v=7); background-position: 0px -200px;"></div></a></td><td ><a href="http://www.daum.net/" title="DAUM Communications"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors3.png?v=1); background-position: 0px -280px;"></div></a></td><td ><a href="http://newrelic.com/" title="New Relic"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors2.png?v=3); background-position: 0px -160px;"></div></a></td><td ><a href="http://www.tid.es/en/" title="Telef&oacute;nica Digital"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors24.png?v=5); background-position: 0px -160px;"></div></a></td></tr></table><table class="links"><tr><td ><a href="http://dev.aol.com/" title="AOL"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors1.png?v=2); background-position: 0px -280px;"></div></a></td><td ><a href="http://www.apicasystem.com/" title="Apica Inc"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors24.png?v=5); background-position: 0px -240px;"></div></a></td><td ><a href="http://www.duplika.com/?utm_source=webpagetest&utm_medium=logo&utm_campaign=speed" title="duplika Internet Solutions"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors2.png?v=3); background-position: 0px -200px;"></div></a></td><td ><a href="http://www.dynatrace.com/" title="dynaTrace Software"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors1.png?v=2); background-position: 0px -320px;"></div></a></td><td ><a href="http://www.akamai.com/" title="Akamai"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors3.png?v=1); background-position: 0px -80px;"></div></a></td></tr></table><table class="links"><tr><td ><a href="http://www.dotcom-monitor.com/?se=574612167f2948219c65b6ca3120f44f" title="Website and Application Performance Monitoring by Dotcom-Monitor.com"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors3.png?v=1); background-position: 0px -200px;"></div></a></td><td ><a href="http://wpengine.com/" title="WP Engine"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors1.png?v=2); background-position: 0px -120px;"></div></a></td><td ><a href="http://www.interhost.co.il/" title="interhost.co.il - Israel Web Hosting Services"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors24.png?v=5); background-position: 0px -480px;"></div></a></td><td ><a href="http://www.hostinginnederland.nl/" title="Hosting in Nederland - Vind de beste hosting voor je website"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors2.png?v=3); background-position: 0px -40px;"></div></a></td><td ><a href="http://www.iispeed.com/" title="Google PageSpeed optimization for Microsoft IIS"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors4.png?v=7); background-position: 0px -240px;"></div></a></td></tr></table><table class="links"><tr><td ><a href="http://www.maxcdn.com/" title="MaxCDN Content Delivery Network"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors3.png?v=1); background-position: 0px 0px;"></div></a></td><td ><a href="http://www.cisin.com/" title="CIS :: One-Stop Outsourcing Services, Since 2003! | We do IT better"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors24.png?v=5); background-position: 0px -400px;"></div></a></td><td ><a href="http://www.watchmouse.com/" title="WatchMouse website performance monitoring"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors3.png?v=1); background-position: 0px -40px;"></div></a></td><td ><a href="http://www.limelight.com/" title="Limelight Networks"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors24.png?v=5); background-position: 0px -280px;"></div></a></td><td ><a href="http://www.webogroup.com/?utm_source=webpagetest&utm_medium=logo&utm_campaign=webo" title="WEBO Software. Website acceleration and monitoring solutions"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors3.png?v=1); background-position: 0px -240px;"></div></a></td></tr></table><table class="links"><tr><td ><a href="http://www.ip-label.co.uk/" title="ip-label"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors1.png?v=2); background-position: 0px -240px;"></div></a></td><td ><a href="http://www.kbsd.com/" title="*KBSD Switzerland*"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors1.png?v=2); background-position: 0px -80px;"></div></a></td><td ><a href="http://www.turbobytes.com/" title="Faster content delivery - Turbobytes"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors1.png?v=2); background-position: 0px -40px;"></div></a></td><td ><a href="http://www.globalis-ms.com/" title="GLOBALIS media systems"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors24.png?v=5); background-position: 0px -40px;"></div></a></td><td ><a href="http://www.cloudshark.org" title="CloudShark"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors2.png?v=3); background-position: 0px -120px;"></div></a></td></tr></table><table class="links"><tr><td ><a href="http://yhost.ro" title="Y Host :: Web Hosting in Romania"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors4.png?v=7); background-position: 0px -120px;"></div></a></td><td ><a href="http://www.neustar.biz/enterprise/web-performance" title="Neustar"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors24.png?v=5); background-position: 0px 0px;"></div></a></td><td ><a href="http://www.neotys.com/" title="Neotys Load &amp; Performance Testing"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors24.png?v=5); background-position: 0px -360px;"></div></a></td><td ><a href="http://www.telerik.com/" title="Telerik - making software development easier and more enjoyable"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors4.png?v=7); background-position: 0px -160px;"></div></a></td><td ><a href="http://key-performance.eu/" title="Key Performance"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors24.png?v=5); background-position: 0px -120px;"></div></a></td></tr></table><table class="links"><tr><td ><a href="http://www.radware.com/Products/ApplicationDelivery/FastView/default.aspx" title="Radware - Smart Network. Smart Business."><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors2.png?v=3); background-position: 0px 0px;"></div></a></td><td ><a href="http://admo.net/?webpagetest.org" title="Admo.net WebHosting"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors1.png?v=2); background-position: 0px -360px;"></div></a></td><td ><a href="http://www.fasterize.com/" title="Fasterize"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors3.png?v=1); background-position: 0px -320px;"></div></a></td><td ><a href="http://www.trademe.co.nz/" title="Trade Me"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors4.png?v=7); background-position: 0px 0px;"></div></a></td><td ><a href="http://www.catchpoint.com/lp/wp_website_monitoring_trial.html" title="Catchpoint Systems"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors2.png?v=3); background-position: 0px -360px;"></div></a></td></tr></table><table class="links"><tr><td ><a href="http://pagerain.com/" title="PageRain - The Simplest CDN"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors24.png?v=5); background-position: 0px -320px;"></div></a></td><td></td><td ><a href="http://www.rusonyx.ru/" title="Rusonyx"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors24.png?v=5); background-position: 0px -200px;"></div></a></td><td></td><td ><a href="http://www.psw.net/" title="PSW GROUP"><div class="sponsor_logo" style="background-image: url(http://cdn.webpagetest.org/images/sponsors/sponsors1.png?v=2); background-position: 0px 0px;"></div></a></td></tr></table></div>    <div class="cleared"></div>
+    
+    <script type="text/javascript" src="http://cdn.webpagetest.org/js/site.js?v=30"></script>
+<script>
+wptJSVer = '30';
+wptBrowser = 'Wget 1';
+function getCookie(c_name) {
+    var i,x,y,ARRcookies=document.cookie.split(";");
+    for (i=0;i<ARRcookies.length;i++) {
+      x=ARRcookies[i].substr(0,ARRcookies[i].indexOf("="));
+      y=ARRcookies[i].substr(ARRcookies[i].indexOf("=")+1);
+      x=x.replace(/^\s+|\s+$/g,"");
+      if (x==c_name)
+        return unescape(y);
+    }
+}
+
+function setCookie(c_name,value,exdays) {
+    var exdate=new Date();
+    exdate.setDate(exdate.getDate() + exdays);
+    var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
+    document.cookie=c_name + "=" + c_value;
+}
+
+// see if the browser we are in supports resource timing
+function WptExperiment() {
+    try {
+        if (window['performance'] != undefined &&
+            (window.performance.getEntriesByType ||
+             window.performance.webkitGetEntriesByType)) {
+            if (window.performance.getEntriesByType)
+                var requests = window.performance.getEntriesByType("resource");
+            else
+                var requests = window.performance.webkitGetEntriesByType("resource");
+            var detected = false;
+            var data = {'browser': wptBrowser,
+                        'jsCached': false,
+                        'cookiePresent': false,
+                        'existingSession' : false,
+                        'localStoragePresent' : false,
+                        'jsTime': 0};
+            for (i = 0; i < requests.length; i++) {
+                var url = requests[i].name;
+                if (requests[i].name.indexOf('site.js') != -1) {
+                    detected = true;
+                    if (requests[i].responseStart == 0 ||
+                        requests[i].responseStart == requests[i].requestStart)
+                        data.jsCached = true;
+                    data.jsTime = Math.round(requests[i].duration);
+                }
+            }
+            
+            if (getCookie('exptVer') == wptJSVer) data.cookiePresent = true;
+            setCookie('exptVer', wptJSVer, 365);
+            if (getCookie('exptSession') == wptJSVer) data.existingSession = true;
+            setCookie('exptSession', wptJSVer, null);
+            if (localStorage["exptVer"] == wptJSVer) data.localStoragePresent = true;
+            localStorage["exptVer"] = wptJSVer;
+            if (detected) {
+                console.log(JSON.stringify(data));
+                var debug_str = 'site.js loaded from ';
+                if (data.jsCached)
+                  debug_str += 'cache';
+                else
+                  debug_str += 'network';
+                debug_str += ' in ' + data.jsTime + ' milliseconds';
+                if (data.existingSession)
+                  debug_str += ' (Existing Session)';
+                else
+                  debug_str += ' (New Session)';
+                $("#experiment-timing").html(debug_str);
+                var xhr = new XMLHttpRequest();
+                xhr.open('POST', '/experiment/data.php', true);
+                xhr.send(JSON.stringify(data));
+            }
+        }
+    } catch(e){
+    }
+};
+
+window.addEventListener('load', WptExperiment, false);
+</script>
+    <script type="text/javascript">
+        function showFeeds(column)
+        {
+            var label = document.getElementById("show_more_feeds_" + column);
+            label.parentNode.removeChild( label );
+            
+            document.getElementById("more_feeds_" + column).className = "";
+            return false;
+        }
+
+        if (performance['measure'])
+          performance.measure('Content Processing', 'aft.Site Header');
+    </script>
+    
+<script type="text/javascript">
+(function(a,b,c){function d(){var a=b.createElement(c),d=b.getElementsByTagName(c)[0];a.async=a.src="http://s2.cdnplanet.com/static/rum/rum.js",d.parentNode.insertBefore(a,d)}if(a.location.protocol=="https:")return;a.addEventListener&&a.addEventListener("load",d,!1)})(window,document,"script")
+</script>
+<img height="1" width="1" style="border-style:none;" alt="" src="http://www.googleadservices.com/pagead/conversion/1049562605/?value=0&amp;label=-neBCNO9wwMQ7Zu89AM&amp;guid=ON&amp;script=0"/>    <script type="text/javascript">if(!NREUMQ.f){NREUMQ.f=function(){NREUMQ.push(["load",new Date().getTime()]);var e=document.createElement("script");e.type="text/javascript";e.src=(("http:"===document.location.protocol)?"http:":"https:")+"//"+"js-agent.newrelic.com/nr-100.js";document.body.appendChild(e);if(NREUMQ.a)NREUMQ.a();};NREUMQ.a=window.onload;window.onload=NREUMQ.f;};NREUMQ.push(["nrfj","beacon-1.newrelic.com","5b0327a758","2035125","NFBXZUNRW0ADAkRbCQ0aYENYH1FWFgBZXhVNRV1B",0,46,new Date().getTime(),"","","","",""]);</script>    
+    <div id="experiment-timing" style="color: #77A;"></div>        </div>
+
+        <script type="text/javascript">
+        function expandRequest(targetNode) {
+          if (targetNode.length) {
+            var div_to_expand = $('#' + targetNode.attr('data-target-id'));
+
+            if (div_to_expand.is(":visible")) {
+                div_to_expand.hide();
+                targetNode.html('+' + targetNode.html().substring(1));
+            } else {
+                div_to_expand.show();
+                targetNode.html('-' + targetNode.html().substring(1));
+            }
+          }
+        }
+
+        $(document).ready(function() { $("#tableDetails").tablesorter({
+            headers: { 3: { sorter:'currency' } ,
+                       4: { sorter:'currency' } ,
+                       5: { sorter:'currency' } ,
+                       6: { sorter:'currency' } ,
+                       7: { sorter:'currency' } ,
+                       8: { sorter:'currency' } ,
+                       9: { sorter:'currency' }
+                     }
+        }); } );
+
+        $('.a_request').click(function () {
+            expandRequest($(this));
+        });
+
+        function expandAll() {
+          $(".header_details").each(function(index) {
+            $(this).show();
+          });
+        }
+        
+        if (window.location.hash == '#all') {
+          expandAll();
+        } else
+          expandRequest($(window.location.hash));
+
+        var CloseRequestDialog = function(hash) {
+    hash.w.hide();
+    for (i=1;i<=wptRequestCount;i++) {
+        $("#request-overlay-" + i).removeClass("selected");
+        $("#request-overlay-" + i).addClass("transparent");
+    }
+    $('#radio1').attr('checked', 'checked');
+    $("#request-dialog-radio").buttonset('refresh');
+}
+
+// initialize the pop-up dialog        
+$('#request-dialog').jqm({overlay: 0, onHide: CloseRequestDialog})
+      .jqDrag('.jqDrag');
+$('input.jqmdX')
+    .hover( function(){ $(this).addClass('jqmdXFocus'); }, 
+            function(){ $(this).removeClass('jqmdXFocus'); })
+    .focus( function(){ this.hideFocus=true; $(this).addClass('jqmdXFocus'); })
+    .blur( function(){ $(this).removeClass('jqmdXFocus'); });
+    
+$("#request-dialog-radio").buttonset();
+$("#request-dialog-radio").change(function() {
+    var panel=$('#request-dialog-radio input[type=radio]:checked').val();
+    $("#dialog-contents div.dialog-tab-content").hide();
+    $("#" + panel).show();
+});
+
+var wptBodyRequest;
+
+// Test that a value is a valid duration.
+// Invalid durations include undefined and -1.
+function IsValidDuration(value) {
+    // Explicitly check the type.  Would you have guessed that Number(['9'])
+    // is 9?  We need to support strings because php makes it too easy to
+    // send a number as a string.  We need to support numbers like "123.4".
+    if (typeof value != 'number' && typeof value != 'string')
+        return false;
+
+    // Number('') is 0, but the empty string is not a valid duration.
+    if (value === '')
+        return false;
+
+    var num = Number(value);
+    return (!isNaN(num) && num !== -1);
+}
+
+function NumBytesAsDisplayString(numBytes) {
+    var numKb = numBytes / 1024.0;
+
+    // We display kilobytes with one decimal point.  If the value with that
+    // precision would be zero, display bytes instead.
+    if (numKb >= 0.1) {
+        return numKb.toFixed(1) + ' KB';
+    }
+    return numBytes + ' B';
+}
+
+function SelectRequest(request) {
+    $('#request-dialog').css('top', $("#request-overlay-" + request).position().top + 20);
+    $("#dialog-title").html('<a href="#request' + request + '">Request #' + request + '</a>');
+    var details='';
+    var requestHeaders='';
+    var responseHeaders='';
+    $("#response-body").html('');
+    $('#response-body-button').hide();
+    $("#response-image").html('');
+    $('#response-image-button').hide();
+    try {
+        if (wptBodyRequest !== undefined)
+            wptBodyRequest.abort();
+    } catch (err) {
+    }
+    if (wptRequestData[request - 1] !== undefined) {
+        var r = wptRequestData[request - 1];
+        if (r['full_url'] !== undefined) {
+            if (wptNoLinks) {
+                details += '<b>URL:</b> ' + r['full_url'] + '<br>';
+            } else {
+                details += '<b>URL:</b> <a href="' + r['full_url'] + '">' + r['full_url'] + '</a><br>';
+            }
+        }
+        if (r['initiator'] !== undefined && r['initiator'].length > 0) {
+            details += '<b>Loaded By:</b> ' + r['initiator'];
+            if (r['initiator_line'] !== undefined)
+                details += ':' + r['initiator_line'];
+            details += '<br>';
+        }
+        if (r['host'] !== undefined)
+            details += '<b>Host: </b>' + r['host'] + '<br>';
+        if (r['ip_addr'])
+            details += '<b>IP: </b>' + r['ip_addr'] + '<br>';
+        if (r['location'] !== undefined && r['location'].length)
+            details += '<b>Location: </b>' + r['location'] + '<br>';
+        if (r['responseCode'] !== undefined)
+            details += '<b>Error/Status Code: </b>' + r['responseCode'] + '<br>';
+        if (r['client_port'] !== undefined && r['client_port'])
+            details += '<b>Client Port: </b>' + r['client_port'] + '<br>';
+        if (r['load_start'] !== undefined)
+            details += '<b>Start Offset: </b>' + (r['load_start'] / 1000.0).toFixed(3) + ' s<br>';
+        if (IsValidDuration(r['dns_ms'])) {
+            details += '<b>DNS Lookup: </b>' + r['dns_ms'] + ' ms<br>';
+        } else if( r['dns_end'] !== undefined && r['dns_start'] !== undefined && r['dns_end'] > 0 ) {
+            var dnsTime = r['dns_end'] - r['dns_start'];
+            details += '<b>DNS Lookup: </b>' + dnsTime + ' ms<br>';
+        }
+        if (IsValidDuration(r['connect_ms'])) {
+            details += '<b>Initial Connection: </b>' + r['connect_ms'] + ' ms<br>';
+            if (r['is_secure'] !== undefined && r['is_secure'] && IsValidDuration(r['ssl_ms'])) {
+                details += '<b>SSL Negotiation: </b>' + r['ssl_ms'] + ' ms<br>';
+            }
+        } else if( r['connect_end'] !== undefined && r['connect_start'] !== undefined && r['connect_end'] > 0 ) {
+            var connectTime = r['connect_end'] - r['connect_start'];
+            details += '<b>Initial Connection: </b>' + connectTime + ' ms<br>';
+            if( r['ssl_end'] !== undefined && r['ssl_start'] !== undefined && r['ssl_end'] > 0 ) {
+                var sslTime = r['ssl_end'] - r['ssl_start'];
+                details += '<b>SSL Negotiation: </b>' + sslTime + ' ms<br>';
+            }
+        }
+        if (IsValidDuration(r['ttfb_ms'])) {
+            details += '<b>Time to First Byte: </b>' + r['ttfb_ms'] + ' ms<br>';
+        }
+        if (IsValidDuration(r['download_ms']))
+            details += '<b>Content Download: </b>' + r['download_ms'] + ' ms<br>';
+        if (r['bytesIn'] !== undefined)
+            details += '<b>Bytes In (downloaded): </b>' + NumBytesAsDisplayString(r['bytesIn']) + '<br>';
+        if (r['bytesOut'] !== undefined)
+            details += '<b>Bytes Out (uploaded): </b>' + NumBytesAsDisplayString(r['bytesOut']) + '<br>';
+        if (r['custom_rules'] !== undefined) {
+            for (rule in r['custom_rules']) {
+                details += '<b>Custom Rule - ' + rule + ': </b>(';
+                details += r['custom_rules'][rule]['count'] + ' matches) - ';
+                details += r['custom_rules'][rule]['value'].replace(/>/g, '&gt;').replace(/</g, '&lt;') + '<br>';
+            }
+        }
+        if (r['headers'] !== undefined){
+            if (r.headers['request'] !== undefined){
+                for (i=0;i<r.headers.request.length;i++) {
+                    requestHeaders += r.headers.request[i] + '<br>';
+                }
+            }
+            if (r.headers['response'] !== undefined){
+                for (i=0;i<r.headers.response.length;i++) {
+                    responseHeaders += r.headers.response[i] + '<br>';
+                }
+            }
+        }
+        if (r['body_url'] !== undefined && r['body_url'].length) {
+            try {
+                $("#response-body").text('Loading...');
+                $('#response-body-button').show();
+                wptBodyRequest = new XMLHttpRequest();
+                wptBodyRequest.open('GET', r['body_url'], true);
+                wptBodyRequest.onreadystatechange = function() {
+                if (wptBodyRequest.readyState == 4) {
+                    if (wptBodyRequest.status == 200) {
+                        $("#response-body").text(wptBodyRequest.responseText);
+                    } else {
+                        $("#response-body").text('');
+                    }
+                }
+              }
+              wptBodyRequest.send();
+            } catch (err) {
+            }
+        } else if (r['contentType'] !== undefined && r['contentType'].indexOf('image') >= 0) {
+            $('#response-body-button').show();
+            if (wptNoLinks) {
+                $("#response-body").html('<img style="max-width:100%; max-height:100%;" src="' + r['full_url'] + '">');
+            } else {
+                $("#response-body").html('<a href="' + r['full_url'] + '"><img style="max-width:100%; max-height:100%;" src="' + r['full_url'] + '"></a>');
+            }
+        }
+    }
+    $("#request-details").html(details);
+    $("#request-headers").html(requestHeaders);
+    $("#response-headers").html(responseHeaders);
+    $('#request-dialog').jqmShow();
+
+    // highlight the selected request
+    for (i=1;i<=wptRequestCount;i++) {
+        if (i == request)
+            $("#request-overlay-" + i).addClass("selected");
+        else
+            $("#request-overlay-" + i).removeClass("selected");
+    }
+}
+
+// support for the multi-waterfall translucency
+$(".waterfall-transparency").change(function() {
+    var newValue = this.value;
+    var id = this.name;
+    $("#" + id).css({ opacity: newValue });
+});
+        </script>
+    </body>
+</html>

@@ -15,6 +15,7 @@ do
   echo -n $temp >> dataReView
 done
 
+# Count the number of html-files in the folder
 fileCount=$(ls ./Testsidor/ | grep html | wc -l)
 
 # Cut off the trailing +
@@ -23,7 +24,7 @@ echo $tmp > dataFirstView
 tmp=$(rev dataReView | cut -c2- | rev)
 echo $tmp > dataReView
 
-# Remove the thousands denominator ,
+# Remove the thousands separator ","
 tmp=$(sed s/,//g dataFirstView)
 echo "($tmp)/$fileCount" > dataFirstView
 tmp=$(sed s/,//g dataReView)
